@@ -48,12 +48,12 @@
             android:summary="@string/status_bar_clock_summary"
             android:fragment="com.crdroid.settings.fragments.statusbar.Clock" />
 
-        <Preference
-            android:key="network_traffic_settings"
-            android:icon="@drawable/ic_traffic"
-            android:title="@string/network_traffic_settings_title"
-            android:summary="@string/network_traffic_settings_summary"
-            android:fragment="com.crdroid.settings.fragments.statusbar.NetworkTrafficSettings" />
+    <Preference
+        android:key="network_traffic_settings"
+        android:icon="@drawable/ic_fourg"
+        android:title="@string/network_traffic_title"
+        android:summary="@string/network_traffic_summary"
+        android:fragment="com.crdroid.settings.fragments.NetworkTrafficSettings" />
 
         <com.crdroid.settings.preferences.SystemSettingSwitchPreference
             android:key="use_old_mobiletype"
