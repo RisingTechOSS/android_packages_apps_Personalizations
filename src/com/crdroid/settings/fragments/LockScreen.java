@@ -59,13 +59,11 @@ public class LockScreen extends SettingsPreferenceFragment
     private static final String KEY_FP_SUCCESS_VIBRATE = "fp_success_vibrate";
     private static final String KEY_FP_ERROR_VIBRATE = "fp_error_vibrate";
     private static final String KEY_RIPPLE_EFFECT = "enable_ripple_effect";
-    private static final String KEY_WEATHER = "lockscreen_weather_enabled";
 
     private Preference mUdfpsSettings;
     private Preference mFingerprintVib;
     private Preference mFingerprintVibErr;
     private Preference mRippleEffect;
-    private Preference mWeather;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -93,14 +91,6 @@ public class LockScreen extends SettingsPreferenceFragment
                 interfaceCategory.removePreference(mUdfpsSettings);
             }
         }
-
-        mWeather = (Preference) findPreference(KEY_WEATHER);
-        OmniJawsClient weatherClient = new OmniJawsClient(getContext());
-        boolean weatherEnabled = weatherClient.isOmniJawsEnabled();
-        if (!weatherEnabled) {
-            mWeather.setEnabled(false);
-            mWeather.setSummary(R.string.lockscreen_weather_enabled_info);
-        }
     }
 
     @Override
@@ -126,10 +116,6 @@ public class LockScreen extends SettingsPreferenceFragment
                 Settings.System.FP_SUCCESS_VIBRATE, 1, UserHandle.USER_CURRENT);
         Settings.System.putIntForUser(resolver,
                 Settings.System.LOCKSCREEN_ENABLE_POWER_MENU, 1, UserHandle.USER_CURRENT);
-        Settings.System.putIntForUser(resolver,
-                Settings.System.LOCKSCREEN_WEATHER_ENABLED, 0, UserHandle.USER_CURRENT);
-        Settings.System.putIntForUser(resolver,
-                Settings.System.LOCKSCREEN_WEATHER_LOCATION, 0, UserHandle.USER_CURRENT);
         UdfpsSettings.reset(mContext);
     }
 
