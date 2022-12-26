@@ -1476,4 +1476,8 @@
     <string name="sound_engine_profile_smart_activated">Adaptive Sound Engine: Smart mode activated</string>
     <string name="sound_engine_profile_game_activated">Adaptive Sound Engine: Game mode activated</string>
     <string name="sound_engine_profile_theater_activated">Adaptive Sound Engine: Theater mode activated</string>
+    
+    <!-- UI styles -->
+    <string name="theme_customization_ui_style_title">UI Style</string>
+    <string name="theme_customization_ui_style_summary">Set custom style for your interface</string>
 </resources>

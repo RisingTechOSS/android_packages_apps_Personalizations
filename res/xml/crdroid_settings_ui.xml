@@ -97,6 +97,14 @@
             android:summary="@string/sb_settings_summary"
             android:fragment="com.crdroid.settings.fragments.StatusBar" />
 
+        <!-- UI style -->
+        <com.android.settings.preferences.ui.AdaptivePreference
+            android:key="android.theme.customization.style"
+            android:icon="@drawable/ic_ui_styles"
+            android:title="@string/theme_customization_ui_style_title"
+            android:summary="@string/theme_customization_ui_style_summary"
+            android:fragment="com.crdroid.settings.fragments.ui.UIStyles"/>
+
         <!-- Wifi icon style -->
         <com.android.settings.preferences.ui.AdaptivePreference
             android:key="android.theme.customization.wifi_icon"
