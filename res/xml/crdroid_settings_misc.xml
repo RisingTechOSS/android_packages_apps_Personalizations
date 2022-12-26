@@ -65,6 +65,14 @@
             android:targetClass="ink.kscope.parallelspace.MainActivity" />
     </Preference>
 
+    <!-- Scarlet Idle -->
+    <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+        android:key="scarlet_idle_assistant_manager"
+        android:icon="@drawable/ic_battery_saver"
+        android:title="@string/scarlet_idle_assistant_manager"
+        android:summary="@string/scarlet_idle_assistant_manager_summary"
+        android:defaultValue="true" />
+
     <!-- Smart Charging -->
     <Preference
         android:key="smart_charging"

@@ -1174,4 +1174,8 @@
     <string name="qsweather_position_both">Both</string>
     <string name="weather_show_all_condition">Show temp with scale,image and weather condition</string>
     <string name="weather_icon_pack_info_title">Tips\u003a \n\n1. Users can install new icon packs from play store by searching for \"Chronus icons\".\n\n2. Condition icon pack is used for weather icons on quick settings and sushi launcher at a glance.\n\n3. Long press the QuickSettings weather view/logo/temperature to access weather settings with ease.</string>
+
+    <!-- Scarlet Idle -->
+    <string name="scarlet_idle_assistant_manager">Scarlet Idle Manager</string>
+    <string name="scarlet_idle_assistant_manager_summary">Optimize device power consumption and performance while device is idle</string>.
 </resources>
