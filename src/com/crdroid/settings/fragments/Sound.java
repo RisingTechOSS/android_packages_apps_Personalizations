@@ -100,6 +100,8 @@ public class Sound extends SettingsPreferenceFragment {
                 Settings.System.VOLUME_DIALOG_TIMEOUT, 3, UserHandle.USER_CURRENT);
         Settings.System.putIntForUser(resolver,
                 Settings.System.SCREENSHOT_SHUTTER_SOUND, 1, UserHandle.USER_CURRENT);
+	Settings.System.putIntForUser(resolver,
+                Settings.System.VOLUME_MEDIA_OUTPUT_TOGGLE, 1, UserHandle.USER_CURRENT);
         PulseSettings.reset(mContext);
         AdaptivePlayback.reset(mContext);
     }

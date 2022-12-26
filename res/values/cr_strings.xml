@@ -1151,6 +1151,10 @@
     <string name="battery_stats_clear" translatable="false">@string/proxy_clear_text</string>
 
     <!-- Parallel space -->
-    <string name="laboratory_parallel_space_title">Parallel space</string>
+   <string name="laboratory_parallel_space_title">Parallel space</string>
     <string name="laboratory_parallel_space_summary">Allow running multiple instances of the same application in parallel</string>
+
+    <!-- Volume Media Output Toggle -->
+    <string name="volume_media_output_toggle_title">Volume media output</string>
+    <string name="volume_media_output_toggle_summary">Show media output toggle when there is an active stream</string>
 </resources>

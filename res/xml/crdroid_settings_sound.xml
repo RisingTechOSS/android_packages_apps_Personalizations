@@ -69,6 +69,13 @@
             android:max="10"
             settings:min="1"
             settings:units="@string/unit_seconds" />
+            
+    	<com.crdroid.settings.preferences.SystemSettingSwitchPreference
+     	   android:key="volume_media_output_toggle"
+     	   android:icon="@drawable/ic_settings_sound"
+     	   android:title="@string/volume_media_output_toggle_title"
+      	   android:summary="@string/volume_media_output_toggle_summary"
+      	   android:defaultValue="true" />
     </PreferenceCategory>
 
     <!-- In-call feedback -->
