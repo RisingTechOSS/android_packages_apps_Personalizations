@@ -15,6 +15,9 @@
  */
 package com.crdroid.settings.fragments;
 
+import static android.os.UserHandle.USER_CURRENT;
+import static android.os.UserHandle.USER_SYSTEM;
+
 import android.app.Activity;
 import android.content.ContentResolver;
 import android.content.Context;
@@ -22,9 +25,14 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.pm.ResolveInfo;
+import android.database.ContentObserver;
 import android.content.res.Resources;
 import android.net.Uri;
+import android.os.Handler;
+import android.content.om.IOverlayManager;
 import android.os.Bundle;
+import android.os.RemoteException;
+import android.os.ServiceManager;
 import android.os.SystemProperties;
 import android.os.UserHandle;
 import android.provider.Settings;
@@ -45,6 +53,7 @@ import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
 
 import com.crdroid.settings.preferences.CustomSeekBarPreference;
+import com.crdroid.settings.preferences.SystemSettingListPreference;
 
 import lineageos.providers.LineageSettings;
 
@@ -64,7 +73,12 @@ public class QuickSettings extends SettingsPreferenceFragment implements
     private static final String KEY_PREF_TILE_ANIM_DURATION = "qs_tile_animation_duration";
     private static final String KEY_PREF_TILE_ANIM_INTERPOLATOR = "qs_tile_animation_interpolator";
     private static final String KEY_PREF_BATTERY_ESTIMATE = "qs_show_battery_estimate";
+    private static final String KEY_QS_PANEL_STYLE  = "qs_panel_style";
 
+    private Handler mHandler;
+    private IOverlayManager mOverlayManager;
+    private IOverlayManager mOverlayService;
+    private SystemSettingListPreference mQsStyle;
     private ListPreference mShowBrightnessSlider;
     private ListPreference mBrightnessSliderPosition;
     private SwitchPreference mShowAutoBrightness;
@@ -78,6 +92,12 @@ public class QuickSettings extends SettingsPreferenceFragment implements
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.crdroid_settings_quicksettings);
+
+        mOverlayService = IOverlayManager.Stub
+        .asInterface(ServiceManager.getService(Context.OVERLAY_SERVICE));
+
+        mQsStyle = (SystemSettingListPreference) findPreference(KEY_QS_PANEL_STYLE);
+        mCustomSettingsObserver.observe();
 
         final Context mContext = getActivity().getApplicationContext();
         final ContentResolver resolver = mContext.getContentResolver();
@@ -116,6 +136,29 @@ public class QuickSettings extends SettingsPreferenceFragment implements
             prefScreen.removePreference(mBatteryEstimate);
     }
 
+    private CustomSettingsObserver mCustomSettingsObserver = new CustomSettingsObserver(mHandler);
+    private class CustomSettingsObserver extends ContentObserver {
+
+        CustomSettingsObserver(Handler handler) {
+            super(handler);
+        }
+
+        void observe() {
+            Context mContext = getContext();
+            ContentResolver resolver = mContext.getContentResolver();
+            resolver.registerContentObserver(Settings.System.getUriFor(
+                    Settings.System.QS_PANEL_STYLE),
+                    false, this, UserHandle.USER_ALL);
+        }
+
+        @Override
+        public void onChange(boolean selfChange, Uri uri) {
+            if (uri.equals(Settings.System.getUriFor(Settings.System.QS_PANEL_STYLE))) {
+                updateQsStyle();
+            }
+        }
+    }
+    
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         if (preference == mShowBrightnessSlider) {
@@ -127,6 +170,9 @@ public class QuickSettings extends SettingsPreferenceFragment implements
         } else if (preference == mTileAnimationStyle) {
             int value = Integer.parseInt((String) newValue);
             updateAnimTileStyle(value);
+            return true;
+        } else if (preference == mQsStyle) {
+            mCustomSettingsObserver.observe();
             return true;
         }
         return false;
@@ -190,12 +236,61 @@ public class QuickSettings extends SettingsPreferenceFragment implements
                 LineageSettings.Secure.QS_BRIGHTNESS_SLIDER_POSITION, 0, UserHandle.USER_CURRENT);
         LineageSettings.Secure.putIntForUser(resolver,
                 LineageSettings.Secure.QS_SHOW_AUTO_BRIGHTNESS, 1, UserHandle.USER_CURRENT);
+        Settings.System.putIntForUser(resolver,
+                Settings.System.QS_PANEL_STYLE, 0, UserHandle.USER_CURRENT);
     }
 
     private void updateAnimTileStyle(int tileAnimationStyle) {
         mTileAnimationDuration.setEnabled(tileAnimationStyle != 0);
         mTileAnimationInterpolator.setEnabled(tileAnimationStyle != 0);
     }
+
+    private void updateQsStyle() {
+        ContentResolver resolver = getActivity().getContentResolver();
+
+        int qsPanelStyle = Settings.System.getIntForUser(getContext().getContentResolver(),
+                Settings.System.QS_PANEL_STYLE , 0, UserHandle.USER_CURRENT);
+
+        if (qsPanelStyle == 0) {
+            setDefaultStyle(mOverlayService);
+        } else if (qsPanelStyle == 1) {
+            setQsStyle(mOverlayService, "com.android.system.qs.outline");
+        } else if (qsPanelStyle == 2 || qsPanelStyle == 3) {
+            setQsStyle(mOverlayService, "com.android.system.qs.twotoneaccent");
+        }
+    }
+
+    public static void setDefaultStyle(IOverlayManager overlayManager) {
+        for (int i = 0; i < QS_STYLES.length; i++) {
+            String qsStyles = QS_STYLES[i];
+            try {
+                overlayManager.setEnabled(qsStyles, false, USER_SYSTEM);
+            } catch (RemoteException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    public static void setQsStyle(IOverlayManager overlayManager, String overlayName) {
+        try {
+            for (int i = 0; i < QS_STYLES.length; i++) {
+                String qsStyles = QS_STYLES[i];
+                try {
+                    overlayManager.setEnabled(qsStyles, false, USER_SYSTEM);
+                } catch (RemoteException e) {
+                    e.printStackTrace();
+                }
+            }
+            overlayManager.setEnabled(overlayName, true, USER_SYSTEM);
+        } catch (RemoteException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static final String[] QS_STYLES = {
+        "com.android.system.qs.outline",
+        "com.android.system.qs.twotoneaccent"
+    };
 
     @Override
     public int getMetricsCategory() {
