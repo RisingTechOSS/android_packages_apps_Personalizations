@@ -17,10 +17,10 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- App Title -->
-    <string name="crdroid_settings_title">crDroid Settings</string>
-    <string name="crdroid_settings_summary">Open goodness</string>
+    <string name="crdroid_settings_title" translatable="false">Personalizations</string>
+    <string name="crdroid_settings_summary" translatable="false">Customize themes, features and more</string>
     <string name="reset_settings_title">Reset settings</string>
-    <string name="reset_settings_message">This will reset most crdroid settings to their default values for the current user. Would you like to continue?</string>
+    <string name="reset_settings_message">This will reset most personalizations settings to their default values for the current user. Would you like to continue?</string>
 
     <!-- Personalization Categories -->
     <string name="button_title">Buttons</string>
@@ -58,26 +58,29 @@
     <string name="choose_app">Choose app</string>
     <string name="enable">Enable</string>
     <string name="disable">Disable</string>
+    <string name="default_string">Default</string>
+    <string name="follow_system_font_string">Follow system font</string>
+    <string name="disabled">Disabled</string>
 
     <!-- Changelog -->
     <string name="changelog_crdroid_title">Current changelog</string>
     <string name="changelog_crdroid_summary">View changes in the ROM installed</string>
     <string name="changelog_crdroid_error">Unable to load changelog</string>
 
-    <!-- About crDroid -->
-    <string name="about_crdroid">About crDroid</string>
+    <!-- About -->
+    <string name="about_crdroid">About riceDroid</string>
     <string name="about_device_name">Device</string>
 
-    <!-- Share crDroid -->
-    <string name="share_crdroid_title">Share crDroid</string>
-    <string name="share_crdroid_summary">Let others know about crDroid</string>
-    <string name="share_message">Check out if #crDroidAndroid is available for your device @ https://crdroid.net/</string>
-    <string name="share_chooser_title">Share crDroid</string>
+    <!-- Share -->
+    <string name="share_crdroid_title">Share this firmware</string>
+    <string name="share_crdroid_summary">Let others know about riceDroid</string>
+    <string name="share_message">Check out if #riceDroid is available for your device @ https://crdroid.net/</string>
+    <string name="share_chooser_title">Share riceDroid</string>
 
     <!-- Sites crDroid -->
     <string name="crdroid_source_title">GitHub</string>
     <string name="crdroid_source_summary">We love open source, check us out</string>
-    <string name="crdroid_telegram_title">crDroid community</string>
+    <string name="crdroid_telegram_title">riceDroid community</string>
     <string name="crdroid_telegram_summary">We are on telegram. Join us!</string>
     <string name="crdroid_telegram_channel_title">Updates channel</string>
     <string name="crdroid_telegram_channel_summary">Get notified of new builds on Telegram</string>
@@ -88,10 +91,10 @@
     <string name="crdroid_sponsor_title" translatable="false">ScopeHosts</string>
     <string name="crdroid_sponsor_summary">Visit our website host partner</string>
 
-    <!-- Donate crDroid -->
+    <!-- Donate riceDroid -->
     <string name="donate_crdroid_title">Support us</string>
     <string name="donate_crdroid_summary">Donate to support further development</string>
-    <string name="donate_team_title">crDroid team</string>
+    <string name="donate_team_title">riceDroid team</string>
     <string name="donate_team_summary">Donate to support server hosting, site uptime and overall management</string>
 
     <!-- The Drill -->
@@ -416,6 +419,8 @@
     <string name="status_bar_battery_style_icon_landscape">Icon landscape (Left)</string>
     <string name="status_bar_battery_style_circle">Circle</string>
     <string name="status_bar_battery_style_dotted_circle">Dotted circle</string>
+    <string name="status_bar_battery_style_big_circle">Big circle</string>
+    <string name="status_bar_battery_style_big_dotted_circle">Big dotted circle</string>
     <string name="status_bar_battery_style_filled_circle">Filled circle</string>
     <string name="status_bar_battery_style_text">Text</string>
     <string name="status_bar_battery_style_hidden">Hidden</string>
@@ -426,6 +431,15 @@
     <string name="status_bar_battery_percent_text_next_left">Next to the icon (left)</string> 
     <string name="status_bar_battery_text_charging_title">Battery percentage when charging</string>
     <string name="status_bar_battery_text_charging_summary">Always display battery percentage when charging</string>
+    <string name="status_bar_battery_style_icon_rlandscape_style_a">Landscape R Style A</string>
+    <string name="status_bar_battery_style_icon_landscape_style_a">Landscape L Style A</string>
+    <string name="status_bar_battery_style_icon_rlandscape_style_b">Landscape R Style B</string>
+    <string name="status_bar_battery_style_icon_landscape_style_b">Landscape L Style B</string>
+    <string name="status_bar_battery_style_icon_landscape_pill">Portrait Mx</string>
+    <string name="status_bar_battery_style_icon_landscape_line">Landscape Lorn</string>
+    <string name="status_bar_battery_style_icon_landscape_musku">Portrait IOS</string>
+    <string name="status_bar_battery_style_icon_landscape_signal">Landscape Airoo</string>
+    <string name="status_bar_battery_style_icon_landscape_buddy">Landscape Capsule</string>
 
     <!-- Status bar - Battery Bar -->
     <string name="battery_bar_title">Battery bar</string>
@@ -616,8 +630,8 @@
     <string name="qs_footer_services_icon_title">Running services shortcut</string>
     <string name="qs_footer_settings_icon_title">Settings shortcut</string>
 
-    <!-- Device Info screen. crDroid legal. -->
-    <string name="crdroid_license_title">crDroid legal</string>
+    <!-- Device Info screen. riceDroid legal. -->
+    <string name="crdroid_license_title">riceDroid legal</string>
 
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">Brightness slider</string>
@@ -1157,11 +1171,10 @@
     <!-- Volume Media Output Toggle -->
     <string name="volume_media_output_toggle_title">Volume media output</string>
     <string name="volume_media_output_toggle_summary">Show media output toggle when there is an active stream</string>
-    
+
     <!-- QS Weather Options -->
-    <string name="qs_weather_title">System weather style</string>
+    <string name="qs_weather_title">QS System weather style</string>
     <string name="qs_weather_summary">Configure system weather</string>
-    <string name="qs_weather_dialog_title">System weather style</string>
     <string name="qsweather_dialog_title">QuickSettings weather location</string>
     <string name="qs_weather_hidden">Hide weather</string>
     <string name="qs_temperature_image_show_scale">Show temp with scale and image</string>
@@ -1169,11 +1182,24 @@
     <string name="qs_temperature_show_scale_hide_image">Show temp with scale</string>
     <string name="qs_temperature_hide_scale_hide_image">Show temp without scale</string>
     <string name="qs_show_image">Show image</string>
+    <string name="weather_show_all_condition">Show temp with scale,image and weather condition</string>
     <string name="qsweather_position_qqs">QuickSettings</string>
     <string name="qsweather_position_qsb">QuickStatusbar</string>
     <string name="qsweather_position_both">Both</string>
-    <string name="weather_show_all_condition">Show temp with scale,image and weather condition</string>
+    <string name="launcher_weather_title">Launcher System weather style</string>
+    <string name="kg_weather_title">Lockscreen System weather style</string>
+
+    <!-- Omni weather -->
+    <string name="qs_weather_settings_title">Weather Settings</string>
+    <string name="qs_weather_settings_summary">Setup icon pack and weather service</string>
+    <string name="weather_title">Weather Settings</string>
+    <string name="weather_config_title">Weather service</string>
+    <string name="weather_config_summary">System service settings</string>
+    <string name="weather_icon_pack_title">Condition icon pack</string>
+    <string name="weather_icon_pack_note">Note\u003a you can install new icon packs from play store by searching for \"Chronus icons\"</string>
     <string name="weather_icon_pack_info_title">Tips\u003a \n\n1. Users can install new icon packs from play store by searching for \"Chronus icons\".\n\n2. Condition icon pack is used for weather icons on quick settings and sushi launcher at a glance.\n\n3. Long press the QuickSettings weather view/logo/temperature to access weather settings with ease.</string>
+    <string name="qsweather_settings_title">QuickSettings Weather</string>
+    <string name="qsweather_settings_summary">Setup quicksettings weather views</string>
 
     <!-- Scarlet Idle -->
     <string name="scarlet_idle_assistant_manager">Scarlet Idle Manager</string>

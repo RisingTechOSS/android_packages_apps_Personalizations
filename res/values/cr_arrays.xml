@@ -186,8 +186,19 @@
         <item>@string/status_bar_battery_style_icon_portrait</item> 
         <item>@string/status_bar_battery_style_icon_rlandscape</item> 
         <item>@string/status_bar_battery_style_icon_landscape</item> 
+        <item>@string/status_bar_battery_style_icon_landscape_buddy</item>
+        <item>@string/status_bar_battery_style_icon_landscape_line</item>
+        <item>@string/status_bar_battery_style_icon_landscape_musku</item>
+        <item>@string/status_bar_battery_style_icon_landscape_pill</item>
+        <item>@string/status_bar_battery_style_icon_landscape_signal</item>
+        <item>@string/status_bar_battery_style_icon_rlandscape_style_a</item>
+        <item>@string/status_bar_battery_style_icon_landscape_style_a</item>
+        <item>@string/status_bar_battery_style_icon_rlandscape_style_b</item>
+        <item>@string/status_bar_battery_style_icon_landscape_style_b</item>
         <item>@string/status_bar_battery_style_circle</item>
         <item>@string/status_bar_battery_style_dotted_circle</item>
+        <item>@string/status_bar_battery_style_big_circle</item>
+        <item>@string/status_bar_battery_style_big_dotted_circle</item>
         <item>@string/status_bar_battery_style_filled_circle</item>
         <item>@string/status_bar_battery_style_text</item>
         <item>@string/status_bar_battery_style_hidden</item>
@@ -197,8 +208,19 @@
         <item>0</item>
         <item>6</item>
         <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
         <item>1</item>
         <item>2</item>
+        <item>17</item>
+        <item>18</item>
         <item>3</item>
         <item>4</item>
         <item>5</item>
@@ -715,7 +737,39 @@
         <item>5</item>
         <item>6</item>
     </string-array>
+
+   <!-- QS Weather options -->
+    <string-array name="qs_weather_entries" translatable="false">
+        <item>@string/qs_weather_hidden</item>
+        <item>@string/qs_temperature_image_show_scale</item>
+        <item>@string/qs_temperature_image_hide_scale</item>
+        <item>@string/qs_temperature_show_scale_hide_image</item>
+        <item>@string/qs_temperature_hide_scale_hide_image</item>
+        <item>@string/qs_show_image</item>
+    </string-array>
+
+    <string-array name="qs_weather_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
     
+   <!-- QS Weather positions -->
+    <string-array name="qsweather_position_entries" translatable="false">
+        <item>@string/qsweather_position_qqs</item>
+        <item>@string/qsweather_position_qsb</item>
+        <item>@string/qsweather_position_both</item>
+    </string-array>
+    
+    <string-array name="qsweather_position_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
    <string-array name="qs_styles_entries" translatable="false">
         <item>@string/default_string</item>
         <item>@string/qs_outline</item>
