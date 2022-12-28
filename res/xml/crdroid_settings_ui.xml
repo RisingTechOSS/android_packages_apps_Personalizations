@@ -72,53 +72,13 @@
         android:summary="@string/monet_summary"
         android:fragment="com.crdroid.settings.fragments.ui.MonetSettings" />
 
-    <!-- Navbar Style -->
+    <!-- UI Theme Engine -->
     <Preference
-        android:key="android.theme.customization.navbar"
-        android:icon="@drawable/ic_navbar"
-        android:title="@string/theme_customization_navbar_title"
-        android:summary="@string/theme_customization_navbar_summary"
-        android:fragment="com.crdroid.settings.fragments.ui.NavbarStyles"/>
-
-    <!-- Font style -->
-    <Preference
-        android:key="android.theme.customization.fonts"
-        android:icon="@drawable/ic_font"
-        android:title="@string/theme_customization_font_title"
-        android:summary="@string/theme_customization_font_summary"
-        android:fragment="com.crdroid.settings.fragments.ui.FontsPicker"/>
-
-    <!-- Icon pack -->
-    <Preference
-        android:key="android.theme.customization.icon_pack"
-        android:icon="@drawable/ic_drawing"
-        android:title="@string/theme_customization_icon_pack_title"
-        android:summary="@string/theme_customization_icon_pack_summary"
-        android:fragment="com.crdroid.settings.fragments.ui.StatusbarIcons"/>
-
-    <!-- Signal icon style -->
-    <Preference
-        android:key="android.theme.customization.signal_icon"
-        android:icon="@drawable/ic_signal"
-        android:title="@string/theme_customization_signal_icon_title"
-        android:summary="@string/theme_customization_signal_icon_summary"
-        android:fragment="com.crdroid.settings.fragments.ui.SignalIcons"/>
-
-    <!-- Wifi icon style -->
-    <Preference
-        android:key="android.theme.customization.wifi_icon"
-        android:icon="@drawable/ic_wifi"
-        android:title="@string/theme_customization_wifi_icon_title"
-        android:summary="@string/theme_customization_wifi_icon_summary"
-        android:fragment="com.crdroid.settings.fragments.ui.WifiIcons"/>
-
-    <!-- Adaptive icon pack -->
-    <Preference
-        android:key="android.theme.customization.adaptive_icon_shape"
-        android:icon="@drawable/ic_shapes"
-        android:title="@string/theme_customization_icon_shape_title"
-        android:summary="@string/theme_customization_icon_shape_summary"
-        android:fragment="com.crdroid.settings.fragments.ui.IconShapes"/>
+        android:key="ui_theme_engine"
+        android:icon="@drawable/ic_themes"
+        android:title="@string/ui_theme_engine_title"
+        android:summary="@string/ui_theme_engine_summary"
+        android:fragment="com.crdroid.settings.fragments.ui.ThemeEngine" />
 
     <!-- Floating rotation button -->
     <com.crdroid.settings.preferences.SystemSettingSwitchPreference

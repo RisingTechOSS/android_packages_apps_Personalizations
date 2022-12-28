@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2022 crDroid Android Project
+ * 		 2022 riceDroid Android Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -67,18 +68,18 @@ import java.util.Arrays;
 import org.json.JSONObject;
 import org.json.JSONException;
 
-public class FontsPicker extends SettingsPreferenceFragment {
+public class ClockFontsPicker extends SettingsPreferenceFragment {
 
     private RecyclerView mRecyclerView;
     private ThemeUtils mThemeUtils;
-    private String mCategory = FONT_KEY;
+    private String mCategory = "android.theme.customization.clock_font";
 
     private List<String> mPkgs;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getActivity().setTitle(R.string.theme_customization_font_title);
+        getActivity().setTitle(R.string.theme_customization_clock_font_title);
 
         mThemeUtils = new ThemeUtils(getActivity());
         mPkgs = mThemeUtils.getOverlayPackagesForCategory(mCategory, "android");
@@ -120,7 +121,7 @@ public class FontsPicker extends SettingsPreferenceFragment {
 
         @Override
         public CustomViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-            View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.fonts_option, parent, false);
+            View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.clock_fonts_option, parent, false);
             CustomViewHolder vh = new CustomViewHolder(v);
             return vh;
         }
@@ -136,10 +137,11 @@ public class FontsPicker extends SettingsPreferenceFragment {
                 .findFirst()
                 .orElse("android");
 
-            holder.title.setText("android".equals(pkg) ? "Default" : label);
+            holder.name.setVisibility(View.VISIBLE);
+            holder.name.setText("android".equals(pkg) ? "Default" : label);
+            holder.title.setText(R.string.clock_format);
             holder.title.setTypeface(Typeface.create("android".equals(pkg) ? "sans-serif" : label.toLowerCase().replaceAll(" ",""), Typeface.NORMAL));
-            holder.title.setTextSize(20);
-            holder.name.setVisibility(View.GONE);
+            holder.title.setTextSize(32);
 
             if (currentPackageName.equals(pkg)) {
                 mAppliedPkg = pkg;

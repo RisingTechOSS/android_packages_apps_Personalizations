@@ -267,6 +267,8 @@
     <!-- UI settings -->
     <string name="monet_title">Monet settings</string>
     <string name="monet_summary">Customize Monet theme engine</string>
+    <string name="ui_theme_engine_title">Theme engine</string>
+    <string name="ui_theme_engine_summary">Enable icon packs, themes etc</string>
 
     <!-- Monet Engine -->
     <string name="monet_engine_custom_color_title">Use custom color</string>
@@ -355,12 +357,14 @@
     <string name="lockscreen_doubletap_sleep_summary">Double-tap on the lock screen to put device asleep</string>
 
     <!-- Font style / Icon pack -->
+    <string name="theme_customization_clock_font_title">Clock Font style</string>
+    <string name="theme_customization_clock_font_summary">Set lockscreen clock font style</string>
     <string name="theme_customization_font_title">Font style</string>
     <string name="theme_customization_font_summary">Set system font style</string>
-    <string name="theme_customization_icon_pack_title">Icon pack</string>
-    <string name="theme_customization_icon_pack_summary">Set custom icon pack style</string>
-    <string name="theme_customization_icon_shape_title">Icon shape</string>
-    <string name="theme_customization_icon_shape_summary">Set system icon shape style</string>
+    <string name="theme_customization_icon_pack_title">System icon pack</string>
+    <string name="theme_customization_icon_pack_summary">Set system custom icon pack style</string>
+    <string name="theme_customization_icon_shape_title">System shapes</string>
+    <string name="theme_customization_icon_shape_summary">Set system shapes style</string>
     <string name="theme_customization_signal_icon_title">Signal icon style</string>
     <string name="theme_customization_signal_icon_summary">Set custom signal icon style</string>
     <string name="theme_customization_wifi_icon_title">WiFi icon style</string>
@@ -1210,4 +1214,29 @@
     <string name="qs_outline">QS Outline Style</string>
     <string name="qs_two_tone">QS Two-Tone Accent</string>
     <string name="qs_color_pop">QS Color Pop</string>
+
+    <!-- Volume Styles -->
+    <string name="rui_style">Realme UI style</string>
+    <string name="rice_style">Rice style</string>
+    <string name="volume_style_title">Volume panel styles</string>
+    
+   <!-- Custom settings dashboard style -->
+    <string name="settings_dashboard_style_title">Settings Styles</string>
+    <string name="settings_dashboard_style_oos">Sushi(legacy OOS)</string>
+    <string name="settings_dashboard_style_rui">Oxygen/ColorOS</string>
+    <string name="settings_dashboard_style_arc">Arcane</string>
+    <string name="settings_dashboard_style_aosp">Stock pixel</string>
+    <string name="settings_dashboard_style_mt">Google material you</string>
+    <string name="settings_dashboard_style_card">Ayan\'s card ui</string>
+    <string name="settings_home_style_title">Searchbar style</string>
+    <string name="settings_home_style_summary">Use AOSP settings homepage style</string>
+    <string name="settings_user_card_title">Hide user card preference</string>
+    <string name="settings_user_card_summary">Hide the extra user profile card below the searchbar</string>
+    <string name="about_card_style_title">About phone style</string>
+    <string name="about_card_style_banner_one">Centered wallpaper banner</string>
+    <string name="about_card_style_banner_one_high">Centered wallpaper banner (big)</string>
+    
+    <!-- Clock picker format -->
+    <string name="clock_format">12\n26</string>
+    <string name="text_sample">AaBbCc</string>
 </resources>

@@ -805,4 +805,48 @@
         <item>2</item>
         <item>3</item>
     </string-array>
+    
+   <string-array name="volume_styles_entries" translatable="false">
+        <item>@string/default_string</item>
+        <item>@string/rui_style</item>
+        <item>@string/rice_style</item>
+    </string-array>
+
+    <string-array name="volume_styles_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <!-- About phone styles-->
+    <string-array name="about_card_style_entries" translatable="false">
+        <item>@string/default_string</item>
+        <item>@string/about_card_style_banner_one</item>
+        <item>@string/about_card_style_banner_one_high</item>
+    </string-array>
+
+    <string-array name="about_card_style_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <!-- Settings dashboard styles-->
+    <string-array name="settings_dashboard_style_entries" translatable="false">
+        <item>@string/settings_dashboard_style_oos</item>
+        <item>@string/settings_dashboard_style_rui</item>
+        <item>@string/settings_dashboard_style_arc</item>
+        <item>@string/settings_dashboard_style_aosp</item>
+        <item>@string/settings_dashboard_style_mt</item>
+        <item>@string/settings_dashboard_style_card</item>
+    </string-array>
+
+    <string-array name="settings_dashboard_style_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
 </resources>
