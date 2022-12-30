@@ -53,6 +53,21 @@
         android:title="@string/notification_guts_kill_app_button_title"
         android:summary="@string/notification_guts_kill_app_button_summary" />
 
+    <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+        android:key="media_artwork_blur_enabled"
+        android:icon="@drawable/ic_blur"
+        android:title="@string/artwork_media_background_enable_blur_title"
+        android:defaultValue="false" />
+
+    <com.crdroid.settings.preferences.SystemSettingSeekBarPreference
+        android:key="media_artwork_blur_radius"
+        android:icon="@drawable/ic_custom_seekbar_plus"
+        android:title="@string/artwork_media_background_blur_radius_title"
+        android:dependency="media_artwork_blur_enabled" 
+        android:defaultValue="1"
+        android:max="25"
+        settings:min="5" />
+
     <PreferenceCategory
         android:key="heads_up"
         android:title="@string/notification_heads_up_title">
