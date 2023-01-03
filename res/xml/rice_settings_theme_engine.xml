@@ -27,6 +27,19 @@
         android:summary="@string/theme_customization_clock_font_summary"
         android:fragment="com.crdroid.settings.fragments.ui.ClockFontsPicker"/>
 
+    <com.crdroid.settings.preferences.SecureSettingSwitchPreference
+        android:key="kg_custom_clock_color_enabled"
+        android:icon="@drawable/ic_color_bucket"
+        android:title="@string/kg_custom_clock_color_enabled_title"
+        android:defaultValue="false" />
+
+   <com.crdroid.settings.preferences.colorpicker.SecureSettingColorPickerPreference
+        android:key="kg_custom_clock_color"
+        android:icon="@drawable/ic_color_bucket"
+        android:title="@string/kg_custom_clock_color_title"
+        android:dependency="kg_custom_clock_color_enabled"
+        android:defaultValue="0xFFFFFFFF"/>
+
     <!-- Font style -->
     <Preference
         android:key="android.theme.customization.fonts"

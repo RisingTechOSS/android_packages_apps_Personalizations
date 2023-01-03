@@ -55,11 +55,14 @@ public class ThemeEngine extends SettingsPreferenceFragment implements
     private static final String USE_STOCK_LAYOUT = "use_stock_layout";
     private static final String ABOUT_PHONE_STYLE = "about_card_style";
     private static final String HIDE_USER_CARD = "hide_user_card";
+    private static final String KG_CUSTOM_CLOCK_COLOR_ENABLED = "kg_custom_clock_color_enabled";
     
     private SystemSettingListPreference mSettingsDashBoardStyle;
     private SystemSettingListPreference mAboutPhoneStyle;
     private SystemSettingSwitchPreference mUseStockLayout;
     private SystemSettingSwitchPreference mHideUserCard;
+    private SwitchPreference mKGCustomClockColor;
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -79,6 +82,11 @@ public class ThemeEngine extends SettingsPreferenceFragment implements
         mAboutPhoneStyle.setOnPreferenceChangeListener(this);
         mHideUserCard = (SystemSettingSwitchPreference) findPreference(HIDE_USER_CARD);
         mHideUserCard.setOnPreferenceChangeListener(this);
+        mKGCustomClockColor = (SwitchPreference) findPreference(KG_CUSTOM_CLOCK_COLOR_ENABLED);
+        boolean mKGCustomClockColorEnabled = Settings.Secure.getIntForUser(resolver,
+                Settings.Secure.KG_CUSTOM_CLOCK_COLOR_ENABLED, 0, UserHandle.USER_CURRENT) != 0;
+        mKGCustomClockColor.setChecked(mKGCustomClockColorEnabled);
+        mKGCustomClockColor.setOnPreferenceChangeListener(this);
     }
 
 
@@ -97,6 +105,11 @@ public class ThemeEngine extends SettingsPreferenceFragment implements
             return true;
         } else if (preference == mAboutPhoneStyle) {
             Utils.showSettingsRestartDialog(getContext());
+            return true;
+        } else if (preference == mKGCustomClockColor) {
+            boolean val = (Boolean) newValue;
+            Settings.Secure.putIntForUser(resolver,
+                Settings.Secure.KG_CUSTOM_CLOCK_COLOR_ENABLED, val ? 1 : 0, UserHandle.USER_CURRENT);
             return true;
         }
         return false;

@@ -1238,7 +1238,11 @@
     <!-- Clock picker format -->
     <string name="clock_format">12\n26</string>
     <string name="text_sample">AaBbCc</string>
-    
+
+    <!-- Lockscreen Clock -->
+    <string name="kg_custom_clock_color_enabled_title">Custom lockscreen clock color</string>
+    <string name="kg_custom_clock_color_title">Clock color</string>
+
    <!-- Media artwork -->
     <string name="artwork_media_background_enable_blur_title">Blur media media notification artwork background</string>
     <string name="artwork_media_background_blur_radius_title">Blur amount for media notification artwork</string>
