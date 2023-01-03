@@ -1242,6 +1242,8 @@
     <!-- Lockscreen Clock -->
     <string name="kg_custom_clock_color_enabled_title">Custom lockscreen clock color</string>
     <string name="kg_custom_clock_color_title">Clock color</string>
+    <string name="kg_custom_clock_top_margin_title">Clock bottom spacing</string>
+    <string name="kg_big_clock_text_size_title">Large clock size</string>
 
    <!-- Media artwork -->
     <string name="artwork_media_background_enable_blur_title">Blur media media notification artwork background</string>
