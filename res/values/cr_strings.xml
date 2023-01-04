@@ -74,7 +74,7 @@
     <!-- Share -->
     <string name="share_crdroid_title">Share this firmware</string>
     <string name="share_crdroid_summary">Let others know about riceDroid</string>
-    <string name="share_message">Check out if #riceDroid is available for your device @ https://crdroid.net/</string>
+    <string name="share_message">Check out if #riceDroid is available for your device @ http://ricedroidoss.github.io/</string>
     <string name="share_chooser_title">Share riceDroid</string>
 
     <!-- Sites crDroid -->
@@ -88,8 +88,8 @@
     <string name="crdroid_website_summary">Visit our official website</string>
     <string name="crdroid_translate_title">Translations</string>
     <string name="crdroid_translate_summary">Help with localisation of ROM in your language!</string>
-    <string name="crdroid_sponsor_title" translatable="false">ScopeHosts</string>
-    <string name="crdroid_sponsor_summary">Visit our website host partner</string>
+    <string name="crdroid_sponsor_title" translatable="false">Sponsors</string>
+    <string name="crdroid_sponsor_summary" translatable="false">Our number one sponsor</string>
 
     <!-- Donate riceDroid -->
     <string name="donate_crdroid_title">Support us</string>
