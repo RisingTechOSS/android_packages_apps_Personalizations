@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">Настройки crDroid</string>
+    <string name="crdroid_settings_title">Настройки riceDroid</string>
     <string name="crdroid_settings_summary">Здесь происходит волшебство</string>
     <string name="reset_settings_title">Сбросить настройки</string>
     <string name="reset_settings_message">Это приведет к сбросу большинства настроек crdroid к значениям по умолчанию для текущего пользователя. Продолжить?</string>
@@ -52,22 +52,25 @@
     <string name="choose_app">Выбрать приложение</string>
     <string name="enable">Вкл</string>
     <string name="disable">Отключить</string>
+    <string name="default_string">По Умолчанию</string>
+    <string name="follow_system_font_string">Использовать системный шрифт</string>
+    <string name="disabled">Отключено</string>
     <!-- Changelog -->
     <string name="changelog_crdroid_title">Текущий список изменений</string>
     <string name="changelog_crdroid_summary">Просмотр изменений в текущей прошивки</string>
     <string name="changelog_crdroid_error">Невозможно загрузить список изменений</string>
-    <!-- About crDroid -->
-    <string name="about_crdroid">О crDroid</string>
+    <!-- About riceDroid -->
+    <string name="about_crdroid">О riceDroid</string>
     <string name="about_device_name">Устройство</string>
-    <!-- Share crDroid -->
-    <string name="share_crdroid_title">Рассказать о crDroid</string>
-    <string name="share_crdroid_summary">Пусть другие узнают о crDroid</string>
-    <string name="share_message">Узнайте, доступен ли #crDroidAndroid для вашего устройства на @ https://crdroid.net/</string>
-    <string name="share_chooser_title">Рассказать о crDroid</string>
-    <!-- Sites crDroid -->
+    <!-- Share riceDroid -->
+    <string name="share_crdroid_title">Рассказать о riceDroid</string>
+    <string name="share_crdroid_summary">Пусть другие узнают о riceDroid</string>
+    <string name="share_message">Узнайте, доступен ли #riceDroid для вашего устройства на @ http://ricedroidoss.github.io/</string>
+    <string name="share_chooser_title">Рассказать о riceDroid</string>
+    <!-- Sites riceDroid -->
     <string name="crdroid_source_title">Github</string>
     <string name="crdroid_source_summary">Мы любим открытый исходный код, посмотрите его</string>
-    <string name="crdroid_telegram_title">Cообщество crDroid</string>
+    <string name="crdroid_telegram_title">Cообщество riceDroid</string>
     <string name="crdroid_telegram_summary">Мы в Telegram. Присоединяйтесь!</string>
     <string name="crdroid_telegram_channel_title">Канал обновлений</string>
     <string name="crdroid_telegram_channel_summary">Получать уведомления о новых сборках в Telegram</string>
@@ -76,10 +79,10 @@
     <string name="crdroid_translate_title">Переводы</string>
     <string name="crdroid_translate_summary">Помогите перевести прошивку на ваш язык!</string>
     <string name="crdroid_sponsor_summary">Посетите нашего партнёра по размещению веб-сайтов</string>
-    <!-- Donate crDroid -->
+    <!-- Donate riceDroid -->
     <string name="donate_crdroid_title">Поддержать нас</string>
     <string name="donate_crdroid_summary">Пожертвуйте для поддержки дальнейшего развития</string>
-    <string name="donate_team_title">Команда crDroid</string>
+    <string name="donate_team_title">Команда riceDroid</string>
     <string name="donate_team_summary">Пожертвовать на поддержку хостинга, сайта и общие задачи</string>
     <!-- The Drill -->
     <string name="drill_title">Послание от разработчиков</string>
@@ -232,6 +235,8 @@
     <!-- UI settings -->
     <string name="monet_title">Настройки Monet</string>
     <string name="monet_summary">Настройки движка Monet темы</string>
+    <string name="ui_theme_engine_title">Стиль</string>
+    <string name="ui_theme_engine_summary">Настройте наборы иконков, темы и другое</string>
     <!-- Monet Engine -->
     <string name="monet_engine_custom_color_title">Использовать собственный цвет</string>
     <string name="monet_engine_custom_color_summary">Использовать собственные цвета для движка Monet вместо цветов обоев</string>
@@ -307,6 +312,8 @@
     <string name="lockscreen_doubletap_sleep_title">Двойное нажатие для сна</string>
     <string name="lockscreen_doubletap_sleep_summary">Двойное нажатие по экрану блокировки переводит устройство в спящий режим</string>
     <!-- Font style / Icon pack -->
+    <string name="theme_customization_clock_font_title">Стиль шрифта часов</string>
+    <string name="theme_customization_clock_font_summary">Установить стиль шрифта часов</string>
     <string name="theme_customization_font_title">Стиль шрифта</string>
     <string name="theme_customization_font_summary">Установить стиль шрифта системы</string>
     <string name="theme_customization_icon_pack_title">Набор иконок</string>
@@ -368,6 +375,8 @@
     <string name="status_bar_battery_style_icon_landscape">Горизонтальная иконка (Влево)</string>
     <string name="status_bar_battery_style_circle">Круг</string>
     <string name="status_bar_battery_style_dotted_circle">Пунктирный круг</string>
+    <string name="status_bar_battery_style_big_circle">Большой круг</string>
+    <string name="status_bar_battery_style_big_dotted_circle">Большой пунктирный круг</string>
     <string name="status_bar_battery_style_filled_circle">Заполненный круг</string>
     <string name="status_bar_battery_style_text">Текст</string>
     <string name="status_bar_battery_style_hidden">Скрытый</string>
@@ -378,6 +387,15 @@
     <string name="status_bar_battery_percent_text_next_left">Рядом со значком (слева)</string>
     <string name="status_bar_battery_text_charging_title">Процент заряда батареи при зарядке</string>
     <string name="status_bar_battery_text_charging_summary">Всегда показывать проценты заряда батареи при зарядке</string>
+    <string name="status_bar_battery_style_icon_rlandscape_style_a">Горизонтальный R вариант A</string>
+    <string name="status_bar_battery_style_icon_landscape_style_a">Горизонтальный L вариант A</string>
+    <string name="status_bar_battery_style_icon_rlandscape_style_b">Горизонтальный R вариант B</string>
+    <string name="status_bar_battery_style_icon_landscape_style_b">Горизонтальный L вариант B</string>
+    <string name="status_bar_battery_style_icon_landscape_pill">Вертикальный Mx</string>
+    <string name="status_bar_battery_style_icon_landscape_line">Горизонтальный Lorn</string>
+    <string name="status_bar_battery_style_icon_landscape_musku">Вертикальный IOS</string>
+    <string name="status_bar_battery_style_icon_landscape_signal">Горизонтальный Airoo</string>
+    <string name="status_bar_battery_style_icon_landscape_buddy">Горизонтальная капусла</string>
     <!-- Status bar - Battery Bar -->
     <string name="battery_bar_title">Полоса батареи</string>
     <string name="battery_bar_summary">Отображение и настройка полосы батареи над строке состония</string>
@@ -425,7 +443,6 @@
     <string name="network_traffic_mode_down">Только загрузка</string>
     <string name="network_traffic_mode_all">Загрузить и скачать</string>
     <string name="network_traffic_autohide">Автоскрытие</string>
-    <string name="network_traffic_autohide_summary">Скрыть монитор трафика, когда сеть неактивена</string>
     <string name="network_traffic_autohide_kilobits">Кб/с</string>
     <string name="network_traffic_autohide_kilobytes">КБ/с</string>
     <string name="network_traffic_autohide_threshold">Порог неактивности</string>
@@ -547,8 +564,8 @@
     <string name="qs_footer_show_power_menu_title">Содержание меню кнопки питания</string>
     <string name="qs_footer_services_icon_title">Значок работающих приложений</string>
     <string name="qs_footer_settings_icon_title">Значок настроек</string>
-    <!-- Device Info screen. crDroid legal. -->
-    <string name="crdroid_license_title">О crDroid</string>
+    <!-- Device Info screen. riceDroid legal. -->
+    <string name="crdroid_license_title">О riceDroid</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">Ползунок яркости</string>
     <string name="qs_show_brightness_slider_never">Не показывать</string>
@@ -989,4 +1006,86 @@
     <!-- Parallel space -->
     <string name="laboratory_parallel_space_title">Параллельное пространство</string>
     <string name="laboratory_parallel_space_summary">Позволяет параллельно запускать несколько экземпляров одного и того же приложения</string>
+    <!-- Volume Media Output Toggle -->
+    <string name="volume_media_output_toggle_title">Вывод аудио</string>
+    <string name="volume_media_output_toggle_summary">Показать переключатель вывода аудио, когда есть активный поток</string>
+    <!-- QS Weather Options -->
+    <string name="qs_weather_title">Погода в быстрых настройках</string>
+    <string name="qs_weather_summary">Отображение и настройка погоды</string>
+    <string name="qs_weather_dialog_title">Погода в быстрых настройках</string>
+    <string name="qsweather_dialog_title">Расположение погоды в быстрых настройках</string>
+    <string name="qs_weather_hidden">Скрыть погоду</string>
+    <string name="qs_temperature_image_show_scale">Показывать температуру с единицами измерения и изображением</string>
+    <string name="qs_temperature_image_hide_scale">Показывать температуру с изображением без единиц измерения</string>
+    <string name="qs_temperature_show_scale_hide_image">Показывать температуру с единицами измерения</string>
+    <string name="qs_temperature_hide_scale_hide_image">Показывать температуру без единиц измерения</string>
+    <string name="qs_show_image">Показывать изображение</string>
+    <string name="weather_show_all_condition">Показывать температуру с изображением и состоянием погоды</string>
+    <string name="qsweather_position_qqs">Быстрые настройки</string>
+    <string name="qsweather_position_qsb">Статусбар</string>
+    <string name="qsweather_position_both">Оба</string>
+    <string name="launcher_weather_title">Погода на домашнем экране</string>
+    <string name="kg_weather_title">Погода на экране блокировки</string>
+
+    <!-- Omni weather -->
+    <string name="qs_weather_settings_title">Служба погоды</string>
+    <string name="qs_weather_settings_summary">Настройка параметров службы и внешнего вида</string>
+    <string name="weather_title">Настройки погоды</string>
+    <string name="weather_config_title">Настройки службы</string>
+    <string name="weather_config_summary">Настройка службы для включения подробностей о погоде</string>
+    <string name="weather_icon_pack_title">Набор иконок погоды</string>
+    <string name="weather_icon_pack_note">Заметка\u003a Вы можете установить новые наборы значков из Play Store введя в поиске \"Chronus icons\"</string>
+    <string name="weather_icon_pack_info_title">Заметка\u003a \n\n1. Вы можете установить новые наборы значков из Play Store введя в поиске \"Chronus icons\".\n\n2. Наборы значков используются для отображения погоды в быстрых настройках и домашнем экране.\n\n3. Долгое нажатие по погоде в быстрых настройках вызывает настройки погоды.</string>
+    <!-- Scarlet Idle -->
+    <string name="scarlet_idle_assistant_manager">Менеджер простоя Scarlet</string>
+    <string name="scarlet_idle_assistant_manager_summary">Оптимизируйте потребление энергии и производительность устройства в простое</string>
+    <!-- Quick settings styles -->
+    <string name="qs_styles_title">Стиль быстрых настроек</string>
+    <string name="qs_outline">Обводка</string>
+    <string name="qs_two_tone">Двухцветный</string>
+    <string name="qs_color_pop">Дискотека</string>
+
+    <!-- Volume Styles -->
+    <string name="rui_style">Realme UI</string>
+    <string name="rice_style">Rice</string>
+    <string name="volume_style_title">Стиль панели громкости</string>
+
+   <!-- Custom settings dashboard style -->
+    <string name="settings_dashboard_style_title">Стиль настроек</string>
+    <string name="settings_dashboard_style_oos">Sushi(OOS 11)</string>
+    <string name="settings_dashboard_style_rui">Oxygen/ColorOS</string>
+    <string name="settings_dashboard_style_arc">Arcane</string>
+    <string name="settings_dashboard_style_aosp">Стоковый Pixel</string>
+    <string name="settings_dashboard_style_mt">Google Material You</string>
+    <string name="settings_dashboard_style_card">Ayan\'s card ui</string>
+    <string name="settings_home_style_title">Стиль панели поиска</string>
+    <string name="settings_home_style_summary">Использовать стиль поиска AOSP</string>
+    <string name="settings_user_card_title">Скрыть информацию о пользователе</string>
+    <string name="settings_user_card_summary">Скрывает дополнительную информацию о пользовател под панелью поиска</string>
+    <string name="about_card_style_title">Стиль панли об устройств</string>
+    <string name="about_card_style_banner_one">Обои по центру</string>
+    <string name="about_card_style_banner_one_high">Обои по центру(Большой размер)</string>
+
+    <!-- Lockscreen Clock -->
+    <string name="kg_custom_clock_color_enabled_title">Цвет часов на экране блокировки</string>
+    <string name="kg_custom_clock_color_title">Цвет часов</string>
+    <string name="kg_custom_clock_top_margin_title">Нижний отступ часов</string>
+    <string name="kg_big_clock_text_size_title">Размер больших часов</string>
+
+    <!-- Media artwork -->
+    <string name="artwork_media_background_enable_blur_title">Размытие обложки альбома</string>
+    <string name="artwork_media_background_blur_radius_title">Степень размытия</string>
+    <string name="lockscreen_albumart_filter_blur_radius_title">Степень размытия обложки альбома на экране блокировки</string>
+
+    <!-- IME button space -->
+    <string name="navigation_bar_ime_space_title">Скрыть область кнопки ввода</string>
+    <string name="navigation_bar_ime_space_summary">Скрывает область кнопки ввода под клавиатурой</string>
+
+    <!-- Network traffic -->
+    <string name="network_traffic_title">Индикатор сетевого трафика</string>
+    <string name="network_traffic_summary">Отображать текущую скорость соединения в строке состояния</string>
+    <string name="network_traffic_master_switch_title">Использовать индикатор сетевого трафика</string>
+    <string name="network_options_title">Настройки</string>
+    <string name="network_traffic_autohide_title">Скрывать индикатор сетевого трафика, когда сеть неактивна</string>
+    <string name="network_traffic_autohide_summary">Скрывать индикатор сетевого трафика, когда активность сети ниже 1 кБ/с</string>
 </resources>
