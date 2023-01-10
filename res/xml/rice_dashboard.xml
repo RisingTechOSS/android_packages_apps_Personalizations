@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+     
+     Copyright (C) 2022 Android Open Source Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<PreferenceScreen 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title="@string/crdroid_settings_title" >
+            
+       <com.android.settingslib.widget.TopIntroPreference
+            android:key="rice_illustration_desc"
+            android:order="-999"
+            android:title="@string/rice_illustration_summary"/>
+            
+        <com.android.settingslib.widget.IllustrationPreference
+            android:key="rice_illustration"
+            android:order="-998"
+            app:lottie_rawRes="@raw/rice"/>
+            
+        <!-- About -->
+        <Preference
+            android:icon="@drawable/ic_settings_about"
+            settings:layout="@layout/arc_card_about"
+            android:title="@string/about_crdroid"
+            android:fragment="com.crdroid.settings.fragments.About" />
+
+      <!-- Buttons -->
+        <Preference
+            android:icon="@drawable/ic_settings_cogs"
+            settings:layout="@layout/arc_card_about"
+            android:title="@string/button_title"
+            android:fragment="com.crdroid.settings.fragments.Buttons" />
+
+      <!-- Lockscreen -->
+        <Preference
+            android:icon="@drawable/ic_settings_lockscreens"
+            settings:layout="@layout/arc_card_about"
+            android:title="@string/lockscreen_title"
+            android:fragment="com.crdroid.settings.fragments.LockScreen" />
+            
+        <!-- Misc -->
+        <Preference
+            android:icon="@drawable/ic_settings_miscs"
+            settings:layout="@layout/arc_card_about"
+            android:title="@string/misc_title"
+            android:fragment="com.crdroid.settings.fragments.Miscellaneous" />
+
+        <!-- Navigation -->
+        <Preference
+            android:icon="@drawable/ic_settings_notifications"
+            settings:layout="@layout/arc_card_about"
+            android:title="@string/navigation_title"
+            android:fragment="com.crdroid.settings.fragments.Navigation" />
+
+        <!-- Notifications -->
+        <Preference
+            android:icon="@drawable/ic_settings_notifications"
+            settings:layout="@layout/arc_card_about"
+            android:title="@string/notifications_title"
+            android:fragment="com.crdroid.settings.fragments.Notifications" />
+
+        <!-- QuickSettings -->
+        <Preference
+            android:icon="@drawable/ic_settings_quicksettings"
+            settings:layout="@layout/arc_card_about"
+            android:title="@string/quicksettings_title"
+            android:fragment="com.crdroid.settings.fragments.QuickSettings" />
+
+        <!-- Sound -->
+        <Preference
+            android:icon="@drawable/ic_cellphone_sound"
+            settings:layout="@layout/arc_card_about"
+            android:title="@string/sound_title"
+            android:fragment="com.crdroid.settings.fragments.Sound" />    
+
+        <!-- Statusbar -->
+        <Preference
+            android:icon="@drawable/ic_settings_statusbar"
+            settings:layout="@layout/arc_card_about"
+            android:title="@string/statusbar_title"
+            android:fragment="com.crdroid.settings.fragments.Statusbar" />   
+ 
+        <!-- UserInterface -->
+        <Preference
+            android:icon="@drawable/ic_color_bucket"
+            settings:layout="@layout/arc_card_about"
+            android:title="@string/ui_title"
+            android:fragment="com.crdroid.settings.fragments.UserInterface" />
+
+</PreferenceScreen> 
