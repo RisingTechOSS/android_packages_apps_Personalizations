@@ -1205,9 +1205,26 @@
     <string name="qsweather_settings_title">QuickSettings Weather</string>
     <string name="qsweather_settings_summary">Setup quicksettings weather views</string>
 
-    <!-- Scarlet Idle -->
-    <string name="scarlet_idle_assistant_manager">Scarlet Idle Manager</string>
-    <string name="scarlet_idle_assistant_manager_summary">Optimize device power consumption and performance while device is idle</string>
+    <!-- Scarlet Manager -->
+    <string name="scarlet_system_manager_title">Scarlet system manager</string>
+    <string name="scarlet_system_manager_summary">Optimize device power consumption and performance while device is idle</string>
+    <string name="scarlet_system_boost_title">Scarlet system boost</string>
+    <string name="scarlet_system_boost_summary">Boost system resource for fluid experience</string>
+    <string name="scarlet_aggressive_idle_mode_title">Scarlet aggressive idle mode</string>
+    <string name="scarlet_aggressive_idle_mode_summary">Enable aggressive idle mode features</string>
+    <string name="scarlet_aggressive_idle_mode_ringer_title">Screen off ringer mode</string>
+    <string name="scarlet_aggressive_idle_mode_ringer_off_title">Do not change</string>
+    <string name="scarlet_aggressive_idle_mode_ringer_vibrate_title">Vibrate</string>
+    <string name="scarlet_aggressive_idle_mode_ringer_dnd_title">Do Not Disturb</string>
+    <string name="scarlet_aggressive_idle_mode_ringer_silent_title">Silent</string>
+    <string name="scarlet_aggressive_idle_mode_wifi_toggle_title">Turn off Wi-Fi</string>
+    <string name="scarlet_aggressive_idle_mode_wifi_toggle_summary">Disable Wi-Fi on screen off when Scarlet aggressive idle mode is enabled</string>
+    <string name="scarlet_aggressive_idle_mode_bluetooth_toggle_title">Turn off Bluetooth</string>
+    <string name="scarlet_aggressive_idle_mode_bluetooth_toggle_summary">Disable Bluetooth on screen off when Scarlet aggressive idle mode is enabled</string>
+    <string name="scarlet_aggressive_idle_mode_cellular_toggle_title">Turn off Mobile data</string>
+    <string name="scarlet_aggressive_idle_mode_cellular_toggle_summary">Disable Mobile data on screen off when Scarlet aggressive idle mode is enabled</string>
+    <string name="scarlet_aggressive_idle_mode_location_toggle_title">Turn off Location</string>
+    <string name="scarlet_aggressive_idle_mode_location_toggle_summary">Disable Location on screen off when Scarlet aggressive idle mode is enabled</string>
 
     <!-- Quick settings styles -->
     <string name="qs_styles_title">QS Panel Styles</string>
