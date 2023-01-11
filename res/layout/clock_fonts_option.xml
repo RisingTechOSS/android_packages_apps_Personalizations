@@ -31,9 +31,11 @@
         android:paddingVertical="10dp"
         android:background="@drawable/option_border_custom">
 
-        <TextView android:id="@+id/option_title"
+        <TextClock android:id="@+id/option_title"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:format12Hour="hh\nmm"
+            android:format24Hour="kk\nmm"
             android:fontFamily="@*android:string/config_clockFontFamily"
             android:gravity="center"
             android:textAppearance="@style/OptionTitleTextAppearance"/>

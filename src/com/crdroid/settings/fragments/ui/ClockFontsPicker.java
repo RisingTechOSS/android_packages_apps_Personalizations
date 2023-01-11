@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2022 crDroid Android Project
- * 		 2022 riceDroid Android Project
+ * 		         2022 riceDroid Android Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -139,7 +139,6 @@ public class ClockFontsPicker extends SettingsPreferenceFragment {
 
             holder.name.setVisibility(View.VISIBLE);
             holder.name.setText("android".equals(pkg) ? "Default" : label);
-            holder.title.setText(R.string.clock_format);
             holder.title.setTypeface(Typeface.create("android".equals(pkg) ? "sans-serif" : label.toLowerCase().replaceAll(" ",""), Typeface.NORMAL));
             holder.title.setTextSize(32);
 
