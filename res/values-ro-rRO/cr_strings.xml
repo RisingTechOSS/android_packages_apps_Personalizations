@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">Setări crDroid</string>
+    <string name="crdroid_settings_title">Setări riceDroid</string>
     <string name="crdroid_settings_summary">Unde se intampla magia</string>
     <string name="reset_settings_title">Resetare setări</string>
     <string name="reset_settings_message">Aceasta va reseta cele mai multe setări crdroid la valorile lor implicite pentru utilizatorul curent. Doriți să continuați?</string>
@@ -56,18 +56,18 @@
     <string name="changelog_crdroid_title">Jurnal modificări curente</string>
     <string name="changelog_crdroid_summary">Vezi modificările în ROM instalat</string>
     <string name="changelog_crdroid_error">Imposibil de încărcat jurnalul modificărilor</string>
-    <!-- About crDroid -->
-    <string name="about_crdroid">Despre crDroid</string>
+    <!-- About riceDroid -->
+    <string name="about_crdroid">Despre riceDroid</string>
     <string name="about_device_name">Dispozitiv</string>
-    <!-- Share crDroid -->
-    <string name="share_crdroid_title">Distribuie crDroid</string>
-    <string name="share_crdroid_summary">Anunta-i si pe altii despre crDroid</string>
-    <string name="share_message">Verifică dacă #crDroidAndroid este disponibil pentru dispozitivul tău @ https://crdroid.net/</string>
-    <string name="share_chooser_title">Distribuie crDroid</string>
-    <!-- Sites crDroid -->
+    <!-- Share riceDroid -->
+    <string name="share_crdroid_title">Distribuie riceDroid</string>
+    <string name="share_crdroid_summary">Anunta-i si pe altii despre riceDroid</string>
+    <string name="share_message">Verifică dacă #riceDroidAndroid este disponibil pentru dispozitivul tău @ https://ricedroidoss.github.io/</string>
+    <string name="share_chooser_title">Distribuie riceDroid</string>
+    <!-- Sites riceDroid -->
     <string name="crdroid_source_title">GitHub</string>
     <string name="crdroid_source_summary">Ne plac sursele deschise, vezi mai mulle</string>
-    <string name="crdroid_telegram_title">Comunitatea crDroid</string>
+    <string name="crdroid_telegram_title">Comunitatea riceDroid</string>
     <string name="crdroid_telegram_summary">Suntem pe Telegram. Vino alături de noi!</string>
     <string name="crdroid_telegram_channel_title">Canal actualizări</string>
     <string name="crdroid_telegram_channel_summary">Primește notificări despre noile creații pe Telegram</string>
@@ -76,10 +76,10 @@
     <string name="crdroid_translate_title">Traduceri</string>
     <string name="crdroid_translate_summary">Ajută la localizarea ROM-ului în limba ta!</string>
     <string name="crdroid_sponsor_summary">Vizitați partenerul nostru gazdă</string>
-    <!-- Donate crDroid -->
+    <!-- Donate riceDroid -->
     <string name="donate_crdroid_title">Susține-ne</string>
     <string name="donate_crdroid_summary">Donează pentru a sprijini dezvoltarea ulterioară</string>
-    <string name="donate_team_title">Echipa crDroid</string>
+    <string name="donate_team_title">Echipa riceDroid</string>
     <string name="donate_team_summary">Donați pentru a sprijini serverul de găzduire, site-ul uptime și managementul general</string>
     <!-- The Drill -->
     <string name="drill_title">Exercițiul</string>
@@ -546,8 +546,8 @@
     <string name="qs_footer_show_power_menu_title">Scurtătură meniu pornire</string>
     <string name="qs_footer_services_icon_title">Scurtătură servicii rulante</string>
     <string name="qs_footer_settings_icon_title">Scurtătură setări</string>
-    <!-- Device Info screen. crDroid legal. -->
-    <string name="crdroid_license_title">Legal crDroid</string>
+    <!-- Device Info screen. riceDroid legal. -->
+    <string name="crdroid_license_title">Legal riceDroid</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">Cursor luminozitate</string>
     <string name="qs_show_brightness_slider_never">Nu arăta niciodată</string>

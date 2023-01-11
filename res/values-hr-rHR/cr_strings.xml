@@ -16,10 +16,10 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">crDroid postavke</string>
+    <string name="crdroid_settings_title">riceDroid postavke</string>
     <string name="crdroid_settings_summary">Otvorite mrak opcije</string>
     <string name="reset_settings_title">Vraćanje postavki</string>
-    <string name="reset_settings_message">Ovo će vratiti većinu crDroid postavki na njihove zadane vrijednosti za trenutnog korisnika. Želite li nastaviti?</string>
+    <string name="reset_settings_message">Ovo će vratiti većinu riceDroid postavki na njihove zadane vrijednosti za trenutnog korisnika. Želite li nastaviti?</string>
     <!-- Personalization Categories -->
     <string name="button_title">Tipke</string>
     <string name="lockscreen_title">Zaklj. zaslon</string>
@@ -56,18 +56,18 @@
     <string name="changelog_crdroid_title">Trenutni dnevnik promjena</string>
     <string name="changelog_crdroid_summary">Pogledajte promjene u instaliranom ROM-u</string>
     <string name="changelog_crdroid_error">Nije moguće učitati popis promjena</string>
-    <!-- About crDroid -->
-    <string name="about_crdroid">O crDroid</string>
+    <!-- About riceDroid -->
+    <string name="about_crdroid">O riceDroid</string>
     <string name="about_device_name">Uređaj</string>
-    <!-- Share crDroid -->
-    <string name="share_crdroid_title">Podijeli crDroid</string>
-    <string name="share_crdroid_summary">Obavijestite druge o crDroidu</string>
-    <string name="share_message">Provjerite je li #crDroidAndroid dostupan za vaš uređaj na https://crdroid.net/</string>
-    <string name="share_chooser_title">Podijelite crDroid</string>
-    <!-- Sites crDroid -->
+    <!-- Share riceDroid -->
+    <string name="share_crdroid_title">Podijeli riceDroid</string>
+    <string name="share_crdroid_summary">Obavijestite druge o riceDroidu</string>
+    <string name="share_message">Provjerite je li #riceDroidAndroid dostupan za vaš uređaj na https://ricedroidoss.github.io/</string>
+    <string name="share_chooser_title">Podijelite riceDroid</string>
+    <!-- Sites riceDroid -->
     <string name="crdroid_source_title">GitHub</string>
     <string name="crdroid_source_summary">Volimo open source, provjerite nas</string>
-    <string name="crdroid_telegram_title">crDroid zajednica</string>
+    <string name="crdroid_telegram_title">riceDroid zajednica</string>
     <string name="crdroid_telegram_summary">Na telegramu smo. Pridruži nam se!</string>
     <string name="crdroid_telegram_channel_title">Kanal ažuriranja</string>
     <string name="crdroid_telegram_channel_summary">Primajte obavijesti o novim verzijama na Telegramu</string>
@@ -76,10 +76,10 @@
     <string name="crdroid_translate_title">Prijevod</string>
     <string name="crdroid_translate_summary">Pomozite s lokalizacijom ROM-a na vaš jezik!</string>
     <string name="crdroid_sponsor_summary">Posjetite našeg partnera za hosting web stranice</string>
-    <!-- Donate crDroid -->
+    <!-- Donate riceDroid -->
     <string name="donate_crdroid_title">Podržite nas</string>
     <string name="donate_crdroid_summary">Donirajte za podršku daljnjem razvoju</string>
-    <string name="donate_team_title">Tim crDroid</string>
+    <string name="donate_team_title">Tim riceDroid</string>
     <string name="donate_team_summary">Donirajte za podršku hostingu poslužitelja, neprekidnom radu web mjesta i cjelokupnom upravljanju</string>
     <!-- The Drill -->
     <string name="drill_title">Poruka od programera</string>
@@ -546,8 +546,8 @@
     <string name="qs_footer_show_power_menu_title">Prečac izbornika napajanja</string>
     <string name="qs_footer_services_icon_title">Prečac za pokretanje servisa</string>
     <string name="qs_footer_settings_icon_title">Prečac postavki</string>
-    <!-- Device Info screen. crDroid legal. -->
-    <string name="crdroid_license_title">crDroid legal</string>
+    <!-- Device Info screen. riceDroid legal. -->
+    <string name="crdroid_license_title">riceDroid legal</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">Klizač osvjetljenja zaslona</string>
     <string name="qs_show_brightness_slider_never">Nikad ne prikazuj</string>

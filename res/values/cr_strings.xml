@@ -119,7 +119,7 @@
     <string name="share_message">Check out if #riceDroid is available for your device @ http://ricedroidoss.github.io/</string>
     <string name="share_chooser_title">Share riceDroid</string>
 
-    <!-- Sites crDroid -->
+    <!-- Sites riceDroid -->
     <string name="crdroid_source_title">GitHub</string>
     <string name="crdroid_source_summary">We love open source, check us out</string>
     <string name="crdroid_telegram_title">riceDroid community</string>

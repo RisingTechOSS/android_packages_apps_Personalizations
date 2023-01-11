@@ -16,10 +16,10 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">Ajustes de crDroid</string>
+    <string name="crdroid_settings_title">Ajustes de riceDroid</string>
     <string name="crdroid_settings_summary">Abre lo bueno</string>
     <string name="reset_settings_title">Restablecer ajustes</string>
-    <string name="reset_settings_message">Esto restablecerá la mayor parte de la configuración de crDroid a sus valores predeterminados para el usuario actual. ¿Deseas continuar?</string>
+    <string name="reset_settings_message">Esto restablecerá la mayor parte de la configuración de riceDroid a sus valores predeterminados para el usuario actual. ¿Deseas continuar?</string>
     <!-- Personalization Categories -->
     <string name="button_title">Botones</string>
     <string name="lockscreen_title">Pantalla de bloqueo</string>
@@ -56,18 +56,18 @@
     <string name="changelog_crdroid_title">Registro de cambios</string>
     <string name="changelog_crdroid_summary">Ver los cambios en la ROM instalada</string>
     <string name="changelog_crdroid_error">No se ha podido cargar el registro de cambios</string>
-    <!-- About crDroid -->
-    <string name="about_crdroid">Acerca de crDroid</string>
+    <!-- About riceDroid -->
+    <string name="about_crdroid">Acerca de riceDroid</string>
     <string name="about_device_name">Dispositivo</string>
-    <!-- Share crDroid -->
-    <string name="share_crdroid_title">Compartir crDroid</string>
-    <string name="share_crdroid_summary">Haz saber a los demás qué es crDroid</string>
-    <string name="share_message">Echa un vistazo si #crDroidAndroid está disponible para tu dispositivo @ https://crdroid.net/</string>
-    <string name="share_chooser_title">Compartir crDroid</string>
-    <!-- Sites crDroid -->
+    <!-- Share riceDroid -->
+    <string name="share_crdroid_title">Compartir riceDroid</string>
+    <string name="share_crdroid_summary">Haz saber a los demás qué es riceDroid</string>
+    <string name="share_message">Echa un vistazo si #riceDroidAndroid está disponible para tu dispositivo @ https://ricedroidoss.github.io/</string>
+    <string name="share_chooser_title">Compartir riceDroid</string>
+    <!-- Sites riceDroid -->
     <string name="crdroid_source_title">GitHub</string>
     <string name="crdroid_source_summary">Nos encanta el código abierto, échanos un vistazo</string>
-    <string name="crdroid_telegram_title">comunidad de crDroid</string>
+    <string name="crdroid_telegram_title">comunidad de riceDroid</string>
     <string name="crdroid_telegram_summary">Estamos en telegrama. ¡Únete!</string>
     <string name="crdroid_telegram_channel_title">Canal de actualización</string>
     <string name="crdroid_telegram_channel_summary">Recibe notificaciones de nuevas versiones en Telegram</string>
@@ -76,10 +76,10 @@
     <string name="crdroid_translate_title">Traducciones</string>
     <string name="crdroid_translate_summary">¡Ayuda con la traducción de la ROM en tu idioma!</string>
     <string name="crdroid_sponsor_summary">Visita a nuestro socio de alojamiento web</string>
-    <!-- Donate crDroid -->
+    <!-- Donate riceDroid -->
     <string name="donate_crdroid_title">Apóyanos</string>
     <string name="donate_crdroid_summary">Donar para apoyar un mejor desarrollo</string>
-    <string name="donate_team_title">equipo crDroid</string>
+    <string name="donate_team_title">equipo riceDroid</string>
     <string name="donate_team_summary">Haz una donación para apoyar el alojamiento del servidor, el tiempo de actividad del sitio y la administración general</string>
     <!-- The Drill -->
     <string name="drill_title">El taladro</string>
@@ -546,8 +546,8 @@ Mantén presionado para establecer</string>
     <string name="qs_footer_show_power_menu_title">Acceso directo al menú de apagado</string>
     <string name="qs_footer_services_icon_title">Acceso directo a servicios en ejecución</string>
     <string name="qs_footer_settings_icon_title">Acceso directo a ajustes</string>
-    <!-- Device Info screen. crDroid legal. -->
-    <string name="crdroid_license_title">Equipo legal de crDroid</string>
+    <!-- Device Info screen. riceDroid legal. -->
+    <string name="crdroid_license_title">Equipo legal de riceDroid</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">Barra de brillo</string>
     <string name="qs_show_brightness_slider_never">No mostrar nunca</string>

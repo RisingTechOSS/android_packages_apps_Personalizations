@@ -16,10 +16,10 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">Configurações crDroid</string>
+    <string name="crdroid_settings_title">Configurações riceDroid</string>
     <string name="crdroid_settings_summary">O melhor está aqui</string>
     <string name="reset_settings_title">Redefinir configurações</string>
-    <string name="reset_settings_message">Isso vai redefinir as alterações feitas nas configurações crDroid. Gostaria de continuar?</string>
+    <string name="reset_settings_message">Isso vai redefinir as alterações feitas nas configurações riceDroid. Gostaria de continuar?</string>
     <!-- Personalization Categories -->
     <string name="button_title">Botões</string>
     <string name="lockscreen_title">Tela de Bloqueio</string>
@@ -56,18 +56,18 @@
     <string name="changelog_crdroid_title">Registro das últimas alterações</string>
     <string name="changelog_crdroid_summary">Mostrar alterações da ROM instalada</string>
     <string name="changelog_crdroid_error">Não foi possível carregar o registro de mudanças</string>
-    <!-- About crDroid -->
-    <string name="about_crdroid">Sobre crDroid</string>
+    <!-- About riceDroid -->
+    <string name="about_crdroid">Sobre riceDroid</string>
     <string name="about_device_name">Dispositivo</string>
-    <!-- Share crDroid -->
-    <string name="share_crdroid_title">Compartilhar crDroid</string>
-    <string name="share_crdroid_summary">Deixe que outros saibam sobre a crDroid</string>
-    <string name="share_message">Veja o que é o #crDroid Android @ https://crdroid.net/</string>
-    <string name="share_chooser_title">Compartilhar crDroid</string>
-    <!-- Sites crDroid -->
+    <!-- Share riceDroid -->
+    <string name="share_crdroid_title">Compartilhar riceDroid</string>
+    <string name="share_crdroid_summary">Deixe que outros saibam sobre a riceDroid</string>
+    <string name="share_message">Veja o que é o #riceDroid Android @ https://ricedroidoss.github.io/</string>
+    <string name="share_chooser_title">Compartilhar riceDroid</string>
+    <!-- Sites riceDroid -->
     <string name="crdroid_source_title">GitHub</string>
     <string name="crdroid_source_summary">Nós amamos o código aberto, confira</string>
-    <string name="crdroid_telegram_title">Comunidade crDroid</string>
+    <string name="crdroid_telegram_title">Comunidade riceDroid</string>
     <string name="crdroid_telegram_summary">Estamos no telegram. Junte-se a nós!</string>
     <string name="crdroid_telegram_channel_title">Canal de atualizações</string>
     <string name="crdroid_telegram_channel_summary">Seja notificado sobre novas compilações no Telegram</string>
@@ -76,10 +76,10 @@
     <string name="crdroid_translate_title">Traduções</string>
     <string name="crdroid_translate_summary">Ajude a traduzir a ROM para o seu idioma!</string>
     <string name="crdroid_sponsor_summary">Visite nosso parceiro de hospedagem de site</string>
-    <!-- Donate crDroid -->
+    <!-- Donate riceDroid -->
     <string name="donate_crdroid_title">Apoie-nos</string>
     <string name="donate_crdroid_summary">Doe para apoiar o desenvolvimento</string>
-    <string name="donate_team_title">Equipe crDroid</string>
+    <string name="donate_team_title">Equipe riceDroid</string>
     <string name="donate_team_summary">Contribua para manter o servidor de hospedagem, tempo de atividade e gerenciamento geral do site</string>
     <!-- The Drill -->
     <string name="drill_title">Diagnóstico</string>
@@ -545,8 +545,8 @@
     <string name="qs_footer_show_power_menu_title">Atalho do menu de energia</string>
     <string name="qs_footer_services_icon_title">Atalho de serviços em execução</string>
     <string name="qs_footer_settings_icon_title">Atalho de configurações</string>
-    <!-- Device Info screen. crDroid legal. -->
-    <string name="crdroid_license_title">crDroid é legal</string>
+    <!-- Device Info screen. riceDroid legal. -->
+    <string name="crdroid_license_title">riceDroid é legal</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">Controle deslizante de brilho</string>
     <string name="qs_show_brightness_slider_never">Nunca mostrar</string>

@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">настройки на crDroid</string>
+    <string name="crdroid_settings_title">настройки на riceDroid</string>
     <string name="crdroid_settings_summary">Отворени благини</string>
     <string name="reset_settings_title">Нулирай настройките</string>
     <string name="reset_settings_message">Това ще нулира повечето crdroid настройки до техните стойности по подразбиране за текущия потребител. Искате ли да продължите?</string>
@@ -56,18 +56,18 @@
     <string name="changelog_crdroid_title">Актуален списък с промени</string>
     <string name="changelog_crdroid_summary">Прегледай промените в инсталирания РОМ</string>
     <string name="changelog_crdroid_error">Не може да се зареди списъкът с промените</string>
-    <!-- About crDroid -->
-    <string name="about_crdroid">За crDroid</string>
+    <!-- About riceDroid -->
+    <string name="about_crdroid">За riceDroid</string>
     <string name="about_device_name">Устройство</string>
-    <!-- Share crDroid -->
-    <string name="share_crdroid_title">Сподели crDroid</string>
-    <string name="share_crdroid_summary">Уведомете други за crDroid</string>
-    <string name="share_message">Вижте дали #crDroidAndroid е достъпен за вашето устройство @ https://crdroid.net/</string>
-    <string name="share_chooser_title">Сподели crDroid</string>
-    <!-- Sites crDroid -->
+    <!-- Share riceDroid -->
+    <string name="share_crdroid_title">Сподели riceDroid</string>
+    <string name="share_crdroid_summary">Уведомете други за riceDroid</string>
+    <string name="share_message">Вижте дали #riceDroidAndroid е достъпен за вашето устройство @ https://ricedroidoss.github.io/</string>
+    <string name="share_chooser_title">Сподели riceDroid</string>
+    <!-- Sites riceDroid -->
     <string name="crdroid_source_title">ГитХъб/GitHub</string>
     <string name="crdroid_source_summary">Ние обичаме код с отворен източник, проверете ни</string>
-    <string name="crdroid_telegram_title">crDroid общност</string>
+    <string name="crdroid_telegram_title">riceDroid общност</string>
     <string name="crdroid_telegram_summary">Ние сме в telegram. Присъединете се към нас!</string>
     <string name="crdroid_telegram_channel_title">Канал за обновления</string>
     <string name="crdroid_telegram_channel_summary">Получавайте известия за нови компилации в Telegram</string>
@@ -76,10 +76,10 @@
     <string name="crdroid_translate_title">Преводи</string>
     <string name="crdroid_translate_summary">Помощ с локализиране на ROM на вашия език!</string>
     <string name="crdroid_sponsor_summary">Вижте нашият уебсайт, партньори</string>
-    <!-- Donate crDroid -->
+    <!-- Donate riceDroid -->
     <string name="donate_crdroid_title">Подкрепете ни</string>
     <string name="donate_crdroid_summary">Направете дарение, за да подкрепите разработването за напред</string>
-    <string name="donate_team_title">crDroid екип</string>
+    <string name="donate_team_title">riceDroid екип</string>
     <string name="donate_team_summary">Дарете в подкрепа на хостинг сървър, поддръжка на сайта и цялостното управление</string>
     <!-- The Drill -->
     <string name="drill_title">Бормашината</string>
@@ -545,8 +545,8 @@
     <string name="qs_footer_show_power_menu_title">Пряк път към менюто за захранване</string>
     <string name="qs_footer_services_icon_title">Пряк път за стартиране на услуги</string>
     <string name="qs_footer_settings_icon_title">Пряк път настройки</string>
-    <!-- Device Info screen. crDroid legal. -->
-    <string name="crdroid_license_title">crDroid лиценз</string>
+    <!-- Device Info screen. riceDroid legal. -->
+    <string name="crdroid_license_title">riceDroid лиценз</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">Плъзгач за яркост</string>
     <string name="qs_show_brightness_slider_never">Никога не показвай</string>

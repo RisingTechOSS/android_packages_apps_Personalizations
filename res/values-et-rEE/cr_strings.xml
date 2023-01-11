@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">crDroidi seaded</string>
+    <string name="crdroid_settings_title">riceDroidi seaded</string>
     <string name="crdroid_settings_summary">Ava hea kraam</string>
     <string name="reset_settings_title">Lähtesta seaded</string>
     <string name="reset_settings_message">See lähtestab valitud kasutaja jaoks enamus CrDroidi seaded vaikeväärtustele. Kas soovid jätkata?</string>
@@ -56,18 +56,18 @@
     <string name="changelog_crdroid_title">Praegune muudatuste logi</string>
     <string name="changelog_crdroid_summary">Vaata paigaldatud ROMi muudatusi</string>
     <string name="changelog_crdroid_error">Muudatuste logi ei saanud laadida</string>
-    <!-- About crDroid -->
-    <string name="about_crdroid">Info crDroidi kohta</string>
+    <!-- About riceDroid -->
+    <string name="about_crdroid">Info riceDroidi kohta</string>
     <string name="about_device_name">Seade</string>
-    <!-- Share crDroid -->
-    <string name="share_crdroid_title">Jaga crDroidi</string>
-    <string name="share_crdroid_summary">Anna teistele teada crDroidist</string>
-    <string name="share_message">Uuri kas #crDroidAndroid on saadaval sinu seadmele https://crdroid.net/</string>
-    <string name="share_chooser_title">Jaga crDroidi</string>
-    <!-- Sites crDroid -->
+    <!-- Share riceDroid -->
+    <string name="share_crdroid_title">Jaga riceDroidi</string>
+    <string name="share_crdroid_summary">Anna teistele teada riceDroidist</string>
+    <string name="share_message">Uuri kas #riceDroidAndroid on saadaval sinu seadmele https://ricedroidoss.github.io/</string>
+    <string name="share_chooser_title">Jaga riceDroidi</string>
+    <!-- Sites riceDroid -->
     <string name="crdroid_source_title">GitHub</string>
     <string name="crdroid_source_summary">Me armastame avatud tarkvara, tutvu meiega</string>
-    <string name="crdroid_telegram_title">crDroid kogukond</string>
+    <string name="crdroid_telegram_title">riceDroid kogukond</string>
     <string name="crdroid_telegram_summary">Liitu meie Telegrami kommuuniga!</string>
     <string name="crdroid_telegram_channel_title">Uuendustekanal</string>
     <string name="crdroid_telegram_channel_summary">Saa Telegramis uute versioonide teavitusi</string>
@@ -76,10 +76,10 @@
     <string name="crdroid_translate_title">Tõlked</string>
     <string name="crdroid_translate_summary">Aita ROM tõlkida oma emakeelde!</string>
     <string name="crdroid_sponsor_summary">Külasta meie veebisaidi hostpartnerit</string>
-    <!-- Donate crDroid -->
+    <!-- Donate riceDroid -->
     <string name="donate_crdroid_title">Toeta meid</string>
     <string name="donate_crdroid_summary">Anneta edasise arenduse toetamiseks</string>
-    <string name="donate_team_title">crDroidi meeskond</string>
+    <string name="donate_team_title">riceDroidi meeskond</string>
     <string name="donate_team_summary">Anneta, et toetada serveri majutust, veebilehe ülalpidamist ning üleüldist haldust</string>
     <!-- The Drill -->
     <string name="drill_title">Nagu ikka</string>
@@ -545,8 +545,8 @@
     <string name="qs_footer_show_power_menu_title">Toitemenüü otsetee</string>
     <string name="qs_footer_services_icon_title">Töötavate teenuste otsetee</string>
     <string name="qs_footer_settings_icon_title">Seadete otsetee</string>
-    <!-- Device Info screen. crDroid legal. -->
-    <string name="crdroid_license_title">crDroidi legaalne</string>
+    <!-- Device Info screen. riceDroid legal. -->
+    <string name="crdroid_license_title">riceDroidi legaalne</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">Heleduse liugur</string>
     <string name="qs_show_brightness_slider_never">Ära kuva kunagi</string>

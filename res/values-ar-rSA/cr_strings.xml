@@ -56,18 +56,18 @@
     <string name="changelog_crdroid_title">سجل التغييرات الحالي</string>
     <string name="changelog_crdroid_summary">عرض التغييرات في الروم المثبت</string>
     <string name="changelog_crdroid_error">غير قادر على تحميل سجل التغييرات</string>
-    <!-- About crDroid -->
-    <string name="about_crdroid">حول crDroid</string>
+    <!-- About riceDroid -->
+    <string name="about_crdroid">حول riceDroid</string>
     <string name="about_device_name">الجهاز</string>
-    <!-- Share crDroid -->
-    <string name="share_crdroid_title">مشاركة crDroid</string>
-    <string name="share_crdroid_summary">دع الآخرين يعرفون عن crDroid</string>
-    <string name="share_message">تحقق مما إذا كان #crDroidAndroid متوفر لجهازك @ https://crdroid.net/</string>
-    <string name="share_chooser_title">مشاركة crDroid</string>
-    <!-- Sites crDroid -->
+    <!-- Share riceDroid -->
+    <string name="share_crdroid_title">مشاركة riceDroid</string>
+    <string name="share_crdroid_summary">دع الآخرين يعرفون عن riceDroid</string>
+    <string name="share_message">تحقق مما إذا كان #riceDroidAndroid متوفر لجهازك @ https://ricedroidoss.github.io/</string>
+    <string name="share_chooser_title">مشاركة riceDroid</string>
+    <!-- Sites riceDroid -->
     <string name="crdroid_source_title">على موقع Github</string>
     <string name="crdroid_source_summary">نحن نحب المصدر المفتوح، تحقق منا</string>
-    <string name="crdroid_telegram_title">مجتمع crDroid</string>
+    <string name="crdroid_telegram_title">مجتمع riceDroid</string>
     <string name="crdroid_telegram_summary">نحن على تليجرام. انضم إلينا!</string>
     <string name="crdroid_telegram_channel_title">قناة التحديثات</string>
     <string name="crdroid_telegram_channel_summary">احصل على إشعارات بالتحديثات الجديدة على تيليجرام</string>
@@ -76,10 +76,10 @@
     <string name="crdroid_translate_title">الترجمة</string>
     <string name="crdroid_translate_summary">المساعدة في تعريب الروم بلغتك!</string>
     <string name="crdroid_sponsor_summary">قم بزيارة الشريك المضيف لموقعنا</string>
-    <!-- Donate crDroid -->
+    <!-- Donate riceDroid -->
     <string name="donate_crdroid_title">ادعمنا</string>
     <string name="donate_crdroid_summary">تبرع لدعم المزيد من التطوير</string>
-    <string name="donate_team_title">فريق crDroid</string>
+    <string name="donate_team_title">فريق riceDroid</string>
     <string name="donate_team_summary">التبرع لدعم استضافة الخوادم، وموقع العمل الإضافي والإدارة العامة</string>
     <!-- The Drill -->
     <string name="drill_title">الطريقة لابلاغ عن مشكلة</string>
@@ -549,8 +549,8 @@
     <string name="qs_footer_show_power_menu_title">اختصار قائمة التشغيل</string>
     <string name="qs_footer_services_icon_title">عرض رمز اختصار للخدمات قيد التشغيل</string>
     <string name="qs_footer_settings_icon_title">إختصار الإعدادات</string>
-    <!-- Device Info screen. crDroid legal. -->
-    <string name="crdroid_license_title">فريق crDroid</string>
+    <!-- Device Info screen. riceDroid legal. -->
+    <string name="crdroid_license_title">فريق riceDroid</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">شريط السطوع</string>
     <string name="qs_show_brightness_slider_never">لا تُظهر أبداً</string>

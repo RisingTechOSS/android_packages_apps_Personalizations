@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">Cài đặt crDroid</string>
+    <string name="crdroid_settings_title">Cài đặt riceDroid</string>
     <string name="crdroid_settings_summary">Khám phá tính năng hay nhất</string>
     <string name="reset_settings_title">Đặt lại cài đặt</string>
     <string name="reset_settings_message">Điều này sẽ đặt lại hầu hết crdroid thiết lập các giá trị mặc định cho người dùng hiện tại. Bạn có muốn tiếp tục không?</string>
@@ -56,18 +56,18 @@
     <string name="changelog_crdroid_title">Thay đổi hiện tại</string>
     <string name="changelog_crdroid_summary">Xem những thay đổi của bản ROM được cài đặt</string>
     <string name="changelog_crdroid_error">Không thể tải nhật ký thay đổi</string>
-    <!-- About crDroid -->
-    <string name="about_crdroid">Về crDroid</string>
+    <!-- About riceDroid -->
+    <string name="about_crdroid">Về riceDroid</string>
     <string name="about_device_name">Thiết bị</string>
-    <!-- Share crDroid -->
-    <string name="share_crdroid_title">Chia sẻ crDroid</string>
-    <string name="share_crdroid_summary">Cho những người khác biết về crDroid</string>
-    <string name="share_message">Kiểm tra nếu #crDroidAndroid khả dụng cho thiết bị của bạn @ https://crdroid.net/</string>
-    <string name="share_chooser_title">Chia sẻ crDroid</string>
-    <!-- Sites crDroid -->
+    <!-- Share riceDroid -->
+    <string name="share_crdroid_title">Chia sẻ riceDroid</string>
+    <string name="share_crdroid_summary">Cho những người khác biết về riceDroid</string>
+    <string name="share_message">Kiểm tra nếu #riceDroidAndroid khả dụng cho thiết bị của bạn @ https://ricedroidoss.github.io/</string>
+    <string name="share_chooser_title">Chia sẻ riceDroid</string>
+    <!-- Sites riceDroid -->
     <string name="crdroid_source_title">GitHub</string>
     <string name="crdroid_source_summary">Chúng tôi yêu nguồn mở, kiểm tra với chúng tôi</string>
-    <string name="crdroid_telegram_title">Cộng đồng crDroid</string>
+    <string name="crdroid_telegram_title">Cộng đồng riceDroid</string>
     <string name="crdroid_telegram_summary">Chúng tôi xài telegram. Tham gia với chúng tôi!</string>
     <string name="crdroid_telegram_channel_title">Kênh cập nhật</string>
     <string name="crdroid_telegram_channel_summary">Nhận thông báo về các bản dựng mới trên ứng dụng Telegram</string>
@@ -76,10 +76,10 @@
     <string name="crdroid_translate_title">Dịch thuật</string>
     <string name="crdroid_translate_summary">Giúp bản ROM phù hợp với ngôn ngữ của bạn!</string>
     <string name="crdroid_sponsor_summary">Ghé thăm đối tác lưu trữ trang web của chúng tôi</string>
-    <!-- Donate crDroid -->
+    <!-- Donate riceDroid -->
     <string name="donate_crdroid_title">Hỗ trợ chúng tôi</string>
     <string name="donate_crdroid_summary">Đóng góp để hỗ trợ phát triển hơn nữa</string>
-    <string name="donate_team_title">Đội ngũ crDroid</string>
+    <string name="donate_team_title">Đội ngũ riceDroid</string>
     <string name="donate_team_summary">Donate nhóm để hỗ trợ máy chủ lưu trữ, hoạt động trang web và quản lý tổng thể</string>
     <!-- The Drill -->
     <string name="drill_title">Luyện tập</string>
@@ -544,8 +544,8 @@
     <string name="qs_footer_show_power_menu_title">Lối tắt menu nguồn</string>
     <string name="qs_footer_services_icon_title">Lối tắt các dịch vụ đang chạy</string>
     <string name="qs_footer_settings_icon_title">Lối tắt cài đặt</string>
-    <!-- Device Info screen. crDroid legal. -->
-    <string name="crdroid_license_title">Giấy phép crDroid</string>
+    <!-- Device Info screen. riceDroid legal. -->
+    <string name="crdroid_license_title">Giấy phép riceDroid</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">Thanh điều chỉnh độ sáng</string>
     <string name="qs_show_brightness_slider_never">Không bao giờ hiển thị</string>

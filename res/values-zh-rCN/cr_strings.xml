@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">crDroid 设置</string>
+    <string name="crdroid_settings_title">riceDroid 设置</string>
     <string name="crdroid_settings_summary">个性化设置</string>
     <string name="reset_settings_title">重置设置</string>
     <string name="reset_settings_message">这将把大多数 crdroid 设置重置为当前用户的默认值。您要继续吗？</string>
@@ -56,18 +56,18 @@
     <string name="changelog_crdroid_title">最近更新日志</string>
     <string name="changelog_crdroid_summary">查看已安装 ROM 中的更改</string>
     <string name="changelog_crdroid_error">无法加载更新日志</string>
-    <!-- About crDroid -->
-    <string name="about_crdroid">关于 crDroid</string>
+    <!-- About riceDroid -->
+    <string name="about_crdroid">关于 riceDroid</string>
     <string name="about_device_name">设备</string>
-    <!-- Share crDroid -->
-    <string name="share_crdroid_title">分享 crDroid</string>
-    <string name="share_crdroid_summary">让更多人了解 crDroid</string>
-    <string name="share_message">查看 #crDroid Android 的全部内容 @ https://crdroid.net/</string>
-    <string name="share_chooser_title">分享 crDroid</string>
-    <!-- Sites crDroid -->
+    <!-- Share riceDroid -->
+    <string name="share_crdroid_title">分享 riceDroid</string>
+    <string name="share_crdroid_summary">让更多人了解 riceDroid</string>
+    <string name="share_message">查看 #riceDroid Android 的全部内容 @ https://ricedroidoss.github.io/</string>
+    <string name="share_chooser_title">分享 riceDroid</string>
+    <!-- Sites riceDroid -->
     <string name="crdroid_source_title">GitHub</string>
     <string name="crdroid_source_summary">我们热爱开源，来看看我们的代码吧。</string>
-    <string name="crdroid_telegram_title">crDroid 社区</string>
+    <string name="crdroid_telegram_title">riceDroid 社区</string>
     <string name="crdroid_telegram_summary">我们有 TG 群。加入我们！</string>
     <string name="crdroid_telegram_channel_title">更新频道</string>
     <string name="crdroid_telegram_channel_summary">在 Telegram 上获取更新通知</string>
@@ -76,10 +76,10 @@
     <string name="crdroid_translate_title">翻译</string>
     <string name="crdroid_translate_summary">帮助用您的语言本地化 ROM！</string>
     <string name="crdroid_sponsor_summary">访问我们的网站托管合作伙伴</string>
-    <!-- Donate crDroid -->
+    <!-- Donate riceDroid -->
     <string name="donate_crdroid_title">支持我们</string>
     <string name="donate_crdroid_summary">捐赠以支持开发</string>
-    <string name="donate_team_title">crDroid 团队</string>
+    <string name="donate_team_title">riceDroid 团队</string>
     <string name="donate_team_summary">捐赠支持服务器托管，网站正常运行时间和整体管理</string>
     <!-- The Drill -->
     <string name="drill_title">实锤</string>
@@ -544,8 +544,8 @@
     <string name="qs_footer_show_power_menu_title">电源菜单快捷方式</string>
     <string name="qs_footer_services_icon_title">运行中服务快捷方式</string>
     <string name="qs_footer_settings_icon_title">设置快捷方式</string>
-    <!-- Device Info screen. crDroid legal. -->
-    <string name="crdroid_license_title">crDroid 团队</string>
+    <!-- Device Info screen. riceDroid legal. -->
+    <string name="crdroid_license_title">riceDroid 团队</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">亮度滑块</string>
     <string name="qs_show_brightness_slider_never">从不显示</string>

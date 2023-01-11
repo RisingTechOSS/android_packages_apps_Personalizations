@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">Setelan crDroid</string>
+    <string name="crdroid_settings_title">Setelan riceDroid</string>
     <string name="crdroid_settings_summary">Kebaikan terbuka</string>
     <string name="reset_settings_title">Setel ulang pengaturan</string>
     <string name="reset_settings_message">Ini akan mengatur ulang sebagian besar pengaturan crdroid ke nilai default untuk pengguna saat ini. Apakah Anda ingin melanjutkan?</string>
@@ -56,18 +56,18 @@
     <string name="changelog_crdroid_title">Perubahan saat ini</string>
     <string name="changelog_crdroid_summary">Lihat perubahan pada ROM terpasang</string>
     <string name="changelog_crdroid_error">Tidak dapat memuat daftar perubahan</string>
-    <!-- About crDroid -->
-    <string name="about_crdroid">Tentang crDroid</string>
+    <!-- About riceDroid -->
+    <string name="about_crdroid">Tentang riceDroid</string>
     <string name="about_device_name">Perangkat</string>
-    <!-- Share crDroid -->
-    <string name="share_crdroid_title">Bagikan crDroid</string>
-    <string name="share_crdroid_summary">Biarkan orang lain tahu tentang crDroid</string>
-    <string name="share_message">Periksa apakah #crDroidAndroid tersedia untuk perangkat Anda @ https://crdroid.net/</string>
-    <string name="share_chooser_title">Bagikan crDroid</string>
-    <!-- Sites crDroid -->
+    <!-- Share riceDroid -->
+    <string name="share_crdroid_title">Bagikan riceDroid</string>
+    <string name="share_crdroid_summary">Biarkan orang lain tahu tentang riceDroid</string>
+    <string name="share_message">Periksa apakah #riceDroidAndroid tersedia untuk perangkat Anda @ https://ricedroidoss.github.io/</string>
+    <string name="share_chooser_title">Bagikan riceDroid</string>
+    <!-- Sites riceDroid -->
     <string name="crdroid_source_title">GitHub</string>
     <string name="crdroid_source_summary">Kami cinta open source, periksa kami</string>
-    <string name="crdroid_telegram_title">Komunitas crDroid</string>
+    <string name="crdroid_telegram_title">Komunitas riceDroid</string>
     <string name="crdroid_telegram_summary">Kami ada di Telegram. Ayo bergabung!</string>
     <string name="crdroid_telegram_channel_title">Saluran Pembaruan</string>
     <string name="crdroid_telegram_channel_summary">Dapatkan notifikasi tentang pembaruan baru dari Telegram</string>
@@ -76,10 +76,10 @@
     <string name="crdroid_translate_title">Terjemahan</string>
     <string name="crdroid_translate_summary">Bantu kami menerjemahkan ROM ini ke bahasa Anda!</string>
     <string name="crdroid_sponsor_summary">Kunjungi mitra host situs web kami</string>
-    <!-- Donate crDroid -->
+    <!-- Donate riceDroid -->
     <string name="donate_crdroid_title">Dukung Kami</string>
     <string name="donate_crdroid_summary">Donasi untuk mendukung pengembangan lebih lanjut</string>
-    <string name="donate_team_title">Tim crDroid</string>
+    <string name="donate_team_title">Tim riceDroid</string>
     <string name="donate_team_summary">Donasi untuk mendukung server hosting, keaktifan situs serta pemanajemenan secara keseluruhan</string>
     <!-- The Drill -->
     <string name="drill_title">The Drill</string>
@@ -544,8 +544,8 @@
     <string name="qs_footer_show_power_menu_title">Pintasan menu daya</string>
     <string name="qs_footer_services_icon_title">Pintasan Layanan Berjalan</string>
     <string name="qs_footer_settings_icon_title">Setelan pintasan</string>
-    <!-- Device Info screen. crDroid legal. -->
-    <string name="crdroid_license_title">Hukum crDroid</string>
+    <!-- Device Info screen. riceDroid legal. -->
+    <string name="crdroid_license_title">Hukum riceDroid</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">Slider kecerahan</string>
     <string name="qs_show_brightness_slider_never">Jangan tampilkan</string>

@@ -56,18 +56,18 @@
     <string name="changelog_crdroid_title">বর্তমান চেঞ্জলগ</string>
     <string name="changelog_crdroid_summary">ইনস্টল করা রমে পরিবর্তন দেখুন</string>
     <string name="changelog_crdroid_error">পরিবর্তন লোড করতে অক্ষম</string>
-    <!-- About crDroid -->
+    <!-- About riceDroid -->
     <string name="about_crdroid">CrDroid সম্পর্কে</string>
     <string name="about_device_name">ডিভাইস</string>
-    <!-- Share crDroid -->
+    <!-- Share riceDroid -->
     <string name="share_crdroid_title">CrDroid শেয়ার করুন</string>
     <string name="share_crdroid_summary">CrDroid সম্পর্কে অন্যদের জানান</string>
-    <string name="share_message">crDroid আপনার ডিভাইসে আছে কিনা দেখুন</string>
+    <string name="share_message">riceDroid আপনার ডিভাইসে আছে কিনা দেখুন</string>
     <string name="share_chooser_title">CrDroid শেয়ার করুন</string>
-    <!-- Sites crDroid -->
+    <!-- Sites riceDroid -->
     <string name="crdroid_source_title">গিটহাব</string>
     <string name="crdroid_source_summary">আমরা ওপেন সোর্স ভালবাসি, আমাদেরকে দেখুন</string>
-    <string name="crdroid_telegram_title">crDroid সম্প্রদায়</string>
+    <string name="crdroid_telegram_title">riceDroid সম্প্রদায়</string>
     <string name="crdroid_telegram_summary">আমরা টেলিগ্রামে আছি। আমাদের সাথে যোগদান করুন!</string>
     <string name="crdroid_telegram_channel_title">আপডেট চ্যানেল</string>
     <string name="crdroid_telegram_channel_summary">টেলিগ্রামে নতুন বিল্ড সম্পর্কে বিজ্ঞপ্তি পান</string>
@@ -76,10 +76,10 @@
     <string name="crdroid_translate_title">অনুবাদ</string>
     <string name="crdroid_translate_summary">আপনার ভাষায় রমের স্থানীয়করণে সাহায্য করুন!</string>
     <string name="crdroid_sponsor_summary">আমাদের ওয়েবসাইট হোস্ট পার্টনার ভিজিট করুন</string>
-    <!-- Donate crDroid -->
+    <!-- Donate riceDroid -->
     <string name="donate_crdroid_title">আমাদের সমর্থন করুন</string>
     <string name="donate_crdroid_summary">আরও উন্নয়নে সহায়তা করার জন্য দান করুন</string>
-    <string name="donate_team_title">crDroid টিম</string>
+    <string name="donate_team_title">riceDroid টিম</string>
     <string name="donate_team_summary">সার্ভার হোস্টিং, সাইট আপটাইম এবং সামগ্রিক ব্যবস্থাপনা সমর্থন করতে ডোনেট করুন</string>
     <!-- The Drill -->
     <string name="drill_title">ড্রিল</string>
@@ -545,8 +545,8 @@
     <string name="qs_footer_show_power_menu_title">Power menu shortcut</string>
     <string name="qs_footer_services_icon_title">চলমান পরিষেবার শর্টকাট</string>
     <string name="qs_footer_settings_icon_title">সেটিংস শর্টকাট</string>
-    <!-- Device Info screen. crDroid legal. -->
-    <string name="crdroid_license_title">crDroid legal</string>
+    <!-- Device Info screen. riceDroid legal. -->
+    <string name="crdroid_license_title">riceDroid legal</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">ব্রাইটনেস স্লাইডার/উজ্জ্বলতা বার</string>
     <string name="qs_show_brightness_slider_never">কখনো দেখাবে না</string>

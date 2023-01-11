@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">Nastavenia crDroid</string>
+    <string name="crdroid_settings_title">Nastavenia riceDroid</string>
     <string name="crdroid_settings_summary">Otvorte dobroty</string>
     <string name="reset_settings_title">Resetovať nastavenia</string>
     <string name="reset_settings_message">To obnoví väčšinu crdroid nastavení na predvolené hodnoty pre aktuálneho používateľa. Chcete pokračovať?</string>
@@ -56,15 +56,15 @@
     <string name="changelog_crdroid_title">Aktuálny zoznam zmien</string>
     <string name="changelog_crdroid_summary">Zobraziť zmeny v nainštalovanej ROM</string>
     <string name="changelog_crdroid_error">Nie je možné načítať zoznam zmien</string>
-    <!-- About crDroid -->
-    <string name="about_crdroid">O crDroid</string>
+    <!-- About riceDroid -->
+    <string name="about_crdroid">O riceDroid</string>
     <string name="about_device_name">Zariadenie</string>
-    <!-- Share crDroid -->
-    <string name="share_crdroid_title">Zdieľať crDroid</string>
-    <string name="share_crdroid_summary">Dajte ostatným vedieť o crDroid</string>
-    <string name="share_message">Zistite o #crDroid viac na @ https://crdroid.net/</string>
-    <string name="share_chooser_title">Zdieľať crDroid</string>
-    <!-- Sites crDroid -->
+    <!-- Share riceDroid -->
+    <string name="share_crdroid_title">Zdieľať riceDroid</string>
+    <string name="share_crdroid_summary">Dajte ostatným vedieť o riceDroid</string>
+    <string name="share_message">Zistite o #riceDroid viac na @ https://ricedroidoss.github.io/</string>
+    <string name="share_chooser_title">Zdieľať riceDroid</string>
+    <!-- Sites riceDroid -->
     <string name="crdroid_source_title">GitHub</string>
     <string name="crdroid_source_summary">Máme radi open source, pozrite sa na nás</string>
     <string name="crdroid_telegram_title">Telegram</string>
@@ -77,10 +77,10 @@
     <string name="crdroid_translate_summary">Pomoc s lokalizáciou ROM vo vašom jazyku! 
 Ashle-XDA [SLOVAK Preklad]</string>
     <string name="crdroid_sponsor_summary">Navštívte hostiteľa nášho webu</string>
-    <!-- Donate crDroid -->
+    <!-- Donate riceDroid -->
     <string name="donate_crdroid_title">Podporte nás</string>
     <string name="donate_crdroid_summary">Prispejte na podporu rozvoja a na náš server</string>
-    <string name="donate_team_title">crDroid tím</string>
+    <string name="donate_team_title">riceDroid tím</string>
     <string name="donate_team_summary">Prispejte na podporu hostingového servera, prevádzku a celkovú správu webu</string>
     <!-- The Drill -->
     <string name="drill_title">Správa od vývojárov</string>
@@ -548,8 +548,8 @@ Ashle-XDA [SLOVAK Preklad]</string>
     <string name="qs_footer_show_power_menu_title">Možnosti ponuky tlačidla Napájanie</string>
     <string name="qs_footer_services_icon_title">Odkaz na spustené služby</string>
     <string name="qs_footer_settings_icon_title">Odkaz na nastavenia</string>
-    <!-- Device Info screen. crDroid legal. -->
-    <string name="crdroid_license_title">Licencia crDroid</string>
+    <!-- Device Info screen. riceDroid legal. -->
+    <string name="crdroid_license_title">Licencia riceDroid</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">Posuvník jasu</string>
     <string name="qs_show_brightness_slider_never">Nikdy nezobrazovať</string>

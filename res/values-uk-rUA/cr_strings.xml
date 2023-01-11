@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">Налаштування crDroid</string>
+    <string name="crdroid_settings_title">Налаштування riceDroid</string>
     <string name="crdroid_settings_summary">Додаткові налаштування</string>
     <string name="reset_settings_title">Скинути налаштування</string>
     <string name="reset_settings_message">Буде здійснено скидання більшості параметрів crdroid до їх значень за замовчуванням для поточного користувача. Чи хотіли б Ви продовжити?</string>
@@ -56,18 +56,18 @@
     <string name="changelog_crdroid_title">Поточний список змін</string>
     <string name="changelog_crdroid_summary">Переглянути список змін в поточній прошивці</string>
     <string name="changelog_crdroid_error">Помилка завантаження списку змін</string>
-    <!-- About crDroid -->
-    <string name="about_crdroid">Про crDroid</string>
+    <!-- About riceDroid -->
+    <string name="about_crdroid">Про riceDroid</string>
     <string name="about_device_name">Пристрій</string>
-    <!-- Share crDroid -->
-    <string name="share_crdroid_title">Поділитися crDroid</string>
-    <string name="share_crdroid_summary">Нехай інші знають про crDroid</string>
-    <string name="share_message">Перевірте, чи доступний #crDroidAndroid для Вашого пристрою @ https://crdroid.net/</string>
-    <string name="share_chooser_title">Поділитися crDroid</string>
-    <!-- Sites crDroid -->
+    <!-- Share riceDroid -->
+    <string name="share_crdroid_title">Поділитися riceDroid</string>
+    <string name="share_crdroid_summary">Нехай інші знають про riceDroid</string>
+    <string name="share_message">Перевірте, чи доступний #riceDroidAndroid для Вашого пристрою @ https://ricedroidoss.github.io/</string>
+    <string name="share_chooser_title">Поділитися riceDroid</string>
+    <!-- Sites riceDroid -->
     <string name="crdroid_source_title">GitHub</string>
     <string name="crdroid_source_summary">Ми любимо відкритий вихідний код, перевірте нас</string>
-    <string name="crdroid_telegram_title">crDroid спільнота</string>
+    <string name="crdroid_telegram_title">riceDroid спільнота</string>
     <string name="crdroid_telegram_summary">Ми також є в Telegram. Приєднуйтесь!</string>
     <string name="crdroid_telegram_channel_title">Канал оновлень</string>
     <string name="crdroid_telegram_channel_summary">Отримувати сповіщення про нові збірки в Telegram</string>
@@ -76,10 +76,10 @@
     <string name="crdroid_translate_title">Переклади</string>
     <string name="crdroid_translate_summary">Допоможіть з локалізацією ROM вашою мовою!</string>
     <string name="crdroid_sponsor_summary">Завітайте на наш веб-сайт партнера</string>
-    <!-- Donate crDroid -->
+    <!-- Donate riceDroid -->
     <string name="donate_crdroid_title">Підтримати нас</string>
     <string name="donate_crdroid_summary">Пожертвуйте для підтримки подальшого розвитку</string>
-    <string name="donate_team_title">crDroid команда</string>
+    <string name="donate_team_title">riceDroid команда</string>
     <string name="donate_team_summary">Пожертвувати на підтримку хостингу, сайту та розвитку проекту</string>
     <!-- The Drill -->
     <string name="drill_title">Від розробників</string>
@@ -547,8 +547,8 @@
     <string name="qs_footer_show_power_menu_title">Меню живлення</string>
     <string name="qs_footer_services_icon_title">Піктограма запущених служб</string>
     <string name="qs_footer_settings_icon_title">Піктограма налаштувань</string>
-    <!-- Device Info screen. crDroid legal. -->
-    <string name="crdroid_license_title">Політика конфіденційності crDroid</string>
+    <!-- Device Info screen. riceDroid legal. -->
+    <string name="crdroid_license_title">Політика конфіденційності riceDroid</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">Повзунок яскравості</string>
     <string name="qs_show_brightness_slider_never">Завжди приховувати</string>

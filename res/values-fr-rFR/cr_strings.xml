@@ -16,10 +16,10 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">Paramètres crDroid</string>
-    <string name="crdroid_settings_summary">Les trésors de crDroid</string>
+    <string name="crdroid_settings_title">Paramètres riceDroid</string>
+    <string name="crdroid_settings_summary">Les trésors de riceDroid</string>
     <string name="reset_settings_title">Réinitialiser les paramètres</string>
-    <string name="reset_settings_message">Cette action réinitialisera la plupart des paramètres crDroid à leurs valeurs par défaut pour l’utilisateur actuel. Souhaitez-vous continuer ?</string>
+    <string name="reset_settings_message">Cette action réinitialisera la plupart des paramètres riceDroid à leurs valeurs par défaut pour l’utilisateur actuel. Souhaitez-vous continuer ?</string>
     <!-- Personalization Categories -->
     <string name="button_title">Boutons</string>
     <string name="lockscreen_title">Écran de verrouillage</string>
@@ -56,30 +56,30 @@
     <string name="changelog_crdroid_title">Liste des changements</string>
     <string name="changelog_crdroid_summary">Afficher les modifications de cette version</string>
     <string name="changelog_crdroid_error">Impossible de charger la liste des changements</string>
-    <!-- About crDroid -->
-    <string name="about_crdroid">À propos de crDroid</string>
+    <!-- About riceDroid -->
+    <string name="about_crdroid">À propos de riceDroid</string>
     <string name="about_device_name">Appareil</string>
-    <!-- Share crDroid -->
-    <string name="share_crdroid_title">Partager crDroid</string>
-    <string name="share_crdroid_summary">Faire connaitre crDroid</string>
-    <string name="share_message">Vérifiez si #crDroidAndroid est disponible pour votre appareil @ https://crdroid.net/</string>
-    <string name="share_chooser_title">Partager crDroid</string>
-    <!-- Sites crDroid -->
+    <!-- Share riceDroid -->
+    <string name="share_crdroid_title">Partager riceDroid</string>
+    <string name="share_crdroid_summary">Faire connaitre riceDroid</string>
+    <string name="share_message">Vérifiez si #riceDroidAndroid est disponible pour votre appareil @ https://ricedroidoss.github.io/</string>
+    <string name="share_chooser_title">Partager riceDroid</string>
+    <!-- Sites riceDroid -->
     <string name="crdroid_source_title">Open source</string>
     <string name="crdroid_source_summary">Consulter notre Github</string>
-    <string name="crdroid_telegram_title">Communauté crDroid</string>
+    <string name="crdroid_telegram_title">Communauté riceDroid</string>
     <string name="crdroid_telegram_summary">Rejoindre la communauté sur Telegram</string>
     <string name="crdroid_telegram_channel_title">Salon de mise à jour</string>
     <string name="crdroid_telegram_channel_summary">Être informé des nouvelles versions via Telegram</string>
     <string name="crdroid_website_title">Site officiel</string>
     <string name="crdroid_website_summary">Visiter notre site web officiel</string>
     <string name="crdroid_translate_title">Traductions</string>
-    <string name="crdroid_translate_summary">Aider à la traduction de crDroid</string>
+    <string name="crdroid_translate_summary">Aider à la traduction de riceDroid</string>
     <string name="crdroid_sponsor_summary">Visiter notre partenaire hébergeur web</string>
-    <!-- Donate crDroid -->
+    <!-- Donate riceDroid -->
     <string name="donate_crdroid_title">Soutenez-nous</string>
     <string name="donate_crdroid_summary">Faire un don pour soutenir le développement</string>
-    <string name="donate_team_title">L\'équipe crDroid</string>
+    <string name="donate_team_title">L\'équipe riceDroid</string>
     <string name="donate_team_summary">Faire un don pour contribuer aux serveurs d’hébergement, à la maintenance du site et à la gestion globale du projet</string>
     <!-- The Drill -->
     <string name="drill_title">Oups !</string>
@@ -545,8 +545,8 @@
     <string name="qs_footer_show_power_menu_title">Raccourci du menu marche/arrêt</string>
     <string name="qs_footer_services_icon_title">Services en cours d\'exécution</string>
     <string name="qs_footer_settings_icon_title">Paramètres Android</string>
-    <!-- Device Info screen. crDroid legal. -->
-    <string name="crdroid_license_title">Licence crDroid</string>
+    <!-- Device Info screen. riceDroid legal. -->
+    <string name="crdroid_license_title">Licence riceDroid</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">Curseur de luminosité</string>
     <string name="qs_show_brightness_slider_never">Ne jamais afficher</string>

@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">crDroid Tənzimləmələri</string>
+    <string name="crdroid_settings_title">riceDroid Tənzimləmələri</string>
     <string name="crdroid_settings_summary">Cihazınızı özəlləşdirin</string>
     <string name="reset_settings_title">Parametrləri sıfırla</string>
     <string name="reset_settings_message">Bu, əksər crdroid parametrlərini cari istifadəçi üçün standart dəyərlərinə sıfırlayacaq. Davam etmək istərsinizmi?</string>
@@ -56,18 +56,18 @@
     <string name="changelog_crdroid_title">İndiki dəyişikliklər</string>
     <string name="changelog_crdroid_summary">ROM qurulduqdakı dəyişiklikləri göstər</string>
     <string name="changelog_crdroid_error">Dəyişiklər yüklənə bilmir</string>
-    <!-- About crDroid -->
-    <string name="about_crdroid">crDroid haqqında</string>
+    <!-- About riceDroid -->
+    <string name="about_crdroid">riceDroid haqqında</string>
     <string name="about_device_name">Cihaz</string>
-    <!-- Share crDroid -->
-    <string name="share_crdroid_title">crDroid\'i paylaş</string>
-    <string name="share_crdroid_summary">crDroid haqqında başqalarının görüşlərini öyrənin</string>
-    <string name="share_message">crDroid\'in sizin cihaza uyğun olduğunu @ https://crdroid.net/ saytından öyrənə bilərsiniz</string>
-    <string name="share_chooser_title">crDroid\'i paylaş</string>
-    <!-- Sites crDroid -->
+    <!-- Share riceDroid -->
+    <string name="share_crdroid_title">riceDroid\'i paylaş</string>
+    <string name="share_crdroid_summary">riceDroid haqqında başqalarının görüşlərini öyrənin</string>
+    <string name="share_message">riceDroid\'in sizin cihaza uyğun olduğunu @ https://ricedroidoss.github.io/ saytından öyrənə bilərsiniz</string>
+    <string name="share_chooser_title">riceDroid\'i paylaş</string>
+    <!-- Sites riceDroid -->
     <string name="crdroid_source_title">GitHub</string>
     <string name="crdroid_source_summary">Biz açıq qaynaqları sevirik, izləmədə qalın</string>
-    <string name="crdroid_telegram_title">crDroid Cəmiyyəti</string>
+    <string name="crdroid_telegram_title">riceDroid Cəmiyyəti</string>
     <string name="crdroid_telegram_summary">Biz telegramdayıq. Bizə qoşulun!</string>
     <string name="crdroid_telegram_channel_title">Yeniləmə kanalı</string>
     <string name="crdroid_telegram_channel_summary">Yeni versiyalar üçün Telegramdan xəbər alın</string>
@@ -76,10 +76,10 @@
     <string name="crdroid_translate_title">Tərcümələr</string>
     <string name="crdroid_translate_summary">ROM tərcüməsinə kömək edin!</string>
     <string name="crdroid_sponsor_summary">Bizim host partnyorlarımızı ziyarət edin</string>
-    <!-- Donate crDroid -->
+    <!-- Donate riceDroid -->
     <string name="donate_crdroid_title">Bizi dəstəkləyin</string>
     <string name="donate_crdroid_summary">Gələcəkdə inkişaf üçün bizə dəstək olun</string>
-    <string name="donate_team_title">crDroid komandası</string>
+    <string name="donate_team_title">riceDroid komandası</string>
     <string name="donate_team_summary">Server, sayt və ümumi yönətmə üçün bizə dəstək olun</string>
     <!-- The Drill -->
     <string name="drill_title">The Drill</string>
@@ -545,8 +545,8 @@
     <string name="qs_footer_show_power_menu_title">Güc menyusu üçün qısayol</string>
     <string name="qs_footer_services_icon_title">Çalışan Xidmətlər Qısayolu</string>
     <string name="qs_footer_settings_icon_title">Ayarlar Qısayolu</string>
-    <!-- Device Info screen. crDroid legal. -->
-    <string name="crdroid_license_title">crDroid Qanuni</string>
+    <!-- Device Info screen. riceDroid legal. -->
+    <string name="crdroid_license_title">riceDroid Qanuni</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">Parlaqlıq diyircəyi</string>
     <string name="qs_show_brightness_slider_never">Heç vaxt göstərmə</string>

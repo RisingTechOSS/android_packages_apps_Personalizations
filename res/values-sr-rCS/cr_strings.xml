@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">crDroid Podešavanja</string>
+    <string name="crdroid_settings_title">riceDroid Podešavanja</string>
     <string name="crdroid_settings_summary">Otvori dobre stvari</string>
     <string name="reset_settings_title">Resetuj podešavanja</string>
     <string name="reset_settings_message">Ovo će resetovati većinu crdroid podešavanja na njihove podrazumevane vrednosti za trenutnog korisnika. Želite li da nastavite?</string>
@@ -56,18 +56,18 @@
     <string name="changelog_crdroid_title">Trenutna lista izmena</string>
     <string name="changelog_crdroid_summary">Vidi izmene u trenutno instaliranom ROM-u</string>
     <string name="changelog_crdroid_error">Ne mogu učitati listu izmena</string>
-    <!-- About crDroid -->
-    <string name="about_crdroid">O crDroid-u</string>
+    <!-- About riceDroid -->
+    <string name="about_crdroid">O riceDroid-u</string>
     <string name="about_device_name">Uređaj</string>
-    <!-- Share crDroid -->
-    <string name="share_crdroid_title">Podeli crDroid</string>
-    <string name="share_crdroid_summary">Obavesti druge o crDroid-u</string>
-    <string name="share_message">Proveri da li je #crDroidAndroid dostupan za tvoj uređaj @ https://crdroid.net/</string>
-    <string name="share_chooser_title">Podeli crDroid</string>
-    <!-- Sites crDroid -->
+    <!-- Share riceDroid -->
+    <string name="share_crdroid_title">Podeli riceDroid</string>
+    <string name="share_crdroid_summary">Obavesti druge o riceDroid-u</string>
+    <string name="share_message">Proveri da li je #riceDroidAndroid dostupan za tvoj uređaj @ https://ricedroidoss.github.io/</string>
+    <string name="share_chooser_title">Podeli riceDroid</string>
+    <!-- Sites riceDroid -->
     <string name="crdroid_source_title">GitHub</string>
     <string name="crdroid_source_summary">Mi volimo open source, proveri nas</string>
-    <string name="crdroid_telegram_title">crDroid zajednica</string>
+    <string name="crdroid_telegram_title">riceDroid zajednica</string>
     <string name="crdroid_telegram_summary">Na Telegramu smo. Pridruži nam se!</string>
     <string name="crdroid_telegram_channel_title">Update kanal</string>
     <string name="crdroid_telegram_channel_summary">Budi obavešten o novom verziji na Terlegramu</string>
@@ -76,10 +76,10 @@
     <string name="crdroid_translate_title">Prevodi</string>
     <string name="crdroid_translate_summary">Pomozi nam sa lokalizacijama ROM-a na tvom jeziku!</string>
     <string name="crdroid_sponsor_summary">Posetite host partnere našeg sajta</string>
-    <!-- Donate crDroid -->
+    <!-- Donate riceDroid -->
     <string name="donate_crdroid_title">Podržite nas</string>
     <string name="donate_crdroid_summary">Donirajte da podržite dalji razvoj</string>
-    <string name="donate_team_title">crDroid tim</string>
+    <string name="donate_team_title">riceDroid tim</string>
     <string name="donate_team_summary">Donirajte da podržite hosting servera, sajt i sveukupno održavanje</string>
     <!-- The Drill -->
     <string name="drill_title">Dril</string>
@@ -546,8 +546,8 @@
     <string name="qs_footer_show_power_menu_title">Prečice menija uključenja</string>
     <string name="qs_footer_services_icon_title">Prečica pokrenutih servisa</string>
     <string name="qs_footer_settings_icon_title">Prečica za podešavanja</string>
-    <!-- Device Info screen. crDroid legal. -->
-    <string name="crdroid_license_title">crDroid pravne informacije</string>
+    <!-- Device Info screen. riceDroid legal. -->
+    <string name="crdroid_license_title">riceDroid pravne informacije</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">Nivo osvjetljenja</string>
     <string name="qs_show_brightness_slider_never">Nikad ne pokazuj</string>

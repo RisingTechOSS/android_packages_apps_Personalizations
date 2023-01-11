@@ -16,10 +16,10 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">A crDroid beállításai</string>
+    <string name="crdroid_settings_title">A riceDroid beállításai</string>
     <string name="crdroid_settings_summary">Klassz dolgok lelőhelye</string>
     <string name="reset_settings_title">Beállítások visszaállítása</string>
-    <string name="reset_settings_message">Ez a legtöbb crDroid-beállításértéket visszaállítja alapértelmezettre a jelenlegi felhasználónál. Szeretné folytatni?</string>
+    <string name="reset_settings_message">Ez a legtöbb riceDroid-beállításértéket visszaállítja alapértelmezettre a jelenlegi felhasználónál. Szeretné folytatni?</string>
     <!-- Personalization Categories -->
     <string name="button_title">Gombok</string>
     <string name="lockscreen_title">Záróképernyő</string>
@@ -56,18 +56,18 @@
     <string name="changelog_crdroid_title">Aktuális változáslista</string>
     <string name="changelog_crdroid_summary">Nézze meg a telepített ROM-ban végrehajtott változtatásokat</string>
     <string name="changelog_crdroid_error">Nem lehet betölteni a változáslistát</string>
-    <!-- About crDroid -->
-    <string name="about_crdroid">A crDroidról</string>
+    <!-- About riceDroid -->
+    <string name="about_crdroid">A riceDroidról</string>
     <string name="about_device_name">Készülék</string>
-    <!-- Share crDroid -->
-    <string name="share_crdroid_title">A crDroid ajánlása</string>
-    <string name="share_crdroid_summary">Tudassa másokkal a crDroid létezését</string>
-    <string name="share_message">Nézze meg, hogy a #crDroid Android elkészült-e az Ön készülékéhez: @ https://crdroid.net/</string>
-    <string name="share_chooser_title">A crDroid ajánlása</string>
-    <!-- Sites crDroid -->
+    <!-- Share riceDroid -->
+    <string name="share_crdroid_title">A riceDroid ajánlása</string>
+    <string name="share_crdroid_summary">Tudassa másokkal a riceDroid létezését</string>
+    <string name="share_message">Nézze meg, hogy a #riceDroid Android elkészült-e az Ön készülékéhez: @ https://ricedroidoss.github.io/</string>
+    <string name="share_chooser_title">A riceDroid ajánlása</string>
+    <!-- Sites riceDroid -->
     <string name="crdroid_source_title">GitHub</string>
     <string name="crdroid_source_summary">Kedveljük a nyílt forráskódot, nézzen meg minket</string>
-    <string name="crdroid_telegram_title">crDroid közösség</string>
+    <string name="crdroid_telegram_title">riceDroid közösség</string>
     <string name="crdroid_telegram_summary">Jelen vagyunk a Telegramon. Csatlakozzon hozzánk!</string>
     <string name="crdroid_telegram_channel_title">Frissítési csatorna</string>
     <string name="crdroid_telegram_channel_summary">Küldjön értesítést, ha új kiadás érhető el a Telegramon</string>
@@ -76,10 +76,10 @@
     <string name="crdroid_translate_title">Fordítások</string>
     <string name="crdroid_translate_summary">Segítség a ROM lokalizálásában az Ön nyelvén!</string>
     <string name="crdroid_sponsor_summary">Látogasson el honlapunk host-partneréhez</string>
-    <!-- Donate crDroid -->
+    <!-- Donate riceDroid -->
     <string name="donate_crdroid_title">Támogasson bennünket</string>
     <string name="donate_crdroid_summary">Adomány a további fejlesztés támogatására</string>
-    <string name="donate_team_title">A crDroid csapata</string>
+    <string name="donate_team_title">A riceDroid csapata</string>
     <string name="donate_team_summary">Adományozzon, hogy támogassa a szerverbérlést, a weboldal-fenntarást és menedzselést</string>
     <!-- The Drill -->
     <string name="drill_title">The Drill (a fejlesztők)</string>
@@ -545,8 +545,8 @@
     <string name="qs_footer_show_power_menu_title">Kikapcsolómenű-parancsikon</string>
     <string name="qs_footer_services_icon_title">\'Futó szolgáltatások\'-parancsikon</string>
     <string name="qs_footer_settings_icon_title">Beállítások-parancsikon</string>
-    <!-- Device Info screen. crDroid legal. -->
-    <string name="crdroid_license_title">crDroid jogok</string>
+    <!-- Device Info screen. riceDroid legal. -->
+    <string name="crdroid_license_title">riceDroid jogok</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">Fényerőszabályzó-csúszka</string>
     <string name="qs_show_brightness_slider_never">Sose jelenítse meg</string>

@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">crDroid Inställningar</string>
+    <string name="crdroid_settings_title">riceDroid Inställningar</string>
     <string name="crdroid_settings_summary">Öppna godsaker</string>
     <string name="reset_settings_title">Återställ inställningar</string>
     <string name="reset_settings_message">Detta kommer att återställa de flesta inställningar för crdroid till deras standardvärden för den aktuella användaren. Vill du fortsätta?</string>
@@ -56,18 +56,18 @@
     <string name="changelog_crdroid_title">Nuvarande ändringslogg</string>
     <string name="changelog_crdroid_summary">Visa ändringar i den ROM som är installerad</string>
     <string name="changelog_crdroid_error">Laddningen av ändringsloggen kunde inte genomföras</string>
-    <!-- About crDroid -->
-    <string name="about_crdroid">Om crDroid</string>
+    <!-- About riceDroid -->
+    <string name="about_crdroid">Om riceDroid</string>
     <string name="about_device_name">Enhet</string>
-    <!-- Share crDroid -->
-    <string name="share_crdroid_title">Dela crDroid</string>
-    <string name="share_crdroid_summary">Dela med dig av crDroid till andra</string>
-    <string name="share_message">Kontrollera ifall #crDroidAndroid finns tillgänglig för din enhet @ https://crdroid.net/</string>
-    <string name="share_chooser_title">Dela med dig av crDroid</string>
-    <!-- Sites crDroid -->
+    <!-- Share riceDroid -->
+    <string name="share_crdroid_title">Dela riceDroid</string>
+    <string name="share_crdroid_summary">Dela med dig av riceDroid till andra</string>
+    <string name="share_message">Kontrollera ifall #riceDroidAndroid finns tillgänglig för din enhet @ https://ricedroidoss.github.io/</string>
+    <string name="share_chooser_title">Dela med dig av riceDroid</string>
+    <!-- Sites riceDroid -->
     <string name="crdroid_source_title">GitHub</string>
     <string name="crdroid_source_summary">Vi älskar öppen källkod, kolla in oss</string>
-    <string name="crdroid_telegram_title">crDroid gemenskap</string>
+    <string name="crdroid_telegram_title">riceDroid gemenskap</string>
     <string name="crdroid_telegram_summary">Vi finns på telegram. Anslut dig till oss!</string>
     <string name="crdroid_telegram_channel_title">Kanal för uppdateringar</string>
     <string name="crdroid_telegram_channel_summary">Bli informerad om nya versioner på Telegram</string>
@@ -76,10 +76,10 @@
     <string name="crdroid_translate_title">Översättningar</string>
     <string name="crdroid_translate_summary">Bidra med att lokalisera ROM till ditt språk!</string>
     <string name="crdroid_sponsor_summary">Besök sponsorn till vår hemsida</string>
-    <!-- Donate crDroid -->
+    <!-- Donate riceDroid -->
     <string name="donate_crdroid_title">Stöd oss</string>
     <string name="donate_crdroid_summary">Skänk en donation för att stödja vidare utveckling</string>
-    <string name="donate_team_title">crDroid teamet</string>
+    <string name="donate_team_title">riceDroid teamet</string>
     <string name="donate_team_summary">Ge en donation för att stödja tillhandahållande av servrar, hemsidans tillgänglighet samt övergripande hantering</string>
     <!-- The Drill -->
     <string name="drill_title">Rutinen</string>
@@ -545,8 +545,8 @@
     <string name="qs_footer_show_power_menu_title">Genväg till avstängningsmenyn</string>
     <string name="qs_footer_services_icon_title">Genväg till aktiva tjänster</string>
     <string name="qs_footer_settings_icon_title">Genväg till inställningar</string>
-    <!-- Device Info screen. crDroid legal. -->
-    <string name="crdroid_license_title">crDroid juridik</string>
+    <!-- Device Info screen. riceDroid legal. -->
+    <string name="crdroid_license_title">riceDroid juridik</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">Ljusstyrkereglage</string>
     <string name="qs_show_brightness_slider_never">Visa aldrig</string>

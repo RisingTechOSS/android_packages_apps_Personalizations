@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">تنظیمات crDroid</string>
+    <string name="crdroid_settings_title">تنظیمات riceDroid</string>
     <string name="crdroid_settings_summary">باز کردن تنظیمات ویژه</string>
     <string name="reset_settings_title">بازنشانی تنظیمات</string>
     <string name="reset_settings_message">با این کار بیشتر تنظیمات crdroid برای کاربر فعلی به مقادیر پیشفرض بازنشانی میشود،دوست دارید ادامه دهید؟</string>
@@ -56,30 +56,30 @@
     <string name="changelog_crdroid_title">تغییرات فعلی</string>
     <string name="changelog_crdroid_summary">دیدن تغییرات ایجاد شده در این ورژن</string>
     <string name="changelog_crdroid_error">قادر به بارگذاری لیست تغییرات نیست</string>
-    <!-- About crDroid -->
-    <string name="about_crdroid">درباره ی crDroid</string>
+    <!-- About riceDroid -->
+    <string name="about_crdroid">درباره ی riceDroid</string>
     <string name="about_device_name">دستگاه</string>
-    <!-- Share crDroid -->
-    <string name="share_crdroid_title">اشتراک گذاری crDroid</string>
-    <string name="share_crdroid_summary">به دیگران crDroid را معرفی کنید</string>
-    <string name="share_message">ببین آیا #crDroidAndroid برای دستگاه شما در دسترس هس @ https://crdroid.net/</string>
-    <string name="share_chooser_title">اشتراک گذاری crDroid</string>
-    <!-- Sites crDroid -->
+    <!-- Share riceDroid -->
+    <string name="share_crdroid_title">اشتراک گذاری riceDroid</string>
+    <string name="share_crdroid_summary">به دیگران riceDroid را معرفی کنید</string>
+    <string name="share_message">ببین آیا #riceDroidAndroid برای دستگاه شما در دسترس هس @ https://ricedroidoss.github.io/</string>
+    <string name="share_chooser_title">اشتراک گذاری riceDroid</string>
+    <!-- Sites riceDroid -->
     <string name="crdroid_source_title">گیت‌هاب</string>
     <string name="crdroid_source_summary">ما عاشق open source هستیم، ببینید</string>
-    <string name="crdroid_telegram_title">جامعه crDroid</string>
+    <string name="crdroid_telegram_title">جامعه riceDroid</string>
     <string name="crdroid_telegram_summary">ما در تلگرام هستیم. به ما بپیوند!</string>
     <string name="crdroid_telegram_channel_title">کانال به‌روزرسانی‌ها</string>
     <string name="crdroid_telegram_channel_summary">در تلگرام از بروزرسانی ها مطلع شوید</string>
     <string name="crdroid_website_title">تارنمای رسمی</string>
     <string name="crdroid_website_summary">سایت رسمی ما را دیدن کنید</string>
     <string name="crdroid_translate_title">ترجمه‌ها</string>
-    <string name="crdroid_translate_summary">به ترجمه crDroid به زبان خودتان کمک کنید!</string>
+    <string name="crdroid_translate_summary">به ترجمه riceDroid به زبان خودتان کمک کنید!</string>
     <string name="crdroid_sponsor_summary">از سایت همکار میزبان ما دیدن کنید</string>
-    <!-- Donate crDroid -->
+    <!-- Donate riceDroid -->
     <string name="donate_crdroid_title">از ما حمایت کنید</string>
     <string name="donate_crdroid_summary">برای حمایت کردن از توسعه بیشتر کمک مالی کنید</string>
-    <string name="donate_team_title">تیم crDroid</string>
+    <string name="donate_team_title">تیم riceDroid</string>
     <string name="donate_team_summary">برای حمایت از میزبانی سرور، زمان کار سایت و مدیریت کلی کمک مالی کنید</string>
     <!-- The Drill -->
     <string name="drill_title">محل گزارش باگ ها</string>
@@ -545,8 +545,8 @@
     <string name="qs_footer_show_power_menu_title">میانبر منوی پاور</string>
     <string name="qs_footer_services_icon_title">میانبر خدمات های در حال اجرا</string>
     <string name="qs_footer_settings_icon_title">میان‌بر تنظیمات</string>
-    <!-- Device Info screen. crDroid legal. -->
-    <string name="crdroid_license_title">حقوق crDroid</string>
+    <!-- Device Info screen. riceDroid legal. -->
+    <string name="crdroid_license_title">حقوق riceDroid</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">نوار کنترل روشنایی</string>
     <string name="qs_show_brightness_slider_never">هرگز نمایش نده</string>

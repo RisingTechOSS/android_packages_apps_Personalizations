@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">crDroid Ρυθμίσεις</string>
+    <string name="crdroid_settings_title">riceDroid Ρυθμίσεις</string>
     <string name="crdroid_settings_summary">Ανοίξτε τα \"καλούδια\"</string>
     <string name="reset_settings_title">Επαναφορά ρυθμίσεων</string>
     <string name="reset_settings_message">Αυτό θα επαναφέρει τις περισσότερες ρυθμίσεις crdroid στις προεπιλεγμένες τιμές τους για τον τρέχοντα χρήστη. Θέλετε να συνεχίσετε;</string>
@@ -56,18 +56,18 @@
     <string name="changelog_crdroid_title">Τρέχον αρχείο αλλαγών</string>
     <string name="changelog_crdroid_summary">Προβολή αλλαγών στην εγκατεστημένη ROM</string>
     <string name="changelog_crdroid_error">Αποτυχία φόρτωσης του αρχείου αλλαγών</string>
-    <!-- About crDroid -->
-    <string name="about_crdroid">Σχετικά με το crDroid</string>
+    <!-- About riceDroid -->
+    <string name="about_crdroid">Σχετικά με το riceDroid</string>
     <string name="about_device_name">Συσκευή</string>
-    <!-- Share crDroid -->
-    <string name="share_crdroid_title">Μοιραστείτε το crDroid</string>
-    <string name="share_crdroid_summary">Ενημερώστε τους άλλους για το crDroid</string>
-    <string name="share_message">Ελέγξτε αν το #crDroidAndroid είναι διαθέσιμο για τη συσκευή σας @ https://crdroid.net/</string>
-    <string name="share_chooser_title">Μοιραστείτε το crDroid</string>
-    <!-- Sites crDroid -->
+    <!-- Share riceDroid -->
+    <string name="share_crdroid_title">Μοιραστείτε το riceDroid</string>
+    <string name="share_crdroid_summary">Ενημερώστε τους άλλους για το riceDroid</string>
+    <string name="share_message">Ελέγξτε αν το #riceDroidAndroid είναι διαθέσιμο για τη συσκευή σας @ https://ricedroidoss.github.io/</string>
+    <string name="share_chooser_title">Μοιραστείτε το riceDroid</string>
+    <!-- Sites riceDroid -->
     <string name="crdroid_source_title">GitHub</string>
     <string name="crdroid_source_summary">Μας αρέσει ο ανοιχτός κώδικας, ελέγξτε μας</string>
-    <string name="crdroid_telegram_title">Κοινότητα crDroid</string>
+    <string name="crdroid_telegram_title">Κοινότητα riceDroid</string>
     <string name="crdroid_telegram_summary">Είμαστε στο telegram. Ελάτε μαζί μας!</string>
     <string name="crdroid_telegram_channel_title">Κανάλι ενημερώσεων</string>
     <string name="crdroid_telegram_channel_summary">Ενημερωθείτε για νέες εκδόσεις στο Telegram</string>
@@ -76,10 +76,10 @@
     <string name="crdroid_translate_title">Μεταφράσεις</string>
     <string name="crdroid_translate_summary">Βοηθήστε στη μετάφραση της ROM στη γλώσσα σας!</string>
     <string name="crdroid_sponsor_summary">Επισκεφθείτε τον συνεργάτη φιλοξενίας της ιστοσελίδας μας</string>
-    <!-- Donate crDroid -->
+    <!-- Donate riceDroid -->
     <string name="donate_crdroid_title">Υποστηρίξτε μας</string>
     <string name="donate_crdroid_summary">Δωρεά για την υποστήριξη της περαιτέρω ανάπτυξης</string>
-    <string name="donate_team_title">Ομάδα crDroid</string>
+    <string name="donate_team_title">Ομάδα riceDroid</string>
     <string name="donate_team_summary">Δωρεά για την υποστήριξη της φιλοξενίας διακομιστή, του χρόνου λειτουργίας του ιστότοπου και της συνολικής διαχείρισης</string>
     <!-- The Drill -->
     <string name="drill_title">The Drill</string>
@@ -545,8 +545,8 @@
     <string name="qs_footer_show_power_menu_title">Συντόμευση μενού ισχύος</string>
     <string name="qs_footer_services_icon_title">Συντόμευση υπηρεσιών που εκτελούνται</string>
     <string name="qs_footer_settings_icon_title">Συντόμευση ρυθμίσεων</string>
-    <!-- Device Info screen. crDroid legal. -->
-    <string name="crdroid_license_title">Νομικές σημειώσεις του crDroid</string>
+    <!-- Device Info screen. riceDroid legal. -->
+    <string name="crdroid_license_title">Νομικές σημειώσεις του riceDroid</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">Ρυθμιστικό φωτεινότητας</string>
     <string name="qs_show_brightness_slider_never">Να μην εμφανίζεται ποτέ</string>

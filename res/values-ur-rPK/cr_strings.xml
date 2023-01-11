@@ -56,18 +56,18 @@
     <string name="changelog_crdroid_title">موجودہ تبدیلیاں</string>
     <string name="changelog_crdroid_summary">انسٹال کردہ ROM میں تبدیلیاں دیکھیں</string>
     <string name="changelog_crdroid_error">تبدیلیاں دیکھانے سے قاصر</string>
-    <!-- About crDroid -->
+    <!-- About riceDroid -->
     <string name="about_crdroid">سی -آر- ڈرائیڈ کے بارے میں</string>
     <string name="about_device_name">ڈیوائس</string>
-    <!-- Share crDroid -->
+    <!-- Share riceDroid -->
     <string name="share_crdroid_title">سی -آر- ڈرائیڈ کو آگے بانٹیں</string>
     <string name="share_crdroid_summary">سی -آر- ڈرائیڈ کے بارے میں دوسروں کو جاننے دیں</string>
-    <string name="share_message">Check out what #crDroid is all about @ https://plus.google.com/communities/118297646046960923906</string>
+    <string name="share_message">Check out what #riceDroid is all about @ https://plus.google.com/communities/118297646046960923906</string>
     <string name="share_chooser_title">سی -آر- ڈرائیڈ کو آگے بانٹیں</string>
-    <!-- Sites crDroid -->
+    <!-- Sites riceDroid -->
     <string name="crdroid_source_title">گٹ ہب</string>
     <string name="crdroid_source_summary">ہمیں اوپن سورس پسند ہے، ہمیں چیک کریں۔</string>
-    <string name="crdroid_telegram_title">crDroid کمیونٹی</string>
+    <string name="crdroid_telegram_title">riceDroid کمیونٹی</string>
     <string name="crdroid_telegram_summary">ہم ٹیلیگرام پر ہیں۔ ہمارے ساتھ شامل ہوں!</string>
     <string name="crdroid_telegram_channel_title">اپ ڈیٹس کا چینل</string>
     <string name="crdroid_telegram_channel_summary">ٹیلیگرام پر نئی تعمیرات کی اطلاع حاصل کریں۔</string>
@@ -76,7 +76,7 @@
     <string name="crdroid_translate_title">ترجمے</string>
     <string name="crdroid_translate_summary">اپنی زبان میں ROM کی لوکلائزیشن میں مدد کریں!</string>
     <string name="crdroid_sponsor_summary">ہماری ویب سائٹ کے میزبان پارٹنر پر جائیں۔</string>
-    <!-- Donate crDroid -->
+    <!-- Donate riceDroid -->
     <string name="donate_crdroid_title">ہماری مددکریں</string>
     <string name="donate_crdroid_summary">حوصلہ افزائی کے لیے چندہ کریں</string>
     <string name="donate_team_title">سی ٓار ڈرایڈ کی جماعت</string>
@@ -545,7 +545,7 @@
     <string name="qs_footer_show_power_menu_title">بند کرنے والے مینیو کا شارٹ کٹ</string>
     <string name="qs_footer_services_icon_title">خدمات کا شارٹ کٹ چل رہا ہے۔</string>
     <string name="qs_footer_settings_icon_title">ترتیبات کا شارٹ کٹ</string>
-    <!-- Device Info screen. crDroid legal. -->
+    <!-- Device Info screen. riceDroid legal. -->
     <string name="crdroid_license_title">سی ٓار ڈرایڈ قانونی معاملات</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">چمک سلائیڈر</string>

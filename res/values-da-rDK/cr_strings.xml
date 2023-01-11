@@ -16,10 +16,10 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">crDroid-indstillinger</string>
+    <string name="crdroid_settings_title">riceDroid-indstillinger</string>
     <string name="crdroid_settings_summary">Åbn Godhed</string>
     <string name="reset_settings_title">Nulstil indstillinger</string>
-    <string name="reset_settings_message">Dette vil nulstille de fleste crDroid-indstillinger til deres standardværdier for den aktuelle bruger. Fortsæt?</string>
+    <string name="reset_settings_message">Dette vil nulstille de fleste riceDroid-indstillinger til deres standardværdier for den aktuelle bruger. Fortsæt?</string>
     <!-- Personalization Categories -->
     <string name="button_title">Knapper</string>
     <string name="lockscreen_title">Låseskærm</string>
@@ -56,18 +56,18 @@
     <string name="changelog_crdroid_title">Aktuel ændringslog</string>
     <string name="changelog_crdroid_summary">Vis ændringer i den installerede ROM</string>
     <string name="changelog_crdroid_error">Kunne ikke indlæse ændringsoversigt</string>
-    <!-- About crDroid -->
+    <!-- About riceDroid -->
     <string name="about_crdroid">Om AirDroid</string>
     <string name="about_device_name">Device</string>
-    <!-- Share crDroid -->
-    <string name="share_crdroid_title">Del crDroid</string>
-    <string name="share_crdroid_summary">Fortæl andre om crDroid</string>
-    <string name="share_message">Check out if #crDroidAndroid is available for your device @ https://crdroid.net/</string>
-    <string name="share_chooser_title">Del crDroid</string>
-    <!-- Sites crDroid -->
+    <!-- Share riceDroid -->
+    <string name="share_crdroid_title">Del riceDroid</string>
+    <string name="share_crdroid_summary">Fortæl andre om riceDroid</string>
+    <string name="share_message">Check out if #riceDroidAndroid is available for your device @ https://ricedroidoss.github.io/</string>
+    <string name="share_chooser_title">Del riceDroid</string>
+    <!-- Sites riceDroid -->
     <string name="crdroid_source_title">GitHub</string>
     <string name="crdroid_source_summary">Vi elsker open source, tjek os ud</string>
-    <string name="crdroid_telegram_title">crDroid community</string>
+    <string name="crdroid_telegram_title">riceDroid community</string>
     <string name="crdroid_telegram_summary">Vi er på telegram. Tilmeld dig!</string>
     <string name="crdroid_telegram_channel_title">Updates channel</string>
     <string name="crdroid_telegram_channel_summary">Get notified of new builds on Telegram</string>
@@ -76,10 +76,10 @@
     <string name="crdroid_translate_title">Oversættelser</string>
     <string name="crdroid_translate_summary">Hjælp til lokalisering af ROM på dit sprog!</string>
     <string name="crdroid_sponsor_summary">Visit our website host partner</string>
-    <!-- Donate crDroid -->
+    <!-- Donate riceDroid -->
     <string name="donate_crdroid_title">Støt os</string>
     <string name="donate_crdroid_summary">Donate to support further development</string>
-    <string name="donate_team_title">crDroid-team</string>
+    <string name="donate_team_title">riceDroid-team</string>
     <string name="donate_team_summary">Donér for at støtte server-hosting, opetid på webstedet og generel håndterng</string>
     <!-- The Drill -->
     <string name="drill_title">Øvelse</string>
@@ -545,8 +545,8 @@
     <string name="qs_footer_show_power_menu_title">Power menu shortcut</string>
     <string name="qs_footer_services_icon_title">Genvej til Kørende tjenester</string>
     <string name="qs_footer_settings_icon_title">Indstillingsgenvej</string>
-    <!-- Device Info screen. crDroid legal. -->
-    <string name="crdroid_license_title">crDroid legal</string>
+    <!-- Device Info screen. riceDroid legal. -->
+    <string name="crdroid_license_title">riceDroid legal</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">Lysstyrkeskyder</string>
     <string name="qs_show_brightness_slider_never">Never show</string>

@@ -56,18 +56,18 @@
     <string name="changelog_crdroid_title">தற்போதைய மாற்றங்கள்</string>
     <string name="changelog_crdroid_summary">நிறுவப்பட்ட ROM இல் மாற்றங்களைக் காண்க</string>
     <string name="changelog_crdroid_error">மாற்றப் பதிவேட்டை திறக்க முடியவில்லை</string>
-    <!-- About crDroid -->
-    <string name="about_crdroid">crDroid ஐப் பற்றி</string>
+    <!-- About riceDroid -->
+    <string name="about_crdroid">riceDroid ஐப் பற்றி</string>
     <string name="about_device_name">சாதனம்</string>
-    <!-- Share crDroid -->
-    <string name="share_crdroid_title">crDroid ஐப் பகிர்</string>
-    <string name="share_crdroid_summary">crDroid பற்றி மற்றவர்களுக்குத் தெரியப்படுத்தவும்</string>
-    <string name="share_message">உங்கள் சாதனத்தில் #crDroidAndroid உள்ளதா எனப் பார்க்கவும் @ https://crdroid.net/</string>
-    <string name="share_chooser_title">crDroid ஐப் பகிர்</string>
-    <!-- Sites crDroid -->
+    <!-- Share riceDroid -->
+    <string name="share_crdroid_title">riceDroid ஐப் பகிர்</string>
+    <string name="share_crdroid_summary">riceDroid பற்றி மற்றவர்களுக்குத் தெரியப்படுத்தவும்</string>
+    <string name="share_message">உங்கள் சாதனத்தில் #riceDroidAndroid உள்ளதா எனப் பார்க்கவும் @ https://ricedroidoss.github.io/</string>
+    <string name="share_chooser_title">riceDroid ஐப் பகிர்</string>
+    <!-- Sites riceDroid -->
     <string name="crdroid_source_title">கிட்ஹப்</string>
     <string name="crdroid_source_summary">நாங்கள் திறந்த மூலத்தை விரும்புகிறோம், எங்களைப் பார்க்கவும்</string>
-    <string name="crdroid_telegram_title">crDroid சமூகம்</string>
+    <string name="crdroid_telegram_title">riceDroid சமூகம்</string>
     <string name="crdroid_telegram_summary">நாங்கள் தந்தியில் இருக்கிறோம்.  எங்களுடன் சேர்!</string>
     <string name="crdroid_telegram_channel_title">சேனலைப் புதுப்பிக்கிறது</string>
     <string name="crdroid_telegram_channel_summary">டெலிகிராமில் புதிய உருவாக்கங்கள் பற்றிய அறிவிப்பைப் பெறுங்கள்</string>
@@ -76,10 +76,10 @@
     <string name="crdroid_translate_title">மொழிபெயர்ப்புகள்</string>
     <string name="crdroid_translate_summary">Help with localisation of ROM in your language!</string>
     <string name="crdroid_sponsor_summary">Visit our website host partner</string>
-    <!-- Donate crDroid -->
+    <!-- Donate riceDroid -->
     <string name="donate_crdroid_title">Support us</string>
     <string name="donate_crdroid_summary">Donate to support further development</string>
-    <string name="donate_team_title">crDroid குழு</string>
+    <string name="donate_team_title">riceDroid குழு</string>
     <string name="donate_team_summary">Donate to support server hosting, site uptime and overall management</string>
     <!-- The Drill -->
     <string name="drill_title">The drill</string>
@@ -545,8 +545,8 @@
     <string name="qs_footer_show_power_menu_title">Power menu shortcut</string>
     <string name="qs_footer_services_icon_title">இயங்கும் சேவைகள் குறுக்குவழி</string>
     <string name="qs_footer_settings_icon_title">அமைப்புகள் குறுக்குவழி</string>
-    <!-- Device Info screen. crDroid legal. -->
-    <string name="crdroid_license_title">crDroid legal</string>
+    <!-- Device Info screen. riceDroid legal. -->
+    <string name="crdroid_license_title">riceDroid legal</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">பிரகாசம் நகர்வுகோல்</string>
     <string name="qs_show_brightness_slider_never">Never show</string>
