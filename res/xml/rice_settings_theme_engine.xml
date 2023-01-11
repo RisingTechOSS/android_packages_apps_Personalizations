@@ -17,7 +17,8 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:lineage="http://schemas.android.com/apk/res-auto"
-    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title="@string/ui_theme_engine_title" >
 
     <!-- Clock Font style -->
     <Preference
@@ -83,7 +84,28 @@
         android:title="@string/theme_customization_navbar_title"
         android:summary="@string/theme_customization_navbar_summary"
         android:fragment="com.crdroid.settings.fragments.ui.NavbarStyles"/>
-
+         
+     <!-- QS styles -->
+    <com.crdroid.settings.preferences.SystemSettingListPreference
+        android:key="qs_panel_style"
+        android:icon="@drawable/ic_color_bucket"
+        android:title="@string/qs_styles_title"
+        android:entries="@array/qs_styles_entries"
+        android:entryValues="@array/qs_styles_values"
+        android:summary="%s"
+        android:defaultValue="0" />
+            
+     <com.crdroid.settings.preferences.SystemSettingSeekBarPreference
+        android:key="qs_transparency"
+        android:icon="@drawable/ic_color_bucket"
+        android:title="@string/qs_transparency_title"
+        android:summary="@string/qs_transparency_summary"
+        android:defaultValue="100"
+        settings:interval="1"
+        settings:units="%"
+        android:max="100"
+        android:min="1" />
+            
     <!-- Signal icon style -->
     <Preference
         android:key="android.theme.customization.signal_icon"

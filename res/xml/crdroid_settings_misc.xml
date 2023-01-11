@@ -16,8 +16,12 @@
 -->
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title="@string/misc_title" >
 
+    <PreferenceCategory
+        android:title="@string/misc_general_settings_title">
+        
     <!-- Gaming mode -->
     <Preference
         android:key="gaming_mode"
@@ -31,29 +35,6 @@
             android:targetClass="io.chaldeaprjkt.gamespace.settings.SettingsActivity" />
     </Preference>
 
-    <!-- Unlock FPS for specific games -->
-    <com.crdroid.settings.preferences.SystemPropertySwitchPreference
-        android:key="persist.sys.pixelprops.games"
-        android:icon="@drawable/ic_backup"
-        android:title="@string/use_games_spoof_title"
-        android:summary="@string/use_games_spoof_summary" />
-
-    <!-- Unlimited google photos storage -->
-    <com.crdroid.settings.preferences.SystemPropertySwitchPreference
-        android:key="persist.sys.pixelprops.gphotos"
-        android:icon="@drawable/ic_backup"
-        android:title="@string/use_photos_spoof_title"
-        android:summary="@string/use_photos_spoof_summary"
-        android:defaultValue="true" />
-
-    <!-- Netflix -->
-    <com.crdroid.settings.preferences.SystemPropertySwitchPreference
-        android:key="persist.sys.pixelprops.netflix"
-        android:icon="@drawable/ic_netflix"
-        android:title="@string/netflix_spoof_title"
-        android:summary="@string/netflix_spoof_summary"
-        android:defaultValue="false" />
-
     <!-- Parallel space -->
     <Preference
         android:key="parallel_space"
@@ -65,10 +46,15 @@
             android:targetClass="ink.kscope.parallelspace.MainActivity" />
     </Preference>
 
+    </PreferenceCategory>
+    
+    <PreferenceCategory
+        android:title="@string/misc_device_settings_title">
+        
     <!-- Scarlet System Manager -->
     <com.crdroid.settings.preferences.SystemSettingSwitchPreference
         android:key="scarlet_system_manager"
-        android:icon="@drawable/ic_battery_saver"
+        android:icon="@drawable/ic_scarlet"
         android:title="@string/scarlet_system_manager_title"
         android:summary="@string/scarlet_system_manager_summary"
         android:defaultValue="false" />
@@ -76,7 +62,7 @@
     <!-- Scarlet Boost -->
     <com.crdroid.settings.preferences.SystemSettingSwitchPreference
         android:key="scarlet_system_boost"
-        android:icon="@drawable/ic_power"
+        android:icon="@drawable/ic_outline_bolt"
         android:title="@string/scarlet_system_boost_title"
         android:summary="@string/scarlet_system_boost_summary"
         android:dependency="scarlet_system_manager"
@@ -136,6 +122,8 @@
         android:defaultValue="0"
         android:summary="%s" />
 
+    </PreferenceCategory>
+
     <!-- Smart Charging -->
     <Preference
         android:key="smart_charging"
@@ -143,7 +131,47 @@
         android:title="@string/smart_charging_title"
         android:summary="@string/smart_charging_summary"
         android:fragment="com.crdroid.settings.fragments.misc.SmartCharging"/>
+       
+    <!-- Sensor block per package -->
+    <Preference
+        android:key="sensor_block_settings"
+        android:icon="@drawable/ic_remote"
+        android:title="@string/sensor_block_title"
+        android:summary="@string/sensor_block_summary"
+        android:fragment="com.crdroid.settings.fragments.misc.SensorBlock"/>
 
+    <PreferenceCategory
+        android:title="@string/misc_spoof_settings_title">
+
+    <!-- Unlock FPS for specific games -->
+    <com.crdroid.settings.preferences.SystemPropertySwitchPreference
+        android:key="persist.sys.pixelprops.games"
+        android:icon="@drawable/ic_backup"
+        android:title="@string/use_games_spoof_title"
+        android:summary="@string/use_games_spoof_summary" />
+
+    <!-- Unlimited google photos storage -->
+    <com.crdroid.settings.preferences.SystemPropertySwitchPreference
+        android:key="persist.sys.pixelprops.gphotos"
+        android:icon="@drawable/ic_backup"
+        android:title="@string/use_photos_spoof_title"
+        android:summary="@string/use_photos_spoof_summary"
+        android:defaultValue="true" />
+
+    <!-- Netflix -->
+    <com.crdroid.settings.preferences.SystemPropertySwitchPreference
+        android:key="persist.sys.pixelprops.netflix"
+        android:icon="@drawable/ic_netflix"
+        android:title="@string/netflix_spoof_title"
+        android:summary="@string/netflix_spoof_summary"
+        android:defaultValue="false" />
+
+    </PreferenceCategory>
+ 
+
+    <PreferenceCategory
+        android:title="@string/misc_other_settings_title">
+        
     <!-- Three-fingers-swipe to screenshot -->
     <com.crdroid.settings.preferences.SystemSettingSwitchPreference
         android:key="three_finger_gesture"
@@ -152,13 +180,7 @@
         android:summary="@string/three_finger_gesture_summary"
         android:defaultValue="false" />
 
-    <!-- Sensor block per package -->
-    <Preference
-        android:key="sensor_block_settings"
-        android:icon="@drawable/ic_remote"
-        android:title="@string/sensor_block_title"
-        android:summary="@string/sensor_block_summary"
-        android:fragment="com.crdroid.settings.fragments.misc.SensorBlock"/>
+    </PreferenceCategory>
 
     <!-- Pocket Judge -->
     <com.crdroid.settings.preferences.SystemSettingSwitchPreference

@@ -35,6 +35,12 @@
     <string name="display_title">Display</string>
     <string name="ui_title">User Interface</string>
 
+    <!-- Personalization Sub-Categories -->
+    <string name="misc_spoof_settings_title">Spoofing</string>
+    <string name="misc_general_settings_title">Miscellaneous general settings</string>
+    <string name="misc_device_settings_title">Device settings</string>
+    <string name="misc_other_settings_title">Other miscellaneous settings</string>
+
     <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>
     <string name="press_color_to_apply">Press on color below to apply</string>
@@ -71,6 +77,41 @@
     <!-- About -->
     <string name="about_crdroid">About riceDroid</string>
     <string name="about_device_name">Device</string>
+    <string name="what_is_ricedroid">What is riceDroid?</string>
+    <string name="what_is_ricedroid_summary">RiceDroid is an organization that maintains riceOS - a opensource android operating system that aims to bring the necessary system modifications while being neat, stable and fast. Highly inspired by OxygenOS (10-11) and NothingOS.</string>
+    <string name="what_is_riseui">What is Rise UI?</string>
+    <string name="what_is_riseui_summary">Rise UI is the user interface skin name of riceOS.</string>
+    <string name="ricing_terminology">So What is Rice / Ricing?</string>
+    <string name="ricing_terminology_summary">The term \'rice\' is used to describe a person\'s unix desktop where \'ricing\' is an act where someone customizes their desktop such as the changing icons, panels or system interface.\nsource: https://jie-fang.github.io/blog/basics-of-ricing</string>
+    <string name="what_happened_to_old_source">What happened to the old riceDroid?</string>
+    <string name="what_happened_to_old_source_summary">Old riceDroid organization got disbanded due to internal conflicts such as making the source private, server rent funds and source management (multiple people were using minaripenguin\'s account for anonymity). The new riceDroidOSS org is now solely maintained by a single source maintainer and distributed officially by official device maintainers.</string>
+    <string name="difference_official_version">What is the difference between COMMUNITY and OFFICIAL versions?</string>
+    <string name="difference_official_version_summary">COMMUNITY and OFFICIAL versions offers the same amount of features, OFFICIAL versions supports official OTAs straight from official ricedroidOSS organization. Compared to COMMUNITY builds, we always prioritize issues reported and feature requests from OFFICIAL maintainers.</string>
+    <string name="rice_redirects">Know more about riceDroid!</string>
+
+   <!-- rice dashboard -->
+    <string name="about_settings_title">About Us</string>
+    <string name="about_settings_summary">Information about riceDroid</string>
+    <string name="buttons_settings_title">Buttons</string>
+    <string name="buttons_settings_summary">Tweak hardware buttons</string>
+    <string name="lockscreen_settings_title">Lockscreen</string>
+    <string name="general_lockscreen_title">General lockscreen settings</string>
+    <string name="lockscreen_settings_summary">Customize lockscreen interface</string>
+    <string name="misc_gen_settings_title">Miscellaneous settings</string>
+    <string name="misc_settings_title">Miscellaneous</string>
+    <string name="misc_settings_summary">Misc uncategorized stuffs</string>
+    <string name="nav_settings_title">Navigation</string>
+    <string name="nav_settings_summary">Customize navigation behavior</string>
+    <string name="notif_settings_title">Notification</string>
+    <string name="notif_settings_summary">Control notifications and more</string>
+    <string name="qs_settings_title">QuickSettings</string>
+    <string name="qs_settings_summary">QuickSettings customizations</string>
+    <string name="sound_settings_title">Sound</string>
+    <string name="sound_settings_summary">Sound and vibrations customizations</string>
+    <string name="sb_settings_title">StatusBar</string>
+    <string name="sb_settings_summary">Customize statusbar icons, layout etc</string>
+    <string name="ui_settings_title">User Interface</string>
+    <string name="ui_settings_summary">Customize UI colors, icons, fonts etc</string>
 
     <!-- Share -->
     <string name="share_crdroid_title">Share this firmware</string>
@@ -942,59 +983,6 @@
     <string name="screen_off_udfps_title">Screen off UDFPS</string>
     <string name="screen_off_udfps_summary">Keep UDFPS enabled when the screen is off</string>
 
-    <!-- Columbus -->
-    <string name="columbus_title" translatable="false">@string/columbus_name</string>
-    <string name="columbus_gesture_detected">Quick Tap detected!</string>
-    <string name="columbus_gesture_enrollment_complete">Done</string>
-    <string name="columbus_gesture_enrollment_do_it_later">Not now</string>
-    <string name="columbus_gesture_enrollment_settings">Go to Settings</string>
-    <string name="columbus_gesture_enrollment_try_it">Try it</string>
-    <string name="columbus_gesture_training_action_no_selection_error">Please select an action to perform</string>
-    <string name="columbus_gesture_training_action_text">Select what happens when you use Quick Tap. You can change this later in settings.</string>
-    <string name="columbus_gesture_training_action_title">Choose Quick Tap option</string>
-    <string name="columbus_gesture_training_enrolling_first_gesture">… Double-tap 1 out of 2 detected</string>
-    <string name="columbus_gesture_training_enrolling_first_gesture_text">Let’s try that once more. Quickly tap the back of your phone twice.</string>
-    <string name="columbus_gesture_training_enrolling_first_gesture_title">Nice!</string>
-    <string name="columbus_gesture_training_enrolling_second_gesture">… Double-tap 2 out of 2 detected</string>
-    <string name="columbus_gesture_training_enrolling_second_gesture_text">You’re ready to start using Quick Tap</string>
-    <string name="columbus_gesture_training_enrolling_second_gesture_title">You got it!</string>
-    <string name="columbus_gesture_training_enrolling_text">Quickly tap the back of your phone twice.</string>
-    <string name="columbus_gesture_training_enrolling_title">Try Quick Tap</string>
-    <string name="columbus_gesture_training_finished_text">To change the tap strength needed to use Quick Tap, go to Settings.</string>
-    <string name="columbus_gesture_training_finished_title">You’ve set up Quick Tap</string>
-    <string name="columbus_gesture_training_intro_text_accidental">You‘ve just tapped twice on the back of your device, which allows you to use your Assistant on the go. You can customize this gesture in settings.</string>
-    <string name="columbus_gesture_training_intro_text_suw">Take a screenshot, show notifications, or start another action in two taps.</string>
-    <string name="columbus_gesture_training_intro_title">Quick Tap for quick actions</string>
-    <string name="columbus_gesture_training_launch_no_selection_error">Please select an app to open</string>
-    <string name="columbus_gesture_training_launch_text">Select the app you’d like to open when you use Quick Tap.</string>
-    <string name="columbus_gesture_training_launch_title">Choose app to open</string>
-    <string name="columbus_launch_app_extra_widget_a11y_label">%1$s shortcut settings</string>
-    <string name="columbus_launch_settings_activity_title">Quick Tap settings</string>
-    <string name="columbus_name">Quick Tap</string>
-    <string name="columbus_radio_button_extra_widget_a11y_label">%1$s settings</string>
-    <string name="columbus_setting_action_assistant_title">Access your digital assistant</string>
-    <string name="columbus_setting_action_assistant_value" translatable="false">assistant</string>
-    <string name="columbus_setting_action_launch_summary_no_selection">No app selected</string>
-    <string name="columbus_setting_action_launch_summary_not_installed">App not installed</string>
-    <string name="columbus_setting_action_launch_title">Open app</string>
-    <string name="columbus_setting_action_launch_value" translatable="false">launch</string>
-    <string name="columbus_setting_action_notification_title">Show notifications</string>
-    <string name="columbus_setting_action_notification_value" translatable="false">notifications</string>
-    <string name="columbus_setting_action_open_app_title">Open app</string>
-    <string name="columbus_setting_action_overview_title">See recent apps</string>
-    <string name="columbus_setting_action_overview_value" translatable="false">overview</string>
-    <string name="columbus_setting_action_play_pause_title">Play or pause media</string>
-    <string name="columbus_setting_action_play_pause_value" translatable="false">media</string>
-    <string name="columbus_setting_action_screenshot_title">Take screenshot</string>
-    <string name="columbus_setting_action_screenshot_value" translatable="false">screenshot</string>
-    <string name="columbus_setting_actions_title">Tap back of phone twice to</string>
-    <string name="columbus_setting_additional_settings_title">Quick Tap strength</string>
-    <string name="columbus_setting_app_selection_help_text">Select an app to open when you tap the back of your phone twice. If you uninstall the app, Quick Tap turns off until you select a different app.</string>
-    <string name="columbus_setting_app_shortcut_selection_help_text">Select what happens when you open this app using Quick Tap.</string>
-    <string name="columbus_setting_enable_switch_title">Use Quick Tap</string>
-    <string name="columbus_setting_sensitivity_title">Require stronger taps</string>
-    <string name="columbus_summary" translatable="false">%1$s / %2$s</string>
-
     <!-- Game -->
     <string name="game_dashboard_always_on_summary">Show Game Dashboard shortcut in games</string>
     <string name="game_dashboard_always_on_title">Game Dashboard</string>
@@ -1252,10 +1240,6 @@
     <string name="about_card_style_title">About phone style</string>
     <string name="about_card_style_banner_one">Centered wallpaper banner</string>
     <string name="about_card_style_banner_one_high">Centered wallpaper banner (big)</string>
-    
-    <!-- Clock picker format -->
-    <string name="clock_format">12\n26</string>
-    <string name="text_sample">AaBbCc</string>
 
     <!-- Lockscreen Clock -->
     <string name="kg_custom_clock_color_enabled_title">Custom lockscreen clock color</string>
