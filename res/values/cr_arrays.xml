@@ -855,11 +855,13 @@
         <item>@string/scarlet_aggressive_idle_mode_ringer_vibrate_title</item>
         <item>@string/scarlet_aggressive_idle_mode_ringer_dnd_title</item>
         <item>@string/scarlet_aggressive_idle_mode_ringer_silent_title</item>
+        <item>@string/scarlet_aggressive_idle_mode_ringer_normal</item>
     </string-array>
     <string-array name="scarlet_aggressive_idle_mode_ringer_values" translatable="false">
         <item>0</item>
         <item>1</item>
         <item>2</item>
         <item>3</item>
+        <item>4</item>
     </string-array>
 </resources>

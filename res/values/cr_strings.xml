@@ -1205,6 +1205,7 @@
     <string name="scarlet_aggressive_idle_mode_ringer_vibrate_title">Vibrate</string>
     <string name="scarlet_aggressive_idle_mode_ringer_dnd_title">Do Not Disturb</string>
     <string name="scarlet_aggressive_idle_mode_ringer_silent_title">Silent</string>
+    <string name="scarlet_aggressive_idle_mode_ringer_normal">Ring Mode</string>
     <string name="scarlet_aggressive_idle_mode_wifi_toggle_title">Turn off Wi-Fi</string>
     <string name="scarlet_aggressive_idle_mode_wifi_toggle_summary">Disable Wi-Fi on screen off when Scarlet aggressive idle mode is enabled</string>
     <string name="scarlet_aggressive_idle_mode_bluetooth_toggle_title">Turn off Bluetooth</string>
