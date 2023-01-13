@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-     Copyright (C) 2016-2022 crDroid Android Project
+     Copyright (C) 2016-2023 crDroid Android Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -34,6 +34,14 @@
             android:targetPackage="io.chaldeaprjkt.gamespace"
             android:targetClass="io.chaldeaprjkt.gamespace.settings.SettingsActivity" />
     </Preference>
+
+    <!-- Google services -->
+    <Preference
+        android:key="gms_enabled_settings"
+        android:icon="@drawable/ic_google"
+        android:title="@string/gms_enabled_title"
+        android:summary="@string/gms_enabled_summary"
+        android:fragment="com.crdroid.settings.fragments.misc.GmsSwitch"/>
 
     <!-- Parallel space -->
     <Preference
@@ -167,7 +175,6 @@
         android:defaultValue="false" />
 
     </PreferenceCategory>
- 
 
     <PreferenceCategory
         android:title="@string/misc_other_settings_title">
