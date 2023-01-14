@@ -20,6 +20,13 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/ui_theme_engine_title" >
 
+    <Preference
+         android:key="ambient_customization"
+         android:icon="@drawable/ic_ambient"
+         android:title="@string/ambient_text_category_title"
+         android:summary="@string/ambient_text_category_summary"
+         android:fragment="com.crdroid.settings.fragments.AmbientCustomizations" />
+
     <!-- Clock Font style -->
     <Preference
         android:key="android.theme.customization.clock.fonts"
