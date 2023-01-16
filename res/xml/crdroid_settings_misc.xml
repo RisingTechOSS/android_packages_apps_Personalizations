@@ -127,6 +127,7 @@
         android:title="@string/scarlet_aggressive_idle_mode_ringer_title"
         android:entries="@array/scarlet_aggressive_idle_mode_ringer_entries"
         android:entryValues="@array/scarlet_aggressive_idle_mode_ringer_values"
+        android:dependency="scarlet_system_manager"
         android:defaultValue="0"
         android:summary="%s" />
 
