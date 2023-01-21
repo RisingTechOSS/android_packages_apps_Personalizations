@@ -1349,4 +1349,10 @@
     <!-- Volume haptic feedback -->
     <string name="volume_panel_haptic_feedback_title">Volume haptic feedback</string>
     <string name="volume_panel_haptic_feedback_summary">Enable volume haptic feedback when adjust volume</string>
+    
+    <!-- Monet color themes -->
+    <string name="monet_styles_title">Monet Themes</string>
+    <string name="monet_vivid">Vivid Colors</string>
+    <string name="monet_snowpaint">Paint in the Snow</string>
+    <string name="monet_espresso">Espresso</string>
 </resources>

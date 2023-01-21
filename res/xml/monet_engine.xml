@@ -58,4 +58,14 @@
         android:title="@string/monet_engine_linear_lightness_title"
         android:defaultValue="false" />
 
+    <!-- Monet themes -->
+    <com.crdroid.settings.preferences.SecureSettingListPreference
+         android:key="monet_themes_style"
+         android:title="@string/monet_styles_title"
+         android:dialogTitle="@string/monet_styles_title"
+         android:entries="@array/monet_styles_entries"
+         android:entryValues="@array/monet_styles_values"
+         android:summary="%s"
+         android:defaultValue="0" />
+
 </PreferenceScreen>
