@@ -72,6 +72,13 @@
             settings:units="@string/unit_seconds" />
             
     	<com.crdroid.settings.preferences.SystemSettingSwitchPreference
+     	   android:key="volume_panel_haptic_feedback"
+     	   android:icon="@drawable/ic_vibrate"
+     	   android:title="@string/volume_panel_haptic_feedback_title"
+      	   android:summary="@string/volume_panel_haptic_feedback_summary"
+      	   android:defaultValue="true" />
+
+    	<com.crdroid.settings.preferences.SystemSettingSwitchPreference
      	   android:key="volume_media_output_toggle"
      	   android:icon="@drawable/ic_settings_sound"
      	   android:title="@string/volume_media_output_toggle_title"
