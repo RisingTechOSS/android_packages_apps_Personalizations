@@ -399,7 +399,7 @@
     <string name="lockscreen_doubletap_sleep_summary">Double-tap on the lock screen to put device asleep</string>
 
     <!-- Font style / Icon pack -->
-    <string name="theme_customization_clock_font_title">Clock Font style</string>
+    <string name="theme_customization_clock_font_title">Lockscreen Clock Font style</string>
     <string name="theme_customization_clock_font_summary">Set lockscreen clock font style</string>
     <string name="theme_customization_font_title">Font style</string>
     <string name="theme_customization_font_summary">Set system font style</string>
@@ -1244,9 +1244,12 @@
 
     <!-- Lockscreen Clock -->
     <string name="kg_custom_clock_color_enabled_title">Custom lockscreen clock color</string>
-    <string name="kg_custom_clock_color_title">Clock color</string>
-    <string name="kg_custom_clock_top_margin_title">Clock bottom spacing</string>
-    <string name="kg_big_clock_text_size_title">Large clock size</string>
+    <string name="kg_custom_clock_color_title">Choose color</string>
+    <string name="kg_custom_clock_top_margin_title">Lockscreen clock bottom spacing</string>
+    <string name="kg_big_clock_text_size_title">Lockscreen Large clock size</string>
+    <string name="clock_use_single_line_title">Lockscreen clock Format</string>
+    <string name="single_line">Single-line</string>
+    <string name="double_line">Double-line</string>
 
    <!-- Media artwork -->
     <string name="artwork_media_background_enable_blur_title">Blur media media notification artwork background</string>
