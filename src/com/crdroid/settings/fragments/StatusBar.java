@@ -21,6 +21,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.os.SystemProperties;
 import android.os.UserHandle;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
@@ -37,6 +38,7 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.crdroid.settings.preferences.SystemSettingListPreference;
 import com.android.settings.search.BaseSearchIndexProvider;
+import com.android.settingslib.development.SystemPropPoker;
 import com.android.settingslib.search.SearchIndexable;
 
 import com.crdroid.settings.fragments.statusbar.BatteryBar;
@@ -65,6 +67,8 @@ public class StatusBar extends SettingsPreferenceFragment implements
     private static final String KEY_STATUS_BAR_SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
     private static final String KEY_STATUS_BAR_BATTERY_STYLE = "status_bar_battery_style";
     private static final String KEY_STATUS_BAR_BATTERY_TEXT_CHARGING = "status_bar_battery_text_charging";
+    private static final String KEY_COMBINED_SIGNAL_ICONS = "enable_combined_signal_icons";
+    private static final String SYS_COMBINED_SIGNAL_ICONS = "persist.sys.flags.combined_signal_icons";
 
     private static final int PULLDOWN_DIR_NONE = 0;
     private static final int PULLDOWN_DIR_RIGHT = 1;
@@ -84,6 +88,7 @@ public class StatusBar extends SettingsPreferenceFragment implements
     private SwitchPreference mDataDisabled;
     private SwitchPreference mOldMobileType;
     private SwitchPreference mBatteryTextCharging;
+    private SwitchPreference mCombinedSignalIcons;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -95,6 +100,10 @@ public class StatusBar extends SettingsPreferenceFragment implements
         Context mContext = getActivity().getApplicationContext();
 
         final PreferenceScreen prefScreen = getPreferenceScreen();
+
+        mCombinedSignalIcons = (SwitchPreference) findPreference(KEY_COMBINED_SIGNAL_ICONS);
+        mCombinedSignalIcons.setChecked(SystemProperties.getBoolean(SYS_COMBINED_SIGNAL_ICONS, true));
+        mCombinedSignalIcons.setOnPreferenceChangeListener(this);
 
         mStatusBarClock =
                 (LineageSystemSettingListPreference) findPreference(STATUS_BAR_CLOCK_STYLE);
@@ -183,60 +192,15 @@ public class StatusBar extends SettingsPreferenceFragment implements
             int value = Integer.parseInt((String) newValue);
             updateQuickPulldownSummary(value);
             return true;
+        } else if (preference == mCombinedSignalIcons) {
+            boolean value = (Boolean) newValue;
+            Settings.Secure.putIntForUser(getContentResolver(),
+                Settings.Secure.ENABLE_COMBINED_SIGNAL_ICONS, value ? 1 : 0, UserHandle.USER_CURRENT);
+            SystemProperties.set(SYS_COMBINED_SIGNAL_ICONS, value ? "true" : "false");
+            SystemPropPoker.getInstance().poke();
+            return true;
         }
         return false;
-    }
-
-    public static void reset(Context mContext) {
-        ContentResolver resolver = mContext.getContentResolver();
-        boolean mConfigUseOldMobileType = mContext.getResources().getBoolean(
-                com.android.internal.R.bool.config_useOldMobileIcons);
-
-        LineageSettings.System.putIntForUser(resolver,
-                LineageSettings.System.DOUBLE_TAP_SLEEP_GESTURE, 1, UserHandle.USER_CURRENT);
-        LineageSettings.System.putIntForUser(resolver,
-                LineageSettings.System.STATUS_BAR_QUICK_QS_PULLDOWN, 0, UserHandle.USER_CURRENT);
-        LineageSettings.System.putIntForUser(resolver,
-                LineageSettings.System.STATUS_BAR_CLOCK, 2, UserHandle.USER_CURRENT);
-        LineageSettings.System.putIntForUser(resolver,
-                LineageSettings.System.STATUS_BAR_BRIGHTNESS_CONTROL, 0, UserHandle.USER_CURRENT);
-        Settings.Secure.putIntForUser(resolver,
-                Settings.Secure.ENABLE_CAMERA_PRIVACY_INDICATOR, 1, UserHandle.USER_CURRENT);
-        Settings.Secure.putIntForUser(resolver,
-                Settings.Secure.ENABLE_LOCATION_PRIVACY_INDICATOR, 1, UserHandle.USER_CURRENT);
-        Settings.Secure.putIntForUser(resolver,
-                Settings.Secure.ENABLE_PROJECTION_PRIVACY_INDICATOR, 1, UserHandle.USER_CURRENT);
-        Settings.System.putIntForUser(resolver,
-                Settings.System.ROAMING_INDICATOR_ICON, 1, UserHandle.USER_CURRENT);
-        Settings.System.putIntForUser(resolver,
-                Settings.System.SHOW_FOURG_ICON, 0, UserHandle.USER_CURRENT);
-        Settings.System.putIntForUser(resolver,
-                Settings.System.DATA_DISABLED_ICON, 1, UserHandle.USER_CURRENT);
-        Settings.System.putIntForUser(resolver,
-                Settings.System.BLUETOOTH_SHOW_BATTERY, 1, UserHandle.USER_CURRENT);
-        Settings.System.putIntForUser(resolver,
-                Settings.System.STATUS_BAR_BATTERY_STYLE, BATTERY_STYLE_PORTRAIT, UserHandle.USER_CURRENT);
-        Settings.System.putIntForUser(resolver,
-                Settings.System.STATUS_BAR_SHOW_BATTERY_PERCENT, 0, UserHandle.USER_CURRENT);
-        Settings.System.putIntForUser(resolver,
-                Settings.System.STATUS_BAR_BATTERY_TEXT_CHARGING, 1, UserHandle.USER_CURRENT);
-        Settings.System.putIntForUser(resolver,
-                Settings.System.STATUSBAR_COLORED_ICONS, 0, UserHandle.USER_CURRENT);
-        Settings.System.putIntForUser(resolver,
-                Settings.System.STATUSBAR_NOTIF_COUNT, 0, UserHandle.USER_CURRENT);
-        Settings.System.putIntForUser(resolver,
-                Settings.System.USE_OLD_MOBILETYPE, mConfigUseOldMobileType ? 1 : 0, UserHandle.USER_CURRENT);
-        Settings.System.putIntForUser(resolver,
-                Settings.System.STATUS_BAR_LOGO, 0, UserHandle.USER_CURRENT);
-        Settings.System.putIntForUser(resolver,
-                Settings.System.STATUS_BAR_LOGO_POSITION, 0, UserHandle.USER_CURRENT);
-        Settings.System.putIntForUser(resolver,
-                Settings.System.STATUS_BAR_LOGO_STYLE, 0, UserHandle.USER_CURRENT);
-        Settings.System.putIntForUser(resolver,
-                Settings.System.SHOW_WIFI_STANDARD_ICON, 0, UserHandle.USER_CURRENT);
-
-        BatteryBar.reset(mContext);
-        Clock.reset(mContext);
     }
 
     private void updateQuickPulldownSummary(int value) {
