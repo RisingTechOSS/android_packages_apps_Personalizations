@@ -1363,4 +1363,12 @@
     <!-- Combined signal icons in status bar -->
     <string name="combined_status_bar_signal_icons_title">Combined signal icons</string>
     <string name="combined_status_bar_signal_icons_summary">Show single combined icon for WiFi and mobile signal</string>
+    
+    <!-- Power Menu Styles -->
+    <string name="power_menu_type_title">Power menu style</string>
+    <string name="power_menu_type_lite">Lite (A12)</string>
+    <string name="power_menu_type_full">Full (A11)</string>
+    <string name="power_menu_type_classic">Classic (A8)</string>
+    <string name="power_menu_type_grid">Grid</string>
+    <string name="power_menu_type_legacy">Legacy (A7)</string>
 </resources>

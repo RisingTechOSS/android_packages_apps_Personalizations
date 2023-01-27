@@ -100,7 +100,17 @@
         android:title="@string/theme_customization_navbar_title"
         android:summary="@string/theme_customization_navbar_summary"
         android:fragment="com.crdroid.settings.fragments.ui.NavbarStyles"/>
-         
+
+    <!-- Power Menu Styles -->
+    <com.crdroid.settings.preferences.SecureSettingListPreference
+        android:key="power_menu_type"
+        android:icon="@drawable/ic_power_menu"
+        android:summary="%s"
+        android:title="@string/power_menu_type_title"
+        android:entries="@array/power_menu_type_entries"
+        android:entryValues="@array/power_menu_type_values"
+        android:defaultValue="0"/>
+
      <!-- QS styles -->
     <com.crdroid.settings.preferences.SystemSettingListPreference
         android:key="qs_panel_style"
