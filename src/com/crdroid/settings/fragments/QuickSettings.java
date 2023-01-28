@@ -50,6 +50,7 @@ import com.android.internal.util.crdroid.Utils;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
+import com.android.settingslib.development.SystemPropPoker;
 import com.android.settingslib.search.SearchIndexable;
 
 import com.crdroid.settings.preferences.CustomSeekBarPreference;
@@ -73,6 +74,8 @@ public class QuickSettings extends SettingsPreferenceFragment implements
     private static final String KEY_PREF_TILE_ANIM_DURATION = "qs_tile_animation_duration";
     private static final String KEY_PREF_TILE_ANIM_INTERPOLATOR = "qs_tile_animation_interpolator";
     private static final String KEY_PREF_BATTERY_ESTIMATE = "qs_show_battery_estimate";
+    private static final String KEY_COMBINED_QS_HEADERS = "enable_combined_qs_headers";
+    private static final String SYS_COMBINED_QS_HEADERS = "persist.sys.flags.combined_qs_headers";
 
     private ListPreference mShowBrightnessSlider;
     private ListPreference mBrightnessSliderPosition;
@@ -81,6 +84,7 @@ public class QuickSettings extends SettingsPreferenceFragment implements
     private CustomSeekBarPreference mTileAnimationDuration;
     private ListPreference mTileAnimationInterpolator;
     private SwitchPreference mBatteryEstimate;
+    private SwitchPreference mCombinedQSHeaders;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -91,6 +95,10 @@ public class QuickSettings extends SettingsPreferenceFragment implements
         final Context mContext = getActivity().getApplicationContext();
         final ContentResolver resolver = mContext.getContentResolver();
         final PreferenceScreen prefScreen = getPreferenceScreen();
+
+        mCombinedQSHeaders = (SwitchPreference) findPreference(KEY_COMBINED_QS_HEADERS);
+        mCombinedQSHeaders.setChecked(SystemProperties.getBoolean(SYS_COMBINED_QS_HEADERS, true));
+        mCombinedQSHeaders.setOnPreferenceChangeListener(this);
 
         mShowBrightnessSlider = findPreference(KEY_SHOW_BRIGHTNESS_SLIDER);
         mShowBrightnessSlider.setOnPreferenceChangeListener(this);
@@ -136,6 +144,13 @@ public class QuickSettings extends SettingsPreferenceFragment implements
         } else if (preference == mTileAnimationStyle) {
             int value = Integer.parseInt((String) newValue);
             updateAnimTileStyle(value);
+            return true;
+        } else if (preference == mCombinedQSHeaders) {
+            boolean value = (Boolean) newValue;
+            Settings.Secure.putIntForUser(getContentResolver(),
+                Settings.Secure.ENABLE_COMBINED_QS_HEADERS, value ? 1 : 0, UserHandle.USER_CURRENT);
+            SystemProperties.set(SYS_COMBINED_QS_HEADERS, value ? "true" : "false");
+            SystemPropPoker.getInstance().poke();
             return true;
         }
         return false;

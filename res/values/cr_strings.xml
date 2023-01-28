@@ -1371,4 +1371,8 @@
     <string name="power_menu_type_classic">Classic (A8)</string>
     <string name="power_menu_type_grid">Grid</string>
     <string name="power_menu_type_legacy">Legacy (A7)</string>
+    
+    <!-- Combined qs headers -->
+    <string name="combined_qs_headers_title">Combined QS Headers</string>
+    <string name="combined_qs_headers_icons_summary">Switch to combined QS Headers layout</string>
 </resources>
