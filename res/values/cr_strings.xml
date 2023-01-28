@@ -1033,7 +1033,7 @@
     <string name="battery_temperature">Battery temperature</string>
 
     <!-- QS Transparency -->
-    <string name="qs_transparency_title">Background transparency</string>
+    <string name="qs_transparency_title">QS Background transparency</string>
     <string name="qs_transparency_summary">Set transparency level for QS background</string>
 
     <!-- Data usage info in QS footer -->
