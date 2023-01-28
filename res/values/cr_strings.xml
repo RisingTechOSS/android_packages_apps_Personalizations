@@ -1375,4 +1375,9 @@
     <!-- Combined qs headers -->
     <string name="combined_qs_headers_title">Combined QS Headers</string>
     <string name="combined_qs_headers_icons_summary">Switch to combined QS Headers layout</string>
+
+    <!-- Gesture navbar radius -->
+    <string name="gesture_navbar_radius_title">Pill radius</string>
+    <string name="thin_label">Thin</string>
+    <string name="thick_label">Thick</string>
 </resources>
