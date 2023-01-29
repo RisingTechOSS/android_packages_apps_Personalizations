@@ -27,6 +27,13 @@
          android:summary="@string/ambient_text_category_summary"
          android:fragment="com.crdroid.settings.fragments.AmbientCustomizations" />
 
+   <com.crdroid.settings.preferences.GlobalSettingSwitchPreference
+        android:key="pie_animation_style"
+        android:icon="@drawable/ic_system_animation"
+        android:title="@string/pie_animation_style_title"
+        android:summary="@string/pie_animation_style_summary"
+        android:defaultValue="false" />
+            
     <!-- Font style -->
     <Preference
         android:key="android.theme.customization.fonts"

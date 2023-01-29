@@ -1380,4 +1380,8 @@
     <string name="gesture_navbar_radius_title">Pill radius</string>
     <string name="thin_label">Thin</string>
     <string name="thick_label">Thick</string>
+
+    <!-- Android P animation style -->
+    <string name="pie_animation_style_title">Android P animation style</string>
+    <string name="pie_animation_style_summary">Enable Android P \"Default\" animations</string>
 </resources>
