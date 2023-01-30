@@ -43,11 +43,23 @@ public class ScarletSettings extends SettingsPreferenceFragment implements
 
     public static final String TAG = "ScarletSettings";
 
-    private static final String SYS_MANAGER = "scarlet_system_manager";
     private static final String SYS_AGGRESIVE_IDLE_MODE = "scarlet_aggressive_idle_mode";
+    private static final String SYS_BOOST = "scarlet_system_boost";
+    private static final String SYS_MANAGER = "scarlet_system_manager";
+    private static final String SYS_SYSTEM_BGT = "persist.sys.bgt.enable";
+    private static final String SYS_RENDER_BOOST_THREAD = "persist.sys.perf.topAppRenderThreadBoost.enable";
+    private static final String SYS_COMPACTION = "persist.sys.appcompact.enable_app_compact";
+    private static final String SYS_SYSTEM_BOOST = "persist.sys.perf.systemboost.enable";
+    private static final String SYS_INTERACTION_MAX = "persist.sys.powerhal.interaction.max";
+    private static final String SYS_INTERACTION_MAX_DEFAULT = "persist.sys.powerhal.interaction.max_default";
+    private static final String SYS_INTERACTION_MAX_BOOST = "persist.sys.powerhal.interaction.max_boost";
+    private static final int SYS_POWER_BOOST_TIMEOUT_MS_DEFAULT = Integer.parseInt(SystemProperties.get(SYS_INTERACTION_MAX_DEFAULT, "200"));
+    private static final int SYS_POWER_SYSBOOST_TIMEOUT_MS = Integer.parseInt(SystemProperties.get(SYS_INTERACTION_MAX_BOOST, "2000"));
+    private static final int SYS_POWER_INTERACTION_MAX_DURATION = Integer.parseInt(SystemProperties.get(SYS_INTERACTION_MAX, "2000"));
 
-    private SwitchPreference mSysManager;
     private SwitchPreference mSysAggresiveMode;
+    private SwitchPreference mSysBoost;
+    private SwitchPreference mSysManager;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -58,24 +70,34 @@ public class ScarletSettings extends SettingsPreferenceFragment implements
         final PreferenceScreen prefScreen = getPreferenceScreen();
         final Resources res = getResources();
 
-        mSysManager = (SwitchPreference) prefScreen.findPreference(SYS_MANAGER);
-        mSysManager.setOnPreferenceChangeListener(this);
         mSysAggresiveMode = (SwitchPreference) prefScreen.findPreference(SYS_AGGRESIVE_IDLE_MODE);
         mSysAggresiveMode.setOnPreferenceChangeListener(this);
+        mSysBoost = (SwitchPreference) prefScreen.findPreference(SYS_BOOST);
+        mSysBoost.setOnPreferenceChangeListener(this);
+        mSysManager = (SwitchPreference) prefScreen.findPreference(SYS_MANAGER);
+        mSysManager.setOnPreferenceChangeListener(this);
     }
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        if (preference == mSysManager) {
+        if (preference == mSysAggresiveMode) {
             boolean val = (Boolean) newValue;
             if (!val) {
-                disableSysteManagerFeatures(getContext());
                 disableAggressiveModeFeatures(getContext());
             }
             return true;
-        } else if (preference == mSysAggresiveMode) {
+        } else if (preference == mSysBoost) {
+            boolean enable = (Boolean) newValue;
+            SystemProperties.set(SYS_RENDER_BOOST_THREAD, enable ? "true" : "false");
+            SystemProperties.set(SYS_SYSTEM_BGT, enable ? "true" : "false");
+            SystemProperties.set(SYS_COMPACTION, enable ? "false" : "true");
+            SystemProperties.set(SYS_SYSTEM_BOOST, enable ? "true" : "false");
+            SystemProperties.set(SYS_INTERACTION_MAX, enable ? String.valueOf(SYS_POWER_SYSBOOST_TIMEOUT_MS) : String.valueOf((SYS_POWER_BOOST_TIMEOUT_MS_DEFAULT)));
+            return true;
+        } else if (preference == mSysManager) {
             boolean val = (Boolean) newValue;
             if (!val) {
+                disableSysteManagerFeatures(getContext());
                 disableAggressiveModeFeatures(getContext());
             }
             return true;
