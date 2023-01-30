@@ -1194,10 +1194,12 @@
     <string name="qsweather_settings_summary">Setup quicksettings weather views</string>
 
     <!-- Scarlet Manager -->
-    <string name="scarlet_system_manager_title">Scarlet system manager</string>
+    <string name="scarlet_services_title">Scarlet Services</string>
+    <string name="scarlet_services_summary">Optimize device\'s health and performance</string>
+    <string name="scarlet_system_manager_title">Scarlet System Manager</string>
     <string name="scarlet_system_manager_summary">Optimize device power consumption and performance while device is idle</string>
-    <string name="scarlet_system_boost_title">Scarlet system boost</string>
-    <string name="scarlet_system_boost_summary">Boost system resource for fluid experience</string>
+    <string name="scarlet_system_boost_title">Scarlet System Boost</string>
+    <string name="scarlet_system_boost_summary">Boost system resources for faster and fluid user experience</string>
     <string name="scarlet_aggressive_idle_mode_title">Scarlet aggressive idle mode</string>
     <string name="scarlet_aggressive_idle_mode_summary">Enable aggressive idle mode features</string>
     <string name="scarlet_aggressive_idle_mode_ringer_title">Screen off ringer mode</string>

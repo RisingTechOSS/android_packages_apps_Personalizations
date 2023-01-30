@@ -55,83 +55,14 @@
     </Preference>
 
     </PreferenceCategory>
-    
-    <PreferenceCategory
-        android:title="@string/misc_device_settings_title">
-        
-    <!-- Scarlet System Manager -->
-    <com.crdroid.settings.preferences.SystemSettingSwitchPreference
-        android:key="scarlet_system_manager"
+
+    <!-- Scarlet Services -->
+    <Preference
+        android:key="scarlet_settings"
         android:icon="@drawable/ic_scarlet"
-        android:title="@string/scarlet_system_manager_title"
-        android:summary="@string/scarlet_system_manager_summary"
-        android:defaultValue="false" />
-        
-    <!-- Scarlet Boost -->
-    <com.crdroid.settings.preferences.SystemSettingSwitchPreference
-        android:key="scarlet_system_boost"
-        android:icon="@drawable/ic_outline_bolt"
-        android:title="@string/scarlet_system_boost_title"
-        android:summary="@string/scarlet_system_boost_summary"
-        android:dependency="scarlet_system_manager"
-        android:defaultValue="false" />
-        
-    <!-- Scarlet Aggressive Idle Mode -->
-    <com.crdroid.settings.preferences.SecureSettingSwitchPreference
-        android:key="scarlet_aggressive_idle_mode"
-        android:icon="@drawable/ic_battery_saver"
-        android:title="@string/scarlet_aggressive_idle_mode_title"
-        android:summary="@string/scarlet_aggressive_idle_mode_summary"
-        android:dependency="scarlet_system_manager"
-        android:defaultValue="false" />
-        
-    <!-- Scarlet Aggressive Idle Mode Wifi -->
-    <com.crdroid.settings.preferences.SecureSettingSwitchPreference
-        android:key="scarlet_aggressive_idle_mode_wifi_toggle"
-        android:icon="@drawable/ic_wifi"
-        android:title="@string/scarlet_aggressive_idle_mode_wifi_toggle_title"
-        android:summary="@string/scarlet_aggressive_idle_mode_wifi_toggle_summary"
-        android:dependency="scarlet_aggressive_idle_mode"
-        android:defaultValue="false" />
-        
-    <!-- Scarlet Aggressive Idle Mode Bluetooth -->
-    <com.crdroid.settings.preferences.SecureSettingSwitchPreference
-        android:key="scarlet_aggressive_idle_mode_bluetooth_toggle"
-        android:icon="@drawable/ic_battery_bluetooth"
-        android:title="@string/scarlet_aggressive_idle_mode_bluetooth_toggle_title"
-        android:summary="@string/scarlet_aggressive_idle_mode_bluetooth_toggle_summary"
-        android:dependency="scarlet_aggressive_idle_mode"
-        android:defaultValue="false" />
-
-    <!-- Scarlet Aggressive Idle Mode Data -->
-    <com.crdroid.settings.preferences.SecureSettingSwitchPreference
-        android:key="scarlet_aggressive_idle_mode_cellular_toggle"
-        android:icon="@drawable/ic_data"
-        android:title="@string/scarlet_aggressive_idle_mode_cellular_toggle_title"
-        android:summary="@string/scarlet_aggressive_idle_mode_cellular_toggle_summary"
-        android:dependency="scarlet_aggressive_idle_mode"
-        android:defaultValue="false" />
-
-    <!-- Scarlet Aggressive Idle Mode GPS -->
-    <com.crdroid.settings.preferences.SecureSettingSwitchPreference
-        android:key="scarlet_aggressive_idle_mode_location_toggle"
-        android:icon="@drawable/ic_map_marker"
-        android:title="@string/scarlet_aggressive_idle_mode_location_toggle_title"
-        android:summary="@string/scarlet_aggressive_idle_mode_location_toggle_summary"
-        android:dependency="scarlet_aggressive_idle_mode"
-        android:defaultValue="false" />
-
-     <com.crdroid.settings.preferences.SecureSettingListPreference
-        android:key="scarlet_aggressive_idle_mode_ringer_mode"
-        android:icon="@drawable/ic_settings_sound"
-        android:title="@string/scarlet_aggressive_idle_mode_ringer_title"
-        android:entries="@array/scarlet_aggressive_idle_mode_ringer_entries"
-        android:entryValues="@array/scarlet_aggressive_idle_mode_ringer_values"
-        android:dependency="scarlet_system_manager"
-        android:defaultValue="0"
-        android:summary="%s" />
-
-    </PreferenceCategory>
+        android:title="@string/scarlet_services_title"
+        android:summary="@string/scarlet_services_summary"
+        android:fragment="com.crdroid.settings.fragments.misc.ScarletSettings"/>
 
     <!-- Smart Charging -->
     <Preference

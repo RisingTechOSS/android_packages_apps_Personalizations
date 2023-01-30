@@ -42,8 +42,7 @@ import java.util.List;
 import lineageos.providers.LineageSettings;
 
 @SearchIndexable
-public class Miscellaneous extends SettingsPreferenceFragment implements
-        Preference.OnPreferenceChangeListener {
+public class Miscellaneous extends SettingsPreferenceFragment {
 
     public static final String TAG = "Miscellaneous";
 
@@ -52,8 +51,6 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
     private static final String SYS_GAMES_SPOOF = "persist.sys.pixelprops.games";
     private static final String SYS_PHOTOS_SPOOF = "persist.sys.pixelprops.gphotos";
     private static final String SYS_NETFLIX_SPOOF = "persist.sys.pixelprops.netflix";
-    private static final String SYS_MANAGER = "scarlet_system_manager";
-    private static final String SYS_AGGRESIVE_IDLE_MODE = "scarlet_aggressive_idle_mode";
 
     private Preference mSmartCharging;
     private Preference mPocketJudge;
@@ -80,56 +77,6 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
                 com.android.internal.R.bool.config_pocketModeSupported);
         if (!mPocketJudgeSupported)
             prefScreen.removePreference(mPocketJudge);
-
-        mSysManager = (SwitchPreference) prefScreen.findPreference(SYS_MANAGER);
-        mSysManager.setOnPreferenceChangeListener(this);
-        mSysAggresiveMode = (SwitchPreference) prefScreen.findPreference(SYS_AGGRESIVE_IDLE_MODE);
-        mSysAggresiveMode.setOnPreferenceChangeListener(this);
-    }
-
-    @Override
-    public boolean onPreferenceChange(Preference preference, Object newValue) {
-        if (preference == mSysManager) {
-            boolean val = (Boolean) newValue;
-            if (!val) {
-                disableSysteManagerFeatures(getContext());
-                disableAggressiveModeFeatures(getContext());
-            }
-            return true;
-        } else if (preference == mSysAggresiveMode) {
-            boolean val = (Boolean) newValue;
-            if (!val) {
-                disableAggressiveModeFeatures(getContext());
-            }
-            return true;
-        }
-        return false;
-    }
-
-    public static void disableSysteManagerFeatures(Context mContext) {
-        ContentResolver resolver = mContext.getContentResolver();
-
-        Settings.System.putIntForUser(resolver,
-                Settings.System.SCARLET_SYSTEM_MANAGER, 0, UserHandle.USER_CURRENT);
-        Settings.System.putIntForUser(resolver,
-                Settings.System.SCARLET_SYSTEM_BOOST, 0, UserHandle.USER_CURRENT);
-    }
-
-    public static void disableAggressiveModeFeatures(Context mContext) {
-        ContentResolver resolver = mContext.getContentResolver();
-
-        Settings.Secure.putIntForUser(resolver,
-                Settings.Secure.SCARLET_AGGRESSIVE_IDLE_MODE, 0, UserHandle.USER_CURRENT);
-        Settings.Secure.putIntForUser(resolver,
-                Settings.Secure.SCARLET_AGGRESSIVE_IDLE_MODE_WIFI_TOGGLE, 0, UserHandle.USER_CURRENT);
-        Settings.Secure.putIntForUser(resolver,
-                Settings.Secure.SCARLET_AGGRESSIVE_IDLE_MODE_BLUETOOTH_TOGGLE, 0, UserHandle.USER_CURRENT);
-        Settings.Secure.putIntForUser(resolver,
-                Settings.Secure.SCARLET_AGGRESSIVE_IDLE_MODE_CELLULAR_TOGGLE, 0, UserHandle.USER_CURRENT);
-        Settings.Secure.putIntForUser(resolver,
-                Settings.Secure.SCARLET_AGGRESSIVE_IDLE_MODE_LOCATION_TOGGLE, 0, UserHandle.USER_CURRENT);
-        Settings.Secure.putIntForUser(resolver,
-                Settings.Secure.SCARLET_AGGRESSIVE_IDLE_MODE_RINGER_MODE, 0, UserHandle.USER_CURRENT);
     }
 
     @Override
