@@ -46,6 +46,7 @@ import androidx.preference.SwitchPreference;
 
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.internal.util.crdroid.Utils;
+import com.android.internal.util.crdroid.ThemeUtils;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -76,7 +77,10 @@ public class QuickSettings extends SettingsPreferenceFragment implements
     private static final String KEY_PREF_BATTERY_ESTIMATE = "qs_show_battery_estimate";
     private static final String KEY_COMBINED_QS_HEADERS = "enable_combined_qs_headers";
     private static final String SYS_COMBINED_QS_HEADERS = "persist.sys.flags.combined_qs_headers";
+    private static final String KEY_QS_PANEL_STYLE  = "qs_panel_style";
 
+    private Handler mHandler;
+    private SystemSettingListPreference mQsStyle;
     private ListPreference mShowBrightnessSlider;
     private ListPreference mBrightnessSliderPosition;
     private SwitchPreference mShowAutoBrightness;
@@ -85,6 +89,7 @@ public class QuickSettings extends SettingsPreferenceFragment implements
     private ListPreference mTileAnimationInterpolator;
     private SwitchPreference mBatteryEstimate;
     private SwitchPreference mCombinedQSHeaders;
+    private ThemeUtils mThemeUtils;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -95,6 +100,11 @@ public class QuickSettings extends SettingsPreferenceFragment implements
         final Context mContext = getActivity().getApplicationContext();
         final ContentResolver resolver = mContext.getContentResolver();
         final PreferenceScreen prefScreen = getPreferenceScreen();
+        
+        mThemeUtils = new ThemeUtils(getActivity());
+
+        mQsStyle = (SystemSettingListPreference) findPreference(KEY_QS_PANEL_STYLE);
+        mCustomSettingsObserver.observe();
 
         mCombinedQSHeaders = (SwitchPreference) findPreference(KEY_COMBINED_QS_HEADERS);
         mCombinedQSHeaders.setChecked(SystemProperties.getBoolean(SYS_COMBINED_QS_HEADERS, true));
@@ -132,7 +142,30 @@ public class QuickSettings extends SettingsPreferenceFragment implements
         if (!turboInstalled)
             prefScreen.removePreference(mBatteryEstimate);
     }
-    
+
+    private CustomSettingsObserver mCustomSettingsObserver = new CustomSettingsObserver(mHandler);
+    private class CustomSettingsObserver extends ContentObserver {
+
+        CustomSettingsObserver(Handler handler) {
+            super(handler);
+        }
+
+        void observe() {
+            Context mContext = getContext();
+            ContentResolver resolver = mContext.getContentResolver();
+            resolver.registerContentObserver(Settings.System.getUriFor(
+                    Settings.System.QS_PANEL_STYLE),
+                    false, this, UserHandle.USER_ALL);
+        }
+
+        @Override
+        public void onChange(boolean selfChange, Uri uri) {
+            if (uri.equals(Settings.System.getUriFor(Settings.System.QS_PANEL_STYLE))) {
+                updateQsStyle();
+            }
+        }
+    }
+
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         if (preference == mShowBrightnessSlider) {
@@ -152,6 +185,9 @@ public class QuickSettings extends SettingsPreferenceFragment implements
             SystemProperties.set(SYS_COMBINED_QS_HEADERS, value ? "true" : "false");
             SystemPropPoker.getInstance().poke();
             return true;
+        } else if (preference == mQsStyle) {
+            mCustomSettingsObserver.observe();
+            return true;
         }
         return false;
     }
@@ -159,6 +195,31 @@ public class QuickSettings extends SettingsPreferenceFragment implements
     private void updateAnimTileStyle(int tileAnimationStyle) {
         mTileAnimationDuration.setEnabled(tileAnimationStyle != 0);
         mTileAnimationInterpolator.setEnabled(tileAnimationStyle != 0);
+    }
+
+    private void updateQsStyle() {
+        ContentResolver resolver = getActivity().getContentResolver();
+
+        int qsPanelStyle = Settings.System.getIntForUser(getContext().getContentResolver(),
+                Settings.System.QS_PANEL_STYLE , 0, UserHandle.USER_CURRENT);
+
+        switch (qsPanelStyle) {
+            case 0:
+              setQsStyle("com.android.systemui");
+              break;
+            case 1:
+              setQsStyle("com.android.system.qs.outline");
+              break;
+            case 2:
+            case 3:
+              setQsStyle("com.android.system.qs.twotoneaccent");
+              break;
+            default:
+              break;
+        }
+    }
+    public void setQsStyle(String overlayName) {
+        mThemeUtils.setOverlayEnabled("android.theme.customization.qs_panel", overlayName, "com.android.systemui");
     }
 
     @Override

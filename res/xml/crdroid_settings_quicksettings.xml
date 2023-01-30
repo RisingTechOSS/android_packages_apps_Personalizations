@@ -169,6 +169,27 @@
             settings:interval="1"
             android:defaultValue="4" />
 
+     <!-- QS styles -->
+    <com.crdroid.settings.preferences.SystemSettingListPreference
+        android:key="qs_panel_style"
+        android:icon="@drawable/ic_color_bucket"
+        android:title="@string/qs_styles_title"
+        android:entries="@array/qs_styles_entries"
+        android:entryValues="@array/qs_styles_values"
+        android:summary="%s"
+        android:defaultValue="0" />
+            
+     <com.crdroid.settings.preferences.SystemSettingSeekBarPreference
+        android:key="qs_transparency"
+        android:icon="@drawable/ic_color_bucket"
+        android:title="@string/qs_transparency_title"
+        android:summary="@string/qs_transparency_summary"
+        android:defaultValue="100"
+        settings:interval="1"
+        settings:units="%"
+        android:max="100"
+        android:min="1" />
+
     </PreferenceCategory>
 
     <PreferenceCategory

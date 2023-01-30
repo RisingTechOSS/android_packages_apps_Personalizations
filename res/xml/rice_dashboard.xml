@@ -31,7 +31,7 @@
         <!-- About -->
         <Preference
             android:icon="@drawable/ic_settings_about"
-            settings:layout="@layout/arc_card_about"
+            settings:layout="@layout/arc_card_about_top"
             android:title="@string/about_settings_title"
             android:summary="@string/about_settings_summary"
             android:fragment="com.crdroid.settings.fragments.About" />
@@ -39,7 +39,7 @@
       <!-- Buttons -->
         <Preference
             android:icon="@drawable/ic_settings_cogs"
-            settings:layout="@layout/arc_card_about"
+            settings:layout="@layout/arc_card_about_middle"
             android:title="@string/button_title"
             android:summary="@string/buttons_settings_summary"
             android:fragment="com.crdroid.settings.fragments.Buttons" />
@@ -47,7 +47,7 @@
       <!-- Lockscreen -->
         <Preference
             android:icon="@drawable/ic_settings_lockscreens"
-            settings:layout="@layout/arc_card_about"
+            settings:layout="@layout/arc_card_about_middle"
             android:title="@string/lockscreen_title"
             android:summary="@string/lockscreen_settings_summary"
             android:fragment="com.crdroid.settings.fragments.LockScreen" />
@@ -55,7 +55,7 @@
         <!-- Misc -->
         <Preference
             android:icon="@drawable/ic_settings_miscs"
-            settings:layout="@layout/arc_card_about"
+            settings:layout="@layout/arc_card_about_middle"
             android:title="@string/misc_title"
             android:summary="@string/misc_settings_summary"
             android:fragment="com.crdroid.settings.fragments.Miscellaneous" />
@@ -63,7 +63,7 @@
         <!-- Navigation -->
         <Preference
             android:icon="@drawable/ic_settings_notifications"
-            settings:layout="@layout/arc_card_about"
+            settings:layout="@layout/arc_card_about_middle"
             android:title="@string/navigation_title"
             android:summary="@string/nav_settings_summary"
             android:fragment="com.crdroid.settings.fragments.Navigation" />
@@ -71,7 +71,7 @@
         <!-- Notifications -->
         <Preference
             android:icon="@drawable/ic_settings_notifications"
-            settings:layout="@layout/arc_card_about"
+            settings:layout="@layout/arc_card_about_middle"
             android:title="@string/notifications_title"
             android:summary="@string/notif_settings_summary"
             android:fragment="com.crdroid.settings.fragments.Notifications" />
@@ -79,7 +79,7 @@
         <!-- QuickSettings -->
         <Preference
             android:icon="@drawable/ic_settings_quicksettings"
-            settings:layout="@layout/arc_card_about"
+            settings:layout="@layout/arc_card_about_middle"
             android:title="@string/quicksettings_title"
             android:summary="@string/qs_settings_summary"
             android:fragment="com.crdroid.settings.fragments.QuickSettings" />
@@ -87,7 +87,7 @@
         <!-- Sound -->
         <Preference
             android:icon="@drawable/ic_cellphone_sound"
-            settings:layout="@layout/arc_card_about"
+            settings:layout="@layout/arc_card_about_middle"
             android:title="@string/sound_title"
             android:summary="@string/sound_settings_summary"
             android:fragment="com.crdroid.settings.fragments.Sound" />    
@@ -95,7 +95,7 @@
         <!-- Statusbar -->
         <Preference
             android:icon="@drawable/ic_settings_statusbar"
-            settings:layout="@layout/arc_card_about"
+            settings:layout="@layout/arc_card_about_middle"
             android:title="@string/statusbar_title"
             android:summary="@string/sb_settings_summary"
             android:fragment="com.crdroid.settings.fragments.StatusBar" />   
@@ -103,7 +103,7 @@
         <!-- UserInterface -->
         <Preference
             android:icon="@drawable/ic_color_bucket"
-            settings:layout="@layout/arc_card_about"
+            settings:layout="@layout/arc_card_about_bottom"
             android:title="@string/ui_title"
             android:summary="@string/ui_settings_summary"
             android:fragment="com.crdroid.settings.fragments.UserInterface" />
