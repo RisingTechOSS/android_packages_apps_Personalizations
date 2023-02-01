@@ -120,13 +120,6 @@
         android:key="qs_layout_category"
         android:title="@string/qs_layout_category_title">
 
-        <SwitchPreference
-            android:key="enable_combined_qs_headers"
-            android:icon="@drawable/ic_qs_tile"
-            android:title="@string/combined_qs_headers_title"
-            android:summary="@string/combined_qs_headers_icons_summary"
-            android:defaultValue="true" />
-
         <com.crdroid.settings.preferences.SystemSettingSwitchPreference
             android:key="qs_tile_label_hide"
             android:icon="@drawable/ic_text"

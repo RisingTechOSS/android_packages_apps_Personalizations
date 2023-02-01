@@ -75,10 +75,7 @@ public class QuickSettings extends SettingsPreferenceFragment implements
     private static final String KEY_PREF_TILE_ANIM_DURATION = "qs_tile_animation_duration";
     private static final String KEY_PREF_TILE_ANIM_INTERPOLATOR = "qs_tile_animation_interpolator";
     private static final String KEY_PREF_BATTERY_ESTIMATE = "qs_show_battery_estimate";
-    private static final String KEY_COMBINED_QS_HEADERS = "enable_combined_qs_headers";
-    private static final String SYS_COMBINED_QS_HEADERS = "persist.sys.flags.combined_qs_headers";
     private static final String KEY_QS_PANEL_STYLE  = "qs_panel_style";
-
     private static final String QS_PAGE_TRANSITIONS = "custom_transitions_page_tile";
 
     private Handler mHandler;
@@ -91,7 +88,6 @@ public class QuickSettings extends SettingsPreferenceFragment implements
     private CustomSeekBarPreference mTileAnimationDuration;
     private ListPreference mTileAnimationInterpolator;
     private SwitchPreference mBatteryEstimate;
-    private SwitchPreference mCombinedQSHeaders;
     private ThemeUtils mThemeUtils;
 
     @Override
@@ -116,10 +112,6 @@ public class QuickSettings extends SettingsPreferenceFragment implements
                 0, UserHandle.USER_CURRENT);
         mPageTransitions.setValue(String.valueOf(customTransitions));
         mPageTransitions.setSummary(mPageTransitions.getEntry());
-
-        mCombinedQSHeaders = (SwitchPreference) findPreference(KEY_COMBINED_QS_HEADERS);
-        mCombinedQSHeaders.setChecked(SystemProperties.getBoolean(SYS_COMBINED_QS_HEADERS, true));
-        mCombinedQSHeaders.setOnPreferenceChangeListener(this);
 
         mShowBrightnessSlider = findPreference(KEY_SHOW_BRIGHTNESS_SLIDER);
         mShowBrightnessSlider.setOnPreferenceChangeListener(this);
@@ -188,13 +180,6 @@ public class QuickSettings extends SettingsPreferenceFragment implements
         } else if (preference == mTileAnimationStyle) {
             int value = Integer.parseInt((String) newValue);
             updateAnimTileStyle(value);
-            return true;
-        } else if (preference == mCombinedQSHeaders) {
-            boolean value = (Boolean) newValue;
-            Settings.Secure.putIntForUser(getContentResolver(),
-                Settings.Secure.ENABLE_COMBINED_QS_HEADERS, value ? 1 : 0, UserHandle.USER_CURRENT);
-            SystemProperties.set(SYS_COMBINED_QS_HEADERS, value ? "true" : "false");
-            SystemPropPoker.getInstance().poke();
             return true;
         } else if (preference == mQsStyle) {
             mCustomSettingsObserver.observe();
