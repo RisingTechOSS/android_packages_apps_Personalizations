@@ -133,11 +133,20 @@
             android:defaultValue="false" />
 
         <com.crdroid.settings.preferences.SystemSettingSwitchPreference
-	        android:key="statusbar_notif_count"
+	    android:key="statusbar_notif_count"
             android:icon="@drawable/ic_counter"
-	        android:title="@string/statusbar_notif_count_title"
-	        android:summary="@string/statusbar_notif_count_summary"
-	        android:defaultValue="false" />
+	    android:title="@string/statusbar_notif_count_title"
+	    android:summary="@string/statusbar_notif_count_summary"
+	    android:defaultValue="false" />
+
+       <!-- DSB -->
+        <Preference
+            android:key="dynamic_system_bars"
+            android:icon="@drawable/ic_color_bucket"
+            android:title="@string/dynamic_system_bars_category_title"
+            android:summary="@string/dynamic_system_bars_category_summary"
+            android:fragment="com.crdroid.settings.fragments.DsbSettings" />
+
     </PreferenceCategory>
 
     <!-- Custom logo -->
