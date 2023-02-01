@@ -39,9 +39,9 @@
         android:icon="@drawable/ic_weather"
         android:title="@string/qs_weather_title"
         android:dialogTitle="@string/qs_weather_title"
-        android:entries="@array/qs_weather_entries"
+        android:entries="@array/kg_launcher_weather_entries"
         android:summary="%s"
-        android:entryValues="@array/qs_weather_values" />
+        android:entryValues="@array/kg_launcher_weather_values" />
 
       <com.crdroid.settings.preferences.SystemSettingListPreference
         android:key="qs_weather_position"
