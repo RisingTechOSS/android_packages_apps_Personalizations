@@ -79,8 +79,11 @@ public class QuickSettings extends SettingsPreferenceFragment implements
     private static final String SYS_COMBINED_QS_HEADERS = "persist.sys.flags.combined_qs_headers";
     private static final String KEY_QS_PANEL_STYLE  = "qs_panel_style";
 
+    private static final String QS_PAGE_TRANSITIONS = "custom_transitions_page_tile";
+
     private Handler mHandler;
     private SystemSettingListPreference mQsStyle;
+    private SystemSettingListPreference mPageTransitions;
     private ListPreference mShowBrightnessSlider;
     private ListPreference mBrightnessSliderPosition;
     private SwitchPreference mShowAutoBrightness;
@@ -105,6 +108,14 @@ public class QuickSettings extends SettingsPreferenceFragment implements
 
         mQsStyle = (SystemSettingListPreference) findPreference(KEY_QS_PANEL_STYLE);
         mCustomSettingsObserver.observe();
+
+        mPageTransitions = (SystemSettingListPreference) findPreference(QS_PAGE_TRANSITIONS);
+        mPageTransitions.setOnPreferenceChangeListener(this);
+        int customTransitions = Settings.System.getIntForUser(resolver,
+                Settings.System.CUSTOM_TRANSITIONS_KEY,
+                0, UserHandle.USER_CURRENT);
+        mPageTransitions.setValue(String.valueOf(customTransitions));
+        mPageTransitions.setSummary(mPageTransitions.getEntry());
 
         mCombinedQSHeaders = (SwitchPreference) findPreference(KEY_COMBINED_QS_HEADERS);
         mCombinedQSHeaders.setChecked(SystemProperties.getBoolean(SYS_COMBINED_QS_HEADERS, true));
@@ -187,6 +198,14 @@ public class QuickSettings extends SettingsPreferenceFragment implements
             return true;
         } else if (preference == mQsStyle) {
             mCustomSettingsObserver.observe();
+            return true;
+	} else if (preference == mPageTransitions) {
+            int customTransitions = Integer.parseInt(((String) newValue).toString());
+            Settings.System.putIntForUser(getContentResolver(),
+                    Settings.System.CUSTOM_TRANSITIONS_KEY, customTransitions, UserHandle.USER_CURRENT);
+            int index = mPageTransitions.findIndexOfValue((String) newValue);
+            mPageTransitions.setSummary(
+                    mPageTransitions.getEntries()[index]);
             return true;
         }
         return false;

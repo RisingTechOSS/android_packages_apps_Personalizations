@@ -221,6 +221,14 @@
             android:entryValues="@array/qs_tile_animation_interpolator_values"
             android:defaultValue="0" />
 
+       <com.crdroid.settings.preferences.SystemSettingListPreference
+            android:key="custom_transitions_page_tile"
+            android:icon="@drawable/ic_qs_tile_animation_style"
+            android:entries="@array/qs_transitions_entries"
+            android:entryValues="@array/qs_transitions_values"
+            android:summary="%s"
+            android:title="@string/qs_transitions_title" />
+
     </PreferenceCategory>
 
     <PreferenceCategory 
