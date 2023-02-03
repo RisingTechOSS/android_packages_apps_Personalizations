@@ -40,7 +40,6 @@ import com.android.settingslib.search.SearchIndexable;
 
 import com.crdroid.settings.fragments.ui.DozeSettings;
 import com.crdroid.settings.fragments.ui.SmartPixels;
-import com.crdroid.settings.fragments.ui.MonetSettings;
 
 import java.util.List;
 
@@ -86,7 +85,6 @@ public class UserInterface extends SettingsPreferenceFragment {
         Settings.System.putIntForUser(resolver,
                 Settings.System.ENABLE_FLOATING_ROTATION_BUTTON, 1, UserHandle.USER_CURRENT);
         DozeSettings.reset(mContext);
-        MonetSettings.reset(mContext);
         SmartPixels.reset(mContext);
     }
 
