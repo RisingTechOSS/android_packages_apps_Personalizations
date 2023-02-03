@@ -47,6 +47,13 @@
              android:targetClass="com.crdroid.settings.fragments.ui.DisplayCutoutForceFullscreenActivity"/>
     </Preference>
 
+    <!-- Monet settings -->
+    <Preference
+        android:key="monet_settings"
+        android:title="@string/monet_settings_title"
+        android:summary="@string/monet_settings_sammary"
+        android:fragment="com.crdroid.settings.fragments.MonetSettings" />
+
     <!-- Screen Off animation -->
     <com.crdroid.settings.preferences.SystemSettingListPreference
         android:key="screen_off_animation"
