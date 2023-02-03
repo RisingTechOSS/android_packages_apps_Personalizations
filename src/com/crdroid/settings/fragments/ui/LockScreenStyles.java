@@ -58,15 +58,44 @@ import com.crdroid.settings.preferences.SystemSettingEditTextPreference;
 import java.util.List;
 
 @SearchIndexable
-public class ThemeEngine extends SettingsPreferenceFragment {
+public class LockScreenStyles extends SettingsPreferenceFragment implements
+        Preference.OnPreferenceChangeListener {
 
-    public static final String TAG = "ThemeEngine";
+    public static final String TAG = "LockScreenStyles";
+
+    private static final String KG_CUSTOM_CLOCK_COLOR_ENABLED = "kg_custom_clock_color_enabled";
+
+    private SwitchPreference mKGCustomClockColor;
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.rice_settings_theme_engine);
+        addPreferencesFromResource(R.xml.lockscreen_styles);
+
+	Context mContext = getActivity().getApplicationContext();
+	ContentResolver resolver = mContext.getContentResolver();
+        final PreferenceScreen prefScreen = getPreferenceScreen();
+
+        mKGCustomClockColor = (SwitchPreference) findPreference(KG_CUSTOM_CLOCK_COLOR_ENABLED);
+        boolean mKGCustomClockColorEnabled = Settings.Secure.getIntForUser(resolver,
+                Settings.Secure.KG_CUSTOM_CLOCK_COLOR_ENABLED, 0, UserHandle.USER_CURRENT) != 0;
+        mKGCustomClockColor.setChecked(mKGCustomClockColorEnabled);
+        mKGCustomClockColor.setOnPreferenceChangeListener(this);
+    }
+
+    @Override
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+	Context mContext = getActivity().getApplicationContext();
+	ContentResolver resolver = mContext.getContentResolver();
+        if (preference == mKGCustomClockColor) {
+            boolean val = (Boolean) newValue;
+            Settings.Secure.putIntForUser(resolver,
+                Settings.Secure.KG_CUSTOM_CLOCK_COLOR_ENABLED, val ? 1 : 0, UserHandle.USER_CURRENT);
+            return true;
+        }
+        return false;
     }
     
     @Override
@@ -78,7 +107,7 @@ public class ThemeEngine extends SettingsPreferenceFragment {
      * For search
      */
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
-            new BaseSearchIndexProvider(R.xml.rice_settings_theme_engine) {
+            new BaseSearchIndexProvider(R.xml.lockscreen_styles) {
 
                 @Override
                 public List<String> getNonIndexableKeys(Context context) {

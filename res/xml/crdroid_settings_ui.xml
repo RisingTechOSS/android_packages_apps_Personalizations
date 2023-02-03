@@ -28,6 +28,13 @@
         android:summary="@string/doze_display_summary"
         android:fragment="com.crdroid.settings.fragments.ui.DozeSettings" />
 
+    <Preference
+         android:key="ambient_customization"
+         android:icon="@drawable/ic_ambient"
+         android:title="@string/ambient_text_category_title"
+         android:summary="@string/ambient_text_category_summary"
+         android:fragment="com.crdroid.settings.fragments.AmbientCustomizations" />
+
     <!-- Charging animation -->
     <com.crdroid.settings.preferences.SystemSettingSwitchPreference
         android:key="charging_animation"
@@ -35,24 +42,6 @@
         android:title="@string/charging_animation_title"
         android:summary="@string/charging_animation_summary"
         android:defaultValue="true" />
-
-    <!-- Display Cutout -->
-    <Preference
-        android:key="display_cutout_force_fullscreen_settings"
-        android:icon="@drawable/ic_fullscreen"
-        android:title="@string/display_cutout_force_fullscreen_title"
-        android:summary="@string/display_cutout_force_fullscreen_summary">
-        <intent android:action="android.intent.action.MAIN"
-             android:targetPackage="com.android.settings"
-             android:targetClass="com.crdroid.settings.fragments.ui.DisplayCutoutForceFullscreenActivity"/>
-    </Preference>
-
-    <!-- Monet settings -->
-    <Preference
-        android:key="monet_settings"
-        android:title="@string/monet_settings_title"
-        android:summary="@string/monet_settings_sammary"
-        android:fragment="com.crdroid.settings.fragments.MonetSettings" />
 
     <!-- Screen Off animation -->
     <com.crdroid.settings.preferences.SystemSettingListPreference
@@ -63,14 +52,6 @@
         android:entries="@array/screen_off_animation_entries"
         android:entryValues="@array/screen_off_animation_values"
         android:defaultValue="0" />
-
-    <!-- Smart Pixels -->
-    <Preference
-        android:key="smart_pixels"
-        android:icon="@drawable/ic_smart_pixels"
-        android:title="@string/smart_pixels_title" 
-        android:summary="@string/smart_pixels_summary" 
-        android:fragment="com.crdroid.settings.fragments.ui.SmartPixels" />
 
     <!-- UI Theme Engine -->
     <Preference

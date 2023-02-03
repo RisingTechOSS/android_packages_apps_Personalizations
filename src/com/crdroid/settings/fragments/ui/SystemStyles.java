@@ -13,14 +13,24 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.crdroid.settings.fragments;
+package com.crdroid.settings.fragments.ui;
+
+import static android.os.UserHandle.USER_CURRENT;
+import static android.os.UserHandle.USER_SYSTEM;
 
 import android.app.Activity;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
+import android.content.om.IOverlayManager;
 import android.content.res.Resources;
+import android.database.ContentObserver;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.RemoteException;
+import android.os.ServiceManager;
+import android.content.res.Resources;
+import android.net.Uri;
 import android.os.UserHandle;
 import android.provider.Settings;
 import android.text.TextUtils;
@@ -38,23 +48,28 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
 
-import com.crdroid.settings.fragments.ui.DozeSettings;
+import com.android.internal.util.crdroid.Utils;
+import com.android.internal.util.crdroid.ThemeUtils;
+
+import com.crdroid.settings.preferences.SystemSettingListPreference;
+import com.crdroid.settings.preferences.SystemSettingSwitchPreference;
+import com.crdroid.settings.preferences.SystemSettingEditTextPreference;
 
 import java.util.List;
 
 @SearchIndexable
-public class UserInterface extends SettingsPreferenceFragment {
+public class SystemStyles extends SettingsPreferenceFragment {
 
-    public static final String TAG = "UserInterface";
+    public static final String TAG = "SystemStyles";
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.crdroid_settings_ui);
-
+        addPreferencesFromResource(R.xml.system_styles);
     }
-
+    
     @Override
     public int getMetricsCategory() {
         return MetricsProto.MetricsEvent.CRDROID_SETTINGS;
@@ -64,7 +79,7 @@ public class UserInterface extends SettingsPreferenceFragment {
      * For search
      */
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
-            new BaseSearchIndexProvider(R.xml.crdroid_settings_ui) {
+            new BaseSearchIndexProvider(R.xml.system_styles) {
 
                 @Override
                 public List<String> getNonIndexableKeys(Context context) {
