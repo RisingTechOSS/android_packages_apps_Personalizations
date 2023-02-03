@@ -177,7 +177,17 @@
           android:title="@string/settings_home_style_title"
           android:summary="@string/settings_home_style_summary"
           android:defaultValue="false" />
-           
+       
+    <!-- Settings Header - todo: replace with picker api -->    
+    <com.crdroid.settings.preferences.SystemSettingSeekBarPreference
+        android:key="settings_header_image"
+        android:icon="@drawable/ic_header"
+        android:title="@string/settings_header_image_title"
+        android:max="98"
+        settings:min="0"
+        settings:interval="1"
+        android:defaultValue="0" />
+
     <!-- Settings style -->
     <com.crdroid.settings.preferences.SystemSettingListPreference
          android:key="settings_dashboard_style"
