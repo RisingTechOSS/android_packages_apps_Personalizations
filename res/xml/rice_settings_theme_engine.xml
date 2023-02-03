@@ -164,6 +164,14 @@
          android:summary="%s"
          android:defaultValue="0" />
 
+    <!-- Settings Greetings -->    
+    <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+          android:key="settings_contextual_messages"
+          android:icon="@drawable/ic_message_fast"
+          android:title="@string/settings_contextual_message_title"
+          android:summary="@string/settings_contextual_message_summary"
+          android:defaultValue="false" />
+
     <com.crdroid.settings.preferences.SystemSettingSwitchPreference
           android:key="hide_user_card"
           android:icon="@drawable/ic_user"

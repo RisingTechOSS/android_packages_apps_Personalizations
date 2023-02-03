@@ -1407,4 +1407,8 @@
     
     <!-- Settings Header -->
     <string name="settings_header_image_title">Settings header image</string>
+    
+    <!-- Settings Greetings -->
+    <string name="settings_contextual_message_title">Settings contextual messages</string>
+    <string name="settings_contextual_message_summary">Enable settings homepage messages that changes base on current time of the day</string>
 </resources>
