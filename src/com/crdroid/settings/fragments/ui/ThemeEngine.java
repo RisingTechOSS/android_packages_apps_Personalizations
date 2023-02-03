@@ -53,6 +53,7 @@ import com.android.internal.util.crdroid.ThemeUtils;
 
 import com.crdroid.settings.preferences.SystemSettingListPreference;
 import com.crdroid.settings.preferences.SystemSettingSwitchPreference;
+import com.crdroid.settings.preferences.SystemSettingEditTextPreference;
 
 import java.util.List;
 
@@ -77,6 +78,7 @@ public class ThemeEngine extends SettingsPreferenceFragment implements
     private SwitchPreference mKGCustomClockColor;
     private ThemeUtils mThemeUtils;
     private Preference mSettingsHeaderImage;
+    private SystemSettingEditTextPreference mSettingsHeaderText;
 
 
     @Override
@@ -154,6 +156,11 @@ public class ThemeEngine extends SettingsPreferenceFragment implements
                 Settings.Secure.KG_CUSTOM_CLOCK_COLOR_ENABLED, val ? 1 : 0, UserHandle.USER_CURRENT);
             return true;
         } else if (preference == mSettingsHeaderImage) {
+            Utils.showSettingsRestartDialog(getContext());
+            return true;
+        } else if (preference == mSettingsHeaderText) {
+            String value = (String) newValue;
+            SystemProperties.set("persist.sys.settings.header_text", value);
             Utils.showSettingsRestartDialog(getContext());
             return true;
         }

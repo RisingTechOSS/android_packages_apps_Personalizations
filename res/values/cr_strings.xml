@@ -1407,6 +1407,8 @@
     
     <!-- Settings Header -->
     <string name="settings_header_image_title">Settings header image</string>
+    <string name="settings_header_text_title">Settings header text</string>
+    <string name="settings_header_text_summary">Custom header text for settings homepage banner (Empty text is fine)</string>
     
     <!-- Settings Greetings -->
     <string name="settings_contextual_message_title">Settings contextual messages</string>

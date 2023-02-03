@@ -196,6 +196,12 @@
         settings:interval="1"
         android:defaultValue="0" />
 
+    <com.crdroid.settings.preferences.SystemSettingEditTextPreference
+        android:key="settings_header_text"
+        android:icon="@drawable/ic_message_fast"
+        android:title="@string/settings_header_text_title"
+        android:defaultValue="#gtrcd" />
+
     <!-- Settings style -->
     <com.crdroid.settings.preferences.SystemSettingListPreference
          android:key="settings_dashboard_style"
