@@ -60,6 +60,14 @@
         android:summary="@string/theme_customization_clock_font_summary"
         android:fragment="com.crdroid.settings.fragments.ui.ClockFontsPicker"/>
 
+    <!-- Date Font style -->
+    <Preference
+        android:key="android.theme.customization.date.fonts"
+        android:icon="@drawable/ic_font"
+        android:title="@string/theme_customization_date_font_title"
+        android:summary="@string/theme_customization_date_font_summary"
+        android:fragment="com.crdroid.settings.fragments.ui.DateFontsPicker"/>
+
     <com.crdroid.settings.preferences.SecureSettingSeekBarPreference
         android:key="kg_big_clock_text_size"
         android:icon="@drawable/ic_font"

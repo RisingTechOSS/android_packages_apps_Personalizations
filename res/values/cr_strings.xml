@@ -407,6 +407,8 @@
     <!-- Font style / Icon pack -->
     <string name="theme_customization_clock_font_title">Lockscreen clock font style</string>
     <string name="theme_customization_clock_font_summary">Set lockscreen clock font style</string>
+    <string name="theme_customization_date_font_title">Lockscreen date font style</string>
+    <string name="theme_customization_date_font_summary">Set lockscreen date font style</string>
     <string name="theme_customization_font_title">Font style</string>
     <string name="theme_customization_font_summary">Set system font style</string>
     <string name="theme_customization_icon_pack_title">System icon pack</string>
