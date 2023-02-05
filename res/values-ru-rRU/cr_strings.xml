@@ -16,10 +16,11 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">Настройки riceDroid</string>
-    <string name="crdroid_settings_summary">Здесь происходит волшебство</string>
+    <string name="crdroid_settings_title">Персонализация</string>
+    <string name="crdroid_settings_summary">Настройте все!</string>
     <string name="reset_settings_title">Сбросить настройки</string>
-    <string name="reset_settings_message">Это приведет к сбросу большинства настроек crdroid к значениям по умолчанию для текущего пользователя. Продолжить?</string>
+    <string name="reset_settings_message">Это приведет к сбросу большинства настроек к значениям по умолчанию для текущего пользователя. Продолжить?</string>
+    <string name="rice_illustration_summary">Приветствуем вас на кухне!</string>
     <!-- Personalization Categories -->
     <string name="button_title">Кнопки</string>
     <string name="lockscreen_title">Экран блокировки</string>
@@ -31,6 +32,11 @@
     <string name="statusbar_title">Строка состояния</string>
     <string name="display_title">Экран</string>
     <string name="ui_title">Пользовательский интерфейс</string>
+    <!-- Personalization Sub-Categories -->
+    <string name="misc_spoof_settings_title">Подмена устройства</string>
+    <string name="misc_general_settings_title">Общие настройки</string>
+    <string name="misc_device_settings_title">Настройки устройства</string>
+    <string name="misc_other_settings_title">Прочие настройки</string>
     <!-- Color Picker -->
     <string name="dialog_color_picker">Цветовая палитра</string>
     <string name="press_color_to_apply">Нажмите на выбранный цвет для применения</string>
@@ -62,12 +68,46 @@
     <!-- About riceDroid -->
     <string name="about_crdroid">О riceDroid</string>
     <string name="about_device_name">Устройство</string>
-    <!-- Share riceDroid -->
+    <string name="what_is_ricedroid">Что такое riceDroid?</string>
+    <string name="what_is_ricedroid_summary">RiceDroid - это организация разрабатывающая riceOS - Операционную систему Android с открытым исходным кодом, цель которой - привнести необходимые модификации системы, оставаясь при этом аккуратной, стабильной и быстрой. Вдохновлена OxygenOS (10-11) и NothingOS.</string>
+    <string name="what_is_riseui">Что такое Rise UI?</string>
+    <string name="what_is_riseui_summary">Rise UI - это название пользовательского интерфейса riceOS.</string>
+    <string name="ricing_terminology">Так что же такое Rice / Ricing?</string>
+    <string name="ricing_terminology_summary">Термин \'rice\' используется для описания рабочего стола unix, а \'ricing\' - это действие, когда кто-то настраивает свой рабочий стол, например, меняет иконки, панели или интерфейс системы.\Источник: https://jie-fang.github.io/blog/basics-of-ricing</string>
+    <string name="what_happened_to_old_source">Что случилось со старым riceDroid?</string>
+    <string name="what_happened_to_old_source_summary">Старая организация riceDroid была распущена из-за внутренних конфликтов, таких как приватность исходников, аренда сервера и управление исходниками (несколько человек использовали аккаунт minaripenguin для анонимности). Новая организация riceDroidOSS теперь поддерживается только одним сопровождающим исходников и распространяется официально официальными сопровождающими устройств.</string>
+    <string name="difference_official_version">В чем разница между версиями COMMUNITY и OFFICIAL?</string>
+    <string name="difference_official_version_summary">Версии COMMUNITY и OFFICIAL предлагают одинаковое количество функций, версии OFFICIAL поддерживают OTA. По сравнению со сборками COMMUNITY, мы всегда отдаем приоритет сообщениям о проблемах и запросам о возможностях от сопровождающих OFFICIAL.</string>
+    <string name="rice_redirects">Узнайте больше о riceDroid!</string>
+   <!-- rice dashboard -->
+    <string name="about_settings_title">О нас</string>
+    <string name="about_settings_summary">Информация о riceDroid</string>
+    <string name="buttons_settings_title">Кнопки</string>
+    <string name="buttons_settings_summary">Настройки физических кнопкок</string>
+    <string name="lockscreen_settings_title">Экран блокировки</string>
+    <string name="general_lockscreen_title">Настройки экрана блокировки</string>
+    <string name="lockscreen_settings_summary">Настройки внешнего вида экрана блокировки</string>
+    <string name="misc_gen_settings_title">Разное</string>
+    <string name="misc_settings_title">Разное</string>
+    <string name="misc_settings_summary">Различные настройки</string>
+    <string name="nav_settings_title">Панель навигации</string>
+    <string name="nav_settings_summary">Настройки панели навигации</string>
+    <string name="notif_settings_title">Уведомления</string>
+    <string name="notif_settings_summary">Настройки уведомлений</string>
+    <string name="qs_settings_title">Быстрые настройки</string>
+    <string name="qs_settings_summary">Настройки быстрых настроек</string>
+    <string name="sound_settings_title">Звук</string>
+    <string name="sound_settings_summary">Настройки звука и вибрации</string>
+    <string name="sb_settings_title">Строка состояния</string>
+    <string name="sb_settings_summary">Настройки значков строки состояния, расположения и т.д.</string>
+    <string name="ui_settings_title">Пользовательский интерфейс</string>
+    <string name="ui_settings_summary">Настройки цветов, значков, шрифтов и т.д</string>
+    <!-- Share -->
     <string name="share_crdroid_title">Рассказать о riceDroid</string>
     <string name="share_crdroid_summary">Пусть другие узнают о riceDroid</string>
     <string name="share_message">Узнайте, доступен ли #riceDroid для вашего устройства на @ http://ricedroidoss.github.io/</string>
     <string name="share_chooser_title">Рассказать о riceDroid</string>
-    <!-- Sites riceDroid -->
+    <!-- Sites -->
     <string name="crdroid_source_title">Github</string>
     <string name="crdroid_source_summary">Мы любим открытый исходный код, посмотрите его</string>
     <string name="crdroid_telegram_title">Cообщество riceDroid</string>
@@ -79,7 +119,7 @@
     <string name="crdroid_translate_title">Переводы</string>
     <string name="crdroid_translate_summary">Помогите перевести прошивку на ваш язык!</string>
     <string name="crdroid_sponsor_summary">Посетите нашего партнёра по размещению веб-сайтов</string>
-    <!-- Donate riceDroid -->
+    <!-- Donate -->
     <string name="donate_crdroid_title">Поддержать нас</string>
     <string name="donate_crdroid_summary">Пожертвуйте для поддержки дальнейшего развития</string>
     <string name="donate_team_title">Команда riceDroid</string>
@@ -237,6 +277,12 @@
     <string name="monet_summary">Настройки движка Monet темы</string>
     <string name="ui_theme_engine_title">Стиль</string>
     <string name="ui_theme_engine_summary">Настройте наборы иконков, темы и другое</string>
+    <string name="system_styles_title">Стиль системы</string>
+    <string name="system_styles_summary">Настройки пользовательского интерфейса системы</string>
+    <string name="lockscreen_styles_title">Стиль экрана блокировки</string>
+    <string name="lockscreen_styles_summary">Настройки пользовательского интерфейса экрана блокировки</string>
+    <string name="settings_styles_title">Стиль настроек</string>
+    <string name="settings_styles_summary">Настройки пользовательского интерфейса настроек</string>
     <!-- Monet Engine -->
     <string name="monet_engine_custom_color_title">Использовать собственный цвет</string>
     <string name="monet_engine_custom_color_summary">Использовать собственные цвета для движка Monet вместо цветов обоев</string>
@@ -312,8 +358,10 @@
     <string name="lockscreen_doubletap_sleep_title">Двойное нажатие для сна</string>
     <string name="lockscreen_doubletap_sleep_summary">Двойное нажатие по экрану блокировки переводит устройство в спящий режим</string>
     <!-- Font style / Icon pack -->
-    <string name="theme_customization_clock_font_title">Стиль шрифта часов</string>
+    <string name="theme_customization_clock_font_title">Стиль шрифта часов на экране блокировки</string>
     <string name="theme_customization_clock_font_summary">Установить стиль шрифта часов</string>
+    <string name="theme_customization_date_font_title">Стиль шрифта даты на экране блокировки</string>
+    <string name="theme_customization_date_font_summary">Установить стиль даты</string>
     <string name="theme_customization_font_title">Стиль шрифта</string>
     <string name="theme_customization_font_summary">Установить стиль шрифта системы</string>
     <string name="theme_customization_icon_pack_title">Набор иконок</string>
@@ -815,50 +863,6 @@
     <!-- Screen off UDFPS -->
     <string name="screen_off_udfps_title">Отпечаток на выключенном экране</string>
     <string name="screen_off_udfps_summary">Оставлять UDFPS включенным, когда экран выключен</string>
-    <!-- Columbus -->
-    <string name="columbus_gesture_detected">Короткое касание распознано!</string>
-    <string name="columbus_gesture_enrollment_complete">Готово</string>
-    <string name="columbus_gesture_enrollment_do_it_later">Не сейчас</string>
-    <string name="columbus_gesture_enrollment_settings">Открыть настройки</string>
-    <string name="columbus_gesture_enrollment_try_it">Попробовать</string>
-    <string name="columbus_gesture_training_action_no_selection_error">Выберите действие, которое нужно выполнить</string>
-    <string name="columbus_gesture_training_action_text">Вы можете выбрать действие, которое выполняется при быстром касании. Этот параметр можно будет изменить в настройках.</string>
-    <string name="columbus_gesture_training_action_title">Выберите действие для короткого касания</string>
-    <string name="columbus_gesture_training_enrolling_first_gesture">… Вы коснулись устройства дважды (1 попытка из 2)</string>
-    <string name="columbus_gesture_training_enrolling_first_gesture_text">Попробуйте ещё раз. Быстрым движением дважды коснитесь задней панели телефона.</string>
-    <string name="columbus_gesture_training_enrolling_first_gesture_title">Поздравляем!</string>
-    <string name="columbus_gesture_training_enrolling_second_gesture">… Вы коснулись устройства дважды (2 попытки из 2)</string>
-    <string name="columbus_gesture_training_enrolling_second_gesture_text">Все готово для использования короткого касания</string>
-    <string name="columbus_gesture_training_enrolling_second_gesture_title">Поздравляем!</string>
-    <string name="columbus_gesture_training_enrolling_text">Быстрым движением дважды коснитесь задней панели телефона.</string>
-    <string name="columbus_gesture_training_enrolling_title">Попробуйте короткое касание</string>
-    <string name="columbus_gesture_training_finished_text">Чтобы изменить силу нажатия для использования короткого касания, перейдите в настройки.</string>
-    <string name="columbus_gesture_training_finished_title">Короткое касание настроено</string>
-    <string name="columbus_gesture_training_intro_text_accidental">Вы дважды коснулись задней стороны устройства. Это позволяет вам на ходу вызывать Ассистента. Вы можете отрегулировать этот жест в настройках.</string>
-    <string name="columbus_gesture_training_intro_text_suw">Делайте скриншоты, открывайте уведомления и не только – всего в два касания.</string>
-    <string name="columbus_gesture_training_intro_title">Легко выполняйте действия с помощью короткого касания</string>
-    <string name="columbus_gesture_training_launch_no_selection_error">Выберите приложение, которое хотите открыть</string>
-    <string name="columbus_gesture_training_launch_text">Выберите приложение, которое будет запускаться коротким касанием.</string>
-    <string name="columbus_gesture_training_launch_title">Выберите приложение, которое хотите открыть</string>
-    <string name="columbus_launch_app_extra_widget_a11y_label">%1$s: настройки сочетаний клавиш</string>
-    <string name="columbus_launch_settings_activity_title">Параметры короткого касания</string>
-    <string name="columbus_name">Короткое касание</string>
-    <string name="columbus_radio_button_extra_widget_a11y_label">Настройки: %1$s</string>
-    <string name="columbus_setting_action_assistant_title">Включить цифрового помощника</string>
-    <string name="columbus_setting_action_launch_summary_no_selection">Приложение не выбрано</string>
-    <string name="columbus_setting_action_launch_summary_not_installed">Приложение не установлено</string>
-    <string name="columbus_setting_action_launch_title">Открыть приложение</string>
-    <string name="columbus_setting_action_notification_title">Показать уведомления</string>
-    <string name="columbus_setting_action_open_app_title">Открыть приложение</string>
-    <string name="columbus_setting_action_overview_title">Показать недавние приложения</string>
-    <string name="columbus_setting_action_play_pause_title">Начать или приостановить воспроизведение</string>
-    <string name="columbus_setting_action_screenshot_title">Сделать скриншот</string>
-    <string name="columbus_setting_actions_title">Дважды коснитесь задней панели телефона, чтобы</string>
-    <string name="columbus_setting_additional_settings_title">Сила короткого касания</string>
-    <string name="columbus_setting_app_selection_help_text">Выберите приложение, которое будет открываться при двойном касании задней панели телефона. Если вы удалите его, функция короткого касания будет отключена, пока вы не выберете другое приложение.</string>
-    <string name="columbus_setting_app_shortcut_selection_help_text">Выберите действие, которое будет выполняться после запуска приложения коротким касанием.</string>
-    <string name="columbus_setting_enable_switch_title">Использовать короткое касание</string>
-    <string name="columbus_setting_sensitivity_title">Уменьшить чувствительность</string>
     <!-- Game -->
     <string name="game_dashboard_always_on_summary">Показывать ярлык Игрового Центра в играх</string>
     <string name="game_dashboard_always_on_title">Игровой Центр</string>
@@ -900,7 +904,7 @@
     <!-- Battery temperature -->
     <string name="battery_temperature">Температура батареи</string>
     <!-- QS Transparency -->
-    <string name="qs_transparency_title">Прозрачность панели</string>
+    <string name="qs_transparency_title">Прозрачность панели быстрых настроек</string>
     <string name="qs_transparency_summary">Установка уровня прозрачности панели быстрых настроек</string>
     <!-- Data usage info in QS footer -->
     <string name="qs_footer_datausage_title">Трафик приложений</string>
@@ -1026,7 +1030,6 @@
     <string name="qsweather_position_both">Оба</string>
     <string name="launcher_weather_title">Погода на домашнем экране</string>
     <string name="kg_weather_title">Погода на экране блокировки</string>
-
     <!-- Omni weather -->
     <string name="qs_weather_settings_title">Служба погоды</string>
     <string name="qs_weather_settings_summary">Настройка параметров службы и внешнего вида</string>
@@ -1036,20 +1039,38 @@
     <string name="weather_icon_pack_title">Набор иконок погоды</string>
     <string name="weather_icon_pack_note">Заметка\u003a Вы можете установить новые наборы значков из Play Store введя в поиске \"Chronus icons\"</string>
     <string name="weather_icon_pack_info_title">Заметка\u003a \n\n1. Вы можете установить новые наборы значков из Play Store введя в поиске \"Chronus icons\".\n\n2. Наборы значков используются для отображения погоды в быстрых настройках и домашнем экране.\n\n3. Долгое нажатие по погоде в быстрых настройках вызывает настройки погоды.</string>
-    <!-- Scarlet Idle -->
-    <string name="scarlet_idle_assistant_manager">Менеджер простоя Scarlet</string>
-    <string name="scarlet_idle_assistant_manager_summary">Оптимизируйте потребление энергии и производительность устройства в простое</string>
+    <!-- Scarlet Manager -->
+    <string name="scarlet_services_title">Сервисы Scarlet</string>
+    <string name="scarlet_services_summary">Оптимизируйте потребление энергии и производительность устройства</string>
+    <string name="scarlet_system_manager_title">Системный менеджер Scarlet</string>
+    <string name="scarlet_system_manager_summary">Оптимизируйте потребление энергии и производительность устройства в режиме ожидания</string>
+    <string name="scarlet_system_boost_title">Повышение производительности Scarlet</string>
+    <string name="scarlet_system_boost_summary">Повысить производительность для более плавной работы системы</string>
+    <string name="scarlet_aggressive_idle_mode_title">Агрессивный режим ожидания Scarlet</string>
+    <string name="scarlet_aggressive_idle_mode_summary">Включить агрессивный режим ожидания</string>
+    <string name="scarlet_aggressive_idle_mode_ringer_title">Режим звонка при выключенном экране</string>
+    <string name="scarlet_aggressive_idle_mode_ringer_off_title">Не менять</string>
+    <string name="scarlet_aggressive_idle_mode_ringer_vibrate_title">Вибрация</string>
+    <string name="scarlet_aggressive_idle_mode_ringer_dnd_title">Не беспокоить</string>
+    <string name="scarlet_aggressive_idle_mode_ringer_silent_title">Беззвучный</string>
+    <string name="scarlet_aggressive_idle_mode_ringer_normal">Стандартный</string>
+    <string name="scarlet_aggressive_idle_mode_wifi_toggle_title">Выключать Wi-Fi</string>
+    <string name="scarlet_aggressive_idle_mode_wifi_toggle_summary">Выключать Wi-Fi при выключенном экране когда включен агрессивный режим ожидания Scarlet</string>
+    <string name="scarlet_aggressive_idle_mode_bluetooth_toggle_title">Выключать Bluetooth</string>
+    <string name="scarlet_aggressive_idle_mode_bluetooth_toggle_summary">Выключать Bluetooth при выключенном экране когда включен агрессивный режим ожидания Scarlet</string>
+    <string name="scarlet_aggressive_idle_mode_cellular_toggle_title">Выключать передачу данных</string>
+    <string name="scarlet_aggressive_idle_mode_cellular_toggle_summary">Выключать передачу данных при выключенном экране когда включен агрессивный режим ожидания Scarlet</string>
+    <string name="scarlet_aggressive_idle_mode_location_toggle_title">Выключать местоположение</string>
+    <string name="scarlet_aggressive_idle_mode_location_toggle_summary">Выключать местоположение при выключенном экране когда включен агрессивный режим ожидания Scarlet</string>
     <!-- Quick settings styles -->
     <string name="qs_styles_title">Стиль быстрых настроек</string>
     <string name="qs_outline">Обводка</string>
     <string name="qs_two_tone">Двухцветный</string>
     <string name="qs_color_pop">Дискотека</string>
-
     <!-- Volume Styles -->
     <string name="rui_style">Realme UI</string>
     <string name="rice_style">Rice</string>
     <string name="volume_style_title">Стиль панели громкости</string>
-
    <!-- Custom settings dashboard style -->
     <string name="settings_dashboard_style_title">Стиль настроек</string>
     <string name="settings_dashboard_style_oos">Sushi(OOS 11)</string>
@@ -1065,22 +1086,21 @@
     <string name="about_card_style_title">Стиль панли об устройств</string>
     <string name="about_card_style_banner_one">Обои по центру</string>
     <string name="about_card_style_banner_one_high">Обои по центру(Большой размер)</string>
-
     <!-- Lockscreen Clock -->
     <string name="kg_custom_clock_color_enabled_title">Цвет часов на экране блокировки</string>
-    <string name="kg_custom_clock_color_title">Цвет часов</string>
+    <string name="kg_custom_clock_color_title">Выбрать цвет</string>
     <string name="kg_custom_clock_top_margin_title">Нижний отступ часов</string>
     <string name="kg_big_clock_text_size_title">Размер больших часов</string>
-
+    <string name="clock_use_single_line_title">Стиль больший часов</string>
+    <string name="single_line">В одну линию</string>
+    <string name="double_line">В две линии</string>
     <!-- Media artwork -->
     <string name="artwork_media_background_enable_blur_title">Размытие обложки альбома</string>
     <string name="artwork_media_background_blur_radius_title">Степень размытия</string>
     <string name="lockscreen_albumart_filter_blur_radius_title">Степень размытия обложки альбома на экране блокировки</string>
-
     <!-- IME button space -->
     <string name="navigation_bar_ime_space_title">Скрыть область кнопки ввода</string>
     <string name="navigation_bar_ime_space_summary">Скрывает область кнопки ввода под клавиатурой</string>
-
     <!-- Network traffic -->
     <string name="network_traffic_title">Индикатор сетевого трафика</string>
     <string name="network_traffic_summary">Отображать текущую скорость соединения в строке состояния</string>
@@ -1088,4 +1108,132 @@
     <string name="network_options_title">Настройки</string>
     <string name="network_traffic_autohide_title">Скрывать индикатор сетевого трафика, когда сеть неактивна</string>
     <string name="network_traffic_autohide_summary">Скрывать индикатор сетевого трафика, когда активность сети ниже 1 кБ/с</string>
+    <!-- WiFi Standard icon -->
+    <string name="wifi_standard_icon_title">Стандарт WiFi</string>
+    <string name="wifi_standard_icon_summary">Показывать стандарт WiFi рядом с сигналом WiFi</string>
+    <!-- Google services -->
+    <string name="gms_enabled_title">Сервисы Google</string>
+    <string name="gms_enabled_summary">Управление сервисами Google и основными приложениями</string>
+    <string name="gms_enabled_footer">Прежде чем отключать службы Google и основные приложения, вы должны отключить «Найти устройство» и двухэтапную аутентификацию в своей учётной записи Google. Настоятельно рекомендуется оставить этот параметр включенным, иначе это повлияет на приложения, зависящие от компонентов Google. Если после изменения этого параметра у вас возникнут какие-либо проблемы, выполните сброс до заводских настроек.</string>
+    <!-- Ambient Customization -->
+    <string name="ambient_text_category">Настройки текста</string>
+    <string name="ambient_image_category">Настройки изображения</string>
+    <string name="ambient_text_category_title">Настройки фонового AOD</string>
+    <string name="ambient_text_category_summary">Настройки внешнего вида фонового AOD</string>
+    <string name="ambient_text_title">Фоновый текст</string>
+    <string name="ambient_text_summary">Показывать текст на AOD</string>
+    <string name="ambient_text_animation_title">Анимация текста</string>
+    <string name="ambient_text_animation_summary">Показывать анимацию при включеном AOD</string>
+    <string name="ambient_text_size_title">Размер текста</string>
+    <string name="ambient_text_font_title">Шрифт текста</string>
+    <string name="ambient_text_string_title">Установить свой текст</string>
+    <string name="ambient_text_align_title">Расположение текста</string>
+    <string name="ambient_text_align_start_top">Справа сверху</string>
+    <string name="ambient_text_align_start_center">Справа по центру</string>
+    <string name="ambient_text_align_start_bottom">Справа снизу</string>
+    <string name="ambient_text_align_center">По центру</string>
+    <string name="ambient_text_align_end_top">Слева сверху</string>
+    <string name="ambient_text_align_end_center">Слева по цетру</string>
+    <string name="ambient_text_align_end_bottom">Слева снизу</string>
+    <string name="ambient_text_type_color_title">Цвет текста</string>
+    <string name="ambient_text_color_title">Цвет текста на AOD</string>
+    <string name="ambient_notification_light_color_mode_accent">Системный акцент</string>
+    <string name="ambient_notification_light_color_mode_custom">Использовать собственный цвет</string>
+    <string name="ambient_notification_light_color_mode_wall">Цвет обоев</string>
+    <string name="ambient_image_title">Фоновое изображение</string>
+    <string name="file_header_select_title">Выбрать изображение</string>
+    <string name="file_header_select_summary">Выбрать изображение из памяти устройства</string>
+    <!-- Doze on double tap -->
+    <string name="double_tap_title">Двойное нажатие</string>
+    <string name="doze_double_tap_title">Двойное нажатие по экрану включит устроство</string>
+    <string name="doze_double_tap_summary">Показать уведомления по двойному нажатию</string>
+    <!-- Lockscreen bottom shortcuts -->
+    <string name="lockscreen_shortcut_category">Ярлыки внизу экрана</string>
+    <string name="lockscreen_shortcut_start_title">Ярлык слева</string>
+    <string name="lockscreen_shortcut_end_title">Ярлык справа</string>
+    <string name="lockscreen_shortcut_home">Домой</string>
+    <string name="lockscreen_shortcut_wallet">Кошелёк</string>
+    <string name="lockscreen_shortcut_flashlight">Фонарик</string>
+    <string name="lockscreen_shortcut_qr">QR сканер</string>
+    <string name="lockscreen_shortcut_camera">Камера</string>
+    <string name="lockscreen_shortcut_remote">Пульт Google TV</string>
+    <string name="lockscreen_shortcut_none">Ничего</string>
+    <!-- Volume haptic feedback -->
+    <string name="volume_panel_haptic_feedback_title">Вибрация</string>
+    <string name="volume_panel_haptic_feedback_summary">Включить вибрацию при регулировке громкости</string>
+    <!-- Monet color themes -->
+    <string name="monet_styles_title">Темы Monet</string>
+    <string name="monet_vivid">Яркие краски</string>
+    <string name="monet_snowpaint">Краски на снегу</string>
+    <string name="monet_espresso">Эспрессо</string>
+    <!-- Combined signal icons in status bar -->
+    <string name="combined_status_bar_signal_icons_title">Общий значок сигнала</string>
+    <string name="combined_status_bar_signal_icons_summary">Показывать общий значок для сигнала WiFi и мобильной сети</string>
+    <!-- Power Menu Styles -->
+    <string name="power_menu_type_title">Стиль меню питания</string>
+    <string name="power_menu_type_lite">Лайт (A12)</string>
+    <string name="power_menu_type_full">Полный (A11)</string>
+    <string name="power_menu_type_classic">Классический (A8)</string>
+    <string name="power_menu_type_grid">Сетка</string>
+    <string name="power_menu_type_legacy">Устаревший (A7)</string>
+    <!-- Gesture navbar radius -->
+    <string name="gesture_navbar_radius_title">Радиус таблетки</string>
+    <string name="thin_label">Тонкий</string>
+    <string name="thick_label">Толстый</string>
+    <!-- Android P animation style -->
+    <string name="pie_animation_style_title">Анимации Android P</string>
+    <string name="pie_animation_style_summary">Включить \"Стандартные"\ анимации Android P</string>
+    <!-- QS Page Transitions -->
+    <string name="qs_transitions_title">Анимация перехода в быстрых настройках</string>
+    <string name="qs_transitions_default">Стандартная</string>
+    <string name="qs_transitions_cube_in">Внутреняя сторона куба</string>
+    <string name="qs_transitions_cube_out">Внешняя сторона куба</string>
+    <string name="qs_transitions_accordion">Аккордион</string>
+    <string name="qs_transitions_background_to_foreground">От заднего плана к переднему</string>
+    <string name="qs_transitions_depth_page">Глубина</string>
+    <string name="qs_transitions_fade">Затухание</string>
+    <string name="qs_transitions_foreground_to_background">От переднего плана к заднему</string>
+    <string name="qs_transitions_rotate_down">Повернуть вниз</string>
+    <string name="qs_transitions_rotate_up">Повернуть вверх</string>
+    <string name="qs_transitions_stack">Наложение</string>
+    <string name="qs_transitions_tablet">Планшет</string>
+    <string name="qs_transitions_zoom_in">Приближение</string>
+    <string name="qs_transitions_zoom_out">Отдаление</string>
+    <string name="qs_transitions_zoom_out_slide">Стандартная с отдалением</string>
+    <!-- Settings Header -->
+    <string name="settings_header_image_title">Изображение в заголовке настроек</string>
+    <string name="settings_header_text_title">Текст в заголовке настроек</string>
+    <string name="settings_header_text_summary">Установить свой текст для банера на домашней странице настроек (Можно оставить пустым)</string>
+    <!-- Settings Greetings -->
+    <string name="settings_contextual_message_title">Включить контекстные сообщения</string>
+    <string name="settings_contextual_message_summary">Включить сообщения на домашней странице настроек, которые изменяются в зависимости от текущего времени суток</string>
+    <!-- Monet settings -->
+    <string name="monet_settings_title">Настройки Monet</string>
+    <string name="monet_settings_sammary">Несколько дополнительных параметров для настройки Monet</string>
+    <string name="theme_style_title">Стиль темы</string>
+    <string name="theme_style_tonal_spot">Тональное пятно (По умолчанию)</string>
+    <string name="theme_style_vibrant">Яркие цвета</string>
+    <string name="theme_style_expressive">Экспрессивные цвета</string>
+    <string name="theme_style_spritz">Spritz</string>
+    <string name="theme_style_rainbow">Радуга</string>
+    <string name="theme_style_fruit_salad">Фруктовый салат</string>
+    <string name="theme_style_muted">Приглушенные цвета</string>
+    <string name="theme_style_content">Содержание</string>
+    <string name="color_source_title">Источник цвета</string>
+    <string name="color_source_both">Оба (По умолчанию)</string>
+    <string name="color_source_home">Обои домашнего экрана</string>
+    <string name="color_source_lock">Обои экрана блокировки</string>
+    <string name="color_source_preset">Свой</string>
+    <string name="accent_color_title">Цвет акцента</string>
+    <string name="accent_color_summary">Выбрать свой цвет акцента</string>
+    <string name="accent_background_title">Акцент фона</string>
+    <string name="accent_background_summary">Выберите другой цвет акцента для фона</string>
+    <string name="bg_color_title">Цвет фона</string>
+    <string name="bg_color_summary">Выбрать свой цвет акцента для фона</string>
+    <string name="luminance_factor_title">Яркость</string>
+    <string name="luminance_factor_summary">Более высокие значения дают более яркие цвета</string>
+    <string name="chroma_factor_title">Насыщенность</string>
+    <string name="chroma_factor_summary">Более высокие значения дают более насыщенные цвета</string>
+    <string name="tint_background_title">Красить фон</string>
+    <string name="tint_background_summary">Сделать так, чтобы яркость и насыщенность влияли на цвет фона</string>
 </resources>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2021-2022 RiceDroid
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+     http://www.apache.org/licenses/LICENSE-2.0
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- riceDroid versioning -->
+    <string name="rice_version_title">Версия RiceOS</string>
+    <string name="about_device_info">Об устройстве</string>
+    <string name="rice_device_title">Устройство</string>
+    <string name="rice_build_version_title">Версия сборки</string>
+    <string name="rice_build_date_title">Дата сборки</string>
+
+    <string name="wellbeing_title">Цифровое благополучие</string>
+    <string name="gesture_illustration_description">Управляйте своим устройством с легкостью.</string>
+    <string name="connected_setting_description">Управляйте соединениями вашего устройства.</string>
+    <string name="accessibility_illustration_description">Простота доступа к функциям для всех.</string>
+    <string name="account_illustration_description">Управляйте своими паролями и учетными записями.</string>
+    <string name="display_illustration_description">Отрегулируйте настройки дисплея, такие как яркость, цвета и т.д.</string>
+    <string name="wifi_illustration_description">Управление сетевыми подключениями, провайдерами DNS, точками доступа и т.д.</string>
+    <string name="sec_illustration_description">Защитите свое устройство.</string>
+    <string name="sound_illustration_description">Настройка мелодий звонка, громкости и звуков пользовательского интерфейса.</string>
+    <string name="privacy_illustration_description">Управляйте доступом к конфиденциальной информации вашего устройства.</string>
+    <string name="system_illustration_description">Настройте системный язык, дату, время, жесты и многое другое.</string>
+    <string name="apps_illustration_description">Управляйте установленными приложениями, приложениями по умолчанию или отключайте приложения и т.д.</string>
+    <string name="battery_illustration_description">Контролируйте состояние и расход батареи.</string>
+    <string name="connectivity_category_title">подключение</string>
+
+    <string name="navbar_gesture_custom">Настройки жестов навигации</string>
+    <string name="usercard_summary">Владелец устройства</string>
+
+     <!-- About page -->
+    <string name="battery">Батарея</string>
+    <string name="display">Экран</string>
+    <string name="storage">Память</string>
+    <string name="chipset">Процессор</string>
+
+    <!-- About phone cards -->
+    <string name="about_device_nearby">Имя устройства могут и будут видеть устройства поблизости.</string>
+    <string name="about_device_version_type_gapps">Pixel</string>
+    <string name="about_device_version_type_vanilla">Vanilla</string>
+    <string name="version">RiseUI</string>
+    <string name="edit">Изменить</string>
+    <string name="device_name">Имя устройства</string>
+    <string name="about_us_info_category_title">О нас</string>
+    <string name="rice_revision">RiceDroid Revision</string>
+    <string name="rice_model_info">Информация об устройстве</string>
+
+    <string name="dashboard_morning1">Доброе утро!</string>
+    <string name="dashboard_morning2">Солнце уже взошло!</string>
+    <string name="dashboard_morning3">Приятного вам утра..</string>
+    <string name="dashboard_morning4">Отличного вам дня..</string>
+    <string name="dashboard_morning5">Совершенно новый день..</string>
+    <string name="dashboard_noon1">Добрый день.</string>
+    <string name="dashboard_noon2">Насладитесь закатом.</string>
+    <string name="dashboard_noon3">С возращеннием домой..</string>
+    <string name="dashboard_noon4">Наслаждайтесь днем!</string>
+    <string name="dashboard_noon5">С возвращением..</string>
+    <string name="dashboard_early_night1">Добрый вечер..</string>
+    <string name="dashboard_early_night2">Время ужинать!</string>
+    <string name="dashboard_night3">Приятных снов!</string>
+    <string name="dashboard_night4">Вам пора спать..</string>
+    <string name="dashboard_night5">Спокойной ночи!</string>
+    <string name="dashboard_midnight1">Уже поздняя ночь..</string>
+    <string name="dashboard_midnight2">Вам нужно поспать..</string>
+    <string name="dashboard_midnight3">Поспите..</string>
+    <string name="dashboard_midnight4">Вы уже можете отдохнуть..</string>
+    <string name="dashboard_midnight5">Ложиться поздно это вредно..</string>
+    <string name="dashboard_random1">Хотите риса?</string>
+    <string name="dashboard_random2">Панель поиска парой пикселей ниже..</string>
+    <string name="dashboard_random3">Привет владелец!</string>
+    <string name="dashboard_random4">Настройки</string>
+    <string name="dashboard_random5">Привет пользователь!</string>
+    <string name="dashboard_random6">Как дела?</string>
+
+    <string name="build_status">Статус сборки</string>
+    <string name="build_status_summary_placeholder">Как дела?</string>
+    <string name="build_is_official_title">Устройство официально поддерживается!</string>
+    <string name="build_is_community_title">Устройство поддерживается неофициально!</string>
+    <string name="build_is_official_summary">Сделано с любовью благодаря %s</string>
+    <string name="build_is_official_summary_oopsie">стоп, кто сделал эту сборку?</string>
+    <string name="build_is_community_summary">Неофициальная сборка от %s</string>
+    <string name="build_is_community_summary_oopsie">Пссс! пожалуйста сообщите сопровождающему, что он забыл добавить флаги сборки RICE!</string>
+
+    <!-- Ignore window secure -->
+    <string name="ignore_window_secure_title">Игнорировать флаг безопасного окна</string>
+    <string name="ignore_window_secure_summary">Снимает ограничения на скриншоты и записи экрана для всех приложений. В некоторых случаях это может быть удобно, но может привести к утечке конфиденциальной информации.</string>
+
+    <string name="top_level_settings_title">Настройки</string>
+    <string name="my_device_settings">Моё устройство</string>
+</resources>
