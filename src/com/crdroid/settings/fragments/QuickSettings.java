@@ -218,6 +218,24 @@ public class QuickSettings extends SettingsPreferenceFragment implements
             case 3:
               setQsStyle("com.android.system.qs.twotoneaccent");
               break;
+            case 4:
+              setQsStyle("com.android.system.qs.shaded");
+              break;
+            case 5:
+              setQsStyle("com.android.system.qs.cyberpunk");
+              break;
+            case 6:
+              setQsStyle("com.android.system.qs.neumorph");
+              break;
+            case 7:
+              setQsStyle("com.android.system.qs.reflected");
+              break;
+            case 8:
+              setQsStyle("com.android.system.qs.surround");
+              break;
+            case 9:
+              setQsStyle("com.android.system.qs.thin");
+              break;
             default:
               break;
         }
