@@ -18,7 +18,7 @@
 
     <!-- App Title -->
     <string name="crdroid_settings_title" translatable="false">Personalizations</string>
-    <string name="crdroid_settings_summary" translatable="false">Customize themes, features and more</string>
+    <string name="crdroid_settings_summary" translatable="false">Themes, features</string>
     <string name="reset_settings_title">Reset settings</string>
     <string name="reset_settings_message">This will reset most personalizations settings to their default values for the current user. Would you like to continue?</string>
     <string name="rice_illustration_summary">Welcome to the kitchen!</string>
@@ -1234,7 +1234,7 @@
     <string name="qs_color_pop">Color Pop</string>
     <string name="qs_shaded">Shaded</string>
     <string name="qs_cyberpunk">Cyberpunk</string>
-    <string name="qs_neumorph">Neumorph</string>
+    <string name="qs_neumorph">Neomorph</string>
     <string name="qs_reflected">Reflected</string>
     <string name="qs_surround">Surround</string>
     <string name="qs_thin">ThinLine</string>
@@ -1437,7 +1437,7 @@
     <string name="theme_style_title">Theme style</string>
     <string name="theme_style_tonal_spot">Tonal Spot (Default)</string>
     <string name="theme_style_vibrant">Vibrant</string>
-    <string name="theme_style_expressive">Exspressive</string>
+    <string name="theme_style_expressive">Expressive</string>
     <string name="theme_style_spritz">Spritz</string>
     <string name="theme_style_rainbow">Rainbow</string>
     <string name="theme_style_fruit_salad">Fruit Salad</string>
