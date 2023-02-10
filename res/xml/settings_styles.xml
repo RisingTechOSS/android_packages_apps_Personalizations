@@ -52,6 +52,13 @@
           android:summary="@string/settings_home_style_summary"
           android:defaultValue="false" />
        
+    <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+          android:key="settings_header_image_random"
+          android:icon="@drawable/ic_user"
+          android:title="@string/settings_header_image_random_title"
+          android:summary="@string/settings_header_image_random_summary"
+          android:defaultValue="false" />
+
     <!-- Settings Header - todo: replace with picker api -->    
     <com.crdroid.settings.preferences.SystemSettingSeekBarPreference
         android:key="settings_header_image"

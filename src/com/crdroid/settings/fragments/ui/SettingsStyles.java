@@ -66,6 +66,7 @@ public class SettingsStyles extends SettingsPreferenceFragment implements
 
     private static final String SETTINGS_DASHBOARD_STYLE = "settings_dashboard_style";
     private static final String SETTINGS_HEADER_IMAGE = "settings_header_image";
+    private static final String SETTINGS_HEADER_IMAGE_RANDOM = "settings_header_image_random";
     private static final String SETTINGS_HEADER_TEXT = "settings_header_text";
     private static final String SETTINGS_HEADER_TEXT_ENABLED = "settings_header_text_enabled";
     private static final String USE_STOCK_LAYOUT = "use_stock_layout";
@@ -79,6 +80,7 @@ public class SettingsStyles extends SettingsPreferenceFragment implements
     private SystemSettingSwitchPreference mHideUserCard;
     private ThemeUtils mThemeUtils;
     private Preference mSettingsHeaderImage;
+    private Preference mSettingsHeaderImageRandom;
     private SystemSettingEditTextPreference mSettingsHeaderText;
     private SystemSettingSwitchPreference mSettingsHeaderTextEnabled;
 
@@ -95,6 +97,8 @@ public class SettingsStyles extends SettingsPreferenceFragment implements
 
         mSettingsDashBoardStyle = (SystemSettingListPreference) findPreference(SETTINGS_DASHBOARD_STYLE);
         mSettingsDashBoardStyle.setOnPreferenceChangeListener(this);
+        mSettingsHeaderImageRandom = findPreference(SETTINGS_HEADER_IMAGE_RANDOM);
+        mSettingsHeaderImageRandom.setOnPreferenceChangeListener(this);
         mSettingsHeaderImage = findPreference(SETTINGS_HEADER_IMAGE);
         mSettingsHeaderImage.setOnPreferenceChangeListener(this);
         mUseStockLayout = (SystemSettingSwitchPreference) findPreference(USE_STOCK_LAYOUT);
@@ -152,6 +156,9 @@ public class SettingsStyles extends SettingsPreferenceFragment implements
             Utils.showSettingsRestartDialog(getContext());
             return true;
         } else if (preference == mSettingsHeaderImage) {
+            Utils.showSettingsRestartDialog(getContext());
+            return true;
+        } else if (preference == mSettingsHeaderImageRandom) {
             Utils.showSettingsRestartDialog(getContext());
             return true;
         } else if (preference == mSettingsHeaderTextEnabled) {
