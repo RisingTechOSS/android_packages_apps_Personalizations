@@ -65,9 +65,9 @@
         android:icon="@drawable/ic_header"
         android:title="@string/settings_header_image_title"
         android:max="98"
-        settings:min="0"
+        settings:min="1"
         settings:interval="1"
-        android:defaultValue="0" />
+        android:defaultValue="1" />
 
     <com.crdroid.settings.preferences.SystemSettingSwitchPreference
         android:key="settings_header_text_enabled"
