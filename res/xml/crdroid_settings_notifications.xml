@@ -69,6 +69,14 @@
         android:max="125"
         settings:min="5" />
 
+    <com.crdroid.settings.preferences.SystemSettingSeekBarPreference
+        android:key="media_artwork_fade_percent"
+        android:icon="@drawable/ic_custom_seekbar_plus"
+        android:title="@string/media_artwork_fade_percent_title"
+        android:defaultValue="30"
+        android:max="80"
+        settings:min="1" />
+
     <PreferenceCategory
         android:key="heads_up"
         android:title="@string/notification_heads_up_title">
