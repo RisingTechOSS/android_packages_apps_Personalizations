@@ -1463,4 +1463,8 @@
     <string name="chroma_factor_summary">Higher values produce stronger colors</string>
     <string name="tint_background_title">Tint Background</string>
     <string name="tint_background_summary">Make Luminance and Chroma selection affect background colors as well</string>
+    
+    <!-- Toast app icon -->
+    <string name="toast_icon_title">Toast app icon</string>
+    <string name="toast_icon_summary">Display the app\'s icon corresponding with the toast</string>
 </resources>

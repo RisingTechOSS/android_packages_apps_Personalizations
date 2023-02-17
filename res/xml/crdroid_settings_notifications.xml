@@ -55,6 +55,12 @@
         android:summary="@string/notification_guts_kill_app_button_summary" />
 
     <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+        android:key="toast_icon"
+        android:icon="@drawable/ic_toast"
+        android:title="@string/toast_icon_title"
+        android:summary="@string/toast_icon_summary" />
+
+    <com.crdroid.settings.preferences.SystemSettingSwitchPreference
         android:key="media_artwork_blur_enabled"
         android:icon="@drawable/ic_blur"
         android:title="@string/artwork_media_background_enable_blur_title"
