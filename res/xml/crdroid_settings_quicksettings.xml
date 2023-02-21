@@ -109,58 +109,6 @@
         android:key="qs_layout_category"
         android:title="@string/qs_layout_category_title">
 
-        <com.crdroid.settings.preferences.SystemSettingSwitchPreference
-            android:key="qs_tile_label_hide"
-            android:icon="@drawable/ic_text"
-            android:title="@string/qs_tile_label_hide_title"
-            android:summary="@string/qs_tile_label_hide_summary"
-            android:defaultValue="false" />
-
-        <com.crdroid.settings.preferences.SystemSettingSeekBarPreference
-            android:key="qs_tile_label_size"
-            android:icon="@drawable/ic_text"
-            android:title="@string/qs_tile_label_size_title"
-            android:max="15"
-            settings:min="10"
-            settings:interval="1"
-            settings:units="sp"
-            android:defaultValue="14" />
-
-        <com.crdroid.settings.preferences.SystemSettingSwitchPreference
-            android:key="qs_tile_vertical_layout"
-            android:icon="@drawable/ic_qs_tile"
-            android:title="@string/qs_tile_layout_title"
-            android:summary="@string/qs_tile_layout_summary"
-            android:defaultValue="false" />
-
-        <com.crdroid.settings.preferences.SystemSettingSeekBarPreference
-            android:key="qs_layout_columns"
-            android:icon="@drawable/ic_qs_tile"
-            android:title="@string/qs_columns_portrait_title"
-            android:max="5"
-            settings:min="2"
-            settings:interval="1"
-            android:defaultValue="2" />
-
-        <com.crdroid.settings.preferences.SystemSettingSeekBarPreference
-            android:key="qs_layout_columns_landscape"
-            android:icon="@drawable/ic_qs_tile"
-            android:title="@string/qs_columns_landscape_title"
-            android:max="6"
-            settings:min="2"
-            settings:interval="1"
-            android:defaultValue="4" />
-
-     <!-- QS styles -->
-    <com.crdroid.settings.preferences.SystemSettingListPreference
-        android:key="qs_panel_style"
-        android:icon="@drawable/ic_color_bucket"
-        android:title="@string/qs_styles_title"
-        android:entries="@array/qs_styles_entries"
-        android:entryValues="@array/qs_styles_values"
-        android:summary="%s"
-        android:defaultValue="0" />
-            
      <com.crdroid.settings.preferences.SystemSettingSeekBarPreference
         android:key="qs_transparency"
         android:icon="@drawable/ic_color_bucket"
@@ -171,6 +119,23 @@
         settings:units="%"
         android:max="100"
         android:min="1" />
+
+     <Preference
+        android:key="qs_tile_layout"
+        android:icon="@drawable/ic_qs_tile"
+        android:title="@string/qs_tile_layout_title"
+        android:summary="@string/qs_tile_layout_summary"
+        android:fragment="com.crdroid.settings.fragments.QsTileLayoutSettings" />
+
+     <!-- QS styles -->
+    <com.crdroid.settings.preferences.SystemSettingListPreference
+        android:key="qs_panel_style"
+        android:icon="@drawable/ic_color_bucket"
+        android:title="@string/qs_styles_title"
+        android:entries="@array/qs_styles_entries"
+        android:entryValues="@array/qs_styles_values"
+        android:summary="%s"
+        android:defaultValue="0" />
 
     </PreferenceCategory>
 
