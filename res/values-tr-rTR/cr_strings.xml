@@ -19,7 +19,7 @@
     <string name="crdroid_settings_title">riceDroid Ayarları</string>
     <string name="crdroid_settings_summary">Çeşitli özelleştirmeler</string>
     <string name="reset_settings_title">Ayarları sıfırla</string>
-    <string name="reset_settings_message">Bu mevcut kullanıcı için çoğu crdroid ayarlarını varsayılan değerlerine sıfırlar. Devam etmek ister misin?</string>
+    <string name="reset_settings_message">Bu mevcut kullanıcı için çoğu ricedroid ayarlarını varsayılan değerlerine sıfırlar. Devam etmek ister misin?</string>
     <!-- Personalization Categories -->
     <string name="button_title">Tuşlar</string>
     <string name="lockscreen_title">Kilit ekranı</string>
@@ -423,7 +423,6 @@
     <string name="network_traffic_mode_down">Yalnızca indirme</string>
     <string name="network_traffic_mode_all">Yükleme ve İndirme</string>
     <string name="network_traffic_autohide">Otomatik gizle</string>
-    <string name="network_traffic_autohide_summary">Veri etkinliği olmadığında ağ göstergesini gizle</string>
     <string name="network_traffic_autohide_kilobits">Kb/s</string>
     <string name="network_traffic_autohide_kilobytes">KB/s</string>
     <string name="network_traffic_autohide_threshold">Hareketsizlik eşiği</string>
@@ -985,4 +984,278 @@
     <!-- Parallel space -->
     <string name="laboratory_parallel_space_title">Paralel alan</string>
     <string name="laboratory_parallel_space_summary">Aynı uygulamanın birden çok örneğini paralel olarak çalıştırmaya izin ver</string>
+    <!-- Volume Media Output Toggle -->
+    <string name="volume_media_output_toggle_title">Medya sesi</string>
+    <string name="volume_media_output_toggle_summary">Aktif bir akış olduğunda medya çıkış düğmesini göster</string>
+    <!-- QS Weather Options -->
+    <string name="qs_weather_title">Hızlı ayarlar hava durumu stili</string>
+    <string name="qs_weather_summary">Hava durumu seçeneklerini ayarlayın</string>
+    <string name="qsweather_dialog_title">Hızlı ayarlar hava durumu konumu</string>
+    <string name="qs_weather_hidden">Gizle</string>
+    <string name="qs_temperature_image_show_scale">Ölçü ve resim ile göster</string>
+    <string name="qs_temperature_image_hide_scale">Resim ile göster</string>
+    <string name="qs_temperature_show_scale_hide_image">Ölçü ile göster</string>
+    <string name="qs_temperature_hide_scale_hide_image">Ölçü olmadan göster</string>
+    <string name="qs_show_image">Resim göster</string>
+    <string name="weather_show_all_condition">Ölçü, resim ve hava durumu ile göster</string>
+    <string name="qsweather_position_qqs">Hızlı ayarlar</string>
+    <string name="qsweather_position_qsb">Hızlı durum çubuğu</string>
+    <string name="qsweather_position_both">Her ikisi</string>
+    <string name="launcher_weather_title">Başlatıcı hava durumu stili</string>
+    <string name="kg_weather_title">Kilit ekranı hava durumu stili</string>
+    <!-- Omni weather -->
+    <string name="qs_weather_settings_title">Hava durumu ayarları</string>
+    <string name="qs_weather_settings_summary">Simge paketi ve hava durumu serivisini ayarlayın</string>
+    <string name="weather_title">Hava durumu ayarları</string>
+    <string name="weather_config_title">Hava durumu servisi</string>
+    <string name="weather_config_summary">Sistem servis ayarları</string>
+    <string name="weather_icon_pack_title">Durum simge paketi</string>
+    <string name="weather_icon_pack_note">Note\u003a Play store üzerinde \"Chronus simgeleri\" olarak arayarak simge paketleri yükleyebilirsiniz</string>
+    <string name="weather_icon_pack_info_title">Tips\u003a \n\n1. Kullanıcılar play store üzerinde \"Chronus icons\" olarak arayarak yeni simge paketleri yükleyebilirler.\n\n2. Durum simge paketi hızlı ayarlardaki simge ve başlatıcı bir bakışta için kullanılır.\n\n3. Hava durumuna kolayca erişebilmek için hızlı ayarlardaki görüntü/logo/sıcaklığa uzun basın.</string>
+    <string name="qsweather_settings_title">Hızlı ayarlar hava durumu</string>
+    <string name="qsweather_settings_summary">Hızlı ayarlar hava durumu görünümünü ayarlayın</string>
+    <!-- Scarlet Manager -->
+    <string name="scarlet_services_title">Scarlet Servisleri</string>
+    <string name="scarlet_services_summary">Cihazınızın sağlığını ve performansını iyileştirin</string>
+    <string name="scarlet_system_manager_title">Scarlet Sistem Yöneticisi</string>
+    <string name="scarlet_system_manager_summary">Cihaz bekleme modundayken güç tüketimini optimize edin</string>
+    <string name="scarlet_system_boost_title">Scarlet Sistem Hızlandırma</string>
+    <string name="scarlet_system_boost_summary">Hızlı ve akıcı kullanıcı deneyimi için sistem kaynaklarını hızlandırın</string>
+    <string name="scarlet_aggressive_idle_mode_title">Scarlet agresif bekleme modu</string>
+    <string name="scarlet_aggressive_idle_mode_summary">Agresif bekleme modu özelliklerini etkinleştirin</string>
+    <string name="scarlet_aggressive_idle_mode_ringer_title">Ekran kapalı ziz sesi modu</string>
+    <string name="scarlet_aggressive_idle_mode_ringer_off_title">Değiştirme</string>
+    <string name="scarlet_aggressive_idle_mode_ringer_vibrate_title">Titreşim</string>
+    <string name="scarlet_aggressive_idle_mode_ringer_dnd_title">Rahatsız etmeyin</string>
+    <string name="scarlet_aggressive_idle_mode_ringer_silent_title">Sessiz</string>
+    <string name="scarlet_aggressive_idle_mode_ringer_normal">Zil modu</string>
+    <string name="scarlet_aggressive_idle_mode_wifi_toggle_title">Wi-Fi\'ı kapat</string>
+    <string name="scarlet_aggressive_idle_mode_wifi_toggle_summary">Agresif bekleme modunda ekran kapanınca Wi-Fi\'ı devre dışı bırak</string>
+    <string name="scarlet_aggressive_idle_mode_bluetooth_toggle_title">Bluetooth\'u kapat</string>
+    <string name="scarlet_aggressive_idle_mode_bluetooth_toggle_summary">Agresif bekleme modunda ekran kapanınca Bluetooh\'u devre dışı bırak</string>
+    <string name="scarlet_aggressive_idle_mode_cellular_toggle_title">Mobil veriyi kapat</string>
+    <string name="scarlet_aggressive_idle_mode_cellular_toggle_summary">Agresif bekleme modunda ekran kapanınca mobil veriyi devre dışı bırak</string>
+    <string name="scarlet_aggressive_idle_mode_location_toggle_title">Konumu kapat</string>
+    <string name="scarlet_aggressive_idle_mode_location_toggle_summary">Agresif bekleme modunda ekran kapanınca konumu devre dışı bırak</string>
+    <!-- Quick settings styles -->
+    <string name="qs_styles_title">Hızlı ayarlar stilleri</string>
+    <string name="qs_outline">Dış çizgi</string>
+    <string name="qs_two_tone">Çift-Ton Accent</string>
+    <string name="qs_color_pop">Renk patlaması</string>
+    <string name="qs_shaded">Gölgeli</string>
+    <string name="qs_cyberpunk">Cyberpunk</string>
+    <string name="qs_neumorph">Neomorph</string>
+    <string name="qs_reflected">Yansıtmalı</string>
+    <string name="qs_surround">Çevrelenmiş</string>
+    <string name="qs_thin">İnce Çizgi</string>
+    <!-- Volume Styles -->
+    <string name="rui_style">Realme UI stili</string>
+    <string name="rice_style">Rice stili</string>
+    <string name="volume_style_title">Ses paneli stilleri</string>
+   <!-- Custom settings dashboard style -->
+    <string name="settings_dashboard_style_title">Ayarlar Stilleri</string>
+    <string name="settings_dashboard_style_oos">Sushi(legacy OOS)</string>
+    <string name="settings_dashboard_style_rui">Oxygen/ColorOS</string>
+    <string name="settings_dashboard_style_arc">Arcane</string>
+    <string name="settings_dashboard_style_aosp">Stock pixel</string>
+    <string name="settings_dashboard_style_mt">Google material you</string>
+    <string name="settings_dashboard_style_card">Ayan\'s card ui</string>
+    <string name="settings_home_style_title">Arama çubuğu stili</string>
+    <string name="settings_home_style_summary">AOSP ayarlar ana ekran stilini kullan</string>
+    <string name="settings_user_card_title">Kullanıcı kart tercihini gizle</string>
+    <string name="settings_user_card_summary">Arama çubuğunun altında ekstra kullanıcı profil kartını gizle</string>
+    <string name="about_card_style_title">Telefon hakkında stili</string>
+    <string name="about_card_style_banner_one">Ortalanmış duvar kağıdı başlığı</string>
+    <string name="about_card_style_banner_one_high">Ortalanmış duvar kağıdı başlığı (büyük)</string>
+    <!-- Lockscreen Clock -->
+    <string name="kg_custom_clock_color_enabled_title">Kilit ekranı saat rengi</string>
+    <string name="kg_custom_clock_color_title">Renk seç</string>
+    <string name="kg_custom_clock_top_margin_title">Saat alt boşluğu</string>
+    <string name="kg_big_clock_text_size_title">Büyük saat boyutu</string>
+    <string name="clock_use_single_line_title">Saat formatı</string>
+    <string name="single_line">Tek-satır</string>
+    <string name="double_line">Çift-satır</string>
+   <!-- Media artwork -->
+    <string name="artwork_media_background_enable_blur_title">Medya bildirim resmi arka planını bulanıklaştır</string>
+    <string name="artwork_media_background_blur_radius_title">Medya bildirim resmi bulanıklaştırma miktarı</string>
+    <string name="media_artwork_fade_percent_title">Medya bildirim resmi solma yüzdesi</string>
+    <string name="lockscreen_albumart_filter_blur_radius_title">Kilit ekranı medya resmi bulanıklaştırma miktarı</string>
+    <string name="ls_media_artwork_fade_percent_title">Kilit ekranı medya resmi solma yüzdesi</string>
+    <!-- IME button space -->
+    <string name="navigation_bar_ime_space_title">Giriş yöntemi düzenleyicisi tuş alanını gizle</string>
+    <string name="navigation_bar_ime_space_summary">Klavyenin altında giriş yöntemi düzenleyicisi tuş alanını gizle</string>
+    <!-- Network traffic -->
+    <string name="network_traffic_title">Ağ trafik göstergesi</string>
+    <string name="network_traffic_summary">Durum çubuğunda ağ trafik göstergesini etkinleştir veya devre dışı bırak</string>
+    <string name="network_traffic_master_switch_title">Ağ trafik göstergesini kullan</string>
+    <string name="network_options_title">Seçenekler</string>
+    <string name="network_traffic_autohide_title">Aktif değilse ağ trafik göstergesini gizle</string>
+    <string name="network_traffic_autohide_summary">Ağ trafiği 1 KB/s altında ise göstergeyi gizle</string>
+    <!-- WiFi Standard icon -->
+    <string name="wifi_standard_icon_title">Standart Wi-Fi simgesini göster</string>
+    <string name="wifi_standard_icon_summary">Wi-Fi türünü sinyal göstergesinde göster</string>
+    <!-- Google services -->
+    <string name="gms_enabled_title">Google servisleri</string>
+    <string name="gms_enabled_summary">Google hizmetlerini ve temel uygulamaları kontrol edin</string>
+    <string name="gms_enabled_footer">Google hizmetlerini ve temel uygulamaları devre dışı bırakmadan önce, Google hesabınızda "Cihazımı Bul"u ve 2 adımlı doğrulamayı devre dışı bırakmalısınız. Bu ayarın etkin durumda tutulması kesinlikle önerilir, aksi takdirde Google bileşenlerine bağımlı uygulamalar etkilenir. Bu ayarı değiştirdikten sonra herhangi bir sorunla karşılaşırsanız fabrika ayarlarına sıfırlayın.</string>
+    <!-- Ambient Customization -->
+    <string name="ambient_text_category">Metin Özelleştirmesi</string>
+    <string name="ambient_image_category">Resim Özelleştirmesi</string>
+    <string name="ambient_text_category_title">Ortam Ekranı Özelleştirmeleri</string>
+    <string name="ambient_text_category_summary">Ortam ekranı görünümünü özelleştirin</string>
+    <string name="ambient_text_title">Ortam ekranı metni</string>
+    <string name="ambient_text_summary">Daima açık ekranda ortam metni göster</string>
+    <string name="ambient_text_animation_title">Ortam metni animasyonu</string>
+    <string name="ambient_text_animation_summary">Daima açık ekranda animasyon göster</string>
+    <string name="ambient_text_size_title">Ortam metni boyutu</string>
+    <string name="ambient_text_font_title">Ortam metni yazı tipi</string>
+    <string name="ambient_text_string_title">Ortam metni ayarlayın</string>
+    <string name="ambient_text_align_title">Ortam metni hizalama</string>
+    <string name="ambient_text_align_start_top">Sağ üst</string>
+    <string name="ambient_text_align_start_center">Sağ orta</string>
+    <string name="ambient_text_align_start_bottom">Sağ alt</string>
+    <string name="ambient_text_align_center">Orta</string>
+    <string name="ambient_text_align_end_top">Sol üst</string>
+    <string name="ambient_text_align_end_center">Sol orta</string>
+    <string name="ambient_text_align_end_bottom">Sol alt</string>
+    <string name="ambient_text_type_color_title">Ortam metni tipi rengi</string>
+    <string name="ambient_text_color_title">Ortam metni rengi</string>
+    <string name="ambient_notification_light_color_mode_accent">Sistem vurgu rengi</string>
+    <string name="ambient_notification_light_color_mode_custom">Özel renk</string>
+    <string name="ambient_notification_light_color_mode_wall">Duvar kağıdı rengi</string>
+    <string name="ambient_image_title">Ortam resmi</string>
+    <string name="file_header_select_title">Özel resim seçin</string>
+    <string name="file_header_select_summary">Depolama biriminden resim seçin</string>
+    <!-- Doze on double tap -->
+    <string name="double_tap_title">Çift dokunma</string>
+    <string name="doze_double_tap_title">Telefonu kontrol etmek için çift tıklayın</string>
+    <string name="doze_double_tap_summary">Çift dokunarak bildirimlere göz atın</string>
+    <!-- Lockscreen bottom shortcuts -->
+    <string name="lockscreen_shortcut_category">Alt kısayollar</string>
+    <string name="lockscreen_shortcut_start_title">Sol kısayol</string>
+    <string name="lockscreen_shortcut_end_title">Sağ kısayol</string>
+    <string name="lockscreen_shortcut_home">Ana ekran kontrolleri</string>
+    <string name="lockscreen_shortcut_wallet">Cüzdan</string>
+    <string name="lockscreen_shortcut_flashlight">El feneri</string>
+    <string name="lockscreen_shortcut_qr">QR kod tarayıcı</string>
+    <string name="lockscreen_shortcut_camera">Kamera</string>
+    <string name="lockscreen_shortcut_remote">Uzaktan kontrol</string>
+    <string name="lockscreen_shortcut_none">Yok</string>
+    <!-- App lock -->
+    <string name="app_lock_title">Uygulama kilidi</string>
+    <plurals name="app_lock_summary">
+        <item quantity="one"><xliff:g example="1" id="Number of applications">%1$d</xliff:g> uygulama kilitlendi</item>
+        <item quantity="other"><xliff:g example="10" id="Number of applications">%1$d</xliff:g> uygulama kilitlendi</item>
+    </plurals>
+    <string name="app_lock_authentication_dialog_title">Kilidi aç</string>
+    <string name="enable_debugging">Hata ayıklama etkin</string>
+    <string name="disable_debugging">Hata ayıklama devre dışı</string>
+    <string name="app_lock_packages_title">Kilitlenen uygulamalar</string>
+    <string name="app_lock_packages_summary">Biyometri veya cihaz kimlik bilgileri ile korunacak uygulamaları seçin</string>
+    <string name="app_lock_timeout_title">Otomatik kilit zaman aşımı</string>
+    <string name="app_lock_timeout_summary">Kilidi açılan bir uygulamanın arka planda ne kadar süre sonra kilitleneceği</string>
+    <string name="app_lock_notifications_title">Bildirimleri daralt</string>
+    <string name="app_lock_notifications_summary">
+          Seçilen uygulamalar kilitlendiğinde bildirim içeriği gizlenecek ve daraltılacak.
+          Bildirim pencereleri otomatik olarak devre dışı bırakılacak.
+     </string>
+    <string name="app_lock_notifications_disabled_summary">Önce bir uygulama kilitleyin</string>
+    <string name="app_lock_biometrics_allowed_title">Kilidi açmak için biyometri kullan</string>
+    <string name="app_lock_footer_text">Baloncuklar zaman aşımından sonra otomatik olarak yok sayılacak</string>
+    <string name="enable_protection">Korumayı etkinleştir</string>
+    <string name="hide_from_launcher_title">Uygulamayı başlatıcıdan gizle</string>
+    <string name="hide_from_launcher_summary">
+        Bu uygulamanın başlatıcıda görünmesini engeller. Değişikliklerin etkili olması için başlatıcının yeniden başlatılması gerekir.  
+    </string>
+    <!-- Volume haptic feedback -->
+    <string name="volume_panel_haptic_feedback_title">Ses dokunma geri bildirimi</string>
+    <string name="volume_panel_haptic_feedback_summary">Ses ayarlanırken dokunma bildirimini etkinleştir</string>
+    <!-- Monet color themes -->
+    <string name="monet_styles_title">Monet Temaları</string>
+    <string name="monet_vivid">Vivid Colors</string>
+    <string name="monet_snowpaint">Paint in the Snow</string>
+    <string name="monet_espresso">Espresso</string>
+    <!-- Combined signal icons in status bar -->
+    <string name="combined_status_bar_signal_icons_title">Birleşik sinyal simgeleri</string>
+    <string name="combined_status_bar_signal_icons_summary">WiFi ve mobil sinyal için birleşik tek simge göster</string>
+    <!-- Power Menu Styles -->
+    <string name="power_menu_type_title">Güç menüsü stili</string>
+    <string name="power_menu_type_lite">Lite (A12)</string>
+    <string name="power_menu_type_full">Full (A11)</string>
+    <string name="power_menu_type_classic">Classic (A8)</string>
+    <string name="power_menu_type_grid">Grid</string>
+    <string name="power_menu_type_legacy">Legacy (A7)</string>
+    <!-- Combined qs headers -->
+    <string name="combined_qs_headers_title">Birleşik hızlı ayarlar başlıkları</string>
+    <string name="combined_qs_headers_icons_summary">Birleşik hızlı ayarlar başlık düzenine geç</string>
+    <!-- Gesture navbar radius -->
+    <string name="gesture_navbar_radius_title">Düğme yarı çapı</string>
+    <string name="thin_label">İnce</string>
+    <string name="thick_label">Kalın</string>
+    <!-- Android P animation style -->
+    <string name="pie_animation_style_title">Android P animasyon stili</string>
+    <string name="pie_animation_style_summary">Android P \"Varsayılan\" animasyonlarını etkinleştir</string>
+    <!-- QS Page Transitions -->
+    <string name="qs_transitions_title">Hızlı ayarlar sayfa geçişleri</string>
+    <string name="qs_transitions_default">Varsayılan</string>
+    <string name="qs_transitions_cube_in">Cube In</string>
+    <string name="qs_transitions_cube_out">Cube Out</string>
+    <string name="qs_transitions_accordion">Accordion</string>
+    <string name="qs_transitions_background_to_foreground">Background to Foreground</string>
+    <string name="qs_transitions_depth_page">Depth page</string>
+    <string name="qs_transitions_fade">Fade</string>
+    <string name="qs_transitions_foreground_to_background">Foreground to Background</string>
+    <string name="qs_transitions_rotate_down">Rotate down</string>
+    <string name="qs_transitions_rotate_up">Rotate up</string>
+    <string name="qs_transitions_stack">Stack</string>
+    <string name="qs_transitions_tablet">Tablet</string>
+    <string name="qs_transitions_zoom_in">Zoom in</string>
+    <string name="qs_transitions_zoom_out">Zoom out</string>
+    <string name="qs_transitions_zoom_out_slide">Zoom out slide</string>
+    <!-- Settings Header -->
+    <string name="settings_header_image_title">Ayarlar başlık görüntüsü</string>
+    <string name="settings_header_text_title">Ayarlar başlık metni</string>
+    <string name="settings_header_text_enabled_title">Başlık metni ayarlayın</string>
+    <string name="settings_header_text_summary">Ayarlar ana ekranı başlık metni (Boş başlık metni için boş bırakın)</string>
+    <string name="settings_header_image_random_title">Rastgele başlık görüntüsü</string>
+    <string name="settings_header_image_random_summary">Ayarlar kontrol panelinde rastgele başlık görüntüsünü etkinleştirin</string>
+    <!-- Settings Greetings -->
+    <string name="settings_contextual_message_title">Ayarlarda rastgele mesajlar</string>
+    <string name="settings_contextual_message_summary">Ayarlar ana ekranında günün saatine göre değişen mesajları etkinleştirin</string>
+    <!-- Monet settings -->
+    <string name="monet_settings_title">Tema ayarları</string>
+    <string name="monet_settings_sammary">Monet için birkaç ekstra seçenek</string>
+    <string name="theme_style_title">Tema stili</string>
+    <string name="theme_style_tonal_spot">Tonal Spot (Varsayılan)</string>
+    <string name="theme_style_vibrant">Vibrant</string>
+    <string name="theme_style_expressive">Expressive</string>
+    <string name="theme_style_spritz">Spritz</string>
+    <string name="theme_style_rainbow">Rainbow</string>
+    <string name="theme_style_fruit_salad">Fruit Salad</string>
+    <string name="theme_style_muted">Muted</string>
+    <string name="theme_style_content">Content</string>
+    <string name="color_source_title">Renk kaynağı</string>
+    <string name="color_source_both">Her ikisi (Varsayılan)</string>
+    <string name="color_source_home">Ana ekran duvar kağıdı</string>
+    <string name="color_source_lock">Kilit ekranı duvar kağıdı</string>
+    <string name="color_source_preset">Ön ayarlı</string>
+    <string name="accent_color_title">Vurgu rengi</string>
+    <string name="accent_color_summary">Varsayılan rengi geçersiz kıl</string>
+    <string name="accent_background_title">Vurgu arka planı</string>
+    <string name="accent_background_summary">Arka plan için farklı bir renk seçin</string>
+    <string name="bg_color_title">Arka plan rengi</string>
+    <string name="bg_color_summary">Varsayılan arka plan vurgu rengini geçersiz kıl</string>
+    <string name="luminance_factor_title">Parlaklık</string>
+    <string name="luminance_factor_summary">Daha yüksek değerler daha parlak renkler üretir</string>
+    <string name="chroma_factor_title">Berraklık</string>
+    <string name="chroma_factor_summary">Daha yüksek değerler daha güçlü renkler üretir</string>
+    <string name="tint_background_title">Arka plan tonu</string>
+    <string name="tint_background_summary">Parlaklık ve berraklığın arka plan renklerini da etkilemesini sağla</string>
+    <!-- Toast app icon -->
+    <string name="toast_icon_title">Bildirim simgesi</string>
+    <string name="toast_icon_summary">Bildirim ile uyumlu uygulama simgesini görüntüle</string>
+    <!-- Doze on charge -->
+    <string name="doze_on_charge_title">Şarj olurken daima açık</string>
+    <string name="doze_on_charge_summary">Şarj olurken her zaman ortam ekranını göster</string>
+
 </resources>

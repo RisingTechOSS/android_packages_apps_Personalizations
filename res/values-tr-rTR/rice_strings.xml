@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2021-2022 RiceDroid
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+     http://www.apache.org/licenses/LICENSE-2.0
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- riceDroid versioning -->
+    <string name="rice_version_title">RiceOS Sürümü</string>
+    <string name="about_device_info">RiceDroid Cihazı</string>
+    <string name="rice_device_title">Cihaz</string>
+    <string name="rice_build_version_title">Sürüm</string>
+    <string name="rice_build_date_title">İnşa tarihi</string>
+        
+    <string name="wellbeing_title">Dijital Denge</string>
+    <string name="gesture_illustration_description">Cihazınızı kontrol edin.</string>
+    <string name="connected_setting_description">Cihazınızın bağlantılarını kontrol edin.</string>
+    <string name="accessibility_illustration_description">Herkes için kolay özellik erişimi.</string>
+    <string name="account_illustration_description">Şifrelerinizi ve hesaplarınızı yönetin.</string>
+    <string name="display_illustration_description">Parlaklık, renkler vb. gibi görünüm seçeneklerini ayarlayın.</string>
+    <string name="wifi_illustration_description">Ağ bağlantılarını, DNS sağlayıcıları, hotspot vb. yönetin.</string>
+    <string name="sec_illustration_description">Cihaz gizliliğinizi sağlayın ve cihazınızı koruyun.</string>
+    <string name="sound_illustration_description">Zil sesleri, sesler ve arayüz seslerini ayarlayın.</string>
+    <string name="privacy_illustration_description">Cihazınızın gizlilik erişimini/bilgisini yönetin.</string>
+    <string name="system_illustration_description">Sistem dilini, saati, tarihi, hareketleri ve fazlasını ayarlayın.</string>
+    <string name="apps_illustration_description">Yüklenen uygulamaları yönetin, varsayılan uygulamaları ayarlayın vb. </string>
+  <string name="battery_illustration_description">Pil sağlığını, kullanımını gözlemleyin ve pil kullanımını iyileştirin.</string>
+    <string name="connectivity_category_title">bağlanabilirlik</string>
+    
+    <string name="navbar_gesture_custom">Gezinme Özelleştirmeleri</string>
+    <string name="usercard_summary">Cihaz sahibi</string>
+    
+     <!-- About page -->
+    <string name="battery">Pil</string>
+    <string name="display">Ekran</string>
+    <string name="storage">Hafıza</string>
+    <string name="chipset">İşlemci</string>
+
+    <!-- About phone cards -->
+    <string name="about_device_nearby">Cihaz adı yakındaki cihazlar tarafından görülebilecek.</string>
+    <string name="about_device_version_type_gapps">Pixel</string>
+    <string name="about_device_version_type_vanilla">Vanilla</string>
+    <string name="version">Rise UI</string>
+    <string name="edit">Düzenle</string>
+    <string name="device_name">Cihaz adı</string>
+    <string name="about_us_info_category_title">Hakkımızda</string>
+    <string name="rice_revision">RiceDroid Sürümü</string>
+    <string name="rice_model_info">Cihaz Bilgisi</string>
+    
+    <string name="dashboard_morning1">Günaydın!</string>
+    <string name="dashboard_morning2">Güneş doğdu!</string>
+    <string name="dashboard_morning3">Güzel bir sabah..</string>
+    <string name="dashboard_morning4">İyi günler..</string>
+    <string name="dashboard_morning5">Yeni bir gün..</string>
+    <string name="dashboard_noon1">İyi günler.</string>
+    <string name="dashboard_noon2">Gün batımının keyfini çıkar.</string>
+    <string name="dashboard_noon3">Eve hoşgeldin..</string>
+    <string name="dashboard_noon4">Günün tadını çıkar!</string>
+    <string name="dashboard_noon5">Hoşgeldin..</string>
+    <string name="dashboard_early_night1">İyi akşamlar..</string>
+    <string name="dashboard_early_night2">AKşam yemeği vakti!</string>
+    <string name="dashboard_night3">Tatlı rüyalar!</string>
+    <string name="dashboard_night4">Uyku vakti..</string>
+    <string name="dashboard_night5">İyi geceler!</string>
+    <string name="dashboard_midnight1">Sessizliğin tadını çıkar..</string>
+    <string name="dashboard_midnight2">Yardıma ihtiyacın var..</string>
+    <string name="dashboard_midnight3">Biraz uyu..</string>
+    <string name="dashboard_midnight4">Dinlen..</string>
+    <string name="dashboard_midnight5">Geç mi uyursun?</string>
+    <string name="dashboard_random1">rice ister misin?</string>
+    <string name="dashboard_random2">Merhaba!</string>
+    <string name="dashboard_random3">Merhaba!</string>
+    <string name="dashboard_random4">Ayarlar</string>
+    <string name="dashboard_random5">Merhaba kullanıcı!</string>
+    <string name="dashboard_random6">Ne var ne yok?</string>
+    
+    <string name="build_status">Durum</string>
+    <string name="build_status_summary_placeholder">Ne var ne yok?</string>
+    <string name="build_is_official_title">Cihaz resmi olarak destekleniyor!</string>
+    <string name="build_is_community_title">Cihaz resmi olarak desteklenmiyor!</string>
+    <string name="build_is_official_summary">%s tarafından inşa edildi</string>
+    <string name="build_is_official_summary_oopsie">ama, bu sürümü kim inşa etti?</string>
+    <string name="build_is_community_summary">%s tarafından resmi olmayan sürüm</string>
+    <string name="build_is_community_summary_oopsie">Psst! Lütfen geliştiriciye RICE işaretlerini eklemeyi unuttuğunu söyleyin!</string>
+
+    <!-- Ignore window secure -->
+    <string name="ignore_window_secure_title">Pencere güvenli işaretlerini yok say</string>
+    <string name="ignore_window_secure_summary">Ekran görüntüsü ve ekran kaydının limitlerini tüm uygulamalar için kaldırır. Bu bazı durumlarda uygun olabilir fakat güvenlik açıklarına neden olabilir.</string>
+    
+    <string name="top_level_settings_title">Ayarlar</string>
+    <string name="my_device_settings">Cihazım</string>
+</resources>
