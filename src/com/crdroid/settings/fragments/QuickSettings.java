@@ -236,6 +236,9 @@ public class QuickSettings extends SettingsPreferenceFragment implements
             case 9:
               setQsStyle("com.android.system.qs.thin");
               break;
+            case 10:
+              setQsStyle("com.android.system.qs.twotoneaccenttrans");
+              break;
             default:
               break;
         }

@@ -1243,6 +1243,7 @@
     <string name="qs_reflected">Reflected</string>
     <string name="qs_surround">Surround</string>
     <string name="qs_thin">ThinLine</string>
+     <string name="qs_two_tone_trans">Two-Tone Translucent</string>
 
     <!-- Volume Styles -->
     <string name="rui_style">Realme UI style</string>

@@ -803,6 +803,7 @@
         <item>@string/qs_reflected</item>
         <item>@string/qs_surround</item>
         <item>@string/qs_thin</item>
+        <item>@string/qs_two_tone_trans</item>
     </string-array>
 
     <string-array name="qs_styles_values" translatable="false">
@@ -816,6 +817,7 @@
         <item>7</item>
         <item>8</item>
         <item>9</item>
+        <item>10</item>
     </string-array>
     
    <string-array name="volume_styles_entries" translatable="false">
