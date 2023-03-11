@@ -34,11 +34,20 @@ import androidx.preference.SwitchPreference;
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
+import com.crdroid.settings.preferences.CustomSeekBarPreference;
 
-public class SmartCharging extends SettingsPreferenceFragment {
+import com.android.internal.util.crdroid.Utils;
+
+public class SmartCharging extends SettingsPreferenceFragment 
+	implements Preference.OnPreferenceChangeListener {
 
     private static final String TAG = "SmartCharging";
     private static final String SMART_CHARGING_FOOTER = "smart_charging_footer";
+    
+    private Preference mSmartCharge;
+    private Preference mResetStats;
+    private CustomSeekBarPreference mStopLevel;
+    private CustomSeekBarPreference mResumeLevel;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -47,18 +56,32 @@ public class SmartCharging extends SettingsPreferenceFragment {
         addPreferencesFromResource(R.xml.smart_charging);
 
         findPreference(SMART_CHARGING_FOOTER).setTitle(R.string.smart_charging_footer);
+        
+        mSmartCharge = findPreference("smart_charging");
+        mSmartCharge.setOnPreferenceChangeListener(this);
+
+        mResetStats = findPreference("smart_charging_reset_stats");
+        mResetStats.setOnPreferenceChangeListener(this);
+
+        mStopLevel = (CustomSeekBarPreference) findPreference("smart_charging_level");
+        mStopLevel.setOnPreferenceChangeListener(this);
+
+        mResumeLevel = (CustomSeekBarPreference) findPreference("smart_charging_resume_level");
+        mResumeLevel.setOnPreferenceChangeListener(this);
     }
 
-    public static void reset(Context mContext) {
-        ContentResolver resolver = mContext.getContentResolver();
-        Settings.System.putIntForUser(resolver,
-                Settings.System.SMART_CHARGING, 0, UserHandle.USER_CURRENT);
-        Settings.System.putIntForUser(resolver,
-                Settings.System.SMART_CHARGING_RESET_STATS, 0, UserHandle.USER_CURRENT);
-        Settings.System.putIntForUser(resolver,
-                Settings.System.SMART_CHARGING_LEVEL, 80, UserHandle.USER_CURRENT);
-        Settings.System.putIntForUser(resolver,
-                Settings.System.SMART_CHARGING_RESUME_LEVEL, 60, UserHandle.USER_CURRENT);
+    @Override
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+        if (preference == mStopLevel) {
+            Utils.showSystemRestartDialog(getContext());
+        } else if (preference == mResumeLevel) {
+            Utils.showSystemRestartDialog(getContext());
+        } else if (preference == mSmartCharge) {
+            Utils.showSystemRestartDialog(getContext());
+        } else if (preference == mResetStats) {
+            Utils.showSystemRestartDialog(getContext());
+        }
+        return true;
     }
 
     @Override
