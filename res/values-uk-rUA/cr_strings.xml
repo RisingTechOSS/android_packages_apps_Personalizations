@@ -13,8 +13,7 @@
      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
      See the License for the specific language governing permissions and
      limitations under the License.
--->
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+--><resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
     <string name="crdroid_settings_title">Налаштування riceDroid</string>
     <string name="crdroid_settings_summary">Додаткові налаштування</string>
@@ -22,7 +21,7 @@
     <string name="reset_settings_message">Буде здійснено скидання більшості параметрів crdroid до їх значень за замовчуванням для поточного користувача. Чи хотіли б Ви продовжити?</string>
     <!-- Personalization Categories -->
     <string name="button_title">Кнопки</string>
-    <string name="lockscreen_title">Блокування екрану</string>
+    <string name="lockscreen_title">Екран блокування</string>
     <string name="misc_title">Інші налаштування</string>
     <string name="navigation_title">Навігація</string>
     <string name="notifications_title">Сповіщення</string>
@@ -41,7 +40,7 @@
     <!-- General strings -->
     <string name="ok">Добре</string>
     <string name="reset">Скинути</string>
-    <string name="cancel">Скасувати</string>
+    <string name="cancel">Відмінити</string>
     <string name="save">Зберегти</string>
     <string name="discard_changes">Скасувати зміни</string>
     <string name="never">Ніколи</string>
@@ -344,7 +343,7 @@
     <string name="status_bar_am_pm_info">24-годинний формат часу</string>
     <string name="status_bar_am_pm_normal">Нормальний</string>
     <string name="status_bar_am_pm_small">Маленький</string>
-    <string name="status_bar_am_pm_hidden">Прихований</string>
+    <string name="status_bar_am_pm_hidden">Приховано</string>
     <string name="status_bar_date_title">Дата</string>
     <string name="status_bar_date_none">Прихований</string>
     <string name="status_bar_date_small">Маленький</string>
@@ -394,8 +393,8 @@
     <string name="battery_bar_blend_color_title">Поєднання кольорів</string>
     <string name="battery_bar_blend_color_summary">Суміш повний/порожній колір, відповідний відсоток батареї</string>
     <string name="battery_bar_blend_color_reverse_title">Зворотній напрямок кольорів</string>
-    <string name="battery_bar_blend_color_reverse_summary_off">Повний &#8594; порожній: червоний &#8592; зелений &#8592; синій &#8592; червоний</string>
-    <string name="battery_bar_blend_color_reverse_summary_on">Повний &#8594; порожній: червоний &#8594; зелений &#8594; синій &#8594; червоний</string>
+    <string name="battery_bar_blend_color_reverse_summary_off">Повний → порожній: червоний ← зелений ← синій ← червоний</string>
+    <string name="battery_bar_blend_color_reverse_summary_on">Повний → порожній: червоний → зелений → синій → червоний</string>
     <!-- Quick setting categories -->
     <string name="qs_misc_category">Інші налаштування</string>
     <string name="qs_footer_category">Нижній колонтитул</string>
@@ -658,7 +657,7 @@
     <string name="flashlight_on_call_always">Завжди</string>
     <string name="flashlight_on_call_ignore_dnd_title">Ігнорувати режим \"Не турбувати\"</string>
     <string name="flashlight_on_call_ignore_dnd_summary">Чи блимати, коли активовано режим \"Не турбувати\"</string>
-    <string name="flashlight_on_call_rate_title">Частота кадрів</string>
+    <string name="flashlight_on_call_rate_title">Частота мигань</string>
     <!-- Gaming mode -->
     <string name="gaming_mode_title">Ігровий простір</string>
     <string name="gaming_mode_summary">Додаткові можливості для поглибленого ігрового досвіду</string>
@@ -772,10 +771,10 @@
     <string name="wifi_band_24ghz_and_6ghz">2,4 ГГц &amp; 6 ГГц</string>
     <string name="wifi_band_60ghz">60 ГГц</string>
     <plurals name="wifi_hotspot_client_limit_summary">
-        <item quantity="other">Up to <xliff:g id="device_num">%1$d</xliff:g> devices can connect to this hotspot</item>
         <item quantity="one">До цієї точки доступу можна під\'єднати <xliff:g id="device_num">%1$d</xliff:g> пристрій</item>
         <item quantity="few">До цієї точки доступу можна під\'єднати <xliff:g id="device_num">%1$d</xliff:g> пристроїв</item>
-        <item quantity="many">Up to <xliff:g id="device_num">%1$d</xliff:g> devices can connect to this hotspot</item>
+        <item quantity="many">До цієї точки доступу можуть підключатися до <xliff:g id="device_num">%1$d</xliff:g> пристроїв</item>
+        <item quantity="other">До цієї точки доступу можуть підключатися до <xliff:g id="device_num">%1$d</xliff:g> пристроїв</item>
     </plurals>
     <!-- Disable QS -->
     <string name="disable_qs_title">Приховати швидкі налаштування на захищеному екрані блокування</string>
@@ -850,7 +849,7 @@
     <string name="game_dashboard_dnd_title">Режим \"Не турбувати\" для ігор</string>
     <!-- reTicker -->
     <string name="reticker_title">Повторний тікер</string>
-    <string name="reticker_summary">Замініть головне сповіщення тонкою та менш інвазивною версією оновленого тікера</string>
+    <string name="reticker_summary">Замініть головне сповіщення тонкою та менш агресивним версією оновленого тікера</string>
     <string name="reticker_colored_title">Використовувати кольоровий фон додатка</string>
     <string name="reticker_colored_summary">Замініть колір фону оновленого тікера за допомогою основного кольору програми сповіщень</string>
     <!-- Smart Pixels -->
@@ -914,8 +913,8 @@
     <string name="qs_tile_label_size_title">Розмір тексту мітки</string>
     <string name="qs_tile_label_hide_summary">Показувати іконку тільки на плитці</string>
     <string name="qs_tile_layout_title">Вертикальне розташування</string>
-    <string name="qs_tile_layout_summary">Відображати значок під іконкою поряд з міткою</string>
-    <string name="qs_columns_portrait_title">Колонки (портретна орієнтація)</string>
+    <string name="qs_tile_layout_summary">Налаштування розташування плиток у панелі QS</string>
+    <string name="qs_columns_portrait_title">Колонки (Портретна орієнтація)</string>
     <string name="qs_columns_landscape_title">Колонки (ландшафтна орієнтація)</string>
     <!-- Statusbar Clock background chip -->
     <string name="statusbar_clock_chip_title">Розмиття фону</string>
@@ -989,4 +988,326 @@
     <!-- Parallel space -->
     <string name="laboratory_parallel_space_title">Паралельний простір</string>
     <string name="laboratory_parallel_space_summary">Дозволити запуск кількох екземплярів однакової програми паралельно</string>
+    <string name="qs_weather_settings_title">Налаштування погоди</string>
+    <string name="lockscreen_shortcut_none">Не відображати</string>
+    <string name="sb_settings_title">Панель стану</string>
+    <string name="buttons_settings_summary">Налаштування апаратних кнопок</string>
+    <string name="qs_tile_vertical_layout_title">Вертикальне розташування</string>
+    <string name="difference_official_version">У чому різниця між COMMUNITY та OFFICIAL версіями\?</string>
+    <string name="qs_tiles_layout_category">Розташування плитки</string>
+    <string name="rice_illustration_summary">Ласкаво просимо на кухню!</string>
+    <string name="misc_device_settings_title">Налаштування пристрою</string>
+    <string name="misc_spoof_settings_title">Спуфинг</string>
+    <string name="default_string">За замовчуванням</string>
+    <string name="follow_system_font_string">Дотримуватися системного шрифту</string>
+    <string name="what_is_riseui_summary">Rise UI - це назва оболонки інтерфейсу riceOS.</string>
+    <string name="ricing_terminology">Отже, що таке Rice\?</string>
+    <string name="difference_official_version_summary">COMMUNITY та OFFICIAL версії пропонують однакову кількість функцій, OFFICIAL версія підтримує офіційні OTA безпосередньо від офіційної організації ricedroidOSS. У порівнянні зі збірками COMMUNITY, ми завжди надаємо пріоритет проблемам, про які повідомляється, і запитам на покращення від OFFICIAL розробників.</string>
+    <string name="system_styles_title">Системні стилі</string>
+    <string name="system_styles_summary">Налаштування інтерфейсу користувача системи</string>
+    <string name="lockscreen_styles_title">Стилі блокування екрана</string>
+    <string name="settings_styles_title">Налаштування стилів</string>
+    <string name="settings_styles_summary">Налаштування параметрів інтерфейсу користувача</string>
+    <string name="notification_material_dismiss_style_title">Стиль кнопки</string>
+    <string name="notification_material_dismiss_bgstyle_title">Кнопка фону</string>
+    <string name="qs_apply_change_button_title">Застосувати зміни</string>
+    <string name="qs_rows_portrait_title">Ряди (Портрет)</string>
+    <string name="qqs_rows_portrait_title">Рядки (Портрет QS)</string>
+    <string name="qsweather_position_qqs">Швидкі налаштування</string>
+    <string name="qsweather_position_qsb">Швидкий панель стану</string>
+    <string name="volume_media_output_toggle_title">Перемикач гучності мультимедійного виходу</string>
+    <string name="qs_weather_title">Стиль погоди QS</string>
+    <string name="weather_config_summary">Налаштування системної служби</string>
+    <string name="weather_icon_pack_title">Пакет іконок стану</string>
+    <string name="settings_dashboard_style_aosp">Стоковий Pixel</string>
+    <string name="settings_dashboard_style_mt">Google Material You</string>
+    <string name="ambient_text_align_title">Вирівнювання навколишнього тексту</string>
+    <string name="ambient_text_align_start_top">Справа вгорі</string>
+    <string name="ambient_text_string_title">Задати навколишній текст</string>
+    <string name="qs_transitions_fade">Затухання</string>
+    <string name="monet_styles_title">Монет теми</string>
+    <string name="misc_settings_title">Інше</string>
+    <string name="qs_transitions_default">За замовчуванням</string>
+    <string name="misc_general_settings_title">Інші загальні налаштування</string>
+    <string name="misc_other_settings_title">Інші різні налаштування</string>
+    <string name="disabled">Вимкнено</string>
+    <string name="what_is_ricedroid">Що таке riceDroid\?</string>
+    <string name="what_is_riseui">Що таке Rise UI\?</string>
+    <string name="what_happened_to_old_source">Що сталося зі старим riceDroid\?</string>
+    <string name="what_happened_to_old_source_summary">Стару організацію riceDroid було розпущено через внутрішні конфлікти, зокрема, щодо закриття вихідного коду, коштів на оренду серверів та управління вихідним кодом (багато людей використовували обліковий запис minaripenguin для анонімності). Нова організація riceDroidOSS тепер підтримується виключно одним супровідником коду і поширюється офіційно офіційними супровідниками пристроїв.</string>
+    <string name="rice_redirects">Дізнайтеся більше про riceDroid!</string>
+    <string name="about_settings_title">Про нас</string>
+    <string name="about_settings_summary">Інформація про riceDroid</string>
+    <string name="buttons_settings_title">Кнопки</string>
+    <string name="lockscreen_settings_title">Екран блокування</string>
+    <string name="general_lockscreen_title">Загальні налаштування екрана блокування</string>
+    <string name="lockscreen_settings_summary">Налаштування інтерфейсу екрана блокування</string>
+    <string name="misc_gen_settings_title">Інші налаштування</string>
+    <string name="nav_settings_title">Навігація</string>
+    <string name="sound_settings_title">Звук</string>
+    <string name="ui_settings_title">Інтерфейс користувача</string>
+    <string name="lockscreen_styles_summary">Налаштування інтерфейсу екрана блокування</string>
+    <string name="qs_tile_hide_label_title">Приховати підписи</string>
+    <string name="qs_weather_settings_summary">Налаштування набору значків і служб погоди</string>
+    <string name="weather_title">Налаштування погоди</string>
+    <string name="scarlet_aggressive_idle_mode_ringer_vibrate_title">Вібрація</string>
+    <string name="scarlet_aggressive_idle_mode_ringer_dnd_title">Не турбувати</string>
+    <string name="kg_custom_clock_color_title">Вибір кольору</string>
+    <string name="network_traffic_title">Індикатор мережевого трафіку</string>
+    <string name="ambient_text_align_center">Центр</string>
+    <string name="ambient_notification_light_color_mode_custom">Власний колір</string>
+    <string name="lockscreen_shortcut_flashlight">Ліхтарик</string>
+    <string name="status_bar_battery_style_big_dotted_circle">Великий пунктирне коло</string>
+    <string name="status_bar_battery_style_icon_rlandscape_style_a">Пейзаж R Стиль A</string>
+    <string name="status_bar_battery_style_icon_landscape_style_a">Пейзаж L Стиль A</string>
+    <string name="status_bar_battery_style_icon_rlandscape_style_b">Пейзаж R Стиль B</string>
+    <string name="status_bar_battery_style_icon_landscape_style_b">Пейзаж L Стиль B</string>
+    <string name="status_bar_battery_style_icon_landscape_musku">Портрет IOS</string>
+    <string name="status_bar_battery_style_icon_landscape_signal">Пейзаж Аіроо</string>
+    <string name="status_bar_battery_style_icon_landscape_buddy">Пейзажна капсула</string>
+    <string name="qs_apply_change_failed">Не вдалося застосувати зміни</string>
+    <string name="qs_tile_vertical_layout_summary">Увімкнути вертикальне розташування для плиток QS</string>
+    <string name="qsweather_dialog_title">Швидкі налаштування розташування погоди</string>
+    <string name="qs_weather_hidden">Приховати погоду</string>
+    <string name="status_bar_battery_style_icon_landscape_pill">Портрет Mx</string>
+    <string name="status_bar_battery_style_icon_landscape_line">Пейзаж Lorn</string>
+    <string name="qs_tile_hide_label_summary">Показувати лише іконку для плиток QS</string>
+    <string name="volume_media_output_toggle_summary">Показувати перемикач виводу медіа, коли є активний потік</string>
+    <string name="qs_weather_summary">Налаштувати погоду</string>
+    <string name="qs_show_image">Показати зображення</string>
+    <string name="qsweather_position_both">Обидва</string>
+    <string name="weather_config_title">Служба погоди</string>
+    <string name="scarlet_services_summary">Оптимізація працездатності та продуктивності пристрою</string>
+    <string name="scarlet_system_manager_summary">Оптимізуйте енергоспоживання та продуктивність пристрою під час простою пристрою</string>
+    <string name="scarlet_system_boost_summary">Підвищуйте системні ресурси для швидшого та гнучкого користувацького досвіду</string>
+    <string name="scarlet_aggressive_idle_mode_summary">Увімкнення функцій агресивного режиму простою</string>
+    <string name="scarlet_aggressive_idle_mode_ringer_title">Екран вимкнення режиму дзвінка</string>
+    <string name="scarlet_aggressive_idle_mode_ringer_silent_title">Мовчазний</string>
+    <string name="scarlet_aggressive_idle_mode_wifi_toggle_title">Вимкнення Wi-Fi</string>
+    <string name="scarlet_aggressive_idle_mode_wifi_toggle_summary">Вимкніть Wi-Fi на вимкненому екрані, коли ввімкнено агресивний режим очікування Scarlet</string>
+    <string name="scarlet_aggressive_idle_mode_bluetooth_toggle_title">Вимкнення Bluetooth</string>
+    <string name="qs_temperature_image_show_scale">Показувати температуру з масштабом і зображенням</string>
+    <string name="qs_temperature_image_hide_scale">Показувати температуру із зображенням без масштабу</string>
+    <string name="qs_temperature_show_scale_hide_image">Показувати температуру зі шкалою</string>
+    <string name="qs_temperature_hide_scale_hide_image">Показувати температуру без масштабу</string>
+    <string name="launcher_weather_title">Cтиль погоди у лаунчері</string>
+    <string name="kg_weather_title">Стиль погоди на екрані блокування</string>
+    <string name="weather_icon_pack_note">Примітка: ви можете встановити нові пакети значків з Play Store, шукаючи «Chronus icons»</string>
+    <string name="qsweather_settings_title">Швидкі налаштування погоди</string>
+    <string name="qsweather_settings_summary">Налаштування видів погоди</string>
+    <string name="scarlet_services_title">Служби Scarlet</string>
+    <string name="scarlet_system_manager_title">Системний менеджер Scarlet</string>
+    <string name="scarlet_system_boost_title">Прискорення роботи системи</string>
+    <string name="scarlet_aggressive_idle_mode_title">Агресивний режим простою</string>
+    <string name="scarlet_aggressive_idle_mode_ringer_off_title">Не змінювати</string>
+    <string name="scarlet_aggressive_idle_mode_ringer_normal">Режим дзвінка</string>
+    <string name="scarlet_aggressive_idle_mode_cellular_toggle_title">Вимкнення мобільних даних</string>
+    <string name="scarlet_aggressive_idle_mode_cellular_toggle_summary">Вимкніть мобільні дані на вимкненому екрані, якщо ввімкнено агресивний режим очікування Scarlet</string>
+    <string name="qs_outline">Контур</string>
+    <string name="qs_two_tone">Двоколірний акцент</string>
+    <string name="qs_color_pop">Колір Поп</string>
+    <string name="qs_shaded">Затінений</string>
+    <string name="qs_cyberpunk">Кіберпанк</string>
+    <string name="qs_neumorph">Неоморф</string>
+    <string name="qs_reflected">Відображені</string>
+    <string name="qs_surround">Об\'ємний</string>
+    <string name="qs_thin">Тонка лінія</string>
+    <string name="qs_two_tone_trans">Двоколірний напівпрозорий</string>
+    <string name="rui_style">Стиль інтерфейсу Realme</string>
+    <string name="settings_home_style_title">Стиль панелі пошуку</string>
+    <string name="settings_user_card_summary">Сховати додаткову картку профілю користувача під панеллю пошуку</string>
+    <string name="single_line">Однорядковий</string>
+    <string name="scarlet_aggressive_idle_mode_location_toggle_title">Вимкнути GPS</string>
+    <string name="scarlet_aggressive_idle_mode_location_toggle_summary">Вимкнути GPS на вимкненому екрані, якщо увімкнено агресивний режим очікування Scarlet</string>
+    <string name="qs_styles_title">Стилі швидких налаштувань</string>
+    <string name="rice_style">Cтиль Rice</string>
+    <string name="volume_style_title">Стилі панелей гучності</string>
+    <string name="settings_dashboard_style_title">Налаштування стилей</string>
+    <string name="settings_dashboard_style_oos">Sushi (legacy OOS)</string>
+    <string name="settings_dashboard_style_rui">Oxygen/ColorOS</string>
+    <string name="settings_dashboard_style_arc">Arcane</string>
+    <string name="settings_dashboard_style_card">Ayan\'s Card UI</string>
+    <string name="settings_home_style_summary">Використовуйте стиль домашньої сторінки налаштувань від AOSP</string>
+    <string name="settings_user_card_title">Приховати налаштування картки користувача</string>
+    <string name="about_card_style_title">Стиль \"Про телефон\"</string>
+    <string name="about_card_style_banner_one">Центрований банер для шпалер</string>
+    <string name="about_card_style_banner_one_high">Центрований банер для шпалер (великий)</string>
+    <string name="kg_custom_clock_color_enabled_title">Колір годинника на екрані блокування</string>
+    <string name="kg_custom_clock_top_margin_title">Нижній інтервал годинника на екрані блокування</string>
+    <string name="kg_big_clock_text_size_title">Великий розмір годинника на екрані блокування</string>
+    <string name="clock_use_single_line_title">Формат годинника на екрані блокування</string>
+    <string name="double_line">Дворядна</string>
+    <string name="ls_media_artwork_fade_percent_title">Сума затухання для ілюстрації мультимедійного екрана</string>
+    <string name="network_traffic_master_switch_title">Використовувати індикатор мережевого трафіку</string>
+    <string name="network_options_title">Варіанти</string>
+    <string name="network_traffic_autohide_title">Приховати індикатор мережевого трафіку, якщо він неактивний</string>
+    <string name="wifi_standard_icon_title">Стандарт Wi-Fi</string>
+    <string name="wifi_standard_icon_summary">Відображення стандарту WiFi поруч із сигналом WiFi</string>
+    <string name="gms_enabled_title">Сервіси Google</string>
+    <string name="gms_enabled_summary">Керування службами Google і основними додатками</string>
+    <string name="ambient_text_category">Налаштування тексту</string>
+    <string name="ambient_image_category">Налаштування зображення</string>
+    <string name="ambient_text_title">Навколишній текст</string>
+    <string name="ambient_text_summary">Показувати навколишній текст у AoD</string>
+    <string name="ambient_text_animation_summary">Показувати анімацію під час показу AOD</string>
+    <string name="ambient_text_size_title">Розмір навколишнього тексту</string>
+    <string name="ambient_text_align_start_center">Прямо в центрі</string>
+    <string name="ambient_text_align_end_top">Ліворуч вгорі</string>
+    <string name="ambient_text_align_end_center">Ліворуч в центрі</string>
+    <string name="artwork_media_background_blur_radius_title">Величина розмиття для ілюстрацій медіа-сповіщень</string>
+    <string name="media_artwork_fade_percent_title">Відсоток затемнення для ілюстрацій медіа-сповіщень</string>
+    <string name="lockscreen_albumart_filter_blur_radius_title">Сума розмиття для медіа-об\'єктів на екрані блокування</string>
+    <string name="navigation_bar_ime_space_title">Приховати місце для кнопок IME</string>
+    <string name="navigation_bar_ime_space_summary">Приховати простір для кнопок IME під клавіатурою</string>
+    <string name="network_traffic_summary">Увімкнути або вимкнути індикатор швидкості мережі в панелі стану</string>
+    <string name="ambient_text_category_title">Налаштування Ambient/AOD</string>
+    <string name="ambient_text_category_summary">Налаштуйте зовнішній вигляд Ambient/AOD</string>
+    <string name="ambient_text_animation_title">Анімація навколишнього тексту</string>
+    <string name="ambient_text_font_title">Шрифт навколишнього тексту</string>
+    <string name="ambient_text_align_start_bottom">Справа Внизу</string>
+    <string name="ambient_text_color_title">Колір навколишнього тексту</string>
+    <string name="ambient_notification_light_color_mode_accent">Системний колір акценту</string>
+    <string name="ambient_notification_light_color_mode_wall">Колір шпалер</string>
+    <string name="ambient_image_title">Навколишнє зображення</string>
+    <string name="file_header_select_title">Виберіть локальне зображення</string>
+    <string name="double_tap_title">Подвійний тап</string>
+    <string name="doze_double_tap_title">Двічі торкніться, щоб перевірити телефон</string>
+    <string name="doze_double_tap_summary">Імпульсні сповіщення подвійним натисканням</string>
+    <string name="lockscreen_shortcut_category">Нижні ярлики</string>
+    <string name="lockscreen_shortcut_end_title">Правий ярлик</string>
+    <string name="lockscreen_shortcut_home">Домашні елементи управління</string>
+    <string name="lockscreen_shortcut_wallet">Гаманець</string>
+    <string name="lockscreen_shortcut_qr">Сканер QR-коду</string>
+    <string name="lockscreen_shortcut_camera">Камера</string>
+    <string name="app_lock_title">Блокування додатків</string>
+    <string name="app_lock_authentication_dialog_title">Розблокувати</string>
+    <string name="app_lock_packages_title">Захищені додатки</string>
+    <string name="app_lock_packages_summary">Виберіть програми для захисту за допомогою біометрії або облікових даних пристрою</string>
+    <string name="app_lock_timeout_title">Тайм-аут автоматичного блокування</string>
+    <string name="app_lock_timeout_summary">Тривалість часу, після якого розблокована програма у фоновому режимі повинна бути заблокована</string>
+    <string name="app_lock_notifications_title">Редагувати сповіщення</string>
+    <string name="app_lock_notifications_summary">Вміст сповіщень буде приховано та згорнуто для вибраних програм, коли вони заблоковані. Повідомлення Heads up будуть автоматично відключені.</string>
+    <string name="app_lock_notifications_disabled_summary">Спочатку захистіть програму</string>
+    <string name="app_lock_biometrics_allowed_title">Увімкнення біометрії для розблокування</string>
+    <string name="enable_protection">Увімкнути захист</string>
+    <string name="ambient_text_type_color_title">Тип кольору навколишнього тексту</string>
+    <string name="file_header_select_summary">Вибрати зображення з пам\'яті</string>
+    <string name="lockscreen_shortcut_start_title">Лівий ярлик</string>
+    <string name="lockscreen_shortcut_remote">Пульт</string>
+    <string name="enable_debugging">Увімкнути режим тестування</string>
+    <string name="disable_debugging">Відключення режим тестування</string>
+    <string name="app_lock_footer_text">\"Бульбашки\" будуть автоматично закриті після закінчення тайм-ауту</string>
+    <string name="volume_panel_haptic_feedback_title">Гучність тактильної зворотного зв\'язку</string>
+    <string name="volume_panel_haptic_feedback_summary">Увімкніть гучність тактильної зворотного зв\'язку при регулюванні гучності</string>
+    <string name="monet_vivid">Яскраві кольори</string>
+    <string name="monet_snowpaint">Фарба в снігу</string>
+    <string name="monet_espresso">Еспрессо</string>
+    <string name="combined_status_bar_signal_icons_title">Комбіновані піктограми сигналу</string>
+    <string name="combined_status_bar_signal_icons_summary">Показувати єдиний комбінований значок для WiFi та мобільного сигналу</string>
+    <string name="power_menu_type_full">Повний (A11)</string>
+    <string name="power_menu_type_classic">Класичний (A8)</string>
+    <string name="power_menu_type_grid">Сітка</string>
+    <string name="combined_qs_headers_title">Комбіновані заголовки QS</string>
+    <string name="combined_qs_headers_icons_summary">Переключитися на комбінований QS Заголовки макета</string>
+    <string name="thin_label">Тонкий</string>
+    <string name="thick_label">Товстий</string>
+    <string name="pie_animation_style_title">Стиль анімації Android P</string>
+    <string name="pie_animation_style_summary">Увімкніть анімацію Android P «За замовчуванням»</string>
+    <string name="qs_transitions_title">QS Переходи сторінок</string>
+    <string name="qs_transitions_accordion">Акордеон</string>
+    <string name="qs_transitions_background_to_foreground">Фон на передньому плані</string>
+    <string name="qs_transitions_depth_page">Глибина сторінки</string>
+    <string name="qs_transitions_foreground_to_background">Передній план на задній план</string>
+    <string name="qs_transitions_rotate_down">Повернути вниз</string>
+    <string name="qs_transitions_rotate_up">Повернути вгору</string>
+    <string name="qs_transitions_stack">Стек</string>
+    <string name="qs_transitions_tablet">Планшет</string>
+    <string name="qs_transitions_zoom_in">Збільшити</string>
+    <string name="qs_transitions_zoom_out_slide">Зменшити слайд</string>
+    <string name="settings_header_image_title">Налаштування заголовка зображення</string>
+    <string name="settings_header_text_title">Налаштування тексту заголовка</string>
+    <string name="settings_header_text_enabled_title">Встановити параметри тексту заголовка</string>
+    <string name="power_menu_type_title">Стиль меню живлення</string>
+    <string name="power_menu_type_lite">Прості (А12)</string>
+    <string name="power_menu_type_legacy">Legacy (A7)</string>
+    <string name="gesture_navbar_radius_title">Радіус навігаційної панелі жестом</string>
+    <string name="qs_transitions_cube_out">Куб назовні</string>
+    <string name="qs_transitions_cube_in">Куб всередині</string>
+    <string name="qs_transitions_zoom_out">Зменшити</string>
+    <string name="settings_header_image_random_title">Випадкові настройки заголовка зображення</string>
+    <string name="settings_contextual_message_title">Налаштування контекстних повідомлень</string>
+    <string name="settings_contextual_message_summary">Увімкнути налаштування домашньої сторінки повідомлень, які змінюються на основі поточного часу доби</string>
+    <string name="theme_style_title">Стиль теми</string>
+    <string name="theme_style_vibrant">Яскравий</string>
+    <string name="theme_style_expressive">Виразний</string>
+    <string name="theme_style_rainbow">Веселка</string>
+    <string name="theme_style_fruit_salad">Фруктовий салат</string>
+    <string name="theme_style_muted">Приглушений</string>
+    <string name="theme_style_content">Контент</string>
+    <string name="color_source_title">Джерело кольору</string>
+    <string name="color_source_preset">Пресет</string>
+    <string name="accent_color_title">Акцентний колір</string>
+    <string name="accent_color_summary">Перевизначити колір акценту за замовчуванням</string>
+    <string name="accent_background_title">Акцент фону</string>
+    <string name="accent_background_summary">Виберіть інший колір акценту для фону</string>
+    <string name="bg_color_title">Колір фону</string>
+    <string name="bg_color_summary">Перевизначити колір фонового акценту за замовчуванням</string>
+    <string name="luminance_factor_title">Яскравість</string>
+    <string name="luminance_factor_summary">Більш високі значення дають більш яскраві кольори</string>
+    <string name="chroma_factor_title">Хрома</string>
+    <string name="chroma_factor_summary">Більш високі значення дають більш сильні кольори</string>
+    <string name="tint_background_title">Відтінок фону</string>
+    <string name="tint_background_summary">Зробіть вибір яскравості та кольоровості також впливати на кольори тла</string>
+    <string name="settings_header_image_random_summary">Включити випадкові естетичні налаштування панелі банер/зображення заголовка</string>
+    <string name="monet_settings_title">Налаштування тем</string>
+    <string name="monet_settings_sammary">Кілька додаткових налаштувань для налаштування двигуна монет</string>
+    <string name="theme_style_tonal_spot">Тональна пляма (За замовчуванням)</string>
+    <string name="theme_style_spritz">Спритц</string>
+    <string name="color_source_both">Обидва (За замовчуванням)</string>
+    <string name="color_source_home">Домашні обої</string>
+    <string name="color_source_lock">Блокування обоїв</string>
+    <string name="toast_icon_title">Іконка програми у спливаючому повідомленні</string>
+    <string name="toast_icon_summary">Відобразити іконку програми, яка відповідає спливаючому повідомленню</string>
+    <string name="doze_on_charge_title">Завжди увімкнений під час зарядки</string>
+    <string name="doze_on_charge_summary">Показувати екран Doze весь час під час зарядки</string>
+    <string name="theme_customization_clock_font_title">Стиль шрифту годинника на екрані блокування</string>
+    <string name="theme_customization_clock_font_summary">Встановити стиль шрифту годинника</string>
+    <string name="theme_customization_date_font_title">Стиль шрифту дати на екрані блокування</string>
+    <string name="theme_customization_date_font_summary">Задати стиль шрифту дати на екрані блокування</string>
+    <string name="status_bar_battery_style_big_circle">Велике коло</string>
+    <string name="weather_show_all_condition">Показувати температуру із масштабом, зображенням та погодними умовами</string>
+    <string name="weather_icon_pack_info_title">Поради:
+\n
+\n1. Користувачі можуть встановлювати нові пакети іконок з play store, шукаючи «Chronus icons».
+\n
+\n2. Пакет іконок стану використовується для іконок погоди у швидких налаштуваннях та Sushi Launcher \"At a glance\".
+\n
+\n3. Тривале натискання кнопки швидких налаштувань перегляду погоди/логотипу/температури дає змогу легко отримати доступ до налаштувань погоди.</string>
+    <string name="scarlet_aggressive_idle_mode_bluetooth_toggle_summary">Вимкніть Bluetooth на вимкненому екрані, коли ввімкнено агресивний режим очікування Scarlet</string>
+    <string name="artwork_media_background_enable_blur_title">Розмиття фону ілюстрації медіа-повідомлення</string>
+    <string name="gms_enabled_footer">Перш ніж відключити служби Google і основні додатки, слід відключити функцію «Знайти пристрій» і двоетапну перевірку в обліковому записі Google. Настійно рекомендується тримати цей параметр увімкненим, інакше це вплине на додатки, залежні від компонентів Google. Якщо ви зіткнулися з будь-якими проблемами після зміни цього параметра, виконайте скидання до заводських налаштувань.</string>
+    <string name="ambient_text_align_end_bottom">Зліва знизу</string>
+    <plurals name="app_lock_summary">
+        <item quantity="one"><xliff:g example="1" id="Number of applications"> %1$d </xliff:g> додаток захищено</item>
+        <item quantity="few"><xliff:g example="1" id="Number of applications">%1$d</xliff:g> додатки захищені</item>
+        <item quantity="many"></item>
+        <item quantity="other"></item>
+    </plurals>
+    <string name="hide_from_launcher_title">Приховати від лаунчера</string>
+    <string name="hide_from_launcher_summary">Заборонити програмі з\'являтися у лаунчері. Щоб зміни набули чинності, потрібно перезапустити лаунчер.</string>
+    <string name="settings_header_text_summary">Користувальницький текст заголовка для налаштувань домашньої сторінки банера (Залишити порожнім для порожнього тексту заголовка)</string>
+    <string name="what_is_ricedroid_summary">RiceDroid - це організація, яка займається підтримкою riceOS - операційної системи Android з відкритим вихідним кодом, метою якої є внесення необхідних системних модифікацій, залишаючись при цьому акуратною, стабільною і швидкою. Натхненна OxygenOS (10-11) та NothingOS.</string>
+    <string name="ricing_terminology_summary">Термін \"rice\" використовується для опису робочого столу користувача Unix, де \"ricing\" - це дія, коли хтось налаштовує свій робочий стіл, наприклад, змінює іконки, панелі або системний інтерфейс.
+\nджерело: https://jie-fang.github.io/blog/basics-of-ricing</string>
+    <string name="ui_theme_engine_title">Движок тем</string>
+    <string name="notif_settings_title">Сповіщення</string>
+    <string name="qs_settings_title">Швидкі налаштування</string>
+    <string name="misc_settings_summary">Різне без категорії</string>
+    <string name="nav_settings_summary">Налаштування поведінки навігації</string>
+    <string name="notif_settings_summary">Керуйте сповіщеннями та багато іншим</string>
+    <string name="qs_settings_summary">Налаштування швидких налаштувань</string>
+    <string name="sound_settings_summary">Налаштування звуку та вібрацій</string>
+    <string name="sb_settings_summary">Налаштування іконок панелі стану, макета тощо</string>
+    <string name="ui_settings_summary">Налаштування кольорів інтерфейсу, іконок, шрифтів тощо</string>
+    <string name="ui_theme_engine_summary">Увімкнути пак іконок, теми, тощо</string>
 </resources>
