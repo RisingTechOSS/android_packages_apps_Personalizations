@@ -25,4 +25,11 @@
         android:title="@string/pulse_on_new_tracks_title"
         android:summary="@string/pulse_on_new_tracks_summary" />
 
+    <Preference
+        android:key="edge_light_settings"
+        android:icon="@drawable/ic_pulse"
+        android:title="@string/edge_light_title"
+        android:summary="@string/edge_light_summary"
+        android:fragment="com.rising.settings.fragments.misc.doze.EdgeLightSettings" />
+
 </PreferenceScreen>
