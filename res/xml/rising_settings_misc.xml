@@ -130,6 +130,13 @@
     <PreferenceCategory
         android:title="@string/misc_other_settings_title">
         
+   <com.rising.settings.preferences.GlobalSettingSwitchPreference
+        android:key="pie_animation_style"
+        android:icon="@drawable/ic_system_animation"
+        android:title="@string/pie_animation_style_title"
+        android:summary="@string/pie_animation_style_summary"
+        android:defaultValue="false" />
+
     <!-- Three-fingers-swipe to screenshot -->
     <com.rising.settings.preferences.SystemSettingSwitchPreference
         android:key="three_finger_gesture"
