@@ -45,8 +45,8 @@ import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.SwitchPreference;
 
 import com.android.internal.logging.nano.MetricsProto;
-import com.android.internal.util.crdroid.Utils;
-import com.android.internal.util.crdroid.ThemeUtils;
+import com.android.internal.util.rising.Utils;
+import com.android.internal.util.rising.ThemeUtils;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -94,7 +94,7 @@ public class QuickSettings extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.crdroid_settings_quicksettings);
+        addPreferencesFromResource(R.xml.rising_settings_quicksettings);
 
         final Context mContext = getActivity().getApplicationContext();
         final ContentResolver resolver = mContext.getContentResolver();
@@ -256,7 +256,7 @@ public class QuickSettings extends SettingsPreferenceFragment implements
      * For search
      */
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
-            new BaseSearchIndexProvider(R.xml.crdroid_settings_quicksettings) {
+            new BaseSearchIndexProvider(R.xml.rising_settings_quicksettings) {
 
                 @Override
                 public List<String> getNonIndexableKeys(Context context) {

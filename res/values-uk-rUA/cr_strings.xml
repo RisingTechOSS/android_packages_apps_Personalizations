@@ -15,10 +15,10 @@
      limitations under the License.
 --><resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">Налаштування riceDroid</string>
-    <string name="crdroid_settings_summary">Додаткові налаштування</string>
+    <string name="rising_settings_title">Налаштування risingDroid</string>
+    <string name="rising_settings_summary">Додаткові налаштування</string>
     <string name="reset_settings_title">Скинути налаштування</string>
-    <string name="reset_settings_message">Буде здійснено скидання більшості параметрів crdroid до їх значень за замовчуванням для поточного користувача. Чи хотіли б Ви продовжити?</string>
+    <string name="reset_settings_message">Буде здійснено скидання більшості параметрів rising до їх значень за замовчуванням для поточного користувача. Чи хотіли б Ви продовжити?</string>
     <!-- Personalization Categories -->
     <string name="button_title">Кнопки</string>
     <string name="lockscreen_title">Екран блокування</string>
@@ -52,40 +52,40 @@
     <string name="enable">Увімкнено</string>
     <string name="disable">Вимкнено</string>
     <!-- Changelog -->
-    <string name="changelog_crdroid_title">Поточний список змін</string>
-    <string name="changelog_crdroid_summary">Переглянути список змін в поточній прошивці</string>
-    <string name="changelog_crdroid_error">Помилка завантаження списку змін</string>
-    <!-- About riceDroid -->
-    <string name="about_crdroid">Про riceDroid</string>
+    <string name="changelog_rising_title">Поточний список змін</string>
+    <string name="changelog_rising_summary">Переглянути список змін в поточній прошивці</string>
+    <string name="changelog_rising_error">Помилка завантаження списку змін</string>
+    <!-- About risingDroid -->
+    <string name="about_rising">Про risingDroid</string>
     <string name="about_device_name">Пристрій</string>
-    <!-- Share riceDroid -->
-    <string name="share_crdroid_title">Поділитися riceDroid</string>
-    <string name="share_crdroid_summary">Нехай інші знають про riceDroid</string>
-    <string name="share_message">Перевірте, чи доступний #riceDroidAndroid для Вашого пристрою @ https://ricedroidoss.github.io/</string>
-    <string name="share_chooser_title">Поділитися riceDroid</string>
-    <!-- Sites riceDroid -->
-    <string name="crdroid_source_title">GitHub</string>
-    <string name="crdroid_source_summary">Ми любимо відкритий вихідний код, перевірте нас</string>
-    <string name="crdroid_telegram_title">riceDroid спільнота</string>
-    <string name="crdroid_telegram_summary">Ми також є в Telegram. Приєднуйтесь!</string>
-    <string name="crdroid_telegram_channel_title">Канал оновлень</string>
-    <string name="crdroid_telegram_channel_summary">Отримувати сповіщення про нові збірки в Telegram</string>
-    <string name="crdroid_website_title">Офіційний сайт</string>
-    <string name="crdroid_website_summary">Відвідати наш офіційний сайт</string>
-    <string name="crdroid_translate_title">Переклади</string>
-    <string name="crdroid_translate_summary">Допоможіть з локалізацією ROM вашою мовою!</string>
-    <string name="crdroid_sponsor_summary">Завітайте на наш веб-сайт партнера</string>
-    <!-- Donate riceDroid -->
-    <string name="donate_crdroid_title">Підтримати нас</string>
-    <string name="donate_crdroid_summary">Пожертвуйте для підтримки подальшого розвитку</string>
-    <string name="donate_team_title">riceDroid команда</string>
+    <!-- Share risingDroid -->
+    <string name="share_rising_title">Поділитися risingDroid</string>
+    <string name="share_rising_summary">Нехай інші знають про risingDroid</string>
+    <string name="share_message">Перевірте, чи доступний #risingDroidAndroid для Вашого пристрою @ https://risingoss.github.io/</string>
+    <string name="share_chooser_title">Поділитися risingDroid</string>
+    <!-- Sites risingDroid -->
+    <string name="rising_source_title">GitHub</string>
+    <string name="rising_source_summary">Ми любимо відкритий вихідний код, перевірте нас</string>
+    <string name="rising_telegram_title">risingDroid спільнота</string>
+    <string name="rising_telegram_summary">Ми також є в Telegram. Приєднуйтесь!</string>
+    <string name="rising_telegram_channel_title">Канал оновлень</string>
+    <string name="rising_telegram_channel_summary">Отримувати сповіщення про нові збірки в Telegram</string>
+    <string name="rising_website_title">Офіційний сайт</string>
+    <string name="rising_website_summary">Відвідати наш офіційний сайт</string>
+    <string name="rising_translate_title">Переклади</string>
+    <string name="rising_translate_summary">Допоможіть з локалізацією ROM вашою мовою!</string>
+    <string name="rising_sponsor_summary">Завітайте на наш веб-сайт партнера</string>
+    <!-- Donate risingDroid -->
+    <string name="donate_rising_title">Підтримати нас</string>
+    <string name="donate_rising_summary">Пожертвуйте для підтримки подальшого розвитку</string>
+    <string name="donate_team_title">risingDroid команда</string>
     <string name="donate_team_summary">Пожертвувати на підтримку хостингу, сайту та розвитку проекту</string>
     <!-- The Drill -->
     <string name="drill_title">Від розробників</string>
     <string name="drill_summary">Знайшли помилку? Зіткнувся з проблемою?</string>
     <!-- OTA -->
-    <string name="crdroid_update_title">Оновлення</string>
-    <string name="crdroid_update_summary">Перевірка та завантаження оновлення</string>
+    <string name="rising_update_title">Оновлення</string>
+    <string name="rising_update_summary">Перевірка та завантаження оновлення</string>
     <!-- App details: open play store link if app is user installed -->
     <string name="app_play_store">Google Play</string>
     <!-- Custom seekbar -->
@@ -546,8 +546,8 @@
     <string name="qs_footer_show_power_menu_title">Меню живлення</string>
     <string name="qs_footer_services_icon_title">Піктограма запущених служб</string>
     <string name="qs_footer_settings_icon_title">Піктограма налаштувань</string>
-    <!-- Device Info screen. riceDroid legal. -->
-    <string name="crdroid_license_title">Політика конфіденційності riceDroid</string>
+    <!-- Device Info screen. risingDroid legal. -->
+    <string name="rising_license_title">Політика конфіденційності risingDroid</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">Повзунок яскравості</string>
     <string name="qs_show_brightness_slider_never">Завжди приховувати</string>
@@ -995,14 +995,14 @@
     <string name="qs_tile_vertical_layout_title">Вертикальне розташування</string>
     <string name="difference_official_version">У чому різниця між COMMUNITY та OFFICIAL версіями\?</string>
     <string name="qs_tiles_layout_category">Розташування плитки</string>
-    <string name="rice_illustration_summary">Ласкаво просимо на кухню!</string>
+    <string name="rising_illustration_summary">Ласкаво просимо на кухню!</string>
     <string name="misc_device_settings_title">Налаштування пристрою</string>
     <string name="misc_spoof_settings_title">Спуфинг</string>
     <string name="default_string">За замовчуванням</string>
     <string name="follow_system_font_string">Дотримуватися системного шрифту</string>
-    <string name="what_is_riseui_summary">Rise UI - це назва оболонки інтерфейсу riceOS.</string>
+    <string name="what_is_riseui_summary">Rise UI - це назва оболонки інтерфейсу risingOS.</string>
     <string name="ricing_terminology">Отже, що таке Rice\?</string>
-    <string name="difference_official_version_summary">COMMUNITY та OFFICIAL версії пропонують однакову кількість функцій, OFFICIAL версія підтримує офіційні OTA безпосередньо від офіційної організації ricedroidOSS. У порівнянні зі збірками COMMUNITY, ми завжди надаємо пріоритет проблемам, про які повідомляється, і запитам на покращення від OFFICIAL розробників.</string>
+    <string name="difference_official_version_summary">COMMUNITY та OFFICIAL версії пропонують однакову кількість функцій, OFFICIAL версія підтримує офіційні OTA безпосередньо від офіційної організації risingOSS. У порівнянні зі збірками COMMUNITY, ми завжди надаємо пріоритет проблемам, про які повідомляється, і запитам на покращення від OFFICIAL розробників.</string>
     <string name="system_styles_title">Системні стилі</string>
     <string name="system_styles_summary">Налаштування інтерфейсу користувача системи</string>
     <string name="lockscreen_styles_title">Стилі блокування екрана</string>
@@ -1031,13 +1031,13 @@
     <string name="misc_general_settings_title">Інші загальні налаштування</string>
     <string name="misc_other_settings_title">Інші різні налаштування</string>
     <string name="disabled">Вимкнено</string>
-    <string name="what_is_ricedroid">Що таке riceDroid\?</string>
+    <string name="what_is_risingOS">Що таке risingDroid\?</string>
     <string name="what_is_riseui">Що таке Rise UI\?</string>
-    <string name="what_happened_to_old_source">Що сталося зі старим riceDroid\?</string>
-    <string name="what_happened_to_old_source_summary">Стару організацію riceDroid було розпущено через внутрішні конфлікти, зокрема, щодо закриття вихідного коду, коштів на оренду серверів та управління вихідним кодом (багато людей використовували обліковий запис minaripenguin для анонімності). Нова організація riceDroidOSS тепер підтримується виключно одним супровідником коду і поширюється офіційно офіційними супровідниками пристроїв.</string>
-    <string name="rice_redirects">Дізнайтеся більше про riceDroid!</string>
+    <string name="what_happened_to_old_source">Що сталося зі старим risingDroid\?</string>
+    <string name="what_happened_to_old_source_summary">Стару організацію risingDroid було розпущено через внутрішні конфлікти, зокрема, щодо закриття вихідного коду, коштів на оренду серверів та управління вихідним кодом (багато людей використовували обліковий запис minaripenguin для анонімності). Нова організація risingDroidOSS тепер підтримується виключно одним супровідником коду і поширюється офіційно офіційними супровідниками пристроїв.</string>
+    <string name="rising_redirects">Дізнайтеся більше про risingDroid!</string>
     <string name="about_settings_title">Про нас</string>
-    <string name="about_settings_summary">Інформація про riceDroid</string>
+    <string name="about_settings_summary">Інформація про risingDroid</string>
     <string name="buttons_settings_title">Кнопки</string>
     <string name="lockscreen_settings_title">Екран блокування</string>
     <string name="general_lockscreen_title">Загальні налаштування екрана блокування</string>
@@ -1120,7 +1120,7 @@
     <string name="scarlet_aggressive_idle_mode_location_toggle_title">Вимкнути GPS</string>
     <string name="scarlet_aggressive_idle_mode_location_toggle_summary">Вимкнути GPS на вимкненому екрані, якщо увімкнено агресивний режим очікування Scarlet</string>
     <string name="qs_styles_title">Стилі швидких налаштувань</string>
-    <string name="rice_style">Cтиль Rice</string>
+    <string name="rising_style">Cтиль Rice</string>
     <string name="volume_style_title">Стилі панелей гучності</string>
     <string name="settings_dashboard_style_title">Налаштування стилей</string>
     <string name="settings_dashboard_style_oos">Sushi (legacy OOS)</string>
@@ -1296,8 +1296,8 @@
     <string name="hide_from_launcher_title">Приховати від лаунчера</string>
     <string name="hide_from_launcher_summary">Заборонити програмі з\'являтися у лаунчері. Щоб зміни набули чинності, потрібно перезапустити лаунчер.</string>
     <string name="settings_header_text_summary">Користувальницький текст заголовка для налаштувань домашньої сторінки банера (Залишити порожнім для порожнього тексту заголовка)</string>
-    <string name="what_is_ricedroid_summary">RiceDroid - це організація, яка займається підтримкою riceOS - операційної системи Android з відкритим вихідним кодом, метою якої є внесення необхідних системних модифікацій, залишаючись при цьому акуратною, стабільною і швидкою. Натхненна OxygenOS (10-11) та NothingOS.</string>
-    <string name="ricing_terminology_summary">Термін \"rice\" використовується для опису робочого столу користувача Unix, де \"ricing\" - це дія, коли хтось налаштовує свій робочий стіл, наприклад, змінює іконки, панелі або системний інтерфейс.
+    <string name="what_is_risingOS_summary">Rising - це організація, яка займається підтримкою risingOS - операційної системи Android з відкритим вихідним кодом, метою якої є внесення необхідних системних модифікацій, залишаючись при цьому акуратною, стабільною і швидкою. Натхненна OxygenOS (10-11) та NothingOS.</string>
+    <string name="ricing_terminology_summary">Термін \"rising\" використовується для опису робочого столу користувача Unix, де \"ricing\" - це дія, коли хтось налаштовує свій робочий стіл, наприклад, змінює іконки, панелі або системний інтерфейс.
 \nджерело: https://jie-fang.github.io/blog/basics-of-ricing</string>
     <string name="ui_theme_engine_title">Движок тем</string>
     <string name="notif_settings_title">Сповіщення</string>

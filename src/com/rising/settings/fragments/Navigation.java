@@ -37,7 +37,7 @@ import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
 
 import com.android.internal.logging.nano.MetricsProto;
-import com.android.internal.util.crdroid.Utils;
+import com.android.internal.util.rising.Utils;
 
 import lineageos.providers.LineageSettings;
 
@@ -72,7 +72,7 @@ public class Navigation extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.crdroid_settings_navigation);
+        addPreferencesFromResource(R.xml.rising_settings_navigation);
 
         final Resources res = getResources();
         final ContentResolver resolver = getActivity().getContentResolver();
@@ -236,5 +236,5 @@ public class Navigation extends SettingsPreferenceFragment implements
      * For search
      */
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
-            new BaseSearchIndexProvider(R.xml.crdroid_settings_navigation);
+            new BaseSearchIndexProvider(R.xml.rising_settings_navigation);
 }

@@ -54,7 +54,7 @@ import com.android.settings.SettingsPreferenceFragment;
 
 import com.bumptech.glide.Glide;
 
-import com.android.internal.util.crdroid.ThemeUtils;
+import com.android.internal.util.rising.ThemeUtils;
 
 import java.util.ArrayList;
 import java.util.HashMap;

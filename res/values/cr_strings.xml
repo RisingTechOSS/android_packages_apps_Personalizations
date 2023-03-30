@@ -17,11 +17,11 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- App Title -->
-    <string name="crdroid_settings_title" translatable="false">Personalizations</string>
-    <string name="crdroid_settings_summary" translatable="false">Themes, features</string>
+    <string name="rising_settings_title" translatable="false">Personalizations</string>
+    <string name="rising_settings_summary" translatable="false">Themes, features</string>
     <string name="reset_settings_title">Reset settings</string>
     <string name="reset_settings_message">This will reset most personalizations settings to their default values for the current user. Would you like to continue?</string>
-    <string name="rice_illustration_summary">Welcome to the kitchen!</string>
+    <string name="rising_illustration_summary">Welcome to the kitchen!</string>
 
     <!-- Personalization Categories -->
     <string name="button_title">Buttons</string>
@@ -70,28 +70,28 @@
     <string name="disabled">Disabled</string>
 
     <!-- Changelog -->
-    <string name="changelog_crdroid_title">Current changelog</string>
-    <string name="changelog_crdroid_summary">View changes in the ROM installed</string>
-    <string name="changelog_crdroid_error">Unable to load changelog</string>
+    <string name="changelog_rising_title">Current changelog</string>
+    <string name="changelog_rising_summary">View changes in the ROM installed</string>
+    <string name="changelog_rising_error">Unable to load changelog</string>
 
     <!-- About -->
-    <string name="about_crdroid">About riceDroid</string>
+    <string name="about_rising">About risingDroid</string>
     <string name="about_device_name">Device</string>
-    <string name="what_is_ricedroid">What is riceDroid?</string>
-    <string name="what_is_ricedroid_summary">RiceDroid is an organization that maintains riceOS - a opensource android operating system that aims to bring the necessary system modifications while being neat, stable and fast. Highly inspired by OxygenOS (10-11) and NothingOS.</string>
+    <string name="what_is_risingOS">What is risingDroid?</string>
+    <string name="what_is_risingOS_summary">Rising is an organization that maintains risingOS - a opensource android operating system that aims to bring the necessary system modifications while being neat, stable and fast. Highly inspired by OxygenOS (10-11) and NothingOS.</string>
     <string name="what_is_riseui">What is Rise UI?</string>
-    <string name="what_is_riseui_summary">Rise UI is the user interface skin name of riceOS.</string>
+    <string name="what_is_riseui_summary">Rise UI is the user interface skin name of risingOS.</string>
     <string name="ricing_terminology">So What is Rice / Ricing?</string>
-    <string name="ricing_terminology_summary">The term \'rice\' is used to describe a person\'s unix desktop where \'ricing\' is an act where someone customizes their desktop such as the changing icons, panels or system interface.\nsource: https://jie-fang.github.io/blog/basics-of-ricing</string>
-    <string name="what_happened_to_old_source">What happened to the old riceDroid?</string>
-    <string name="what_happened_to_old_source_summary">Old riceDroid organization got disbanded due to internal conflicts such as making the source private, server rent funds and source management (multiple people were using minaripenguin\'s account for anonymity). The new riceDroidOSS org is now solely maintained by a single source maintainer and distributed officially by official device maintainers.</string>
+    <string name="ricing_terminology_summary">The term \'rising\' is used to describe a person\'s unix desktop where \'ricing\' is an act where someone customizes their desktop such as the changing icons, panels or system interface.\nsource: https://jie-fang.github.io/blog/basics-of-ricing</string>
+    <string name="what_happened_to_old_source">What happened to the old risingDroid?</string>
+    <string name="what_happened_to_old_source_summary">Old risingDroid organization got disbanded due to internal conflicts such as making the source private, server rent funds and source management (multiple people were using minaripenguin\'s account for anonymity). The new risingDroidOSS org is now solely maintained by a single source maintainer and distributed officially by official device maintainers.</string>
     <string name="difference_official_version">What is the difference between COMMUNITY and OFFICIAL versions?</string>
-    <string name="difference_official_version_summary">COMMUNITY and OFFICIAL versions offers the same amount of features, OFFICIAL versions supports official OTAs straight from official ricedroidOSS organization. Compared to COMMUNITY builds, we always prioritize issues reported and feature requests from OFFICIAL maintainers.</string>
-    <string name="rice_redirects">Know more about riceDroid!</string>
+    <string name="difference_official_version_summary">COMMUNITY and OFFICIAL versions offers the same amount of features, OFFICIAL versions supports official OTAs straight from official risingOSS organization. Compared to COMMUNITY builds, we always prioritize issues reported and feature requests from OFFICIAL maintainers.</string>
+    <string name="rising_redirects">Know more about risingDroid!</string>
 
-   <!-- rice dashboard -->
+   <!-- rising dashboard -->
     <string name="about_settings_title">About Us</string>
-    <string name="about_settings_summary">Information about riceDroid</string>
+    <string name="about_settings_summary">Information about risingDroid</string>
     <string name="buttons_settings_title">Buttons</string>
     <string name="buttons_settings_summary">Tweak hardware buttons</string>
     <string name="lockscreen_settings_title">Lockscreen</string>
@@ -114,29 +114,29 @@
     <string name="ui_settings_summary">Customize UI colors, icons, fonts etc</string>
 
     <!-- Share -->
-    <string name="share_crdroid_title">Share this firmware</string>
-    <string name="share_crdroid_summary">Let others know about riceDroid</string>
-    <string name="share_message">Check out if #riceDroid is available for your device @ http://ricedroidoss.github.io/</string>
-    <string name="share_chooser_title">Share riceDroid</string>
+    <string name="share_rising_title">Share this firmware</string>
+    <string name="share_rising_summary">Let others know about risingDroid</string>
+    <string name="share_message">Check out if #risingDroid is available for your device @ http://risingoss.github.io/</string>
+    <string name="share_chooser_title">Share risingDroid</string>
 
-    <!-- Sites riceDroid -->
-    <string name="crdroid_source_title">GitHub</string>
-    <string name="crdroid_source_summary">We love open source, check us out</string>
-    <string name="crdroid_telegram_title">riceDroid community</string>
-    <string name="crdroid_telegram_summary">We are on telegram. Join us!</string>
-    <string name="crdroid_telegram_channel_title">Updates channel</string>
-    <string name="crdroid_telegram_channel_summary">Get notified of new builds on Telegram</string>
-    <string name="crdroid_website_title">Official website</string>
-    <string name="crdroid_website_summary">Visit our official website</string>
-    <string name="crdroid_translate_title">Translations</string>
-    <string name="crdroid_translate_summary">Help with localisation of ROM in your language!</string>
-    <string name="crdroid_sponsor_title" translatable="false">Sponsors</string>
-    <string name="crdroid_sponsor_summary" translatable="false">Our number one sponsor</string>
+    <!-- Sites risingDroid -->
+    <string name="rising_source_title">GitHub</string>
+    <string name="rising_source_summary">We love open source, check us out</string>
+    <string name="rising_telegram_title">risingDroid community</string>
+    <string name="rising_telegram_summary">We are on telegram. Join us!</string>
+    <string name="rising_telegram_channel_title">Updates channel</string>
+    <string name="rising_telegram_channel_summary">Get notified of new builds on Telegram</string>
+    <string name="rising_website_title">Official website</string>
+    <string name="rising_website_summary">Visit our official website</string>
+    <string name="rising_translate_title">Translations</string>
+    <string name="rising_translate_summary">Help with localisation of ROM in your language!</string>
+    <string name="rising_sponsor_title" translatable="false">Sponsors</string>
+    <string name="rising_sponsor_summary" translatable="false">Our number one sponsor</string>
 
-    <!-- Donate riceDroid -->
-    <string name="donate_crdroid_title">Support us</string>
-    <string name="donate_crdroid_summary">Donate to support further development</string>
-    <string name="donate_team_title">riceDroid team</string>
+    <!-- Donate risingDroid -->
+    <string name="donate_rising_title">Support us</string>
+    <string name="donate_rising_summary">Donate to support further development</string>
+    <string name="donate_team_title">risingDroid team</string>
     <string name="donate_team_summary">Donate to support server hosting, site uptime and overall management</string>
 
     <!-- The Drill -->
@@ -144,8 +144,8 @@
     <string name="drill_summary">Found a bug? Ran into an issue?</string>
 
     <!-- OTA -->
-    <string name="crdroid_update_title">Updates</string>
-    <string name="crdroid_update_summary">Check and download latest update</string>
+    <string name="rising_update_title">Updates</string>
+    <string name="rising_update_summary">Check and download latest update</string>
 
     <!-- App details: open play store link if app is user installed -->
     <string name="app_play_store">Google Play</string>
@@ -683,8 +683,8 @@
     <string name="qs_footer_services_icon_title">Running services shortcut</string>
     <string name="qs_footer_settings_icon_title">Settings shortcut</string>
 
-    <!-- Device Info screen. riceDroid legal. -->
-    <string name="crdroid_license_title">riceDroid legal</string>
+    <!-- Device Info screen. risingDroid legal. -->
+    <string name="rising_license_title">risingDroid legal</string>
 
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">Brightness slider</string>
@@ -1247,7 +1247,7 @@
 
     <!-- Volume Styles -->
     <string name="rui_style">Realme UI style</string>
-    <string name="rice_style">Rice style</string>
+    <string name="rising_style">Rice style</string>
     <string name="volume_style_title">Volume panel styles</string>
     
    <!-- Custom settings dashboard style -->

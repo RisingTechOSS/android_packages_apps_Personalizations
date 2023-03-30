@@ -49,7 +49,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import com.android.internal.util.crdroid.cutout.CutoutFullscreenController;
+import com.android.internal.util.rising.cutout.CutoutFullscreenController;
 
 public class DisplayCutoutForceFullscreenFragment extends PreferenceFragment
         implements ApplicationsState.Callbacks {

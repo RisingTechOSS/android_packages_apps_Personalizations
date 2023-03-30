@@ -16,10 +16,10 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">riceDroid の設定</string>
-    <string name="crdroid_settings_summary">高度な設定</string>
+    <string name="rising_settings_title">risingDroid の設定</string>
+    <string name="rising_settings_summary">高度な設定</string>
     <string name="reset_settings_title">設定のリセット</string>
-    <string name="reset_settings_message">現在のユーザーのほとんどの riceDroid 設定を初期設定に戻します。続行しますか？</string>
+    <string name="reset_settings_message">現在のユーザーのほとんどの risingDroid 設定を初期設定に戻します。続行しますか？</string>
     <!-- Personalization Categories -->
     <string name="button_title">ボタン</string>
     <string name="lockscreen_title">ロック画面</string>
@@ -53,40 +53,40 @@
     <string name="enable">有効</string>
     <string name="disable">無効</string>
     <!-- Changelog -->
-    <string name="changelog_crdroid_title">最近の更新履歴</string>
-    <string name="changelog_crdroid_summary">インストールされている ROM の更新内容を確認します</string>
-    <string name="changelog_crdroid_error">更新履歴を読み込めませんでした</string>
-    <!-- About riceDroid -->
-    <string name="about_crdroid">riceDroid について</string>
+    <string name="changelog_rising_title">最近の更新履歴</string>
+    <string name="changelog_rising_summary">インストールされている ROM の更新内容を確認します</string>
+    <string name="changelog_rising_error">更新履歴を読み込めませんでした</string>
+    <!-- About risingDroid -->
+    <string name="about_rising">risingDroid について</string>
     <string name="about_device_name">デバイス</string>
-    <!-- Share riceDroid -->
-    <string name="share_crdroid_title">riceDroid についてシェアする</string>
-    <string name="share_crdroid_summary">みんなに riceDroid を知ってもらいましょう</string>
-    <string name="share_message">カスタム ROM #riceDroidAndroid を使ってみて！ https://ricedroidoss.github.io/</string>
-    <string name="share_chooser_title">riceDroid をシェア</string>
-    <!-- Sites riceDroid -->
-    <string name="crdroid_source_title">GitHub</string>
-    <string name="crdroid_source_summary">私たちはオープンソースを愛しています。見てみてください</string>
-    <string name="crdroid_telegram_title">riceDroid コミュニティ</string>
-    <string name="crdroid_telegram_summary">Telegram で話しましょう！</string>
-    <string name="crdroid_telegram_channel_title">アップデートチャンネル</string>
-    <string name="crdroid_telegram_channel_summary">Telegram で新しいビルドの通知を受けます</string>
-    <string name="crdroid_website_title">公式サイト</string>
-    <string name="crdroid_website_summary">公式ウェブサイトを開きます</string>
-    <string name="crdroid_translate_title">翻訳</string>
-    <string name="crdroid_translate_summary">あなたの言語に翻訳するのを手伝ってください！</string>
-    <string name="crdroid_sponsor_summary">ウェブサイトのホストパートナーを開きます</string>
-    <!-- Donate riceDroid -->
-    <string name="donate_crdroid_title">私たちを支援する</string>
-    <string name="donate_crdroid_summary">さらなる開発を支援するために寄付をお願いします</string>
-    <string name="donate_team_title">riceDroid チーム</string>
+    <!-- Share risingDroid -->
+    <string name="share_rising_title">risingDroid についてシェアする</string>
+    <string name="share_rising_summary">みんなに risingDroid を知ってもらいましょう</string>
+    <string name="share_message">カスタム ROM #risingDroidAndroid を使ってみて！ https://risingoss.github.io/</string>
+    <string name="share_chooser_title">risingDroid をシェア</string>
+    <!-- Sites risingDroid -->
+    <string name="rising_source_title">GitHub</string>
+    <string name="rising_source_summary">私たちはオープンソースを愛しています。見てみてください</string>
+    <string name="rising_telegram_title">risingDroid コミュニティ</string>
+    <string name="rising_telegram_summary">Telegram で話しましょう！</string>
+    <string name="rising_telegram_channel_title">アップデートチャンネル</string>
+    <string name="rising_telegram_channel_summary">Telegram で新しいビルドの通知を受けます</string>
+    <string name="rising_website_title">公式サイト</string>
+    <string name="rising_website_summary">公式ウェブサイトを開きます</string>
+    <string name="rising_translate_title">翻訳</string>
+    <string name="rising_translate_summary">あなたの言語に翻訳するのを手伝ってください！</string>
+    <string name="rising_sponsor_summary">ウェブサイトのホストパートナーを開きます</string>
+    <!-- Donate risingDroid -->
+    <string name="donate_rising_title">私たちを支援する</string>
+    <string name="donate_rising_summary">さらなる開発を支援するために寄付をお願いします</string>
+    <string name="donate_team_title">risingDroid チーム</string>
     <string name="donate_team_summary">寄付でホスティングサーバーや全体的な管理を助けてください</string>
     <!-- The Drill -->
     <string name="drill_title">正しいやり方</string>
     <string name="drill_summary">バグを見つけましたか？問題に遭遇しましたか？</string>
     <!-- OTA -->
-    <string name="crdroid_update_title">アップデート</string>
-    <string name="crdroid_update_summary">OTA アップデートの有無とお使いのデバイス向けのリンクをチェックします</string>
+    <string name="rising_update_title">アップデート</string>
+    <string name="rising_update_summary">OTA アップデートの有無とお使いのデバイス向けのリンクをチェックします</string>
     <!-- App details: open play store link if app is user installed -->
     <string name="app_play_store">Google Play</string>
     <!-- Custom seekbar -->
@@ -544,8 +544,8 @@
     <string name="qs_footer_show_power_menu_title">電源メニューのショートカット</string>
     <string name="qs_footer_services_icon_title">実行中サービスのショートカット</string>
     <string name="qs_footer_settings_icon_title">設定のショートカット</string>
-    <!-- Device Info screen. riceDroid legal. -->
-    <string name="crdroid_license_title">riceDroid ライセンス</string>
+    <!-- Device Info screen. risingDroid legal. -->
+    <string name="rising_license_title">risingDroid ライセンス</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">明るさスライダー</string>
     <string name="qs_show_brightness_slider_never">表示しない</string>

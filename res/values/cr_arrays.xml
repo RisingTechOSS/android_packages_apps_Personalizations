@@ -823,7 +823,7 @@
    <string-array name="volume_styles_entries" translatable="false">
         <item>@string/default_string</item>
         <item>@string/rui_style</item>
-        <item>@string/rice_style</item>
+        <item>@string/rising_style</item>
     </string-array>
 
     <string-array name="volume_styles_values" translatable="false">

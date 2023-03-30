@@ -21,7 +21,7 @@
 
     <color name="theme_accent">@android:color/system_accent1_600</color>
 
-    <color name="homepage_crdroid_background">@android:color/system_accent1_600</color>
+    <color name="homepage_rising_background">@android:color/system_accent1_600</color>
 
     <color name="option_border_default">#5f6368</color>
 </resources>

@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2022 crDroid Android Project
- * 		         2022 riceDroid Android Project
+ * 		         2022 risingDroid Android Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,7 +18,7 @@
 package com.rising.settings.fragments.ui;
 
 import static android.os.UserHandle.USER_SYSTEM;
-import static com.android.internal.util.crdroid.ThemeUtils.FONT_KEY;
+import static com.android.internal.util.rising.ThemeUtils.FONT_KEY;
 
 import android.content.ContentResolver;
 import android.content.Context;
@@ -59,7 +59,7 @@ import com.android.settings.SettingsPreferenceFragment;
 
 import com.bumptech.glide.Glide;
 
-import com.android.internal.util.crdroid.ThemeUtils;
+import com.android.internal.util.rising.ThemeUtils;
 
 import java.util.ArrayList;
 import java.util.List;

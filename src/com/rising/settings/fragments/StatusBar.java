@@ -94,7 +94,7 @@ public class StatusBar extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.crdroid_settings_statusbar);
+        addPreferencesFromResource(R.xml.rising_settings_statusbar);
 
         ContentResolver resolver = getActivity().getContentResolver();
         Context mContext = getActivity().getApplicationContext();
@@ -235,7 +235,7 @@ public class StatusBar extends SettingsPreferenceFragment implements
      * For search
      */
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
-            new BaseSearchIndexProvider(R.xml.crdroid_settings_statusbar) {
+            new BaseSearchIndexProvider(R.xml.rising_settings_statusbar) {
 
                 @Override
                 public List<String> getNonIndexableKeys(Context context) {

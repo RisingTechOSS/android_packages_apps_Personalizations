@@ -38,7 +38,7 @@ import androidx.preference.PreferenceScreen;
 import androidx.preference.SwitchPreference;
 
 import com.android.internal.logging.nano.MetricsProto;
-import com.android.internal.util.crdroid.Utils;
+import com.android.internal.util.rising.Utils;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;

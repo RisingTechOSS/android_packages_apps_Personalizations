@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+     Copyright (C) 2016-2021 crDroid Android Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title="@string/about_rising" >
+
+    <PreferenceCategory
+         android:title="@string/what_is_risingOS" >
+
+    <Preference
+    	 android:summary="@string/what_is_risingOS_summary" />
+
+     </PreferenceCategory>
+
+    <PreferenceCategory
+         android:title="@string/rising_redirects" >
+
+    <!-- Changelog -->
+    <Preference
+        android:key="rising_changelog"
+        android:icon="@drawable/ic_changelog"
+        android:title="@string/changelog_rising_title"
+        android:summary="@string/changelog_rising_summary">
+        <intent android:action="android.intent.action.MAIN"
+             android:targetPackage="com.android.settings"
+             android:targetClass="com.rising.settings.fragments.about.ChangelogActivity"/>
+    </Preference>
+
+    <!-- Website -->
+    <Preference
+        android:key="rising_website"
+        android:icon="@drawable/ic_web"
+        android:title="@string/rising_website_title"
+        android:summary="@string/rising_website_summary" />
+
+    <!-- Translate -->
+    <Preference
+        android:key="rising_translate"
+        android:icon="@drawable/ic_translate"
+        android:title="@string/rising_translate_title"
+        android:summary="@string/rising_translate_summary" />
+
+    <!-- Share -->
+    <Preference
+        android:key="rising_share"
+        android:icon="@drawable/ic_share"
+        android:title="@string/share_rising_title"
+        android:summary="@string/share_rising_summary" />
+
+    <!-- Donate -->
+    <Preference
+        android:key="rising_donate"
+        android:icon="@drawable/ic_donate"
+        android:title="@string/donate_rising_title"
+        android:summary="@string/donate_rising_summary" />
+
+    <!-- Source -->
+    <Preference
+        android:key="rising_source"
+        android:icon="@drawable/ic_source"
+        android:title="@string/rising_source_title"
+        android:summary="@string/rising_source_summary" />
+
+    <!-- Telegram -->
+    <Preference
+        android:key="rising_telegram"
+        android:icon="@drawable/ic_telegram"
+        android:title="@string/rising_telegram_title"
+        android:summary="@string/rising_telegram_summary" />
+
+    <!-- Telegram Updates Channel -->
+    <Preference
+        android:key="rising_telegram_channel"
+        android:icon="@drawable/ic_telegram_channel"
+        android:title="@string/rising_telegram_channel_title"
+        android:summary="@string/rising_telegram_channel_summary" />
+
+    <!-- sponsor -->
+    <Preference
+        android:key="rising_sponsor"
+        android:icon="@drawable/ic_sponsor"
+        android:title="@string/rising_sponsor_title"
+        android:summary="@string/rising_sponsor_summary" />
+
+    <!-- OTA update -->
+    <Preference
+        android:key="system_update_settings"
+        android:title="@string/rising_update_title"
+        android:summary="@string/rising_update_summary"
+        android:icon="@drawable/ic_update"
+        settings:controller="com.android.settings.system.SystemUpdatePreferenceController">
+        <intent android:action="android.settings.SYSTEM_UPDATE_SETTINGS" />
+    </Preference>
+
+     </PreferenceCategory>
+</PreferenceScreen>

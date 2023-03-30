@@ -39,14 +39,14 @@ public class About extends SettingsPreferenceFragment {
 
     public static final String TAG = "About";
 
-    private String KEY_CRDROID_DONATE = "crdroid_donate";
-    private String KEY_CRDROID_SOURCE = "crdroid_source";
-    private String KEY_CRDROID_TELEGRAM = "crdroid_telegram";
-    private String KEY_CRDROID_SHARE = "crdroid_share";
-    private String KEY_CRDROID_TRANSLATE = "crdroid_translate";
-    private String KEY_CRDROID_WEBSITE = "crdroid_website";
-    private String KEY_CRDROID_TELEGRAM_CHANNEL = "crdroid_telegram_channel";
-    private String KEY_CRDROID_SPONSOR = "crdroid_sponsor";
+    private String KEY_RISING_DONATE = "rising_donate";
+    private String KEY_RISING_SOURCE = "rising_source";
+    private String KEY_RISING_TELEGRAM = "rising_telegram";
+    private String KEY_RISING_SHARE = "rising_share";
+    private String KEY_RISING_TRANSLATE = "rising_translate";
+    private String KEY_RISING_WEBSITE = "rising_website";
+    private String KEY_RISING_TELEGRAM_CHANNEL = "rising_telegram_channel";
+    private String KEY_RISING_SPONSOR = "rising_sponsor";
 
     private Preference mDonate;
     private Preference mSourceUrl;
@@ -60,16 +60,16 @@ public class About extends SettingsPreferenceFragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.crdroid_settings_about);
+        addPreferencesFromResource(R.xml.rising_settings_about);
 
-        mDonate = findPreference(KEY_CRDROID_DONATE);
-        mSourceUrl = findPreference(KEY_CRDROID_SOURCE);
-        mTelegramUrl = findPreference(KEY_CRDROID_TELEGRAM);
-        mShare = findPreference(KEY_CRDROID_SHARE);
-        mTranslate = findPreference(KEY_CRDROID_TRANSLATE);
-        mWebsite = findPreference(KEY_CRDROID_WEBSITE);
-        mTelegramChannelUrl = findPreference(KEY_CRDROID_TELEGRAM_CHANNEL);
-        mSponsor = findPreference(KEY_CRDROID_SPONSOR);
+        mDonate = findPreference(KEY_RISING_DONATE);
+        mSourceUrl = findPreference(KEY_RISING_SOURCE);
+        mTelegramUrl = findPreference(KEY_RISING_TELEGRAM);
+        mShare = findPreference(KEY_RISING_SHARE);
+        mTranslate = findPreference(KEY_RISING_TRANSLATE);
+        mWebsite = findPreference(KEY_RISING_WEBSITE);
+        mTelegramChannelUrl = findPreference(KEY_RISING_TELEGRAM_CHANNEL);
+        mSponsor = findPreference(KEY_RISING_SPONSOR);
     }
 
     @Override
@@ -77,9 +77,9 @@ public class About extends SettingsPreferenceFragment {
         if (preference == mDonate) {
             launchUrl("https://www.youtube.com/watch?v=Bgqk6t9Be1Q");
         } else if (preference == mSourceUrl) {
-            launchUrl("https://github.com/ricedroidOSS");
+            launchUrl("https://github.com/risingOSS");
         } else if (preference == mTelegramUrl) {
-            launchUrl("https://t.me/riceDroidNews");
+            launchUrl("https://t.me/risingOS-News");
         } else if (preference == mShare) {
             Intent intent = new Intent();
             intent.setAction(Intent.ACTION_SEND);
@@ -90,9 +90,9 @@ public class About extends SettingsPreferenceFragment {
         } else if (preference == mTranslate) {
             launchUrl("https://katb.in/uwurisetejo");
         } else if (preference == mWebsite) {
-            launchUrl("https://ricedroidoss.github.io");
+            launchUrl("https://risingOSS.github.io");
         } else if (preference == mTelegramChannelUrl) {
-            launchUrl("https://t.me/riceDroidNews");
+            launchUrl("https://t.me/risingOS-News");
         } else if (preference == mSponsor) {
             launchUrl("https://www.youtube.com/watch?v=XlDBskBR794");
         }
@@ -108,12 +108,12 @@ public class About extends SettingsPreferenceFragment {
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.CRDROID_SETTINGS;
+        return MetricsProto.MetricsEvent.CUSTOM_SETTINGS;
     }
 
     /**
      * For search
      */
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
-            new BaseSearchIndexProvider(R.xml.crdroid_settings_about);
+            new BaseSearchIndexProvider(R.xml.rising_settings_about);
 }

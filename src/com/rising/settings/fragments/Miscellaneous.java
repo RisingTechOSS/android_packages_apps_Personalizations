@@ -65,7 +65,7 @@ public class Miscellaneous extends SettingsPreferenceFragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.crdroid_settings_misc);
+        addPreferencesFromResource(R.xml.rising_settings_misc);
         
         Context mContext = getActivity().getApplicationContext();
         final PreferenceScreen prefScreen = getPreferenceScreen();
@@ -107,7 +107,7 @@ public class Miscellaneous extends SettingsPreferenceFragment {
      * For search
      */
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
-            new BaseSearchIndexProvider(R.xml.crdroid_settings_misc) {
+            new BaseSearchIndexProvider(R.xml.rising_settings_misc) {
 
                 @Override
                 public List<String> getNonIndexableKeys(Context context) {

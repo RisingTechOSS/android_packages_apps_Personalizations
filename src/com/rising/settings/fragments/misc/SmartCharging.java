@@ -36,7 +36,7 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.rising.settings.preferences.CustomSeekBarPreference;
 
-import com.android.internal.util.crdroid.Utils;
+import com.android.internal.util.rising.Utils;
 
 public class SmartCharging extends SettingsPreferenceFragment 
 	implements Preference.OnPreferenceChangeListener {

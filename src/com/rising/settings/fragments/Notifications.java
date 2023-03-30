@@ -37,7 +37,7 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
 
-import com.android.internal.util.crdroid.Utils;
+import com.android.internal.util.rising.Utils;
 
 import com.rising.settings.preferences.CustomSeekBarPreference;
 
@@ -72,7 +72,7 @@ public class Notifications extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.crdroid_settings_notifications);
+        addPreferencesFromResource(R.xml.rising_settings_notifications);
 
         final PreferenceScreen prefScreen = getPreferenceScreen();
         final Context mContext = getActivity().getApplicationContext();
@@ -187,7 +187,7 @@ public class Notifications extends SettingsPreferenceFragment implements
      * For search
      */
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
-            new BaseSearchIndexProvider(R.xml.crdroid_settings_notifications) {
+            new BaseSearchIndexProvider(R.xml.rising_settings_notifications) {
 
                 @Override
                 public List<String> getNonIndexableKeys(Context context) {

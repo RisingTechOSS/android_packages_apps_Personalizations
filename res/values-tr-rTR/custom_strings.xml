@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2021-2022 RiceDroid
+     Copyright (C) 2021-2022 Rising
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
@@ -14,12 +14,12 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- riceDroid versioning -->
-    <string name="rice_version_title">RiceOS Sürümü</string>
-    <string name="about_device_info">RiceDroid Cihazı</string>
-    <string name="rice_device_title">Cihaz</string>
-    <string name="rice_build_version_title">Sürüm</string>
-    <string name="rice_build_date_title">İnşa tarihi</string>
+    <!-- risingDroid versioning -->
+    <string name="rising_version_title">RiceOS Sürümü</string>
+    <string name="about_device_info">Rising Cihazı</string>
+    <string name="rising_device_title">Cihaz</string>
+    <string name="rising_build_version_title">Sürüm</string>
+    <string name="rising_build_date_title">İnşa tarihi</string>
         
     <string name="wellbeing_title">Dijital Denge</string>
     <string name="gesture_illustration_description">Cihazınızı kontrol edin.</string>
@@ -53,8 +53,8 @@
     <string name="edit">Düzenle</string>
     <string name="device_name">Cihaz adı</string>
     <string name="about_us_info_category_title">Hakkımızda</string>
-    <string name="rice_revision">RiceDroid Sürümü</string>
-    <string name="rice_model_info">Cihaz Bilgisi</string>
+    <string name="rising_revision">Rising Sürümü</string>
+    <string name="rising_model_info">Cihaz Bilgisi</string>
     
     <string name="dashboard_morning1">Günaydın!</string>
     <string name="dashboard_morning2">Güneş doğdu!</string>
@@ -76,7 +76,7 @@
     <string name="dashboard_midnight3">Biraz uyu..</string>
     <string name="dashboard_midnight4">Dinlen..</string>
     <string name="dashboard_midnight5">Geç mi uyursun?</string>
-    <string name="dashboard_random1">rice ister misin?</string>
+    <string name="dashboard_random1">rising ister misin?</string>
     <string name="dashboard_random2">Merhaba!</string>
     <string name="dashboard_random3">Merhaba!</string>
     <string name="dashboard_random4">Ayarlar</string>

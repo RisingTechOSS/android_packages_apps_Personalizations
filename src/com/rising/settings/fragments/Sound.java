@@ -65,7 +65,7 @@ public class Sound extends SettingsPreferenceFragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.crdroid_settings_sound);
+        addPreferencesFromResource(R.xml.rising_settings_sound);
 
         final PreferenceScreen prefScreen = getPreferenceScreen();
 
@@ -126,7 +126,7 @@ public class Sound extends SettingsPreferenceFragment {
      * For search
      */
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
-            new BaseSearchIndexProvider(R.xml.crdroid_settings_sound) {
+            new BaseSearchIndexProvider(R.xml.rising_settings_sound) {
 
                 @Override
                 public List<String> getNonIndexableKeys(Context context) {

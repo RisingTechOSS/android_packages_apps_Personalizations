@@ -16,10 +16,10 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">Configurações riceDroid</string>
-    <string name="crdroid_settings_summary">O melhor está aqui</string>
+    <string name="rising_settings_title">Configurações risingDroid</string>
+    <string name="rising_settings_summary">O melhor está aqui</string>
     <string name="reset_settings_title">Redefinir configurações</string>
-    <string name="reset_settings_message">Isso vai redefinir as alterações feitas nas configurações riceDroid. Gostaria de continuar?</string>
+    <string name="reset_settings_message">Isso vai redefinir as alterações feitas nas configurações risingDroid. Gostaria de continuar?</string>
     <!-- Personalization Categories -->
     <string name="button_title">Botões</string>
     <string name="lockscreen_title">Tela de Bloqueio</string>
@@ -53,40 +53,40 @@
     <string name="enable">Ativar</string>
     <string name="disable">Desativar</string>
     <!-- Changelog -->
-    <string name="changelog_crdroid_title">Registro das últimas alterações</string>
-    <string name="changelog_crdroid_summary">Mostrar alterações da ROM instalada</string>
-    <string name="changelog_crdroid_error">Não foi possível carregar o registro de mudanças</string>
-    <!-- About riceDroid -->
-    <string name="about_crdroid">Sobre riceDroid</string>
+    <string name="changelog_rising_title">Registro das últimas alterações</string>
+    <string name="changelog_rising_summary">Mostrar alterações da ROM instalada</string>
+    <string name="changelog_rising_error">Não foi possível carregar o registro de mudanças</string>
+    <!-- About risingDroid -->
+    <string name="about_rising">Sobre risingDroid</string>
     <string name="about_device_name">Dispositivo</string>
-    <!-- Share riceDroid -->
-    <string name="share_crdroid_title">Compartilhar riceDroid</string>
-    <string name="share_crdroid_summary">Deixe que outros saibam sobre a riceDroid</string>
-    <string name="share_message">Veja o que é o #riceDroid Android @ https://ricedroidoss.github.io/</string>
-    <string name="share_chooser_title">Compartilhar riceDroid</string>
-    <!-- Sites riceDroid -->
-    <string name="crdroid_source_title">GitHub</string>
-    <string name="crdroid_source_summary">Nós amamos o código aberto, confira</string>
-    <string name="crdroid_telegram_title">Comunidade riceDroid</string>
-    <string name="crdroid_telegram_summary">Estamos no telegram. Junte-se a nós!</string>
-    <string name="crdroid_telegram_channel_title">Canal de atualizações</string>
-    <string name="crdroid_telegram_channel_summary">Seja notificado sobre novas compilações no Telegram</string>
-    <string name="crdroid_website_title">Site oficial</string>
-    <string name="crdroid_website_summary">Visite nosso site oficial</string>
-    <string name="crdroid_translate_title">Traduções</string>
-    <string name="crdroid_translate_summary">Ajude a traduzir a ROM para o seu idioma!</string>
-    <string name="crdroid_sponsor_summary">Visite nosso parceiro de hospedagem de site</string>
-    <!-- Donate riceDroid -->
-    <string name="donate_crdroid_title">Apoie-nos</string>
-    <string name="donate_crdroid_summary">Doe para apoiar o desenvolvimento</string>
-    <string name="donate_team_title">Equipe riceDroid</string>
+    <!-- Share risingDroid -->
+    <string name="share_rising_title">Compartilhar risingDroid</string>
+    <string name="share_rising_summary">Deixe que outros saibam sobre a risingDroid</string>
+    <string name="share_message">Veja o que é o #risingDroid Android @ https://risingoss.github.io/</string>
+    <string name="share_chooser_title">Compartilhar risingDroid</string>
+    <!-- Sites risingDroid -->
+    <string name="rising_source_title">GitHub</string>
+    <string name="rising_source_summary">Nós amamos o código aberto, confira</string>
+    <string name="rising_telegram_title">Comunidade risingDroid</string>
+    <string name="rising_telegram_summary">Estamos no telegram. Junte-se a nós!</string>
+    <string name="rising_telegram_channel_title">Canal de atualizações</string>
+    <string name="rising_telegram_channel_summary">Seja notificado sobre novas compilações no Telegram</string>
+    <string name="rising_website_title">Site oficial</string>
+    <string name="rising_website_summary">Visite nosso site oficial</string>
+    <string name="rising_translate_title">Traduções</string>
+    <string name="rising_translate_summary">Ajude a traduzir a ROM para o seu idioma!</string>
+    <string name="rising_sponsor_summary">Visite nosso parceiro de hospedagem de site</string>
+    <!-- Donate risingDroid -->
+    <string name="donate_rising_title">Apoie-nos</string>
+    <string name="donate_rising_summary">Doe para apoiar o desenvolvimento</string>
+    <string name="donate_team_title">Equipe risingDroid</string>
     <string name="donate_team_summary">Contribua para manter o servidor de hospedagem, tempo de atividade e gerenciamento geral do site</string>
     <!-- The Drill -->
     <string name="drill_title">Diagnóstico</string>
     <string name="drill_summary">Encontrou um bug? Encontrou um problema?</string>
     <!-- OTA -->
-    <string name="crdroid_update_title">Atualizações</string>
-    <string name="crdroid_update_summary">Verificar e baixar a última atualização</string>
+    <string name="rising_update_title">Atualizações</string>
+    <string name="rising_update_summary">Verificar e baixar a última atualização</string>
     <!-- App details: open play store link if app is user installed -->
     <string name="app_play_store">Google Play Store</string>
     <!-- Custom seekbar -->
@@ -545,8 +545,8 @@
     <string name="qs_footer_show_power_menu_title">Atalho do menu de energia</string>
     <string name="qs_footer_services_icon_title">Atalho de serviços em execução</string>
     <string name="qs_footer_settings_icon_title">Atalho de configurações</string>
-    <!-- Device Info screen. riceDroid legal. -->
-    <string name="crdroid_license_title">riceDroid é legal</string>
+    <!-- Device Info screen. risingDroid legal. -->
+    <string name="rising_license_title">risingDroid é legal</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">Controle deslizante de brilho</string>
     <string name="qs_show_brightness_slider_never">Nunca mostrar</string>

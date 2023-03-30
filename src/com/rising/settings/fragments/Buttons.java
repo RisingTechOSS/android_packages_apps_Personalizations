@@ -134,7 +134,7 @@ public class Buttons extends SettingsPreferenceFragment implements
 
         mHardware = LineageHardwareManager.getInstance(getActivity());
 
-        addPreferencesFromResource(R.xml.crdroid_settings_button);
+        addPreferencesFromResource(R.xml.rising_settings_button);
 
         final Resources res = getResources();
         final ContentResolver resolver = getActivity().getContentResolver();
@@ -578,7 +578,7 @@ public class Buttons extends SettingsPreferenceFragment implements
      * For search
      */
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
-            new BaseSearchIndexProvider(R.xml.crdroid_settings_button) {
+            new BaseSearchIndexProvider(R.xml.rising_settings_button) {
 
                 @Override
                 public List<String> getNonIndexableKeys(Context context) {

@@ -16,10 +16,10 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">Setări riceDroid</string>
-    <string name="crdroid_settings_summary">Unde se intampla magia</string>
+    <string name="rising_settings_title">Setări risingDroid</string>
+    <string name="rising_settings_summary">Unde se intampla magia</string>
     <string name="reset_settings_title">Resetare setări</string>
-    <string name="reset_settings_message">Aceasta va reseta cele mai multe setări crdroid la valorile lor implicite pentru utilizatorul curent. Doriți să continuați?</string>
+    <string name="reset_settings_message">Aceasta va reseta cele mai multe setări rising la valorile lor implicite pentru utilizatorul curent. Doriți să continuați?</string>
     <!-- Personalization Categories -->
     <string name="button_title">Butoane</string>
     <string name="lockscreen_title">Ecran de blocare</string>
@@ -53,40 +53,40 @@
     <string name="enable">Activare</string>
     <string name="disable">Dezactivare</string>
     <!-- Changelog -->
-    <string name="changelog_crdroid_title">Jurnal modificări curente</string>
-    <string name="changelog_crdroid_summary">Vezi modificările în ROM instalat</string>
-    <string name="changelog_crdroid_error">Imposibil de încărcat jurnalul modificărilor</string>
-    <!-- About riceDroid -->
-    <string name="about_crdroid">Despre riceDroid</string>
+    <string name="changelog_rising_title">Jurnal modificări curente</string>
+    <string name="changelog_rising_summary">Vezi modificările în ROM instalat</string>
+    <string name="changelog_rising_error">Imposibil de încărcat jurnalul modificărilor</string>
+    <!-- About risingDroid -->
+    <string name="about_rising">Despre risingDroid</string>
     <string name="about_device_name">Dispozitiv</string>
-    <!-- Share riceDroid -->
-    <string name="share_crdroid_title">Distribuie riceDroid</string>
-    <string name="share_crdroid_summary">Anunta-i si pe altii despre riceDroid</string>
-    <string name="share_message">Verifică dacă #riceDroidAndroid este disponibil pentru dispozitivul tău @ https://ricedroidoss.github.io/</string>
-    <string name="share_chooser_title">Distribuie riceDroid</string>
-    <!-- Sites riceDroid -->
-    <string name="crdroid_source_title">GitHub</string>
-    <string name="crdroid_source_summary">Ne plac sursele deschise, vezi mai mulle</string>
-    <string name="crdroid_telegram_title">Comunitatea riceDroid</string>
-    <string name="crdroid_telegram_summary">Suntem pe Telegram. Vino alături de noi!</string>
-    <string name="crdroid_telegram_channel_title">Canal actualizări</string>
-    <string name="crdroid_telegram_channel_summary">Primește notificări despre noile creații pe Telegram</string>
-    <string name="crdroid_website_title">Site-ul oficial</string>
-    <string name="crdroid_website_summary">Vizitați site-ul nostru oficial</string>
-    <string name="crdroid_translate_title">Traduceri</string>
-    <string name="crdroid_translate_summary">Ajută la localizarea ROM-ului în limba ta!</string>
-    <string name="crdroid_sponsor_summary">Vizitați partenerul nostru gazdă</string>
-    <!-- Donate riceDroid -->
-    <string name="donate_crdroid_title">Susține-ne</string>
-    <string name="donate_crdroid_summary">Donează pentru a sprijini dezvoltarea ulterioară</string>
-    <string name="donate_team_title">Echipa riceDroid</string>
+    <!-- Share risingDroid -->
+    <string name="share_rising_title">Distribuie risingDroid</string>
+    <string name="share_rising_summary">Anunta-i si pe altii despre risingDroid</string>
+    <string name="share_message">Verifică dacă #risingDroidAndroid este disponibil pentru dispozitivul tău @ https://risingoss.github.io/</string>
+    <string name="share_chooser_title">Distribuie risingDroid</string>
+    <!-- Sites risingDroid -->
+    <string name="rising_source_title">GitHub</string>
+    <string name="rising_source_summary">Ne plac sursele deschise, vezi mai mulle</string>
+    <string name="rising_telegram_title">Comunitatea risingDroid</string>
+    <string name="rising_telegram_summary">Suntem pe Telegram. Vino alături de noi!</string>
+    <string name="rising_telegram_channel_title">Canal actualizări</string>
+    <string name="rising_telegram_channel_summary">Primește notificări despre noile creații pe Telegram</string>
+    <string name="rising_website_title">Site-ul oficial</string>
+    <string name="rising_website_summary">Vizitați site-ul nostru oficial</string>
+    <string name="rising_translate_title">Traduceri</string>
+    <string name="rising_translate_summary">Ajută la localizarea ROM-ului în limba ta!</string>
+    <string name="rising_sponsor_summary">Vizitați partenerul nostru gazdă</string>
+    <!-- Donate risingDroid -->
+    <string name="donate_rising_title">Susține-ne</string>
+    <string name="donate_rising_summary">Donează pentru a sprijini dezvoltarea ulterioară</string>
+    <string name="donate_team_title">Echipa risingDroid</string>
     <string name="donate_team_summary">Donați pentru a sprijini serverul de găzduire, site-ul uptime și managementul general</string>
     <!-- The Drill -->
     <string name="drill_title">Exercițiul</string>
     <string name="drill_summary">Ai găsit un bug? Ai intrat într-o problemă?</string>
     <!-- OTA -->
-    <string name="crdroid_update_title">Actualizări</string>
-    <string name="crdroid_update_summary">Verifică și descarcă ultima actualizare</string>
+    <string name="rising_update_title">Actualizări</string>
+    <string name="rising_update_summary">Verifică și descarcă ultima actualizare</string>
     <!-- App details: open play store link if app is user installed -->
     <string name="app_play_store">Magazin Play</string>
     <!-- Custom seekbar -->
@@ -546,8 +546,8 @@
     <string name="qs_footer_show_power_menu_title">Scurtătură meniu pornire</string>
     <string name="qs_footer_services_icon_title">Scurtătură servicii rulante</string>
     <string name="qs_footer_settings_icon_title">Scurtătură setări</string>
-    <!-- Device Info screen. riceDroid legal. -->
-    <string name="crdroid_license_title">Legal riceDroid</string>
+    <!-- Device Info screen. risingDroid legal. -->
+    <string name="rising_license_title">Legal risingDroid</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">Cursor luminozitate</string>
     <string name="qs_show_brightness_slider_never">Nu arăta niciodată</string>
@@ -636,9 +636,9 @@
     <string name="notification_sound_vib_screen_on_summary">Redă sunet şi vibraţii când ecranul este pornit</string>
     <!-- Privacy Indicator -->
     <string name="mic_camera_privacy_indicator_title">Indicator de confidențialitate microfon și cameră</string>
-    <string name="mic_camera_privacy_indicator_summary">Arată indicator separat atunci când orice aplicație folosește microfonul sau camera foto</string>
+    <string name="mic_camera_privacy_indicator_summary">Arată indicator separat atunci când orising aplicație folosește microfonul sau camera foto</string>
     <string name="location_privacy_indicator_title">Indicator de confidențialitate locație</string>
-    <string name="location_privacy_indicator_summary">Arată indicator separat atunci când orice aplicație folosește locația</string>
+    <string name="location_privacy_indicator_summary">Arată indicator separat atunci când orising aplicație folosește locația</string>
     <string name="projection_privacy_indicator_title">Indicatorul proiecției media referitor la confidențialitate</string>
     <string name="projection_privacy_indicator_summary">Arată indicator când ecranul dispozitivului este proiectat</string>
     <!-- Deep Sleep percentage in device info -->

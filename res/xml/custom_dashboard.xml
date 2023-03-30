@@ -16,17 +16,17 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:title="@string/crdroid_settings_title" >
+    android:title="@string/rising_settings_title" >
             
        <com.android.settingslib.widget.TopIntroPreference
-            android:key="rice_illustration_desc"
+            android:key="personalizations_illustration_desc"
             android:order="-999"
-            android:title="@string/rice_illustration_summary"/>
+            android:title="@string/rising_illustration_summary"/>
             
         <com.android.settingslib.widget.IllustrationPreference
-            android:key="rice_illustration"
+            android:key="personalizations_illustration"
             android:order="-998"
-            app:lottie_rawRes="@raw/rice"/>
+            app:lottie_rawRes="@raw/rising"/>
             
         <!-- About -->
         <Preference
@@ -36,21 +36,21 @@
             android:summary="@string/about_settings_summary"
             android:fragment="com.rising.settings.fragments.About" />
 
-      <!-- Buttons -->
+      <!-- Buttons
         <Preference
             android:icon="@drawable/ic_settings_cogs"
             settings:layout="@layout/arc_card_about_middle"
             android:title="@string/button_title"
             android:summary="@string/buttons_settings_summary"
-            android:fragment="com.rising.settings.fragments.Buttons" />
+            android:fragment="com.rising.settings.fragments.Buttons" /> -->
 
-      <!-- Lockscreen -->
+      <!-- Lockscreen
         <Preference
             android:icon="@drawable/ic_settings_lockscreens"
             settings:layout="@layout/arc_card_about_middle"
             android:title="@string/lockscreen_title"
             android:summary="@string/lockscreen_settings_summary"
-            android:fragment="com.rising.settings.fragments.LockScreen" />
+            android:fragment="com.rising.settings.fragments.LockScreen" /> -->
             
         <!-- Misc -->
         <Preference
@@ -60,13 +60,13 @@
             android:summary="@string/misc_settings_summary"
             android:fragment="com.rising.settings.fragments.Miscellaneous" />
 
-        <!-- Navigation -->
+        <!-- Navigation
         <Preference
             android:icon="@drawable/ic_settings_notifications"
             settings:layout="@layout/arc_card_about_middle"
             android:title="@string/navigation_title"
             android:summary="@string/nav_settings_summary"
-            android:fragment="com.rising.settings.fragments.Navigation" />
+            android:fragment="com.rising.settings.fragments.Navigation" /> -->
 
         <!-- Notifications -->
         <Preference
@@ -76,13 +76,13 @@
             android:summary="@string/notif_settings_summary"
             android:fragment="com.rising.settings.fragments.Notifications" />
 
-        <!-- QuickSettings -->
+        <!-- QuickSettings
         <Preference
             android:icon="@drawable/ic_settings_quicksettings"
             settings:layout="@layout/arc_card_about_middle"
             android:title="@string/quicksettings_title"
             android:summary="@string/qs_settings_summary"
-            android:fragment="com.rising.settings.fragments.QuickSettings" />
+            android:fragment="com.rising.settings.fragments.QuickSettings" /> -->
 
         <!-- Sound -->
         <Preference
@@ -92,7 +92,7 @@
             android:summary="@string/sound_settings_summary"
             android:fragment="com.rising.settings.fragments.Sound" />    
 
-        <!-- Statusbar -->
+       <!-- Statusbar
         <Preference
             android:icon="@drawable/ic_settings_statusbar"
             settings:layout="@layout/arc_card_about_middle"
@@ -100,12 +100,12 @@
             android:summary="@string/sb_settings_summary"
             android:fragment="com.rising.settings.fragments.StatusBar" />   
  
-        <!-- UserInterface -->
+        <!-- UserInterface
         <Preference
             android:icon="@drawable/ic_color_bucket"
             settings:layout="@layout/arc_card_about_bottom"
             android:title="@string/ui_title"
             android:summary="@string/ui_settings_summary"
-            android:fragment="com.rising.settings.fragments.UserInterface" />
+            android:fragment="com.rising.settings.fragments.UserInterface" /> -->
 
 </PreferenceScreen> 

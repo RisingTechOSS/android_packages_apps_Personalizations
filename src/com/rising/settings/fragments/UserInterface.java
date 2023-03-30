@@ -51,7 +51,7 @@ public class UserInterface extends SettingsPreferenceFragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.crdroid_settings_ui);
+        addPreferencesFromResource(R.xml.rising_settings_ui);
 
     }
 
@@ -64,7 +64,7 @@ public class UserInterface extends SettingsPreferenceFragment {
      * For search
      */
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
-            new BaseSearchIndexProvider(R.xml.crdroid_settings_ui) {
+            new BaseSearchIndexProvider(R.xml.rising_settings_ui) {
 
                 @Override
                 public List<String> getNonIndexableKeys(Context context) {

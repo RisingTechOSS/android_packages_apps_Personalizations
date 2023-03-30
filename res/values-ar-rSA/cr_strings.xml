@@ -16,10 +16,10 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">الإعدادات</string>
-    <string name="crdroid_settings_summary">ملخص الإعدادات</string>
+    <string name="rising_settings_title">الإعدادات</string>
+    <string name="rising_settings_summary">ملخص الإعدادات</string>
     <string name="reset_settings_title">إعادة ضبط الإعدادات</string>
-    <string name="reset_settings_message">سيؤدي ذلك إلى إعادة تعيين معظم إعدادات crdroid إلى قيمها الافتراضية للمستخدم الحالي. هل ترغب في المتابعة؟</string>
+    <string name="reset_settings_message">سيؤدي ذلك إلى إعادة تعيين معظم إعدادات rising إلى قيمها الافتراضية للمستخدم الحالي. هل ترغب في المتابعة؟</string>
     <!-- Personalization Categories -->
     <string name="button_title">الأزرار</string>
     <string name="lockscreen_title">شاشة القفل</string>
@@ -53,40 +53,40 @@
     <string name="enable">تمكين</string>
     <string name="disable">تعطيل</string>
     <!-- Changelog -->
-    <string name="changelog_crdroid_title">سجل التغييرات الحالي</string>
-    <string name="changelog_crdroid_summary">عرض التغييرات في الروم المثبت</string>
-    <string name="changelog_crdroid_error">غير قادر على تحميل سجل التغييرات</string>
-    <!-- About riceDroid -->
-    <string name="about_crdroid">حول riceDroid</string>
+    <string name="changelog_rising_title">سجل التغييرات الحالي</string>
+    <string name="changelog_rising_summary">عرض التغييرات في الروم المثبت</string>
+    <string name="changelog_rising_error">غير قادر على تحميل سجل التغييرات</string>
+    <!-- About risingDroid -->
+    <string name="about_rising">حول risingDroid</string>
     <string name="about_device_name">الجهاز</string>
-    <!-- Share riceDroid -->
-    <string name="share_crdroid_title">مشاركة riceDroid</string>
-    <string name="share_crdroid_summary">دع الآخرين يعرفون عن riceDroid</string>
-    <string name="share_message">تحقق مما إذا كان #riceDroidAndroid متوفر لجهازك @ https://ricedroidoss.github.io/</string>
-    <string name="share_chooser_title">مشاركة riceDroid</string>
-    <!-- Sites riceDroid -->
-    <string name="crdroid_source_title">على موقع Github</string>
-    <string name="crdroid_source_summary">نحن نحب المصدر المفتوح، تحقق منا</string>
-    <string name="crdroid_telegram_title">مجتمع riceDroid</string>
-    <string name="crdroid_telegram_summary">نحن على تليجرام. انضم إلينا!</string>
-    <string name="crdroid_telegram_channel_title">قناة التحديثات</string>
-    <string name="crdroid_telegram_channel_summary">احصل على إشعارات بالتحديثات الجديدة على تيليجرام</string>
-    <string name="crdroid_website_title">الموقع الرسمي</string>
-    <string name="crdroid_website_summary">زيارة موقعنا الرسمي</string>
-    <string name="crdroid_translate_title">الترجمة</string>
-    <string name="crdroid_translate_summary">المساعدة في تعريب الروم بلغتك!</string>
-    <string name="crdroid_sponsor_summary">قم بزيارة الشريك المضيف لموقعنا</string>
-    <!-- Donate riceDroid -->
-    <string name="donate_crdroid_title">ادعمنا</string>
-    <string name="donate_crdroid_summary">تبرع لدعم المزيد من التطوير</string>
-    <string name="donate_team_title">فريق riceDroid</string>
+    <!-- Share risingDroid -->
+    <string name="share_rising_title">مشاركة risingDroid</string>
+    <string name="share_rising_summary">دع الآخرين يعرفون عن risingDroid</string>
+    <string name="share_message">تحقق مما إذا كان #risingDroidAndroid متوفر لجهازك @ https://risingoss.github.io/</string>
+    <string name="share_chooser_title">مشاركة risingDroid</string>
+    <!-- Sites risingDroid -->
+    <string name="rising_source_title">على موقع Github</string>
+    <string name="rising_source_summary">نحن نحب المصدر المفتوح، تحقق منا</string>
+    <string name="rising_telegram_title">مجتمع risingDroid</string>
+    <string name="rising_telegram_summary">نحن على تليجرام. انضم إلينا!</string>
+    <string name="rising_telegram_channel_title">قناة التحديثات</string>
+    <string name="rising_telegram_channel_summary">احصل على إشعارات بالتحديثات الجديدة على تيليجرام</string>
+    <string name="rising_website_title">الموقع الرسمي</string>
+    <string name="rising_website_summary">زيارة موقعنا الرسمي</string>
+    <string name="rising_translate_title">الترجمة</string>
+    <string name="rising_translate_summary">المساعدة في تعريب الروم بلغتك!</string>
+    <string name="rising_sponsor_summary">قم بزيارة الشريك المضيف لموقعنا</string>
+    <!-- Donate risingDroid -->
+    <string name="donate_rising_title">ادعمنا</string>
+    <string name="donate_rising_summary">تبرع لدعم المزيد من التطوير</string>
+    <string name="donate_team_title">فريق risingDroid</string>
     <string name="donate_team_summary">التبرع لدعم استضافة الخوادم، وموقع العمل الإضافي والإدارة العامة</string>
     <!-- The Drill -->
     <string name="drill_title">الطريقة لابلاغ عن مشكلة</string>
     <string name="drill_summary">وجدت خطأ؟ وقعت في مشكلة؟</string>
     <!-- OTA -->
-    <string name="crdroid_update_title">التحديثات</string>
-    <string name="crdroid_update_summary">التحقق من أحدث تحديث وتحميله</string>
+    <string name="rising_update_title">التحديثات</string>
+    <string name="rising_update_summary">التحقق من أحدث تحديث وتحميله</string>
     <!-- App details: open play store link if app is user installed -->
     <string name="app_play_store">في Google Play</string>
     <!-- Custom seekbar -->
@@ -549,8 +549,8 @@
     <string name="qs_footer_show_power_menu_title">اختصار قائمة التشغيل</string>
     <string name="qs_footer_services_icon_title">عرض رمز اختصار للخدمات قيد التشغيل</string>
     <string name="qs_footer_settings_icon_title">إختصار الإعدادات</string>
-    <!-- Device Info screen. riceDroid legal. -->
-    <string name="crdroid_license_title">فريق riceDroid</string>
+    <!-- Device Info screen. risingDroid legal. -->
+    <string name="rising_license_title">فريق risingDroid</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">شريط السطوع</string>
     <string name="qs_show_brightness_slider_never">لا تُظهر أبداً</string>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2021-2022 RiceDroid
+     Copyright (C) 2021-2022 Rising
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
@@ -14,12 +14,12 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- riceDroid versioning -->
-    <string name="rice_version_title">RiceOS Version</string>
-    <string name="about_device_info">RiceDroid Device</string>
-    <string name="rice_device_title">Device</string>
-    <string name="rice_build_version_title">Build Version</string>
-    <string name="rice_build_date_title">Build Date</string>
+    <!-- risingDroid versioning -->
+    <string name="rising_version_title">RiceOS Version</string>
+    <string name="about_device_info">Rising Device</string>
+    <string name="rising_device_title">Device</string>
+    <string name="rising_build_version_title">Build Version</string>
+    <string name="rising_build_date_title">Build Date</string>
         
     <string name="wellbeing_title">Google Wellbeing</string>
     <string name="gesture_illustration_description">Control your device with ease.</string>
@@ -53,8 +53,8 @@
     <string name="edit">Edit</string>
     <string name="device_name">Device name</string>
     <string name="about_us_info_category_title">About Us</string>
-    <string name="rice_revision">RiceDroid Revision</string>
-    <string name="rice_model_info">Device Information</string>
+    <string name="rising_revision">Rising Revision</string>
+    <string name="rising_model_info">Device Information</string>
     
     <string name="dashboard_morning1">Good Morning!</string>
     <string name="dashboard_morning2">The Sun is up!</string>
@@ -76,7 +76,7 @@
     <string name="dashboard_midnight3">Get some sleep..</string>
     <string name="dashboard_midnight4">Take rest..</string>
     <string name="dashboard_midnight5">Sleeping late?</string>
-    <string name="dashboard_random1">Want rice?</string>
+    <string name="dashboard_random1">Want rising?</string>
     <string name="dashboard_random2">Hello!</string>
     <string name="dashboard_random3">Hi Owner!</string>
     <string name="dashboard_random4">Settings</string>

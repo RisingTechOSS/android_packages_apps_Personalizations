@@ -49,8 +49,8 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
 
-import com.android.internal.util.crdroid.Utils;
-import com.android.internal.util.crdroid.ThemeUtils;
+import com.android.internal.util.rising.Utils;
+import com.android.internal.util.rising.ThemeUtils;
 
 import com.rising.settings.preferences.SystemSettingListPreference;
 import com.rising.settings.preferences.SystemSettingSwitchPreference;

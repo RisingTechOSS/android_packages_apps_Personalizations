@@ -16,8 +16,8 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">riceDroidi seaded</string>
-    <string name="crdroid_settings_summary">Ava hea kraam</string>
+    <string name="rising_settings_title">risingDroidi seaded</string>
+    <string name="rising_settings_summary">Ava hea kraam</string>
     <string name="reset_settings_title">Lähtesta seaded</string>
     <string name="reset_settings_message">See lähtestab valitud kasutaja jaoks enamus CrDroidi seaded vaikeväärtustele. Kas soovid jätkata?</string>
     <!-- Personalization Categories -->
@@ -53,40 +53,40 @@
     <string name="enable">Luba</string>
     <string name="disable">Keela</string>
     <!-- Changelog -->
-    <string name="changelog_crdroid_title">Praegune muudatuste logi</string>
-    <string name="changelog_crdroid_summary">Vaata paigaldatud ROMi muudatusi</string>
-    <string name="changelog_crdroid_error">Muudatuste logi ei saanud laadida</string>
-    <!-- About riceDroid -->
-    <string name="about_crdroid">Info riceDroidi kohta</string>
+    <string name="changelog_rising_title">Praegune muudatuste logi</string>
+    <string name="changelog_rising_summary">Vaata paigaldatud ROMi muudatusi</string>
+    <string name="changelog_rising_error">Muudatuste logi ei saanud laadida</string>
+    <!-- About risingDroid -->
+    <string name="about_rising">Info risingDroidi kohta</string>
     <string name="about_device_name">Seade</string>
-    <!-- Share riceDroid -->
-    <string name="share_crdroid_title">Jaga riceDroidi</string>
-    <string name="share_crdroid_summary">Anna teistele teada riceDroidist</string>
-    <string name="share_message">Uuri kas #riceDroidAndroid on saadaval sinu seadmele https://ricedroidoss.github.io/</string>
-    <string name="share_chooser_title">Jaga riceDroidi</string>
-    <!-- Sites riceDroid -->
-    <string name="crdroid_source_title">GitHub</string>
-    <string name="crdroid_source_summary">Me armastame avatud tarkvara, tutvu meiega</string>
-    <string name="crdroid_telegram_title">riceDroid kogukond</string>
-    <string name="crdroid_telegram_summary">Liitu meie Telegrami kommuuniga!</string>
-    <string name="crdroid_telegram_channel_title">Uuendustekanal</string>
-    <string name="crdroid_telegram_channel_summary">Saa Telegramis uute versioonide teavitusi</string>
-    <string name="crdroid_website_title">Ametlik veebileht</string>
-    <string name="crdroid_website_summary">Külasta meie ametlikku kodulehte</string>
-    <string name="crdroid_translate_title">Tõlked</string>
-    <string name="crdroid_translate_summary">Aita ROM tõlkida oma emakeelde!</string>
-    <string name="crdroid_sponsor_summary">Külasta meie veebisaidi hostpartnerit</string>
-    <!-- Donate riceDroid -->
-    <string name="donate_crdroid_title">Toeta meid</string>
-    <string name="donate_crdroid_summary">Anneta edasise arenduse toetamiseks</string>
-    <string name="donate_team_title">riceDroidi meeskond</string>
+    <!-- Share risingDroid -->
+    <string name="share_rising_title">Jaga risingDroidi</string>
+    <string name="share_rising_summary">Anna teistele teada risingDroidist</string>
+    <string name="share_message">Uuri kas #risingDroidAndroid on saadaval sinu seadmele https://risingoss.github.io/</string>
+    <string name="share_chooser_title">Jaga risingDroidi</string>
+    <!-- Sites risingDroid -->
+    <string name="rising_source_title">GitHub</string>
+    <string name="rising_source_summary">Me armastame avatud tarkvara, tutvu meiega</string>
+    <string name="rising_telegram_title">risingDroid kogukond</string>
+    <string name="rising_telegram_summary">Liitu meie Telegrami kommuuniga!</string>
+    <string name="rising_telegram_channel_title">Uuendustekanal</string>
+    <string name="rising_telegram_channel_summary">Saa Telegramis uute versioonide teavitusi</string>
+    <string name="rising_website_title">Ametlik veebileht</string>
+    <string name="rising_website_summary">Külasta meie ametlikku kodulehte</string>
+    <string name="rising_translate_title">Tõlked</string>
+    <string name="rising_translate_summary">Aita ROM tõlkida oma emakeelde!</string>
+    <string name="rising_sponsor_summary">Külasta meie veebisaidi hostpartnerit</string>
+    <!-- Donate risingDroid -->
+    <string name="donate_rising_title">Toeta meid</string>
+    <string name="donate_rising_summary">Anneta edasise arenduse toetamiseks</string>
+    <string name="donate_team_title">risingDroidi meeskond</string>
     <string name="donate_team_summary">Anneta, et toetada serveri majutust, veebilehe ülalpidamist ning üleüldist haldust</string>
     <!-- The Drill -->
     <string name="drill_title">Nagu ikka</string>
     <string name="drill_summary">Leidsid vea? Tekkis probleem?</string>
     <!-- OTA -->
-    <string name="crdroid_update_title">Uuendused</string>
-    <string name="crdroid_update_summary">Kontrolli ja laadi alla viimatine uuendus</string>
+    <string name="rising_update_title">Uuendused</string>
+    <string name="rising_update_summary">Kontrolli ja laadi alla viimatine uuendus</string>
     <!-- App details: open play store link if app is user installed -->
     <string name="app_play_store">Google Play</string>
     <!-- Custom seekbar -->
@@ -545,8 +545,8 @@
     <string name="qs_footer_show_power_menu_title">Toitemenüü otsetee</string>
     <string name="qs_footer_services_icon_title">Töötavate teenuste otsetee</string>
     <string name="qs_footer_settings_icon_title">Seadete otsetee</string>
-    <!-- Device Info screen. riceDroid legal. -->
-    <string name="crdroid_license_title">riceDroidi legaalne</string>
+    <!-- Device Info screen. risingDroid legal. -->
+    <string name="rising_license_title">risingDroidi legaalne</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">Heleduse liugur</string>
     <string name="qs_show_brightness_slider_never">Ära kuva kunagi</string>

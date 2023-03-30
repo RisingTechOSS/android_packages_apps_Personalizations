@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2021-2022 RiceDroid
+     Copyright (C) 2021-2022 Rising
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
@@ -14,12 +14,12 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- riceDroid versioning -->
-    <string name="rice_version_title">Версия RiceOS</string>
+    <!-- risingDroid versioning -->
+    <string name="rising_version_title">Версия RiceOS</string>
     <string name="about_device_info">Об устройстве</string>
-    <string name="rice_device_title">Устройство</string>
-    <string name="rice_build_version_title">Версия сборки</string>
-    <string name="rice_build_date_title">Дата сборки</string>
+    <string name="rising_device_title">Устройство</string>
+    <string name="rising_build_version_title">Версия сборки</string>
+    <string name="rising_build_date_title">Дата сборки</string>
 
     <string name="wellbeing_title">Цифровое благополучие</string>
     <string name="gesture_illustration_description">Управляйте своим устройством с легкостью.</string>
@@ -53,8 +53,8 @@
     <string name="edit">Изменить</string>
     <string name="device_name">Имя устройства</string>
     <string name="about_us_info_category_title">О нас</string>
-    <string name="rice_revision">RiceDroid Revision</string>
-    <string name="rice_model_info">Информация об устройстве</string>
+    <string name="rising_revision">Rising Revision</string>
+    <string name="rising_model_info">Информация об устройстве</string>
 
     <string name="dashboard_morning1">Доброе утро!</string>
     <string name="dashboard_morning2">Солнце уже взошло!</string>

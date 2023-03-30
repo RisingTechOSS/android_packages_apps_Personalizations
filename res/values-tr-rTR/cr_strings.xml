@@ -16,10 +16,10 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">riceDroid Ayarları</string>
-    <string name="crdroid_settings_summary">Çeşitli özelleştirmeler</string>
+    <string name="rising_settings_title">risingDroid Ayarları</string>
+    <string name="rising_settings_summary">Çeşitli özelleştirmeler</string>
     <string name="reset_settings_title">Ayarları sıfırla</string>
-    <string name="reset_settings_message">Bu mevcut kullanıcı için çoğu ricedroid ayarlarını varsayılan değerlerine sıfırlar. Devam etmek ister misin?</string>
+    <string name="reset_settings_message">Bu mevcut kullanıcı için çoğu rising ayarlarını varsayılan değerlerine sıfırlar. Devam etmek ister misin?</string>
     <!-- Personalization Categories -->
     <string name="button_title">Tuşlar</string>
     <string name="lockscreen_title">Kilit ekranı</string>
@@ -53,40 +53,40 @@
     <string name="enable">Etkinleştir</string>
     <string name="disable">Devre dışı bırak</string>
     <!-- Changelog -->
-    <string name="changelog_crdroid_title">Mevcut değişiklikler</string>
-    <string name="changelog_crdroid_summary">Yüklü ROM\'daki değişiklikleri görüntüleyin</string>
-    <string name="changelog_crdroid_error">Değişiklikler yüklenemiyor</string>
-    <!-- About riceDroid -->
-    <string name="about_crdroid">riceDroid hakkında</string>
+    <string name="changelog_rising_title">Mevcut değişiklikler</string>
+    <string name="changelog_rising_summary">Yüklü ROM\'daki değişiklikleri görüntüleyin</string>
+    <string name="changelog_rising_error">Değişiklikler yüklenemiyor</string>
+    <!-- About risingDroid -->
+    <string name="about_rising">risingDroid hakkında</string>
     <string name="about_device_name">Cihaz</string>
-    <!-- Share riceDroid -->
-    <string name="share_crdroid_title">riceDroid\'i paylaş</string>
-    <string name="share_crdroid_summary">Başkalarına riceDroid hakkında bilgi verin</string>
-    <string name="share_message">Cihazınız için #riceDroidAndroid\'in mevcut olup olmadığını kontrol edin @ https://ricedroidoss.github.io/</string>
-    <string name="share_chooser_title">riceDroid\'i paylaş</string>
-    <!-- Sites riceDroid -->
-    <string name="crdroid_source_title">GitHub</string>
-    <string name="crdroid_source_summary">Kaynak kodumuzu görüntüleyin</string>
-    <string name="crdroid_telegram_title">riceDroid topluluğu</string>
-    <string name="crdroid_telegram_summary">Biz de telegramdayız. Bize katılın!</string>
-    <string name="crdroid_telegram_channel_title">Güncelleme kanalı</string>
-    <string name="crdroid_telegram_channel_summary">Telegram\'daki yeni yapılardan haberdar olun</string>
-    <string name="crdroid_website_title">Resmi web sitesi</string>
-    <string name="crdroid_website_summary">Resmi web sitemizi ziyaret edin</string>
-    <string name="crdroid_translate_title">Çeviriler</string>
-    <string name="crdroid_translate_summary">ROM\'u kendi dilinize çevirmek için bize yardım edin!</string>
-    <string name="crdroid_sponsor_summary">Web sitesi barındırma ortağımızı ziyaret edin</string>
-    <!-- Donate riceDroid -->
-    <string name="donate_crdroid_title">Bizi destekle</string>
-    <string name="donate_crdroid_summary">Daha fazla gelişmeyi desteklemek için bağış yapın</string>
-    <string name="donate_team_title">riceDroid ekibi</string>
+    <!-- Share risingDroid -->
+    <string name="share_rising_title">risingDroid\'i paylaş</string>
+    <string name="share_rising_summary">Başkalarına risingDroid hakkında bilgi verin</string>
+    <string name="share_message">Cihazınız için #risingDroidAndroid\'in mevcut olup olmadığını kontrol edin @ https://risingoss.github.io/</string>
+    <string name="share_chooser_title">risingDroid\'i paylaş</string>
+    <!-- Sites risingDroid -->
+    <string name="rising_source_title">GitHub</string>
+    <string name="rising_source_summary">Kaynak kodumuzu görüntüleyin</string>
+    <string name="rising_telegram_title">risingDroid topluluğu</string>
+    <string name="rising_telegram_summary">Biz de telegramdayız. Bize katılın!</string>
+    <string name="rising_telegram_channel_title">Güncelleme kanalı</string>
+    <string name="rising_telegram_channel_summary">Telegram\'daki yeni yapılardan haberdar olun</string>
+    <string name="rising_website_title">Resmi web sitesi</string>
+    <string name="rising_website_summary">Resmi web sitemizi ziyaret edin</string>
+    <string name="rising_translate_title">Çeviriler</string>
+    <string name="rising_translate_summary">ROM\'u kendi dilinize çevirmek için bize yardım edin!</string>
+    <string name="rising_sponsor_summary">Web sitesi barındırma ortağımızı ziyaret edin</string>
+    <!-- Donate risingDroid -->
+    <string name="donate_rising_title">Bizi destekle</string>
+    <string name="donate_rising_summary">Daha fazla gelişmeyi desteklemek için bağış yapın</string>
+    <string name="donate_team_title">risingDroid ekibi</string>
     <string name="donate_team_summary">Sunucu hostingi, site çalışma zamanı ve genel yönetimi desteklemek için bağış yapın</string>
     <!-- The Drill -->
     <string name="drill_title">The drill</string>
     <string name="drill_summary">Bir hata mı buldunuz? Bir sorunla mı karşılaştınız?</string>
     <!-- OTA -->
-    <string name="crdroid_update_title">Güncellemeler</string>
-    <string name="crdroid_update_summary">En son güncellemeyi kontrol edin ve indirin</string>
+    <string name="rising_update_title">Güncellemeler</string>
+    <string name="rising_update_summary">En son güncellemeyi kontrol edin ve indirin</string>
     <!-- App details: open play store link if app is user installed -->
     <string name="app_play_store">Google play</string>
     <!-- Custom seekbar -->
@@ -544,8 +544,8 @@
     <string name="qs_footer_show_power_menu_title">Güç menüsü kısayolu</string>
     <string name="qs_footer_services_icon_title">Çalışan hizmetler kısayolu</string>
     <string name="qs_footer_settings_icon_title">Ayarlar kısayolu</string>
-    <!-- Device Info screen. riceDroid legal. -->
-    <string name="crdroid_license_title">riceDroid yasal</string>
+    <!-- Device Info screen. risingDroid legal. -->
+    <string name="rising_license_title">risingDroid yasal</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">Parlaklık kaydırıcısı</string>
     <string name="qs_show_brightness_slider_never">Asla gösterme</string>
@@ -1050,7 +1050,7 @@
     <string name="qs_thin">İnce Çizgi</string>
     <!-- Volume Styles -->
     <string name="rui_style">Realme UI stili</string>
-    <string name="rice_style">Rice stili</string>
+    <string name="rising_style">Rice stili</string>
     <string name="volume_style_title">Ses paneli stilleri</string>
    <!-- Custom settings dashboard style -->
     <string name="settings_dashboard_style_title">Ayarlar Stilleri</string>

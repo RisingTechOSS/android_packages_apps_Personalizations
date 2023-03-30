@@ -48,8 +48,8 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
 
-import com.android.internal.util.crdroid.Utils;
-import com.android.internal.util.crdroid.ThemeUtils;
+import com.android.internal.util.rising.Utils;
+import com.android.internal.util.rising.ThemeUtils;
 
 import com.rising.settings.preferences.SystemSettingListPreference;
 import com.rising.settings.preferences.SystemSettingSwitchPreference;
@@ -66,7 +66,7 @@ public class ThemeEngine extends SettingsPreferenceFragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.rice_settings_theme_engine);
+        addPreferencesFromResource(R.xml.rising_settings_theme_engine);
     }
     
     @Override
@@ -78,7 +78,7 @@ public class ThemeEngine extends SettingsPreferenceFragment {
      * For search
      */
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
-            new BaseSearchIndexProvider(R.xml.rice_settings_theme_engine) {
+            new BaseSearchIndexProvider(R.xml.rising_settings_theme_engine) {
 
                 @Override
                 public List<String> getNonIndexableKeys(Context context) {

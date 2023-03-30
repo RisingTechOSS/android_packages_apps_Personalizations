@@ -28,7 +28,7 @@
      public void onCreate(Bundle savedInstanceState) {
          super.onCreate(savedInstanceState);
  
-         addPreferencesFromResource(R.xml.rice_dashboard);
+         addPreferencesFromResource(R.xml.rising_dashboard);
      }
  
      @Override
