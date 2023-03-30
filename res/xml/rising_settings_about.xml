@@ -20,14 +20,6 @@
     android:title="@string/about_rising" >
 
     <PreferenceCategory
-         android:title="@string/what_is_risingOS" >
-
-    <Preference
-    	 android:summary="@string/what_is_risingOS_summary" />
-
-     </PreferenceCategory>
-
-    <PreferenceCategory
          android:title="@string/rising_redirects" >
 
     <!-- Changelog -->

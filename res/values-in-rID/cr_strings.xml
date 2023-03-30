@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="rising_settings_title">Setelan risingDroid</string>
+    <string name="rising_settings_title">Setelan RisingOS</string>
     <string name="rising_settings_summary">Kebaikan terbuka</string>
     <string name="reset_settings_title">Setel ulang pengaturan</string>
     <string name="reset_settings_message">Ini akan mengatur ulang sebagian besar pengaturan rising ke nilai default untuk pengguna saat ini. Apakah Anda ingin melanjutkan?</string>
@@ -56,18 +56,18 @@
     <string name="changelog_rising_title">Perubahan saat ini</string>
     <string name="changelog_rising_summary">Lihat perubahan pada ROM terpasang</string>
     <string name="changelog_rising_error">Tidak dapat memuat daftar perubahan</string>
-    <!-- About risingDroid -->
-    <string name="about_rising">Tentang risingDroid</string>
+    <!-- About RisingOS -->
+    <string name="about_rising">Tentang RisingOS</string>
     <string name="about_device_name">Perangkat</string>
-    <!-- Share risingDroid -->
-    <string name="share_rising_title">Bagikan risingDroid</string>
-    <string name="share_rising_summary">Biarkan orang lain tahu tentang risingDroid</string>
-    <string name="share_message">Periksa apakah #risingDroidAndroid tersedia untuk perangkat Anda @ https://risingoss.github.io/</string>
-    <string name="share_chooser_title">Bagikan risingDroid</string>
-    <!-- Sites risingDroid -->
+    <!-- Share RisingOS -->
+    <string name="share_rising_title">Bagikan RisingOS</string>
+    <string name="share_rising_summary">Biarkan orang lain tahu tentang RisingOS</string>
+    <string name="share_message">Periksa apakah #RisingOSAndroid tersedia untuk perangkat Anda @ https://risingoss.github.io/</string>
+    <string name="share_chooser_title">Bagikan RisingOS</string>
+    <!-- Sites RisingOS -->
     <string name="rising_source_title">GitHub</string>
     <string name="rising_source_summary">Kami cinta open source, periksa kami</string>
-    <string name="rising_telegram_title">Komunitas risingDroid</string>
+    <string name="rising_telegram_title">Komunitas RisingOS</string>
     <string name="rising_telegram_summary">Kami ada di Telegram. Ayo bergabung!</string>
     <string name="rising_telegram_channel_title">Saluran Pembaruan</string>
     <string name="rising_telegram_channel_summary">Dapatkan notifikasi tentang pembaruan baru dari Telegram</string>
@@ -76,10 +76,10 @@
     <string name="rising_translate_title">Terjemahan</string>
     <string name="rising_translate_summary">Bantu kami menerjemahkan ROM ini ke bahasa Anda!</string>
     <string name="rising_sponsor_summary">Kunjungi mitra host situs web kami</string>
-    <!-- Donate risingDroid -->
+    <!-- Donate RisingOS -->
     <string name="donate_rising_title">Dukung Kami</string>
     <string name="donate_rising_summary">Donasi untuk mendukung pengembangan lebih lanjut</string>
-    <string name="donate_team_title">Tim risingDroid</string>
+    <string name="donate_team_title">Tim RisingOS</string>
     <string name="donate_team_summary">Donasi untuk mendukung server hosting, keaktifan situs serta pemanajemenan secara keseluruhan</string>
     <!-- The Drill -->
     <string name="drill_title">The Drill</string>
@@ -544,8 +544,8 @@
     <string name="qs_footer_show_power_menu_title">Pintasan menu daya</string>
     <string name="qs_footer_services_icon_title">Pintasan Layanan Berjalan</string>
     <string name="qs_footer_settings_icon_title">Setelan pintasan</string>
-    <!-- Device Info screen. risingDroid legal. -->
-    <string name="rising_license_title">Hukum risingDroid</string>
+    <!-- Device Info screen. RisingOS legal. -->
+    <string name="rising_license_title">Hukum RisingOS</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">Slider kecerahan</string>
     <string name="qs_show_brightness_slider_never">Jangan tampilkan</string>

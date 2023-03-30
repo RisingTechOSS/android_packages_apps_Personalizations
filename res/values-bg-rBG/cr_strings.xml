@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="rising_settings_title">настройки на risingDroid</string>
+    <string name="rising_settings_title">настройки на RisingOS</string>
     <string name="rising_settings_summary">Отворени благини</string>
     <string name="reset_settings_title">Нулирай настройките</string>
     <string name="reset_settings_message">Това ще нулира повечето rising настройки до техните стойности по подразбиране за текущия потребител. Искате ли да продължите?</string>
@@ -56,18 +56,18 @@
     <string name="changelog_rising_title">Актуален списък с промени</string>
     <string name="changelog_rising_summary">Прегледай промените в инсталирания РОМ</string>
     <string name="changelog_rising_error">Не може да се зареди списъкът с промените</string>
-    <!-- About risingDroid -->
-    <string name="about_rising">За risingDroid</string>
+    <!-- About RisingOS -->
+    <string name="about_rising">За RisingOS</string>
     <string name="about_device_name">Устройство</string>
-    <!-- Share risingDroid -->
-    <string name="share_rising_title">Сподели risingDroid</string>
-    <string name="share_rising_summary">Уведомете други за risingDroid</string>
-    <string name="share_message">Вижте дали #risingDroidAndroid е достъпен за вашето устройство @ https://risingoss.github.io/</string>
-    <string name="share_chooser_title">Сподели risingDroid</string>
-    <!-- Sites risingDroid -->
+    <!-- Share RisingOS -->
+    <string name="share_rising_title">Сподели RisingOS</string>
+    <string name="share_rising_summary">Уведомете други за RisingOS</string>
+    <string name="share_message">Вижте дали #RisingOSAndroid е достъпен за вашето устройство @ https://risingoss.github.io/</string>
+    <string name="share_chooser_title">Сподели RisingOS</string>
+    <!-- Sites RisingOS -->
     <string name="rising_source_title">ГитХъб/GitHub</string>
     <string name="rising_source_summary">Ние обичаме код с отворен източник, проверете ни</string>
-    <string name="rising_telegram_title">risingDroid общност</string>
+    <string name="rising_telegram_title">RisingOS общност</string>
     <string name="rising_telegram_summary">Ние сме в telegram. Присъединете се към нас!</string>
     <string name="rising_telegram_channel_title">Канал за обновления</string>
     <string name="rising_telegram_channel_summary">Получавайте известия за нови компилации в Telegram</string>
@@ -76,10 +76,10 @@
     <string name="rising_translate_title">Преводи</string>
     <string name="rising_translate_summary">Помощ с локализиране на ROM на вашия език!</string>
     <string name="rising_sponsor_summary">Вижте нашият уебсайт, партньори</string>
-    <!-- Donate risingDroid -->
+    <!-- Donate RisingOS -->
     <string name="donate_rising_title">Подкрепете ни</string>
     <string name="donate_rising_summary">Направете дарение, за да подкрепите разработването за напред</string>
-    <string name="donate_team_title">risingDroid екип</string>
+    <string name="donate_team_title">RisingOS екип</string>
     <string name="donate_team_summary">Дарете в подкрепа на хостинг сървър, поддръжка на сайта и цялостното управление</string>
     <!-- The Drill -->
     <string name="drill_title">Бормашината</string>
@@ -545,8 +545,8 @@
     <string name="qs_footer_show_power_menu_title">Пряк път към менюто за захранване</string>
     <string name="qs_footer_services_icon_title">Пряк път за стартиране на услуги</string>
     <string name="qs_footer_settings_icon_title">Пряк път настройки</string>
-    <!-- Device Info screen. risingDroid legal. -->
-    <string name="rising_license_title">risingDroid лиценз</string>
+    <!-- Device Info screen. RisingOS legal. -->
+    <string name="rising_license_title">RisingOS лиценз</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">Плъзгач за яркост</string>
     <string name="qs_show_brightness_slider_never">Никога не показвай</string>

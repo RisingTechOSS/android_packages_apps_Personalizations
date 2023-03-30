@@ -14,7 +14,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- risingDroid versioning -->
+    <!-- RisingOS versioning -->
     <string name="rising_version_title">Версия RiceOS</string>
     <string name="about_device_info">Об устройстве</string>
     <string name="rising_device_title">Устройство</string>

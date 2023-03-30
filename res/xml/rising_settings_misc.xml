@@ -35,15 +35,15 @@
             android:targetClass="io.chaldeaprjkt.gamespace.settings.SettingsActivity" />
     </Preference>
 
-    <!-- Google services -->
+    <!-- Google services 
     <Preference
         android:key="gms_enabled_settings"
         android:icon="@drawable/ic_google"
         android:title="@string/gms_enabled_title"
         android:summary="@string/gms_enabled_summary"
-        android:fragment="com.rising.settings.fragments.misc.GmsSwitch"/>
+        android:fragment="com.rising.settings.fragments.misc.GmsSwitch"/> -->
 
-    <!-- Parallel space -->
+    <!-- Parallel space
     <Preference
         android:key="parallel_space"
         android:icon="@drawable/ic_parallel_space"
@@ -51,12 +51,12 @@
         android:summary="@string/laboratory_parallel_space_summary">
         <intent
             android:targetPackage="ink.kscope.parallelspace"
-            android:targetClass="ink.kscope.parallelspace.MainActivity" />
-    </Preference>
+            android:targetClass="ink.kscope.parallelspace.MainActivity" /> 
+    </Preference>-->
 
     </PreferenceCategory>
 
-    <!-- Display Cutout -->
+    <!-- Display Cutout
     <Preference
         android:key="display_cutout_force_fullscreen_settings"
         android:icon="@drawable/ic_fullscreen"
@@ -65,15 +65,15 @@
         <intent android:action="android.intent.action.MAIN"
              android:targetPackage="com.android.settings"
              android:targetClass="com.rising.settings.fragments.ui.DisplayCutoutForceFullscreenActivity"/>
-    </Preference>
+    </Preference> -->
 
-    <!-- Scarlet Services -->
+    <!-- Scarlet Services
     <Preference
         android:key="scarlet_settings"
         android:icon="@drawable/ic_scarlet"
         android:title="@string/scarlet_services_title"
         android:summary="@string/scarlet_services_summary"
-        android:fragment="com.rising.settings.fragments.misc.ScarletSettings"/>
+        android:fragment="com.rising.settings.fragments.misc.ScarletSettings"/> -->
 
     <!-- Smart Charging -->
     <Preference
@@ -83,21 +83,21 @@
         android:summary="@string/smart_charging_summary"
         android:fragment="com.rising.settings.fragments.misc.SmartCharging"/>
        
-    <!-- Smart Pixels -->
+    <!-- Smart Pixels
     <Preference
         android:key="smart_pixels"
         android:icon="@drawable/ic_smart_pixels"
         android:title="@string/smart_pixels_title" 
         android:summary="@string/smart_pixels_summary" 
-        android:fragment="com.rising.settings.fragments.ui.SmartPixels" />
+        android:fragment="com.rising.settings.fragments.ui.SmartPixels" /> -->
 
-    <!-- Sensor block per package -->
+    <!-- Sensor block per package 
     <Preference
         android:key="sensor_block_settings"
         android:icon="@drawable/ic_remote"
         android:title="@string/sensor_block_title"
         android:summary="@string/sensor_block_summary"
-        android:fragment="com.rising.settings.fragments.misc.SensorBlock"/>
+        android:fragment="com.rising.settings.fragments.misc.SensorBlock"/> -->
 
     <PreferenceCategory
         android:title="@string/misc_spoof_settings_title">
@@ -136,24 +136,24 @@
         android:icon="@drawable/ic_three_finger_gesture"
         android:title="@string/three_finger_gesture"
         android:summary="@string/three_finger_gesture_summary"
-        android:defaultValue="false" />
+        android:defaultValue="true" />
 
     </PreferenceCategory>
 
-    <!-- Pocket Judge -->
+    <!-- Pocket Judge
     <com.rising.settings.preferences.SystemSettingSwitchPreference
         android:key="pocket_judge"
         android:icon="@drawable/ic_pocket"
         android:title="@string/pocket_judge_title"
         android:summary="@string/pocket_judge_summary"
-        android:defaultValue="false" />
+        android:defaultValue="false" /> -->
 
-    <!-- Weather -->
+    <!-- Weather
     <Preference
         android:key="omnijaws_settings"
         android:icon="@drawable/ic_weather"
         android:title="@string/qs_weather_settings_title"
         android:summary="@string/qs_weather_settings_summary"
-        android:fragment="com.rising.settings.fragments.OmniJawsSettings" />
+        android:fragment="com.rising.settings.fragments.OmniJawsSettings" /> -->
 
 </PreferenceScreen>

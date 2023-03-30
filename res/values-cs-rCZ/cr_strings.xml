@@ -16,10 +16,10 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="rising_settings_title">Nastavení risingDroid</string>
+    <string name="rising_settings_title">Nastavení RisingOS</string>
     <string name="rising_settings_summary">Odhalte jeho možnosti</string>
     <string name="reset_settings_title">Obnovit nastavení</string>
-    <string name="reset_settings_message">Tímto obnovíte většinu nastavení risingDroidu pro aktuálního uživatele na výchozí hodnoty. Přejete si pokračovat?</string>
+    <string name="reset_settings_message">Tímto obnovíte většinu nastavení RisingOSu pro aktuálního uživatele na výchozí hodnoty. Přejete si pokračovat?</string>
     <!-- Personalization Categories -->
     <string name="button_title">Tlačítka</string>
     <string name="lockscreen_title">Obrazovka uzamčení</string>
@@ -56,18 +56,18 @@
     <string name="changelog_rising_title">Aktuální seznam změn</string>
     <string name="changelog_rising_summary">Zobrazit změny v\u00a0nainstalované ROM</string>
     <string name="changelog_rising_error">Nelze načíst seznam změn</string>
-    <!-- About risingDroid -->
-    <string name="about_rising">O risingDroidu</string>
+    <!-- About RisingOS -->
+    <string name="about_rising">O RisingOSu</string>
     <string name="about_device_name">Zařízení</string>
-    <!-- Share risingDroid -->
-    <string name="share_rising_title">Sdílet risingDroid</string>
-    <string name="share_rising_summary">Dejte vědět ostatním o\u00a0risingDroidu</string>
-    <string name="share_message">Podívejte se, jestli je k dispozici #risingDroidAndroid pro vaše zařízení @ https://risingoss.github.io/</string>
-    <string name="share_chooser_title">Sdílet risingDroid</string>
-    <!-- Sites risingDroid -->
+    <!-- Share RisingOS -->
+    <string name="share_rising_title">Sdílet RisingOS</string>
+    <string name="share_rising_summary">Dejte vědět ostatním o\u00a0RisingOSu</string>
+    <string name="share_message">Podívejte se, jestli je k dispozici #RisingOSAndroid pro vaše zařízení @ https://risingoss.github.io/</string>
+    <string name="share_chooser_title">Sdílet RisingOS</string>
+    <!-- Sites RisingOS -->
     <string name="rising_source_title">GitHub</string>
     <string name="rising_source_summary">Máme rádi open source. Podívejte se, co děláme</string>
-    <string name="rising_telegram_title">Komunita risingDroidu</string>
+    <string name="rising_telegram_title">Komunita RisingOSu</string>
     <string name="rising_telegram_summary">Jsme na Telegramu. Přidejte se k\u00a0nám!</string>
     <string name="rising_telegram_channel_title">Kanál aktualizací</string>
     <string name="rising_telegram_channel_summary">Dostávejte na Telegramu oznámení o\u00a0nových sestaveních</string>
@@ -76,10 +76,10 @@
     <string name="rising_translate_title">Překlady</string>
     <string name="rising_translate_summary">Pomozte nám s\u00a0lokalizací ROM do vašeho jazyka!</string>
     <string name="rising_sponsor_summary">Navštivte hostitele našeho webu</string>
-    <!-- Donate risingDroid -->
+    <!-- Donate RisingOS -->
     <string name="donate_rising_title">Podpořte nás</string>
     <string name="donate_rising_summary">Přispějte a\u00a0podpořte tak další vývoj</string>
-    <string name="donate_team_title">Tým risingDroidu</string>
+    <string name="donate_team_title">Tým RisingOSu</string>
     <string name="donate_team_summary">Přispějte na podporu hostingového serveru, provoz a\u00a0celkovou správu webu</string>
     <!-- The Drill -->
     <string name="drill_title">Výcvik</string>
@@ -547,8 +547,8 @@
     <string name="qs_footer_show_power_menu_title">Zkratka menu napájení</string>
     <string name="qs_footer_services_icon_title">Zástupce spuštěných služeb</string>
     <string name="qs_footer_settings_icon_title">Zástupce Nastavení</string>
-    <!-- Device Info screen. risingDroid legal. -->
-    <string name="rising_license_title">Licence risingDroid</string>
+    <!-- Device Info screen. RisingOS legal. -->
+    <string name="rising_license_title">Licence RisingOS</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">Posuvník jasu</string>
     <string name="qs_show_brightness_slider_never">Nikdy nezobrazovat</string>

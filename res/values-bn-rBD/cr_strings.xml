@@ -56,18 +56,18 @@
     <string name="changelog_rising_title">বর্তমান চেঞ্জলগ</string>
     <string name="changelog_rising_summary">ইনস্টল করা রমে পরিবর্তন দেখুন</string>
     <string name="changelog_rising_error">পরিবর্তন লোড করতে অক্ষম</string>
-    <!-- About risingDroid -->
+    <!-- About RisingOS -->
     <string name="about_rising">CrDroid সম্পর্কে</string>
     <string name="about_device_name">ডিভাইস</string>
-    <!-- Share risingDroid -->
+    <!-- Share RisingOS -->
     <string name="share_rising_title">CrDroid শেয়ার করুন</string>
     <string name="share_rising_summary">CrDroid সম্পর্কে অন্যদের জানান</string>
-    <string name="share_message">risingDroid আপনার ডিভাইসে আছে কিনা দেখুন</string>
+    <string name="share_message">RisingOS আপনার ডিভাইসে আছে কিনা দেখুন</string>
     <string name="share_chooser_title">CrDroid শেয়ার করুন</string>
-    <!-- Sites risingDroid -->
+    <!-- Sites RisingOS -->
     <string name="rising_source_title">গিটহাব</string>
     <string name="rising_source_summary">আমরা ওপেন সোর্স ভালবাসি, আমাদেরকে দেখুন</string>
-    <string name="rising_telegram_title">risingDroid সম্প্রদায়</string>
+    <string name="rising_telegram_title">RisingOS সম্প্রদায়</string>
     <string name="rising_telegram_summary">আমরা টেলিগ্রামে আছি। আমাদের সাথে যোগদান করুন!</string>
     <string name="rising_telegram_channel_title">আপডেট চ্যানেল</string>
     <string name="rising_telegram_channel_summary">টেলিগ্রামে নতুন বিল্ড সম্পর্কে বিজ্ঞপ্তি পান</string>
@@ -76,10 +76,10 @@
     <string name="rising_translate_title">অনুবাদ</string>
     <string name="rising_translate_summary">আপনার ভাষায় রমের স্থানীয়করণে সাহায্য করুন!</string>
     <string name="rising_sponsor_summary">আমাদের ওয়েবসাইট হোস্ট পার্টনার ভিজিট করুন</string>
-    <!-- Donate risingDroid -->
+    <!-- Donate RisingOS -->
     <string name="donate_rising_title">আমাদের সমর্থন করুন</string>
     <string name="donate_rising_summary">আরও উন্নয়নে সহায়তা করার জন্য দান করুন</string>
-    <string name="donate_team_title">risingDroid টিম</string>
+    <string name="donate_team_title">RisingOS টিম</string>
     <string name="donate_team_summary">সার্ভার হোস্টিং, সাইট আপটাইম এবং সামগ্রিক ব্যবস্থাপনা সমর্থন করতে ডোনেট করুন</string>
     <!-- The Drill -->
     <string name="drill_title">ড্রিল</string>
@@ -545,8 +545,8 @@
     <string name="qs_footer_show_power_menu_title">Power menu shortcut</string>
     <string name="qs_footer_services_icon_title">চলমান পরিষেবার শর্টকাট</string>
     <string name="qs_footer_settings_icon_title">সেটিংস শর্টকাট</string>
-    <!-- Device Info screen. risingDroid legal. -->
-    <string name="rising_license_title">risingDroid legal</string>
+    <!-- Device Info screen. RisingOS legal. -->
+    <string name="rising_license_title">RisingOS legal</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">ব্রাইটনেস স্লাইডার/উজ্জ্বলতা বার</string>
     <string name="qs_show_brightness_slider_never">কখনো দেখাবে না</string>

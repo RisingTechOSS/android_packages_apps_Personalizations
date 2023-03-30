@@ -16,10 +16,10 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="rising_settings_title">risingDroid-Einstellungen</string>
+    <string name="rising_settings_title">RisingOS-Einstellungen</string>
     <string name="rising_settings_summary">Erweiterte Einstellungen öffnen</string>
     <string name="reset_settings_title">Einstellungen zurücksetzen</string>
-    <string name="reset_settings_message">Dadurch werden die meisten risingDroid-Einstellungen für den aktuellen Nutzer auf die Werkseinstellungen zurückgesetzt. Fortfahren?</string>
+    <string name="reset_settings_message">Dadurch werden die meisten RisingOS-Einstellungen für den aktuellen Nutzer auf die Werkseinstellungen zurückgesetzt. Fortfahren?</string>
     <!-- Personalization Categories -->
     <string name="button_title">Tasten</string>
     <string name="lockscreen_title">Sperrbildschirm</string>
@@ -56,18 +56,18 @@
     <string name="changelog_rising_title">Aktueller Changelog</string>
     <string name="changelog_rising_summary">Änderungen in der installierten ROM anzeigen</string>
     <string name="changelog_rising_error">Changelog konnte nicht geladen werden</string>
-    <!-- About risingDroid -->
-    <string name="about_rising">Über risingDroid</string>
+    <!-- About RisingOS -->
+    <string name="about_rising">Über RisingOS</string>
     <string name="about_device_name">Gerät</string>
-    <!-- Share risingDroid -->
-    <string name="share_rising_title">risingDroid teilen</string>
-    <string name="share_rising_summary">risingDroid weiterempfehlen</string>
-    <string name="share_message">Finde heraus, ob es #risingDroidAndroid schon für dein Gerät gibt auf: https://risingoss.github.io/</string>
-    <string name="share_chooser_title">risingDroid teilen</string>
-    <!-- Sites risingDroid -->
+    <!-- Share RisingOS -->
+    <string name="share_rising_title">RisingOS teilen</string>
+    <string name="share_rising_summary">RisingOS weiterempfehlen</string>
+    <string name="share_message">Finde heraus, ob es #RisingOSAndroid schon für dein Gerät gibt auf: https://risingoss.github.io/</string>
+    <string name="share_chooser_title">RisingOS teilen</string>
+    <!-- Sites RisingOS -->
     <string name="rising_source_title">GitHub</string>
     <string name="rising_source_summary">Wir lieben Open Source, schau doch mal auf unserer GitHub-Seite vorbei</string>
-    <string name="rising_telegram_title">risingDroid-Community</string>
+    <string name="rising_telegram_title">RisingOS-Community</string>
     <string name="rising_telegram_summary">Wir sind auch bei Telegram. Komm in die Gruppe!</string>
     <string name="rising_telegram_channel_title">Kanal für Updates</string>
     <string name="rising_telegram_channel_summary">Lass dich auf Telegram über neue Builds benachrichtigen</string>
@@ -76,10 +76,10 @@
     <string name="rising_translate_title">Übersetzungen</string>
     <string name="rising_translate_summary">Hilf mit bei der Übersetzung der ROM in deine Sprache!</string>
     <string name="rising_sponsor_summary">Besuche den Hostpartner unserer Webseite</string>
-    <!-- Donate risingDroid -->
+    <!-- Donate RisingOS -->
     <string name="donate_rising_title">Unterstütze uns</string>
     <string name="donate_rising_summary">Spende, um die Entwicklung zu unterstützen</string>
-    <string name="donate_team_title">risingDroid-Team</string>
+    <string name="donate_team_title">RisingOS-Team</string>
     <string name="donate_team_summary">Spenden für Unterstützung beim Server-Hosting, bei der Webseitenverfügbarkeit und bei der Verwaltung</string>
     <!-- The Drill -->
     <string name="drill_title">Du weißt, was zu tun ist</string>
@@ -545,8 +545,8 @@
     <string name="qs_footer_show_power_menu_title">Verknüpfung zum Ein-/Aus-Menü</string>
     <string name="qs_footer_services_icon_title">Verknüpfung zu aktiven Diensten</string>
     <string name="qs_footer_settings_icon_title">Verknüpfung zu Einstellungen</string>
-    <!-- Device Info screen. risingDroid legal. -->
-    <string name="rising_license_title">Rechtliche Hinweise zu risingDroid</string>
+    <!-- Device Info screen. RisingOS legal. -->
+    <string name="rising_license_title">Rechtliche Hinweise zu RisingOS</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">Helligkeitsregler</string>
     <string name="qs_show_brightness_slider_never">Niemals anzeigen</string>

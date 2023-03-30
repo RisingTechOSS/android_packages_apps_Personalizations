@@ -16,10 +16,10 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="rising_settings_title">risingDroid-indstillinger</string>
+    <string name="rising_settings_title">RisingOS-indstillinger</string>
     <string name="rising_settings_summary">Åbn Godhed</string>
     <string name="reset_settings_title">Nulstil indstillinger</string>
-    <string name="reset_settings_message">Dette vil nulstille de fleste risingDroid-indstillinger til deres standardværdier for den aktuelle bruger. Fortsæt?</string>
+    <string name="reset_settings_message">Dette vil nulstille de fleste RisingOS-indstillinger til deres standardværdier for den aktuelle bruger. Fortsæt?</string>
     <!-- Personalization Categories -->
     <string name="button_title">Knapper</string>
     <string name="lockscreen_title">Låseskærm</string>
@@ -56,18 +56,18 @@
     <string name="changelog_rising_title">Aktuel ændringslog</string>
     <string name="changelog_rising_summary">Vis ændringer i den installerede ROM</string>
     <string name="changelog_rising_error">Kunne ikke indlæse ændringsoversigt</string>
-    <!-- About risingDroid -->
+    <!-- About RisingOS -->
     <string name="about_rising">Om AirDroid</string>
     <string name="about_device_name">Device</string>
-    <!-- Share risingDroid -->
-    <string name="share_rising_title">Del risingDroid</string>
-    <string name="share_rising_summary">Fortæl andre om risingDroid</string>
-    <string name="share_message">Check out if #risingDroidAndroid is available for your device @ https://risingoss.github.io/</string>
-    <string name="share_chooser_title">Del risingDroid</string>
-    <!-- Sites risingDroid -->
+    <!-- Share RisingOS -->
+    <string name="share_rising_title">Del RisingOS</string>
+    <string name="share_rising_summary">Fortæl andre om RisingOS</string>
+    <string name="share_message">Check out if #RisingOSAndroid is available for your device @ https://risingoss.github.io/</string>
+    <string name="share_chooser_title">Del RisingOS</string>
+    <!-- Sites RisingOS -->
     <string name="rising_source_title">GitHub</string>
     <string name="rising_source_summary">Vi elsker open source, tjek os ud</string>
-    <string name="rising_telegram_title">risingDroid community</string>
+    <string name="rising_telegram_title">RisingOS community</string>
     <string name="rising_telegram_summary">Vi er på telegram. Tilmeld dig!</string>
     <string name="rising_telegram_channel_title">Updates channel</string>
     <string name="rising_telegram_channel_summary">Get notified of new builds on Telegram</string>
@@ -76,10 +76,10 @@
     <string name="rising_translate_title">Oversættelser</string>
     <string name="rising_translate_summary">Hjælp til lokalisering af ROM på dit sprog!</string>
     <string name="rising_sponsor_summary">Visit our website host partner</string>
-    <!-- Donate risingDroid -->
+    <!-- Donate RisingOS -->
     <string name="donate_rising_title">Støt os</string>
     <string name="donate_rising_summary">Donate to support further development</string>
-    <string name="donate_team_title">risingDroid-team</string>
+    <string name="donate_team_title">RisingOS-team</string>
     <string name="donate_team_summary">Donér for at støtte server-hosting, opetid på webstedet og generel håndterng</string>
     <!-- The Drill -->
     <string name="drill_title">Øvelse</string>
@@ -545,8 +545,8 @@
     <string name="qs_footer_show_power_menu_title">Power menu shortcut</string>
     <string name="qs_footer_services_icon_title">Genvej til Kørende tjenester</string>
     <string name="qs_footer_settings_icon_title">Indstillingsgenvej</string>
-    <!-- Device Info screen. risingDroid legal. -->
-    <string name="rising_license_title">risingDroid legal</string>
+    <!-- Device Info screen. RisingOS legal. -->
+    <string name="rising_license_title">RisingOS legal</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">Lysstyrkeskyder</string>
     <string name="qs_show_brightness_slider_never">Never show</string>

@@ -34,11 +34,7 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
 
-import com.rising.settings.fragments.misc.GmsSwitch;
-import com.rising.settings.fragments.misc.SensorBlock;
 import com.rising.settings.fragments.misc.SmartCharging;
-
-import com.rising.settings.fragments.ui.SmartPixels;
 
 import java.util.List;
 
@@ -50,16 +46,8 @@ public class Miscellaneous extends SettingsPreferenceFragment {
     public static final String TAG = "Miscellaneous";
 
     private static final String SMART_CHARGING = "smart_charging";
-    private static final String POCKET_JUDGE = "pocket_judge";
-    private static final String KEY_FORCE_FULL_SCREEN = "display_cutout_force_fullscreen_settings";
-    private static final String SMART_PIXELS = "smart_pixels";
 
-    private Preference mShowCutoutForce;
-    private Preference mSmartPixels;
     private Preference mSmartCharging;
-    private Preference mPocketJudge;
-    private SwitchPreference mSysManager;
-    private SwitchPreference mSysAggresiveMode;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -71,36 +59,16 @@ public class Miscellaneous extends SettingsPreferenceFragment {
         final PreferenceScreen prefScreen = getPreferenceScreen();
         final Resources res = getResources();
 
-	final String displayCutout =
-            mContext.getResources().getString(com.android.internal.R.string.config_mainBuiltInDisplayCutout);
-
-        if (TextUtils.isEmpty(displayCutout)) {
-            mShowCutoutForce = (Preference) findPreference(KEY_FORCE_FULL_SCREEN);
-            prefScreen.removePreference(mShowCutoutForce);
-        }
-
-        mSmartPixels = (Preference) prefScreen.findPreference(SMART_PIXELS);
-        boolean mSmartPixelsSupported = res.getBoolean(
-                com.android.internal.R.bool.config_supportSmartPixels);
-        if (!mSmartPixelsSupported)
-            prefScreen.removePreference(mSmartPixels);
-
         mSmartCharging = (Preference) prefScreen.findPreference(SMART_CHARGING);
         boolean mSmartChargingSupported = res.getBoolean(
                 com.android.internal.R.bool.config_smartChargingAvailable);
         if (!mSmartChargingSupported)
             prefScreen.removePreference(mSmartCharging);
-
-        mPocketJudge = (Preference) prefScreen.findPreference(POCKET_JUDGE);
-        boolean mPocketJudgeSupported = res.getBoolean(
-                com.android.internal.R.bool.config_pocketModeSupported);
-        if (!mPocketJudgeSupported)
-            prefScreen.removePreference(mPocketJudge);
     }
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.CRDROID_SETTINGS;
+        return MetricsProto.MetricsEvent.CUSTOM_SETTINGS;
     }
 
     /**
@@ -118,23 +86,6 @@ public class Miscellaneous extends SettingsPreferenceFragment {
                             com.android.internal.R.bool.config_smartChargingAvailable);
                     if (!mSmartChargingSupported)
                         keys.add(SMART_CHARGING);
-
-                    boolean mPocketJudgeSupported = res.getBoolean(
-                            com.android.internal.R.bool.config_pocketModeSupported);
-                    if (!mPocketJudgeSupported)
-                        keys.add(POCKET_JUDGE);
-
-	            final String displayCutout =
-                        context.getResources().getString(com.android.internal.R.string.config_mainBuiltInDisplayCutout);
-
-                    if (TextUtils.isEmpty(displayCutout)) {
-                        keys.add(KEY_FORCE_FULL_SCREEN);
-                    }
-
-                    boolean mSmartPixelsSupported = context.getResources().getBoolean(
-                            com.android.internal.R.bool.config_supportSmartPixels);
-                    if (!mSmartPixelsSupported)
-                        keys.add(SMART_PIXELS);
 
                     return keys;
                 }

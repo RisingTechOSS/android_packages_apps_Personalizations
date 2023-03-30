@@ -16,10 +16,10 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="rising_settings_title">Configuració de risingDroid</string>
+    <string name="rising_settings_title">Configuració de RisingOS</string>
     <string name="rising_settings_summary">Obrir Goodness</string>
     <string name="reset_settings_title">Restablir configuració</string>
-    <string name="reset_settings_message">Això restablirà la majoria de configuracions de risingDroid als valors inicials per a l\'usuari actual. Vols continuar?</string>
+    <string name="reset_settings_message">Això restablirà la majoria de configuracions de RisingOS als valors inicials per a l\'usuari actual. Vols continuar?</string>
     <!-- Personalization Categories -->
     <string name="button_title">Botons</string>
     <string name="lockscreen_title">Pantalla de bloqueig</string>
@@ -56,18 +56,18 @@
     <string name="changelog_rising_title">Registre de canvis actual</string>
     <string name="changelog_rising_summary">Mostra els canvis en la ROM instal·lada</string>
     <string name="changelog_rising_error">No s\'ha pogut carregar el registre de canvis</string>
-    <!-- About risingDroid -->
-    <string name="about_rising">Sobre risingDroid</string>
+    <!-- About RisingOS -->
+    <string name="about_rising">Sobre RisingOS</string>
     <string name="about_device_name">Dispositiu</string>
-    <!-- Share risingDroid -->
-    <string name="share_rising_title">Comparteix risingDroid</string>
-    <string name="share_rising_summary">Feu saber a altres usuaris sobre risingDroid</string>
-    <string name="share_message">Consulteu si #risingDroidAndroid està disponible per al vostre dispositiu @ https://risingoss.github.io/</string>
-    <string name="share_chooser_title">Comparteix risingDroid</string>
-    <!-- Sites risingDroid -->
+    <!-- Share RisingOS -->
+    <string name="share_rising_title">Comparteix RisingOS</string>
+    <string name="share_rising_summary">Feu saber a altres usuaris sobre RisingOS</string>
+    <string name="share_message">Consulteu si #RisingOSAndroid està disponible per al vostre dispositiu @ https://risingoss.github.io/</string>
+    <string name="share_chooser_title">Comparteix RisingOS</string>
+    <!-- Sites RisingOS -->
     <string name="rising_source_title">GitHub</string>
     <string name="rising_source_summary">Ens encanta el programari lliure, fes-nos una ullada</string>
-    <string name="rising_telegram_title">Comunitat risingDroid</string>
+    <string name="rising_telegram_title">Comunitat RisingOS</string>
     <string name="rising_telegram_summary">Estem a Telegram. Uneix-te!</string>
     <string name="rising_telegram_channel_title">Canal d\'actualitzacions</string>
     <string name="rising_telegram_channel_summary">Rep notificacions de noves versions a Telegram</string>
@@ -76,10 +76,10 @@
     <string name="rising_translate_title">Traduccions</string>
     <string name="rising_translate_summary">Ajuda amb la traducció de la ROM a la vostra llengua!</string>
     <string name="rising_sponsor_summary">Visita la web del nostre col·laborador</string>
-    <!-- Donate risingDroid -->
+    <!-- Donate RisingOS -->
     <string name="donate_rising_title">Dóna’ns suport</string>
     <string name="donate_rising_summary">Fes un donatiu per a ajudar al desenvolupament futur</string>
-    <string name="donate_team_title">Equip risingDroid</string>
+    <string name="donate_team_title">Equip RisingOS</string>
     <string name="donate_team_summary">Fes una donació per a sostenir el hosting del servidor, el lloc web i la gestió general</string>
     <!-- The Drill -->
     <string name="drill_title">The drill</string>
@@ -545,8 +545,8 @@
     <string name="qs_footer_show_power_menu_title">Drecera del menú d\'apagat</string>
     <string name="qs_footer_services_icon_title">Drecera dels serveis en execució</string>
     <string name="qs_footer_settings_icon_title">Drecera a la configuració</string>
-    <!-- Device Info screen. risingDroid legal. -->
-    <string name="rising_license_title">Informació legal de risingDroid</string>
+    <!-- Device Info screen. RisingOS legal. -->
+    <string name="rising_license_title">Informació legal de RisingOS</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">Barra de brillantor</string>
     <string name="qs_show_brightness_slider_never">No mostrar mai</string>

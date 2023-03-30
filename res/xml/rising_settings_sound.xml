@@ -28,35 +28,36 @@
         android:summary="@string/pulse_settings_summary"
         android:fragment="com.rising.settings.fragments.sound.PulseSettings" />
 
-    <!-- Live volume steps -->
+    <!-- Live volume steps
     <Preference
         android:key="volume_steps"
         android:icon="@drawable/ic_settings_sound"
         android:title="@string/volume_steps_title"
         android:summary="@string/volume_steps_summary"
-        android:fragment="com.rising.settings.fragments.sound.VolumeSteps" />
+        android:fragment="com.rising.settings.fragments.sound.VolumeSteps" /> -->
 
-    <!-- Screenshot Sound  -->
+    <!-- Screenshot Sound
     <com.rising.settings.preferences.SystemSettingSwitchPreference
         android:key="screenshot_shutter_sound"
         android:icon="@drawable/ic_cellphone_sound"
         android:title="@string/screenshot_shutter_sound_title"
         android:summary="@string/screenshot_shutter_sound_summary"
-        android:defaultValue="true" />
+        android:defaultValue="true" /> -->
 
-    <!-- Adaptive Playback -->
+    <!-- Adaptive Playback
     <Preference
         android:key="adaptive_playback_settings"
         android:icon="@drawable/ic_settings_sound"
         android:title="@string/adaptive_playback_title"
         android:summary="@string/adaptive_playback_summary"
-        android:fragment="com.rising.settings.fragments.sound.AdaptivePlayback" />
+        android:fragment="com.rising.settings.fragments.sound.AdaptivePlayback" /> -->
 
-    <!-- Volume panel -->
+    <!-- Volume panel-->
     <PreferenceCategory
         android:key="volume_panel"
         android:title="@string/volume_panel_category" >
 
+	<!-- 
         <lineageos.preference.LineageSecureSettingSwitchPreference
             android:key="volume_panel_on_left"
             android:icon="@drawable/ic_settings_sound"
@@ -69,7 +70,7 @@
             android:defaultValue="3"
             android:max="10"
             settings:min="1"
-            settings:units="@string/unit_seconds" />
+            settings:units="@string/unit_seconds" />-->
 
     	<com.rising.settings.preferences.SystemSettingSwitchPreference
      	   android:key="volume_media_output_toggle"
@@ -77,9 +78,9 @@
      	   android:title="@string/volume_media_output_toggle_title"
       	   android:summary="@string/volume_media_output_toggle_summary"
       	   android:defaultValue="true" />
-    </PreferenceCategory>
+    </PreferenceCategory> 
 
-    <!-- In-call feedback -->
+    <!-- In-call feedback
     <PreferenceCategory
         android:key="incall_vib_options"
         android:title="@string/incall_vibration_category" >
@@ -101,6 +102,6 @@
             android:icon="@drawable/ic_vibrate"
             android:title="@string/incall_vibrate_disconnect_title"
             android:defaultValue="false" />
-    </PreferenceCategory>
+    </PreferenceCategory> -->
 
 </PreferenceScreen>

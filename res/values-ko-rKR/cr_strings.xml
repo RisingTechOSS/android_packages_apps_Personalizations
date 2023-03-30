@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="rising_settings_title">risingDroid 설정</string>
+    <string name="rising_settings_title">RisingOS 설정</string>
     <string name="rising_settings_summary">커스텀 고급 설정 </string>
     <string name="reset_settings_title">설정 초기화</string>
     <string name="reset_settings_message">대부분의 rising 설정이 현재 사용자의 기본값으로 재설정됩니다. 계속 하시겠습니까?</string>
@@ -56,18 +56,18 @@
     <string name="changelog_rising_title">현재 변경 내역</string>
     <string name="changelog_rising_summary">설치된 ROM의 변경 사항을 봅니다.</string>
     <string name="changelog_rising_error">변경 사항을 읽을 수 없습니다.</string>
-    <!-- About risingDroid -->
-    <string name="about_rising">risingDroid에 관하여</string>
+    <!-- About RisingOS -->
+    <string name="about_rising">RisingOS에 관하여</string>
     <string name="about_device_name">기기</string>
-    <!-- Share risingDroid -->
-    <string name="share_rising_title">risingDroid 공유</string>
-    <string name="share_rising_summary">risingDroid에 대해 다른 사람들에게 알리기</string>
-    <string name="share_message">당신의 장치를 위한 #risingDroidAndroid 이 있는지 확인하려면 @ https://risingoss.github.io을 확인하세요.</string>
-    <string name="share_chooser_title">risingDroid 공유</string>
-    <!-- Sites risingDroid -->
+    <!-- Share RisingOS -->
+    <string name="share_rising_title">RisingOS 공유</string>
+    <string name="share_rising_summary">RisingOS에 대해 다른 사람들에게 알리기</string>
+    <string name="share_message">당신의 장치를 위한 #RisingOSAndroid 이 있는지 확인하려면 @ https://risingoss.github.io을 확인하세요.</string>
+    <string name="share_chooser_title">RisingOS 공유</string>
+    <!-- Sites RisingOS -->
     <string name="rising_source_title">GitHub</string>
     <string name="rising_source_summary">우리는 오픈 소스를 사랑합니다. 확인해 보세요.</string>
-    <string name="rising_telegram_title">risingDroid 커뮤니티</string>
+    <string name="rising_telegram_title">RisingOS 커뮤니티</string>
     <string name="rising_telegram_summary">우리는 텔레그램에 있습니다. 가입하세요!</string>
     <string name="rising_telegram_channel_title">업데이트 채널</string>
     <string name="rising_telegram_channel_summary">새로운 빌드가 나오면 텔레그램으로 알림 받기</string>
@@ -76,10 +76,10 @@
     <string name="rising_translate_title">번역</string>
     <string name="rising_translate_summary">귀하의 언어로 ROM 현지화를 도와주세요!</string>
     <string name="rising_sponsor_summary">웹 사이트 호스팅 파트너 방문하기</string>
-    <!-- Donate risingDroid -->
+    <!-- Donate RisingOS -->
     <string name="donate_rising_title">지원하기</string>
     <string name="donate_rising_summary">기부해서 개발 지원하기</string>
-    <string name="donate_team_title">risingDroid 팀</string>
+    <string name="donate_team_title">RisingOS 팀</string>
     <string name="donate_team_summary">서버 호스팅 지원, 가동 시간 및 전반적인 관리 사이트 기부</string>
     <!-- The Drill -->
     <string name="drill_title">The Drill</string>
@@ -544,8 +544,8 @@
     <string name="qs_footer_show_power_menu_title">전원 메뉴 바로 가기</string>
     <string name="qs_footer_services_icon_title">실행 중인 서비스 바로 가기</string>
     <string name="qs_footer_settings_icon_title">설정 바로 가기</string>
-    <!-- Device Info screen. risingDroid legal. -->
-    <string name="rising_license_title">risingDroid 약관</string>
+    <!-- Device Info screen. RisingOS legal. -->
+    <string name="rising_license_title">RisingOS 약관</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">밝기 조절 슬라이더</string>
     <string name="qs_show_brightness_slider_never">절대 보여주지 않기</string>

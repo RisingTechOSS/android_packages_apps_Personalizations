@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="rising_settings_title">risingDroid Podešavanja</string>
+    <string name="rising_settings_title">RisingOS Podešavanja</string>
     <string name="rising_settings_summary">Otvori dobre stvari</string>
     <string name="reset_settings_title">Resetuj podešavanja</string>
     <string name="reset_settings_message">Ovo će resetovati većinu rising podešavanja na njihove podrazumevane vrednosti za trenutnog korisnika. Želite li da nastavite?</string>
@@ -56,18 +56,18 @@
     <string name="changelog_rising_title">Trenutna lista izmena</string>
     <string name="changelog_rising_summary">Vidi izmene u trenutno instaliranom ROM-u</string>
     <string name="changelog_rising_error">Ne mogu učitati listu izmena</string>
-    <!-- About risingDroid -->
-    <string name="about_rising">O risingDroid-u</string>
+    <!-- About RisingOS -->
+    <string name="about_rising">O RisingOS-u</string>
     <string name="about_device_name">Uređaj</string>
-    <!-- Share risingDroid -->
-    <string name="share_rising_title">Podeli risingDroid</string>
-    <string name="share_rising_summary">Obavesti druge o risingDroid-u</string>
-    <string name="share_message">Proveri da li je #risingDroidAndroid dostupan za tvoj uređaj @ https://risingoss.github.io/</string>
-    <string name="share_chooser_title">Podeli risingDroid</string>
-    <!-- Sites risingDroid -->
+    <!-- Share RisingOS -->
+    <string name="share_rising_title">Podeli RisingOS</string>
+    <string name="share_rising_summary">Obavesti druge o RisingOS-u</string>
+    <string name="share_message">Proveri da li je #RisingOSAndroid dostupan za tvoj uređaj @ https://risingoss.github.io/</string>
+    <string name="share_chooser_title">Podeli RisingOS</string>
+    <!-- Sites RisingOS -->
     <string name="rising_source_title">GitHub</string>
     <string name="rising_source_summary">Mi volimo open source, proveri nas</string>
-    <string name="rising_telegram_title">risingDroid zajednica</string>
+    <string name="rising_telegram_title">RisingOS zajednica</string>
     <string name="rising_telegram_summary">Na Telegramu smo. Pridruži nam se!</string>
     <string name="rising_telegram_channel_title">Update kanal</string>
     <string name="rising_telegram_channel_summary">Budi obavešten o novom verziji na Terlegramu</string>
@@ -76,10 +76,10 @@
     <string name="rising_translate_title">Prevodi</string>
     <string name="rising_translate_summary">Pomozi nam sa lokalizacijama ROM-a na tvom jeziku!</string>
     <string name="rising_sponsor_summary">Posetite host partnere našeg sajta</string>
-    <!-- Donate risingDroid -->
+    <!-- Donate RisingOS -->
     <string name="donate_rising_title">Podržite nas</string>
     <string name="donate_rising_summary">Donirajte da podržite dalji razvoj</string>
-    <string name="donate_team_title">risingDroid tim</string>
+    <string name="donate_team_title">RisingOS tim</string>
     <string name="donate_team_summary">Donirajte da podržite hosting servera, sajt i sveukupno održavanje</string>
     <!-- The Drill -->
     <string name="drill_title">Dril</string>
@@ -546,8 +546,8 @@
     <string name="qs_footer_show_power_menu_title">Prečice menija uključenja</string>
     <string name="qs_footer_services_icon_title">Prečica pokrenutih servisa</string>
     <string name="qs_footer_settings_icon_title">Prečica za podešavanja</string>
-    <!-- Device Info screen. risingDroid legal. -->
-    <string name="rising_license_title">risingDroid pravne informacije</string>
+    <!-- Device Info screen. RisingOS legal. -->
+    <string name="rising_license_title">RisingOS pravne informacije</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">Nivo osvjetljenja</string>
     <string name="qs_show_brightness_slider_never">Nikad ne pokazuj</string>

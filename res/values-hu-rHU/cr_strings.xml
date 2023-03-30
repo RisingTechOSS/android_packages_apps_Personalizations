@@ -16,10 +16,10 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="rising_settings_title">A risingDroid beállításai</string>
+    <string name="rising_settings_title">A RisingOS beállításai</string>
     <string name="rising_settings_summary">Klassz dolgok lelőhelye</string>
     <string name="reset_settings_title">Beállítások visszaállítása</string>
-    <string name="reset_settings_message">Ez a legtöbb risingDroid-beállításértéket visszaállítja alapértelmezettre a jelenlegi felhasználónál. Szeretné folytatni?</string>
+    <string name="reset_settings_message">Ez a legtöbb RisingOS-beállításértéket visszaállítja alapértelmezettre a jelenlegi felhasználónál. Szeretné folytatni?</string>
     <!-- Personalization Categories -->
     <string name="button_title">Gombok</string>
     <string name="lockscreen_title">Záróképernyő</string>
@@ -56,18 +56,18 @@
     <string name="changelog_rising_title">Aktuális változáslista</string>
     <string name="changelog_rising_summary">Nézze meg a telepített ROM-ban végrehajtott változtatásokat</string>
     <string name="changelog_rising_error">Nem lehet betölteni a változáslistát</string>
-    <!-- About risingDroid -->
-    <string name="about_rising">A risingDroidról</string>
+    <!-- About RisingOS -->
+    <string name="about_rising">A RisingOSról</string>
     <string name="about_device_name">Készülék</string>
-    <!-- Share risingDroid -->
-    <string name="share_rising_title">A risingDroid ajánlása</string>
-    <string name="share_rising_summary">Tudassa másokkal a risingDroid létezését</string>
-    <string name="share_message">Nézze meg, hogy a #risingDroid Android elkészült-e az Ön készülékéhez: @ https://risingoss.github.io/</string>
-    <string name="share_chooser_title">A risingDroid ajánlása</string>
-    <!-- Sites risingDroid -->
+    <!-- Share RisingOS -->
+    <string name="share_rising_title">A RisingOS ajánlása</string>
+    <string name="share_rising_summary">Tudassa másokkal a RisingOS létezését</string>
+    <string name="share_message">Nézze meg, hogy a #RisingOS Android elkészült-e az Ön készülékéhez: @ https://risingoss.github.io/</string>
+    <string name="share_chooser_title">A RisingOS ajánlása</string>
+    <!-- Sites RisingOS -->
     <string name="rising_source_title">GitHub</string>
     <string name="rising_source_summary">Kedveljük a nyílt forráskódot, nézzen meg minket</string>
-    <string name="rising_telegram_title">risingDroid közösség</string>
+    <string name="rising_telegram_title">RisingOS közösség</string>
     <string name="rising_telegram_summary">Jelen vagyunk a Telegramon. Csatlakozzon hozzánk!</string>
     <string name="rising_telegram_channel_title">Frissítési csatorna</string>
     <string name="rising_telegram_channel_summary">Küldjön értesítést, ha új kiadás érhető el a Telegramon</string>
@@ -76,10 +76,10 @@
     <string name="rising_translate_title">Fordítások</string>
     <string name="rising_translate_summary">Segítség a ROM lokalizálásában az Ön nyelvén!</string>
     <string name="rising_sponsor_summary">Látogasson el honlapunk host-partneréhez</string>
-    <!-- Donate risingDroid -->
+    <!-- Donate RisingOS -->
     <string name="donate_rising_title">Támogasson bennünket</string>
     <string name="donate_rising_summary">Adomány a további fejlesztés támogatására</string>
-    <string name="donate_team_title">A risingDroid csapata</string>
+    <string name="donate_team_title">A RisingOS csapata</string>
     <string name="donate_team_summary">Adományozzon, hogy támogassa a szerverbérlést, a weboldal-fenntarást és menedzselést</string>
     <!-- The Drill -->
     <string name="drill_title">The Drill (a fejlesztők)</string>
@@ -545,8 +545,8 @@
     <string name="qs_footer_show_power_menu_title">Kikapcsolómenű-parancsikon</string>
     <string name="qs_footer_services_icon_title">\'Futó szolgáltatások\'-parancsikon</string>
     <string name="qs_footer_settings_icon_title">Beállítások-parancsikon</string>
-    <!-- Device Info screen. risingDroid legal. -->
-    <string name="rising_license_title">risingDroid jogok</string>
+    <!-- Device Info screen. RisingOS legal. -->
+    <string name="rising_license_title">RisingOS jogok</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">Fényerőszabályzó-csúszka</string>
     <string name="qs_show_brightness_slider_never">Sose jelenítse meg</string>

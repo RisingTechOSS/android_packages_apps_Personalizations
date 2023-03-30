@@ -22,7 +22,7 @@
  import com.android.settings.SettingsPreferenceFragment;
  import com.android.internal.logging.nano.MetricsProto;
  
- public class crDroidSettingsLayout extends SettingsPreferenceFragment {
+ public class personalizationSettingsLayout extends SettingsPreferenceFragment {
  
      @Override
      public void onCreate(Bundle savedInstanceState) {
@@ -33,6 +33,6 @@
  
      @Override
      public int getMetricsCategory() {
-         return MetricsProto.MetricsEvent.CRDROID_SETTINGS;
+         return MetricsProto.MetricsEvent.CUSTOM_SETTINGS;
      }
  } 

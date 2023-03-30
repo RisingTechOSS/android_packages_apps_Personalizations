@@ -20,12 +20,12 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/notifications_title" >
 
-    <com.rising.settings.preferences.SystemSettingSwitchPreference
+    <!--<com.rising.settings.preferences.SystemSettingSwitchPreference
         android:key="alert_slider_notifications"
         android:icon="@drawable/ic_light_switch"
         android:title="@string/alert_slider_notifications_title"
         android:summary="@string/alert_slider_notifications_summary"
-        android:defaultValue="true" />
+        android:defaultValue="true" /> -->
 
     <com.rising.settings.preferences.SystemSettingSwitchPreference
         android:key="reticker_status"
@@ -40,14 +40,14 @@
         android:summary="@string/reticker_colored_summary"
         android:dependency="reticker_status" />
 
-    <com.rising.settings.preferences.SystemSettingSwitchPreference
+    <!--<com.rising.settings.preferences.SystemSettingSwitchPreference
         android:key="notification_sound_vib_screen_on"
         android:icon="@drawable/ic_bell_ring"
         android:title="@string/notification_sound_vib_screen_on_title"
         android:summary="@string/notification_sound_vib_screen_on_summary"
-        android:defaultValue="true" />
+        android:defaultValue="true" /> -->
 
-    <!-- Notification guts kill app button -->
+    <!-- Notification guts kill app button
     <com.rising.settings.preferences.SystemSettingSwitchPreference
         android:key="notification_guts_kill_app_button"
         android:icon="@drawable/ic_kill"
@@ -58,32 +58,9 @@
         android:key="toast_icon"
         android:icon="@drawable/ic_toast"
         android:title="@string/toast_icon_title"
-        android:summary="@string/toast_icon_summary" />
+        android:summary="@string/toast_icon_summary" /> -->
 
-    <com.rising.settings.preferences.SystemSettingSwitchPreference
-        android:key="media_artwork_blur_enabled"
-        android:icon="@drawable/ic_blur"
-        android:title="@string/artwork_media_background_enable_blur_title"
-        android:defaultValue="false" />
-
-    <com.rising.settings.preferences.SystemSettingSeekBarPreference
-        android:key="media_artwork_blur_radius"
-        android:icon="@drawable/ic_custom_seekbar_plus"
-        android:title="@string/artwork_media_background_blur_radius_title"
-        android:dependency="media_artwork_blur_enabled" 
-        android:defaultValue="1"
-        android:max="125"
-        settings:min="5" />
-
-    <com.rising.settings.preferences.SystemSettingSeekBarPreference
-        android:key="media_artwork_fade_percent"
-        android:icon="@drawable/ic_custom_seekbar_plus"
-        android:title="@string/media_artwork_fade_percent_title"
-        android:defaultValue="30"
-        android:max="80"
-        settings:min="1" />
-
-    <PreferenceCategory
+    <!--<PreferenceCategory
         android:key="heads_up"
         android:title="@string/notification_heads_up_title">
 
@@ -111,18 +88,18 @@
             android:defaultValue="5"
             settings:min="1"
             android:max="10"
-            android:dependency="heads_up_notifications_enabled" />
+            android:dependency="heads_up_notifications_enabled" /> -->
 
-        <!-- Show clipboard overlay -->
+        <!-- Show clipboard overlay 
         <com.rising.settings.preferences.SecureSettingSwitchPreference
             android:key="show_clipboard_overlay"
             android:icon="@drawable/ic_clipboard_alert"
             android:title="@string/show_clipboard_overlay_title"
             android:summary="@string/show_clipboard_overlay_summary"
             android:defaultValue="true"/>
-    </PreferenceCategory>
+    </PreferenceCategory>-->
 
-    <PreferenceCategory
+    <!--<PreferenceCategory
         android:key="flashlight_category"
         android:title="@string/power_menu_torch_title">
 
@@ -154,23 +131,23 @@
 
     <PreferenceCategory
         android:key="light_brightness"
-        android:title="@string/light_brightness_category">
+        android:title="@string/light_brightness_category">-->
 
-        <!-- Battery light -->
+        <!-- Battery light
         <Preference
             android:key="battery_lights"
             android:icon="@drawable/ic_led_on"
             android:title="@string/battery_light_title"
             android:summary="@string/battery_light_summary"
-            android:fragment="com.rising.settings.fragments.notifications.notificationlight.BatteryLightSettings" />
+            android:fragment="com.rising.settings.fragments.notifications.notificationlight.BatteryLightSettings" /> -->
 
-        <!-- Notification lights -->
+        <!-- Notification lights
         <Preference
             android:key="notification_lights"
             android:icon="@drawable/ic_led_on"
             android:title="@string/notification_light_title"
             android:summary="@string/notification_light_summary"
-            android:fragment="com.rising.settings.fragments.notifications.notificationlight.NotificationLightSettings" />
-    </PreferenceCategory>
+            android:fragment="com.rising.settings.fragments.notifications.notificationlight.NotificationLightSettings" /> -->
+     <!--</PreferenceCategory> -->
 
 </PreferenceScreen>

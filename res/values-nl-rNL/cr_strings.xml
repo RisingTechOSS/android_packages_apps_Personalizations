@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="rising_settings_title">risingDroid Instellingen</string>
+    <string name="rising_settings_title">RisingOS Instellingen</string>
     <string name="rising_settings_summary">Goodies</string>
     <string name="reset_settings_title">Instellingen resetten</string>
     <string name="reset_settings_message">Dit zal de meeste rising instellingen terugzetten op de standaardwaarden voor de huidige gebruiker. Wilt u doorgaan?</string>
@@ -56,18 +56,18 @@
     <string name="changelog_rising_title">Huidige veranderingen</string>
     <string name="changelog_rising_summary">Bekijk wijzigingen in de geïnstalleerde rom</string>
     <string name="changelog_rising_error">Kan changelog niet laden</string>
-    <!-- About risingDroid -->
-    <string name="about_rising">Over risingDroid</string>
+    <!-- About RisingOS -->
+    <string name="about_rising">Over RisingOS</string>
     <string name="about_device_name">Apparaat</string>
-    <!-- Share risingDroid -->
-    <string name="share_rising_title">Deel risingDroid</string>
-    <string name="share_rising_summary">Laat anderen weten over risingDroid</string>
-    <string name="share_message">Kijk eens of #risingDroid beschikbaar is voor uw apparaat @ https://risingoss.github.io/</string>
-    <string name="share_chooser_title">Deel risingDroid</string>
-    <!-- Sites risingDroid -->
+    <!-- Share RisingOS -->
+    <string name="share_rising_title">Deel RisingOS</string>
+    <string name="share_rising_summary">Laat anderen weten over RisingOS</string>
+    <string name="share_message">Kijk eens of #RisingOS beschikbaar is voor uw apparaat @ https://risingoss.github.io/</string>
+    <string name="share_chooser_title">Deel RisingOS</string>
+    <!-- Sites RisingOS -->
     <string name="rising_source_title">Github</string>
     <string name="rising_source_summary">We houden van open source, neem een kijkje</string>
-    <string name="rising_telegram_title">risingDroid gemeenschap</string>
+    <string name="rising_telegram_title">RisingOS gemeenschap</string>
     <string name="rising_telegram_summary">Wij zitten op Telegram. Kom er bij!</string>
     <string name="rising_telegram_channel_title">Updatekanaal</string>
     <string name="rising_telegram_channel_summary">Ontvang een melding van nieuwe builds op Telegram</string>
@@ -76,10 +76,10 @@
     <string name="rising_translate_title">Vertalingen</string>
     <string name="rising_translate_summary">Help met lokalisatie van de ROM in jouw taal!</string>
     <string name="rising_sponsor_summary">Bezoek onze website host partner</string>
-    <!-- Donate risingDroid -->
+    <!-- Donate RisingOS -->
     <string name="donate_rising_title">Steun ons</string>
     <string name="donate_rising_summary">Doneer om verdere ontwikkeling te ondersteunen</string>
-    <string name="donate_team_title">risingDroid team</string>
+    <string name="donate_team_title">RisingOS team</string>
     <string name="donate_team_summary">Doneer ter ondersteuning van de server hosting, site uptime en algemeen beheer</string>
     <!-- The Drill -->
     <string name="drill_title">Zoals het hoort</string>
@@ -545,8 +545,8 @@
     <string name="qs_footer_show_power_menu_title">Snelkoppeling Aan-/Uit menu</string>
     <string name="qs_footer_services_icon_title">Snelkoppeling voor actieve services</string>
     <string name="qs_footer_settings_icon_title">Snelkoppeling instellingen</string>
-    <!-- Device Info screen. risingDroid legal. -->
-    <string name="rising_license_title">risingDroid legaal</string>
+    <!-- Device Info screen. RisingOS legal. -->
+    <string name="rising_license_title">RisingOS legaal</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">Helderheidsregelaar</string>
     <string name="qs_show_brightness_slider_never">Nooit weergeven</string>

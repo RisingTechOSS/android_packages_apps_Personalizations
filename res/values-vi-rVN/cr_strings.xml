@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="rising_settings_title">Cài đặt risingDroid</string>
+    <string name="rising_settings_title">Cài đặt RisingOS</string>
     <string name="rising_settings_summary">Khám phá tính năng hay nhất</string>
     <string name="reset_settings_title">Đặt lại cài đặt</string>
     <string name="reset_settings_message">Điều này sẽ đặt lại hầu hết rising thiết lập các giá trị mặc định cho người dùng hiện tại. Bạn có muốn tiếp tục không?</string>
@@ -56,18 +56,18 @@
     <string name="changelog_rising_title">Thay đổi hiện tại</string>
     <string name="changelog_rising_summary">Xem những thay đổi của bản ROM được cài đặt</string>
     <string name="changelog_rising_error">Không thể tải nhật ký thay đổi</string>
-    <!-- About risingDroid -->
-    <string name="about_rising">Về risingDroid</string>
+    <!-- About RisingOS -->
+    <string name="about_rising">Về RisingOS</string>
     <string name="about_device_name">Thiết bị</string>
-    <!-- Share risingDroid -->
-    <string name="share_rising_title">Chia sẻ risingDroid</string>
-    <string name="share_rising_summary">Cho những người khác biết về risingDroid</string>
-    <string name="share_message">Kiểm tra nếu #risingDroidAndroid khả dụng cho thiết bị của bạn @ https://risingoss.github.io/</string>
-    <string name="share_chooser_title">Chia sẻ risingDroid</string>
-    <!-- Sites risingDroid -->
+    <!-- Share RisingOS -->
+    <string name="share_rising_title">Chia sẻ RisingOS</string>
+    <string name="share_rising_summary">Cho những người khác biết về RisingOS</string>
+    <string name="share_message">Kiểm tra nếu #RisingOSAndroid khả dụng cho thiết bị của bạn @ https://risingoss.github.io/</string>
+    <string name="share_chooser_title">Chia sẻ RisingOS</string>
+    <!-- Sites RisingOS -->
     <string name="rising_source_title">GitHub</string>
     <string name="rising_source_summary">Chúng tôi yêu nguồn mở, kiểm tra với chúng tôi</string>
-    <string name="rising_telegram_title">Cộng đồng risingDroid</string>
+    <string name="rising_telegram_title">Cộng đồng RisingOS</string>
     <string name="rising_telegram_summary">Chúng tôi xài telegram. Tham gia với chúng tôi!</string>
     <string name="rising_telegram_channel_title">Kênh cập nhật</string>
     <string name="rising_telegram_channel_summary">Nhận thông báo về các bản dựng mới trên ứng dụng Telegram</string>
@@ -76,10 +76,10 @@
     <string name="rising_translate_title">Dịch thuật</string>
     <string name="rising_translate_summary">Giúp bản ROM phù hợp với ngôn ngữ của bạn!</string>
     <string name="rising_sponsor_summary">Ghé thăm đối tác lưu trữ trang web của chúng tôi</string>
-    <!-- Donate risingDroid -->
+    <!-- Donate RisingOS -->
     <string name="donate_rising_title">Hỗ trợ chúng tôi</string>
     <string name="donate_rising_summary">Đóng góp để hỗ trợ phát triển hơn nữa</string>
-    <string name="donate_team_title">Đội ngũ risingDroid</string>
+    <string name="donate_team_title">Đội ngũ RisingOS</string>
     <string name="donate_team_summary">Donate nhóm để hỗ trợ máy chủ lưu trữ, hoạt động trang web và quản lý tổng thể</string>
     <!-- The Drill -->
     <string name="drill_title">Luyện tập</string>
@@ -544,8 +544,8 @@
     <string name="qs_footer_show_power_menu_title">Lối tắt menu nguồn</string>
     <string name="qs_footer_services_icon_title">Lối tắt các dịch vụ đang chạy</string>
     <string name="qs_footer_settings_icon_title">Lối tắt cài đặt</string>
-    <!-- Device Info screen. risingDroid legal. -->
-    <string name="rising_license_title">Giấy phép risingDroid</string>
+    <!-- Device Info screen. RisingOS legal. -->
+    <string name="rising_license_title">Giấy phép RisingOS</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">Thanh điều chỉnh độ sáng</string>
     <string name="qs_show_brightness_slider_never">Không bao giờ hiển thị</string>

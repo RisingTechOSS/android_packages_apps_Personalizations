@@ -18,20 +18,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:title="@string/rising_settings_title" >
             
-       <com.android.settingslib.widget.TopIntroPreference
-            android:key="personalizations_illustration_desc"
-            android:order="-999"
-            android:title="@string/rising_illustration_summary"/>
-            
         <com.android.settingslib.widget.IllustrationPreference
             android:key="personalizations_illustration"
-            android:order="-998"
-            app:lottie_rawRes="@raw/rising"/>
+            android:order="-996"
+            app:lottie_rawRes="@raw/abstract"/>
             
         <!-- About -->
         <Preference
             android:icon="@drawable/ic_settings_about"
-            settings:layout="@layout/arc_card_about_top"
             android:title="@string/about_settings_title"
             android:summary="@string/about_settings_summary"
             android:fragment="com.rising.settings.fragments.About" />
@@ -55,7 +49,6 @@
         <!-- Misc -->
         <Preference
             android:icon="@drawable/ic_settings_miscs"
-            settings:layout="@layout/arc_card_about_middle"
             android:title="@string/misc_title"
             android:summary="@string/misc_settings_summary"
             android:fragment="com.rising.settings.fragments.Miscellaneous" />
@@ -70,8 +63,7 @@
 
         <!-- Notifications -->
         <Preference
-            android:icon="@drawable/ic_settings_notifications"
-            settings:layout="@layout/arc_card_about_middle"
+            android:icon="@drawable/ic_dashboard_notifications"
             android:title="@string/notifications_title"
             android:summary="@string/notif_settings_summary"
             android:fragment="com.rising.settings.fragments.Notifications" />
@@ -87,7 +79,6 @@
         <!-- Sound -->
         <Preference
             android:icon="@drawable/ic_cellphone_sound"
-            settings:layout="@layout/arc_card_about_middle"
             android:title="@string/sound_title"
             android:summary="@string/sound_settings_summary"
             android:fragment="com.rising.settings.fragments.Sound" />    
@@ -98,9 +89,9 @@
             settings:layout="@layout/arc_card_about_middle"
             android:title="@string/statusbar_title"
             android:summary="@string/sb_settings_summary"
-            android:fragment="com.rising.settings.fragments.StatusBar" />   
+            android:fragment="com.rising.settings.fragments.StatusBar" />-->   
  
-        <!-- UserInterface
+        <!--- UserInterface
         <Preference
             android:icon="@drawable/ic_color_bucket"
             settings:layout="@layout/arc_card_about_bottom"

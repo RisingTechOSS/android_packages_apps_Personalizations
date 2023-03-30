@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="rising_settings_title">risingDroid Ayarları</string>
+    <string name="rising_settings_title">RisingOS Ayarları</string>
     <string name="rising_settings_summary">Çeşitli özelleştirmeler</string>
     <string name="reset_settings_title">Ayarları sıfırla</string>
     <string name="reset_settings_message">Bu mevcut kullanıcı için çoğu rising ayarlarını varsayılan değerlerine sıfırlar. Devam etmek ister misin?</string>
@@ -56,18 +56,18 @@
     <string name="changelog_rising_title">Mevcut değişiklikler</string>
     <string name="changelog_rising_summary">Yüklü ROM\'daki değişiklikleri görüntüleyin</string>
     <string name="changelog_rising_error">Değişiklikler yüklenemiyor</string>
-    <!-- About risingDroid -->
-    <string name="about_rising">risingDroid hakkında</string>
+    <!-- About RisingOS -->
+    <string name="about_rising">RisingOS hakkında</string>
     <string name="about_device_name">Cihaz</string>
-    <!-- Share risingDroid -->
-    <string name="share_rising_title">risingDroid\'i paylaş</string>
-    <string name="share_rising_summary">Başkalarına risingDroid hakkında bilgi verin</string>
-    <string name="share_message">Cihazınız için #risingDroidAndroid\'in mevcut olup olmadığını kontrol edin @ https://risingoss.github.io/</string>
-    <string name="share_chooser_title">risingDroid\'i paylaş</string>
-    <!-- Sites risingDroid -->
+    <!-- Share RisingOS -->
+    <string name="share_rising_title">RisingOS\'i paylaş</string>
+    <string name="share_rising_summary">Başkalarına RisingOS hakkında bilgi verin</string>
+    <string name="share_message">Cihazınız için #RisingOSAndroid\'in mevcut olup olmadığını kontrol edin @ https://risingoss.github.io/</string>
+    <string name="share_chooser_title">RisingOS\'i paylaş</string>
+    <!-- Sites RisingOS -->
     <string name="rising_source_title">GitHub</string>
     <string name="rising_source_summary">Kaynak kodumuzu görüntüleyin</string>
-    <string name="rising_telegram_title">risingDroid topluluğu</string>
+    <string name="rising_telegram_title">RisingOS topluluğu</string>
     <string name="rising_telegram_summary">Biz de telegramdayız. Bize katılın!</string>
     <string name="rising_telegram_channel_title">Güncelleme kanalı</string>
     <string name="rising_telegram_channel_summary">Telegram\'daki yeni yapılardan haberdar olun</string>
@@ -76,10 +76,10 @@
     <string name="rising_translate_title">Çeviriler</string>
     <string name="rising_translate_summary">ROM\'u kendi dilinize çevirmek için bize yardım edin!</string>
     <string name="rising_sponsor_summary">Web sitesi barındırma ortağımızı ziyaret edin</string>
-    <!-- Donate risingDroid -->
+    <!-- Donate RisingOS -->
     <string name="donate_rising_title">Bizi destekle</string>
     <string name="donate_rising_summary">Daha fazla gelişmeyi desteklemek için bağış yapın</string>
-    <string name="donate_team_title">risingDroid ekibi</string>
+    <string name="donate_team_title">RisingOS ekibi</string>
     <string name="donate_team_summary">Sunucu hostingi, site çalışma zamanı ve genel yönetimi desteklemek için bağış yapın</string>
     <!-- The Drill -->
     <string name="drill_title">The drill</string>
@@ -544,8 +544,8 @@
     <string name="qs_footer_show_power_menu_title">Güç menüsü kısayolu</string>
     <string name="qs_footer_services_icon_title">Çalışan hizmetler kısayolu</string>
     <string name="qs_footer_settings_icon_title">Ayarlar kısayolu</string>
-    <!-- Device Info screen. risingDroid legal. -->
-    <string name="rising_license_title">risingDroid yasal</string>
+    <!-- Device Info screen. RisingOS legal. -->
+    <string name="rising_license_title">RisingOS yasal</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">Parlaklık kaydırıcısı</string>
     <string name="qs_show_brightness_slider_never">Asla gösterme</string>

@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="rising_settings_title">Setări risingDroid</string>
+    <string name="rising_settings_title">Setări RisingOS</string>
     <string name="rising_settings_summary">Unde se intampla magia</string>
     <string name="reset_settings_title">Resetare setări</string>
     <string name="reset_settings_message">Aceasta va reseta cele mai multe setări rising la valorile lor implicite pentru utilizatorul curent. Doriți să continuați?</string>
@@ -56,18 +56,18 @@
     <string name="changelog_rising_title">Jurnal modificări curente</string>
     <string name="changelog_rising_summary">Vezi modificările în ROM instalat</string>
     <string name="changelog_rising_error">Imposibil de încărcat jurnalul modificărilor</string>
-    <!-- About risingDroid -->
-    <string name="about_rising">Despre risingDroid</string>
+    <!-- About RisingOS -->
+    <string name="about_rising">Despre RisingOS</string>
     <string name="about_device_name">Dispozitiv</string>
-    <!-- Share risingDroid -->
-    <string name="share_rising_title">Distribuie risingDroid</string>
-    <string name="share_rising_summary">Anunta-i si pe altii despre risingDroid</string>
-    <string name="share_message">Verifică dacă #risingDroidAndroid este disponibil pentru dispozitivul tău @ https://risingoss.github.io/</string>
-    <string name="share_chooser_title">Distribuie risingDroid</string>
-    <!-- Sites risingDroid -->
+    <!-- Share RisingOS -->
+    <string name="share_rising_title">Distribuie RisingOS</string>
+    <string name="share_rising_summary">Anunta-i si pe altii despre RisingOS</string>
+    <string name="share_message">Verifică dacă #RisingOSAndroid este disponibil pentru dispozitivul tău @ https://risingoss.github.io/</string>
+    <string name="share_chooser_title">Distribuie RisingOS</string>
+    <!-- Sites RisingOS -->
     <string name="rising_source_title">GitHub</string>
     <string name="rising_source_summary">Ne plac sursele deschise, vezi mai mulle</string>
-    <string name="rising_telegram_title">Comunitatea risingDroid</string>
+    <string name="rising_telegram_title">Comunitatea RisingOS</string>
     <string name="rising_telegram_summary">Suntem pe Telegram. Vino alături de noi!</string>
     <string name="rising_telegram_channel_title">Canal actualizări</string>
     <string name="rising_telegram_channel_summary">Primește notificări despre noile creații pe Telegram</string>
@@ -76,10 +76,10 @@
     <string name="rising_translate_title">Traduceri</string>
     <string name="rising_translate_summary">Ajută la localizarea ROM-ului în limba ta!</string>
     <string name="rising_sponsor_summary">Vizitați partenerul nostru gazdă</string>
-    <!-- Donate risingDroid -->
+    <!-- Donate RisingOS -->
     <string name="donate_rising_title">Susține-ne</string>
     <string name="donate_rising_summary">Donează pentru a sprijini dezvoltarea ulterioară</string>
-    <string name="donate_team_title">Echipa risingDroid</string>
+    <string name="donate_team_title">Echipa RisingOS</string>
     <string name="donate_team_summary">Donați pentru a sprijini serverul de găzduire, site-ul uptime și managementul general</string>
     <!-- The Drill -->
     <string name="drill_title">Exercițiul</string>
@@ -546,8 +546,8 @@
     <string name="qs_footer_show_power_menu_title">Scurtătură meniu pornire</string>
     <string name="qs_footer_services_icon_title">Scurtătură servicii rulante</string>
     <string name="qs_footer_settings_icon_title">Scurtătură setări</string>
-    <!-- Device Info screen. risingDroid legal. -->
-    <string name="rising_license_title">Legal risingDroid</string>
+    <!-- Device Info screen. RisingOS legal. -->
+    <string name="rising_license_title">Legal RisingOS</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">Cursor luminozitate</string>
     <string name="qs_show_brightness_slider_never">Nu arăta niciodată</string>

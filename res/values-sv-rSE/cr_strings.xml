@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="rising_settings_title">risingDroid Inställningar</string>
+    <string name="rising_settings_title">RisingOS Inställningar</string>
     <string name="rising_settings_summary">Öppna godsaker</string>
     <string name="reset_settings_title">Återställ inställningar</string>
     <string name="reset_settings_message">Detta kommer att återställa de flesta inställningar för rising till deras standardvärden för den aktuella användaren. Vill du fortsätta?</string>
@@ -56,18 +56,18 @@
     <string name="changelog_rising_title">Nuvarande ändringslogg</string>
     <string name="changelog_rising_summary">Visa ändringar i den ROM som är installerad</string>
     <string name="changelog_rising_error">Laddningen av ändringsloggen kunde inte genomföras</string>
-    <!-- About risingDroid -->
-    <string name="about_rising">Om risingDroid</string>
+    <!-- About RisingOS -->
+    <string name="about_rising">Om RisingOS</string>
     <string name="about_device_name">Enhet</string>
-    <!-- Share risingDroid -->
-    <string name="share_rising_title">Dela risingDroid</string>
-    <string name="share_rising_summary">Dela med dig av risingDroid till andra</string>
-    <string name="share_message">Kontrollera ifall #risingDroidAndroid finns tillgänglig för din enhet @ https://risingoss.github.io/</string>
-    <string name="share_chooser_title">Dela med dig av risingDroid</string>
-    <!-- Sites risingDroid -->
+    <!-- Share RisingOS -->
+    <string name="share_rising_title">Dela RisingOS</string>
+    <string name="share_rising_summary">Dela med dig av RisingOS till andra</string>
+    <string name="share_message">Kontrollera ifall #RisingOSAndroid finns tillgänglig för din enhet @ https://risingoss.github.io/</string>
+    <string name="share_chooser_title">Dela med dig av RisingOS</string>
+    <!-- Sites RisingOS -->
     <string name="rising_source_title">GitHub</string>
     <string name="rising_source_summary">Vi älskar öppen källkod, kolla in oss</string>
-    <string name="rising_telegram_title">risingDroid gemenskap</string>
+    <string name="rising_telegram_title">RisingOS gemenskap</string>
     <string name="rising_telegram_summary">Vi finns på telegram. Anslut dig till oss!</string>
     <string name="rising_telegram_channel_title">Kanal för uppdateringar</string>
     <string name="rising_telegram_channel_summary">Bli informerad om nya versioner på Telegram</string>
@@ -76,10 +76,10 @@
     <string name="rising_translate_title">Översättningar</string>
     <string name="rising_translate_summary">Bidra med att lokalisera ROM till ditt språk!</string>
     <string name="rising_sponsor_summary">Besök sponsorn till vår hemsida</string>
-    <!-- Donate risingDroid -->
+    <!-- Donate RisingOS -->
     <string name="donate_rising_title">Stöd oss</string>
     <string name="donate_rising_summary">Skänk en donation för att stödja vidare utveckling</string>
-    <string name="donate_team_title">risingDroid teamet</string>
+    <string name="donate_team_title">RisingOS teamet</string>
     <string name="donate_team_summary">Ge en donation för att stödja tillhandahållande av servrar, hemsidans tillgänglighet samt övergripande hantering</string>
     <!-- The Drill -->
     <string name="drill_title">Rutinen</string>
@@ -545,8 +545,8 @@
     <string name="qs_footer_show_power_menu_title">Genväg till avstängningsmenyn</string>
     <string name="qs_footer_services_icon_title">Genväg till aktiva tjänster</string>
     <string name="qs_footer_settings_icon_title">Genväg till inställningar</string>
-    <!-- Device Info screen. risingDroid legal. -->
-    <string name="rising_license_title">risingDroid juridik</string>
+    <!-- Device Info screen. RisingOS legal. -->
+    <string name="rising_license_title">RisingOS juridik</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">Ljusstyrkereglage</string>
     <string name="qs_show_brightness_slider_never">Visa aldrig</string>

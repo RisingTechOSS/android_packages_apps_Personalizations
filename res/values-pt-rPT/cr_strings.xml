@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="rising_settings_title">Definições risingDroid</string>
+    <string name="rising_settings_title">Definições RisingOS</string>
     <string name="rising_settings_summary">Abrir as coisinhas boas</string>
     <string name="reset_settings_title">Repor definições</string>
     <string name="reset_settings_message">Isso irá redefinir a maioria das configurações do rising para seus valores padrão para o usuário atual. Você gostaria de continuar?</string>
@@ -56,18 +56,18 @@
     <string name="changelog_rising_title">Changelog atual</string>
     <string name="changelog_rising_summary">Ver as alterações na ROM instalada</string>
     <string name="changelog_rising_error">Não foi possível carregar o changelog</string>
-    <!-- About risingDroid -->
-    <string name="about_rising">Acerca de risingDroid</string>
+    <!-- About RisingOS -->
+    <string name="about_rising">Acerca de RisingOS</string>
     <string name="about_device_name">Dispositivo</string>
-    <!-- Share risingDroid -->
-    <string name="share_rising_title">Partilhar risingDroid</string>
-    <string name="share_rising_summary">Deixar os outros saber da risingDroid</string>
-    <string name="share_message">Conferir se #risingDroidAndroid está disponível para o seu dispositivo @ https://risingoss.github.io/</string>
-    <string name="share_chooser_title">Partilhar risingDroid</string>
-    <!-- Sites risingDroid -->
+    <!-- Share RisingOS -->
+    <string name="share_rising_title">Partilhar RisingOS</string>
+    <string name="share_rising_summary">Deixar os outros saber da RisingOS</string>
+    <string name="share_message">Conferir se #RisingOSAndroid está disponível para o seu dispositivo @ https://risingoss.github.io/</string>
+    <string name="share_chooser_title">Partilhar RisingOS</string>
+    <!-- Sites RisingOS -->
     <string name="rising_source_title">GitHub</string>
     <string name="rising_source_summary">Nós gostamos de código aberto, confira-nos</string>
-    <string name="rising_telegram_title">Comunidade risingDroid</string>
+    <string name="rising_telegram_title">Comunidade RisingOS</string>
     <string name="rising_telegram_summary">Estamos no Telegram. Junte-se a nós!</string>
     <string name="rising_telegram_channel_title">Canal de Atualizações</string>
     <string name="rising_telegram_channel_summary">Seja notificado acerca de novas atualizações no Telegram</string>
@@ -76,10 +76,10 @@
     <string name="rising_translate_title">Traduções</string>
     <string name="rising_translate_summary">Ajude-nos a traduzir a ROM para a sua língua!</string>
     <string name="rising_sponsor_summary">Visite nosso parceiro de host do site</string>
-    <!-- Donate risingDroid -->
+    <!-- Donate RisingOS -->
     <string name="donate_rising_title">Apoia-nos</string>
     <string name="donate_rising_summary">Doar para apoiar desenvolvimento</string>
-    <string name="donate_team_title">equipa risingDroid</string>
+    <string name="donate_team_title">equipa RisingOS</string>
     <string name="donate_team_summary">Doar para manter o servidor de hospedagem, uptime e gerenciamento geral do site</string>
     <!-- The Drill -->
     <string name="drill_title">Já sabe o que fazer</string>
@@ -545,8 +545,8 @@
     <string name="qs_footer_show_power_menu_title">Atalho para o menu de energia</string>
     <string name="qs_footer_services_icon_title">Atalho para serviços em execução</string>
     <string name="qs_footer_settings_icon_title">Atalho para as definições</string>
-    <!-- Device Info screen. risingDroid legal. -->
-    <string name="rising_license_title">Licença risingDroid</string>
+    <!-- Device Info screen. RisingOS legal. -->
+    <string name="rising_license_title">Licença RisingOS</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">Barra de controlo de brilho</string>
     <string name="qs_show_brightness_slider_never">Nunca mostrar</string>

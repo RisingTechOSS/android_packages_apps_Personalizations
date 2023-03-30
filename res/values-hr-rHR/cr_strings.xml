@@ -16,10 +16,10 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="rising_settings_title">risingDroid postavke</string>
+    <string name="rising_settings_title">RisingOS postavke</string>
     <string name="rising_settings_summary">Otvorite mrak opcije</string>
     <string name="reset_settings_title">Vraćanje postavki</string>
-    <string name="reset_settings_message">Ovo će vratiti većinu risingDroid postavki na njihove zadane vrijednosti za trenutnog korisnika. Želite li nastaviti?</string>
+    <string name="reset_settings_message">Ovo će vratiti većinu RisingOS postavki na njihove zadane vrijednosti za trenutnog korisnika. Želite li nastaviti?</string>
     <!-- Personalization Categories -->
     <string name="button_title">Tipke</string>
     <string name="lockscreen_title">Zaklj. zaslon</string>
@@ -56,18 +56,18 @@
     <string name="changelog_rising_title">Trenutni dnevnik promjena</string>
     <string name="changelog_rising_summary">Pogledajte promjene u instaliranom ROM-u</string>
     <string name="changelog_rising_error">Nije moguće učitati popis promjena</string>
-    <!-- About risingDroid -->
-    <string name="about_rising">O risingDroid</string>
+    <!-- About RisingOS -->
+    <string name="about_rising">O RisingOS</string>
     <string name="about_device_name">Uređaj</string>
-    <!-- Share risingDroid -->
-    <string name="share_rising_title">Podijeli risingDroid</string>
-    <string name="share_rising_summary">Obavijestite druge o risingDroidu</string>
-    <string name="share_message">Provjerite je li #risingDroidAndroid dostupan za vaš uređaj na https://risingoss.github.io/</string>
-    <string name="share_chooser_title">Podijelite risingDroid</string>
-    <!-- Sites risingDroid -->
+    <!-- Share RisingOS -->
+    <string name="share_rising_title">Podijeli RisingOS</string>
+    <string name="share_rising_summary">Obavijestite druge o RisingOSu</string>
+    <string name="share_message">Provjerite je li #RisingOSAndroid dostupan za vaš uređaj na https://risingoss.github.io/</string>
+    <string name="share_chooser_title">Podijelite RisingOS</string>
+    <!-- Sites RisingOS -->
     <string name="rising_source_title">GitHub</string>
     <string name="rising_source_summary">Volimo open source, provjerite nas</string>
-    <string name="rising_telegram_title">risingDroid zajednica</string>
+    <string name="rising_telegram_title">RisingOS zajednica</string>
     <string name="rising_telegram_summary">Na telegramu smo. Pridruži nam se!</string>
     <string name="rising_telegram_channel_title">Kanal ažuriranja</string>
     <string name="rising_telegram_channel_summary">Primajte obavijesti o novim verzijama na Telegramu</string>
@@ -76,10 +76,10 @@
     <string name="rising_translate_title">Prijevod</string>
     <string name="rising_translate_summary">Pomozite s lokalizacijom ROM-a na vaš jezik!</string>
     <string name="rising_sponsor_summary">Posjetite našeg partnera za hosting web stranice</string>
-    <!-- Donate risingDroid -->
+    <!-- Donate RisingOS -->
     <string name="donate_rising_title">Podržite nas</string>
     <string name="donate_rising_summary">Donirajte za podršku daljnjem razvoju</string>
-    <string name="donate_team_title">Tim risingDroid</string>
+    <string name="donate_team_title">Tim RisingOS</string>
     <string name="donate_team_summary">Donirajte za podršku hostingu poslužitelja, neprekidnom radu web mjesta i cjelokupnom upravljanju</string>
     <!-- The Drill -->
     <string name="drill_title">Poruka od programera</string>
@@ -546,8 +546,8 @@
     <string name="qs_footer_show_power_menu_title">Prečac izbornika napajanja</string>
     <string name="qs_footer_services_icon_title">Prečac za pokretanje servisa</string>
     <string name="qs_footer_settings_icon_title">Prečac postavki</string>
-    <!-- Device Info screen. risingDroid legal. -->
-    <string name="rising_license_title">risingDroid legal</string>
+    <!-- Device Info screen. RisingOS legal. -->
+    <string name="rising_license_title">RisingOS legal</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">Klizač osvjetljenja zaslona</string>
     <string name="qs_show_brightness_slider_never">Nikad ne prikazuj</string>

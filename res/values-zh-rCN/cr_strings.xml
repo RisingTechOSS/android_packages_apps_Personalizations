@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="rising_settings_title">risingDroid 设置</string>
+    <string name="rising_settings_title">RisingOS 设置</string>
     <string name="rising_settings_summary">个性化设置</string>
     <string name="reset_settings_title">重置设置</string>
     <string name="reset_settings_message">这将把大多数 rising 设置重置为当前用户的默认值。您要继续吗？</string>
@@ -56,18 +56,18 @@
     <string name="changelog_rising_title">最近更新日志</string>
     <string name="changelog_rising_summary">查看已安装 ROM 中的更改</string>
     <string name="changelog_rising_error">无法加载更新日志</string>
-    <!-- About risingDroid -->
-    <string name="about_rising">关于 risingDroid</string>
+    <!-- About RisingOS -->
+    <string name="about_rising">关于 RisingOS</string>
     <string name="about_device_name">设备</string>
-    <!-- Share risingDroid -->
-    <string name="share_rising_title">分享 risingDroid</string>
-    <string name="share_rising_summary">让更多人了解 risingDroid</string>
-    <string name="share_message">查看 #risingDroid Android 的全部内容 @ https://risingoss.github.io/</string>
-    <string name="share_chooser_title">分享 risingDroid</string>
-    <!-- Sites risingDroid -->
+    <!-- Share RisingOS -->
+    <string name="share_rising_title">分享 RisingOS</string>
+    <string name="share_rising_summary">让更多人了解 RisingOS</string>
+    <string name="share_message">查看 #RisingOS Android 的全部内容 @ https://risingoss.github.io/</string>
+    <string name="share_chooser_title">分享 RisingOS</string>
+    <!-- Sites RisingOS -->
     <string name="rising_source_title">GitHub</string>
     <string name="rising_source_summary">我们热爱开源，来看看我们的代码吧。</string>
-    <string name="rising_telegram_title">risingDroid 社区</string>
+    <string name="rising_telegram_title">RisingOS 社区</string>
     <string name="rising_telegram_summary">我们有 TG 群。加入我们！</string>
     <string name="rising_telegram_channel_title">更新频道</string>
     <string name="rising_telegram_channel_summary">在 Telegram 上获取更新通知</string>
@@ -76,10 +76,10 @@
     <string name="rising_translate_title">翻译</string>
     <string name="rising_translate_summary">帮助用您的语言本地化 ROM！</string>
     <string name="rising_sponsor_summary">访问我们的网站托管合作伙伴</string>
-    <!-- Donate risingDroid -->
+    <!-- Donate RisingOS -->
     <string name="donate_rising_title">支持我们</string>
     <string name="donate_rising_summary">捐赠以支持开发</string>
-    <string name="donate_team_title">risingDroid 团队</string>
+    <string name="donate_team_title">RisingOS 团队</string>
     <string name="donate_team_summary">捐赠支持服务器托管，网站正常运行时间和整体管理</string>
     <!-- The Drill -->
     <string name="drill_title">实锤</string>
@@ -544,8 +544,8 @@
     <string name="qs_footer_show_power_menu_title">电源菜单快捷方式</string>
     <string name="qs_footer_services_icon_title">运行中服务快捷方式</string>
     <string name="qs_footer_settings_icon_title">设置快捷方式</string>
-    <!-- Device Info screen. risingDroid legal. -->
-    <string name="rising_license_title">risingDroid 团队</string>
+    <!-- Device Info screen. RisingOS legal. -->
+    <string name="rising_license_title">RisingOS 团队</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">亮度滑块</string>
     <string name="qs_show_brightness_slider_never">从不显示</string>

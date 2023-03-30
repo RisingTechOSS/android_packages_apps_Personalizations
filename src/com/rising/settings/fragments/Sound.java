@@ -39,10 +39,6 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
 
-import com.rising.settings.fragments.sound.AdaptivePlayback;
-import com.rising.settings.fragments.sound.PulseSettings;
-import com.rising.settings.utils.TelephonyUtils;
-
 import java.util.List;
 import java.util.ArrayList;
 
@@ -53,73 +49,16 @@ public class Sound extends SettingsPreferenceFragment {
 
     public static final String TAG = "Sound";
 
-    private static final String KEY_VIBRATE_CATEGORY = "incall_vib_options";
-    private static final String KEY_VIBRATE_CONNECT = "vibrate_on_connect";
-    private static final String KEY_VIBRATE_CALLWAITING = "vibrate_on_callwaiting";
-    private static final String KEY_VIBRATE_DISCONNECT = "vibrate_on_disconnect";
-    private static final String KEY_VOLUME_PANEL_LEFT = "volume_panel_on_left";
-
-    private SwitchPreference mVolumePanelLeft;
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.rising_settings_sound);
-
-        final PreferenceScreen prefScreen = getPreferenceScreen();
-
-        ContentResolver resolver = getActivity().getContentResolver();
-
-        boolean isAudioPanelOnLeft = LineageSettings.Secure.getIntForUser(resolver,
-                LineageSettings.Secure.VOLUME_PANEL_ON_LEFT, isAudioPanelOnLeftSide(getActivity()) ? 1 : 0,
-                UserHandle.USER_CURRENT) != 0;
-
-        mVolumePanelLeft = (SwitchPreference) prefScreen.findPreference(KEY_VOLUME_PANEL_LEFT);
-        mVolumePanelLeft.setChecked(isAudioPanelOnLeft);
-
-        final PreferenceCategory vibCategory = prefScreen.findPreference(KEY_VIBRATE_CATEGORY);
-
-        if (!TelephonyUtils.isVoiceCapable(getActivity())) {
-            prefScreen.removePreference(vibCategory);
-        }
-    }
-
-    public static void reset(Context mContext) {
-        ContentResolver resolver = mContext.getContentResolver();
-        LineageSettings.Secure.putIntForUser(resolver,
-                LineageSettings.Secure.VOLUME_PANEL_ON_LEFT, isAudioPanelOnLeftSide(mContext) ? 1 : 0,
-                UserHandle.USER_CURRENT);
-        Settings.System.putIntForUser(resolver,
-                Settings.System.VIBRATE_ON_CONNECT, 0, UserHandle.USER_CURRENT);
-        Settings.System.putIntForUser(resolver,
-                Settings.System.VIBRATE_ON_CALLWAITING, 0, UserHandle.USER_CURRENT);
-        Settings.System.putIntForUser(resolver,
-                Settings.System.VIBRATE_ON_DISCONNECT, 0, UserHandle.USER_CURRENT);
-        Settings.System.putIntForUser(resolver,
-                Settings.System.VOLUME_DIALOG_TIMEOUT, 3, UserHandle.USER_CURRENT);
-        Settings.System.putIntForUser(resolver,
-                Settings.System.SCREENSHOT_SHUTTER_SOUND, 1, UserHandle.USER_CURRENT);
-	Settings.System.putIntForUser(resolver,
-                Settings.System.VOLUME_MEDIA_OUTPUT_TOGGLE, 1, UserHandle.USER_CURRENT);
-        PulseSettings.reset(mContext);
-        AdaptivePlayback.reset(mContext);
-    }
-
-    private static boolean isAudioPanelOnLeftSide(Context context) {
-        try {
-            Context con = context.createPackageContext("org.lineageos.lineagesettings", 0);
-            int id = con.getResources().getIdentifier("def_volume_panel_on_left",
-                    "bool", "org.lineageos.lineagesettings");
-            return con.getResources().getBoolean(id);
-        } catch (PackageManager.NameNotFoundException e) {
-            return false;
-        }
     }
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.CRDROID_SETTINGS;
+        return MetricsProto.MetricsEvent.CUSTOM_SETTINGS;
     }
 
     /**
@@ -131,13 +70,6 @@ public class Sound extends SettingsPreferenceFragment {
                 @Override
                 public List<String> getNonIndexableKeys(Context context) {
                     List<String> keys = super.getNonIndexableKeys(context);
-
-                    if (!TelephonyUtils.isVoiceCapable(context)) {
-                        keys.add(KEY_VIBRATE_CATEGORY);
-                        keys.add(KEY_VIBRATE_CONNECT);
-                        keys.add(KEY_VIBRATE_CALLWAITING);
-                        keys.add(KEY_VIBRATE_DISCONNECT);
-                    }
 
                     return keys;
                 }

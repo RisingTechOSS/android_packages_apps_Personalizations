@@ -16,10 +16,10 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="rising_settings_title">risingDroid 設定</string>
+    <string name="rising_settings_title">RisingOS 設定</string>
     <string name="rising_settings_summary">各項設定，一次滿足</string>
     <string name="reset_settings_title">恢復默認設置</string>
-    <string name="reset_settings_message">這會將大多數 risingDroid 設定重設為目前使用者的預設值。您要繼續嗎？</string>
+    <string name="reset_settings_message">這會將大多數 RisingOS 設定重設為目前使用者的預設值。您要繼續嗎？</string>
     <!-- Personalization Categories -->
     <string name="button_title">按鍵</string>
     <string name="lockscreen_title">鎖定螢幕</string>
@@ -56,18 +56,18 @@
     <string name="changelog_rising_title">更新紀錄</string>
     <string name="changelog_rising_summary">查看此 ROM 的更新紀錄</string>
     <string name="changelog_rising_error">無法載入更新日誌</string>
-    <!-- About risingDroid -->
-    <string name="about_rising">關於 risingDroid</string>
+    <!-- About RisingOS -->
+    <string name="about_rising">關於 RisingOS</string>
     <string name="about_device_name">裝置</string>
-    <!-- Share risingDroid -->
-    <string name="share_rising_title">分享 risingDroid</string>
-    <string name="share_rising_summary">讓別人知道 risingDroid</string>
-    <string name="share_message">在 https://risingoss.github.io/ 看看 #risingDroid Android</string>
-    <string name="share_chooser_title">分享 risingDroid</string>
-    <!-- Sites risingDroid -->
+    <!-- Share RisingOS -->
+    <string name="share_rising_title">分享 RisingOS</string>
+    <string name="share_rising_summary">讓別人知道 RisingOS</string>
+    <string name="share_message">在 https://risingoss.github.io/ 看看 #RisingOS Android</string>
+    <string name="share_chooser_title">分享 RisingOS</string>
+    <!-- Sites RisingOS -->
     <string name="rising_source_title">GitHub</string>
     <string name="rising_source_summary">我們愛開源，來看看吧</string>
-    <string name="rising_telegram_title">risingDroid 社群</string>
+    <string name="rising_telegram_title">RisingOS 社群</string>
     <string name="rising_telegram_summary">我們也在 Telegram 上，快加入我們！</string>
     <string name="rising_telegram_channel_title">更新通道</string>
     <string name="rising_telegram_channel_summary">在 Telegram 上獲取新版本通知</string>
@@ -76,10 +76,10 @@
     <string name="rising_translate_title">翻譯</string>
     <string name="rising_translate_summary">幫忙將 ROM 翻譯成您的語言！</string>
     <string name="rising_sponsor_summary">造訪我們的網頁寄存服務提供者</string>
-    <!-- Donate risingDroid -->
+    <!-- Donate RisingOS -->
     <string name="donate_rising_title">贊助我們</string>
     <string name="donate_rising_summary">捐贈以支持開放原始碼開發。</string>
-    <string name="donate_team_title">risingDroid 團隊</string>
+    <string name="donate_team_title">RisingOS 團隊</string>
     <string name="donate_team_summary">贊助以支援我們的伺服器代管，網站運作與總體管理</string>
     <!-- The Drill -->
     <string name="drill_title">測試</string>
@@ -544,8 +544,8 @@
     <string name="qs_footer_show_power_menu_title">電源選單圖示</string>
     <string name="qs_footer_services_icon_title">正在運作中的服務圖示</string>
     <string name="qs_footer_settings_icon_title">設定圖示</string>
-    <!-- Device Info screen. risingDroid legal. -->
-    <string name="rising_license_title">risingDroid 條款</string>
+    <!-- Device Info screen. RisingOS legal. -->
+    <string name="rising_license_title">RisingOS 條款</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">亮度控制條</string>
     <string name="qs_show_brightness_slider_never">永不顯示</string>

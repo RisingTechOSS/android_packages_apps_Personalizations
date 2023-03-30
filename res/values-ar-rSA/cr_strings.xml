@@ -56,18 +56,18 @@
     <string name="changelog_rising_title">سجل التغييرات الحالي</string>
     <string name="changelog_rising_summary">عرض التغييرات في الروم المثبت</string>
     <string name="changelog_rising_error">غير قادر على تحميل سجل التغييرات</string>
-    <!-- About risingDroid -->
-    <string name="about_rising">حول risingDroid</string>
+    <!-- About RisingOS -->
+    <string name="about_rising">حول RisingOS</string>
     <string name="about_device_name">الجهاز</string>
-    <!-- Share risingDroid -->
-    <string name="share_rising_title">مشاركة risingDroid</string>
-    <string name="share_rising_summary">دع الآخرين يعرفون عن risingDroid</string>
-    <string name="share_message">تحقق مما إذا كان #risingDroidAndroid متوفر لجهازك @ https://risingoss.github.io/</string>
-    <string name="share_chooser_title">مشاركة risingDroid</string>
-    <!-- Sites risingDroid -->
+    <!-- Share RisingOS -->
+    <string name="share_rising_title">مشاركة RisingOS</string>
+    <string name="share_rising_summary">دع الآخرين يعرفون عن RisingOS</string>
+    <string name="share_message">تحقق مما إذا كان #RisingOSAndroid متوفر لجهازك @ https://risingoss.github.io/</string>
+    <string name="share_chooser_title">مشاركة RisingOS</string>
+    <!-- Sites RisingOS -->
     <string name="rising_source_title">على موقع Github</string>
     <string name="rising_source_summary">نحن نحب المصدر المفتوح، تحقق منا</string>
-    <string name="rising_telegram_title">مجتمع risingDroid</string>
+    <string name="rising_telegram_title">مجتمع RisingOS</string>
     <string name="rising_telegram_summary">نحن على تليجرام. انضم إلينا!</string>
     <string name="rising_telegram_channel_title">قناة التحديثات</string>
     <string name="rising_telegram_channel_summary">احصل على إشعارات بالتحديثات الجديدة على تيليجرام</string>
@@ -76,10 +76,10 @@
     <string name="rising_translate_title">الترجمة</string>
     <string name="rising_translate_summary">المساعدة في تعريب الروم بلغتك!</string>
     <string name="rising_sponsor_summary">قم بزيارة الشريك المضيف لموقعنا</string>
-    <!-- Donate risingDroid -->
+    <!-- Donate RisingOS -->
     <string name="donate_rising_title">ادعمنا</string>
     <string name="donate_rising_summary">تبرع لدعم المزيد من التطوير</string>
-    <string name="donate_team_title">فريق risingDroid</string>
+    <string name="donate_team_title">فريق RisingOS</string>
     <string name="donate_team_summary">التبرع لدعم استضافة الخوادم، وموقع العمل الإضافي والإدارة العامة</string>
     <!-- The Drill -->
     <string name="drill_title">الطريقة لابلاغ عن مشكلة</string>
@@ -549,8 +549,8 @@
     <string name="qs_footer_show_power_menu_title">اختصار قائمة التشغيل</string>
     <string name="qs_footer_services_icon_title">عرض رمز اختصار للخدمات قيد التشغيل</string>
     <string name="qs_footer_settings_icon_title">إختصار الإعدادات</string>
-    <!-- Device Info screen. risingDroid legal. -->
-    <string name="rising_license_title">فريق risingDroid</string>
+    <!-- Device Info screen. RisingOS legal. -->
+    <string name="rising_license_title">فريق RisingOS</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">شريط السطوع</string>
     <string name="qs_show_brightness_slider_never">لا تُظهر أبداً</string>

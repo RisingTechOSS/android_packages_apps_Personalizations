@@ -36,7 +36,7 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.rising.settings.preferences.CustomSeekBarPreference;
 
-import com.android.internal.util.rising.Utils;
+import com.android.internal.util.rising.systemUtils;
 
 public class SmartCharging extends SettingsPreferenceFragment 
 	implements Preference.OnPreferenceChangeListener {
@@ -73,19 +73,19 @@ public class SmartCharging extends SettingsPreferenceFragment
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         if (preference == mStopLevel) {
-            Utils.showSystemRestartDialog(getContext());
+            systemUtils.showSystemRestartDialog(getContext());
         } else if (preference == mResumeLevel) {
-            Utils.showSystemRestartDialog(getContext());
+            systemUtils.showSystemRestartDialog(getContext());
         } else if (preference == mSmartCharge) {
-            Utils.showSystemRestartDialog(getContext());
+            systemUtils.showSystemRestartDialog(getContext());
         } else if (preference == mResetStats) {
-            Utils.showSystemRestartDialog(getContext());
+            systemUtils.showSystemRestartDialog(getContext());
         }
         return true;
     }
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.CRDROID_SETTINGS;
+        return MetricsProto.MetricsEvent.CUSTOM_SETTINGS;
     }
 }

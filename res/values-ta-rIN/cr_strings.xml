@@ -56,18 +56,18 @@
     <string name="changelog_rising_title">தற்போதைய மாற்றங்கள்</string>
     <string name="changelog_rising_summary">நிறுவப்பட்ட ROM இல் மாற்றங்களைக் காண்க</string>
     <string name="changelog_rising_error">மாற்றப் பதிவேட்டை திறக்க முடியவில்லை</string>
-    <!-- About risingDroid -->
-    <string name="about_rising">risingDroid ஐப் பற்றி</string>
+    <!-- About RisingOS -->
+    <string name="about_rising">RisingOS ஐப் பற்றி</string>
     <string name="about_device_name">சாதனம்</string>
-    <!-- Share risingDroid -->
-    <string name="share_rising_title">risingDroid ஐப் பகிர்</string>
-    <string name="share_rising_summary">risingDroid பற்றி மற்றவர்களுக்குத் தெரியப்படுத்தவும்</string>
-    <string name="share_message">உங்கள் சாதனத்தில் #risingDroidAndroid உள்ளதா எனப் பார்க்கவும் @ https://risingoss.github.io/</string>
-    <string name="share_chooser_title">risingDroid ஐப் பகிர்</string>
-    <!-- Sites risingDroid -->
+    <!-- Share RisingOS -->
+    <string name="share_rising_title">RisingOS ஐப் பகிர்</string>
+    <string name="share_rising_summary">RisingOS பற்றி மற்றவர்களுக்குத் தெரியப்படுத்தவும்</string>
+    <string name="share_message">உங்கள் சாதனத்தில் #RisingOSAndroid உள்ளதா எனப் பார்க்கவும் @ https://risingoss.github.io/</string>
+    <string name="share_chooser_title">RisingOS ஐப் பகிர்</string>
+    <!-- Sites RisingOS -->
     <string name="rising_source_title">கிட்ஹப்</string>
     <string name="rising_source_summary">நாங்கள் திறந்த மூலத்தை விரும்புகிறோம், எங்களைப் பார்க்கவும்</string>
-    <string name="rising_telegram_title">risingDroid சமூகம்</string>
+    <string name="rising_telegram_title">RisingOS சமூகம்</string>
     <string name="rising_telegram_summary">நாங்கள் தந்தியில் இருக்கிறோம்.  எங்களுடன் சேர்!</string>
     <string name="rising_telegram_channel_title">சேனலைப் புதுப்பிக்கிறது</string>
     <string name="rising_telegram_channel_summary">டெலிகிராமில் புதிய உருவாக்கங்கள் பற்றிய அறிவிப்பைப் பெறுங்கள்</string>
@@ -76,10 +76,10 @@
     <string name="rising_translate_title">மொழிபெயர்ப்புகள்</string>
     <string name="rising_translate_summary">Help with localisation of ROM in your language!</string>
     <string name="rising_sponsor_summary">Visit our website host partner</string>
-    <!-- Donate risingDroid -->
+    <!-- Donate RisingOS -->
     <string name="donate_rising_title">Support us</string>
     <string name="donate_rising_summary">Donate to support further development</string>
-    <string name="donate_team_title">risingDroid குழு</string>
+    <string name="donate_team_title">RisingOS குழு</string>
     <string name="donate_team_summary">Donate to support server hosting, site uptime and overall management</string>
     <!-- The Drill -->
     <string name="drill_title">The drill</string>
@@ -545,8 +545,8 @@
     <string name="qs_footer_show_power_menu_title">Power menu shortcut</string>
     <string name="qs_footer_services_icon_title">இயங்கும் சேவைகள் குறுக்குவழி</string>
     <string name="qs_footer_settings_icon_title">அமைப்புகள் குறுக்குவழி</string>
-    <!-- Device Info screen. risingDroid legal. -->
-    <string name="rising_license_title">risingDroid legal</string>
+    <!-- Device Info screen. RisingOS legal. -->
+    <string name="rising_license_title">RisingOS legal</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">பிரகாசம் நகர்வுகோல்</string>
     <string name="qs_show_brightness_slider_never">Never show</string>

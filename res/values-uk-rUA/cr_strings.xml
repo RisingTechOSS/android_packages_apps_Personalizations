@@ -15,7 +15,7 @@
      limitations under the License.
 --><resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="rising_settings_title">Налаштування risingDroid</string>
+    <string name="rising_settings_title">Налаштування RisingOS</string>
     <string name="rising_settings_summary">Додаткові налаштування</string>
     <string name="reset_settings_title">Скинути налаштування</string>
     <string name="reset_settings_message">Буде здійснено скидання більшості параметрів rising до їх значень за замовчуванням для поточного користувача. Чи хотіли б Ви продовжити?</string>
@@ -55,18 +55,18 @@
     <string name="changelog_rising_title">Поточний список змін</string>
     <string name="changelog_rising_summary">Переглянути список змін в поточній прошивці</string>
     <string name="changelog_rising_error">Помилка завантаження списку змін</string>
-    <!-- About risingDroid -->
-    <string name="about_rising">Про risingDroid</string>
+    <!-- About RisingOS -->
+    <string name="about_rising">Про RisingOS</string>
     <string name="about_device_name">Пристрій</string>
-    <!-- Share risingDroid -->
-    <string name="share_rising_title">Поділитися risingDroid</string>
-    <string name="share_rising_summary">Нехай інші знають про risingDroid</string>
-    <string name="share_message">Перевірте, чи доступний #risingDroidAndroid для Вашого пристрою @ https://risingoss.github.io/</string>
-    <string name="share_chooser_title">Поділитися risingDroid</string>
-    <!-- Sites risingDroid -->
+    <!-- Share RisingOS -->
+    <string name="share_rising_title">Поділитися RisingOS</string>
+    <string name="share_rising_summary">Нехай інші знають про RisingOS</string>
+    <string name="share_message">Перевірте, чи доступний #RisingOSAndroid для Вашого пристрою @ https://risingoss.github.io/</string>
+    <string name="share_chooser_title">Поділитися RisingOS</string>
+    <!-- Sites RisingOS -->
     <string name="rising_source_title">GitHub</string>
     <string name="rising_source_summary">Ми любимо відкритий вихідний код, перевірте нас</string>
-    <string name="rising_telegram_title">risingDroid спільнота</string>
+    <string name="rising_telegram_title">RisingOS спільнота</string>
     <string name="rising_telegram_summary">Ми також є в Telegram. Приєднуйтесь!</string>
     <string name="rising_telegram_channel_title">Канал оновлень</string>
     <string name="rising_telegram_channel_summary">Отримувати сповіщення про нові збірки в Telegram</string>
@@ -75,10 +75,10 @@
     <string name="rising_translate_title">Переклади</string>
     <string name="rising_translate_summary">Допоможіть з локалізацією ROM вашою мовою!</string>
     <string name="rising_sponsor_summary">Завітайте на наш веб-сайт партнера</string>
-    <!-- Donate risingDroid -->
+    <!-- Donate RisingOS -->
     <string name="donate_rising_title">Підтримати нас</string>
     <string name="donate_rising_summary">Пожертвуйте для підтримки подальшого розвитку</string>
-    <string name="donate_team_title">risingDroid команда</string>
+    <string name="donate_team_title">RisingOS команда</string>
     <string name="donate_team_summary">Пожертвувати на підтримку хостингу, сайту та розвитку проекту</string>
     <!-- The Drill -->
     <string name="drill_title">Від розробників</string>
@@ -546,8 +546,8 @@
     <string name="qs_footer_show_power_menu_title">Меню живлення</string>
     <string name="qs_footer_services_icon_title">Піктограма запущених служб</string>
     <string name="qs_footer_settings_icon_title">Піктограма налаштувань</string>
-    <!-- Device Info screen. risingDroid legal. -->
-    <string name="rising_license_title">Політика конфіденційності risingDroid</string>
+    <!-- Device Info screen. RisingOS legal. -->
+    <string name="rising_license_title">Політика конфіденційності RisingOS</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">Повзунок яскравості</string>
     <string name="qs_show_brightness_slider_never">Завжди приховувати</string>
@@ -1031,13 +1031,13 @@
     <string name="misc_general_settings_title">Інші загальні налаштування</string>
     <string name="misc_other_settings_title">Інші різні налаштування</string>
     <string name="disabled">Вимкнено</string>
-    <string name="what_is_risingOS">Що таке risingDroid\?</string>
+    <string name="what_is_risingOS">Що таке RisingOS\?</string>
     <string name="what_is_riseui">Що таке Rise UI\?</string>
-    <string name="what_happened_to_old_source">Що сталося зі старим risingDroid\?</string>
-    <string name="what_happened_to_old_source_summary">Стару організацію risingDroid було розпущено через внутрішні конфлікти, зокрема, щодо закриття вихідного коду, коштів на оренду серверів та управління вихідним кодом (багато людей використовували обліковий запис minaripenguin для анонімності). Нова організація risingDroidOSS тепер підтримується виключно одним супровідником коду і поширюється офіційно офіційними супровідниками пристроїв.</string>
-    <string name="rising_redirects">Дізнайтеся більше про risingDroid!</string>
+    <string name="what_happened_to_old_source">Що сталося зі старим RisingOS\?</string>
+    <string name="what_happened_to_old_source_summary">Стару організацію RisingOS було розпущено через внутрішні конфлікти, зокрема, щодо закриття вихідного коду, коштів на оренду серверів та управління вихідним кодом (багато людей використовували обліковий запис minaripenguin для анонімності). Нова організація RisingOSOSS тепер підтримується виключно одним супровідником коду і поширюється офіційно офіційними супровідниками пристроїв.</string>
+    <string name="rising_redirects">Дізнайтеся більше про RisingOS!</string>
     <string name="about_settings_title">Про нас</string>
-    <string name="about_settings_summary">Інформація про risingDroid</string>
+    <string name="about_settings_summary">Інформація про RisingOS</string>
     <string name="buttons_settings_title">Кнопки</string>
     <string name="lockscreen_settings_title">Екран блокування</string>
     <string name="general_lockscreen_title">Загальні налаштування екрана блокування</string>

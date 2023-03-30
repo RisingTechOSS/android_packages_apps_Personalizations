@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="rising_settings_title">Налады risingDroid</string>
+    <string name="rising_settings_title">Налады RisingOS</string>
     <string name="rising_settings_summary">Тут адбываецца чараўніцтва</string>
     <string name="reset_settings_title">Скінуць налады</string>
     <string name="reset_settings_message">Гэта прывядзе да скіду большасці налад rising да значэнняў па змаўчанні для бягучага карыстальніка. Працягнуць?</string>
@@ -56,18 +56,18 @@
     <string name="changelog_rising_title">Бягучы спіс змен</string>
     <string name="changelog_rising_summary">Прагляд змяненняў у бягучай прашыўкі</string>
     <string name="changelog_rising_error">Немагчыма загрузіць спіс змен</string>
-    <!-- About risingDroid -->
-    <string name="about_rising">Аб risingDroid</string>
+    <!-- About RisingOS -->
+    <string name="about_rising">Аб RisingOS</string>
     <string name="about_device_name">Прылада</string>
-    <!-- Share risingDroid -->
-    <string name="share_rising_title">Расказаць пра risingDroid</string>
-    <string name="share_rising_summary">Хай іншыя ведаюць пра risingDroid</string>
-    <string name="share_message">Даведайцеся, ці даступны #risingDroidAndroid для вашай прылады на @ https://risingoss.github.io/</string>
-    <string name="share_chooser_title">Расказаць пра risingDroid</string>
-    <!-- Sites risingDroid -->
+    <!-- Share RisingOS -->
+    <string name="share_rising_title">Расказаць пра RisingOS</string>
+    <string name="share_rising_summary">Хай іншыя ведаюць пра RisingOS</string>
+    <string name="share_message">Даведайцеся, ці даступны #RisingOSAndroid для вашай прылады на @ https://risingoss.github.io/</string>
+    <string name="share_chooser_title">Расказаць пра RisingOS</string>
+    <!-- Sites RisingOS -->
     <string name="rising_source_title">GitHub</string>
     <string name="rising_source_summary">Зыходны код праекта</string>
-    <string name="rising_telegram_title">Супольнасць risingDroid</string>
+    <string name="rising_telegram_title">Супольнасць RisingOS</string>
     <string name="rising_telegram_summary">Мы таксама ў Telegram. Далучайцеся!</string>
     <string name="rising_telegram_channel_title">Канал абнаўленняў</string>
     <string name="rising_telegram_channel_summary">Атрымліваць апавяшчэнні аб новых зборках у Telegram</string>
@@ -76,10 +76,10 @@
     <string name="rising_translate_title">Пераклады</string>
     <string name="rising_translate_summary">Дапамога з перакладам ROM на вашай мове!</string>
     <string name="rising_sponsor_summary">Наведайце нашага партнёра па хосце</string>
-    <!-- Donate risingDroid -->
+    <!-- Donate RisingOS -->
     <string name="donate_rising_title">Падтрымайце нас</string>
     <string name="donate_rising_summary">Ахвяруйце для падтрымкі далейшага развіцця</string>
-    <string name="donate_team_title">Каманда risingDroid</string>
+    <string name="donate_team_title">Каманда RisingOS</string>
     <string name="donate_team_summary">Ахвяраваць на падтрымку хостынгу, сайта і агульныя задачы</string>
     <!-- The Drill -->
     <string name="drill_title">Ад распрацоўшчыкаў</string>
@@ -548,8 +548,8 @@
     <string name="qs_footer_show_power_menu_title">Змест меню кнопкі сілкавання</string>
     <string name="qs_footer_services_icon_title">Значок запушчаных праграм</string>
     <string name="qs_footer_settings_icon_title">Налады хуткага доступу</string>
-    <!-- Device Info screen. risingDroid legal. -->
-    <string name="rising_license_title">Палітыка прыватнасці risingDroid</string>
+    <!-- Device Info screen. RisingOS legal. -->
+    <string name="rising_license_title">Палітыка прыватнасці RisingOS</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">Рэгулятар яркасці</string>
     <string name="qs_show_brightness_slider_never">Ніколі не дазваляць</string>

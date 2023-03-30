@@ -253,6 +253,6 @@ public class PulseSettings extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.CRDROID_SETTINGS;
+        return MetricsProto.MetricsEvent.CUSTOM_SETTINGS;
     }
 }

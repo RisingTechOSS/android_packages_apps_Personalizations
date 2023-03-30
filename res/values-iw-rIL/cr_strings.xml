@@ -16,10 +16,10 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="rising_settings_title">הגדרות risingDroid</string>
+    <string name="rising_settings_title">הגדרות RisingOS</string>
     <string name="rising_settings_summary">לפתוח את הטוב</string>
     <string name="reset_settings_title">איפוס הגדרות</string>
-    <string name="reset_settings_message">הגדרה זו תאפס את רוב הגדרות risingDroid לערכי ברירת המחדל, להמשיך?</string>
+    <string name="reset_settings_message">הגדרה זו תאפס את רוב הגדרות RisingOS לערכי ברירת המחדל, להמשיך?</string>
     <!-- Personalization Categories -->
     <string name="button_title">מקשים</string>
     <string name="lockscreen_title">מסך נעילה</string>
@@ -56,18 +56,18 @@
     <string name="changelog_rising_title">יומן השינויים הנוכחי</string>
     <string name="changelog_rising_summary">ראה שינויים ברום שהותקן</string>
     <string name="changelog_rising_error">טעינת יומן השינויים נכשלה</string>
-    <!-- About risingDroid -->
-    <string name="about_rising">אודות risingDroid</string>
+    <!-- About RisingOS -->
+    <string name="about_rising">אודות RisingOS</string>
     <string name="about_device_name">מכשיר</string>
-    <!-- Share risingDroid -->
-    <string name="share_rising_title">שתף risingDroid</string>
-    <string name="share_rising_summary">עזור לאנשים אחרים לדעת אודות risingDroid</string>
-    <string name="share_message">בדוק האם risingDroidAndroid# זמין למכשיר שלך https://risingoss.github.io/</string>
-    <string name="share_chooser_title">שתף risingDroid</string>
-    <!-- Sites risingDroid -->
+    <!-- Share RisingOS -->
+    <string name="share_rising_title">שתף RisingOS</string>
+    <string name="share_rising_summary">עזור לאנשים אחרים לדעת אודות RisingOS</string>
+    <string name="share_message">בדוק האם RisingOSAndroid# זמין למכשיר שלך https://risingoss.github.io/</string>
+    <string name="share_chooser_title">שתף RisingOS</string>
+    <!-- Sites RisingOS -->
     <string name="rising_source_title">GitHub</string>
     <string name="rising_source_summary">אנחנו אוהבים מקור פתוח, בדוק אותנו</string>
-    <string name="rising_telegram_title">קהילת risingDroid</string>
+    <string name="rising_telegram_title">קהילת RisingOS</string>
     <string name="rising_telegram_summary">אנחנו גם בטלגרם, תצטרף אלינו!</string>
     <string name="rising_telegram_channel_title">ערוץ עדכונים</string>
     <string name="rising_telegram_channel_summary">קבל הודעה בטלגרם אודות עדכונים חדשים</string>
@@ -76,10 +76,10 @@
     <string name="rising_translate_title">תרגומים</string>
     <string name="rising_translate_summary">עזור לנו להתאים את ה-ROM לשפה שלך!</string>
     <string name="rising_sponsor_summary">בקרו במארח האתרים השותף שלנו</string>
-    <!-- Donate risingDroid -->
+    <!-- Donate RisingOS -->
     <string name="donate_rising_title">תמוך בנו</string>
     <string name="donate_rising_summary">תמוך בנו כדי לאפשר המשך פיתוח עתידי</string>
-    <string name="donate_team_title">צוות risingDroid</string>
+    <string name="donate_team_title">צוות RisingOS</string>
     <string name="donate_team_summary">תירמו לתמיכה בשרתי האחסון, הפעלת האתר והניהול הכללי</string>
     <!-- The Drill -->
     <string name="drill_title">התהליך</string>
@@ -547,8 +547,8 @@
     <string name="qs_footer_show_power_menu_title">קיצור דרך לתפריט הפעלה</string>
     <string name="qs_footer_services_icon_title">קיצור דרך להפעלת שירותים</string>
     <string name="qs_footer_settings_icon_title">קיצור דרך להגדרות</string>
-    <!-- Device Info screen. risingDroid legal. -->
-    <string name="rising_license_title">חוקי risingDroid</string>
+    <!-- Device Info screen. RisingOS legal. -->
+    <string name="rising_license_title">חוקי RisingOS</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">מחוון בהירות</string>
     <string name="qs_show_brightness_slider_never">אל תציג אף פעם</string>
