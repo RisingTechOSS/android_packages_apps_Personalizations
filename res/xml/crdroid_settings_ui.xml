@@ -26,17 +26,17 @@
         android:icon="@drawable/ic_ambient"
         android:title="@string/doze_display_title"
         android:summary="@string/doze_display_summary"
-        android:fragment="com.crdroid.settings.fragments.ui.DozeSettings" />
+        android:fragment="com.rising.settings.fragments.ui.DozeSettings" />
 
     <Preference
          android:key="ambient_customization"
          android:icon="@drawable/ic_ambient"
          android:title="@string/ambient_text_category_title"
          android:summary="@string/ambient_text_category_summary"
-         android:fragment="com.crdroid.settings.fragments.AmbientCustomizations" />
+         android:fragment="com.rising.settings.fragments.AmbientCustomizations" />
 
     <!-- Charging animation -->
-    <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+    <com.rising.settings.preferences.SystemSettingSwitchPreference
         android:key="charging_animation"
         android:icon="@drawable/ic_battery_charging"
         android:title="@string/charging_animation_title"
@@ -44,7 +44,7 @@
         android:defaultValue="true" />
 
     <!-- Screen Off animation -->
-    <com.crdroid.settings.preferences.SystemSettingListPreference
+    <com.rising.settings.preferences.SystemSettingListPreference
         android:key="screen_off_animation"
         android:icon="@drawable/ic_television_classic"
         android:title="@string/screen_off_animation_title"
@@ -59,10 +59,10 @@
         android:icon="@drawable/ic_themes"
         android:title="@string/ui_theme_engine_title"
         android:summary="@string/ui_theme_engine_summary"
-        android:fragment="com.crdroid.settings.fragments.ui.ThemeEngine" />
+        android:fragment="com.rising.settings.fragments.ui.ThemeEngine" />
 
     <!-- Floating rotation button -->
-    <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+    <com.rising.settings.preferences.SystemSettingSwitchPreference
         android:key="enable_floating_rotation_button"
         android:icon="@drawable/ic_rotation"
         android:title="@string/floating_rotation_button_title"

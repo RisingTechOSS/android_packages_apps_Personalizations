@@ -24,7 +24,7 @@
          android:title="@string/qs_misc_category">
 
         <!-- QS clock -->
-        <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+        <com.rising.settings.preferences.SystemSettingSwitchPreference
             android:key="show_qs_clock"
             android:icon="@drawable/ic_clock"
             android:title="@string/qs_clock_title"
@@ -32,7 +32,7 @@
             android:defaultValue="true" />
 
         <!-- QS date -->
-        <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+        <com.rising.settings.preferences.SystemSettingSwitchPreference
             android:key="show_qs_date"
             android:icon="@drawable/ic_calendar"
             android:title="@string/qs_date_title"
@@ -40,7 +40,7 @@
             android:defaultValue="true" />
 
         <!-- Battery styles -->
-        <com.crdroid.settings.preferences.SystemSettingListPreference
+        <com.rising.settings.preferences.SystemSettingListPreference
             android:key="qs_battery_style"
             android:icon="@drawable/ic_battery"
             android:title="@string/status_bar_battery_style_title"
@@ -49,7 +49,7 @@
             android:defaultValue="-1" />
 
         <!-- Battery location -->
-        <com.crdroid.settings.preferences.SystemSettingListPreference
+        <com.rising.settings.preferences.SystemSettingListPreference
             android:key="qs_battery_location"
             android:icon="@drawable/ic_battery"
             android:title="@string/qs_battery_location_title"
@@ -58,7 +58,7 @@
             android:defaultValue="0" />
 
         <!-- Battery percent -->
-        <com.crdroid.settings.preferences.SystemSettingListPreference
+        <com.rising.settings.preferences.SystemSettingListPreference
             android:key="qs_show_battery_percent"
             android:icon="@drawable/ic_battery_alert"
             android:title="@string/status_bar_battery_percent_title"
@@ -67,7 +67,7 @@
             android:defaultValue="2" />
 
         <!-- Battery estimate -->
-        <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+        <com.rising.settings.preferences.SystemSettingSwitchPreference
             android:key="qs_show_battery_estimate"
             android:icon="@drawable/ic_timelapse_cr"
             android:title="@string/battery_estimate_title"
@@ -97,7 +97,7 @@
             android:summary="@string/qs_show_auto_brightness_summary"
             android:defaultValue="true" />
 
-        <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+        <com.rising.settings.preferences.SystemSettingSwitchPreference
             android:key="secure_lockscreen_qs_disabled"
             android:icon="@drawable/ic_lock_alert"
             android:title="@string/disable_qs_title"
@@ -109,7 +109,7 @@
         android:key="qs_layout_category"
         android:title="@string/qs_layout_category_title">
 
-     <com.crdroid.settings.preferences.SystemSettingSeekBarPreference
+     <com.rising.settings.preferences.SystemSettingSeekBarPreference
         android:key="qs_transparency"
         android:icon="@drawable/ic_color_bucket"
         android:title="@string/qs_transparency_title"
@@ -125,10 +125,10 @@
         android:icon="@drawable/ic_qs_tile"
         android:title="@string/qs_tile_layout_title"
         android:summary="@string/qs_tile_layout_summary"
-        android:fragment="com.crdroid.settings.fragments.QsTileLayoutSettings" />
+        android:fragment="com.rising.settings.fragments.QsTileLayoutSettings" />
 
      <!-- QS styles -->
-    <com.crdroid.settings.preferences.SystemSettingListPreference
+    <com.rising.settings.preferences.SystemSettingListPreference
         android:key="qs_panel_style"
         android:icon="@drawable/ic_color_bucket"
         android:title="@string/qs_styles_title"
@@ -142,7 +142,7 @@
     <PreferenceCategory
         android:title="@string/qs_tile_animation_title">
 
-        <com.crdroid.settings.preferences.SystemSettingListPreference
+        <com.rising.settings.preferences.SystemSettingListPreference
             android:key="qs_tile_animation_style"
             android:icon="@drawable/ic_qs_tile_animation_style"
             android:title="@string/qs_tile_animation_style_title"
@@ -150,7 +150,7 @@
             android:entryValues="@array/qs_tile_animation_style_values"
             android:defaultValue="0" />
 
-        <com.crdroid.settings.preferences.SystemSettingSeekBarPreference
+        <com.rising.settings.preferences.SystemSettingSeekBarPreference
             android:key="qs_tile_animation_duration"
             android:icon="@drawable/ic_clock"
             android:title="@string/qs_tile_animation_duration_title"
@@ -160,7 +160,7 @@
             android:max="5"
             android:min="1" />
 
-        <com.crdroid.settings.preferences.SystemSettingListPreference
+        <com.rising.settings.preferences.SystemSettingListPreference
             android:key="qs_tile_animation_interpolator"
             android:icon="@drawable/ic_qs_tile_animation_interpolator"
             android:title="@string/qs_tile_animation_interpolator_title"
@@ -168,7 +168,7 @@
             android:entryValues="@array/qs_tile_animation_interpolator_values"
             android:defaultValue="0" />
 
-       <com.crdroid.settings.preferences.SystemSettingListPreference
+       <com.rising.settings.preferences.SystemSettingListPreference
             android:key="custom_transitions_page_tile"
             android:icon="@drawable/ic_qs_tile_animation_style"
             android:entries="@array/qs_transitions_entries"
@@ -181,57 +181,57 @@
     <PreferenceCategory 
          android:title="@string/qs_footer_category">
 
-        <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+        <com.rising.settings.preferences.SystemSettingSwitchPreference
             android:key="qs_footer_data_usage"
             android:icon="@drawable/ic_swap_vertical"
             android:title="@string/qs_footer_datausage_title"
             android:summary="@string/qs_footer_datausage_summary" />
 
-        <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+        <com.rising.settings.preferences.SystemSettingSwitchPreference
             android:key="qs_footer_warnings"
             android:icon="@drawable/ic_key"
             android:title="@string/qs_footer_warnings_title"
             android:summary="@string/qs_footer_warnings_summary"
             android:defaultValue="true"/>
 
-        <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+        <com.rising.settings.preferences.SystemSettingSwitchPreference
             android:key="qs_footer_show_user"
             android:icon="@drawable/ic_account"
             android:title="@string/qs_footer_users_icon_title"
             android:summary="@string/qs_footer_users_icon_summary"
             android:defaultValue="true" />
 
-        <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+        <com.rising.settings.preferences.SystemSettingSwitchPreference
             android:key="qs_footer_show_edit"
             android:icon="@drawable/ic_pencil"
             android:title="@string/qs_footer_edit_icon_title"
             android:defaultValue="true" />
 
-        <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+        <com.rising.settings.preferences.SystemSettingSwitchPreference
             android:key="qs_footer_show_power_menu"
             android:icon="@drawable/ic_power"
             android:title="@string/qs_footer_show_power_menu_title"
             android:defaultValue="true" />
 
-        <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+        <com.rising.settings.preferences.SystemSettingSwitchPreference
             android:key="qs_footer_show_services"
             android:icon="@drawable/ic_services"
             android:title="@string/qs_footer_services_icon_title" />
 
-        <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+        <com.rising.settings.preferences.SystemSettingSwitchPreference
             android:key="qs_footer_show_settings"
             android:icon="@drawable/ic_settings_main"
             android:title="@string/qs_footer_settings_icon_title"
             android:defaultValue="true" />
 
-        <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+        <com.rising.settings.preferences.SystemSettingSwitchPreference
             android:key="notification_material_dismiss"
             android:icon="@drawable/ic_notification_clear_all"
             android:title="@string/notification_material_dismiss_title"
             android:summary="@string/notification_material_dismiss_summary"
             android:defaultValue="false" />
 
-        <com.crdroid.settings.preferences.SystemSettingSeekBarPreference
+        <com.rising.settings.preferences.SystemSettingSeekBarPreference
             android:key="notification_material_dismiss_style"
             android:icon="@drawable/ic_notification_clear_all"
             android:title="@string/notification_material_dismiss_style_title"
@@ -240,7 +240,7 @@
             android:max="9"
             settings:min="0" />
 
-        <com.crdroid.settings.preferences.SystemSettingSeekBarPreference
+        <com.rising.settings.preferences.SystemSettingSeekBarPreference
             android:key="notification_material_dismiss_bgstyle"
             android:icon="@drawable/ic_notification_clear_all"
             android:title="@string/notification_material_dismiss_bgstyle_title"

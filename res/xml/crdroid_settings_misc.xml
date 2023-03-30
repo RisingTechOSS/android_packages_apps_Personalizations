@@ -41,7 +41,7 @@
         android:icon="@drawable/ic_google"
         android:title="@string/gms_enabled_title"
         android:summary="@string/gms_enabled_summary"
-        android:fragment="com.crdroid.settings.fragments.misc.GmsSwitch"/>
+        android:fragment="com.rising.settings.fragments.misc.GmsSwitch"/>
 
     <!-- Parallel space -->
     <Preference
@@ -64,7 +64,7 @@
         android:summary="@string/display_cutout_force_fullscreen_summary">
         <intent android:action="android.intent.action.MAIN"
              android:targetPackage="com.android.settings"
-             android:targetClass="com.crdroid.settings.fragments.ui.DisplayCutoutForceFullscreenActivity"/>
+             android:targetClass="com.rising.settings.fragments.ui.DisplayCutoutForceFullscreenActivity"/>
     </Preference>
 
     <!-- Scarlet Services -->
@@ -73,7 +73,7 @@
         android:icon="@drawable/ic_scarlet"
         android:title="@string/scarlet_services_title"
         android:summary="@string/scarlet_services_summary"
-        android:fragment="com.crdroid.settings.fragments.misc.ScarletSettings"/>
+        android:fragment="com.rising.settings.fragments.misc.ScarletSettings"/>
 
     <!-- Smart Charging -->
     <Preference
@@ -81,7 +81,7 @@
         android:icon="@drawable/ic_battery_charging_80"
         android:title="@string/smart_charging_title"
         android:summary="@string/smart_charging_summary"
-        android:fragment="com.crdroid.settings.fragments.misc.SmartCharging"/>
+        android:fragment="com.rising.settings.fragments.misc.SmartCharging"/>
        
     <!-- Smart Pixels -->
     <Preference
@@ -89,7 +89,7 @@
         android:icon="@drawable/ic_smart_pixels"
         android:title="@string/smart_pixels_title" 
         android:summary="@string/smart_pixels_summary" 
-        android:fragment="com.crdroid.settings.fragments.ui.SmartPixels" />
+        android:fragment="com.rising.settings.fragments.ui.SmartPixels" />
 
     <!-- Sensor block per package -->
     <Preference
@@ -97,20 +97,20 @@
         android:icon="@drawable/ic_remote"
         android:title="@string/sensor_block_title"
         android:summary="@string/sensor_block_summary"
-        android:fragment="com.crdroid.settings.fragments.misc.SensorBlock"/>
+        android:fragment="com.rising.settings.fragments.misc.SensorBlock"/>
 
     <PreferenceCategory
         android:title="@string/misc_spoof_settings_title">
 
     <!-- Unlock FPS for specific games -->
-    <com.crdroid.settings.preferences.SystemPropertySwitchPreference
+    <com.rising.settings.preferences.SystemPropertySwitchPreference
         android:key="persist.sys.pixelprops.games"
         android:icon="@drawable/ic_backup"
         android:title="@string/use_games_spoof_title"
         android:summary="@string/use_games_spoof_summary" />
 
     <!-- Unlimited google photos storage -->
-    <com.crdroid.settings.preferences.SystemPropertySwitchPreference
+    <com.rising.settings.preferences.SystemPropertySwitchPreference
         android:key="persist.sys.pixelprops.gphotos"
         android:icon="@drawable/ic_backup"
         android:title="@string/use_photos_spoof_title"
@@ -118,7 +118,7 @@
         android:defaultValue="true" />
 
     <!-- Netflix -->
-    <com.crdroid.settings.preferences.SystemPropertySwitchPreference
+    <com.rising.settings.preferences.SystemPropertySwitchPreference
         android:key="persist.sys.pixelprops.netflix"
         android:icon="@drawable/ic_netflix"
         android:title="@string/netflix_spoof_title"
@@ -131,7 +131,7 @@
         android:title="@string/misc_other_settings_title">
         
     <!-- Three-fingers-swipe to screenshot -->
-    <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+    <com.rising.settings.preferences.SystemSettingSwitchPreference
         android:key="three_finger_gesture"
         android:icon="@drawable/ic_three_finger_gesture"
         android:title="@string/three_finger_gesture"
@@ -141,7 +141,7 @@
     </PreferenceCategory>
 
     <!-- Pocket Judge -->
-    <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+    <com.rising.settings.preferences.SystemSettingSwitchPreference
         android:key="pocket_judge"
         android:icon="@drawable/ic_pocket"
         android:title="@string/pocket_judge_title"
@@ -154,6 +154,6 @@
         android:icon="@drawable/ic_weather"
         android:title="@string/qs_weather_settings_title"
         android:summary="@string/qs_weather_settings_summary"
-        android:fragment="com.crdroid.settings.fragments.OmniJawsSettings" />
+        android:fragment="com.rising.settings.fragments.OmniJawsSettings" />
 
 </PreferenceScreen>

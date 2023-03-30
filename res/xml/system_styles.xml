@@ -20,7 +20,7 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/system_styles_title" >
   
-   <com.crdroid.settings.preferences.GlobalSettingSwitchPreference
+   <com.rising.settings.preferences.GlobalSettingSwitchPreference
         android:key="pie_animation_style"
         android:icon="@drawable/ic_system_animation"
         android:title="@string/pie_animation_style_title"
@@ -33,7 +33,7 @@
         android:icon="@drawable/ic_font"
         android:title="@string/theme_customization_font_title"
         android:summary="@string/theme_customization_font_summary"
-        android:fragment="com.crdroid.settings.fragments.ui.FontsPicker"/>
+        android:fragment="com.rising.settings.fragments.ui.FontsPicker"/>
 
     <!-- Icon pack -->
     <Preference
@@ -41,7 +41,7 @@
         android:icon="@drawable/ic_drawing"
         android:title="@string/theme_customization_icon_pack_title"
         android:summary="@string/theme_customization_icon_pack_summary"
-        android:fragment="com.crdroid.settings.fragments.ui.StatusbarIcons"/>
+        android:fragment="com.rising.settings.fragments.ui.StatusbarIcons"/>
 
     <!-- Navbar Style -->
     <Preference
@@ -49,10 +49,10 @@
         android:icon="@drawable/ic_navbar"
         android:title="@string/theme_customization_navbar_title"
         android:summary="@string/theme_customization_navbar_summary"
-        android:fragment="com.crdroid.settings.fragments.ui.NavbarStyles"/>
+        android:fragment="com.rising.settings.fragments.ui.NavbarStyles"/>
 
     <!-- Power Menu Styles -->
-    <com.crdroid.settings.preferences.SecureSettingListPreference
+    <com.rising.settings.preferences.SecureSettingListPreference
         android:key="power_menu_type"
         android:icon="@drawable/ic_power_menu"
         android:summary="%s"
@@ -67,7 +67,7 @@
         android:icon="@drawable/ic_signal"
         android:title="@string/theme_customization_signal_icon_title"
         android:summary="@string/theme_customization_signal_icon_summary"
-        android:fragment="com.crdroid.settings.fragments.ui.SignalIcons"/>
+        android:fragment="com.rising.settings.fragments.ui.SignalIcons"/>
 
     <!-- System Shapes -->
     <Preference
@@ -75,9 +75,9 @@
         android:icon="@drawable/ic_shapes"
         android:title="@string/theme_customization_icon_shape_title"
         android:summary="@string/theme_customization_icon_shape_summary"
-        android:fragment="com.crdroid.settings.fragments.ui.IconShapes"/>
+        android:fragment="com.rising.settings.fragments.ui.IconShapes"/>
 
-    <com.crdroid.settings.preferences.SystemSettingListPreference
+    <com.rising.settings.preferences.SystemSettingListPreference
          android:key="custom_volume_styles"
          android:title="@string/volume_style_title"
          android:icon="@drawable/ic_settings_sound"
@@ -92,7 +92,7 @@
         android:icon="@drawable/ic_wifi"
         android:title="@string/theme_customization_wifi_icon_title"
         android:summary="@string/theme_customization_wifi_icon_summary"
-        android:fragment="com.crdroid.settings.fragments.ui.WifiIcons"/>
+        android:fragment="com.rising.settings.fragments.ui.WifiIcons"/>
 
 
 </PreferenceScreen>

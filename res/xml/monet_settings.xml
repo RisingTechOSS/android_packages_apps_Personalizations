@@ -29,7 +29,7 @@
         android:entryValues="@array/color_source_values"
         android:defaultValue="0" />
 
-    <com.crdroid.settings.preferences.colorpicker.ColorPickerPreference
+    <com.rising.settings.preferences.colorpicker.ColorPickerPreference
         android:key="accent_color"
         android:title="@string/accent_color_title"
         android:summary="@string/accent_color_summary" />
@@ -40,12 +40,12 @@
         android:summary="@string/accent_background_summary"
         android:defaultValue="false" />
 
-    <com.crdroid.settings.preferences.colorpicker.ColorPickerPreference
+    <com.rising.settings.preferences.colorpicker.ColorPickerPreference
         android:key="bg_color"
         android:title="@string/bg_color_title"
         android:summary="@string/bg_color_summary" />
 
-    <com.crdroid.settings.preferences.CustomSeekBarPreference
+    <com.rising.settings.preferences.CustomSeekBarPreference
         android:key="luminance_factor"
         android:title="@string/luminance_factor_title"
         android:summary="@string/luminance_factor_summary"
@@ -56,7 +56,7 @@
         settings:units="%"
         settings:showSign="true" />
 
-    <com.crdroid.settings.preferences.CustomSeekBarPreference
+    <com.rising.settings.preferences.CustomSeekBarPreference
         android:key="chroma_factor"
         android:title="@string/chroma_factor_title"
         android:summary="@string/chroma_factor_summary"

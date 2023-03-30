@@ -25,21 +25,21 @@
          android:icon="@drawable/ic_settings_lockscreens"
          android:title="@string/lockscreen_styles_title"
          android:summary="@string/lockscreen_styles_summary"
-         android:fragment="com.crdroid.settings.fragments.ui.LockScreenStyles" />
+         android:fragment="com.rising.settings.fragments.ui.LockScreenStyles" />
 
     <Preference
          android:key="settings_styles"
          android:icon="@drawable/ic_settings_ui"
          android:title="@string/settings_styles_title"
          android:summary="@string/settings_styles_summary"
-         android:fragment="com.crdroid.settings.fragments.ui.SettingsStyles" />
+         android:fragment="com.rising.settings.fragments.ui.SettingsStyles" />
 
     <Preference
          android:key="system_styles"
          android:icon="@drawable/ic_system_animation"
          android:title="@string/system_styles_title"
          android:summary="@string/system_styles_summary"
-         android:fragment="com.crdroid.settings.fragments.ui.SystemStyles" />
+         android:fragment="com.rising.settings.fragments.ui.SystemStyles" />
 
     <!-- Monet settings -->
     <Preference
@@ -47,6 +47,6 @@
         android:icon="@drawable/ic_color_bucket"
         android:title="@string/monet_settings_title"
         android:summary="@string/monet_settings_sammary"
-        android:fragment="com.crdroid.settings.fragments.MonetSettings" />
+        android:fragment="com.rising.settings.fragments.MonetSettings" />
 
 </PreferenceScreen>

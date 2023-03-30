@@ -26,7 +26,7 @@
         android:icon="@drawable/ic_pulse"
         android:title="@string/pulse_settings"
         android:summary="@string/pulse_settings_summary"
-        android:fragment="com.crdroid.settings.fragments.sound.PulseSettings" />
+        android:fragment="com.rising.settings.fragments.sound.PulseSettings" />
 
     <!-- Live volume steps -->
     <Preference
@@ -34,10 +34,10 @@
         android:icon="@drawable/ic_settings_sound"
         android:title="@string/volume_steps_title"
         android:summary="@string/volume_steps_summary"
-        android:fragment="com.crdroid.settings.fragments.sound.VolumeSteps" />
+        android:fragment="com.rising.settings.fragments.sound.VolumeSteps" />
 
     <!-- Screenshot Sound  -->
-    <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+    <com.rising.settings.preferences.SystemSettingSwitchPreference
         android:key="screenshot_shutter_sound"
         android:icon="@drawable/ic_cellphone_sound"
         android:title="@string/screenshot_shutter_sound_title"
@@ -50,7 +50,7 @@
         android:icon="@drawable/ic_settings_sound"
         android:title="@string/adaptive_playback_title"
         android:summary="@string/adaptive_playback_summary"
-        android:fragment="com.crdroid.settings.fragments.sound.AdaptivePlayback" />
+        android:fragment="com.rising.settings.fragments.sound.AdaptivePlayback" />
 
     <!-- Volume panel -->
     <PreferenceCategory
@@ -62,7 +62,7 @@
             android:icon="@drawable/ic_settings_sound"
             android:title="@string/volume_panel_on_left_title" />
 
-        <com.crdroid.settings.preferences.SystemSettingSeekBarPreference
+        <com.rising.settings.preferences.SystemSettingSeekBarPreference
             android:key="volume_dialog_timeout"
             android:icon="@drawable/ic_music_note"
             android:title="@string/volume_dialog_timeout_title"
@@ -71,7 +71,7 @@
             settings:min="1"
             settings:units="@string/unit_seconds" />
 
-    	<com.crdroid.settings.preferences.SystemSettingSwitchPreference
+    	<com.rising.settings.preferences.SystemSettingSwitchPreference
      	   android:key="volume_media_output_toggle"
      	   android:icon="@drawable/ic_settings_sound"
      	   android:title="@string/volume_media_output_toggle_title"
@@ -84,19 +84,19 @@
         android:key="incall_vib_options"
         android:title="@string/incall_vibration_category" >
 
-        <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+        <com.rising.settings.preferences.SystemSettingSwitchPreference
             android:key="vibrate_on_connect"
             android:icon="@drawable/ic_vibrate"
             android:title="@string/incall_vibrate_connect_title"
             android:defaultValue="false" />
 
-        <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+        <com.rising.settings.preferences.SystemSettingSwitchPreference
             android:key="vibrate_on_callwaiting"
             android:icon="@drawable/ic_vibrate"
             android:title="@string/incall_vibrate_call_wait_title"
             android:defaultValue="false" />
 
-        <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+        <com.rising.settings.preferences.SystemSettingSwitchPreference
             android:key="vibrate_on_disconnect"
             android:icon="@drawable/ic_vibrate"
             android:title="@string/incall_vibrate_disconnect_title"

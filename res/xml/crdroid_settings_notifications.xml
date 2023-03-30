@@ -20,27 +20,27 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/notifications_title" >
 
-    <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+    <com.rising.settings.preferences.SystemSettingSwitchPreference
         android:key="alert_slider_notifications"
         android:icon="@drawable/ic_light_switch"
         android:title="@string/alert_slider_notifications_title"
         android:summary="@string/alert_slider_notifications_summary"
         android:defaultValue="true" />
 
-    <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+    <com.rising.settings.preferences.SystemSettingSwitchPreference
         android:key="reticker_status"
         android:icon="@drawable/ic_message_fast"
         android:title="@string/reticker_title"
         android:summary="@string/reticker_summary" />
 
-    <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+    <com.rising.settings.preferences.SystemSettingSwitchPreference
         android:key="reticker_colored"
         android:icon="@drawable/ic_message_fast"
         android:title="@string/reticker_colored_title"
         android:summary="@string/reticker_colored_summary"
         android:dependency="reticker_status" />
 
-    <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+    <com.rising.settings.preferences.SystemSettingSwitchPreference
         android:key="notification_sound_vib_screen_on"
         android:icon="@drawable/ic_bell_ring"
         android:title="@string/notification_sound_vib_screen_on_title"
@@ -48,25 +48,25 @@
         android:defaultValue="true" />
 
     <!-- Notification guts kill app button -->
-    <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+    <com.rising.settings.preferences.SystemSettingSwitchPreference
         android:key="notification_guts_kill_app_button"
         android:icon="@drawable/ic_kill"
         android:title="@string/notification_guts_kill_app_button_title"
         android:summary="@string/notification_guts_kill_app_button_summary" />
 
-    <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+    <com.rising.settings.preferences.SystemSettingSwitchPreference
         android:key="toast_icon"
         android:icon="@drawable/ic_toast"
         android:title="@string/toast_icon_title"
         android:summary="@string/toast_icon_summary" />
 
-    <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+    <com.rising.settings.preferences.SystemSettingSwitchPreference
         android:key="media_artwork_blur_enabled"
         android:icon="@drawable/ic_blur"
         android:title="@string/artwork_media_background_enable_blur_title"
         android:defaultValue="false" />
 
-    <com.crdroid.settings.preferences.SystemSettingSeekBarPreference
+    <com.rising.settings.preferences.SystemSettingSeekBarPreference
         android:key="media_artwork_blur_radius"
         android:icon="@drawable/ic_custom_seekbar_plus"
         android:title="@string/artwork_media_background_blur_radius_title"
@@ -75,7 +75,7 @@
         android:max="125"
         settings:min="5" />
 
-    <com.crdroid.settings.preferences.SystemSettingSeekBarPreference
+    <com.rising.settings.preferences.SystemSettingSeekBarPreference
         android:key="media_artwork_fade_percent"
         android:icon="@drawable/ic_custom_seekbar_plus"
         android:title="@string/media_artwork_fade_percent_title"
@@ -87,14 +87,14 @@
         android:key="heads_up"
         android:title="@string/notification_heads_up_title">
 
-        <com.crdroid.settings.preferences.GlobalSettingSwitchPreference
+        <com.rising.settings.preferences.GlobalSettingSwitchPreference
             android:key="heads_up_notifications_enabled"
             android:icon="@drawable/ic_headsup"
             android:title="@string/notification_heads_up_title"
             android:summary="@string/notification_heads_up_summary"
             android:defaultValue="true" />
 
-        <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+        <com.rising.settings.preferences.SystemSettingSwitchPreference
             android:key="less_boring_heads_up"
             android:icon="@drawable/ic_headsup_sleep"
             android:title="@string/less_boring_heads_up_title"
@@ -102,7 +102,7 @@
             android:defaultValue="false"
             android:dependency="heads_up_notifications_enabled" />
 
-        <com.crdroid.settings.preferences.SystemSettingSeekBarPreference
+        <com.rising.settings.preferences.SystemSettingSeekBarPreference
             android:key="heads_up_timeout"
             android:icon="@drawable/ic_clock"
             android:title="@string/notification_heads_up_timeout_title"
@@ -114,7 +114,7 @@
             android:dependency="heads_up_notifications_enabled" />
 
         <!-- Show clipboard overlay -->
-        <com.crdroid.settings.preferences.SecureSettingSwitchPreference
+        <com.rising.settings.preferences.SecureSettingSwitchPreference
             android:key="show_clipboard_overlay"
             android:icon="@drawable/ic_clipboard_alert"
             android:title="@string/show_clipboard_overlay_title"
@@ -126,7 +126,7 @@
         android:key="flashlight_category"
         android:title="@string/power_menu_torch_title">
 
-        <com.crdroid.settings.preferences.SystemSettingListPreference
+        <com.rising.settings.preferences.SystemSettingListPreference
             android:key="flashlight_on_call"
             android:icon="@drawable/ic_flashlight"
             android:title="@string/flashlight_on_call_title"
@@ -134,14 +134,14 @@
             android:entryValues="@array/flashlight_on_call_values"
             android:defaultValue="0" />
 
-        <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+        <com.rising.settings.preferences.SystemSettingSwitchPreference
             android:key="flashlight_on_call_ignore_dnd"
             android:icon="@drawable/ic_flashlight"
             android:title="@string/flashlight_on_call_ignore_dnd_title"
             android:summary="@string/flashlight_on_call_ignore_dnd_summary"
             android:defaultValue="false" /> 
 
-        <com.crdroid.settings.preferences.SystemSettingSeekBarPreference
+        <com.rising.settings.preferences.SystemSettingSeekBarPreference
             android:key="flashlight_on_call_rate"
             android:icon="@drawable/ic_flashlight"
             android:title="@string/flashlight_on_call_rate_title"
@@ -162,7 +162,7 @@
             android:icon="@drawable/ic_led_on"
             android:title="@string/battery_light_title"
             android:summary="@string/battery_light_summary"
-            android:fragment="com.crdroid.settings.fragments.notifications.notificationlight.BatteryLightSettings" />
+            android:fragment="com.rising.settings.fragments.notifications.notificationlight.BatteryLightSettings" />
 
         <!-- Notification lights -->
         <Preference
@@ -170,7 +170,7 @@
             android:icon="@drawable/ic_led_on"
             android:title="@string/notification_light_title"
             android:summary="@string/notification_light_summary"
-            android:fragment="com.crdroid.settings.fragments.notifications.notificationlight.NotificationLightSettings" />
+            android:fragment="com.rising.settings.fragments.notifications.notificationlight.NotificationLightSettings" />
     </PreferenceCategory>
 
 </PreferenceScreen>

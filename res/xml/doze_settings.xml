@@ -18,12 +18,12 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/doze_display_title">
 
-    <com.crdroid.settings.preferences.SecureSettingSwitchPreference
+    <com.rising.settings.preferences.SecureSettingSwitchPreference
         android:key="doze_enabled"
         android:title="@string/doze_title"
         android:summary="@string/doze_summary" />
 
-    <com.crdroid.settings.preferences.SecureSettingSwitchPreference
+    <com.rising.settings.preferences.SecureSettingSwitchPreference
         android:key="doze_always_on"
         android:title="@string/doze_always_on_title"
         android:summary="@string/doze_always_on_summary" />
@@ -36,7 +36,7 @@
             android:action="org.lineageos.settings.device.DOZE_SETTINGS" />
     </lineageos.preference.RemotePreference>
 
-    <com.crdroid.settings.preferences.SecureSettingSwitchPreference
+    <com.rising.settings.preferences.SecureSettingSwitchPreference
         android:key="pulse_on_new_tracks"
         android:title="@string/pulse_on_new_tracks_title"
         android:summary="@string/pulse_on_new_tracks_summary" />
@@ -45,13 +45,13 @@
         android:key="edge_lighting"
         android:title="@string/pulse_ambient_light_title" >
 
-        <com.crdroid.settings.preferences.SecureSettingSwitchPreference
+        <com.rising.settings.preferences.SecureSettingSwitchPreference
             android:key="pulse_ambient_light"
             android:title="@string/pulse_ambient_light_title"
             android:summary="@string/pulse_ambient_light_summary"
             android:dependency="doze_enabled" />
 
-        <com.crdroid.settings.preferences.SecureSettingListPreference
+        <com.rising.settings.preferences.SecureSettingListPreference
             android:key="pulse_ambient_light_layout"
             android:title="@string/pulse_ambient_light_layout_title"
             android:entries="@array/pulse_ambient_light_layout_entries"
@@ -59,13 +59,13 @@
             android:defaultValue="0"
             android:dependency="pulse_ambient_light" />
 
-        <com.crdroid.settings.preferences.colorpicker.SecureSettingColorPickerPreference
+        <com.rising.settings.preferences.colorpicker.SecureSettingColorPickerPreference
             android:key="pulse_ambient_light_color"
             android:title="@string/pulse_ambient_light_color_title"
             android:dependency="pulse_ambient_light"
             android:defaultValue="0xFF3980FF" />
 
-        <com.crdroid.settings.preferences.SecureSettingSeekBarPreference
+        <com.rising.settings.preferences.SecureSettingSeekBarPreference
             android:key="pulse_ambient_light_duration"
             android:title="@string/pulse_ambient_light_duration_title"
             android:summary="@string/pulse_ambient_light_duration_summary"
@@ -81,37 +81,37 @@
         android:key="doze_sensor"
         android:title="@string/doze_sensor_title" >
 
-        <com.crdroid.settings.preferences.SecureSettingSwitchPreference
+        <com.rising.settings.preferences.SecureSettingSwitchPreference
             android:key="doze_tilt_gesture"
             android:defaultValue="false"
             android:title="@string/tilt_title"
             android:summary="@string/tilt_summary" />
 
-        <com.crdroid.settings.preferences.SecureSettingSwitchPreference
+        <com.rising.settings.preferences.SecureSettingSwitchPreference
             android:key="doze_pick_up_gesture"
             android:defaultValue="false"
             android:title="@string/pickup_title"
             android:summary="@string/pickup_summary" />
 
-        <com.crdroid.settings.preferences.SecureSettingSwitchPreference
+        <com.rising.settings.preferences.SecureSettingSwitchPreference
             android:key="doze_handwave_gesture"
             android:defaultValue="false"
             android:title="@string/handwave_title"
             android:summary="@string/handwave_summary" />
 
-        <com.crdroid.settings.preferences.SecureSettingSwitchPreference
+        <com.rising.settings.preferences.SecureSettingSwitchPreference
             android:key="doze_pocket_gesture"
             android:defaultValue="false"
             android:title="@string/pocket_title"
             android:summary="@string/pocket_summary" />
 
-        <com.crdroid.settings.preferences.SecureSettingSwitchPreference
+        <com.rising.settings.preferences.SecureSettingSwitchPreference
             android:key="raise_to_wake_gesture"
             android:defaultValue="false"
             android:title="@string/raise_to_wake_title"
             android:summary="@string/raise_to_wake_summary" />
 
-        <com.crdroid.settings.preferences.SecureSettingSeekBarPreference
+        <com.rising.settings.preferences.SecureSettingSeekBarPreference
             android:key="doze_gesture_vibrate"
             android:title="@string/doze_vibrate"
             android:summary="@string/doze_vibrate_summary"

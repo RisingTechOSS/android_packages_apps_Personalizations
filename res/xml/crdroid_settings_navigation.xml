@@ -26,7 +26,7 @@
         android:title="@string/navbar_visibility_title"
         android:summary="@string/navbar_visibility_summary" />
 
-    <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+    <com.rising.settings.preferences.SystemSettingSwitchPreference
         android:key="pixel_nav_animation"
         android:icon="@drawable/ic_google_circles"
         android:title="@string/pixel_navbar_anim_title"
@@ -46,7 +46,7 @@
             android:summary="@string/navbar_arrow_keys_summary"
             android:defaultValue="false" />
 
-        <com.crdroid.settings.preferences.SecureSettingListPreference
+        <com.rising.settings.preferences.SecureSettingListPreference
             android:key="navbar_layout_views"
             android:icon="@drawable/ic_navbar_layout"
             android:title="@string/navbar_layout_title"
@@ -55,7 +55,7 @@
             android:entryValues="@array/navbar_layout_values"
             android:defaultValue="default" />
 
-        <com.crdroid.settings.preferences.SecureSettingSwitchPreference
+        <com.rising.settings.preferences.SecureSettingSwitchPreference
             android:key="navbar_inverse_layout"
             android:icon="@drawable/ic_navbar_layout"
             android:title="@string/navbar_invert_layout_title"

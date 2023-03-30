@@ -31,7 +31,7 @@
         android:id="@+id/crdroid_content"
         android:orientation="vertical">
 
-        <com.crdroid.settings.PagerSlidingTabStrip
+        <com.rising.settings.PagerSlidingTabStrip
             android:id="@+id/tabs"
             app:pstsShouldExpand="false"
             app:pstsTabTextFontFamily="@*android:string/config_headlineFontFamilyMedium"

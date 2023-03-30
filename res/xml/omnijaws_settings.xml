@@ -25,7 +25,7 @@
      <com.android.settingslib.widget.FooterPreference
             android:title="@string/weather_icon_pack_info_title" />
         
-      <com.crdroid.settings.preferences.SystemSettingListPreference
+      <com.rising.settings.preferences.SystemSettingListPreference
         android:key="kg_show_weather_temp"
         android:icon="@drawable/ic_weather"
         android:title="@string/kg_weather_title"
@@ -34,7 +34,7 @@
         android:summary="%s"
         android:entryValues="@array/kg_launcher_weather_values" />
 
-      <com.crdroid.settings.preferences.SystemSettingListPreference
+      <com.rising.settings.preferences.SystemSettingListPreference
         android:key="qs_show_weather_temp"
         android:icon="@drawable/ic_weather"
         android:title="@string/qs_weather_title"
@@ -43,7 +43,7 @@
         android:summary="%s"
         android:entryValues="@array/kg_launcher_weather_values" />
 
-      <com.crdroid.settings.preferences.SystemSettingListPreference
+      <com.rising.settings.preferences.SystemSettingListPreference
         android:key="qs_weather_position"
         android:icon="@drawable/ic_cog"
         android:title="@string/qsweather_dialog_title"

@@ -20,7 +20,7 @@
     android:title="@string/sensor_block_title">
 
     <!-- Master switch -->
-    <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+    <com.rising.settings.preferences.SystemSettingSwitchPreference
         android:key="sensor_block"
         android:title="@string/sensor_block_title"
         android:summary="@string/sensor_block_summary"

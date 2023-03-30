@@ -43,22 +43,22 @@
         android:title="@string/battery_light_list_title"
         android:dependency="battery_light_enabled" >
 
-        <com.crdroid.settings.fragments.notifications.notificationlight.ApplicationLightPreference
+        <com.rising.settings.fragments.notifications.notificationlight.ApplicationLightPreference
             android:key="low_color"
             android:title="@string/battery_light_low_color_title"
             android:persistent="false" />
 
-        <com.crdroid.settings.fragments.notifications.notificationlight.ApplicationLightPreference
+        <com.rising.settings.fragments.notifications.notificationlight.ApplicationLightPreference
             android:key="medium_color"
             android:title="@string/battery_light_medium_color_title"
             android:persistent="false" />
 
-        <com.crdroid.settings.fragments.notifications.notificationlight.ApplicationLightPreference
+        <com.rising.settings.fragments.notifications.notificationlight.ApplicationLightPreference
             android:key="full_color"
             android:title="@string/battery_light_full_color_title"
             android:persistent="false" />
 
-        <com.crdroid.settings.fragments.notifications.notificationlight.ApplicationLightPreference
+        <com.rising.settings.fragments.notifications.notificationlight.ApplicationLightPreference
             android:key="really_full_color"
             android:title="@string/battery_light_really_full_color_title"
             android:persistent="false" />
@@ -69,12 +69,12 @@
         android:title="@string/light_brightness_title"
         android:dependency="battery_light_enabled" >
 
-        <com.crdroid.settings.fragments.notifications.notificationlight.BatteryBrightnessPreference
+        <com.rising.settings.fragments.notifications.notificationlight.BatteryBrightnessPreference
             android:key="battery_light_brightness_level"
             android:title="@string/battery_light_brightness_normal"
             android:dependency="battery_light_enabled" />
 
-        <com.crdroid.settings.fragments.notifications.notificationlight.BatteryBrightnessZenPreference
+        <com.rising.settings.fragments.notifications.notificationlight.BatteryBrightnessZenPreference
             android:key="battery_light_brightness_level_zen"
             android:title="@string/battery_light_brightness_zen"
             android:dependency="battery_light_enabled" />

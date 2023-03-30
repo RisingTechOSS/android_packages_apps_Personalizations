@@ -4,7 +4,7 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/network_traffic_title">
 
-   <com.crdroid.settings.preferences.SystemSettingMainSwitchPreference
+   <com.rising.settings.preferences.SystemSettingMainSwitchPreference
         android:key="network_traffic_state"
         android:title="@string/network_traffic_master_switch_title"
         android:defaultValue="false" />
@@ -12,7 +12,7 @@
     <PreferenceCategory
         android:title="@string/network_options_title">
 
-        <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+        <com.rising.settings.preferences.SystemSettingSwitchPreference
             android:key="network_traffic_autohide_threshold"
             android:title="@string/network_traffic_autohide_title"
             android:summary="@string/network_traffic_autohide_summary"

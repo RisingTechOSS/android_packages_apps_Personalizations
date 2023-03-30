@@ -34,7 +34,7 @@
             settings:layout="@layout/arc_card_about_top"
             android:title="@string/about_settings_title"
             android:summary="@string/about_settings_summary"
-            android:fragment="com.crdroid.settings.fragments.About" />
+            android:fragment="com.rising.settings.fragments.About" />
 
       <!-- Buttons -->
         <Preference
@@ -42,7 +42,7 @@
             settings:layout="@layout/arc_card_about_middle"
             android:title="@string/button_title"
             android:summary="@string/buttons_settings_summary"
-            android:fragment="com.crdroid.settings.fragments.Buttons" />
+            android:fragment="com.rising.settings.fragments.Buttons" />
 
       <!-- Lockscreen -->
         <Preference
@@ -50,7 +50,7 @@
             settings:layout="@layout/arc_card_about_middle"
             android:title="@string/lockscreen_title"
             android:summary="@string/lockscreen_settings_summary"
-            android:fragment="com.crdroid.settings.fragments.LockScreen" />
+            android:fragment="com.rising.settings.fragments.LockScreen" />
             
         <!-- Misc -->
         <Preference
@@ -58,7 +58,7 @@
             settings:layout="@layout/arc_card_about_middle"
             android:title="@string/misc_title"
             android:summary="@string/misc_settings_summary"
-            android:fragment="com.crdroid.settings.fragments.Miscellaneous" />
+            android:fragment="com.rising.settings.fragments.Miscellaneous" />
 
         <!-- Navigation -->
         <Preference
@@ -66,7 +66,7 @@
             settings:layout="@layout/arc_card_about_middle"
             android:title="@string/navigation_title"
             android:summary="@string/nav_settings_summary"
-            android:fragment="com.crdroid.settings.fragments.Navigation" />
+            android:fragment="com.rising.settings.fragments.Navigation" />
 
         <!-- Notifications -->
         <Preference
@@ -74,7 +74,7 @@
             settings:layout="@layout/arc_card_about_middle"
             android:title="@string/notifications_title"
             android:summary="@string/notif_settings_summary"
-            android:fragment="com.crdroid.settings.fragments.Notifications" />
+            android:fragment="com.rising.settings.fragments.Notifications" />
 
         <!-- QuickSettings -->
         <Preference
@@ -82,7 +82,7 @@
             settings:layout="@layout/arc_card_about_middle"
             android:title="@string/quicksettings_title"
             android:summary="@string/qs_settings_summary"
-            android:fragment="com.crdroid.settings.fragments.QuickSettings" />
+            android:fragment="com.rising.settings.fragments.QuickSettings" />
 
         <!-- Sound -->
         <Preference
@@ -90,7 +90,7 @@
             settings:layout="@layout/arc_card_about_middle"
             android:title="@string/sound_title"
             android:summary="@string/sound_settings_summary"
-            android:fragment="com.crdroid.settings.fragments.Sound" />    
+            android:fragment="com.rising.settings.fragments.Sound" />    
 
         <!-- Statusbar -->
         <Preference
@@ -98,7 +98,7 @@
             settings:layout="@layout/arc_card_about_middle"
             android:title="@string/statusbar_title"
             android:summary="@string/sb_settings_summary"
-            android:fragment="com.crdroid.settings.fragments.StatusBar" />   
+            android:fragment="com.rising.settings.fragments.StatusBar" />   
  
         <!-- UserInterface -->
         <Preference
@@ -106,6 +106,6 @@
             settings:layout="@layout/arc_card_about_bottom"
             android:title="@string/ui_title"
             android:summary="@string/ui_settings_summary"
-            android:fragment="com.crdroid.settings.fragments.UserInterface" />
+            android:fragment="com.rising.settings.fragments.UserInterface" />
 
 </PreferenceScreen> 

@@ -18,20 +18,20 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/smart_charging_title">
 
-    <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+    <com.rising.settings.preferences.SystemSettingSwitchPreference
         android:key="smart_charging"
         android:title="@string/smart_charging_switch_title"
         android:summary="@string/smart_charging_summary"
         android:defaultValue="false" />
 
-    <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+    <com.rising.settings.preferences.SystemSettingSwitchPreference
         android:key="smart_charging_reset_stats"
         android:title="@string/smart_charging_reset_stats_title"
         android:summary="@string/smart_charging_reset_stats_summary"
         android:defaultValue="false"
         android:dependency="smart_charging" />
 
-    <com.crdroid.settings.preferences.SystemSettingSeekBarPreference
+    <com.rising.settings.preferences.SystemSettingSeekBarPreference
         android:key="smart_charging_level"
         android:title="@string/smart_charging_level_title"
         android:max="100"
@@ -40,7 +40,7 @@
         android:defaultValue="80"
         android:dependency="smart_charging" />
 
-    <com.crdroid.settings.preferences.SystemSettingSeekBarPreference
+    <com.rising.settings.preferences.SystemSettingSeekBarPreference
         android:key="smart_charging_resume_level"
         android:title="@string/smart_charging_resume_level_title"
         android:max="99"

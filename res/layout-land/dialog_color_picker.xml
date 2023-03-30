@@ -23,7 +23,7 @@
     android:padding="20dp"
     android:orientation="horizontal">
 
-    <com.crdroid.settings.preferences.colorpicker.ColorPickerView
+    <com.rising.settings.preferences.colorpicker.ColorPickerView
         android:id="@+id/color_picker_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -76,42 +76,42 @@
             android:layout_marginEnd="7dp"
             android:layout_marginTop="2dp">
 
-            <com.crdroid.settings.preferences.colorpicker.ColorPickerPanelView
+            <com.rising.settings.preferences.colorpicker.ColorPickerPanelView
                 android:id="@+id/white_panel"
                 android:layout_width="0px"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="6dp"
                 android:layout_weight="0.5" />
 
-            <com.crdroid.settings.preferences.colorpicker.ColorPickerPanelView
+            <com.rising.settings.preferences.colorpicker.ColorPickerPanelView
                 android:id="@+id/black_panel"
                 android:layout_width="0px"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="6dp"
                 android:layout_weight="0.5" />
 
-            <com.crdroid.settings.preferences.colorpicker.ColorPickerPanelView
+            <com.rising.settings.preferences.colorpicker.ColorPickerPanelView
                 android:id="@+id/cyan_panel"
                 android:layout_width="0px"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="6dp"
                 android:layout_weight="0.5" />
 
-            <com.crdroid.settings.preferences.colorpicker.ColorPickerPanelView
+            <com.rising.settings.preferences.colorpicker.ColorPickerPanelView
                 android:id="@+id/red_panel"
                 android:layout_width="0px"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="6dp"
                 android:layout_weight="0.5" />
 
-            <com.crdroid.settings.preferences.colorpicker.ColorPickerPanelView
+            <com.rising.settings.preferences.colorpicker.ColorPickerPanelView
                 android:id="@+id/green_panel"
                 android:layout_width="0px"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="6dp"
                 android:layout_weight="0.5" />
 
-            <com.crdroid.settings.preferences.colorpicker.ColorPickerPanelView
+            <com.rising.settings.preferences.colorpicker.ColorPickerPanelView
                 android:id="@+id/yellow_panel"
                 android:layout_width="0px"
                 android:layout_height="wrap_content"
@@ -133,7 +133,7 @@
             android:orientation="horizontal"
             android:layout_marginBottom="10dp">
 
-            <com.crdroid.settings.preferences.colorpicker.ColorPickerPanelView
+            <com.rising.settings.preferences.colorpicker.ColorPickerPanelView
                 android:id="@+id/old_color_panel"
                 android:layout_width="0px"
                 android:layout_height="fill_parent"
@@ -148,7 +148,7 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp" />
 
-            <com.crdroid.settings.preferences.colorpicker.ColorPickerPanelView
+            <com.rising.settings.preferences.colorpicker.ColorPickerPanelView
                 android:id="@+id/new_color_panel"
                 android:layout_width="0px"
                 android:layout_height="wrap_content"

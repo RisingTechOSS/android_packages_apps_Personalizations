@@ -25,13 +25,13 @@
         android:key="extras_category"
         android:title="@string/extras_title" >
 
-        <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+        <com.rising.settings.preferences.SystemSettingSwitchPreference
             android:key="hardware_keys_disable"
             android:icon="@drawable/ic_buttons"
             android:title="@string/hwkeys_disabled_title"
             android:summary="@string/hwkeys_disabled_summary" />
 
-        <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+        <com.rising.settings.preferences.SystemSettingSwitchPreference
             android:key="swap_capacitive_keys"
             android:icon="@drawable/ic_buttons"
             android:title="@string/swap_capacitive_keys_title"
@@ -53,7 +53,7 @@
             android:summary="@string/click_partial_screenshot_summary"
             android:defaultValue="false" />
 
-        <com.crdroid.settings.fragments.buttons.ButtonBacklightBrightness
+        <com.rising.settings.fragments.buttons.ButtonBacklightBrightness
             android:key="button_backlight"
             android:icon="@drawable/ic_backlight"
             android:title="@string/button_backlight_title"
@@ -61,7 +61,7 @@
             android:dialogTitle="@string/button_backlight_title"
             android:persistent="false" />
 
-        <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+        <com.rising.settings.preferences.SystemSettingSwitchPreference
             android:key="anbi_enabled"
             android:icon="@drawable/ic_anbi"
             android:title="@string/anbi_title"
@@ -79,7 +79,7 @@
             android:icon="@drawable/ic_settings_powermenu"
             android:title="@string/power_menu_title"
             android:summary="@string/power_menu_summary"
-            android:fragment="com.crdroid.settings.fragments.buttons.PowerMenuActions" />
+            android:fragment="com.rising.settings.fragments.buttons.PowerMenuActions" />
 
         <SwitchPreference
             android:key="power_end_call"
@@ -96,7 +96,7 @@
             android:defaultValue="false"
             lineage:requiresConfig="@*android:bool/config_supportLongPressPowerWhenNonInteractive" />
 
-        <com.crdroid.settings.preferences.LineageSystemSettingSeekBarPreference
+        <com.rising.settings.preferences.LineageSystemSettingSeekBarPreference
             android:key="torch_long_press_power_timeout"
             android:icon="@drawable/ic_timer_outline"
             android:title="@string/torch_long_press_power_timeout_title"

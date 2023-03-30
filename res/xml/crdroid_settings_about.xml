@@ -70,7 +70,7 @@
         android:summary="@string/changelog_crdroid_summary">
         <intent android:action="android.intent.action.MAIN"
              android:targetPackage="com.android.settings"
-             android:targetClass="com.crdroid.settings.fragments.about.ChangelogActivity"/>
+             android:targetClass="com.rising.settings.fragments.about.ChangelogActivity"/>
     </Preference>
 
     <!-- riceDroid Website -->

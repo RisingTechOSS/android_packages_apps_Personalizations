@@ -19,20 +19,20 @@
     <PreferenceCategory
         android:title="@string/ambient_text_category" />
 
-        <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+        <com.rising.settings.preferences.SystemSettingSwitchPreference
             android:key="ambient_text"
             android:title="@string/ambient_text_title"
             android:summary="@string/ambient_text_summary"
             android:defaultValue="false" />
 
-        <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+        <com.rising.settings.preferences.SystemSettingSwitchPreference
             android:key="ambient_text_animation"
             android:title="@string/ambient_text_animation_title"
             android:summary="@string/ambient_text_animation_summary"
             android:dependency="ambient_text"
             android:defaultValue="false" />
 
-        <com.crdroid.settings.preferences.SystemSettingEditTextPreference
+        <com.rising.settings.preferences.SystemSettingEditTextPreference
             android:key="ambient_text_string"
             android:title="@string/ambient_text_string_title"
             android:dependency="ambient_text"
@@ -49,13 +49,13 @@
             android:dependency="ambient_text"
             android:persistent="false" />
 
-        <com.crdroid.settings.preferences.colorpicker.ColorPickerPreference
+        <com.rising.settings.preferences.colorpicker.ColorPickerPreference
             android:key="ambient_text_color"
             android:title="@string/ambient_text_color_title"
             android:persistent="false"
             android:defaultValue="0xFFFFFFFF" />
 
-        <com.crdroid.settings.preferences.SystemSettingSeekBarPreference
+        <com.rising.settings.preferences.SystemSettingSeekBarPreference
             android:key="ambient_text_size"
             android:title="@string/ambient_text_size_title"
             android:max="100"
@@ -78,7 +78,7 @@
     <PreferenceCategory
         android:title="@string/ambient_image_category" />
 
-        <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+        <com.rising.settings.preferences.SystemSettingSwitchPreference
             android:key="ambient_image"
             android:title="@string/ambient_image_title"
             android:defaultValue="false" />

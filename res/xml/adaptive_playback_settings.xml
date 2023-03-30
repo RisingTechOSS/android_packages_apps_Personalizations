@@ -35,7 +35,7 @@
         android:key="adaptive_playback_intro_text"
         android:title="@string/adaptive_playback_intro_text"/>
 
-    <com.crdroid.settings.preferences.SystemSettingSeekBarPreference
+    <com.rising.settings.preferences.SystemSettingSeekBarPreference
         android:key="adaptive_playback_timeout"
         android:title="@string/adaptive_playback_timeout_title"
         android:defaultValue="30"
