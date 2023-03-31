@@ -27,4 +27,11 @@
         android:summary="@string/network_traffic_summary"
         android:fragment="com.rising.settings.fragments.NetworkTrafficSettings" />
 
+     <com.rising.settings.preferences.SystemSettingSwitchPreference
+        android:key="show_wifi_standard_icon"
+        android:icon="@drawable/ic_wifi"
+        android:title="@string/wifi_standard_icon_title"
+        android:summary="@string/wifi_standard_icon_summary"
+        android:defaultValue="false"/>
+
 </PreferenceScreen>
