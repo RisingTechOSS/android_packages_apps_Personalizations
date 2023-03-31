@@ -129,7 +129,7 @@
 
     <PreferenceCategory
         android:title="@string/misc_other_settings_title">
-        
+
    <com.rising.settings.preferences.GlobalSettingSwitchPreference
         android:key="pie_animation_style"
         android:icon="@drawable/ic_system_animation"

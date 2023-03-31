@@ -83,13 +83,12 @@
             android:summary="@string/sound_settings_summary"
             android:fragment="com.rising.settings.fragments.Sound" />    
 
-       <!-- Statusbar
+       <!-- Statusbar -->   
         <Preference
             android:icon="@drawable/ic_settings_statusbar"
-            settings:layout="@layout/arc_card_about_middle"
             android:title="@string/statusbar_title"
             android:summary="@string/sb_settings_summary"
-            android:fragment="com.rising.settings.fragments.StatusBar" />-->   
+            android:fragment="com.rising.settings.fragments.StatusBar" />
  
         <!--- UserInterface
         <Preference
