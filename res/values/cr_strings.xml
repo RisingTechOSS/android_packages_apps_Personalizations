@@ -1474,8 +1474,8 @@
     <!-- Toast app icon -->
     <string name="toast_icon_title">Toast app icon</string>
     <string name="toast_icon_summary">Display the app\'s icon corresponding with the toast</string>
-    
+
     <!-- Doze on charge -->
-    <string name="doze_on_charge_title">Always on when charging</string>
-    <string name="doze_on_charge_summary">Show doze screen all the time when charging</string>
+    <string name="doze_on_charge_title">Always show when charging</string>
+    <string name="doze_on_charge_summary">Display device is charging</string>
 </resources>

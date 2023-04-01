@@ -21,7 +21,7 @@
 
     <PreferenceCategory
         android:title="@string/misc_general_settings_title">
-        
+
     <!-- Gaming mode -->
     <Preference
         android:key="gaming_mode"
@@ -74,6 +74,12 @@
         android:title="@string/scarlet_services_title"
         android:summary="@string/scarlet_services_summary"
         android:fragment="com.rising.settings.fragments.misc.ScarletSettings"/> -->
+
+    <com.rising.settings.preferences.SecureSettingSwitchPreference
+        android:key="doze_on_charge"
+        android:icon="@drawable/ic_battery_charging"
+        android:title="@string/doze_on_charge_title"
+        android:summary="@string/doze_on_charge_summary" />
 
     <!-- Smart Charging -->
     <Preference
