@@ -90,12 +90,11 @@
             android:summary="@string/sb_settings_summary"
             android:fragment="com.rising.settings.fragments.StatusBar" />
  
-        <!--- UserInterface
+        <!--- UserInterface -->
         <Preference
             android:icon="@drawable/ic_color_bucket"
-            settings:layout="@layout/arc_card_about_bottom"
             android:title="@string/ui_title"
             android:summary="@string/ui_settings_summary"
-            android:fragment="com.rising.settings.fragments.UserInterface" /> -->
+            android:fragment="com.rising.settings.fragments.UserInterface" /> 
 
 </PreferenceScreen> 
