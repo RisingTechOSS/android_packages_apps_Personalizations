@@ -40,12 +40,12 @@
         android:summary="@string/reticker_colored_summary"
         android:dependency="reticker_status" />
 
-    <!--<com.rising.settings.preferences.SystemSettingSwitchPreference
+    <com.rising.settings.preferences.SystemSettingSwitchPreference
         android:key="notification_sound_vib_screen_on"
         android:icon="@drawable/ic_bell_ring"
         android:title="@string/notification_sound_vib_screen_on_title"
         android:summary="@string/notification_sound_vib_screen_on_summary"
-        android:defaultValue="true" /> -->
+        android:defaultValue="true" />
 
     <!-- Notification guts kill app button
     <com.rising.settings.preferences.SystemSettingSwitchPreference
