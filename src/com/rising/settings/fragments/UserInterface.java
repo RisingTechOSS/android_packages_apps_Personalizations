@@ -55,10 +55,7 @@ public class UserInterface extends SettingsPreferenceFragment implements
 
     private static final String KEY_QS_PANEL_STYLE  = "qs_panel_style";
     
-    private static final String KG_CUSTOM_CLOCK_COLOR_ENABLED = "kg_custom_clock_color_enabled";
-    
     private SystemSettingListPreference mQsStyle;
-    private SwitchPreference mKGCustomClockColor;
     private ThemeUtils mThemeUtils;
     private Handler mHandler;
 
@@ -76,13 +73,6 @@ public class UserInterface extends SettingsPreferenceFragment implements
 
         mQsStyle = (SystemSettingListPreference) findPreference(KEY_QS_PANEL_STYLE);
         mCustomSettingsObserver.observe();
-        
-        mKGCustomClockColor = (SwitchPreference) findPreference(KG_CUSTOM_CLOCK_COLOR_ENABLED);
-        boolean mKGCustomClockColorEnabled = Settings.Secure.getIntForUser(resolver,
-                Settings.Secure.KG_CUSTOM_CLOCK_COLOR_ENABLED, 0, UserHandle.USER_CURRENT) != 0;
-        mKGCustomClockColor.setChecked(mKGCustomClockColorEnabled);
-        mKGCustomClockColor.setOnPreferenceChangeListener(this);
-
     }
     
     private CustomSettingsObserver mCustomSettingsObserver = new CustomSettingsObserver(mHandler);
@@ -115,12 +105,7 @@ public class UserInterface extends SettingsPreferenceFragment implements
         if (preference == mQsStyle) {
             mCustomSettingsObserver.observe();
             return true;
-        } else if (preference == mKGCustomClockColor) {
-            boolean val = (Boolean) newValue;
-            Settings.Secure.putIntForUser(resolver,
-                Settings.Secure.KG_CUSTOM_CLOCK_COLOR_ENABLED, val ? 1 : 0, UserHandle.USER_CURRENT);
-            return true;
-	}
+        }
         return false;
     }
 

@@ -19,11 +19,21 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/lockscreen_title" >
 
-    <com.rising.settings.preferences.SecureSettingSwitchPreference
-        android:key="pulse_on_new_tracks"
-        android:icon="@drawable/ic_music_note"
-        android:title="@string/pulse_on_new_tracks_title"
-        android:summary="@string/pulse_on_new_tracks_summary" />
+    <!-- Clock Font style -->
+    <Preference
+        android:key="android.theme.customization.clock.fonts"
+        android:icon="@drawable/ic_font"
+        android:title="@string/theme_customization_clock_font_title"
+        android:summary="@string/theme_customization_clock_font_summary"
+        android:fragment="com.rising.settings.fragments.ui.ClockFontsPicker"/>
+
+    <!-- Date Font style -->
+    <Preference
+        android:key="android.theme.customization.date.fonts"
+        android:icon="@drawable/ic_font"
+        android:title="@string/theme_customization_date_font_title"
+        android:summary="@string/theme_customization_date_font_summary"
+        android:fragment="com.rising.settings.fragments.ui.DateFontsPicker"/>
 
     <Preference
         android:key="edge_light_settings"
@@ -31,5 +41,33 @@
         android:title="@string/edge_light_title"
         android:summary="@string/edge_light_summary"
         android:fragment="com.rising.settings.fragments.misc.doze.EdgeLightSettings" />
+
+    <com.rising.settings.preferences.SecureSettingSwitchPreference
+        android:key="kg_custom_clock_color_enabled"
+        android:icon="@drawable/ic_color_bucket"
+        android:title="@string/kg_custom_clock_color_enabled_title"
+        android:defaultValue="false" />
+
+   <com.rising.settings.preferences.colorpicker.SecureSettingColorPickerPreference
+        android:key="kg_custom_clock_color"
+        android:icon="@drawable/ic_color_bucket"
+        android:title="@string/kg_custom_clock_color_title"
+        android:dependency="kg_custom_clock_color_enabled"
+        android:defaultValue="0xFFFFFFFF"/>
+
+    <com.rising.settings.preferences.SystemSettingListPreference
+        android:key="clock_use_custom_format"
+        android:icon="@drawable/ic_lock_clock"
+        android:title="@string/clock_use_single_line_title"
+        android:entries="@array/clock_use_single_line_entries"
+        android:entryValues="@array/clock_use_single_line_values"
+        android:summary="%s"
+        android:defaultValue="0" />
+
+    <com.rising.settings.preferences.SecureSettingSwitchPreference
+        android:key="pulse_on_new_tracks"
+        android:icon="@drawable/ic_music_note"
+        android:title="@string/pulse_on_new_tracks_title"
+        android:summary="@string/pulse_on_new_tracks_summary" />
 
 </PreferenceScreen>
