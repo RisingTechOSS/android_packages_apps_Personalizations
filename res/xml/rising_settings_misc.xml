@@ -51,7 +51,7 @@
         android:summary="@string/gms_enabled_summary"
         android:fragment="com.rising.settings.fragments.misc.GmsSwitch"/> -->
 
-    <!-- Parallel space
+    <!-- Parallel space-->
     <Preference
         android:key="parallel_space"
         android:icon="@drawable/ic_parallel_space"
@@ -60,20 +60,9 @@
         <intent
             android:targetPackage="ink.kscope.parallelspace"
             android:targetClass="ink.kscope.parallelspace.MainActivity" /> 
-    </Preference>-->
+    </Preference>
 
     </PreferenceCategory>
-
-    <!-- Display Cutout
-    <Preference
-        android:key="display_cutout_force_fullscreen_settings"
-        android:icon="@drawable/ic_fullscreen"
-        android:title="@string/display_cutout_force_fullscreen_title"
-        android:summary="@string/display_cutout_force_fullscreen_summary">
-        <intent android:action="android.intent.action.MAIN"
-             android:targetPackage="com.android.settings"
-             android:targetClass="com.rising.settings.fragments.ui.DisplayCutoutForceFullscreenActivity"/>
-    </Preference> -->
 
     <!-- Scarlet Services
     <Preference
