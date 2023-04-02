@@ -38,13 +38,12 @@
             android:summary="@string/buttons_settings_summary"
             android:fragment="com.rising.settings.fragments.Buttons" /> -->
 
-      <!-- Lockscreen
+      <!-- Lockscreen -->
         <Preference
             android:icon="@drawable/ic_settings_lockscreens"
-            settings:layout="@layout/arc_card_about_middle"
             android:title="@string/lockscreen_title"
             android:summary="@string/lockscreen_settings_summary"
-            android:fragment="com.rising.settings.fragments.LockScreen" /> -->
+            android:fragment="com.rising.settings.fragments.LockScreen" />
             
         <!-- Misc -->
         <Preference
