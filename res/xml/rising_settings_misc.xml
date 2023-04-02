@@ -35,6 +35,14 @@
             android:targetClass="io.chaldeaprjkt.gamespace.settings.SettingsActivity" />
     </Preference>
 
+    <!-- Google services -->
+    <Preference
+        android:key="gms_enabled_settings"
+        android:icon="@drawable/ic_google"
+        android:title="@string/gms_enabled_title"
+        android:summary="@string/gms_enabled_summary"
+        android:fragment="com.rising.settings.fragments.misc.GmsSwitch"/>
+
     <!-- Google services 
     <Preference
         android:key="gms_enabled_settings"
