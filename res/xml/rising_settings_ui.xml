@@ -36,6 +36,14 @@
         android:summary="@string/theme_customization_icon_pack_summary"
         android:fragment="com.rising.settings.fragments.ui.StatusbarIcons"/>
 
+    <!-- Monet Theme Engine -->
+    <Preference
+        android:key="monet_engine"
+        android:icon="@drawable/ic_themes"
+        android:title="@string/monet_title"
+        android:summary="@string/monet_summary"
+        android:fragment="com.rising.settings.fragments.ui.MonetSettings" />
+
     <!-- Navbar Style -->
     <Preference
         android:key="android.theme.customization.navbar"
