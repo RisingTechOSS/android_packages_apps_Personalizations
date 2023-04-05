@@ -62,6 +62,12 @@
             android:targetClass="ink.kscope.parallelspace.MainActivity" /> 
     </Preference>
 
+  <Preference
+        android:key="omnijaws_settings"
+        android:icon="@drawable/ic_weather"
+        android:title="@string/qs_weather_settings_title"
+        android:summary="@string/qs_weather_settings_summary"
+        android:fragment="com.rising.settings.fragments.misc.OmniJawsSettings" />
     </PreferenceCategory>
 
     <!-- Scarlet Services
