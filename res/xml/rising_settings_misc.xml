@@ -43,14 +43,6 @@
         android:summary="@string/gms_enabled_summary"
         android:fragment="com.rising.settings.fragments.misc.GmsSwitch"/>
 
-    <!-- Google services 
-    <Preference
-        android:key="gms_enabled_settings"
-        android:icon="@drawable/ic_google"
-        android:title="@string/gms_enabled_title"
-        android:summary="@string/gms_enabled_summary"
-        android:fragment="com.rising.settings.fragments.misc.GmsSwitch"/> -->
-
     <!-- Parallel space-->
     <Preference
         android:key="parallel_space"
@@ -77,12 +69,6 @@
         android:title="@string/scarlet_services_title"
         android:summary="@string/scarlet_services_summary"
         android:fragment="com.rising.settings.fragments.misc.ScarletSettings"/> -->
-
-    <com.rising.settings.preferences.SecureSettingSwitchPreference
-        android:key="doze_on_charge"
-        android:icon="@drawable/ic_battery_charging"
-        android:title="@string/doze_on_charge_title"
-        android:summary="@string/doze_on_charge_summary" />
 
     <!-- Smart Charging -->
     <Preference
@@ -163,13 +149,5 @@
         android:title="@string/pocket_judge_title"
         android:summary="@string/pocket_judge_summary"
         android:defaultValue="false" /> -->
-
-    <!-- Weather
-    <Preference
-        android:key="omnijaws_settings"
-        android:icon="@drawable/ic_weather"
-        android:title="@string/qs_weather_settings_title"
-        android:summary="@string/qs_weather_settings_summary"
-        android:fragment="com.rising.settings.fragments.OmniJawsSettings" /> -->
 
 </PreferenceScreen>
