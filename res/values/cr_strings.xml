@@ -1491,4 +1491,8 @@
     <string name="qs_header_image_title">QS Header Image</string>
     <string name="qs_header_random_image_title">QS Header Random Image</string>
     <string name="qs_header_random_image_summary">Enable random QS header image</string>
+  
+    <!-- Colored QS notification icons -->  
+    <string name="qs_colored_icons_title">Colored QS notification icons</string>
+    <string name="qs_colored_icons_summary">Show colored app icon instead of monochrome icons</string>
 </resources>

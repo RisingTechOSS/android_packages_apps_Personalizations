@@ -27,6 +27,13 @@
         android:summary="@string/alert_slider_notifications_summary"
         android:defaultValue="true" /> -->
 
+     <com.rising.settings.preferences.SystemSettingSwitchPreference
+        android:key="qs_colored_icons"
+        android:icon="@drawable/ic_shapes"
+        android:title="@string/qs_colored_icons_title"
+        android:summary="@string/qs_colored_icons_summary"
+        android:defaultValue="false" />
+
     <com.rising.settings.preferences.SystemSettingSwitchPreference
         android:key="reticker_status"
         android:icon="@drawable/ic_message_fast"
