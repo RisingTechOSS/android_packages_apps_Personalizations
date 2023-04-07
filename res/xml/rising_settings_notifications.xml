@@ -31,7 +31,8 @@
         android:key="reticker_status"
         android:icon="@drawable/ic_message_fast"
         android:title="@string/reticker_title"
-        android:summary="@string/reticker_summary" />
+        android:summary="@string/reticker_summary"
+        android:defaultValue="true" />
 
     <com.rising.settings.preferences.SystemSettingSwitchPreference
         android:key="reticker_colored"
