@@ -47,6 +47,29 @@
         android:summary="@string/notification_sound_vib_screen_on_summary"
         android:defaultValue="true" />
 
+    <com.rising.settings.preferences.SystemSettingSwitchPreference
+        android:key="media_artwork_blur_enabled"
+        android:icon="@drawable/ic_blur"
+        android:title="@string/artwork_media_background_enable_blur_title"
+        android:defaultValue="false" />
+
+    <com.rising.settings.preferences.SystemSettingSeekBarPreference
+        android:key="media_artwork_blur_radius"
+        android:icon="@drawable/ic_custom_seekbar_plus"
+        android:title="@string/artwork_media_background_blur_radius_title"
+        android:dependency="media_artwork_blur_enabled" 
+        android:defaultValue="1"
+        android:max="125"
+        settings:min="5" />
+
+    <com.rising.settings.preferences.SystemSettingSeekBarPreference
+        android:key="media_artwork_fade_percent"
+        android:icon="@drawable/ic_custom_seekbar_plus"
+        android:title="@string/media_artwork_fade_percent_title"
+        android:defaultValue="30"
+        android:max="80"
+        settings:min="1" />
+
     <!-- Notification guts kill app button
     <com.rising.settings.preferences.SystemSettingSwitchPreference
         android:key="notification_guts_kill_app_button"
