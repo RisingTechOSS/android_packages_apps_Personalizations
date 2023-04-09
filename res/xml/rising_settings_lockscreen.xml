@@ -35,6 +35,39 @@
         android:summary="@string/edge_light_summary"
         android:fragment="com.rising.settings.fragments.misc.doze.EdgeLightSettings" />
 
+     <lineageos.preference.LineageSecureSettingSwitchPreference
+        android:key="lockscreen_media_metadata"
+        android:icon="@drawable/ic_movie"
+        android:title="@string/lockscreen_media_art_title"
+        android:defaultValue="false" />
+
+    <com.rising.settings.preferences.SystemSettingListPreference
+        android:key="lockscreen_albumart_filter"
+        android:icon="@drawable/ic_movie"
+        android:title="@string/lockscreen_albumart_filter_title"
+        android:entries="@array/lockscreen_albumart_filter_entries"
+        android:entryValues="@array/lockscreen_albumart_filter_values"
+        android:dependency="lockscreen_media_metadata"
+        android:defaultValue="0" />
+
+     <com.rising.settings.preferences.SystemSettingSeekBarPreference
+        android:key="ls_media_filter_blur_radius"
+        android:icon="@drawable/ic_blur"
+        android:title="@string/lockscreen_albumart_filter_blur_radius_title"
+        android:dependency="lockscreen_media_metadata"
+        android:defaultValue="125"
+        android:max="125"
+        settings:min="2" />
+
+     <com.rising.settings.preferences.SystemSettingSeekBarPreference
+        android:key="ls_media_artwork_fade_percent"
+        android:icon="@drawable/ic_color_bucket"
+        android:title="@string/ls_media_artwork_fade_percent_title"
+        android:dependency="lockscreen_media_metadata"
+        android:defaultValue="30"
+        android:max="80"
+        settings:min="1" />
+
     <com.rising.settings.preferences.SecureSettingSwitchPreference
         android:key="pulse_on_new_tracks"
         android:icon="@drawable/ic_music_note"
