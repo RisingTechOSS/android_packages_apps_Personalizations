@@ -868,14 +868,14 @@
         <item>5</item>
     </string-array>
     
-    <string-array name="scarlet_aggressive_idle_mode_ringer_entries">
-        <item>@string/scarlet_aggressive_idle_mode_ringer_off_title</item>
-        <item>@string/scarlet_aggressive_idle_mode_ringer_vibrate_title</item>
-        <item>@string/scarlet_aggressive_idle_mode_ringer_dnd_title</item>
-        <item>@string/scarlet_aggressive_idle_mode_ringer_silent_title</item>
-        <item>@string/scarlet_aggressive_idle_mode_ringer_normal</item>
+    <string-array name="system_manager_aggressive_idle_mode_ringer_entries">
+        <item>@string/system_manager_aggressive_idle_mode_ringer_off_title</item>
+        <item>@string/system_manager_aggressive_idle_mode_ringer_vibrate_title</item>
+        <item>@string/system_manager_aggressive_idle_mode_ringer_dnd_title</item>
+        <item>@string/system_manager_aggressive_idle_mode_ringer_silent_title</item>
+        <item>@string/system_manager_aggressive_idle_mode_ringer_normal</item>
     </string-array>
-    <string-array name="scarlet_aggressive_idle_mode_ringer_values" translatable="false">
+    <string-array name="system_manager_aggressive_idle_mode_ringer_values" translatable="false">
         <item>0</item>
         <item>1</item>
         <item>2</item>
@@ -1092,5 +1092,37 @@
         <item>home_wallpaper</item>
         <item>lock_wallpaper</item>
         <item>preset</item>
+    </string-array>
+    
+    <!-- Game Boost Modes  -->
+    <string-array name="game_boost_mode_entries">
+        <item>Disabled</item>
+        <item>SUSTAINED PERFORMANCE</item>
+        <item>INTERACTIVE</item>
+        <item>FIXED_PERFORMANCE</item>
+    </string-array>
+
+    <string-array name="game_boost_mode_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    
+    <!-- Power Modes  -->
+    <string-array name="power_mode_entries">
+        <item>System Default</item>
+        <item>LOW POWER</item>
+        <item>SUSTAINED PERFORMANCE</item>
+        <item>INTERACTIVE</item>
+        <item>FIXED_PERFORMANCE</item>
+    </string-array>
+
+    <string-array name="power_mode_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
     </string-array>
 </resources>

@@ -1216,29 +1216,35 @@
     <string name="qsweather_settings_title">QuickSettings Weather</string>
     <string name="qsweather_settings_summary">Setup quicksettings weather views</string>
 
-    <!-- Scarlet Manager -->
-    <string name="scarlet_services_title">Scarlet Services</string>
-    <string name="scarlet_services_summary">Optimize device\'s health and performance</string>
-    <string name="scarlet_system_manager_title">Scarlet System Manager</string>
-    <string name="scarlet_system_manager_summary">Optimize device power consumption and performance while device is idle</string>
-    <string name="scarlet_system_boost_title">Scarlet System Boost</string>
-    <string name="scarlet_system_boost_summary">Boost system resources for faster and fluid user experience</string>
-    <string name="scarlet_aggressive_idle_mode_title">Scarlet aggressive idle mode</string>
-    <string name="scarlet_aggressive_idle_mode_summary">Enable aggressive idle mode features</string>
-    <string name="scarlet_aggressive_idle_mode_ringer_title">Screen off ringer mode</string>
-    <string name="scarlet_aggressive_idle_mode_ringer_off_title">Do not change</string>
-    <string name="scarlet_aggressive_idle_mode_ringer_vibrate_title">Vibrate</string>
-    <string name="scarlet_aggressive_idle_mode_ringer_dnd_title">Do Not Disturb</string>
-    <string name="scarlet_aggressive_idle_mode_ringer_silent_title">Silent</string>
-    <string name="scarlet_aggressive_idle_mode_ringer_normal">Ring Mode</string>
-    <string name="scarlet_aggressive_idle_mode_wifi_toggle_title">Turn off Wi-Fi</string>
-    <string name="scarlet_aggressive_idle_mode_wifi_toggle_summary">Disable Wi-Fi on screen off when Scarlet aggressive idle mode is enabled</string>
-    <string name="scarlet_aggressive_idle_mode_bluetooth_toggle_title">Turn off Bluetooth</string>
-    <string name="scarlet_aggressive_idle_mode_bluetooth_toggle_summary">Disable Bluetooth on screen off when Scarlet aggressive idle mode is enabled</string>
-    <string name="scarlet_aggressive_idle_mode_cellular_toggle_title">Turn off Mobile data</string>
-    <string name="scarlet_aggressive_idle_mode_cellular_toggle_summary">Disable Mobile data on screen off when Scarlet aggressive idle mode is enabled</string>
-    <string name="scarlet_aggressive_idle_mode_location_toggle_title">Turn off Location</string>
-    <string name="scarlet_aggressive_idle_mode_location_toggle_summary">Disable Location on screen off when Scarlet aggressive idle mode is enabled</string>
+    <!-- System Manager -->
+    <string name="system_manager_services_title">System Manager</string>
+    <string name="system_manager_services_summary">Optimize device power consumption and performance</string>
+    <string name="system_manager_game_boost_level_title">System Manager Game Boost Mode</string>
+    <string name="system_manager_runtime_power_mode_title">System Manager Power Mode</string>
+    <string name="system_manager_runtime_power_mode_summary">Configure default system power mode</string>
+    <string name="system_manager_aggressive_idle_sensor_block">System Manager Idle Sensor Block</string>
+    <string name="system_manager_aggressive_idle_mode_title">System Manager Aggressive Idle mode</string>
+    <string name="system_manager_aggressive_idle_mode_summary">Enable Aggressive Idle mode features</string>
+    <string name="system_manager_aggressive_idle_mode_ringer_title">Screen off ringer mode</string>
+    <string name="system_manager_aggressive_idle_mode_ringer_off_title">Do not change</string>
+    <string name="system_manager_aggressive_idle_mode_ringer_vibrate_title">Vibrate</string>
+    <string name="system_manager_aggressive_idle_mode_ringer_dnd_title">Do Not Disturb</string>
+    <string name="system_manager_aggressive_idle_mode_ringer_silent_title">Silent</string>
+    <string name="system_manager_aggressive_idle_mode_ringer_normal">Ring Mode</string>
+    <string name="system_manager_aggressive_idle_mode_ringer_timeout_title">Ringer Mode change timeout</string>
+    <string name="system_manager_aggressive_idle_mode_wifi_toggle_title">Turn off Wi-Fi</string>
+    <string name="system_manager_aggressive_idle_mode_wifi_toggle_summary">Disable Wi-Fi on screen off when System Manager Aggressive Idle mode is enabled</string>
+    <string name="system_manager_aggressive_idle_mode_wifi_timeout_title">Turn off Wi-Fi timeout</string>
+    <string name="system_manager_aggressive_idle_mode_bluetooth_toggle_title">Turn off Bluetooth</string>
+    <string name="system_manager_aggressive_idle_mode_bluetooth_toggle_summary">Disable Bluetooth on screen off when System Manager Aggressive Idle mode is enabled</string>
+    <string name="system_manager_aggressive_idle_mode_bluetooth_timeout_title">Turn off Bluetooth timeout</string>
+    <string name="system_manager_aggressive_idle_mode_cellular_toggle_title">Turn off Mobile data</string>
+    <string name="system_manager_aggressive_idle_mode_cellular_toggle_summary">Disable Mobile data on screen off when System Manager Aggressive Idle mode is enabled</string>
+    <string name="system_manager_aggressive_idle_mode_cellular_timeout_title">Turn off Mobile data timeout</string>
+    <string name="system_manager_aggressive_idle_mode_location_toggle_title">Turn off Location</string>
+    <string name="system_manager_aggressive_idle_mode_location_toggle_summary">Disable Location on screen off when System Manager Aggressive Idle mode is enabled</string>
+    <string name="system_manager_aggressive_idle_mode_location_timeout_title">Turn off Location timeout</string>
+    <string name="system_manager_info_title">Tips\u003a \n\n1. Game Boost will only activate when a game is active - requires app to be added on GameSpace list.\n\n2. Runtime power mode will override system power mode.\n\n3. Idle Sensor Block will prevent certain motion sensors from working properly.</string>
 
     <!-- Quick settings styles -->
     <string name="qs_styles_title">Quick Settings Styles</string>

@@ -54,22 +54,6 @@
             android:targetClass="ink.kscope.parallelspace.MainActivity" /> 
     </Preference>
 
-  <Preference
-        android:key="omnijaws_settings"
-        android:icon="@drawable/ic_weather"
-        android:title="@string/qs_weather_settings_title"
-        android:summary="@string/qs_weather_settings_summary"
-        android:fragment="com.rising.settings.fragments.misc.OmniJawsSettings" />
-    </PreferenceCategory>
-
-    <!-- Scarlet Services
-    <Preference
-        android:key="scarlet_settings"
-        android:icon="@drawable/ic_scarlet"
-        android:title="@string/scarlet_services_title"
-        android:summary="@string/scarlet_services_summary"
-        android:fragment="com.rising.settings.fragments.misc.ScarletSettings"/> -->
-
     <!-- Smart Charging -->
     <Preference
         android:key="smart_charging"
@@ -78,6 +62,24 @@
         android:summary="@string/smart_charging_summary"
         android:fragment="com.rising.settings.fragments.misc.SmartCharging"/>
        
+
+    <!-- System Manager Services -->
+    <Preference
+        android:key="system_manager_settings"
+        android:icon="@drawable/ic_battery_charging_80"
+        android:title="@string/system_manager_services_title"
+        android:summary="@string/system_manager_services_summary"
+        android:fragment="com.rising.settings.fragments.misc.SystemManagerSettings"/> 
+
+   <Preference
+        android:key="omnijaws_settings"
+        android:icon="@drawable/ic_weather"
+        android:title="@string/qs_weather_settings_title"
+        android:summary="@string/qs_weather_settings_summary"
+        android:fragment="com.rising.settings.fragments.misc.OmniJawsSettings" />
+
+    </PreferenceCategory>
+
     <!-- Smart Pixels
     <Preference
         android:key="smart_pixels"
