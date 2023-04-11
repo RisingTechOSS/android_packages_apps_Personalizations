@@ -77,7 +77,17 @@
         android:title="@string/theme_customization_icon_shape_title"
         android:summary="@string/theme_customization_icon_shape_summary"
         android:fragment="com.rising.settings.fragments.ui.IconShapes"/>
-         
+   
+    <!-- Volume Styles -->      
+    <com.rising.settings.preferences.SystemSettingListPreference
+         android:key="custom_volume_styles"
+         android:title="@string/volume_style_title"
+         android:icon="@drawable/ic_settings_sound"
+         android:entries="@array/volume_styles_entries"
+         android:entryValues="@array/volume_styles_values"
+         android:summary="%s"
+         android:defaultValue="0" />
+
     <!-- Wifi icon style -->
     <Preference
         android:key="android.theme.customization.wifi_icon"
