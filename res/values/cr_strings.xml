@@ -319,7 +319,7 @@
     <string name="system_styles_summary">Customize system user interface</string>
     <string name="lockscreen_styles_title">Lockscreen styles</string>
     <string name="lockscreen_styles_summary">Customize lockscreen user interface</string>
-    <string name="settings_styles_title">Settings styles</string>
+    <string name="settings_styles_title">Settings Interface</string>
     <string name="settings_styles_summary">Customize settings user interface</string>
 
     <!-- Monet Engine -->
@@ -1501,4 +1501,12 @@
     <!-- Colored QS notification icons -->  
     <string name="qs_colored_icons_title">Colored QS notification icons</string>
     <string name="qs_colored_icons_summary">Show colored app icon instead of monochrome icons</string>
+    
+    <!-- Ignore window secure -->
+    <string name="ignore_window_secure_title">Ignore secure window flag</string>
+    <string name="ignore_window_secure_summary">Remove screenshot and screenrecord limits for all apps. This can be convenient in some cases but may lead to privacy leaks.</string>
+    
+    <!-- Notch: Full screen apps -->
+    <string name="search">Search</string>
+    <string name="search_apps">Search apps</string>
 </resources>

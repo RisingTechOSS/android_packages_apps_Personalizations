@@ -27,6 +27,7 @@
         <Preference
             android:icon="@drawable/ic_settings_about"
             android:title="@string/about_settings_title"
+            settings:layout="@layout/arc_card_about_top"
             android:summary="@string/about_settings_summary"
             android:fragment="com.rising.settings.fragments.About" />
 
@@ -42,6 +43,7 @@
         <Preference
             android:icon="@drawable/ic_settings_lockscreens"
             android:title="@string/lockscreen_title"
+            settings:layout="@layout/arc_card_about_middle"
             android:summary="@string/lockscreen_settings_summary"
             android:fragment="com.rising.settings.fragments.LockScreen" />
             
@@ -49,6 +51,7 @@
         <Preference
             android:icon="@drawable/ic_settings_miscs"
             android:title="@string/misc_title"
+            settings:layout="@layout/arc_card_about_middle"
             android:summary="@string/misc_settings_summary"
             android:fragment="com.rising.settings.fragments.Miscellaneous" />
 
@@ -64,6 +67,7 @@
         <Preference
             android:icon="@drawable/ic_dashboard_notifications"
             android:title="@string/notifications_title"
+            settings:layout="@layout/arc_card_about_middle"
             android:summary="@string/notif_settings_summary"
             android:fragment="com.rising.settings.fragments.Notifications" />
 
@@ -79,6 +83,7 @@
         <Preference
             android:icon="@drawable/ic_cellphone_sound"
             android:title="@string/sound_title"
+            settings:layout="@layout/arc_card_about_middle"
             android:summary="@string/sound_settings_summary"
             android:fragment="com.rising.settings.fragments.Sound" />    
 
@@ -86,6 +91,7 @@
         <Preference
             android:icon="@drawable/ic_settings_statusbar"
             android:title="@string/statusbar_title"
+            settings:layout="@layout/arc_card_about_middle"
             android:summary="@string/sb_settings_summary"
             android:fragment="com.rising.settings.fragments.StatusBar" />
  
@@ -94,6 +100,7 @@
             android:icon="@drawable/ic_color_bucket"
             android:title="@string/ui_title"
             android:summary="@string/ui_settings_summary"
+            settings:layout="@layout/arc_card_about_bottom"
             android:fragment="com.rising.settings.fragments.UserInterface" /> 
 
 </PreferenceScreen> 
