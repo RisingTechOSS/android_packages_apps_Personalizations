@@ -20,6 +20,13 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/statusbar_title" >
 
+    <com.rising.settings.preferences.SystemPropertySwitchPreference
+        android:key="persist.sys.flags.combined_signal_icons"
+        android:icon="@drawable/ic_signal"
+        android:title="@string/combined_status_bar_signal_icons_title"
+        android:summary="@string/combined_status_bar_signal_icons_summary"
+        android:defaultValue="true" />
+
      <com.rising.settings.preferences.SystemSettingSwitchPreference
         android:key="statusbar_colored_icons"
         android:icon="@drawable/ic_shapes"

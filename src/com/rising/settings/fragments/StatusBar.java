@@ -45,15 +45,32 @@ import java.util.ArrayList;
 import lineageos.providers.LineageSettings;
 
 @SearchIndexable
-public class StatusBar extends SettingsPreferenceFragment {
+public class StatusBar extends SettingsPreferenceFragment implements
+        Preference.OnPreferenceChangeListener {
 
     public static final String TAG = "StatusBar";
+    
+    private Preference mCombinedSignalIcons;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.rising_settings_statusbar);
+        
+        mCombinedSignalIcons = findPreference("persist.sys.flags.combined_signal_icons");
+        mCombinedSignalIcons.setOnPreferenceChangeListener(this);
+    }
+
+    @Override
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+        if (preference == mCombinedSignalIcons) {
+            boolean value = (Boolean) newValue;
+            Settings.Secure.putIntForUser(getContentResolver(),
+                Settings.Secure.ENABLE_COMBINED_SIGNAL_ICONS, value ? 1 : 0, UserHandle.USER_CURRENT);
+            return true;
+        }
+        return false;
     }
 
     @Override
