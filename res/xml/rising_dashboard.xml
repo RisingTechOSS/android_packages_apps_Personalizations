@@ -71,13 +71,14 @@
             android:summary="@string/notif_settings_summary"
             android:fragment="com.rising.settings.fragments.Notifications" />
 
-        <!-- QuickSettings
+        <!-- QuickSettings  -->
         <Preference
+            android:key="qs_tile_layout"
             android:icon="@drawable/ic_settings_quicksettings"
             settings:layout="@layout/arc_card_about_middle"
-            android:title="@string/quicksettings_title"
-            android:summary="@string/qs_settings_summary"
-            android:fragment="com.rising.settings.fragments.QuickSettings" /> -->
+            android:title="@string/qs_layout_category_title"
+            android:summary="@string/qs_tile_layout_summary"
+            android:fragment="com.rising.settings.fragments.QsLayoutSettings" />
 
         <!-- Sound -->
         <Preference
