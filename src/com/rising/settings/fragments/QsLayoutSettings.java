@@ -14,6 +14,7 @@
 
 package com.rising.settings.fragments;
 
+import android.content.ContentResolver;
 import android.content.Context;
 import android.os.Bundle;
 import android.os.UserHandle;
@@ -23,6 +24,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import androidx.preference.Preference;
+import androidx.preference.PreferenceScreen;
 
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.internal.util.systemui.qs.QSLayoutUtils;
@@ -34,6 +36,7 @@ import com.android.settingslib.widget.LayoutPreference;
 
 import com.rising.settings.preferences.CustomSeekBarPreference;
 import com.rising.settings.preferences.SystemSettingSwitchPreference;
+import com.rising.settings.preferences.SystemSettingListPreference;
 
 public class QsLayoutSettings extends SettingsPreferenceFragment
         implements Preference.OnPreferenceChangeListener {
@@ -44,12 +47,14 @@ public class QsLayoutSettings extends SettingsPreferenceFragment
     private static final String KEY_QS_ROW_PORTRAIT = "qs_layout_rows";
     private static final String KEY_QQS_ROW_PORTRAIT = "qqs_layout_rows";
     private static final String KEY_APPLY_CHANGE_BUTTON = "apply_change_button";
+    private static final String QS_PAGE_TRANSITIONS = "custom_transitions_page_tile";
 
     private Context mContext;
 
     private CustomSeekBarPreference mQsColumns;
     private CustomSeekBarPreference mQsRows;
     private CustomSeekBarPreference mQqsRows;
+    private SystemSettingListPreference mPageTransitions;
 
     private Button mApplyChange;
 
@@ -62,6 +67,18 @@ public class QsLayoutSettings extends SettingsPreferenceFragment
     public void onCreate(Bundle savedInstance) {
         super.onCreate(savedInstance);
         addPreferencesFromResource(R.xml.qs_layout_settings);
+
+        final Context mContext = getActivity().getApplicationContext();
+        final ContentResolver resolver = mContext.getContentResolver();
+        final PreferenceScreen prefScreen = getPreferenceScreen();
+
+        mPageTransitions = (SystemSettingListPreference) findPreference(QS_PAGE_TRANSITIONS);
+        mPageTransitions.setOnPreferenceChangeListener(this);
+        int customTransitions = Settings.System.getIntForUser(resolver,
+                Settings.System.CUSTOM_TRANSITIONS_KEY,
+                0, UserHandle.USER_CURRENT);
+        mPageTransitions.setValue(String.valueOf(customTransitions));
+        mPageTransitions.setSummary(mPageTransitions.getEntry());
     }
 
     @Override
@@ -147,6 +164,13 @@ public class QsLayoutSettings extends SettingsPreferenceFragment
                 currentValue[0] != mQsRows.getValue() * 10 + mQsColumns.getValue() ||
                 currentValue[1] != qqs_rows * 10 + mQsColumns.getValue()
             );
+	} else if (preference == mPageTransitions) {
+            int customTransitions = Integer.parseInt(((String) newValue).toString());
+            Settings.System.putIntForUser(getContentResolver(),
+                    Settings.System.CUSTOM_TRANSITIONS_KEY, customTransitions, UserHandle.USER_CURRENT);
+            int index = mPageTransitions.findIndexOfValue((String) newValue);
+            mPageTransitions.setSummary(
+                    mPageTransitions.getEntries()[index]);
         }
         return true;
     }
