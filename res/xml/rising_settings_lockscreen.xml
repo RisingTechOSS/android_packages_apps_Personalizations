@@ -127,4 +127,10 @@
 
     </PreferenceCategory>
 
+        <Preference
+            android:key="udfps_settings"
+            android:icon="@drawable/ic_fp_selector"
+            android:title="@string/udfps_settings_title"
+            android:summary="@string/udfps_settings_summary"
+            android:fragment="com.rising.settings.fragments.lockscreen.UdfpsSettings" />
 </PreferenceScreen>
