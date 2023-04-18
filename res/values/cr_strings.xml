@@ -1510,4 +1510,7 @@
     <!-- Notch: Full screen apps -->
     <string name="search">Search</string>
     <string name="search_apps">Search apps</string>
+    
+    <!-- Volume link notification -->
+    <string name="volume_link_notification_title">Link ring &amp; notification volumes</string>
 </resources>
