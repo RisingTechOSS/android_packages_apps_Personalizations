@@ -60,6 +60,13 @@
     <PreferenceCategory
         android:title="@string/status_bar_icons_title">
 
+    <com.rising.settings.preferences.SystemSettingSwitchPreference
+        android:key="statusbar_clock_chip"
+        android:icon="@drawable/ic_shapes"
+        android:title="@string/statusbar_clock_chip_title"
+        android:summary="@string/statusbar_clock_chip_summary"
+        android:defaultValue="false" />
+
     <Preference
         android:key="clock"
         android:icon="@drawable/ic_clock"
