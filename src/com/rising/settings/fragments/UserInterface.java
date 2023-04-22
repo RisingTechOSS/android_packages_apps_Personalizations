@@ -58,6 +58,7 @@ public class UserInterface extends SettingsPreferenceFragment implements
     public static final String TAG = "UserInterface";
 
     private static final String KEY_QS_PANEL_STYLE  = "qs_panel_style";
+    private static final String KEY_QS_UI_STYLE  = "qs_ui_style";
     private static final String SETTINGS_DASHBOARD_STYLE = "settings_dashboard_style";
     private static final String SETTINGS_HEADER_IMAGE = "settings_header_image";
     private static final String SETTINGS_HEADER_IMAGE_RANDOM = "settings_header_image_random";
@@ -69,6 +70,7 @@ public class UserInterface extends SettingsPreferenceFragment implements
     private static final String HIDE_USER_CARD = "hide_user_card";
     
     private SystemSettingListPreference mQsStyle;
+    private SystemSettingListPreference mQsUI;
     private ThemeUtils mThemeUtils;
     private Handler mHandler;
     private SystemSettingListPreference mSettingsDashBoardStyle;
@@ -94,6 +96,7 @@ public class UserInterface extends SettingsPreferenceFragment implements
         mThemeUtils = new ThemeUtils(getActivity());
 
         mQsStyle = (SystemSettingListPreference) findPreference(KEY_QS_PANEL_STYLE);
+        mQsUI = (SystemSettingListPreference) findPreference(KEY_QS_UI_STYLE);
         mCustomSettingsObserver.observe();
 
         mSettingsDashBoardStyle = (SystemSettingListPreference) findPreference(SETTINGS_DASHBOARD_STYLE);
@@ -130,6 +133,9 @@ public class UserInterface extends SettingsPreferenceFragment implements
                     Settings.System.QS_PANEL_STYLE),
                     false, this, UserHandle.USER_ALL);
             resolver.registerContentObserver(Settings.System.getUriFor(
+                    Settings.System.QS_UI_STYLE),
+                    false, this, UserHandle.USER_ALL);
+            resolver.registerContentObserver(Settings.System.getUriFor(
                     Settings.System.SETTINGS_DASHBOARD_STYLE),
                     false, this, UserHandle.USER_ALL);
         }
@@ -137,7 +143,9 @@ public class UserInterface extends SettingsPreferenceFragment implements
         @Override
         public void onChange(boolean selfChange, Uri uri) {
             if (uri.equals(Settings.System.getUriFor(Settings.System.QS_PANEL_STYLE))) {
-                updateQsStyle();
+                updateQsStyle(false /*QS UI theme*/);
+            } else if (uri.equals(Settings.System.getUriFor(Settings.System.QS_UI_STYLE))) {
+                updateQsStyle(true /*QS UI theme*/);
             } else if (uri.equals(Settings.System.getUriFor(Settings.System.SETTINGS_DASHBOARD_STYLE))) {
                 updateSettingsStyle();
             }
@@ -149,6 +157,9 @@ public class UserInterface extends SettingsPreferenceFragment implements
 	Context mContext = getActivity().getApplicationContext();
 	ContentResolver resolver = mContext.getContentResolver();
         if (preference == mQsStyle) {
+            mCustomSettingsObserver.observe();
+            return true;
+        } else if (preference == mQsUI) {
             mCustomSettingsObserver.observe();
             return true;
         } else if (preference == mSettingsDashBoardStyle) {
@@ -186,9 +197,14 @@ public class UserInterface extends SettingsPreferenceFragment implements
         return false;
     }
 
-    private void updateQsStyle() {
+    private void updateQsStyle(boolean isQsUI) {
         ContentResolver resolver = getActivity().getContentResolver();
 
+        boolean isA11Style = Settings.System.getIntForUser(getContext().getContentResolver(),
+                Settings.System.QS_UI_STYLE , 1, UserHandle.USER_CURRENT) == 1;
+	if (isQsUI) {
+	    setQsStyle(isA11Style ? "com.android.system.qs.ui.A11" : "com.android.systemui");
+	} else {
         int qsPanelStyle = Settings.System.getIntForUser(getContext().getContentResolver(),
                 Settings.System.QS_PANEL_STYLE , 0, UserHandle.USER_CURRENT);
 
@@ -227,10 +243,14 @@ public class UserInterface extends SettingsPreferenceFragment implements
             default:
               break;
         }
+        
+        }
     }
 
     public void setQsStyle(String overlayName) {
-        mThemeUtils.setOverlayEnabled("android.theme.customization.qs_panel", overlayName, "com.android.systemui");
+        boolean isA11Style = Settings.System.getIntForUser(getContext().getContentResolver(),
+                Settings.System.QS_UI_STYLE , 1, UserHandle.USER_CURRENT) == 1;
+        mThemeUtils.setOverlayEnabled(isA11Style ? "android.theme.customization.qs_ui" : "android.theme.customization.qs_panel", overlayName, "com.android.systemui");
     }
 
 
