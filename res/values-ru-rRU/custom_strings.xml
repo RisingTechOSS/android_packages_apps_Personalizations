@@ -15,7 +15,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- RisingOS versioning -->
-    <string name="rising_version_title">Версия RiceOS</string>
+    <string name="rising_version_title">Версия RisingOS</string>
     <string name="about_device_info">Об устройстве</string>
     <string name="rising_device_title">Устройство</string>
     <string name="rising_build_version_title">Версия сборки</string>
@@ -49,7 +49,7 @@
     <string name="about_device_nearby">Имя устройства могут и будут видеть устройства поблизости.</string>
     <string name="about_device_version_type_gapps">Pixel</string>
     <string name="about_device_version_type_vanilla">Vanilla</string>
-    <string name="version">RiseUI</string>
+    <string name="version">RisingUI</string>
     <string name="edit">Изменить</string>
     <string name="device_name">Имя устройства</string>
     <string name="about_us_info_category_title">О нас</string>
