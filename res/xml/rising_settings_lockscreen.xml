@@ -74,6 +74,41 @@
         android:title="@string/pulse_on_new_tracks_title"
         android:summary="@string/pulse_on_new_tracks_summary" />
 
+    <!-- Pocket Judge -->
+    <com.rising.settings.preferences.SystemSettingSwitchPreference
+        android:key="pocket_judge"
+        android:icon="@drawable/ic_pocket"
+        android:title="@string/pocket_judge_title"
+        android:summary="@string/pocket_judge_summary"
+        android:defaultValue="false" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="lockscreen_gestures_category"
+        android:title="@string/gestures_title">
+        
+        <com.rising.settings.preferences.SystemSettingSwitchPreference
+            android:key="fp_success_vibrate"
+            android:icon="@drawable/ic_fp"
+            android:title="@string/fp_success_vibrate_title"
+            android:summary="@string/fp_success_vibrate_summary"
+            android:defaultValue="true" />
+
+        <com.rising.settings.preferences.SystemSettingSwitchPreference
+            android:key="fp_error_vibrate"
+            android:icon="@drawable/ic_fp"
+            android:title="@string/fp_error_vibrate_title"
+            android:summary="@string/fp_error_vibrate_summary"
+            android:defaultValue="true" />
+
+        <com.rising.settings.preferences.SystemSettingSwitchPreference
+            android:key="enable_ripple_effect"
+            android:icon="@drawable/ic_unlock_outline"
+            android:title="@string/enable_fingerprint_ripple_effect_title"
+            android:summary="@string/enable_fingerprint_ripple_effect_summary"
+            android:defaultValue="true" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
@@ -125,12 +160,14 @@
         android:summary="%s"
         android:defaultValue="0" />
 
+   <Preference
+       android:key="udfps_settings"
+       android:icon="@drawable/ic_fp_selector"
+       android:title="@string/udfps_settings_title"
+       android:summary="@string/udfps_settings_summary"
+       android:fragment="com.rising.settings.fragments.lockscreen.UdfpsSettings" />
+
     </PreferenceCategory>
 
-        <Preference
-            android:key="udfps_settings"
-            android:icon="@drawable/ic_fp_selector"
-            android:title="@string/udfps_settings_title"
-            android:summary="@string/udfps_settings_summary"
-            android:fragment="com.rising.settings.fragments.lockscreen.UdfpsSettings" />
+
 </PreferenceScreen>

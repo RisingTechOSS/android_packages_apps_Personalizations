@@ -21,6 +21,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.database.ContentObserver;
+import android.hardware.fingerprint.FingerprintManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
@@ -43,6 +44,7 @@ import com.android.settingslib.search.SearchIndexable;
 
 import com.rising.settings.preferences.SystemSettingListPreference;
 
+import com.android.internal.util.rising.systemUtils;
 import com.android.internal.util.rising.ThemeUtils;
 
 import java.util.List;
@@ -52,9 +54,19 @@ public class LockScreen extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
     public static final String TAG = "LockScreen";
-    
+
+    private static final String LOCKSCREEN_INTERFACE_CATEGORY = "lockscreen_interface_category";
+    private static final String LOCKSCREEN_GESTURES_CATEGORY = "lockscreen_gestures_category";
+    private static final String KEY_UDFPS_SETTINGS = "udfps_settings";
+    private static final String KEY_FP_SUCCESS_VIBRATE = "fp_success_vibrate";
+    private static final String KEY_FP_ERROR_VIBRATE = "fp_error_vibrate";
+    private static final String KEY_RIPPLE_EFFECT = "enable_ripple_effect";
     private static final String KG_CUSTOM_CLOCK_COLOR_ENABLED = "kg_custom_clock_color_enabled";
 
+    private Preference mUdfpsSettings;
+    private Preference mFingerprintVib;
+    private Preference mFingerprintVibErr;
+    private Preference mRippleEffect;
     private SwitchPreference mKGCustomClockColor;
 
     @Override
@@ -67,6 +79,27 @@ public class LockScreen extends SettingsPreferenceFragment implements
         final ContentResolver resolver = mContext.getContentResolver();
         final PreferenceScreen prefScreen = getPreferenceScreen();
         
+        PreferenceCategory interfaceCategory = (PreferenceCategory) findPreference(LOCKSCREEN_INTERFACE_CATEGORY);
+        PreferenceCategory gestCategory = (PreferenceCategory) findPreference(LOCKSCREEN_GESTURES_CATEGORY);
+
+        FingerprintManager mFingerprintManager = (FingerprintManager)
+                getActivity().getSystemService(Context.FINGERPRINT_SERVICE);
+        mUdfpsSettings = (Preference) findPreference(KEY_UDFPS_SETTINGS);
+        mFingerprintVib = (Preference) findPreference(KEY_FP_SUCCESS_VIBRATE);
+        mFingerprintVibErr = (Preference) findPreference(KEY_FP_ERROR_VIBRATE);
+        mRippleEffect = (Preference) findPreference(KEY_RIPPLE_EFFECT);
+
+        if (mFingerprintManager == null || !mFingerprintManager.isHardwareDetected()) {
+            interfaceCategory.removePreference(mUdfpsSettings);
+            gestCategory.removePreference(mFingerprintVib);
+            gestCategory.removePreference(mFingerprintVibErr);
+            gestCategory.removePreference(mRippleEffect);
+        } else {
+            if (!systemUtils.isPackageInstalled(getContext(), "com.rising.udfps.icons")) {
+                interfaceCategory.removePreference(mUdfpsSettings);
+            }
+        }
+
         mKGCustomClockColor = (SwitchPreference) findPreference(KG_CUSTOM_CLOCK_COLOR_ENABLED);
         boolean mKGCustomClockColorEnabled = Settings.Secure.getIntForUser(resolver,
                 Settings.Secure.KG_CUSTOM_CLOCK_COLOR_ENABLED, 0, UserHandle.USER_CURRENT) != 0;
@@ -102,6 +135,22 @@ public class LockScreen extends SettingsPreferenceFragment implements
                 @Override
                 public List<String> getNonIndexableKeys(Context context) {
                     List<String> keys = super.getNonIndexableKeys(context);
+
+                    FingerprintManager mFingerprintManager = (FingerprintManager)
+                            context.getSystemService(Context.FINGERPRINT_SERVICE);
+                    if (mFingerprintManager == null || !mFingerprintManager.isHardwareDetected()) {
+                        keys.add(KEY_UDFPS_SETTINGS);
+                        keys.add(KEY_FP_SUCCESS_VIBRATE);
+                        keys.add(KEY_FP_ERROR_VIBRATE);
+                        keys.add(KEY_RIPPLE_EFFECT);
+                    } else {
+                        if (!systemUtils.isPackageInstalled(context, "com.rising.udfps.icons")) {
+                            keys.add(KEY_UDFPS_SETTINGS);
+                        } else {
+                            keys.add(KEY_FP_SUCCESS_VIBRATE);
+                            keys.add(KEY_FP_ERROR_VIBRATE);
+                        }
+                    }
 
                     return keys;
                 }

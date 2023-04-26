@@ -103,6 +103,12 @@
         android:summary="%s"
         android:title="@string/qs_transitions_title" />
 
+    <com.rising.settings.preferences.SystemSettingSwitchPreference
+        android:key="secure_lockscreen_qs_disabled"
+        android:icon="@drawable/ic_lock_alert"
+        android:title="@string/disable_qs_title"
+        android:summary="@string/disable_qs_summary"/>
+            
      <com.rising.settings.preferences.SystemSettingSeekBarPreference
         android:key="qs_transparency"
         android:icon="@drawable/ic_color_bucket"
