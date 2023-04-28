@@ -22,6 +22,7 @@ import android.content.res.Resources;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.SystemProperties;
 import android.os.UserHandle;
 import android.provider.Settings;
 
@@ -34,6 +35,8 @@ import androidx.preference.SwitchPreference;
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
+import com.android.settingslib.development.SystemPropPoker;
+
 import com.rising.settings.preferences.CustomSeekBarPreference;
 
 import com.android.internal.util.rising.systemUtils;
@@ -45,9 +48,11 @@ public class SmartCharging extends SettingsPreferenceFragment
     private static final String SMART_CHARGING_FOOTER = "smart_charging_footer";
     
     private Preference mSmartCharge;
+    private Preference mSmartAdaptiveCharge;
     private Preference mResetStats;
     private CustomSeekBarPreference mStopLevel;
     private CustomSeekBarPreference mResumeLevel;
+    boolean isPixelDevice;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -56,7 +61,14 @@ public class SmartCharging extends SettingsPreferenceFragment
         addPreferencesFromResource(R.xml.smart_charging);
 
         findPreference(SMART_CHARGING_FOOTER).setTitle(R.string.smart_charging_footer);
-        
+
+        String manufacturerProp = SystemProperties.get("ro.product.manufacturer");
+        String brandProp = SystemProperties.get("ro.product.brand");
+        isPixelDevice = brandProp.toLowerCase().contains("google") && manufacturerProp.toLowerCase().contains("google");
+
+        mSmartAdaptiveCharge = findPreference("smart_adaptive_charging");
+        mSmartAdaptiveCharge.setOnPreferenceChangeListener(this);
+
         mSmartCharge = findPreference("smart_charging");
         mSmartCharge.setOnPreferenceChangeListener(this);
 
@@ -73,10 +85,32 @@ public class SmartCharging extends SettingsPreferenceFragment
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         if (preference == mStopLevel) {
+            if (isPixelDevice) {
+            	int stopLevel = (int) newValue;
+        	SystemProperties.set("persist.vendor.charge.stop.level", String.valueOf(stopLevel));
+        	SystemPropPoker.getInstance().poke();
+            }
             systemUtils.showSystemRestartDialog(getContext());
         } else if (preference == mResumeLevel) {
+            if (isPixelDevice) {
+            	int startLevel = (int) newValue;
+        	SystemProperties.set("persist.vendor.charge.start.level", String.valueOf(startLevel));
+        	SystemPropPoker.getInstance().poke();
+            }
             systemUtils.showSystemRestartDialog(getContext());
         } else if (preference == mSmartCharge) {
+            if (isPixelDevice) {
+            	boolean enableBattDefender = Boolean.valueOf(newValue.toString());
+        	SystemProperties.set("vendor.battery.defender.disable", enableBattDefender ? "0" : "1");
+        	SystemPropPoker.getInstance().poke();
+            }
+            systemUtils.showSystemRestartDialog(getContext());
+        } else if (preference == mSmartAdaptiveCharge) {
+            if (isPixelDevice) {
+            	int chargeLimit = (int) newValue;
+        	SystemProperties.set("persist.vendor.adaptive.charge.soc", String.valueOf(chargeLimit));
+        	SystemPropPoker.getInstance().poke();
+	    }
             systemUtils.showSystemRestartDialog(getContext());
         } else if (preference == mResetStats) {
             systemUtils.showSystemRestartDialog(getContext());

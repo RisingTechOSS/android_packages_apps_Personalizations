@@ -1105,6 +1105,8 @@
 
     <!-- Smart charging -->
     <string name="smart_charging_title">Smart Charging</string>
+    <string name="smart_adaptive_charging_level_title">Smart Adaptive Charging</string>
+    <string name="smart_charging_lvl_settings_title">Smart Charging level settings</string>
     <string name="smart_charging_summary">Set maximum charging level</string>
     <string name="smart_charging_switch_title">Enable Smart Charging</string>
     <string name="smart_charging_level_title">Stop trigger level</string>
