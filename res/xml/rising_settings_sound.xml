@@ -28,14 +28,6 @@
         android:summary="@string/pulse_settings_summary"
         android:fragment="com.rising.settings.fragments.sound.PulseSettings" />
 
-    <!-- Live volume steps
-    <Preference
-        android:key="volume_steps"
-        android:icon="@drawable/ic_settings_sound"
-        android:title="@string/volume_steps_title"
-        android:summary="@string/volume_steps_summary"
-        android:fragment="com.rising.settings.fragments.sound.VolumeSteps" /> -->
-
     <!-- Screenshot Sound
     <com.rising.settings.preferences.SystemSettingSwitchPreference
         android:key="screenshot_shutter_sound"
@@ -78,6 +70,15 @@
      	   android:title="@string/volume_media_output_toggle_title"
       	   android:summary="@string/volume_media_output_toggle_summary"
       	   android:defaultValue="true" />
+      	   
+    <!-- Live volume steps-->
+    	<Preference
+      	   android:key="volume_steps"
+      	   android:icon="@drawable/ic_settings_sound"
+      	   android:title="@string/volume_steps_title"
+      	   android:summary="@string/volume_steps_summary"
+      	   android:fragment="com.rising.settings.fragments.sound.VolumeSteps" /> 
+
     </PreferenceCategory> 
 
     <!-- In-call feedback
