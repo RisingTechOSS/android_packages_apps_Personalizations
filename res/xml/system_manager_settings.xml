@@ -29,16 +29,6 @@
         android:defaultValue="0"
         android:summary="%s" />
 
-    <!-- System Manager Power Mode -->        
-     <com.rising.settings.preferences.SystemSettingListPreference
-        android:key="system_manager_runtime_power_mode"
-        android:icon="@drawable/ic_cog"
-        android:title="@string/system_manager_runtime_power_mode_title"
-        android:entries="@array/power_mode_entries"
-        android:entryValues="@array/power_mode_values"
-        android:defaultValue="0"
-        android:summary="%s" />
-
     <!-- System Manager Aggressive Idle Mode -->
     <com.rising.settings.preferences.SecureSettingSwitchPreference
         android:key="system_manager_aggressive_idle_mode"
