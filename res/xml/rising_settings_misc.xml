@@ -62,6 +62,13 @@
         android:summary="@string/smart_charging_summary"
         android:fragment="com.rising.settings.fragments.misc.SmartCharging"/>
        
+    <!-- Smart Pixels-->
+    <Preference
+        android:key="smart_pixels"
+        android:icon="@drawable/ic_smart_pixels"
+        android:title="@string/smart_pixels_title" 
+        android:summary="@string/smart_pixels_summary" 
+        android:fragment="com.rising.settings.fragments.misc.SmartPixels" /> 
 
     <!-- System Manager Services -->
     <Preference
@@ -79,14 +86,6 @@
         android:fragment="com.rising.settings.fragments.misc.OmniJawsSettings" />
 
     </PreferenceCategory>
-
-    <!-- Smart Pixels-->
-    <Preference
-        android:key="smart_pixels"
-        android:icon="@drawable/ic_smart_pixels"
-        android:title="@string/smart_pixels_title" 
-        android:summary="@string/smart_pixels_summary" 
-        android:fragment="com.rising.settings.fragments.misc.SmartPixels" /> 
 
     <!-- Sensor block per package 
     <Preference
