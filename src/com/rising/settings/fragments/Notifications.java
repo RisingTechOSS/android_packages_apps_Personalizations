@@ -42,12 +42,27 @@ import java.util.List;
 public class Notifications extends SettingsPreferenceFragment {
 
     public static final String TAG = "Notifications";
+    
+    private static final String ALERT_SLIDER_PREF = "alert_slider_notifications";
+    
+    private Preference mAlertSlider;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.rising_settings_notifications);
+
+        final PreferenceScreen prefScreen = getPreferenceScreen();
+        final Context mContext = getActivity().getApplicationContext();
+        final ContentResolver resolver = mContext.getContentResolver();
+        final Resources res = mContext.getResources();
+
+        mAlertSlider = (Preference) prefScreen.findPreference(ALERT_SLIDER_PREF);
+        boolean mAlertSliderAvailable = res.getBoolean(
+                com.android.internal.R.bool.config_hasAlertSlider);
+        if (!mAlertSliderAvailable)
+            prefScreen.removePreference(mAlertSlider);
     }
 
     @Override
@@ -64,6 +79,13 @@ public class Notifications extends SettingsPreferenceFragment {
                 @Override
                 public List<String> getNonIndexableKeys(Context context) {
                     List<String> keys = super.getNonIndexableKeys(context);
+
+                    final Resources res = context.getResources();
+
+                    boolean mAlertSliderAvailable = res.getBoolean(
+                            com.android.internal.R.bool.config_hasAlertSlider);
+                    if (!mAlertSliderAvailable)
+                        keys.add(ALERT_SLIDER_PREF);
 
                     return keys;
                 }

@@ -20,12 +20,12 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/notifications_title" >
 
-    <!--<com.rising.settings.preferences.SystemSettingSwitchPreference
+   <com.rising.settings.preferences.SystemSettingSwitchPreference
         android:key="alert_slider_notifications"
         android:icon="@drawable/ic_light_switch"
         android:title="@string/alert_slider_notifications_title"
         android:summary="@string/alert_slider_notifications_summary"
-        android:defaultValue="true" /> -->
+        android:defaultValue="true" /> 
 
      <com.rising.settings.preferences.SystemSettingSwitchPreference
         android:key="qs_colored_icons"
