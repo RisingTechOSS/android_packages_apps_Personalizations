@@ -156,4 +156,34 @@
         android:defaultValue="false"/>
         
     </PreferenceCategory>
+    
+    <!-- Custom logo -->
+    <PreferenceCategory
+        android:title="@string/status_bar_logo_title" >
+
+        <com.rising.settings.preferences.SystemSettingSwitchPreference
+            android:key="status_bar_logo"
+            android:icon="@drawable/ic_tag"
+            android:title="@string/status_bar_logo_title"
+            android:summary="@string/status_bar_logo_summary" />
+
+         <com.rising.settings.preferences.SystemSettingListPreference
+            android:key="status_bar_logo_position"
+            android:icon="@drawable/ic_tag"
+            android:title="@string/status_bar_logo_position_title"
+            android:entries="@array/status_bar_logo_position_entries"
+            android:entryValues="@array/status_bar_logo_position_values"
+            android:defaultValue="0"
+            android:dependency="status_bar_logo" />
+
+        <com.rising.settings.preferences.SystemSettingListPreference
+            android:key="status_bar_logo_style"
+            android:icon="@drawable/ic_tag"
+            android:title="@string/status_bar_logo_style_title"
+            android:entries="@array/status_bar_logo_style_entries"
+            android:entryValues="@array/status_bar_logo_style_values"
+            android:defaultValue="0"
+            android:dependency="status_bar_logo" />
+
+    </PreferenceCategory>
 </PreferenceScreen>
