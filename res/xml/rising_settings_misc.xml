@@ -142,6 +142,16 @@
         android:summary="@string/pie_animation_style_summary"
         android:defaultValue="false" />
 
+    <!-- Screen Off animation -->
+    <com.rising.settings.preferences.SystemSettingListPreference
+        android:key="screen_off_animation"
+        android:icon="@drawable/ic_television_classic"
+        android:title="@string/screen_off_animation_title"
+        android:dialogTitle="@string/screen_off_animation_title"
+        android:entries="@array/screen_off_animation_entries"
+        android:entryValues="@array/screen_off_animation_values"
+        android:defaultValue="0" />
+
     <!-- Three-fingers-swipe to screenshot -->
     <com.rising.settings.preferences.SystemSettingSwitchPreference
         android:key="three_finger_gesture"
