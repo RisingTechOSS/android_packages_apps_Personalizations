@@ -46,8 +46,10 @@ public class Miscellaneous extends SettingsPreferenceFragment {
     public static final String TAG = "Miscellaneous";
 
     private static final String SMART_CHARGING = "smart_charging";
+    private static final String SMART_PIXELS = "smart_pixels";
 
     private Preference mSmartCharging;
+    private Preference mSmartPixels;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -57,10 +59,15 @@ public class Miscellaneous extends SettingsPreferenceFragment {
         
         Context mContext = getActivity().getApplicationContext();
         final PreferenceScreen prefScreen = getPreferenceScreen();
-        final Resources res = getResources();
+
+        mSmartPixels = (Preference) prefScreen.findPreference(SMART_PIXELS);
+        boolean mSmartPixelsSupported = getResources().getBoolean(
+                com.android.internal.R.bool.config_supportSmartPixels);
+        if (!mSmartPixelsSupported)
+            prefScreen.removePreference(mSmartPixels);
 
         mSmartCharging = (Preference) prefScreen.findPreference(SMART_CHARGING);
-        boolean mSmartChargingSupported = res.getBoolean(
+        boolean mSmartChargingSupported = getResources().getBoolean(
                 com.android.internal.R.bool.config_smartChargingAvailable);
         if (!mSmartChargingSupported)
             prefScreen.removePreference(mSmartCharging);
@@ -80,9 +87,13 @@ public class Miscellaneous extends SettingsPreferenceFragment {
                 @Override
                 public List<String> getNonIndexableKeys(Context context) {
                     List<String> keys = super.getNonIndexableKeys(context);
-                    final Resources res = context.getResources();
 
-                    boolean mSmartChargingSupported = res.getBoolean(
+                    boolean mSmartPixelsSupported = context.getResources().getBoolean(
+                            com.android.internal.R.bool.config_supportSmartPixels);
+                    if (!mSmartPixelsSupported)
+                        keys.add(SMART_PIXELS);
+
+                    boolean mSmartChargingSupported = context.getResources().getBoolean(
                             com.android.internal.R.bool.config_smartChargingAvailable);
                     if (!mSmartChargingSupported)
                         keys.add(SMART_CHARGING);
