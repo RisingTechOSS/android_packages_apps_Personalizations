@@ -86,6 +86,23 @@
     <PreferenceCategory
         android:title="@string/qs_misc_category">
 
+    <com.rising.settings.preferences.SystemSettingSwitchPreference
+        android:key="secure_lockscreen_qs_disabled"
+        android:icon="@drawable/ic_lock_alert"
+        android:title="@string/disable_qs_title"
+        android:summary="@string/disable_qs_summary"/>
+
+     <com.rising.settings.preferences.SystemSettingSeekBarPreference
+        android:key="qs_transparency"
+        android:icon="@drawable/ic_color_bucket"
+        android:title="@string/qs_transparency_title"
+        android:summary="@string/qs_transparency_summary"
+        android:defaultValue="100"
+        settings:interval="1"
+        settings:units="%"
+        android:max="100"
+        android:min="1" />
+
      <com.rising.settings.preferences.SystemSettingSeekBarPreference
         android:key="qs_header_image"
         android:icon="@drawable/ic_header"
@@ -103,22 +120,25 @@
         android:summary="%s"
         android:title="@string/qs_transitions_title" />
 
-    <com.rising.settings.preferences.SystemSettingSwitchPreference
-        android:key="secure_lockscreen_qs_disabled"
-        android:icon="@drawable/ic_lock_alert"
-        android:title="@string/disable_qs_title"
-        android:summary="@string/disable_qs_summary"/>
-            
-     <com.rising.settings.preferences.SystemSettingSeekBarPreference
-        android:key="qs_transparency"
+     <!-- QS styles -->
+    <com.rising.settings.preferences.SystemSettingListPreference
+        android:key="qs_panel_style"
         android:icon="@drawable/ic_color_bucket"
-        android:title="@string/qs_transparency_title"
-        android:summary="@string/qs_transparency_summary"
-        android:defaultValue="100"
-        settings:interval="1"
-        settings:units="%"
-        android:max="100"
-        android:min="1" />
+        android:title="@string/qs_styles_title"
+        android:entries="@array/qs_styles_entries"
+        android:entryValues="@array/qs_styles_values"
+        android:summary="%s"
+        android:defaultValue="0" />
+
+     <!-- QS UI -->
+    <com.rising.settings.preferences.SystemSettingListPreference
+        android:key="qs_ui_style"
+        android:icon="@drawable/ic_color_bucket"
+        android:title="@string/qs_ui_title"
+        android:entries="@array/qs_ui_entries"
+        android:entryValues="@array/qs_ui_values"
+        android:summary="%s"
+        android:defaultValue="0" />
         
     </PreferenceCategory>
 </PreferenceScreen>

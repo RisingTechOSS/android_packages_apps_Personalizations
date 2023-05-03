@@ -57,8 +57,6 @@ public class UserInterface extends SettingsPreferenceFragment implements
 
     public static final String TAG = "UserInterface";
 
-    private static final String KEY_QS_PANEL_STYLE  = "qs_panel_style";
-    private static final String KEY_QS_UI_STYLE  = "qs_ui_style";
     private static final String SETTINGS_DASHBOARD_STYLE = "settings_dashboard_style";
     private static final String SETTINGS_HEADER_IMAGE = "settings_header_image";
     private static final String SETTINGS_HEADER_IMAGE_RANDOM = "settings_header_image_random";
@@ -69,8 +67,6 @@ public class UserInterface extends SettingsPreferenceFragment implements
     private static final String ABOUT_PHONE_STYLE = "about_card_style";
     private static final String HIDE_USER_CARD = "hide_user_card";
     
-    private SystemSettingListPreference mQsStyle;
-    private SystemSettingListPreference mQsUI;
     private ThemeUtils mThemeUtils;
     private Handler mHandler;
     private SystemSettingListPreference mSettingsDashBoardStyle;
@@ -94,9 +90,6 @@ public class UserInterface extends SettingsPreferenceFragment implements
         final PreferenceScreen prefScreen = getPreferenceScreen();
         
         mThemeUtils = new ThemeUtils(getActivity());
-
-        mQsStyle = (SystemSettingListPreference) findPreference(KEY_QS_PANEL_STYLE);
-        mQsUI = (SystemSettingListPreference) findPreference(KEY_QS_UI_STYLE);
         mCustomSettingsObserver.observe();
 
         mSettingsDashBoardStyle = (SystemSettingListPreference) findPreference(SETTINGS_DASHBOARD_STYLE);
@@ -118,51 +111,12 @@ public class UserInterface extends SettingsPreferenceFragment implements
         mSettingsHeaderTextEnabled = (SystemSettingSwitchPreference) findPreference(SETTINGS_HEADER_TEXT_ENABLED);
         mSettingsHeaderTextEnabled.setOnPreferenceChangeListener(this);
     }
-    
-    private CustomSettingsObserver mCustomSettingsObserver = new CustomSettingsObserver(mHandler);
-    private class CustomSettingsObserver extends ContentObserver {
-
-        CustomSettingsObserver(Handler handler) {
-            super(handler);
-        }
-
-        void observe() {
-            Context mContext = getContext();
-            ContentResolver resolver = mContext.getContentResolver();
-            resolver.registerContentObserver(Settings.System.getUriFor(
-                    Settings.System.QS_PANEL_STYLE),
-                    false, this, UserHandle.USER_ALL);
-            resolver.registerContentObserver(Settings.System.getUriFor(
-                    Settings.System.QS_UI_STYLE),
-                    false, this, UserHandle.USER_ALL);
-            resolver.registerContentObserver(Settings.System.getUriFor(
-                    Settings.System.SETTINGS_DASHBOARD_STYLE),
-                    false, this, UserHandle.USER_ALL);
-        }
-
-        @Override
-        public void onChange(boolean selfChange, Uri uri) {
-            if (uri.equals(Settings.System.getUriFor(Settings.System.QS_PANEL_STYLE))) {
-                updateQsStyle(false /*QS UI theme*/);
-            } else if (uri.equals(Settings.System.getUriFor(Settings.System.QS_UI_STYLE))) {
-                updateQsStyle(true /*QS UI theme*/);
-            } else if (uri.equals(Settings.System.getUriFor(Settings.System.SETTINGS_DASHBOARD_STYLE))) {
-                updateSettingsStyle();
-            }
-        }
-    }
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
 	Context mContext = getActivity().getApplicationContext();
 	ContentResolver resolver = mContext.getContentResolver();
-        if (preference == mQsStyle) {
-            mCustomSettingsObserver.observe();
-            return true;
-        } else if (preference == mQsUI) {
-            mCustomSettingsObserver.observe();
-            return true;
-        } else if (preference == mSettingsDashBoardStyle) {
+        if (preference == mSettingsDashBoardStyle) {
             mCustomSettingsObserver.observe();
             return true;
         } else if (preference == mUseStockLayout) {
@@ -197,62 +151,28 @@ public class UserInterface extends SettingsPreferenceFragment implements
         return false;
     }
 
-    private void updateQsStyle(boolean isQsUI) {
-        ContentResolver resolver = getActivity().getContentResolver();
+    private CustomSettingsObserver mCustomSettingsObserver = new CustomSettingsObserver(mHandler);
+    private class CustomSettingsObserver extends ContentObserver {
 
-        boolean isA11Style = Settings.System.getIntForUser(getContext().getContentResolver(),
-                Settings.System.QS_UI_STYLE , 1, UserHandle.USER_CURRENT) == 1;
-	if (isQsUI) {
-	    setQsStyle(isA11Style ? "com.android.system.qs.ui.A11" : "com.android.systemui");
-	} else {
-        int qsPanelStyle = Settings.System.getIntForUser(getContext().getContentResolver(),
-                Settings.System.QS_PANEL_STYLE , 0, UserHandle.USER_CURRENT);
-
-        switch (qsPanelStyle) {
-            case 0:
-              setQsStyle("com.android.systemui");
-              break;
-            case 1:
-              setQsStyle("com.android.system.qs.outline");
-              break;
-            case 2:
-            case 3:
-              setQsStyle("com.android.system.qs.twotoneaccent");
-              break;
-            case 4:
-              setQsStyle("com.android.system.qs.shaded");
-              break;
-            case 5:
-              setQsStyle("com.android.system.qs.cyberpunk");
-              break;
-            case 6:
-              setQsStyle("com.android.system.qs.neumorph");
-              break;
-            case 7:
-              setQsStyle("com.android.system.qs.reflected");
-              break;
-            case 8:
-              setQsStyle("com.android.system.qs.surround");
-              break;
-            case 9:
-              setQsStyle("com.android.system.qs.thin");
-              break;
-            case 10:
-              setQsStyle("com.android.system.qs.twotoneaccenttrans");
-              break;
-            default:
-              break;
+        CustomSettingsObserver(Handler handler) {
+            super(handler);
         }
-        
+
+        void observe() {
+            Context mContext = getContext();
+            ContentResolver resolver = mContext.getContentResolver();
+            resolver.registerContentObserver(Settings.System.getUriFor(
+                    Settings.System.SETTINGS_DASHBOARD_STYLE),
+                    false, this, UserHandle.USER_ALL);
+        }
+
+        @Override
+        public void onChange(boolean selfChange, Uri uri) {
+            if (uri.equals(Settings.System.getUriFor(Settings.System.SETTINGS_DASHBOARD_STYLE))) {
+                updateSettingsStyle();
+            }
         }
     }
-
-    public void setQsStyle(String overlayName) {
-        boolean isA11Style = Settings.System.getIntForUser(getContext().getContentResolver(),
-                Settings.System.QS_UI_STYLE , 1, UserHandle.USER_CURRENT) == 1;
-        mThemeUtils.setOverlayEnabled(isA11Style ? "android.theme.customization.qs_ui" : "android.theme.customization.qs_panel", overlayName, "com.android.systemui");
-    }
-
 
     private void updateSettingsStyle() {
         ContentResolver resolver = getActivity().getContentResolver();
@@ -260,10 +180,12 @@ public class UserInterface extends SettingsPreferenceFragment implements
         int settingsPanelStyle = Settings.System.getIntForUser(getContext().getContentResolver(),
                 Settings.System.SETTINGS_DASHBOARD_STYLE, 0, UserHandle.USER_CURRENT);
 
+	// reset all overlays before applying
+        mThemeUtils.setOverlayEnabled("android.theme.customization.icon_pack.settings", "com.android.settings", "com.android.settings");
+
+	if (settingsPanelStyle == 0) return;
+
         switch (settingsPanelStyle) {
-            case 0:
-              setSettingsStyle("com.android.settings");
-              break;
             case 1:
               setSettingsStyle("com.android.system.settings.rui");
               break;
