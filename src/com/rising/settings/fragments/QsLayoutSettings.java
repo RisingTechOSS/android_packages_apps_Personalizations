@@ -26,6 +26,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
 
@@ -55,6 +56,8 @@ public class QsLayoutSettings extends SettingsPreferenceFragment
     private static final String QS_PAGE_TRANSITIONS = "custom_transitions_page_tile";
     private static final String KEY_QS_PANEL_STYLE  = "qs_panel_style";
     private static final String KEY_QS_UI_STYLE  = "qs_ui_style";
+    private static final String KEY_QS_SLIDER_POSITION  = "qs_brightness_slider_position";
+    private static final String KEY_SHOW_BRIGHTNESS_SLIDER = "qs_show_brightness_slider";
     private static final String overlayThemeTarget  = "com.android.systemui";
 
     private Context mContext;
@@ -72,6 +75,9 @@ public class QsLayoutSettings extends SettingsPreferenceFragment
 
     private SystemSettingSwitchPreference mHide;
     private SystemSettingSwitchPreference mVertical;
+    
+    private ListPreference mBrightnessSliderPosition;
+    private ListPreference mShowBrightnessSlider;
 
     private int[] currentValue = new int[2];
 
@@ -97,6 +103,12 @@ public class QsLayoutSettings extends SettingsPreferenceFragment
                 0, UserHandle.USER_CURRENT);
         mPageTransitions.setValue(String.valueOf(customTransitions));
         mPageTransitions.setSummary(mPageTransitions.getEntry());
+        
+        mBrightnessSliderPosition = findPreference(KEY_QS_SLIDER_POSITION); 
+        mBrightnessSliderPosition.setOnPreferenceChangeListener(this);
+        
+        mShowBrightnessSlider = findPreference(KEY_SHOW_BRIGHTNESS_SLIDER); 
+        mShowBrightnessSlider.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -191,6 +203,13 @@ public class QsLayoutSettings extends SettingsPreferenceFragment
                     mPageTransitions.getEntries()[index]);
         } else if (preference == mQsStyle || preference == mQsUI) {
             mCustomSettingsObserver.observe();
+        } else if (preference == mBrightnessSliderPosition || preference == mShowBrightnessSlider) {
+           int value = Integer.parseInt((String) newValue);
+           if (value == 1) {
+               mThemeUtils.setOverlayEnabled("android.theme.customization.sysui_reevaluate", overlayThemeTarget, overlayThemeTarget);
+	   } else {
+	       mThemeUtils.setOverlayEnabled("android.theme.customization.sysui_reevaluate", "com.android.system.qs.sysui_reevaluate", overlayThemeTarget);
+	   }
         }
         return true;
     }
