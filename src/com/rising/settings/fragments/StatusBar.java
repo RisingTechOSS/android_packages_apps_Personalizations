@@ -48,6 +48,8 @@ import lineageos.providers.LineageSettings;
 
 import java.util.List;
 
+import com.android.internal.util.rising.systemUtils;
+
 @SearchIndexable
 public class StatusBar extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
@@ -62,6 +64,10 @@ public class StatusBar extends SettingsPreferenceFragment implements
     private static final String KEY_STATUS_BAR_SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
     private static final String KEY_STATUS_BAR_BATTERY_STYLE = "status_bar_battery_style";
     private static final String KEY_STATUS_BAR_BATTERY_TEXT_CHARGING = "status_bar_battery_text_charging";
+
+    private static final String KEY_STATUS_BAR_PRIVACY_CAMERA = "enable_camera_privacy_indicator";
+    private static final String KEY_STATUS_BAR_PRIVACY_LOC = "enable_location_privacy_indicator";
+    private static final String KEY_STATUS_BAR_PRIVACY_MEDIA = "enable_projection_privacy_indicator";
 
     private static final int PULLDOWN_DIR_NONE = 0;
     private static final int PULLDOWN_DIR_RIGHT = 1;
@@ -81,6 +87,9 @@ public class StatusBar extends SettingsPreferenceFragment implements
     //private SwitchPreference mOldMobileType;
     private SwitchPreference mBatteryTextCharging;
     private Preference mCombinedSignalIcons;
+    private Preference mPrivacyCam;
+    private Preference mPrivacyLoc;
+    private Preference mPrivacyMedia;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -142,6 +151,13 @@ public class StatusBar extends SettingsPreferenceFragment implements
         
         mCombinedSignalIcons = findPreference("persist.sys.flags.combined_signal_icons");
         mCombinedSignalIcons.setOnPreferenceChangeListener(this);
+
+        mPrivacyCam = findPreference(KEY_STATUS_BAR_PRIVACY_CAMERA);
+        mPrivacyCam.setOnPreferenceChangeListener(this);
+        mPrivacyLoc = findPreference(KEY_STATUS_BAR_PRIVACY_LOC);
+        mPrivacyLoc.setOnPreferenceChangeListener(this);
+        mPrivacyMedia = findPreference(KEY_STATUS_BAR_PRIVACY_MEDIA);
+        mPrivacyMedia.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -170,6 +186,9 @@ public class StatusBar extends SettingsPreferenceFragment implements
             boolean value = (Boolean) newValue;
             Settings.Secure.putIntForUser(getContentResolver(),
                 Settings.Secure.ENABLE_COMBINED_SIGNAL_ICONS, value ? 1 : 0, UserHandle.USER_CURRENT);
+            return true;
+        } else if (preference == mPrivacyCam || preference == mPrivacyLoc || preference == mPrivacyMedia) {
+            systemUtils.showSystemRestartDialog(getContext());
             return true;
         }
         return false;
