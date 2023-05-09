@@ -57,20 +57,25 @@
     </style>
 
       <!-- custom Action Bar -->
-    <style name="custom_toolbar.Expanded" parent="custom_toolbar.Collapsed">
+    <style name="custom_toolbar_Expanded" parent="custom_toolbar_Collapsed">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginTop">75dp</item>
         <item name="android:layout_marginBottom">@dimen/homepage_title_margin_bottom</item>
         <item name="android:layout_marginStart">@dimen/homepage_title_margin_horizontal</item>
         <item name="android:layout_marginEnd">75dp</item>
-        <item name="android:textSize">42dp</item>
+        <item name="android:textSize">36sp</item>
         <item name="android:textColor">@color/settingslib_text_color_primary_device_default</item>
         <item name="android:fontFamily">@*android:string/config_headlineFontFamilyMedium</item>
     </style>
-    <style name="custom_toolbar.Collapsed" parent="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Title">
+    <style name="custom_toolbar_Contextual" parent="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Title">
         <item name="android:fontFamily">@string/settingslib_config_headlineFontFamily</item>
-        <item name="android:textSize">20dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/settingslib_text_color_primary_device_default</item>
+    </style>   
+    <style name="custom_toolbar_Collapsed" parent="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Title">
+        <item name="android:fontFamily">@string/settingslib_config_headlineFontFamily</item>
+        <item name="android:textSize">20sp</item>
         <item name="android:textColor">@color/settingslib_text_color_primary_device_default</item>
     </style>     
 </resources>
