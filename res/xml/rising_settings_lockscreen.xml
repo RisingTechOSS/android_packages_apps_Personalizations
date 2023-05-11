@@ -139,7 +139,7 @@
         android:max="100"
         settings:min="25"
         settings:interval="1"
-        android:defaultValue="80"
+        android:defaultValue="86"
         settings:units="dp" />
 
     <com.rising.settings.preferences.SecureSettingSeekBarPreference
@@ -149,7 +149,7 @@
         android:max="180"
         settings:min="25"
         settings:interval="1"
-        android:defaultValue="86"
+        android:defaultValue="180"
         settings:units="dp" />
 
     <!-- Clock Font style -->
