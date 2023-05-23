@@ -36,15 +36,6 @@
         android:title="@string/smart_charging_lvl_settings_title">
 
     <com.rising.settings.preferences.SystemSettingSeekBarPreference
-        android:key="smart_adaptive_charging"
-        android:title="@string/smart_adaptive_charging_level_title"
-        android:max="100"
-        settings:min="40"
-        settings:units="%"
-        android:defaultValue="80"
-        android:dependency="smart_charging" />
-
-    <com.rising.settings.preferences.SystemSettingSeekBarPreference
         android:key="smart_charging_level"
         android:title="@string/smart_charging_level_title"
         android:max="100"

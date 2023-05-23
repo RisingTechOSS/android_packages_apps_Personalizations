@@ -48,7 +48,6 @@ public class SmartCharging extends SettingsPreferenceFragment
     private static final String SMART_CHARGING_FOOTER = "smart_charging_footer";
     
     private Preference mSmartCharge;
-    private Preference mSmartAdaptiveCharge;
     private Preference mResetStats;
     private CustomSeekBarPreference mStopLevel;
     private CustomSeekBarPreference mResumeLevel;
@@ -65,9 +64,6 @@ public class SmartCharging extends SettingsPreferenceFragment
         String manufacturerProp = SystemProperties.get("ro.product.manufacturer");
         String brandProp = SystemProperties.get("ro.product.brand");
         isPixelDevice = brandProp.toLowerCase().contains("google") && manufacturerProp.toLowerCase().contains("google");
-
-        mSmartAdaptiveCharge = findPreference("smart_adaptive_charging");
-        mSmartAdaptiveCharge.setOnPreferenceChangeListener(this);
 
         mSmartCharge = findPreference("smart_charging");
         mSmartCharge.setOnPreferenceChangeListener(this);
@@ -104,13 +100,6 @@ public class SmartCharging extends SettingsPreferenceFragment
         	SystemProperties.set("vendor.battery.defender.disable", enableBattDefender ? "0" : "1");
         	SystemPropPoker.getInstance().poke();
             }
-            systemUtils.showSystemRestartDialog(getContext());
-        } else if (preference == mSmartAdaptiveCharge) {
-            if (isPixelDevice) {
-            	int chargeLimit = (int) newValue;
-        	SystemProperties.set("persist.vendor.adaptive.charge.soc", String.valueOf(chargeLimit));
-        	SystemPropPoker.getInstance().poke();
-	    }
             systemUtils.showSystemRestartDialog(getContext());
         } else if (preference == mResetStats) {
             systemUtils.showSystemRestartDialog(getContext());
