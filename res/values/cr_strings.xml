@@ -1578,4 +1578,8 @@
     <string name="brightness_slider_haptics_intensity_title">Brightness slider haptics intensity</string>
     <string name="edge_scrolling_haptics_intensity_title">Edge scrolling haptics intensity</string>
     <string name="volume_slider_haptics_intensity_title">Volume slider haptics intensity</string>
+
+    <!-- Adaptive Charging Settings -->
+    <string name="sys_adaptive_charging_title">Adaptive Charging</string>
+    <string name="sys_adaptive_charging_summary">Optimize device\'s power consumption while charging by utilizing AOSP\'s adaptive power strategy.</string>
 </resources>
