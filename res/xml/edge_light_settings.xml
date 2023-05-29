@@ -16,7 +16,12 @@
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:title="@string/edge_light_title">
+
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="edge_lights"
+        app:lottie_rawRes="@raw/edge_lights" />
 
     <com.rising.settings.preferences.SystemSettingSwitchPreference
         android:key="edge_light_enabled"
