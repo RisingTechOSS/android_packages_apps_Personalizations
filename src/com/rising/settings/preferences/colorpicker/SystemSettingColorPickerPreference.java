@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2020 crDroid Android Project
+ * Copyright (C) 2023 the risingOS Android Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,26 +17,91 @@
 package com.rising.settings.preferences.colorpicker;
 
 import android.content.Context;
+import android.content.res.TypedArray;
 import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.provider.Settings;
 
 import com.rising.settings.preferences.SystemSettingsStore;
 
+import com.android.settings.R;
+
 public class SystemSettingColorPickerPreference extends ColorPickerPreference {
+
+    private Position position;
 
     public SystemSettingColorPickerPreference(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         setPreferenceDataStore(new SystemSettingsStore(context.getContentResolver()));
+        init(context, attrs);
     }
 
     public SystemSettingColorPickerPreference(Context context, AttributeSet attrs) {
         super(context, attrs);
         setPreferenceDataStore(new SystemSettingsStore(context.getContentResolver()));
+        init(context, attrs);
     }
 
     public SystemSettingColorPickerPreference(Context context) {
         super(context, null);
         setPreferenceDataStore(new SystemSettingsStore(context.getContentResolver()));
+        init(context, null);
+    }
+    
+    private void init(Context context, AttributeSet attrs) {
+        // Retrieve and set the layout resource based on position
+        // otherwise do not set any layout
+        position = getPosition(context, attrs);
+        if (position != null) {
+            int layoutResId = getLayoutResourceId(position);
+            setLayoutResource(layoutResId);
+        }
+    }
+
+    private Position getPosition(Context context, AttributeSet attrs) {
+        TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.AdaptivePreference);
+        String positionAttribute = typedArray.getString(R.styleable.AdaptivePreference_position);
+        typedArray.recycle();
+
+        Position positionFromAttribute = Position.fromAttribute(positionAttribute);
+        if (positionFromAttribute != null) {
+            return positionFromAttribute;
+        }
+
+        return null;
+    }
+
+    private int getLayoutResourceId(Position position) {
+        switch (position) {
+            case TOP:
+                return R.layout.arc_card_about_top;
+            case BOTTOM:
+                return R.layout.arc_card_about_bottom;
+            case MIDDLE:
+                return R.layout.arc_card_about_middle;
+            default:
+                return R.layout.arc_card_about_middle;
+        }
+    }
+
+    private enum Position {
+        TOP,
+        MIDDLE,
+        BOTTOM;
+
+        public static Position fromAttribute(String attribute) {
+            if (attribute != null) {
+                switch (attribute.toLowerCase()) {
+                    case "top":
+                        return TOP;
+                    case "bottom":
+                        return BOTTOM;
+                    case "middle":
+                        return MIDDLE;
+                        
+                }
+            }
+            return null;
+        }
     }
 }

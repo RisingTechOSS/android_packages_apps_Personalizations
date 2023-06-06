@@ -17,73 +17,81 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:title="@string/misc_title" >
 
     <PreferenceCategory
         android:title="@string/misc_general_settings_title">
 
     <!-- Gaming mode -->
-    <Preference
+    <com.rising.settings.preferences.AdaptivePreference
         android:key="gaming_mode"
         android:icon="@drawable/ic_gaming"
         android:title="@string/gaming_mode_title"
-        android:summary="@string/gaming_mode_summary">
+        android:summary="@string/gaming_mode_summary"
+        app:position="top">
 
         <intent
             android:action="android.intent.action.MAIN"
             android:targetPackage="io.chaldeaprjkt.gamespace"
             android:targetClass="io.chaldeaprjkt.gamespace.settings.SettingsActivity" />
-    </Preference>
+    </com.rising.settings.preferences.AdaptivePreference>
 
     <!-- Google services -->
-    <Preference
+    <com.rising.settings.preferences.AdaptivePreference
         android:key="gms_enabled_settings"
         android:icon="@drawable/ic_google"
         android:title="@string/gms_enabled_title"
         android:summary="@string/gms_enabled_summary"
-        android:fragment="com.rising.settings.fragments.misc.GmsSwitch"/>
+        android:fragment="com.rising.settings.fragments.misc.GmsSwitch"
+        app:position="middle"/>
 
     <!-- Parallel space-->
-    <Preference
+    <com.rising.settings.preferences.AdaptivePreference
         android:key="parallel_space"
         android:icon="@drawable/ic_parallel_space"
         android:title="@string/laboratory_parallel_space_title"
-        android:summary="@string/laboratory_parallel_space_summary">
+        android:summary="@string/laboratory_parallel_space_summary"
+        app:position="middle">
         <intent
             android:targetPackage="ink.kscope.parallelspace"
             android:targetClass="ink.kscope.parallelspace.MainActivity" /> 
-    </Preference>
+    </com.rising.settings.preferences.AdaptivePreference>
 
     <!-- Smart Charging -->
-    <Preference
+    <com.rising.settings.preferences.AdaptivePreference
         android:key="smart_charging"
         android:icon="@drawable/ic_battery_charging_80"
         android:title="@string/smart_charging_title"
         android:summary="@string/smart_charging_summary"
-        android:fragment="com.rising.settings.fragments.misc.SmartCharging"/>
-       
-    <!-- Smart Pixels-->
-    <Preference
-        android:key="smart_pixels"
-        android:icon="@drawable/ic_smart_pixels"
-        android:title="@string/smart_pixels_title" 
-        android:summary="@string/smart_pixels_summary" 
-        android:fragment="com.rising.settings.fragments.misc.SmartPixels" /> 
+        android:fragment="com.rising.settings.fragments.misc.SmartCharging"
+        app:position="middle"/>
 
     <!-- System Manager Services -->
-    <Preference
+    <com.rising.settings.preferences.AdaptivePreference
         android:key="system_manager_settings"
         android:icon="@drawable/ic_battery_charging_80"
         android:title="@string/system_manager_services_title"
         android:summary="@string/system_manager_services_summary"
-        android:fragment="com.rising.settings.fragments.misc.SystemManagerSettings"/> 
+        android:fragment="com.rising.settings.fragments.misc.SystemManagerSettings"
+        app:position="middle"/> 
+ 
+    <!-- Smart Pixels-->
+    <com.rising.settings.preferences.AdaptivePreference
+        android:key="smart_pixels"
+        android:icon="@drawable/ic_smart_pixels"
+        android:title="@string/smart_pixels_title" 
+        android:summary="@string/smart_pixels_summary" 
+        android:fragment="com.rising.settings.fragments.misc.SmartPixels"
+        app:position="middle" /> 
 
-   <Preference
+   <com.rising.settings.preferences.AdaptivePreference
         android:key="omnijaws_settings"
         android:icon="@drawable/ic_weather"
         android:title="@string/qs_weather_settings_title"
         android:summary="@string/qs_weather_settings_summary"
-        android:fragment="com.rising.settings.fragments.misc.OmniJawsSettings" />
+        android:fragment="com.rising.settings.fragments.misc.OmniJawsSettings"
+        app:position="bottom" />
 
     </PreferenceCategory>
 
@@ -103,7 +111,8 @@
         android:key="persist.sys.pixelprops.games"
         android:icon="@drawable/ic_backup"
         android:title="@string/use_games_spoof_title"
-        android:summary="@string/use_games_spoof_summary" />
+        android:summary="@string/use_games_spoof_summary"
+        app:position="top" />
 
     <!-- Unlimited google photos storage -->
     <com.rising.settings.preferences.SystemPropertySwitchPreference
@@ -111,7 +120,8 @@
         android:icon="@drawable/ic_backup"
         android:title="@string/use_photos_spoof_title"
         android:summary="@string/use_photos_spoof_summary"
-        android:defaultValue="true" />
+        android:defaultValue="true"
+        app:position="middle" />
 
     <!-- Netflix -->
     <com.rising.settings.preferences.SystemPropertySwitchPreference
@@ -119,7 +129,8 @@
         android:icon="@drawable/ic_netflix"
         android:title="@string/netflix_spoof_title"
         android:summary="@string/netflix_spoof_summary"
-        android:defaultValue="false" />
+        android:defaultValue="false"
+        app:position="middle" />
 
     <!-- Spoof All Apps -->
     <com.rising.settings.preferences.SystemPropertySwitchPreference
@@ -127,7 +138,8 @@
         android:icon="@drawable/ic_google"
         android:title="@string/spoof_all_title"
         android:summary="@string/spoof_all_summary"
-        android:defaultValue="false" />
+        android:defaultValue="false"
+        app:position="bottom" />
 
     </PreferenceCategory>
 
@@ -139,7 +151,8 @@
         android:icon="@drawable/ic_system_animation"
         android:title="@string/pie_animation_style_title"
         android:summary="@string/pie_animation_style_summary"
-        android:defaultValue="false" />
+        android:defaultValue="false"
+        app:position="top" />
 
     <!-- Screen Off animation -->
     <com.rising.settings.preferences.SystemSettingListPreference
@@ -149,7 +162,8 @@
         android:dialogTitle="@string/screen_off_animation_title"
         android:entries="@array/screen_off_animation_entries"
         android:entryValues="@array/screen_off_animation_values"
-        android:defaultValue="0" />
+        android:defaultValue="0"
+        app:position="middle" />
 
     <!-- Three-fingers-swipe to screenshot -->
     <com.rising.settings.preferences.SystemSettingSwitchPreference
@@ -157,16 +171,9 @@
         android:icon="@drawable/ic_three_finger_gesture"
         android:title="@string/three_finger_gesture"
         android:summary="@string/three_finger_gesture_summary"
-        android:defaultValue="false" />
+        android:defaultValue="false"
+        app:position="bottom" />
 
     </PreferenceCategory>
-
-    <!-- Pocket Judge
-    <com.rising.settings.preferences.SystemSettingSwitchPreference
-        android:key="pocket_judge"
-        android:icon="@drawable/ic_pocket"
-        android:title="@string/pocket_judge_title"
-        android:summary="@string/pocket_judge_summary"
-        android:defaultValue="false" /> -->
 
 </PreferenceScreen>

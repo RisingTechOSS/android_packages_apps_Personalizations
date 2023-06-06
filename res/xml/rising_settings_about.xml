@@ -17,87 +17,98 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:title="@string/about_rising" >
 
     <PreferenceCategory
          android:title="@string/rising_redirects" >
 
     <!-- Changelog -->
-    <Preference
+    <com.rising.settings.preferences.AdaptivePreference
         android:key="rising_changelog"
         android:icon="@drawable/ic_changelog"
         android:title="@string/changelog_rising_title"
-        android:summary="@string/changelog_rising_summary">
+        android:summary="@string/changelog_rising_summary"
+        app:position="top">
         <intent android:action="android.intent.action.MAIN"
              android:targetPackage="com.android.settings"
              android:targetClass="com.rising.settings.fragments.about.ChangelogActivity"/>
-    </Preference>
+    </com.rising.settings.preferences.AdaptivePreference>
 
     <!-- Website -->
-    <Preference
+    <com.rising.settings.preferences.AdaptivePreference
         android:key="rising_website"
         android:icon="@drawable/ic_web"
         android:title="@string/rising_website_title"
-        android:summary="@string/rising_website_summary" />
+        android:summary="@string/rising_website_summary"
+        app:position="middle" />
 
     <!-- Translate -->
-    <Preference
+    <com.rising.settings.preferences.AdaptivePreference
         android:key="rising_translate"
         android:icon="@drawable/ic_translate"
         android:title="@string/rising_translate_title"
-        android:summary="@string/rising_translate_summary" />
+        android:summary="@string/rising_translate_summary"
+        app:position="middle" />
 
     <!-- Share -->
-    <Preference
+    <com.rising.settings.preferences.AdaptivePreference
         android:key="rising_share"
         android:icon="@drawable/ic_share"
         android:title="@string/share_rising_title"
-        android:summary="@string/share_rising_summary" />
+        android:summary="@string/share_rising_summary"
+        app:position="middle" />
 
     <!-- Donate -->
-    <Preference
+    <com.rising.settings.preferences.AdaptivePreference
         android:key="rising_donate"
         android:icon="@drawable/ic_donate"
         android:title="@string/donate_rising_title"
-        android:summary="@string/donate_rising_summary" />
+        android:summary="@string/donate_rising_summary"
+        app:position="middle" />
 
     <!-- Source -->
-    <Preference
+    <com.rising.settings.preferences.AdaptivePreference
         android:key="rising_source"
         android:icon="@drawable/ic_source"
         android:title="@string/rising_source_title"
-        android:summary="@string/rising_source_summary" />
+        android:summary="@string/rising_source_summary"
+        app:position="middle" />
 
     <!-- Telegram -->
-    <Preference
+    <com.rising.settings.preferences.AdaptivePreference
         android:key="rising_telegram"
         android:icon="@drawable/ic_telegram"
         android:title="@string/rising_telegram_title"
-        android:summary="@string/rising_telegram_summary" />
+        android:summary="@string/rising_telegram_summary"
+        app:position="middle" />
 
     <!-- Telegram Updates Channel -->
-    <Preference
+    <com.rising.settings.preferences.AdaptivePreference
         android:key="rising_telegram_channel"
         android:icon="@drawable/ic_telegram_channel"
         android:title="@string/rising_telegram_channel_title"
-        android:summary="@string/rising_telegram_channel_summary" />
+        android:summary="@string/rising_telegram_channel_summary"
+        app:position="middle" />
 
     <!-- sponsor -->
-    <Preference
+    <com.rising.settings.preferences.AdaptivePreference
         android:key="rising_sponsor"
         android:icon="@drawable/ic_sponsor"
         android:title="@string/rising_sponsor_title"
-        android:summary="@string/rising_sponsor_summary" />
+        android:summary="@string/rising_sponsor_summary"
+        app:position="middle" />
 
     <!-- OTA update -->
-    <Preference
+    <com.rising.settings.preferences.AdaptivePreference
         android:key="system_update_settings"
         android:title="@string/rising_update_title"
         android:summary="@string/rising_update_summary"
         android:icon="@drawable/ic_update"
-        settings:controller="com.android.settings.system.SystemUpdatePreferenceController">
+        settings:controller="com.android.settings.system.SystemUpdatePreferenceController"
+        app:position="bottom">
         <intent android:action="android.settings.SYSTEM_UPDATE_SETTINGS" />
-    </Preference>
+    </com.rising.settings.preferences.AdaptivePreference>
 
      </PreferenceCategory>
 </PreferenceScreen>

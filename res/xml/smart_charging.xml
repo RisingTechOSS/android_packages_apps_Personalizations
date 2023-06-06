@@ -16,20 +16,23 @@
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:title="@string/smart_charging_title">
 
     <com.rising.settings.preferences.SystemSettingSwitchPreference
         android:key="smart_charging"
         android:title="@string/smart_charging_switch_title"
         android:summary="@string/smart_charging_summary"
-        android:defaultValue="false" />
+        android:defaultValue="false"
+        app:position="top" />
 
     <com.rising.settings.preferences.SystemSettingSwitchPreference
         android:key="smart_charging_reset_stats"
         android:title="@string/smart_charging_reset_stats_title"
         android:summary="@string/smart_charging_reset_stats_summary"
         android:defaultValue="false"
-        android:dependency="smart_charging" />
+        android:dependency="smart_charging"
+        app:position="bottom" />
 
     <PreferenceCategory
     	android:key="smart_charging_levels"
@@ -42,7 +45,8 @@
         settings:min="40"
         settings:units="%"
         android:defaultValue="80"
-        android:dependency="smart_charging" />
+        android:dependency="smart_charging"
+        app:position="top" />
 
     <com.rising.settings.preferences.SystemSettingSeekBarPreference
         android:key="smart_charging_resume_level"
@@ -51,7 +55,8 @@
         settings:min="15"
         settings:units="%"
         android:defaultValue="60"
-        android:dependency="smart_charging" />
+        android:dependency="smart_charging"
+        app:position="bottom" />
 
     </PreferenceCategory>
     

@@ -42,6 +42,7 @@ public class RisingGlobalSettingSwitchPreference extends LineageGlobalSettingSwi
 
     public RisingGlobalSettingSwitchPreference(Context context) {
         super(context);
+        init(context, null);
     }
 
     private void init(Context context, AttributeSet attrs) {

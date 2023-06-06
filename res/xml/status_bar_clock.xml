@@ -2,26 +2,31 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:title="@string/status_bar_clock_title">
 
     <PreferenceCategory
         android:key="status_bar_clock_key"
         android:title="@string/status_bar_clock_title">
 
-        <lineageos.preference.LineageSystemSettingSwitchPreference
+        <com.rising.settings.preferences.SystemSettingSwitchPreference
             android:key="status_bar_clock_auto_hide"
             android:title="@string/status_bar_clock_auto_hide_title"
             android:summary="@string/status_bar_clock_auto_hide_summary"
-            android:defaultValue="false" />
+            android:defaultValue="false"
+            app:isLineageSettings="true"
+            app:position="top" />
 
-        <lineageos.preference.LineageSystemSettingListPreference
+        <com.rising.settings.preferences.SystemSettingListPreference
             android:key="status_bar_am_pm"
             android:title="@string/status_bar_am_pm_title"
             android:summary="%s"
             android:dialogTitle="@string/status_bar_am_pm_title"
             android:entries="@array/status_bar_am_pm_entries"
             android:entryValues="@array/status_bar_am_pm_values"
-            android:defaultValue="2" />
+            android:defaultValue="2"
+            app:isLineageSettings="true"
+            app:position="middle" />
 
         <!-- Status bar chip bg style -->
         <com.rising.settings.preferences.SystemSettingListPreference
@@ -30,22 +35,27 @@
             android:entries="@array/statusbar_clock_chip_entries"
             android:entryValues="@array/statusbar_clock_chip_values"
             android:summary="%s"
-            android:defaultValue="0" />
+            android:defaultValue="0"
+            app:position="middle" />
 
-        <lineageos.preference.LineageSystemSettingListPreference
+        <com.rising.settings.preferences.SystemSettingListPreference
             android:key="status_bar_clock"
             android:title="@string/status_bar_clock_position_title"
             android:summary="%s"
             android:dialogTitle="@string/status_bar_clock_position_title"
             android:entries="@array/status_bar_clock_position_entries"
             android:entryValues="@array/status_bar_clock_position_values"
-            android:defaultValue="0" />
+            android:defaultValue="0"
+            app:isLineageSettings="true"
+            app:position="middle" />
 
-        <lineageos.preference.SecureSettingSwitchPreference
+        <com.rising.settings.preferences.SecureSettingSwitchPreference
             android:key="clock_seconds"
             android:title="@string/status_bar_clock_seconds_title"
             android:summary="@string/status_bar_clock_seconds_summary"
-            android:defaultValue="false" />
+            android:defaultValue="false"
+            app:isLineageSettings="true"
+            app:position="bottom" />
     </PreferenceCategory>
 
 </PreferenceScreen>

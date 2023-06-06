@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2016-2022 crDroid Android Project
+     Copyright (C) 2023 the risingOS Android Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -16,21 +17,22 @@
 -->
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:lineage="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/sound_title" >
 
     <com.android.settingslib.widget.IllustrationPreference
         android:key="sound_illustration"
-        lineage:lottie_rawRes="@raw/sound_illustration" />
+        app:lottie_rawRes="@raw/sound_illustration" />
 
     <!-- Pulse music visualizer -->
-    <Preference
+    <com.rising.settings.preferences.AdaptivePreference
         android:key="pulse_settings"
         android:icon="@drawable/ic_pulse"
         android:title="@string/pulse_settings"
         android:summary="@string/pulse_settings_summary"
-        android:fragment="com.rising.settings.fragments.sound.PulseSettings" />
+        android:fragment="com.rising.settings.fragments.sound.PulseSettings"
+        app:position="top" />
 
     <!-- Screenshot Sound
     <com.rising.settings.preferences.SystemSettingSwitchPreference
@@ -41,12 +43,13 @@
         android:defaultValue="true" /> -->
 
     <!-- Adaptive Playback -->
-    <Preference
+    <com.rising.settings.preferences.AdaptivePreference
         android:key="adaptive_playback_settings"
         android:icon="@drawable/ic_settings_sound"
         android:title="@string/adaptive_playback_title"
         android:summary="@string/adaptive_playback_summary"
-        android:fragment="com.rising.settings.fragments.sound.AdaptivePlayback" /> 
+        android:fragment="com.rising.settings.fragments.sound.AdaptivePlayback"
+        app:position="bottom" /> 
 
     <!-- Volume panel-->
     <PreferenceCategory
@@ -54,11 +57,6 @@
         android:title="@string/volume_panel_category" >
 
 	<!-- 
-        <lineageos.preference.LineageSecureSettingSwitchPreference
-            android:key="volume_panel_on_left"
-            android:icon="@drawable/ic_settings_sound"
-            android:title="@string/volume_panel_on_left_title" />
-
         <com.rising.settings.preferences.SystemSettingSeekBarPreference
             android:key="volume_dialog_timeout"
             android:icon="@drawable/ic_music_note"
@@ -73,15 +71,17 @@
      	   android:icon="@drawable/ic_settings_sound"
      	   android:title="@string/volume_media_output_toggle_title"
       	   android:summary="@string/volume_media_output_toggle_summary"
-      	   android:defaultValue="true" />
+      	   android:defaultValue="true" 
+      	   app:position="top"/>
       	   
     <!-- Live volume steps-->
-    	<Preference
+    	<com.rising.settings.preferences.AdaptivePreference
       	   android:key="volume_steps"
       	   android:icon="@drawable/ic_settings_sound"
       	   android:title="@string/volume_steps_title"
       	   android:summary="@string/volume_steps_summary"
-      	   android:fragment="com.rising.settings.fragments.sound.VolumeSteps" /> 
+      	   android:fragment="com.rising.settings.fragments.sound.VolumeSteps"
+      	   app:position="bottom" /> 
 
     </PreferenceCategory> 
 

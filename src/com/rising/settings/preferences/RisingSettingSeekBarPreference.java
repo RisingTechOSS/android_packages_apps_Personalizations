@@ -1,5 +1,6 @@
 /*
- * Copyright (C) 2016-2018 crDroid Android Project
+ * Copyright (C) 2016-2019 crDroid Android Project
+ * Copyright (C) 2023 the risingOS Android Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,72 +18,29 @@ package com.rising.settings.preferences;
 
 import android.content.Context;
 import android.content.res.TypedArray;
-import android.provider.Settings;
-import android.os.UserHandle;
 import android.util.AttributeSet;
 
 import com.android.settings.R;
 
-import lineageos.preference.SelfRemovingSwitchPreference;
-
-import lineageos.providers.LineageSettings;
-
-public class SecureSettingSwitchPreference extends SelfRemovingSwitchPreference {
+public class RisingSettingSeekBarPreference extends CustomSeekBarPreference {
 
     private Position position;
-    private boolean isLineageSettings;
 
-    public SecureSettingSwitchPreference(Context context, AttributeSet attrs, int defStyle) {
+    public RisingSettingSeekBarPreference(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
-         isLineageSettings = getLineageAttribute(context, attrs);
-         init(context, attrs);
+        init(context, attrs);
     }
 
-    public SecureSettingSwitchPreference(Context context, AttributeSet attrs) {
+    public RisingSettingSeekBarPreference(Context context, AttributeSet attrs) {
         super(context, attrs);
-         isLineageSettings = getLineageAttribute(context, attrs);
-         init(context, attrs);
+        init(context, attrs);
     }
 
-    public SecureSettingSwitchPreference(Context context) {
-        super(context);
-        isLineageSettings = getLineageAttribute(context, null);
+    public RisingSettingSeekBarPreference(Context context) {
+        super(context, null);
         init(context, null);
     }
-
-    @Override
-    protected boolean isPersisted() {
-        return isLineageSettings ? LineageSettings.Secure.getString(getContext().getContentResolver(), getKey()) != null : Settings.Secure.getString(getContext().getContentResolver(), getKey()) != null;
-    }
-
-    @Override
-    protected void putBoolean(String key, boolean value) {
-        if (isLineageSettings) {
-            LineageSettings.Secure.putInt(getContext().getContentResolver(), key, value ? 1 : 0);
-        } else {
-            Settings.Secure.putIntForUser(getContext().getContentResolver(), key, value ? 1 : 0, UserHandle.USER_CURRENT);
-        }
-    }
-
-    @Override
-    protected boolean getBoolean(String key, boolean defaultValue) {
-        if (isLineageSettings) {
-            return LineageSettings.Secure.getInt(getContext().getContentResolver(),
-                    key, defaultValue ? 1 : 0) != 0;
-        } else {
-            return Settings.Secure.getIntForUser(getContext().getContentResolver(),
-                    key, defaultValue ? 1 : 0, UserHandle.USER_CURRENT) != 0;
-        }
-    }
-
-    private boolean getLineageAttribute(Context context, AttributeSet attrs) {
-        TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.AdaptivePreference);
-        boolean isLineage = typedArray.getBoolean(R.styleable.AdaptivePreference_isLineageSettings, false);
-        typedArray.recycle();
-
-        return isLineage;
-    }
-
+    
     private void init(Context context, AttributeSet attrs) {
         // Retrieve and set the layout resource based on position
         // otherwise do not set any layout
@@ -109,13 +67,13 @@ public class SecureSettingSwitchPreference extends SelfRemovingSwitchPreference 
     private int getLayoutResourceId(Position position) {
         switch (position) {
             case TOP:
-                return R.layout.arc_card_about_top;
+                return R.layout.preference_custom_seekbar_top;
             case BOTTOM:
-                return R.layout.arc_card_about_bottom;
+                return R.layout.preference_custom_seekbar_bottom;
             case MIDDLE:
-                return R.layout.arc_card_about_middle;
+                return R.layout.preference_custom_seekbar_middle;
             default:
-                return R.layout.arc_card_about_middle;
+                return R.layout.preference_custom_seekbar_middle;
         }
     }
 

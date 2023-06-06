@@ -17,6 +17,7 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:title="@string/system_manager_services_title" >
                 
     <!-- System Manager Game Mode -->        
@@ -27,7 +28,8 @@
         android:entries="@array/game_boost_mode_entries"
         android:entryValues="@array/game_boost_mode_values"
         android:defaultValue="0"
-        android:summary="%s" />
+        android:summary="%s"
+        app:position="top" />
 
     <!-- System Manager Aggressive Idle Mode -->
     <com.rising.settings.preferences.SecureSettingSwitchPreference
@@ -35,7 +37,8 @@
         android:icon="@drawable/ic_battery_saver"
         android:title="@string/system_manager_aggressive_idle_mode_title"
         android:summary="@string/system_manager_aggressive_idle_mode_summary"
-        android:defaultValue="false" />
+        android:defaultValue="false"
+        app:position="middle" />
 
      <com.rising.settings.preferences.SecureSettingListPreference
         android:key="system_manager_aggressive_idle_mode_ringer_mode"
@@ -45,7 +48,8 @@
         android:entryValues="@array/system_manager_aggressive_idle_mode_ringer_values"
         android:dependency="system_manager_aggressive_idle_mode"
         android:defaultValue="0"
-        android:summary="%s" />
+        android:summary="%s"
+        app:position="middle" />
 
     <!-- System Manager Aggressive Idle Mode Wifi -->
     <com.rising.settings.preferences.SecureSettingSwitchPreference
@@ -54,7 +58,8 @@
         android:title="@string/system_manager_aggressive_idle_mode_wifi_toggle_title"
         android:summary="@string/system_manager_aggressive_idle_mode_wifi_toggle_summary"
         android:dependency="system_manager_aggressive_idle_mode"
-        android:defaultValue="false" />
+        android:defaultValue="false"
+        app:position="middle" />
 
     <!-- System Manager Aggressive Idle Mode Bluetooth -->
     <com.rising.settings.preferences.SecureSettingSwitchPreference
@@ -63,7 +68,8 @@
         android:title="@string/system_manager_aggressive_idle_mode_bluetooth_toggle_title"
         android:summary="@string/system_manager_aggressive_idle_mode_bluetooth_toggle_summary"
         android:dependency="system_manager_aggressive_idle_mode"
-        android:defaultValue="false" />
+        android:defaultValue="false"
+        app:position="middle" />
 
     <!-- System Manager Aggressive Idle Mode Data -->
     <com.rising.settings.preferences.SecureSettingSwitchPreference
@@ -72,7 +78,8 @@
         android:title="@string/system_manager_aggressive_idle_mode_cellular_toggle_title"
         android:summary="@string/system_manager_aggressive_idle_mode_cellular_toggle_summary"
         android:dependency="system_manager_aggressive_idle_mode"
-        android:defaultValue="false" />
+        android:defaultValue="false"
+        app:position="middle" />
 
     <!-- System Manager Aggressive Idle Mode GPS -->
     <com.rising.settings.preferences.SecureSettingSwitchPreference
@@ -81,7 +88,8 @@
         android:title="@string/system_manager_aggressive_idle_mode_location_toggle_title"
         android:summary="@string/system_manager_aggressive_idle_mode_location_toggle_summary"
         android:dependency="system_manager_aggressive_idle_mode"
-        android:defaultValue="false" />
+        android:defaultValue="false"
+        app:position="bottom" />
 
      <com.android.settingslib.widget.FooterPreference
             android:title="@string/system_manager_info_title" />

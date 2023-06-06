@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
      Copyright (C) 2016-2019 crDroid Android Project
+     Copyright (C) 2023 the risingOS Android Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,12 +18,14 @@
 <PreferenceScreen
     android:title="@string/battery_bar_title"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <SwitchPreference
+    <com.rising.settings.preferences.AdaptiveSwitchPreference
         android:key="statusbar_battery_bar"
         android:title="@string/battery_bar_title"
-        android:defaultValue="false" />
+        android:defaultValue="false"
+        app:position="top" />
 
     <com.rising.settings.preferences.SystemSettingSeekBarPreference
         android:key="statusbar_battery_bar_thickness"
@@ -31,7 +34,8 @@
         android:max="4"
         settings:min="1"
         settings:units="@string/unit_pixels"
-        android:dependency="statusbar_battery_bar" />
+        android:dependency="statusbar_battery_bar"
+        app:position="middle" />
 
     <com.rising.settings.preferences.SystemSettingListPreference
         android:key="statusbar_battery_bar_style"
@@ -39,14 +43,16 @@
         android:entries="@array/battery_bar_style_entries"
         android:entryValues="@array/battery_bar_style_values"
         android:defaultValue="0"
-        android:dependency="statusbar_battery_bar" />
+        android:dependency="statusbar_battery_bar"
+        app:position="middle" />
 
     <com.rising.settings.preferences.SystemSettingSwitchPreference
         android:key="statusbar_battery_bar_blend_color"
         android:title="@string/battery_bar_blend_color_title"
         android:summary="@string/battery_bar_blend_color_summary"
         android:defaultValue="true"
-        android:dependency="statusbar_battery_bar" />
+        android:dependency="statusbar_battery_bar"
+        app:position="middle" />
 
     <com.rising.settings.preferences.SystemSettingSwitchPreference
         android:key="statusbar_battery_bar_blend_color_reverse"
@@ -54,35 +60,41 @@
         android:summaryOn="@string/battery_bar_blend_color_reverse_summary_on"
         android:summaryOff="@string/battery_bar_blend_color_reverse_summary_off"
         android:dependency="statusbar_battery_bar_blend_color"
-        android:defaultValue="false" />
+        android:defaultValue="false"
+        app:position="middle" />
 
     <com.rising.settings.preferences.colorpicker.SystemSettingColorPickerPreference
         android:key="statusbar_battery_bar_color"
         android:title="@string/battery_bar_color"
         android:defaultValue="0xff76c124"
-        android:dependency="statusbar_battery_bar" />
+        android:dependency="statusbar_battery_bar"
+        app:position="middle" />
 
     <com.rising.settings.preferences.colorpicker.SystemSettingColorPickerPreference
         android:key="statusbar_battery_bar_battery_low_color"
         android:title="@string/battery_bar_battery_low_color"
         android:defaultValue="0xfff90028"
-        android:dependency="statusbar_battery_bar" />
+        android:dependency="statusbar_battery_bar"
+        app:position="middle" />
 
     <com.rising.settings.preferences.SystemSettingSwitchPreference
         android:key="statusbar_battery_bar_animate"
         android:title="@string/battery_bar_animate_title"
         android:defaultValue="true"
-        android:dependency="statusbar_battery_bar" />
+        android:dependency="statusbar_battery_bar"
+        app:position="middle" />
 
     <com.rising.settings.preferences.SystemSettingSwitchPreference
         android:key="statusbar_battery_bar_enable_charging_color"
         android:title="@string/battery_bar_use_charging_color"
         android:defaultValue="true"
-        android:dependency="statusbar_battery_bar" />
+        android:dependency="statusbar_battery_bar"
+        app:position="middle" />
 
     <com.rising.settings.preferences.colorpicker.SystemSettingColorPickerPreference
         android:key="statusbar_battery_bar_charging_color"
         android:title="@string/battery_bar_charging_color"
         android:defaultValue="0xffffc90f"
-        android:dependency="statusbar_battery_bar_enable_charging_color" />
+        android:dependency="statusbar_battery_bar_enable_charging_color"
+        app:position="bottom" />
 </PreferenceScreen>

@@ -16,54 +16,60 @@
 -->
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:lineage="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/notifications_title" >
 
     <com.android.settingslib.widget.IllustrationPreference
         android:key="notification_illustration"
-        lineage:lottie_rawRes="@raw/notification_illustration" />
-
-   <com.rising.settings.preferences.SystemSettingSwitchPreference
-        android:key="alert_slider_notifications"
-        android:icon="@drawable/ic_light_switch"
-        android:title="@string/alert_slider_notifications_title"
-        android:summary="@string/alert_slider_notifications_summary"
-        android:defaultValue="true" /> 
+        app:lottie_rawRes="@raw/notification_illustration" />
 
      <com.rising.settings.preferences.SystemSettingSwitchPreference
         android:key="qs_colored_icons"
         android:icon="@drawable/ic_shapes"
         android:title="@string/qs_colored_icons_title"
         android:summary="@string/qs_colored_icons_summary"
-        android:defaultValue="false" />
+        android:defaultValue="false"
+        app:position="top" />
+
+   <com.rising.settings.preferences.SystemSettingSwitchPreference
+        android:key="alert_slider_notifications"
+        android:icon="@drawable/ic_light_switch"
+        android:title="@string/alert_slider_notifications_title"
+        android:summary="@string/alert_slider_notifications_summary"
+        android:defaultValue="true"
+        app:position="middle" /> 
 
     <com.rising.settings.preferences.SystemSettingSwitchPreference
         android:key="reticker_status"
         android:icon="@drawable/ic_message_fast"
         android:title="@string/reticker_title"
         android:summary="@string/reticker_summary"
-        android:defaultValue="true" />
+        android:defaultValue="true"
+        app:position="middle" />
 
     <com.rising.settings.preferences.SystemSettingSwitchPreference
         android:key="reticker_colored"
         android:icon="@drawable/ic_message_fast"
         android:title="@string/reticker_colored_title"
         android:summary="@string/reticker_colored_summary"
-        android:dependency="reticker_status" />
+        android:dependency="reticker_status"
+        app:position="middle" />
 
     <com.rising.settings.preferences.SystemSettingSwitchPreference
         android:key="notification_sound_vib_screen_on"
         android:icon="@drawable/ic_bell_ring"
         android:title="@string/notification_sound_vib_screen_on_title"
         android:summary="@string/notification_sound_vib_screen_on_summary"
-        android:defaultValue="true" />
+        android:defaultValue="true"
+        app:position="middle" />
 
     <com.rising.settings.preferences.SystemSettingSwitchPreference
         android:key="media_artwork_blur_enabled"
         android:icon="@drawable/ic_blur"
         android:title="@string/artwork_media_background_enable_blur_title"
-        android:defaultValue="false" />
+        android:defaultValue="false"
+        app:position="middle" />
 
     <com.rising.settings.preferences.SystemSettingSeekBarPreference
         android:key="media_artwork_blur_radius"
@@ -72,7 +78,8 @@
         android:dependency="media_artwork_blur_enabled" 
         android:defaultValue="125"
         android:max="125"
-        settings:min="5" />
+        settings:min="5"
+        app:position="middle" />
 
     <com.rising.settings.preferences.SystemSettingSeekBarPreference
         android:key="media_artwork_fade_percent"
@@ -80,7 +87,8 @@
         android:title="@string/media_artwork_fade_percent_title"
         android:defaultValue="30"
         android:max="80"
-        settings:min="1" />
+        settings:min="1"
+        app:position="middle" />
 
     <!-- Notification guts kill app button
     <com.rising.settings.preferences.SystemSettingSwitchPreference
@@ -190,7 +198,8 @@
             android:icon="@drawable/ic_notification_clear_all"
             android:title="@string/notification_material_dismiss_title"
             android:summary="@string/notification_material_dismiss_summary"
-            android:defaultValue="false" />
+            android:defaultValue="false"
+            app:position="middle" />
 
         <com.rising.settings.preferences.SystemSettingSeekBarPreference
             android:key="notification_material_dismiss_style"
@@ -199,7 +208,8 @@
             android:dependency="notification_material_dismiss"
             android:defaultValue="0"
             android:max="9"
-            settings:min="0" />
+            settings:min="0"
+            app:position="middle" />
 
         <com.rising.settings.preferences.SystemSettingSeekBarPreference
             android:key="notification_material_dismiss_bgstyle"
@@ -208,6 +218,7 @@
             android:dependency="notification_material_dismiss"
             android:defaultValue="0"
             android:max="4"
-            settings:min="0" />
+            settings:min="0"
+            app:position="bottom" />
 
 </PreferenceScreen>

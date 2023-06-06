@@ -28,8 +28,7 @@ import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceScreen;
 
-import lineageos.preference.LineageSystemSettingListPreference;
-import lineageos.providers.LineageSettings;
+import com.rising.settings.preferences.SystemSettingListPreference;
 
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
@@ -47,8 +46,8 @@ public class Clock extends SettingsPreferenceFragment {
     private static final String STATUS_BAR_CLOCK_STYLE = "status_bar_clock";
     private static final String STATUS_BAR_AM_PM = "status_bar_am_pm";
 
-    private LineageSystemSettingListPreference mStatusBarClock;
-    private LineageSystemSettingListPreference mStatusBarAmPm;
+    private SystemSettingListPreference mStatusBarClock;
+    private SystemSettingListPreference mStatusBarAmPm;
 
     private PreferenceCategory mStatusBarClockCategory;
 

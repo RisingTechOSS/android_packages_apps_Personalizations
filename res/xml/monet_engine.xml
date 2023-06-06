@@ -16,6 +16,7 @@
 -->
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:key="monet_settings"
     android:title="@string/monet_title">
@@ -24,25 +25,29 @@
         android:key="monet_engine_custom_color"
         android:title="@string/monet_engine_custom_color_title"
         android:summary="@string/monet_engine_custom_color_summary"
-        android:defaultValue="false" />
+        android:defaultValue="false"
+        app:position="top" />
 
     <com.rising.settings.preferences.colorpicker.SecureSettingColorPickerPreference
         android:key="monet_engine_color_override"
         android:title="@string/monet_engine_color_override_title"
         android:dependency="monet_engine_custom_color"
-        android:defaultValue="0xFF1b6ef3" />
+        android:defaultValue="0xFF1b6ef3"
+        app:position="middle" />
 
     <com.rising.settings.preferences.SecureSettingSwitchPreference
         android:key="monet_engine_custom_bgcolor"
         android:title="@string/monet_engine_custom_bgcolor_title"
         android:summary="@string/monet_engine_custom_bgcolor_summary"
-        android:defaultValue="false" />
+        android:defaultValue="false"
+        app:position="middle" />
 
     <com.rising.settings.preferences.colorpicker.SecureSettingColorPickerPreference
         android:key="monet_engine_bgcolor_override"
         android:title="@string/monet_engine_color_override_title"
         android:dependency="monet_engine_custom_bgcolor"
-        android:defaultValue="0xFF1b6ef3" />
+        android:defaultValue="0xFF1b6ef3"
+        app:position="middle" />
 
     <com.rising.settings.preferences.SecureSettingSeekBarPreference
         android:key="monet_engine_luminance_factor"
@@ -51,7 +56,8 @@
         android:defaultValue="100"
         android:max="225"
         settings:min="25"
-        settings:interval="5"/>
+        settings:interval="5"
+        app:position="middle"/>
 
     <com.rising.settings.preferences.SecureSettingSeekBarPreference
         android:key="monet_engine_chroma_factor"
@@ -60,12 +66,14 @@
         android:defaultValue="100"
         android:max="225"
         settings:min="25"
-        settings:interval="5"/>
+        settings:interval="5"
+        app:position="middle"/>
 
     <com.rising.settings.preferences.SecureSettingSwitchPreference
         android:key="monet_engine_tint_background"
         android:title="@string/monet_engine_tint_background_title"
         android:summary="@string/monet_engine_tint_background_summary"
-        android:defaultValue="false" />
+        android:defaultValue="false"
+        app:position="bottom" />
 
 </PreferenceScreen>

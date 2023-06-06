@@ -18,18 +18,21 @@
 <PreferenceScreen 
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:title="@string/udfps_settings_title" >
 
-    <Preference
+    <com.rising.settings.preferences.AdaptivePreference
         android:key="udfps_icon_picker"
         android:title="@string/udfps_icon_picker_title"
         android:summary="@string/udfps_icon_picker_summary"
-        android:fragment="com.rising.settings.fragments.lockscreen.UdfpsIconPicker" />
+        android:fragment="com.rising.settings.fragments.lockscreen.UdfpsIconPicker" 
+        app:position="top"/>
 
-    <Preference
+    <com.rising.settings.preferences.AdaptivePreference
         android:key="udfps_recognizing_animation_preview"
         android:title="@string/udfps_recog_animation_effect_title"
         android:summary="@string/udfps_recog_animation_effect_summary"
-        android:fragment="com.rising.settings.fragments.lockscreen.UdfpsAnimation" />
+        android:fragment="com.rising.settings.fragments.lockscreen.UdfpsAnimation"
+        app:position="bottom" />
 
 </PreferenceScreen>

@@ -12,15 +12,18 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
  -->
 
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+<PreferenceScreen 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:key="omnijaws_settings"
     android:title="@string/weather_title">
 
-     <ListPreference
+     <com.rising.settings.preferences.AdaptiveListPreference
             android:key="weather_icon_pack"
             android:icon="@drawable/ic_omni"
             android:title="@string/weather_icon_pack_title"
-            android:persistent="false" />
+            android:persistent="false"
+            app:position="top" />
 
      <com.android.settingslib.widget.FooterPreference
             android:title="@string/weather_icon_pack_info_title" />
@@ -32,7 +35,8 @@
         android:dialogTitle="@string/kg_weather_title"
         android:entries="@array/kg_launcher_weather_entries"
         android:summary="%s"
-        android:entryValues="@array/kg_launcher_weather_values" />
+        android:entryValues="@array/kg_launcher_weather_values"
+        app:position="middle" />
 
       <com.rising.settings.preferences.SystemSettingListPreference
         android:key="qs_show_weather_temp"
@@ -41,16 +45,18 @@
         android:dialogTitle="@string/qs_weather_title"
         android:entries="@array/qs_weather_entries"
         android:summary="%s"
-        android:entryValues="@array/qs_weather_values" />
+        android:entryValues="@array/qs_weather_values"
+        app:position="middle" />
 
-    <Preference
+    <com.rising.settings.preferences.AdaptivePreference
         android:icon="@drawable/ic_omnijaws"
         android:title="@string/weather_config_title"
-        android:summary="@string/weather_config_summary">
+        android:summary="@string/weather_config_summary"
+        app:position="bottom">
         <intent
             android:action="android.intent.action.MAIN"
             android:targetPackage="org.omnirom.omnijaws"
             android:targetClass="org.omnirom.omnijaws.SettingsActivityService" />
-    </Preference>
+    </com.rising.settings.preferences.AdaptivePreference>
 
 </PreferenceScreen>

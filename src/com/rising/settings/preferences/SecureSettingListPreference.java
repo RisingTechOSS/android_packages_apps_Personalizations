@@ -16,28 +16,79 @@
 package com.rising.settings.preferences;
 
 import android.content.Context;
+import android.content.res.TypedArray;
 import androidx.preference.ListPreference;
+import android.os.UserHandle;
 import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.provider.Settings;
 
-public class SecureSettingListPreference extends ListPreference {
+import com.android.settings.R;
+
+import lineageos.preference.SelfRemovingListPreference;
+
+import lineageos.providers.LineageSettings;
+
+public class SecureSettingListPreference extends SelfRemovingListPreference {
 
     private boolean mAutoSummary = false;
+    private Position position;
+    private boolean isLineageSettings;
 
     public SecureSettingListPreference(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
-        setPreferenceDataStore(new SecureSettingsStore(context.getContentResolver()));
+        isLineageSettings = getLineageAttribute(context, attrs);
+        init(context, attrs);
+        if (!isLineageSettings) {
+            setPreferenceDataStore(new SecureSettingsStore(context.getContentResolver()));
+        }
     }
 
     public SecureSettingListPreference(Context context, AttributeSet attrs) {
         super(context, attrs);
-        setPreferenceDataStore(new SecureSettingsStore(context.getContentResolver()));
+        isLineageSettings = getLineageAttribute(context, attrs);
+        init(context, attrs);
+        if (!isLineageSettings) {
+            setPreferenceDataStore(new SecureSettingsStore(context.getContentResolver()));
+        }
     }
 
     public SecureSettingListPreference(Context context) {
         super(context);
-        setPreferenceDataStore(new SecureSettingsStore(context.getContentResolver()));
+        isLineageSettings = getLineageAttribute(context, null);
+        init(context, null);
+        if (!isLineageSettings) {
+            setPreferenceDataStore(new SecureSettingsStore(context.getContentResolver()));
+        }
+    }
+
+    @Override
+    protected boolean isPersisted() {
+        if (isLineageSettings) {
+            return LineageSettings.Secure.getString(getContext().getContentResolver(), getKey()) != null;
+        } else {
+            return Settings.Secure.getString(getContext().getContentResolver(), getKey()) != null;
+        }
+    }
+
+    @Override
+    protected void putString(String key, String value) {
+        if (isLineageSettings) {
+            LineageSettings.Secure.putString(getContext().getContentResolver(), key, value);
+        } else {
+            Settings.Secure.putStringForUser(getContext().getContentResolver(), key, value, UserHandle.USER_CURRENT);
+        }
+    }
+
+    @Override
+    protected String getString(String key, String defaultValue) {
+        if (isLineageSettings) {
+            return LineageSettings.Secure.getString(getContext().getContentResolver(),
+                    key, defaultValue);
+        } else {
+            return Settings.Secure.getStringForUser(getContext().getContentResolver(),
+                    key, UserHandle.USER_CURRENT);
+        }
     }
 
     @Override
@@ -69,5 +120,70 @@ public class SecureSettingListPreference extends ListPreference {
 
     public int getIntValue(int defValue) {
         return getValue() == null ? defValue : Integer.valueOf(getValue());
+    }
+    
+    private boolean getLineageAttribute(Context context, AttributeSet attrs) {
+        TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.AdaptivePreference);
+        boolean isLineage = typedArray.getBoolean(R.styleable.AdaptivePreference_isLineageSettings, false);
+        typedArray.recycle();
+
+        return isLineage;
+    }
+
+    private void init(Context context, AttributeSet attrs) {
+        // Retrieve and set the layout resource based on position
+        // otherwise do not set any layout
+        position = getPosition(context, attrs);
+        if (position != null) {
+            int layoutResId = getLayoutResourceId(position);
+            setLayoutResource(layoutResId);
+        }
+    }
+
+    private Position getPosition(Context context, AttributeSet attrs) {
+        TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.AdaptivePreference);
+        String positionAttribute = typedArray.getString(R.styleable.AdaptivePreference_position);
+        typedArray.recycle();
+
+        Position positionFromAttribute = Position.fromAttribute(positionAttribute);
+        if (positionFromAttribute != null) {
+            return positionFromAttribute;
+        }
+
+        return null;
+    }
+
+    private int getLayoutResourceId(Position position) {
+        switch (position) {
+            case TOP:
+                return R.layout.arc_card_about_top;
+            case BOTTOM:
+                return R.layout.arc_card_about_bottom;
+            case MIDDLE:
+                return R.layout.arc_card_about_middle;
+            default:
+                return R.layout.arc_card_about_middle;
+        }
+    }
+
+    private enum Position {
+        TOP,
+        MIDDLE,
+        BOTTOM;
+
+        public static Position fromAttribute(String attribute) {
+            if (attribute != null) {
+                switch (attribute.toLowerCase()) {
+                    case "top":
+                        return TOP;
+                    case "bottom":
+                        return BOTTOM;
+                    case "middle":
+                        return MIDDLE;
+                        
+                }
+            }
+            return null;
+        }
     }
 }

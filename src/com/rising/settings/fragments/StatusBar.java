@@ -43,7 +43,6 @@ import com.rising.settings.preferences.SystemSettingSeekBarPreference;
 import com.rising.settings.utils.DeviceUtils;
 import com.rising.settings.utils.TelephonyUtils;
 
-import lineageos.preference.LineageSystemSettingListPreference;
 import lineageos.providers.LineageSettings;
 
 import java.util.List;
@@ -78,7 +77,7 @@ public class StatusBar extends SettingsPreferenceFragment implements
     private static final int BATTERY_STYLE_TEXT = 4;
     private static final int BATTERY_STYLE_HIDDEN = 5;
 
-    private LineageSystemSettingListPreference mQuickPulldown;
+    private SystemSettingListPreference mQuickPulldown;
     private SystemSettingListPreference mBatteryPercent;
     private SystemSettingListPreference mBatteryStyle;
     //private SwitchPreference mShowRoaming;
@@ -139,7 +138,7 @@ public class StatusBar extends SettingsPreferenceFragment implements
                 (batterystyle != BATTERY_STYLE_TEXT && batterypercent != 2));
 
         mQuickPulldown =
-                (LineageSystemSettingListPreference) findPreference(QUICK_PULLDOWN);
+                (SystemSettingListPreference) findPreference(QUICK_PULLDOWN);
         mQuickPulldown.setOnPreferenceChangeListener(this);
         updateQuickPulldownSummary(mQuickPulldown.getIntValue(0));
 
