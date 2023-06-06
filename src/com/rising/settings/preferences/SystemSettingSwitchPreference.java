@@ -16,20 +16,27 @@
 package com.rising.settings.preferences;
 
 import android.content.Context;
+import android.content.res.TypedArray;
 import android.provider.Settings;
 import android.os.UserHandle;
 import android.util.AttributeSet;
+
+import com.android.settings.R;
 
 import lineageos.preference.SelfRemovingSwitchPreference;
 
 public class SystemSettingSwitchPreference extends SelfRemovingSwitchPreference {
 
+    private Position position;
+
     public SystemSettingSwitchPreference(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
+        init(context, attrs);
     }
 
     public SystemSettingSwitchPreference(Context context, AttributeSet attrs) {
         super(context, attrs);
+        init(context, attrs);
     }
 
     public SystemSettingSwitchPreference(Context context) {
@@ -50,5 +57,62 @@ public class SystemSettingSwitchPreference extends SelfRemovingSwitchPreference 
     protected boolean getBoolean(String key, boolean defaultValue) {
         return Settings.System.getIntForUser(getContext().getContentResolver(),
                 key, defaultValue ? 1 : 0, UserHandle.USER_CURRENT) != 0;
+    }
+    
+    private void init(Context context, AttributeSet attrs) {
+        // Retrieve and set the layout resource based on position
+        // otherwise do not set any layout
+        position = getPosition(context, attrs);
+        if (position != null) {
+            int layoutResId = getLayoutResourceId(position);
+            setLayoutResource(layoutResId);
+        }
+    }
+
+    private Position getPosition(Context context, AttributeSet attrs) {
+        TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.AdaptivePreference);
+        String positionAttribute = typedArray.getString(R.styleable.AdaptivePreference_position);
+        typedArray.recycle();
+
+        Position positionFromAttribute = Position.fromAttribute(positionAttribute);
+        if (positionFromAttribute != null) {
+            return positionFromAttribute;
+        }
+
+        return null;
+    }
+
+    private int getLayoutResourceId(Position position) {
+        switch (position) {
+            case TOP:
+                return R.layout.arc_card_about_top;
+            case BOTTOM:
+                return R.layout.arc_card_about_bottom;
+            case MIDDLE:
+                return R.layout.arc_card_about_middle;
+            default:
+                return R.layout.arc_card_about_middle;
+        }
+    }
+
+    private enum Position {
+        TOP,
+        MIDDLE,
+        BOTTOM;
+
+        public static Position fromAttribute(String attribute) {
+            if (attribute != null) {
+                switch (attribute.toLowerCase()) {
+                    case "top":
+                        return TOP;
+                    case "bottom":
+                        return BOTTOM;
+                    case "middle":
+                        return MIDDLE;
+                        
+                }
+            }
+            return null;
+        }
     }
 }

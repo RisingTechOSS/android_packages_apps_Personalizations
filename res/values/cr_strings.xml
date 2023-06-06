@@ -1585,5 +1585,5 @@
     
     <!-- Desktop Mode Settings -->
     <string name="desktop_mode_pc_title">Desktop Mode</string>
-    <string name="sys_adaptive_charging_summary">Full desktop mode on external display or PC</string>
+    <string name="desktop_mode_pc_summary">Full desktop mode on external display or PC</string>
 </resources>

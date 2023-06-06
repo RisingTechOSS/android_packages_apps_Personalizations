@@ -1,11 +1,11 @@
 /*
- * Copyright (C) 2016-2018 crDroid Android Project
+ * Copyright (C) 2023 The risingOS Android Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -17,48 +17,31 @@ package com.rising.settings.preferences;
 
 import android.content.Context;
 import android.content.res.TypedArray;
-import android.provider.Settings;
-import android.os.UserHandle;
 import android.util.AttributeSet;
 
 import com.android.settings.R;
 
-import lineageos.preference.SelfRemovingSwitchPreference;
+import com.android.settingslib.RestrictedSwitchPreference;
 
-public class SecureSettingSwitchPreference extends SelfRemovingSwitchPreference {
+public class AdaptiveRestrictedSwitchPreference extends RestrictedSwitchPreference {
 
     private Position position;
 
-    public SecureSettingSwitchPreference(Context context, AttributeSet attrs, int defStyle) {
-        super(context, attrs, defStyle);
-         init(context, attrs);
-    }
-
-    public SecureSettingSwitchPreference(Context context, AttributeSet attrs) {
-        super(context, attrs);
-         init(context, attrs);
-    }
-
-    public SecureSettingSwitchPreference(Context context) {
+    public AdaptiveRestrictedSwitchPreference(Context context) {
         super(context);
+        init(context, null);
     }
 
-    @Override
-    protected boolean isPersisted() {
-        return Settings.Secure.getString(getContext().getContentResolver(), getKey()) != null;
+    public AdaptiveRestrictedSwitchPreference(Context context, AttributeSet attrs) {
+        super(context, attrs);
+        init(context, attrs);
     }
 
-    @Override
-    protected void putBoolean(String key, boolean value) {
-        Settings.Secure.putIntForUser(getContext().getContentResolver(), key, value ? 1 : 0, UserHandle.USER_CURRENT);
+    public AdaptiveRestrictedSwitchPreference(Context context, AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
+        init(context, attrs);
     }
 
-    @Override
-    protected boolean getBoolean(String key, boolean defaultValue) {
-        return Settings.Secure.getIntForUser(getContext().getContentResolver(),
-                key, defaultValue ? 1 : 0, UserHandle.USER_CURRENT) != 0;
-    }
-    
     private void init(Context context, AttributeSet attrs) {
         // Retrieve and set the layout resource based on position
         // otherwise do not set any layout
@@ -116,3 +99,4 @@ public class SecureSettingSwitchPreference extends SelfRemovingSwitchPreference 
         }
     }
 }
+
