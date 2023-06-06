@@ -25,17 +25,22 @@ import com.android.settings.R;
 
 import lineageos.preference.SelfRemovingSwitchPreference;
 
+import lineageos.providers.LineageSettings;
+
 public class SecureSettingSwitchPreference extends SelfRemovingSwitchPreference {
 
     private Position position;
+    private boolean isLineageSettings;
 
     public SecureSettingSwitchPreference(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
+         isLineageSettings = getLineageAttribute(context, attrs);
          init(context, attrs);
     }
 
     public SecureSettingSwitchPreference(Context context, AttributeSet attrs) {
         super(context, attrs);
+         isLineageSettings = getLineageAttribute(context, attrs);
          init(context, attrs);
     }
 
@@ -45,20 +50,37 @@ public class SecureSettingSwitchPreference extends SelfRemovingSwitchPreference 
 
     @Override
     protected boolean isPersisted() {
-        return Settings.Secure.getString(getContext().getContentResolver(), getKey()) != null;
+        return isLineageSettings ? LineageSettings.Secure.getString(getContext().getContentResolver(), getKey()) != null : Settings.Secure.getString(getContext().getContentResolver(), getKey()) != null;
     }
 
     @Override
     protected void putBoolean(String key, boolean value) {
-        Settings.Secure.putIntForUser(getContext().getContentResolver(), key, value ? 1 : 0, UserHandle.USER_CURRENT);
+        if (isLineageSettings) {
+            LineageSettings.Secure.putInt(getContext().getContentResolver(), key, value ? 1 : 0);
+        } else {
+            Settings.Secure.putIntForUser(getContext().getContentResolver(), key, value ? 1 : 0, UserHandle.USER_CURRENT);
+        }
     }
 
     @Override
     protected boolean getBoolean(String key, boolean defaultValue) {
-        return Settings.Secure.getIntForUser(getContext().getContentResolver(),
-                key, defaultValue ? 1 : 0, UserHandle.USER_CURRENT) != 0;
+        if (isLineageSettings) {
+            return LineageSettings.Secure.getInt(getContext().getContentResolver(),
+                    key, defaultValue ? 1 : 0) != 0;
+        } else {
+            return Settings.Secure.getIntForUser(getContext().getContentResolver(),
+                    key, defaultValue ? 1 : 0, UserHandle.USER_CURRENT) != 0;
+        }
     }
-    
+
+    private boolean getLineageAttribute(Context context, AttributeSet attrs) {
+        TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.AdaptivePreference);
+        boolean isLineage = typedArray.getBoolean(R.styleable.AdaptivePreference_isLineageSettings, false);
+        typedArray.recycle();
+
+        return isLineage;
+    }
+
     private void init(Context context, AttributeSet attrs) {
         // Retrieve and set the layout resource based on position
         // otherwise do not set any layout
