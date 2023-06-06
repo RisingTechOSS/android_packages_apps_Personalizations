@@ -24,84 +24,68 @@
             app:lottie_rawRes="@raw/lottie_painting"/>
             
         <!-- About -->
-        <Preference
+        <com.rising.settings.preferences.AdaptivePreference
             android:icon="@drawable/ic_settings_about"
             android:title="@string/about_settings_title"
-            settings:layout="@layout/arc_card_about_top"
             android:summary="@string/about_settings_summary"
-            android:fragment="com.rising.settings.fragments.About" />
-
-      <!-- Buttons
-        <Preference
-            android:icon="@drawable/ic_settings_cogs"
-            settings:layout="@layout/arc_card_about_middle"
-            android:title="@string/button_title"
-            android:summary="@string/buttons_settings_summary"
-            android:fragment="com.rising.settings.fragments.Buttons" /> -->
+            android:fragment="com.rising.settings.fragments.About"
+            app:position="top" />
 
       <!-- Lockscreen -->
-        <Preference
+        <com.rising.settings.preferences.AdaptivePreference
             android:icon="@drawable/ic_settings_lockscreens"
             android:title="@string/lockscreen_title"
-            settings:layout="@layout/arc_card_about_middle"
             android:summary="@string/lockscreen_settings_summary"
-            android:fragment="com.rising.settings.fragments.LockScreen" />
+            android:fragment="com.rising.settings.fragments.LockScreen"
+            app:position="middle" />
             
         <!-- Misc -->
-        <Preference
+        <com.rising.settings.preferences.AdaptivePreference
             android:icon="@drawable/ic_settings_miscs"
             android:title="@string/misc_title"
-            settings:layout="@layout/arc_card_about_middle"
             android:summary="@string/misc_settings_summary"
-            android:fragment="com.rising.settings.fragments.Miscellaneous" />
-
-        <!-- Navigation
-        <Preference
-            android:icon="@drawable/ic_settings_notifications"
-            settings:layout="@layout/arc_card_about_middle"
-            android:title="@string/navigation_title"
-            android:summary="@string/nav_settings_summary"
-            android:fragment="com.rising.settings.fragments.Navigation" /> -->
+            android:fragment="com.rising.settings.fragments.Miscellaneous"
+            app:position="middle" />
 
         <!-- Notifications -->
-        <Preference
+        <com.rising.settings.preferences.AdaptivePreference
             android:icon="@drawable/ic_dashboard_notifications"
             android:title="@string/notifications_title"
-            settings:layout="@layout/arc_card_about_middle"
             android:summary="@string/notif_settings_summary"
-            android:fragment="com.rising.settings.fragments.Notifications" />
+            android:fragment="com.rising.settings.fragments.Notifications"
+            app:position="middle" />
 
         <!-- QuickSettings  -->
-        <Preference
+        <com.rising.settings.preferences.AdaptivePreference
             android:key="qs_tile_layout"
             android:icon="@drawable/ic_settings_quicksettings"
-            settings:layout="@layout/arc_card_about_middle"
             android:title="@string/qs_layout_category_title"
             android:summary="@string/qs_tile_layout_summary"
-            android:fragment="com.rising.settings.fragments.QsLayoutSettings" />
+            android:fragment="com.rising.settings.fragments.QsLayoutSettings"
+            app:position="middle" />
 
         <!-- Sound -->
-        <Preference
+        <com.rising.settings.preferences.AdaptivePreference
             android:icon="@drawable/ic_cellphone_sound"
             android:title="@string/sound_title"
-            settings:layout="@layout/arc_card_about_middle"
             android:summary="@string/sound_settings_summary"
-            android:fragment="com.rising.settings.fragments.Sound" />    
+            android:fragment="com.rising.settings.fragments.Sound"
+            app:position="middle" />    
 
        <!-- Statusbar -->   
-        <Preference
+        <com.rising.settings.preferences.AdaptivePreference
             android:icon="@drawable/ic_settings_statusbar"
             android:title="@string/statusbar_title"
-            settings:layout="@layout/arc_card_about_middle"
             android:summary="@string/sb_settings_summary"
-            android:fragment="com.rising.settings.fragments.StatusBar" />
+            android:fragment="com.rising.settings.fragments.StatusBar"
+            app:position="middle" />
  
         <!--- UserInterface -->
-        <Preference
+        <com.rising.settings.preferences.AdaptivePreference
             android:icon="@drawable/ic_color_bucket"
             android:title="@string/ui_title"
             android:summary="@string/ui_settings_summary"
-            settings:layout="@layout/arc_card_about_bottom"
-            android:fragment="com.rising.settings.fragments.UserInterface" /> 
+            android:fragment="com.rising.settings.fragments.UserInterface"
+            app:position="bottom" /> 
 
 </PreferenceScreen> 
