@@ -38,7 +38,7 @@
             android:format24Hour="kk\nmm"
             android:fontFamily="@*android:string/config_clockFontFamily"
             android:gravity="center"
-            android:textAppearance="@style/OptionTitleTextAppearance"/>
+            android:textAppearance="@style/LockscreenOptionTitleTextAppearance"/>
 
     </FrameLayout>
 

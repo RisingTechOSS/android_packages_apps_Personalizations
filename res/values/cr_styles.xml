@@ -16,15 +16,31 @@
 -->
 <resources>
 
-    <style name="OptionTitleTextAppearance" parent="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Title">
+   <style name="OptionTitleTextAppearance" parent="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Title">
         <item name="android:textAlignment">center</item>
-        <item name="android:textSize">15sp</item>
-        <item name="android:lineHeight">15sp</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:lineHeight">13sp</item>
         <item name="android:textColor">?android:attr/textColorSecondary</item>
     </style>
     
     <style name="ClockOptionTitleTextAppearance" parent="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Title">
         <item name="android:textAlignment">center</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:lineHeight">11sp</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+    
+    <style name="LockscreenOptionTitleTextAppearance" parent="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Title">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:lineHeight">30sp</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+    
+    <style name="LockscreenDateOptionTitleTextAppearance" parent="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Title">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:lineHeight">13sp</item>
         <item name="android:textColor">?android:attr/textColorSecondary</item>
     </style>
 </resources>

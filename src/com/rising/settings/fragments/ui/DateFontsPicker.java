@@ -140,7 +140,6 @@ public class DateFontsPicker extends SettingsPreferenceFragment {
             holder.name.setVisibility(View.VISIBLE);
             holder.name.setText("android".equals(pkg) ? "Default" : label);
             holder.title.setTypeface(Typeface.create("android".equals(pkg) ? "sans-serif" : label.toLowerCase().replaceAll(" ",""), Typeface.NORMAL));
-            holder.title.setTextSize(32);
 
             if (currentPackageName.equals(pkg)) {
                 mAppliedPkg = pkg;
