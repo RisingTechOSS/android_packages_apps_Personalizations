@@ -413,8 +413,9 @@
     <string name="lockscreen_doubletap_sleep_summary">Double-tap on the lock screen to put device asleep</string>
 
     <!-- Font style / Icon pack -->
-    <string name="theme_customization_clock_font_title">Lockscreen clock font style</string>
-    <string name="theme_customization_clock_font_summary">Set lockscreen clock font style</string>
+    <string name="theme_customization_clock_font_title">Lockscreen clock style</string>
+    <string name="swipe_the_clock">Swipe the clock to change font style </string>
+    <string name="theme_customization_clock_font_summary">Set lockscreen clock style</string>
     <string name="theme_customization_date_font_title">Lockscreen date font style</string>
     <string name="theme_customization_date_font_summary">Set lockscreen date font style</string>
     <string name="theme_customization_font_title">Font style</string>

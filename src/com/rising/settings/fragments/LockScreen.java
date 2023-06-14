@@ -33,7 +33,6 @@ import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceScreen;
-import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.SwitchPreference;
 
 import com.android.internal.logging.nano.MetricsProto;
@@ -50,8 +49,7 @@ import com.android.internal.util.rising.ThemeUtils;
 import java.util.List;
 
 @SearchIndexable
-public class LockScreen extends SettingsPreferenceFragment implements
-        Preference.OnPreferenceChangeListener {
+public class LockScreen extends SettingsPreferenceFragment {
 
     public static final String TAG = "LockScreen";
 
@@ -61,13 +59,11 @@ public class LockScreen extends SettingsPreferenceFragment implements
     private static final String KEY_FP_SUCCESS_VIBRATE = "fp_success_vibrate";
     private static final String KEY_FP_ERROR_VIBRATE = "fp_error_vibrate";
     private static final String KEY_RIPPLE_EFFECT = "enable_ripple_effect";
-    private static final String KG_CUSTOM_CLOCK_COLOR_ENABLED = "kg_custom_clock_color_enabled";
 
     private Preference mUdfpsSettings;
     private Preference mFingerprintVib;
     private Preference mFingerprintVibErr;
     private Preference mRippleEffect;
-    private SwitchPreference mKGCustomClockColor;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -100,25 +96,6 @@ public class LockScreen extends SettingsPreferenceFragment implements
             }
         }
 
-        mKGCustomClockColor = (SwitchPreference) findPreference(KG_CUSTOM_CLOCK_COLOR_ENABLED);
-        boolean mKGCustomClockColorEnabled = Settings.Secure.getIntForUser(resolver,
-                Settings.Secure.KG_CUSTOM_CLOCK_COLOR_ENABLED, 0, UserHandle.USER_CURRENT) != 0;
-        mKGCustomClockColor.setChecked(mKGCustomClockColorEnabled);
-        mKGCustomClockColor.setOnPreferenceChangeListener(this);
-
-    }
-    
-    @Override
-    public boolean onPreferenceChange(Preference preference, Object newValue) {
-	Context mContext = getActivity().getApplicationContext();
-	ContentResolver resolver = mContext.getContentResolver();
-        if (preference == mKGCustomClockColor) {
-            boolean val = (Boolean) newValue;
-            Settings.Secure.putIntForUser(resolver,
-                Settings.Secure.KG_CUSTOM_CLOCK_COLOR_ENABLED, val ? 1 : 0, UserHandle.USER_CURRENT);
-            return true;
-	}
-        return false;
     }
 
     @Override
