@@ -28,25 +28,25 @@
      <com.android.settingslib.widget.FooterPreference
             android:title="@string/weather_icon_pack_info_title" />
 
-      <com.rising.settings.preferences.SystemSettingListPreference
-        android:key="kg_show_weather_temp"
-        android:icon="@drawable/ic_weather"
-        android:title="@string/kg_weather_title"
-        android:dialogTitle="@string/kg_weather_title"
-        android:entries="@array/kg_launcher_weather_entries"
-        android:summary="%s"
-        android:entryValues="@array/kg_launcher_weather_values"
-        app:position="middle" />
+        <com.rising.settings.preferences.SystemSettingSwitchPreference
+            android:key="lockscreen_weather_enabled"
+            android:icon="@drawable/ic_weather"
+            android:title="@string/lockscreen_weather_title"
+            android:summary="@string/lockscreen_weather_summary" />
 
-      <com.rising.settings.preferences.SystemSettingListPreference
-        android:key="qs_show_weather_temp"
-        android:icon="@drawable/ic_weather"
-        android:title="@string/qs_weather_title"
-        android:dialogTitle="@string/qs_weather_title"
-        android:entries="@array/qs_weather_entries"
-        android:summary="%s"
-        android:entryValues="@array/qs_weather_values"
-        app:position="middle" />
+        <com.rising.settings.preferences.SystemSettingSwitchPreference
+            android:key="lockscreen_weather_location"
+            android:icon="@drawable/ic_map_marker"
+            android:title="@string/lockscreen_weather_location_title"
+            android:summary="@string/lockscreen_weather_location_summary"
+            android:dependency="lockscreen_weather_enabled" />
+
+        <com.rising.settings.preferences.SystemSettingSwitchPreference
+            android:key="lockscreen_weather_style"
+            android:icon="@drawable/ic_weather"
+            android:title="@string/lockscreen_weather_style_title"
+            android:summary="@string/lockscreen_weather_style_summary"
+            android:dependency="lockscreen_weather_enabled" />
 
     <com.rising.settings.preferences.AdaptivePreference
         android:icon="@drawable/ic_omnijaws"
