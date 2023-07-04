@@ -66,15 +66,6 @@
         android:summary="@string/system_manager_services_summary"
         android:fragment="com.rising.settings.fragments.misc.SystemManagerSettings"
         app:position="middle"/> 
- 
-    <!-- Smart Pixels-->
-    <com.rising.settings.preferences.AdaptivePreference
-        android:key="smart_pixels"
-        android:icon="@drawable/ic_smart_pixels"
-        android:title="@string/smart_pixels_title" 
-        android:summary="@string/smart_pixels_summary" 
-        android:fragment="com.rising.settings.fragments.misc.SmartPixels"
-        app:position="middle" /> 
 
    <com.rising.settings.preferences.AdaptivePreference
         android:key="omnijaws_settings"

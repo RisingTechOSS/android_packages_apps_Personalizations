@@ -43,26 +43,11 @@ public class Miscellaneous extends SettingsPreferenceFragment {
 
     public static final String TAG = "Miscellaneous";
 
-    private static final String SMART_CHARGING = "smart_charging";
-    private static final String SMART_PIXELS = "smart_pixels";
-
-    private Preference mSmartPixels;
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.rising_settings_misc);
-        
-        Context mContext = getActivity().getApplicationContext();
-        final PreferenceScreen prefScreen = getPreferenceScreen();
-
-        mSmartPixels = (Preference) prefScreen.findPreference(SMART_PIXELS);
-        boolean mSmartPixelsSupported = getResources().getBoolean(
-                com.android.internal.R.bool.config_supportSmartPixels);
-        if (!mSmartPixelsSupported) {
-            prefScreen.removePreference(mSmartPixels);
-        }
     }
 
     @Override
@@ -79,12 +64,6 @@ public class Miscellaneous extends SettingsPreferenceFragment {
                 @Override
                 public List<String> getNonIndexableKeys(Context context) {
                     List<String> keys = super.getNonIndexableKeys(context);
-
-                    boolean mSmartPixelsSupported = context.getResources().getBoolean(
-                            com.android.internal.R.bool.config_supportSmartPixels);
-                    if (!mSmartPixelsSupported) {
-                        keys.add(SMART_PIXELS);
-                    }
 
                     return keys;
                 }
