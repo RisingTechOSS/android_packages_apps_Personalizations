@@ -34,8 +34,6 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
 
-import com.rising.settings.fragments.misc.SmartCharging;
-
 import java.util.List;
 
 import lineageos.providers.LineageSettings;
@@ -48,7 +46,6 @@ public class Miscellaneous extends SettingsPreferenceFragment {
     private static final String SMART_CHARGING = "smart_charging";
     private static final String SMART_PIXELS = "smart_pixels";
 
-    private Preference mSmartCharging;
     private Preference mSmartPixels;
 
     @Override
@@ -63,14 +60,9 @@ public class Miscellaneous extends SettingsPreferenceFragment {
         mSmartPixels = (Preference) prefScreen.findPreference(SMART_PIXELS);
         boolean mSmartPixelsSupported = getResources().getBoolean(
                 com.android.internal.R.bool.config_supportSmartPixels);
-        if (!mSmartPixelsSupported)
+        if (!mSmartPixelsSupported) {
             prefScreen.removePreference(mSmartPixels);
-
-        mSmartCharging = (Preference) prefScreen.findPreference(SMART_CHARGING);
-        boolean mSmartChargingSupported = getResources().getBoolean(
-                com.android.internal.R.bool.config_smartChargingAvailable);
-        if (!mSmartChargingSupported)
-            prefScreen.removePreference(mSmartCharging);
+        }
     }
 
     @Override
@@ -90,13 +82,9 @@ public class Miscellaneous extends SettingsPreferenceFragment {
 
                     boolean mSmartPixelsSupported = context.getResources().getBoolean(
                             com.android.internal.R.bool.config_supportSmartPixels);
-                    if (!mSmartPixelsSupported)
+                    if (!mSmartPixelsSupported) {
                         keys.add(SMART_PIXELS);
-
-                    boolean mSmartChargingSupported = context.getResources().getBoolean(
-                            com.android.internal.R.bool.config_smartChargingAvailable);
-                    if (!mSmartChargingSupported)
-                        keys.add(SMART_CHARGING);
+                    }
 
                     return keys;
                 }

@@ -58,15 +58,6 @@
             android:targetClass="ink.kscope.parallelspace.MainActivity" /> 
     </com.rising.settings.preferences.AdaptivePreference>
 
-    <!-- Smart Charging -->
-    <com.rising.settings.preferences.AdaptivePreference
-        android:key="smart_charging"
-        android:icon="@drawable/ic_battery_charging_80"
-        android:title="@string/smart_charging_title"
-        android:summary="@string/smart_charging_summary"
-        android:fragment="com.rising.settings.fragments.misc.SmartCharging"
-        app:position="middle"/>
-
     <!-- System Manager Services -->
     <com.rising.settings.preferences.AdaptivePreference
         android:key="system_manager_settings"
