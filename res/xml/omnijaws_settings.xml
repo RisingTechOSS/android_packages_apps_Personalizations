@@ -32,21 +32,24 @@
             android:key="lockscreen_weather_enabled"
             android:icon="@drawable/ic_weather"
             android:title="@string/lockscreen_weather_title"
-            android:summary="@string/lockscreen_weather_summary" />
+            android:summary="@string/lockscreen_weather_summary"
+            app:position="middle" />
 
         <com.rising.settings.preferences.SystemSettingSwitchPreference
             android:key="lockscreen_weather_location"
             android:icon="@drawable/ic_map_marker"
             android:title="@string/lockscreen_weather_location_title"
             android:summary="@string/lockscreen_weather_location_summary"
-            android:dependency="lockscreen_weather_enabled" />
+            android:dependency="lockscreen_weather_enabled"
+            app:position="middle" />
 
         <com.rising.settings.preferences.SystemSettingSwitchPreference
             android:key="lockscreen_weather_style"
             android:icon="@drawable/ic_weather"
             android:title="@string/lockscreen_weather_style_title"
             android:summary="@string/lockscreen_weather_style_summary"
-            android:dependency="lockscreen_weather_enabled" />
+            android:dependency="lockscreen_weather_enabled"
+            app:position="middle" />
 
     <com.rising.settings.preferences.AdaptivePreference
         android:icon="@drawable/ic_omnijaws"

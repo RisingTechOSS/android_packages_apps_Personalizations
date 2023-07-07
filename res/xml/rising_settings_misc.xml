@@ -145,7 +145,7 @@
         android:entries="@array/screen_off_animation_entries"
         android:entryValues="@array/screen_off_animation_values"
         android:defaultValue="0"
-        app:position="middle" />
+        app:position="bottom" />
 
     </PreferenceCategory>
 
