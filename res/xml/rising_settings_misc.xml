@@ -114,15 +114,6 @@
         android:defaultValue="false"
         app:position="middle" />
 
-    <!-- Spoof All Apps -->
-    <com.rising.settings.preferences.SystemPropertySwitchPreference
-        android:key="persist.sys.pixelprops.spoofAll"
-        android:icon="@drawable/ic_google"
-        android:title="@string/spoof_all_title"
-        android:summary="@string/spoof_all_summary"
-        android:defaultValue="false"
-        app:position="bottom" />
-
     </PreferenceCategory>
 
     <PreferenceCategory
