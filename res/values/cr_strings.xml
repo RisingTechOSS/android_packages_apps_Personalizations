@@ -1583,8 +1583,8 @@
     <string name="volume_slider_haptics_intensity_title">Volume slider haptics intensity</string>
 
     <!-- Adaptive Charging Settings -->
-    <string name="sys_adaptive_charging_title">Adaptive Charging</string>
-    <string name="sys_adaptive_charging_summary">Optimize device\'s power consumption while charging by utilizing AOSP\'s adaptive power strategy.</string>
+    <string name="sys_adaptive_charging_title">Adaptive Charging Mode</string>
+    <string name="sys_adaptive_charging_summary">System will enter adaptive power mode to optimize power consumption while charging.</string>
     
     <!-- Desktop Mode Settings -->
     <string name="desktop_mode_pc_title">Desktop Mode</string>
