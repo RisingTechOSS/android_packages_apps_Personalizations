@@ -1596,4 +1596,6 @@
     <string name="notification_sounds_title">Notification sounds</string>
     <string name="system_sounds_title">System sounds</string>
     <string name="other_sounds_title">Other sounds</string>
+    
+    <string name="qs_battery_styles_title">QuickSettings battery</string>
 </resources>
