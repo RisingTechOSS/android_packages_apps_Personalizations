@@ -1460,9 +1460,11 @@
     <string name="monet_snowpaint">Paint in the Snow</string>
     <string name="monet_espresso">Espresso</string>
     
-    <!-- Combined signal icons in status bar -->
+    <!-- Flags features -->
     <string name="combined_status_bar_signal_icons_title">Combined signal icons</string>
     <string name="combined_status_bar_signal_icons_summary">Show single combined icon for WiFi and mobile signal</string>
+    <string name="lockscreen_user_switcher_title">User Switcher</string>
+    <string name="lockscreen_user_switcher_summary">Show user switcher when unlocking secured device</string>
     
     <!-- Power Menu Styles -->
     <string name="power_menu_type_title">Power menu style</string>

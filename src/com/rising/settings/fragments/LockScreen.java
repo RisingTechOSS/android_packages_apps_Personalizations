@@ -31,6 +31,7 @@ import android.text.TextUtils;
 
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
+import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceScreen;
 import androidx.preference.SwitchPreference;
@@ -49,7 +50,8 @@ import com.android.internal.util.rising.ThemeUtils;
 import java.util.List;
 
 @SearchIndexable
-public class LockScreen extends SettingsPreferenceFragment {
+public class LockScreen extends SettingsPreferenceFragment implements
+        Preference.OnPreferenceChangeListener {
 
     public static final String TAG = "LockScreen";
 
@@ -64,6 +66,7 @@ public class LockScreen extends SettingsPreferenceFragment {
     private Preference mFingerprintVib;
     private Preference mFingerprintVibErr;
     private Preference mRippleEffect;
+    private Preference mUserSwitcher;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -74,7 +77,10 @@ public class LockScreen extends SettingsPreferenceFragment {
         final Context mContext = getActivity().getApplicationContext();
         final ContentResolver resolver = mContext.getContentResolver();
         final PreferenceScreen prefScreen = getPreferenceScreen();
-        
+
+        mUserSwitcher = findPreference("persist.sys.flags.enableBouncerUserSwitcher");
+        mUserSwitcher.setOnPreferenceChangeListener(this);
+
         PreferenceCategory interfaceCategory = (PreferenceCategory) findPreference(LOCKSCREEN_INTERFACE_CATEGORY);
         PreferenceCategory gestCategory = (PreferenceCategory) findPreference(LOCKSCREEN_GESTURES_CATEGORY);
 
@@ -96,6 +102,17 @@ public class LockScreen extends SettingsPreferenceFragment {
             }
         }
 
+    }
+
+    @Override
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+        if (preference == mUserSwitcher) {
+            boolean value = (Boolean) newValue;
+            Settings.Secure.putIntForUser(getContentResolver(),
+                Settings.Secure.PREF_KG_USER_SWITCHER, value ? 1 : 0, UserHandle.USER_CURRENT);
+            return true;
+        }
+        return false;
     }
 
     @Override

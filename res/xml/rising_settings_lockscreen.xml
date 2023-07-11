@@ -102,6 +102,14 @@
             android:icon="@drawable/ic_music_note"
             android:title="@string/pulse_on_new_tracks_title"
             android:summary="@string/pulse_on_new_tracks_summary"
+            app:position="middle" />
+            
+        <com.rising.settings.preferences.SystemPropertySwitchPreference
+            android:key="persist.sys.flags.enableBouncerUserSwitcher"
+            android:icon="@drawable/ic_user"
+            android:title="@string/lockscreen_user_switcher_title"
+            android:summary="@string/lockscreen_user_switcher_summary"
+            android:defaultValue="true"
             app:position="bottom" />
 
     </PreferenceCategory>
