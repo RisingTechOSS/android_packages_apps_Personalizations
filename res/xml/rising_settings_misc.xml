@@ -112,7 +112,7 @@
         android:title="@string/netflix_spoof_title"
         android:summary="@string/netflix_spoof_summary"
         android:defaultValue="false"
-        app:position="middle" />
+        app:position="bottom" />
 
     </PreferenceCategory>
 
