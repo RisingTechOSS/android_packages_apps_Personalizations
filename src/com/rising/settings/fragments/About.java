@@ -77,9 +77,9 @@ public class About extends SettingsPreferenceFragment {
         if (preference == mDonate) {
             launchUrl("https://www.youtube.com/watch?v=Bgqk6t9Be1Q");
         } else if (preference == mSourceUrl) {
-            launchUrl("https://github.com/risingOSS");
+            launchUrl("https://github.com/RisingTechOSS");
         } else if (preference == mTelegramUrl) {
-            launchUrl("https://t.me/risingOS-News");
+            launchUrl("https://t.me/RisingOSG");
         } else if (preference == mShare) {
             Intent intent = new Intent();
             intent.setAction(Intent.ACTION_SEND);
@@ -92,7 +92,7 @@ public class About extends SettingsPreferenceFragment {
         } else if (preference == mWebsite) {
             launchUrl("https://risingOSS.github.io");
         } else if (preference == mTelegramChannelUrl) {
-            launchUrl("https://t.me/risingOS-News");
+            launchUrl("https://t.me/riceDroidNews");
         } else if (preference == mSponsor) {
             launchUrl("https://www.youtube.com/watch?v=XlDBskBR794");
         }
@@ -117,3 +117,4 @@ public class About extends SettingsPreferenceFragment {
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
             new BaseSearchIndexProvider(R.xml.rising_settings_about);
 }
+
