@@ -134,6 +134,13 @@
         android:summary="@string/disable_qs_summary"
         app:position="top"/>
 
+    <com.rising.settings.preferences.SystemSettingSwitchPreference
+        android:key="sys_qs_footer_data_usage"
+        android:icon="@drawable/ic_text"
+        android:title="@string/qs_footer_datausage_title"
+        android:summary="@string/qs_footer_datausage_summary"
+        app:position="middle"/>
+
      <com.rising.settings.preferences.SystemSettingSeekBarPreference
         android:key="qs_transparency"
         android:icon="@drawable/ic_color_bucket"
