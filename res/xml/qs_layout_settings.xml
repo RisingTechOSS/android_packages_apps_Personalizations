@@ -153,17 +153,15 @@
         android:min="1"
         app:position="middle" />
 
-    <!-- 
      <com.rising.settings.preferences.SystemSettingSeekBarPreference
         android:key="qs_header_image"
         android:icon="@drawable/ic_header"
         android:title="@string/qs_header_image_title"
         android:defaultValue="0"
         settings:interval="1"
-        android:max="74"
+        android:max="64"
         android:min="0"
         app:position="middle" />
-        -->
 
     <com.rising.settings.preferences.SystemSettingListPreference
         android:key="custom_transitions_page_tile"
