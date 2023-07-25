@@ -104,6 +104,14 @@
             app:position="middle" />
 
         <com.rising.settings.preferences.SystemSettingSwitchPreference
+            android:key="qs_dual_tone"
+            android:icon="@drawable/ic_color_bucket"
+            android:title="@string/qs_dual_tone_title"
+            android:summary="@string/qs_dual_tone_summary"
+            android:defaultValue="true" 
+            app:position="middle"/>
+
+        <com.rising.settings.preferences.SystemSettingSwitchPreference
             android:key="qs_tile_label_hide"
             android:icon="@drawable/ic_text"
             android:title="@string/qs_tile_hide_label_title"

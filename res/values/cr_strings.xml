@@ -1610,4 +1610,8 @@
     <string name="other_sounds_title">Other sounds</string>
     
     <string name="qs_battery_styles_title">QuickSettings battery</string>
+
+    <!-- QS Dual Tone Colors -->
+    <string name="qs_dual_tone_title">QS dual-tone</string>
+    <string name="qs_dual_tone_summary">Use dual tone background colors</string>
 </resources>
