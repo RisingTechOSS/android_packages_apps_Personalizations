@@ -171,15 +171,11 @@
         android:min="0"
         app:position="middle" />
 
-     <com.rising.settings.preferences.SystemSettingSeekBarPreference
-        android:key="qs_header_image_blur_level"
+   <com.rising.settings.preferences.colorpicker.SystemSettingColorPickerPreference
+        android:key="qs_header_image_filter_color"
         android:icon="@drawable/ic_color_bucket"
-        android:title="@string/qs_header_image_blur_level_title"
-        android:summary="@string/qs_header_image_blur_level_summary"
-        android:defaultValue="0"
-        settings:interval="1"
-        android:max="125"
-        android:min="1"
+        android:title="@string/qs_header_image_filter_color_title"
+        android:defaultValue="0xFFFFFFFF"
         app:position="middle" />
 
      <com.rising.settings.preferences.SystemSettingSeekBarPreference
@@ -192,7 +188,17 @@
         android:max="100"
         android:min="1"
         app:position="middle" />
-        
+
+     <com.rising.settings.preferences.SystemSettingSeekBarPreference
+        android:key="qs_header_image_height"
+        android:icon="@drawable/ic_color_bucket"
+        android:title="@string/qs_header_image_height_title"
+        android:defaultValue="80"
+        settings:interval="1"
+        android:max="255"
+        android:min="1"
+        app:position="middle" />
+
      <com.rising.settings.preferences.SystemSettingSeekBarPreference
         android:key="qs_header_image_opacity_level"
         android:icon="@drawable/ic_color_bucket"
@@ -200,7 +206,7 @@
         android:summary="@string/qs_header_image_opacity_level_summary"
         android:defaultValue="30"
         settings:interval="1"
-        android:max="255"
+        android:max="100"
         android:min="1"
         app:position="middle" />
 
