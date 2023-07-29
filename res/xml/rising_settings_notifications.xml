@@ -143,36 +143,6 @@
     </PreferenceCategory>-->
 
     <!--<PreferenceCategory
-        android:key="flashlight_category"
-        android:title="@string/power_menu_torch_title">
-
-        <com.rising.settings.preferences.SystemSettingListPreference
-            android:key="flashlight_on_call"
-            android:icon="@drawable/ic_flashlight"
-            android:title="@string/flashlight_on_call_title"
-            android:entries="@array/flashlight_on_call_entries"
-            android:entryValues="@array/flashlight_on_call_values"
-            android:defaultValue="0" />
-
-        <com.rising.settings.preferences.SystemSettingSwitchPreference
-            android:key="flashlight_on_call_ignore_dnd"
-            android:icon="@drawable/ic_flashlight"
-            android:title="@string/flashlight_on_call_ignore_dnd_title"
-            android:summary="@string/flashlight_on_call_ignore_dnd_summary"
-            android:defaultValue="false" /> 
-
-        <com.rising.settings.preferences.SystemSettingSeekBarPreference
-            android:key="flashlight_on_call_rate"
-            android:icon="@drawable/ic_flashlight"
-            android:title="@string/flashlight_on_call_rate_title"
-            android:defaultValue="1"
-            android:max="5"
-            settings:min="1"
-            settings:units="@string/unit_hz" />
-
-    </PreferenceCategory>
-
-    <PreferenceCategory
         android:key="light_brightness"
         android:title="@string/light_brightness_category">-->
 
@@ -221,4 +191,36 @@
             settings:min="0"
             app:position="bottom" />
 
+    <PreferenceCategory
+        android:key="flashlight_category"
+        android:title="@string/power_menu_torch_title">
+
+        <com.rising.settings.preferences.SystemSettingListPreference
+            android:key="flashlight_on_call"
+            android:icon="@drawable/ic_flashlight"
+            android:title="@string/flashlight_on_call_title"
+            android:entries="@array/flashlight_on_call_entries"
+            android:entryValues="@array/flashlight_on_call_values"
+            android:defaultValue="0"
+            app:position="top" />
+
+        <com.rising.settings.preferences.SystemSettingSwitchPreference
+            android:key="flashlight_on_call_ignore_dnd"
+            android:icon="@drawable/ic_flashlight"
+            android:title="@string/flashlight_on_call_ignore_dnd_title"
+            android:summary="@string/flashlight_on_call_ignore_dnd_summary"
+            android:defaultValue="false"
+            app:position="middle" /> 
+
+        <com.rising.settings.preferences.SystemSettingSeekBarPreference
+            android:key="flashlight_on_call_rate"
+            android:icon="@drawable/ic_flashlight"
+            android:title="@string/flashlight_on_call_rate_title"
+            android:defaultValue="1"
+            android:max="5"
+            settings:min="1"
+            settings:units="@string/unit_hz"
+            app:position="bottom" />
+
+    </PreferenceCategory>
 </PreferenceScreen>
