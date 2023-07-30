@@ -36,6 +36,14 @@
             app:position="middle" />
 
         <com.rising.settings.preferences.SystemSettingSwitchPreference
+            android:key="lockscreen_weather_condition"
+            android:icon="@drawable/ic_weather"
+            android:title="@string/lockscreen_weather_condition_title"
+            android:summary="@string/lockscreen_weather_condition_summary"
+            android:dependency="lockscreen_weather_enabled"
+            app:position="middle" />
+
+        <com.rising.settings.preferences.SystemSettingSwitchPreference
             android:key="lockscreen_weather_location"
             android:icon="@drawable/ic_map_marker"
             android:title="@string/lockscreen_weather_location_title"
