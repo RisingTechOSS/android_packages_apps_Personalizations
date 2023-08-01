@@ -34,13 +34,13 @@
         android:fragment="com.rising.settings.fragments.sound.PulseSettings"
         app:position="top" />
 
-    <!-- Screenshot Sound
+    <!-- Screenshot Sound -->
     <com.rising.settings.preferences.SystemSettingSwitchPreference
         android:key="screenshot_shutter_sound"
         android:icon="@drawable/ic_cellphone_sound"
         android:title="@string/screenshot_shutter_sound_title"
         android:summary="@string/screenshot_shutter_sound_summary"
-        android:defaultValue="true" /> -->
+        android:defaultValue="true" /> 
 
     <!-- Adaptive Playback -->
     <com.rising.settings.preferences.AdaptivePreference
