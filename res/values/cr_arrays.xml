@@ -1262,6 +1262,8 @@
         <item>nokiapure</item>
         <item>ndot55</item>
         <item>ndot57</item>
+        <item>newyork-heavy-clock</item>
+        <item>newyork-semibold-clock</item>
         <item>oneplus-sans</item>
         <item>oneplusslate</item>
         <item>pixelwars</item>
@@ -1272,6 +1274,11 @@
         <item>rosemary</item>
         <item>rubik</item>
         <item>sanfrancisco</item>
+        <item>sanfrancisco-sb-clock</item>
+        <item>sanfrancisco-sb-rails-clock</item>
+        <item>sanfrancisco-sb-round-clock</item>
+        <item>sanfrancisco-sb-soft-clock</item>
+        <item>sanfrancisco-sb-stencil-clock</item>
         <item>samsungone</item>
         <item>simpleday</item>
         <item>sonysketch</item>
