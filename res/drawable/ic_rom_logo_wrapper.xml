@@ -3,8 +3,8 @@
 
   <item
       android:drawable="@drawable/ic_rom_logo"
-      android:width="40dp"
-      android:height="40dp"
+      android:width="20dp"
+      android:height="20dp"
       />
 
 </layer-list >
