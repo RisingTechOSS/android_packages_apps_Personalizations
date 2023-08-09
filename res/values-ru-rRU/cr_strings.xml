@@ -152,6 +152,7 @@
     <!-- Hardware info -->
     <string name="platform_revision">Платформа</string>
     <string name="total_ram">Всего ОЗУ</string>
+    <string name="hardware_info_title">Оборудование</string>
     <!-- Notification log -->
     <string name="notification_log_summary">Показать журнал истории уведомлений</string>
     <!-- Default getTimeSpentInApp string for Wellbeing to display. [CHAR LIMIT=NONE] -->
@@ -367,6 +368,7 @@
     <string name="lockscreen_doubletap_sleep_summary">Двойное нажатие по экрану блокировки переводит устройство в спящий режим</string>
     <!-- Font style / Icon pack -->
     <string name="theme_customization_clock_font_title">Стиль шрифта часов на экране блокировки</string>
+    <string name="swipe_the_clock">Для изменения стиля шрифта проведите по часам</string>
     <string name="theme_customization_clock_font_summary">Установить стиль шрифта часов</string>
     <string name="theme_customization_date_font_title">Стиль шрифта даты на экране блокировки</string>
     <string name="theme_customization_date_font_summary">Установить стиль даты</string>
@@ -426,9 +428,9 @@
     <string name="clock_font_size_title">Размер шрифта часов</string>
     <!-- Status bar - Battery -->
     <string name="status_bar_battery_style_title">Стиль батареи</string>
-    <string name="status_bar_battery_style_icon_portrait">Вертикальная иконка</string>
-    <string name="status_bar_battery_style_icon_rlandscape">Горизонтальная иконка (Вправо)</string>
-    <string name="status_bar_battery_style_icon_landscape">Горизонтальная иконка (Влево)</string>
+    <string name="status_bar_battery_style_icon_portrait">Портретная иконка</string>
+    <string name="status_bar_battery_style_icon_rlandscape">Ландшафтная иконка (Вправо)</string>
+    <string name="status_bar_battery_style_icon_landscape">Ландшафтная иконка (Влево)</string>
     <string name="status_bar_battery_style_circle">Круг</string>
     <string name="status_bar_battery_style_dotted_circle">Пунктирный круг</string>
     <string name="status_bar_battery_style_big_circle">Большой круг</string>
@@ -439,19 +441,21 @@
     <string name="status_bar_battery_percent_title">Процент заряда батареи</string>
     <string name="status_bar_battery_percent_hidden">Скрытый</string>
     <string name="status_bar_battery_percent_text_inside">Внутри иконки</string>
-    <string name="status_bar_battery_percent_text_next_right">Рядом со значком (справа)</string>
-    <string name="status_bar_battery_percent_text_next_left">Рядом со значком (слева)</string>
+    <string name="status_bar_battery_percent_text_next_right">Слева от значка</string>
+    <string name="status_bar_battery_percent_text_next_left">Справа от значка</string>
     <string name="status_bar_battery_text_charging_title">Процент заряда батареи при зарядке</string>
     <string name="status_bar_battery_text_charging_summary">Всегда показывать проценты заряда батареи при зарядке</string>
-    <string name="status_bar_battery_style_icon_rlandscape_style_a">Горизонтальный R вариант A</string>
-    <string name="status_bar_battery_style_icon_landscape_style_a">Горизонтальный L вариант A</string>
-    <string name="status_bar_battery_style_icon_rlandscape_style_b">Горизонтальный R вариант B</string>
-    <string name="status_bar_battery_style_icon_landscape_style_b">Горизонтальный L вариант B</string>
-    <string name="status_bar_battery_style_icon_landscape_pill">Вертикальный Mx</string>
-    <string name="status_bar_battery_style_icon_landscape_line">Горизонтальный Lorn</string>
-    <string name="status_bar_battery_style_icon_landscape_musku">Вертикальный IOS</string>
-    <string name="status_bar_battery_style_icon_landscape_signal">Горизонтальный Airoo</string>
-    <string name="status_bar_battery_style_icon_landscape_buddy">Горизонтальная капусла</string>
+    <string name="status_bar_battery_style_icon_rlandscape_style_a">Ландшафтная R вариант A</string>
+    <string name="status_bar_battery_style_icon_landscape_style_a">Ландшафтная L вариант A</string>
+    <string name="status_bar_battery_style_icon_rlandscape_style_b">Ландшафтная R вариант B</string>
+    <string name="status_bar_battery_style_icon_landscape_style_b">Ландшафтная L вариант B</string>
+    <string name="status_bar_battery_style_icon_landscape_pill">Потретная Mx</string>
+    <string name="status_bar_battery_style_icon_landscape_line">Ландшафтная Lorn</string>
+    <string name="status_bar_battery_style_icon_landscape_musku">Потретная IOS</string>
+    <string name="status_bar_battery_style_icon_landscape_signal">Ландшафтная Airoo</string>
+    <string name="status_bar_battery_style_icon_landscape_buddy">Ландшафтная капусла</string>
+    <string name="status_bar_battery_style_icon_landscape_ios15">Ландшафтная iOS 15</string>
+    <string name="status_bar_battery_style_icon_landscape_ios16">Ландшафтная iOS 16</string>
     <!-- Status bar - Battery Bar -->
     <string name="battery_bar_title">Полоса батареи</string>
     <string name="battery_bar_summary">Отображение и настройка полосы батареи над строке состония</string>
@@ -764,11 +768,14 @@
     <string name="app_volume">Громкость приложения</string>
     <string name="app_volume_title">Громкость для каждого приложения</string>
     <string name="app_volume_summary">Показывать кнопку громкости каждого приложения в диалоговом окне громкости</string>
-    <!-- Cloudflare DNS Option -->
     <!-- AdGuard DNS Option -->
+    <!-- AdGuard DNS hostname -->
     <!-- Open DNS Option -->
+    <!-- Open DNS hostname -->
     <!-- Cleanbrowsing DNS Option -->
+    <!-- Cleanbrowsing DNS hostname -->
     <!-- Quad9 DNS Option -->
+    <!-- Quad9 DNS hostname -->
     <!-- Alert Slider Notifications (OnePlus devices) -->
     <string name="alert_slider_notifications_title">Ползунок уведомлений</string>
     <string name="alert_slider_notifications_summary">Отображать уведомление при изменении положения ползунка уведомлений</string>
@@ -963,8 +970,19 @@
     <string name="solid_accent">Сплошной</string>
     <string name="outline">Обводка</string>
     <string name="solid_accent_gradient">Градиент</string>
+    <string name="solid_gradient">Сплошная градиентная сторона</string>
+    <string name="solid_gradient_corner">Сплошной акцентный градиентный резкий</string>
+    <string name="solid_gradient_void">Градиентный пустой</string>
+    <string name="solid_gradient_neumorph">Нейморфный градиент</string>
+    <string name="solid_gradient_stroke">Резкий градиентный штрих</string>
+    <string name="solid_accent_transperent">Акцент прозрачный</string>
+    <string name="solid_gradient_light">Градиент светлый</string>
+    <string name="solid_gradient_shape">Острый градиентный угол</string>
+    <string name="solid_gradient_void_light">Градиентный пустой светлый</string>
     <!-- Smart charging -->
     <string name="smart_charging_title">Умная зарядка</string>
+    <string name="smart_adaptive_charging_level_title">Адаптивная умная зарядка</string>
+    <string name="smart_charging_lvl_settings_title">Настроить адаптивную умную зарядку</string>
     <string name="smart_charging_summary">Установить максимальный уровень заряда</string>
     <string name="smart_charging_switch_title">Включить умную зарядку</string>
     <string name="smart_charging_level_title">Уровень остановки зарядки устройства</string>
@@ -975,11 +993,13 @@
     <!-- Weather -->
     <string name="weather_settings_title">Настройки погоды</string>
     <string name="weather_settings_summary">Настроить набор значков и службу погоды</string>
-    <string name="lockscreen_weather_title">Погодные условия</string>
-    <string name="lockscreen_weather_summary">Показывать текущие погодные условия и температуру</string>
+    <string name="lockscreen_weather_title">Погода на экране блокировки</string>
+    <string name="lockscreen_weather_summary">Показывать текущие погодные условия и температуру на экране блокирвоки</string>
     <string name="lockscreen_weather_enabled_info">Требуется включенная служба погоды</string>
     <string name="lockscreen_weather_location_title">Местоположение</string>
     <string name="lockscreen_weather_location_summary">Отображать текущее местоположение</string>
+    <string name="lockscreen_weather_style_title">Стиль погоды на экране блокировки</string>
+    <string name="lockscreen_weather_style_summary">Погода отдельной строкой</string>
     <!-- Adaptive Playback -->
     <string name="adaptive_playback_title">Адаптивное воспроизведение</string>
     <string name="adaptive_playback_summary">Приостанавливать воспроизведение при выключенном звуке и возобновлять его, увеличивая громкость в пределах таймаута</string>
@@ -990,7 +1010,7 @@
     <string name="status_bar_logo_summary">Отображать пользовательский логотип слева или справа в строки состояния</string>
     <string name="status_bar_logo_position_title">Расположение логотипа</string>
     <string name="status_bar_logo_style_title">Стиль логотипа</string>
-    <string name="status_bar_logo_style_crdroid">RisingOS</string>
+    <string name="status_bar_logo_style_rising">Rising</string>
     <string name="status_bar_logo_style_android">Android</string>
     <string name="status_bar_logo_style_adidas">Adidas</string>
     <string name="status_bar_logo_style_alien">Пришелец</string>
@@ -1128,6 +1148,7 @@
     <string name="system_manager_info_title">Советы\u003a \n\n1. Game Boost активируется только при активной игре - для этого приложение должно быть добавлено в список GameSpace.\n\n2. Режим питания во время выполнения будет преобладать над режимом питания системы.\n\n3. Idle Sensor Block не позволит определенным датчикам движения работать должным образом.</string>
     <!-- Quick settings styles -->
     <string name="qs_styles_title">Стиль быстрых настроек</string>
+    <string name="qs_ui_title">Тип быстрых настроек</string>
     <string name="qs_outline">Обводка</string>
     <string name="qs_two_tone">Двухцветный</string>
     <string name="qs_color_pop">Дискотека</string>
@@ -1138,9 +1159,16 @@
     <string name="qs_surround">Окруженние</string>
     <string name="qs_thin">Тонкая линия</string>
     <string name="qs_two_tone_trans">Прозрачный двухцветный</string>
+    <string name="android_eleven">Android 11</string>
     <!-- Volume Styles -->
     <string name="rui_style">Realme UI</string>
     <string name="rising_style">Rising</string>
+    <string name="double_layer_style">Double Layer</string>
+    <string name="gradient_style">Gradient</string>
+    <string name="neumorph_style">Neumorph</string>
+    <string name="neumorph_outline_style">Neumorph Outline</string>
+    <string name="outline_style">Outline</string>
+    <string name="shaded_layer_style">Shaded Layer</string>
     <string name="volume_style_title">Стиль панели громкости</string>
    <!-- Custom settings dashboard style -->
     <string name="settings_dashboard_style_title">Стиль настроек</string>
@@ -1161,6 +1189,7 @@
     <string name="kg_custom_clock_color_enabled_title">Цвет часов на экране блокировки</string>
     <string name="kg_custom_clock_color_title">Выбрать цвет</string>
     <string name="kg_custom_clock_top_margin_title">Нижний отступ часов</string>
+    <string name="kg_small_clock_text_size_title">Размер маленьких часов</string>
     <string name="kg_big_clock_text_size_title">Размер больших часов</string>
     <string name="clock_use_single_line_title">Стиль больших часов</string>
     <string name="single_line">В одну линию</string>
@@ -1275,6 +1304,39 @@
     <string name="search_apps">Поиск</string>
     <!-- Volume link notification -->
     <string name="volume_link_notification_title">Связать громкость звонка и уведомлений</string>
+    <!-- Radio Info -->
+    <string name="radio_info_title">Информация о сети</string>
+    <!-- Haptics Settings -->
+    <string name="haptics_settings_title">Вибрация</string>
+    <string name="haptics_settings_summary">Изменение интенсивности вибрации в системе</string>
+    <string name="back_gesture_haptic_intensity_title">Интенсивность вибрации при жесте назад</string>
+    <string name="brightness_slider_haptics_intensity_title">Интенсивность вибрации при изменении яркости</string>
+    <string name="edge_scrolling_haptics_intensity_title">Интенсивность вибрации при прокрутке с края</string>
+    <string name="volume_slider_haptics_intensity_title">Интенсивность вибрации при изменении громкости</string>
+    <string name="qs_panel_tile_haptic_intensity_title">Интенсивность вибрации в быстрых настройках</string>
+    <!-- Adaptive Charging Settings -->
+    <string name="sys_adaptive_charging_title">Адаптивная зарядка</string>
+    <string name="sys_adaptive_charging_summary">Система переходит в режим адаптивного питания для оптимизации энергопотребления во время зарядки.</string>
+    <!-- Desktop Mode Settings -->
+    <string name="desktop_mode_pc_title">Режим настольного компьютера</string>
+    <string name="desktop_mode_pc_summary">Режим полного рабочего стола на внешнем мониторе или ПК</string>
+    <!-- Sound settings -->
+    <string name="notification_sounds_title">Звуки уведомлений</string>
+    <string name="system_sounds_title">Системные звуки</string>
+    <string name="other_sounds_title">Другие звуки</string>
+    <!-- QS battery customizations -->
+    <string name="qs_battery_styles_title">Батарея в быстрых настройках</string>
+    <!-- QS Dual Tone Colors -->
+    <string name="qs_dual_tone_title">Двутоновые быстрые настройки</string>
+    <string name="qs_dual_tone_summary">Использование двухтоновых цветов фона</string>
+    <!-- Weather Styles -->
+    <string name="weather_style_1">"32°C"</string>
+    <string name="weather_style_2">"32°C \u2022 Сегодня 32° / 24°"</string>
+    <string name="weather_style_3">"32°C \u2022 Москва"</string>
+    <string name="weather_style_4">"32°C \u2022 Солнечно"</string>
+    <string name="weather_style_5">"32°C \u2022 Сегодня 32° / 24° \u2022 Москва"</string>
+    <string name="weather_style_6">"32°C \u2022 Сегодня 32° / 24° \u2022 Солнечно"</string>
+    <string name="weather_style_7">"32°C \u2022 Москва \u2022 Солнечно"</string>
     <!-- Volume haptic feedback -->
     <string name="volume_panel_haptic_feedback_title">Вибрация</string>
     <string name="volume_panel_haptic_feedback_summary">Включить вибрацию при регулировке громкости</string>
@@ -1283,9 +1345,11 @@
     <string name="monet_vivid">Яркие краски</string>
     <string name="monet_snowpaint">Краски на снегу</string>
     <string name="monet_espresso">Эспрессо</string>
-    <!-- Combined signal icons in status bar -->
+    <!-- Flags features -->
     <string name="combined_status_bar_signal_icons_title">Общий значок сигнала</string>
     <string name="combined_status_bar_signal_icons_summary">Показывать общий значок для сигнала WiFi и мобильной сети</string>
+    <string name="lockscreen_user_switcher_title">Переключатель пользователей</string>
+    <string name="lockscreen_user_switcher_summary">Показывать переключатель пользователей на экране блокировки</string>
     <!-- Power Menu Styles -->
     <string name="power_menu_type_title">Стиль меню питания</string>
     <string name="power_menu_type_lite">Лайт (A12)</string>
