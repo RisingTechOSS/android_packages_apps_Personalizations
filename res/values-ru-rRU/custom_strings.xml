@@ -56,32 +56,48 @@
     <string name="rising_revision">Rising Revision</string>
     <string name="rising_model_info">Информация об устройстве</string>
 
-    <string name="dashboard_morning1">Доброе утро!</string>
+    <string name="dashboard_morning1">Начни день с позитива!</string>
     <string name="dashboard_morning2">Солнце уже взошло!</string>
     <string name="dashboard_morning3">Приятного вам утра..</string>
-    <string name="dashboard_morning4">Отличного вам дня..</string>
+    <string name="dashboard_morning4">Еще один прекрасный день..</string>
     <string name="dashboard_morning5">Совершенно новый день..</string>
-    <string name="dashboard_noon1">Добрый день.</string>
+    <string name="dashboard_morning_greeting1">Доброе утро</string>
+    <string name="dashboard_morning_greeting2">Добрый день</string>
+    <string name="dashboard_noon1">Живи</string>
     <string name="dashboard_noon2">Насладитесь закатом.</string>
     <string name="dashboard_noon3">С возращеннием домой..</string>
     <string name="dashboard_noon4">Наслаждайтесь днем!</string>
     <string name="dashboard_noon5">С возвращением..</string>
-    <string name="dashboard_early_night1">Добрый вечер..</string>
+    <string name="dashboard_noon_greeting1">Уже полдень</string>
+    <string name="dashboard_early_night1">Ночь уже скоро..</string>
     <string name="dashboard_early_night2">Время ужинать!</string>
+    <string name="dashboard_early_night_greeting1">Добрый вечер</string>
     <string name="dashboard_night3">Приятных снов!</string>
     <string name="dashboard_night4">Вам пора спать..</string>
     <string name="dashboard_night5">Спокойной ночи!</string>
+    <string name="dashboard_night_greetings1">Спокойной ночи</string>
     <string name="dashboard_midnight1">Уже поздняя ночь..</string>
     <string name="dashboard_midnight2">Вам нужно поспать..</string>
     <string name="dashboard_midnight3">Поспите..</string>
     <string name="dashboard_midnight4">Вы уже можете отдохнуть..</string>
     <string name="dashboard_midnight5">Ложиться поздно это вредно..</string>
-    <string name="dashboard_random1">Хотите риса?</string>
-    <string name="dashboard_random2">Панель поиска парой пикселей ниже..</string>
-    <string name="dashboard_random3">Привет владелец!</string>
-    <string name="dashboard_random4">Настройки</string>
-    <string name="dashboard_random5">Привет пользователь!</string>
+     <string name="dashboard_random1">Хей</string>
+    <string name="dashboard_random2">Здравствуйте</string>
+    <string name="dashboard_random3">Привет</string>
+    <string name="dashboard_random4">Добрый день</string>
+    <string name="dashboard_random5">Как день?</string>
     <string name="dashboard_random6">Как дела?</string>
+    <string name="dashboard_random_greetings1">Попробуйте найти пасхалки!</string>
+    <string name="dashboard_random_greetings2">Rising from the bottom?</string>
+    <string name="dashboard_random_greetings3">Воспользуйся поиском!</string>
+    <string name="dashboard_random_greetings4">Наслаждайся днем!</string>
+    <string name="settings_random1">Что-то ищете?</string>
+    <string name="settings_random2">Найдите и вы увидите</string>
+    <string name="settings_random3">Ищите и найдете</string>
+    <string name="settings_random4">Хранители находок</string>
+    <string name="settings_random5">Поиск</string>
+    <string name="settings_random6">Невозможно найти то, чего не существует!</string>
+    <string name="default_user">Пользователь</string>
 
     <string name="build_status">Статус сборки</string>
     <string name="build_status_summary_placeholder">Как дела?</string>
@@ -98,4 +114,22 @@
 
     <string name="top_level_settings_title">Настройки</string>
     <string name="my_device_settings">Моё устройство</string>
+
+    <!-- Notification sound timeout -->
+    <string name="app_notification_sound_timeout_title">Минимальное время между звуками уведомлений</string>
+    <string name="app_notification_sound_timeout_summary_template">Разрешать звуки или вибрацию не чаще одного раза в <xliff:g id="duration">%1$s</xliff:g></string>
+    <string name="app_notification_sound_timeout_value_none">Без ограничений</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 секунд</string>
+    <string name="app_notification_sound_timeout_value_30_seconds">30 секунд</string>
+    <string name="app_notification_sound_timeout_value_1_minute">1 минуту</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5 минут</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">10 минут</string>
+    <string name="app_notification_sound_timeout_value_30_minutes">30 минут</string>
+
+    <!-- Add sliders for color balance adjustment via ColorDisplayManager -->
+    <string name="color_mode_balance_category">Баланс цветов</string>
+    <string name="color_mode_balance_red">Красный</string>
+    <string name="color_mode_balance_green">Зеленый</string>
+    <string name="color_mode_balance_blue">Синий</string>
+    <string name="keywords_color_balance">цвет, цветовой баланс, цветокоррекция, красный, зеленый, синий, LiveDisplay</string>
 </resources>
