@@ -20,7 +20,7 @@
             app:strokeColor="?android:attr/textColorPrimary"
             app:strokeWidth="3dp">
 
-            <com.rice.utils.aboutWallpaperView
+            <com.rising.utils.aboutWallpaperView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"

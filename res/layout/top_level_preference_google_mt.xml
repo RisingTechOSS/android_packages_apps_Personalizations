@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/card_height_round"
+    android:layout_marginStart="@dimen/card_margin_start"
+    android:layout_marginEnd="@dimen/card_margin_end"
+    android:layout_marginBottom="20dp"
+    android:background="@drawable/mt_preference_background_bottom"
+    android:paddingStart="18dp">
+
+    <ImageView
+        android:id="@android:id/icon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+        
+    <androidx.preference.internal.PreferenceImageView
+        android:id="@+id/google_pref_icon"
+        android:padding="1.5dp" 
+        android:layout_width="@dimen/dashboard_icon_size"
+        android:layout_height="@dimen/dashboard_icon_size"
+        android:src="@drawable/ic_homepage_google_settings_rui"
+        app:layout_constraintHeight_max="@dimen/op_control_avatar_size3"
+        app:layout_constraintWidth_max="@dimen/op_control_avatar_size3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+        
+    <RelativeLayout
+	android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_marginStart="@dimen/top_pref_start"
+        app:layout_constraintStart_toEndOf="@+id/google_pref_icon">
+
+        <TextView
+            android:id="@android:id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/op_control_text_color_primary"
+            android:paddingTop="5dp"
+            android:singleLine="true"
+            style="@style/op_control_text_style_h6"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@android:id/summary"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="0dp"
+            android:singleLine="true" />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:paddingHorizontal="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_alignParentEnd="true"
+            app:cardBackgroundColor="@color/wave_homepage_icon_background"
+            app:cardElevation="0dp"
+            app:cardCornerRadius="99dp">
+        
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_arrow"
+                    android:tint="?android:attr/textColorPrimary" />    
+        
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

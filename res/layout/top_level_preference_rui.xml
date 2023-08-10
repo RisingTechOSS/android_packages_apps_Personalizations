@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/card_height_rui"
+    android:paddingStart="@dimen/card_margin_rui_start"
+    android:paddingEnd="@dimen/card_margin_rui_end">
+
+    <ImageView
+        android:id="@android:id/icon"
+        android:padding="1.5dp" 
+        android:layout_width="@dimen/dashboard_icon_size"
+        android:layout_height="@dimen/dashboard_icon_size"
+        app:layout_constraintHeight_max="@dimen/op_control_avatar_size3"
+        app:layout_constraintWidth_max="@dimen/op_control_avatar_size3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+	android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_marginStart="@dimen/top_pref_start"
+        app:layout_constraintStart_toEndOf="@android:id/icon">
+
+        <TextView
+            android:id="@android:id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/op_control_text_color_primary"
+            android:singleLine="true"
+            style="@style/op_control_text_style_h6"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@android:id/summary"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="0dp"
+            android:singleLine="true" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

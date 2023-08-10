@@ -170,11 +170,6 @@
     <string name="copied_to_clipboard">Copied to clipboard</string>
     <string name="longpress_to_clipboard">Long-press to copy</string>
 
-    <!-- Hardware info -->
-    <string name="platform_revision">Platform</string>
-    <string name="total_ram">Total RAM</string>
-    <string name="hardware_info_title">Hardware</string>
-
     <!-- Notification log -->
     <string name="notification_log_summary">Show notifications history log</string>
 
@@ -694,10 +689,7 @@
     <string name="qs_footer_show_power_menu_title">Power menu shortcut</string>
     <string name="qs_footer_services_icon_title">Running services shortcut</string>
     <string name="qs_footer_settings_icon_title">Settings shortcut</string>
-
-    <!-- Device Info screen. RisingOS legal. -->
-    <string name="rising_license_title">RisingOS legal</string>
-
+    
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">Brightness slider settings</string>
     <string name="qs_show_brightness_slider_never">Never show</string>

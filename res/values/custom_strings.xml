@@ -14,6 +14,22 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!-- Device Info screen. RisingOS legal. -->
+    <string name="rising_license_title">RisingOS legal</string>
+    <string name="model">Model</string>
+    <string name="android_version">Android version</string>
+    <string name="android_version_code">13 | Tiramisu</string>
+    <string name="security_patch_title">Security level</string>
+    <string name="platform_revision">Platform</string>
+    <string name="total_ram">Total RAM</string>
+    <string name="hardware_info_title">Hardware info</string>
+    <string name="build_status">Build Status</string>
+    <string name="build_status_summary_placeholder">What\'s up?</string>
+    <string name="build_is_official_title">#official</string>
+    <string name="build_is_community_title">#community</string>
+    <string name="maintainer_summary">by %s</string>
+    <string name="unknown_maintainer">by someone</string>
+
     <!-- RisingOS versioning -->
     <string name="rising_version_title">RisingOS Version</string>
     <string name="about_device_info">Rising Device</string>
@@ -98,15 +114,6 @@
     <string name="settings_random5">Search settings</string>
     <string name="settings_random6">You can\'t find something that doesn\'t exists!</string>
     <string name="default_user">User</string>
-    
-    <string name="build_status">Build Status</string>
-    <string name="build_status_summary_placeholder">What\'s up?</string>
-    <string name="build_is_official_title">Device is officially supported!</string>
-    <string name="build_is_community_title">Device is not officially supported!</string>
-    <string name="build_is_official_summary">Built with love by %s</string>
-    <string name="build_is_official_summary_oopsie">but, who made this build?</string>
-    <string name="build_is_community_summary">Unofficial build by %s</string>
-    <string name="build_is_community_summary_oopsie">Psst! please tell the builder that he/she forgot to add required build flags!</string>
 
     <!-- Ignore window secure -->
     <string name="ignore_window_secure_title">Ignore secure window flag</string>
