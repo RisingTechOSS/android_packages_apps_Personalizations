@@ -59,10 +59,41 @@
     <!-- About RisingOS -->
     <string name="about_rising">RisingOS hakkında</string>
     <string name="about_device_name">Cihaz</string>
+    <string name="what_is_risingOS">RisingOS nedir?</string>
+    <string name="what_is_risingOS_summary">RisingOS açık kaynak kodlu gerekli modifikasyonları olan aynı zamanda stabil ve  hızlı bir android işletim sistemi organizasyonudur. OxygenOS ve NothingOS gibi organizayonlardan ilham almaktadır.</string>
+    <string name="what_is_riseui">Rise UI nedir?</string>
+    <string name="what_is_riseui_summary">Rise UI risingOS\'un kullanıcı arayüzünün ismidir.</string>
+    <string name="ricing_terminology">Rice / Ricing nedir?</string>
+    <string name="ricing_terminology_summary">\'rising\' terimi unix işletim sistemli bir kişinin bilgisayarında simgeler,paneller veya sistem arayüzünde değişiklikler yapma oyununu tanımlamak için kullanılırdı.\nkaynak: https://jie-fang.github.io/blog/basics-of-ricing</string>
+    <string name="what_happened_to_old_source">Eski RisingOS\'a ne oldu?</string>
+    <string name="what_happened_to_old_source_summary">Çeşitli iç karışıklıklar yüzünden dağılmıştır. Yeni RisingOS org tek bir kişi tarafından geliştiriliyor ve resmi geliştiricilere dağıtılıyor.</string>
+   <!-- rising dashboard -->
+    <string name="about_settings_title">Hakkımızda</string>
+    <string name="about_settings_summary">RisingOS hakkında bilgi</string>
+    <string name="buttons_settings_title">Tuşlar</string>
+    <string name="buttons_settings_summary">Donanım tuşlarını özelleştirin</string>
+    <string name="lockscreen_settings_title">Kilit ekranı</string>
+    <string name="general_lockscreen_title">Genel kilit ekranı ayarları</string>
+    <string name="lockscreen_settings_summary">Kilit ekranı arayüzünü özelleştirin</string>
+    <string name="misc_gen_settings_title">Çeşitli ayarlar</string>
+    <string name="misc_settings_title">Çeşitli</string>
+    <string name="misc_settings_summary">Çeşitli kategorize edilmemiş şeyler</string>
+    <string name="nav_settings_title">Gezinme</string>
+    <string name="nav_settings_summary">Gezinme davranışını özelleştirin</string>
+    <string name="notif_settings_title">Bildirimler</string>
+    <string name="notif_settings_summary">Bildirimleri ve fazlasını kontrol edin</string>
+    <string name="qs_settings_title">Hızlı ayarlar</string>
+    <string name="qs_settings_summary">Hızlı ayarlar özelleştirmeleri</string>
+    <string name="sound_settings_title">Ses</string>
+    <string name="sound_settings_summary">Ses ve titreşim özelleştirmeleri</string>
+    <string name="sb_settings_title">Durum çubuğu</string>
+    <string name="sb_settings_summary">Durum çubuğu simgelerini, düzenini vs. özelleştirin</string>
+    <string name="ui_settings_title">Kullanıcı arayüzü</string>
+    <string name="ui_settings_summary">Renkleri, simgeleri yazı tipini vs. özelleştirin</string>
     <!-- Share RisingOS -->
     <string name="share_rising_title">RisingOS\'i paylaş</string>
     <string name="share_rising_summary">Başkalarına RisingOS hakkında bilgi verin</string>
-    <string name="share_message">Cihazınız için #RisingOSAndroid\'in mevcut olup olmadığını kontrol edin @ https://risingoss.github.io/</string>
+    <string name="share_message">Cihazınız için #RisingOS\'in mevcut olup olmadığını kontrol edin @ https://risingoss.github.io/</string>
     <string name="share_chooser_title">RisingOS\'i paylaş</string>
     <!-- Sites RisingOS -->
     <string name="rising_source_title">GitHub</string>
@@ -904,12 +935,12 @@
     <string name="screenshot_shutter_sound_title">Ekran görüntüsü sesi</string>
     <string name="screenshot_shutter_sound_summary">Ekran görüntüsü alınırken ses çıkar</string>
     <!-- QS tiles layout  -->
-    <string name="qs_layout_category_title">Kare düzeni</string>
+    <string name="qs_layout_category_title">Hızlı ayarlar</string>
     <string name="qs_tile_label_hide_title">Etiketleri gizle</string>
     <string name="qs_tile_label_size_title">Etiket metni boyutu</string>
     <string name="qs_tile_label_hide_summary">Karede yalnızca simgeyi göster</string>
     <string name="qs_tile_layout_title">Dikey düzen</string>
-    <string name="qs_tile_layout_summary">Simgenin yanında etiketi simgenin altında göster</string>
+    <string name="qs_tile_layout_summary">Hızlı ayarlar panelini özelleştirin</string>
     <string name="qs_columns_portrait_title">Sütunlar (dikey)</string>
     <string name="qs_columns_landscape_title">Sütunlar (yatay)</string>
     <!-- Statusbar Clock background chip -->
@@ -1257,5 +1288,48 @@
     <!-- Doze on charge -->
     <string name="doze_on_charge_title">Şarj olurken daima açık</string>
     <string name="doze_on_charge_summary">Şarj olurken her zaman ortam ekranını göster</string>
-
+    <!-- QS Header -->
+    <string name="qs_header_image_title">Hızlı ayarlar başlığı</string>
+    <string name="qs_header_random_image_title">Başlık rastgele resim</string>
+    <string name="qs_header_random_image_summary">Rastgele başlık resmini etkinleştir</string>
+    <string name="qs_header_image_blur_level_title">Başlık resmi bulanıklık efekt seviyesi</string>
+    <string name="qs_header_image_blur_level_summary">Strength of the blur effect applied to the QS header image</string>
+    <string name="qs_header_image_fade_level_level_title">QS header image fade level</string>
+    <string name="qs_header_image_fade_level_level_summary">Fade level of the QS header image</string>
+    <string name="qs_header_image_opacity_level_title">QS header image opacity level</string>
+    <string name="qs_header_image_opacity_level_summary">Opacity level of the QS header image</string>
+    <string name="qs_header_image_filter_color_title">QS header image filter color</string>
+    <string name="qs_header_image_height_title">QS header image height</string>
+    <string name="qs_colored_icons_title">Renkli bildirim simgeleri</string>
+    <string name="qs_colored_icons_summary">Tek renkli simgeler yerine renkli uygulama simgesi göster</string>
+    <string name="ignore_window_secure_title">Pencere güvenli işaretlerini yok say</string>
+    <string name="ignore_window_secure_summary">Ekran görüntüsü ve ekran kaydının limitlerini tüm uygulamalar için kaldırır. Bu bazı durumlarda uygun olabilir fakat güvenlik açıklarına neden olabilir.</string>
+    <string name="search">Ara</string>
+    <string name="search_apps">Uygulamaları ara</string>
+    <!-- Volume link notification -->
+    <string name="volume_link_notification_title">Zil &amp; bildirim sesini birleştir</string>
+    <!-- Radio Info -->
+    <string name="radio_info_title">Radyo bilgisi</string>
+    <!-- Haptics Settings -->
+    <string name="haptics_settings_title">Sistem dokunma hassasiyeti</string>
+    <string name="haptics_settings_summary">Sistem dokunma yoğunluğunu özelleştirin</string>
+    <string name="back_gesture_haptic_intensity_title">Geri tuşu dokunma yoğunluğu</string>
+    <string name="brightness_slider_haptics_intensity_title">Parlaklık kaydırıcısı dokunma yoğunluğu</string>
+    <string name="edge_scrolling_haptics_intensity_title">Kenar kaydırma dokunma yoğunluğu</string>
+    <string name="volume_slider_haptics_intensity_title">Ses kaydırıcısı dokunma yoğunluğu</string>
+    <string name="qs_panel_tile_haptic_intensity_title">Hızlı ayar kare dokunma yoğunluğu</string>
+    <!-- Adaptive Charging Settings -->
+    <string name="sys_adaptive_charging_title">Uyarlanabilir şarj</string>
+    <string name="sys_adaptive_charging_summary">Şarj olurken güç tüketimini optimize etmek için sistem uyarlanabilir güç moduna girecek.</string>
+    <!-- Desktop Mode Settings -->
+    <string name="desktop_mode_pc_title">Masaüstü Modu</string>
+    <string name="desktop_mode_pc_summary">Harici ekran veya bilgisayarda tam masaüstü modu</string>
+    <!-- Sound settings -->
+    <string name="notification_sounds_title">Notification sounds</string>
+    <string name="system_sounds_title">Sistem sesleri</string>
+    <string name="other_sounds_title">Diğer sesler</string>
+    <string name="qs_battery_styles_title">Hızlı ayarlar pil</string>
+    <!-- QS Dual Tone Colors -->
+    <string name="qs_dual_tone_title">Hızlı ayarlar çift-ton</string>
+    <string name="qs_dual_tone_summary">Çift ton arka plan renkleri kullan</string>
 </resources>
