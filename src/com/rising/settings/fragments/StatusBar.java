@@ -97,7 +97,7 @@ public class StatusBar extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.rising_settings_statusbar);
 
         ContentResolver resolver = getActivity().getContentResolver();
-        Context mContext = getActivity().getApplicationContext();
+        Context mContext = getActivity();
 
         final PreferenceScreen prefScreen = getPreferenceScreen();
 

@@ -68,7 +68,7 @@ public class SmartPixels extends SettingsPreferenceFragment implements Indexable
     }
 
     private void updateSwitchPreferences() {
-        final Context mContext = getActivity().getApplicationContext();
+        final Context mContext = getActivity();
         final ContentResolver resolver = mContext.getContentResolver();
         if (mSmartPixelsEnabled != null) {
             boolean spEnabled = Settings.System.getIntForUser(resolver,

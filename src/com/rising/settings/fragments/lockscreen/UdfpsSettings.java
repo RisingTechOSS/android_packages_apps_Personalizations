@@ -57,7 +57,7 @@ public class UdfpsSettings extends SettingsPreferenceFragment {
         final PreferenceScreen prefSet = getPreferenceScreen();
         Resources resources = getResources();
 
-        final boolean udfpsResPkgInstalled = systemUtils.isPackageInstalled(getContext(),
+        final boolean udfpsResPkgInstalled = systemUtils.isPackageInstalled(getActivity(),
                 "com.rising.udfps.animations");
         mUdfpsAnimPreview = findPreference(UDFPS_ANIM_PREVIEW);
         if (!udfpsResPkgInstalled) {

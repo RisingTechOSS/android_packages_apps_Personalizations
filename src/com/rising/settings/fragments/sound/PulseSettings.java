@@ -80,7 +80,7 @@ public class PulseSettings extends SettingsPreferenceFragment implements
 
         addPreferencesFromResource(R.xml.pulse_settings);
 
-        ContentResolver resolver = getContext().getContentResolver();
+        ContentResolver resolver = getActivity().getContentResolver();
 
         mNavbarPulse = (SwitchPreference) findPreference(NAVBAR_PULSE_ENABLED_KEY);
         boolean navbarPulse = Settings.Secure.getIntForUser(resolver,

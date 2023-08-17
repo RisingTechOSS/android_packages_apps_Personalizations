@@ -54,7 +54,7 @@ public class Notifications extends SettingsPreferenceFragment {
         addPreferencesFromResource(R.xml.rising_settings_notifications);
 
         final PreferenceScreen prefScreen = getPreferenceScreen();
-        final Context mContext = getActivity().getApplicationContext();
+        final Context mContext = getActivity();
         final ContentResolver resolver = mContext.getContentResolver();
         final Resources res = mContext.getResources();
 

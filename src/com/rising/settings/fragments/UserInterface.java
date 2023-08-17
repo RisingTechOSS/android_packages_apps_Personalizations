@@ -85,7 +85,7 @@ public class UserInterface extends SettingsPreferenceFragment implements
 
         addPreferencesFromResource(R.xml.rising_settings_ui);
         
-        final Context mContext = getActivity().getApplicationContext();
+        final Context mContext = getActivity();
         final ContentResolver resolver = mContext.getContentResolver();
         final PreferenceScreen prefScreen = getPreferenceScreen();
         
@@ -120,32 +120,32 @@ public class UserInterface extends SettingsPreferenceFragment implements
             mCustomSettingsObserver.observe();
             return true;
         } else if (preference == mUseStockLayout) {
-            systemUtils.showSettingsRestartDialog(getContext());
+            systemUtils.showSettingsRestartDialog(getActivity());
             return true;
         } else if (preference == mHideUserCard) {
-            systemUtils.showSettingsRestartDialog(getContext());
+            systemUtils.showSettingsRestartDialog(getActivity());
             return true;
         } else if (preference == mAboutPhoneStyle) {
-            systemUtils.showSettingsRestartDialog(getContext());
+            systemUtils.showSettingsRestartDialog(getActivity());
             return true;
         } else if (preference == mSettingsHeaderImage) {
-            systemUtils.showSettingsRestartDialog(getContext());
+            systemUtils.showSettingsRestartDialog(getActivity());
             return true;
         } else if (preference == mSettingsHeaderImageRandom) {
-            systemUtils.showSettingsRestartDialog(getContext());
+            systemUtils.showSettingsRestartDialog(getActivity());
             return true;
         } else if (preference == mSettingsMessage) {
-            systemUtils.showSettingsRestartDialog(getContext());
+            systemUtils.showSettingsRestartDialog(getActivity());
             return true;
         } else if (preference == mSettingsHeaderTextEnabled) {
             boolean enable = (Boolean) newValue;
             SystemProperties.set("persist.sys.settings.header_text_enabled", enable ? "true" : "false");
-            systemUtils.showSettingsRestartDialog(getContext());
+            systemUtils.showSettingsRestartDialog(getActivity());
             return true;
         } else if (preference == mSettingsHeaderText) {
             String value = (String) newValue;
             SystemProperties.set("persist.sys.settings.header_text", value);
-            systemUtils.showSettingsRestartDialog(getContext());
+            systemUtils.showSettingsRestartDialog(getActivity());
             return true;
 	}
         return false;
@@ -159,7 +159,7 @@ public class UserInterface extends SettingsPreferenceFragment implements
         }
 
         void observe() {
-            Context mContext = getContext();
+            Context mContext = getActivity();
             ContentResolver resolver = mContext.getContentResolver();
             resolver.registerContentObserver(Settings.System.getUriFor(
                     Settings.System.SETTINGS_DASHBOARD_STYLE),
@@ -177,7 +177,7 @@ public class UserInterface extends SettingsPreferenceFragment implements
     private void updateSettingsStyle() {
         ContentResolver resolver = getActivity().getContentResolver();
 
-        int settingsPanelStyle = Settings.System.getIntForUser(getContext().getContentResolver(),
+        int settingsPanelStyle = Settings.System.getIntForUser(getActivity().getContentResolver(),
                 Settings.System.SETTINGS_DASHBOARD_STYLE, 0, UserHandle.USER_CURRENT);
 
 	// reset all overlays before applying
