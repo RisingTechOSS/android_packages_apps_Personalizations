@@ -44,6 +44,8 @@ import com.android.settingslib.search.Indexable;
 import java.util.List;
 import java.util.ArrayList;
 
+import com.android.internal.util.rising.systemUtils;
+
 public class OmniJawsSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
     private static final String TAG = "OmniJawsSettings";
@@ -53,9 +55,11 @@ public class OmniJawsSettings extends SettingsPreferenceFragment implements
     private static final String DEFAULT_WEATHER_ICON_PREFIX = "outline";
     private static final String WEATHER_SERVICE_PACKAGE = "org.omnirom.omnijaws";
     private static final String CHRONUS_ICON_PACK_INTENT = "com.dvtonder.chronus.ICON_PACK";
+    private static final String KEY_LOCKSCREEN_WEATHER = "lockscreen_weather_enabled";
 
     private PreferenceCategory mWeatherCategory;
     private ListPreference mWeatherIconPack;
+    private Preference mLockscreenWeather;
 
     @Override
     public int getMetricsCategory() {
@@ -67,6 +71,9 @@ public class OmniJawsSettings extends SettingsPreferenceFragment implements
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.omnijaws_settings);
         final PreferenceScreen prefScreen = getPreferenceScreen();
+
+        mLockscreenWeather = findPreference(KEY_LOCKSCREEN_WEATHER);
+        mLockscreenWeather.setOnPreferenceChangeListener(this);
 
         mWeatherCategory = (PreferenceCategory) prefScreen.findPreference(CATEGORY_WEATHER);
         if (mWeatherCategory != null) {
@@ -106,6 +113,8 @@ public class OmniJawsSettings extends SettingsPreferenceFragment implements
                     Settings.System.OMNIJAWS_WEATHER_ICON_PACK, value);
             int valueIndex = mWeatherIconPack.findIndexOfValue(value);
             mWeatherIconPack.setSummary(mWeatherIconPack.getEntries()[valueIndex]);
+        } else if (preference == mLockscreenWeather) {
+            systemUtils.showSystemUIRestartDialog(getActivity());
         }
         return true;
     }

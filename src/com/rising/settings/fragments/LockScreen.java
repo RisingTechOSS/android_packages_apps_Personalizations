@@ -74,9 +74,9 @@ public class LockScreen extends SettingsPreferenceFragment implements
 
         addPreferencesFromResource(R.xml.rising_settings_lockscreen);
         
-        final Context mContext = getActivity().getApplicationContext();
-        final ContentResolver resolver = mContext.getContentResolver();
-        final PreferenceScreen prefScreen = getPreferenceScreen();
+        Context mContext = getActivity().getApplicationContext();
+        ContentResolver resolver = mContext.getContentResolver();
+        PreferenceScreen prefScreen = getPreferenceScreen();
 
         mUserSwitcher = findPreference("persist.sys.flags.enableBouncerUserSwitcher");
         mUserSwitcher.setOnPreferenceChangeListener(this);
@@ -107,9 +107,7 @@ public class LockScreen extends SettingsPreferenceFragment implements
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         if (preference == mUserSwitcher) {
-            boolean value = (Boolean) newValue;
-            Settings.Secure.putIntForUser(getContentResolver(),
-                Settings.Secure.PREF_KG_USER_SWITCHER, value ? 1 : 0, UserHandle.USER_CURRENT);
+            systemUtils.showSystemUIRestartDialog(getActivity());
             return true;
         }
         return false;

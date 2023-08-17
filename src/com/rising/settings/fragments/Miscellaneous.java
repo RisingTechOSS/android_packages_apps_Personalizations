@@ -24,6 +24,7 @@ import android.os.UserHandle;
 import android.provider.Settings;
 import android.text.TextUtils;
 
+import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
 import androidx.preference.SwitchPreference;
@@ -38,31 +39,47 @@ import java.util.List;
 
 import lineageos.providers.LineageSettings;
 
+import com.android.internal.util.rising.systemUtils;
+
 @SearchIndexable
-public class Miscellaneous extends SettingsPreferenceFragment {
+public class Miscellaneous extends SettingsPreferenceFragment implements
+        Preference.OnPreferenceChangeListener {
 
     public static final String TAG = "Miscellaneous";
 
     private static final String SMART_CHARGING = "smart_charging";
     private static final String SMART_PIXELS = "smart_pixels";
+    private static final String HIDE_IME_SPACE = "hide_ime_space_enable";
 
     private Preference mSmartPixels;
+    private Preference mHideImeSpace;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.rising_settings_misc);
-        
-        final Context mContext = getActivity().getApplicationContext();
-        final PreferenceScreen prefScreen = getPreferenceScreen();
+
+        PreferenceScreen prefScreen = getPreferenceScreen();
+
+        mHideImeSpace = findPreference(HIDE_IME_SPACE);
+        mHideImeSpace.setOnPreferenceChangeListener(this);
 
         mSmartPixels = (Preference) prefScreen.findPreference(SMART_PIXELS);
-        boolean mSmartPixelsSupported = mContext.getResources().getBoolean(
+        boolean mSmartPixelsSupported = getActivity().getResources().getBoolean(
                 com.android.internal.R.bool.config_supportSmartPixels);
         if (!mSmartPixelsSupported) {
             prefScreen.removePreference(mSmartPixels);
         }
+    }
+
+    @Override
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+        if (preference == mHideImeSpace) {
+            systemUtils.showSystemRestartDialog(getActivity());
+            return true;
+        }
+        return false;
     }
 
     @Override

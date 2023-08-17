@@ -128,13 +128,20 @@
     <PreferenceCategory
         android:title="@string/misc_other_settings_title">
 
+    <com.rising.settings.preferences.SystemSettingSwitchPreference
+        android:key="hide_ime_space_enable"
+        android:title="@string/navigation_bar_ime_space_title"
+        android:summary="@string/navigation_bar_ime_space_summary"
+        android:defaultValue="false"
+        app:position="top"  />
+
    <com.rising.settings.preferences.GlobalSettingSwitchPreference
         android:key="pie_animation_style"
         android:icon="@drawable/ic_system_animation"
         android:title="@string/pie_animation_style_title"
         android:summary="@string/pie_animation_style_summary"
         android:defaultValue="false"
-        app:position="top" />
+        app:position="middle" />
 
     <!-- Screen Off animation -->
     <com.rising.settings.preferences.SystemSettingListPreference

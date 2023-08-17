@@ -182,12 +182,10 @@ public class StatusBar extends SettingsPreferenceFragment implements
             updateQuickPulldownSummary(value);
             return true;
         } else if (preference == mCombinedSignalIcons) {
-            boolean value = (Boolean) newValue;
-            Settings.Secure.putIntForUser(getContentResolver(),
-                Settings.Secure.ENABLE_COMBINED_SIGNAL_ICONS, value ? 1 : 0, UserHandle.USER_CURRENT);
+            systemUtils.showSystemUIRestartDialog(getActivity());
             return true;
         } else if (preference == mPrivacyCam || preference == mPrivacyLoc || preference == mPrivacyMedia) {
-            systemUtils.showSystemRestartDialog(getContext());
+            systemUtils.showSystemRestartDialog(getActivity());
             return true;
         }
         return false;
