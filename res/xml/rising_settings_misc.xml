@@ -105,6 +105,14 @@
         android:summary="@string/use_games_spoof_summary"
         app:position="top" />
 
+    <!-- Google Camera spoof -->
+    <com.rising.settings.preferences.SystemPropertySwitchPreference
+        android:key="persist.sys.pixelprops.gcam"
+        android:icon="@drawable/ic_camera"
+        android:title="@string/use_gcam_spoof_title"
+        android:summary="@string/use_gcam_spoof_summary"
+        app:position="middle" />
+
     <!-- Unlimited google photos storage -->
     <com.rising.settings.preferences.SystemPropertySwitchPreference
         android:key="persist.sys.pixelprops.gphotos"

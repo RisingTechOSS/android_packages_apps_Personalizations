@@ -53,6 +53,7 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
 
     private Preference mSmartPixels;
     private Preference mHideImeSpace;
+    private Preference mGcamSpoof;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -64,6 +65,13 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
 
         mHideImeSpace = findPreference(HIDE_IME_SPACE);
         mHideImeSpace.setOnPreferenceChangeListener(this);
+
+        mGcamSpoof = (Preference) prefScreen.findPreference("persist.sys.pixelprops.gcam");
+        boolean isPixel6Series = SystemProperties.get("ro.product.brand").toLowerCase().contains("google") 
+                        && SystemProperties.get("ro.product.manufacturer").toLowerCase().contains("google");
+        if (!isPixel6Series) {
+            prefScreen.removePreference(mGcamSpoof);
+        }
 
         mSmartPixels = (Preference) prefScreen.findPreference(SMART_PIXELS);
         boolean mSmartPixelsSupported = getActivity().getResources().getBoolean(

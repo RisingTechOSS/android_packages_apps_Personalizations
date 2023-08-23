@@ -1233,6 +1233,10 @@
     <string name="spoof_all_title">Spoof All apps</string>
     <string name="spoof_all_summary">Spoof all possible apps as Pixel XL for misc benefits (samsung accesories, cts pass etc)</string>
 
+    <!-- Gcam Spoof -->
+    <string name="use_gcam_spoof_title">Google camera spoof</string>
+    <string name="use_gcam_spoof_summary">Spoof your device as Pixel 7 Pro to unlock some google camera features (some features requires hardware compatibility)</string>
+
     <!-- Captive portal -->
     <string name="captive_portal_title">Connectivity check</string>
     <string name="captive_portal_summary">Determine if the device can connect to the internet, by contacting Google. Also used to detect captive portals.</string>
