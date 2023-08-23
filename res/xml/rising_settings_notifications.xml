@@ -24,6 +24,10 @@
         android:key="notification_illustration"
         app:lottie_rawRes="@raw/notification_illustration" />
 
+    <PreferenceCategory
+        android:key="gen_notif_settings"
+        android:title="@string/gen_notif_settings_title">
+        
      <com.rising.settings.preferences.SystemSettingSwitchPreference
         android:key="qs_colored_icons"
         android:icon="@drawable/ic_shapes"
@@ -88,7 +92,7 @@
         android:defaultValue="30"
         android:max="80"
         settings:min="1"
-        app:position="middle" />
+        app:position="bottom" />
 
     <!-- Notification guts kill app button
     <com.rising.settings.preferences.SystemSettingSwitchPreference
@@ -102,6 +106,8 @@
         android:icon="@drawable/ic_toast"
         android:title="@string/toast_icon_title"
         android:summary="@string/toast_icon_summary" /> -->
+
+    </PreferenceCategory>
 
     <PreferenceCategory
         android:key="heads_up"
@@ -166,13 +172,17 @@
             android:fragment="com.rising.settings.fragments.notifications.notificationlight.NotificationLightSettings" /> -->
      <!--</PreferenceCategory> -->
 
+    <PreferenceCategory
+        android:key="notification_material_dismiss"
+        android:title="@string/notification_material_dismiss_title">
+        
         <com.rising.settings.preferences.SystemSettingSwitchPreference
             android:key="notification_material_dismiss"
             android:icon="@drawable/ic_notification_clear_all"
             android:title="@string/notification_material_dismiss_title"
             android:summary="@string/notification_material_dismiss_summary"
             android:defaultValue="false"
-            app:position="middle" />
+            app:position="top" />
 
         <com.rising.settings.preferences.SystemSettingSeekBarPreference
             android:key="notification_material_dismiss_style"
@@ -193,6 +203,8 @@
             android:max="4"
             settings:min="0"
             app:position="bottom" />
+
+    </PreferenceCategory>
 
     <PreferenceCategory
         android:key="flashlight_category"

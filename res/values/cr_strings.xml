@@ -116,6 +116,7 @@
     <string name="sb_settings_summary">Customize statusbar icons, layout etc</string>
     <string name="ui_settings_title">User Interface</string>
     <string name="ui_settings_summary">Customize UI colors, icons, fonts etc</string>
+    <string name="gen_notif_settings_title">General notification settings</string>
 
     <!-- Share -->
     <string name="share_rising_title">Share this firmware</string>
