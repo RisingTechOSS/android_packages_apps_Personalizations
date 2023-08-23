@@ -171,6 +171,22 @@
         android:min="0"
         app:position="middle" />
 
+    <com.rising.settings.preferences.SystemSettingSwitchPreference
+        android:key="qs_header_custom_image_uri_enabled"
+        android:icon="@drawable/ic_header"
+        android:title="@string/qs_header_custom_image_uri_enabled_title"
+        android:summary="@string/qs_header_custom_image_uri_enabled_summary"
+        app:position="middle"/>
+
+    <com.rising.settings.preferences.AdaptivePreference
+        android:key="qs_header_custom_image_uri"
+        android:icon="@drawable/ic_color_bucket"
+        android:title="@string/file_header_select_title"
+        android:summary="@string/file_header_select_summary"
+        android:persistent="false"
+        android:dependency="qs_header_custom_image_uri_enabled"
+        app:position="middle" />
+
    <com.rising.settings.preferences.colorpicker.SystemSettingColorPickerPreference
         android:key="qs_header_image_filter_color"
         android:icon="@drawable/ic_color_bucket"

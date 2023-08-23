@@ -1578,6 +1578,8 @@
     <string name="qs_header_image_opacity_level_summary">Opacity level of the QS header image</string>
     <string name="qs_header_image_filter_color_title">QS header image filter color</string>
     <string name="qs_header_image_height_title">QS header image height</string>
+    <string name="qs_header_custom_image_uri_enabled_title">Custom QS header image</string>
+    <string name="qs_header_custom_image_uri_enabled_summary">Apply custom QS image header</string>
   
     <!-- Colored QS notification icons -->  
     <string name="qs_colored_icons_title">Colored QS notification icons</string>
