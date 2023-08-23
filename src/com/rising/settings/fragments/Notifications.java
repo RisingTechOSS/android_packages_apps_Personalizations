@@ -26,6 +26,7 @@ import android.provider.Settings;
 
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
+import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceScreen;
 import androidx.preference.SwitchPreference;
@@ -38,14 +39,19 @@ import com.android.settingslib.search.SearchIndexable;
 
 import java.util.List;
 
+import com.android.internal.util.rising.systemUtils;
+
 @SearchIndexable
-public class Notifications extends SettingsPreferenceFragment {
+public class Notifications extends SettingsPreferenceFragment implements
+        Preference.OnPreferenceChangeListener {
 
     public static final String TAG = "Notifications";
     
     private static final String ALERT_SLIDER_PREF = "alert_slider_notifications";
+    private static final String KEY_RETICKER_PREF = "reticker_status";
     
     private Preference mAlertSlider;
+    private Preference mReticker;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -57,6 +63,9 @@ public class Notifications extends SettingsPreferenceFragment {
         final Context mContext = getActivity();
         final ContentResolver resolver = mContext.getContentResolver();
         final Resources res = mContext.getResources();
+        
+        mReticker = (Preference) prefScreen.findPreference(KEY_RETICKER_PREF);
+        mReticker.setOnPreferenceChangeListener(this);
 
         mAlertSlider = (Preference) prefScreen.findPreference(ALERT_SLIDER_PREF);
         boolean mAlertSliderAvailable = res.getBoolean(
@@ -68,6 +77,15 @@ public class Notifications extends SettingsPreferenceFragment {
     @Override
     public int getMetricsCategory() {
         return MetricsProto.MetricsEvent.CUSTOM_SETTINGS;
+    }
+
+    @Override
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+        if (preference == mReticker) {
+            systemUtils.showSystemUIRestartDialog(getActivity());
+            return true;
+        }
+        return false;
     }
 
     /**
