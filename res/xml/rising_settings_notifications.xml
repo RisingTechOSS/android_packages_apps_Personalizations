@@ -103,7 +103,7 @@
         android:title="@string/toast_icon_title"
         android:summary="@string/toast_icon_summary" /> -->
 
-    <!--<PreferenceCategory
+    <PreferenceCategory
         android:key="heads_up"
         android:title="@string/notification_heads_up_title">
 
@@ -112,7 +112,8 @@
             android:icon="@drawable/ic_headsup"
             android:title="@string/notification_heads_up_title"
             android:summary="@string/notification_heads_up_summary"
-            android:defaultValue="true" />
+            android:defaultValue="true"
+            app:position="top" />
 
         <com.rising.settings.preferences.SystemSettingSwitchPreference
             android:key="less_boring_heads_up"
@@ -120,9 +121,19 @@
             android:title="@string/less_boring_heads_up_title"
             android:summary="@string/less_boring_heads_up_summary"
             android:defaultValue="false"
-            android:dependency="heads_up_notifications_enabled" />
+            android:dependency="heads_up_notifications_enabled"
+            app:position="middle" />
 
-        <com.rising.settings.preferences.SystemSettingSeekBarPreference
+        <!--Show clipboard overlay -->
+        <com.rising.settings.preferences.SecureSettingSwitchPreference
+            android:key="show_clipboard_overlay"
+            android:icon="@drawable/ic_clipboard_alert"
+            android:title="@string/show_clipboard_overlay_title"
+            android:summary="@string/show_clipboard_overlay_summary"
+            android:defaultValue="true"
+            app:position="bottom"/>
+
+        <!-- <com.rising.settings.preferences.SystemSettingSeekBarPreference
             android:key="heads_up_timeout"
             android:icon="@drawable/ic_clock"
             android:title="@string/notification_heads_up_timeout_title"
@@ -131,16 +142,8 @@
             android:defaultValue="5"
             settings:min="1"
             android:max="10"
-            android:dependency="heads_up_notifications_enabled" /> -->
-
-        <!-- Show clipboard overlay 
-        <com.rising.settings.preferences.SecureSettingSwitchPreference
-            android:key="show_clipboard_overlay"
-            android:icon="@drawable/ic_clipboard_alert"
-            android:title="@string/show_clipboard_overlay_title"
-            android:summary="@string/show_clipboard_overlay_summary"
-            android:defaultValue="true"/>
-    </PreferenceCategory>-->
+            android:dependency="heads_up_notifications_enabled" />-->
+    </PreferenceCategory>
 
     <!--<PreferenceCategory
         android:key="light_brightness"
