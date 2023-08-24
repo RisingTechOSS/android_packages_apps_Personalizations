@@ -1640,4 +1640,20 @@
     <string name="weather_style_5">"32°C \u2022 Today 32° / 24° \u2022 New York"</string>
     <string name="weather_style_6">"32°C \u2022 Today 32° / 24° \u2022 Sunny"</string>
     <string name="weather_style_7">"32°C \u2022 New York \u2022 Sunny"</string>
+
+    <!-- Vertical Mirror -->
+    <string name="pulse_vertical_mirror_title">Vertical Mirror</string>
+    <string name="pulse_vertical_mirror_summary">Create other pulse and flip vertically</string>
+
+    <!-- Pulse Gravity and mirror options -->
+    <string name="pulse_custom_gravity_title">Gravity</string>
+    <string name="pulse_custom_gravity_bottom">Bottom</string>
+    <string name="pulse_custom_gravity_top">Top</string>
+    <string name="pulse_custom_gravity_center">Center</string>
+    <string name="visualizer_center_mirrored_title">Center mirrored</string>
+    <string name="visualizer_center_mirrored_summary">Set the visualizer in center mirrored mode</string>
+    
+    <!-- QS Pulse -->
+    <string name="show_qs_pulse_title">Quick Settings Pulse</string>
+    <string name="show_qs_pulse_summary">Audio visualizer on the quick settings</string>
 </resources>
