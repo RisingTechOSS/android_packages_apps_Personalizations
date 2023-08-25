@@ -1243,7 +1243,7 @@
 
     <!-- Battery stats reset -->
     <string name="battery_stats_reset">Reset stats?</string>
-    <string name="battery_stats_message">Battery usage data will be lost</string>
+    <string name="battery_stats_message">Battery usage data will be lost (Battery stats reset only applies to usage since full charge usage stats)</string>
     <string name="battery_stats_clear" translatable="false">@string/proxy_clear_text</string>
 
     <!-- Parallel space -->
@@ -1656,4 +1656,12 @@
     <!-- QS Pulse -->
     <string name="show_qs_pulse_title">Quick Settings Pulse</string>
     <string name="show_qs_pulse_summary">Audio visualizer on the quick settings</string>
+    
+    <!-- Adaptive charging -->
+    <string name="adaptive_charging">Adaptive Charging</string>
+    <string name="adaptive_charging_description">Extend battery lifespan by charging steadily during longer charging periods. Activated based on your usage cycle.</string>
+    <string name="adaptive_charging_time_estimate">Adaptive charging • Full by %1$s</string>
+    <string name="keywords_adaptive_charging">charge, charging, smart charging, adaptive charging, battery, batt battery health</string>
+    <string name="reverse_charging_title">Reverse charging</string>
+    <string name="keywords_battery_share_settings">battery, share, batt</string>
 </resources>
