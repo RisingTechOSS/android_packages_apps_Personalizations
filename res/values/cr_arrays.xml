@@ -1244,6 +1244,8 @@
     
     <string-array name="custom_font_entries">
         <item>sans-serif</item>
+        <item>26fgalaxysans</item>
+        <item>alexana</item>
         <item>accimatist</item>
         <item>alienleague</item>
         <item>apiceoutline</item>
@@ -1259,6 +1261,7 @@
         <item>coolstory</item>
         <item>cocon</item>
         <item>evolvesans</item>
+        <item>exodar</item>
         <item>exotwo</item>
         <item>fluid-sans</item>
         <item>geometossoftextrabold</item>
@@ -1266,6 +1269,9 @@
         <item>harmonyos-sans</item>
         <item>jtleonor</item>
         <item>karmaticarcade</item>
+        <item>kroppen-fwo</item>
+        <item>kroppen-outline</item>
+        <item>kroppen-round</item>
         <item>linotte</item>
         <item>liquidcrystal</item>
         <item>manrope</item>
@@ -1292,6 +1298,8 @@
         <item>sanfrancisco-sb-soft-clock</item>
         <item>sanfrancisco-sb-stencil-clock</item>
         <item>samsungone</item>
+        <item>sfroundedtime</item>
+        <item>sfsofttime-semibold</item>
         <item>simpleday</item>
         <item>sonysketch</item>
         <item>source-sans</item>
