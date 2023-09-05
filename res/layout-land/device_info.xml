@@ -114,7 +114,7 @@ Copyright (C) The 2023 the risingOS Android Project
                     android:textColor="?android:attr/textColorPrimary"
                     android:textSize="13sp"
                     android:layout_marginBottom="16dp"
-                    android:fontFamily="@font/NDot57Caps" />
+                    android:textStyle="bold|italic" />
             </RelativeLayout>
 
         </LinearLayout>
