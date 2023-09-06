@@ -145,6 +145,16 @@
         android:defaultValue="true"
         app:position="top" />
 
+    <com.rising.settings.preferences.SecureSettingListPreference
+        android:key="navbar_layout_views"
+        android:icon="@drawable/ic_navbar_layout"
+        android:title="@string/navbar_layout_title"
+        android:summary="%s"
+        android:entries="@array/navbar_layout_entries"
+        android:entryValues="@array/navbar_layout_values"
+        android:defaultValue="default"
+        app:position="middle" />
+
     <com.rising.settings.preferences.SystemSettingSwitchPreference
         android:key="hide_ime_space_enable"
         android:title="@string/navigation_bar_ime_space_title"
