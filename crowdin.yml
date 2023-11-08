@@ -1,3 +1,0 @@
-files:
-  - source: /res/values/cr_strings.xml
-    translation: /res/values-%android_code%/%original_file_name%

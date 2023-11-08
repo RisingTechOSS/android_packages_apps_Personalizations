@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+     Copyright (C) 2023 the risingOS Android Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title="@string/toolbox_title">
+
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="toolbox_illustration"
+        app:lottie_rawRes="@raw/toolbox_illustration" />
+
+    <!-- Gaming mode -->
+    <com.android.settings.preferences.ui.AdaptivePreference
+        android:key="gaming_mode"
+        android:icon="@drawable/ic_gaming"
+        android:title="@string/gaming_mode_title"
+        android:summary="@string/gaming_mode_summary"
+        app:position="top">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="io.chaldeaprjkt.gamespace"
+            android:targetClass="io.chaldeaprjkt.gamespace.settings.SettingsActivity" />
+    </com.android.settings.preferences.ui.AdaptivePreference>
+
+    <com.android.settings.preferences.SystemSwitchPreference
+        android:key="hide_ime_space_enable"
+        android:title="@string/navigation_bar_ime_space_title"
+        android:summary="@string/navigation_bar_ime_space_summary"
+        android:defaultValue="false"
+        app:restart_level="system" />
+
+    <!-- Three-fingers-swipe to screenshot -->
+    <com.android.settings.preferences.SystemSwitchPreference
+        android:key="three_finger_gesture"
+        android:title="@string/three_finger_gesture"
+        android:summary="@string/three_finger_gesture_summary"
+        android:defaultValue="false"
+        app:position="bottom" />
+
+</PreferenceScreen>

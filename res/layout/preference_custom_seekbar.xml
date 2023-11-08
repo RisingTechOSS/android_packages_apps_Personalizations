@@ -21,33 +21,13 @@
     android:layout_height="wrap_content"
     android:minHeight="?android:attr/listPreferredItemHeightSmall"
     android:gravity="center_vertical"
-    android:paddingStart="?android:attr/listPreferredItemPaddingStart"
-    android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
-    android:background="?android:attr/activatedBackgroundIndicator"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="@dimen/pref_top_card_bottom_margin"
+    android:background="@drawable/rising_preference_about"
+    android:paddingEnd="6dp"
+    android:paddingStart="20dp"
     android:clipToPadding="false">
-
-    <LinearLayout
-        android:id="@+id/icon_frame"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:minWidth="48dp"
-        android:gravity="start|center_vertical"
-        android:orientation="horizontal"
-        android:paddingLeft="0dp"
-        android:paddingStart="0dp"
-        android:paddingRight="8dp"
-        android:paddingEnd="8dp"
-        android:paddingTop="4dp"
-        android:paddingBottom="4dp">
-
-        <androidx.preference.internal.PreferenceImageView
-            android:id="@android:id/icon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:maxWidth="48dp"
-            app:maxHeight="48dp"/>
-
-    </LinearLayout>
 
     <RelativeLayout
         android:layout_width="wrap_content"
@@ -137,6 +117,24 @@
                 android:layout_centerVertical="true" />
         </RelativeLayout>
     </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/icon_frame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp">
+
+            <androidx.preference.internal.PreferenceImageView
+                android:id="@android:id/icon"
+                android:padding="1.5dip"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:tint="?android:attr/colorAccent"
+                app:maxHeight="52.5dp"
+                app:maxWidth="52.5dp" />
+
+        </FrameLayout>
 
     <!-- Preference should place its actual preference widget here. -->
     <LinearLayout android:id="@android:id/widget_frame"

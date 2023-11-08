@@ -21,77 +21,87 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:title="@string/pulse_settings" >
 
-    <com.rising.settings.preferences.AdaptiveSwitchPreference
+    <com.android.settings.preferences.SystemSwitchPreference
         android:key="navbar_pulse_enabled"
         android:title="@string/show_navbar_pulse_title"
         android:summary="@string/show_navbar_pulse_summary"
+        app:settings_type="secure"
         app:position="top"/>
 
-    <com.rising.settings.preferences.AdaptiveSwitchPreference
+    <com.android.settings.preferences.SystemSwitchPreference
         android:key="lockscreen_pulse_enabled"
         android:title="@string/show_lockscreen_pulse_title"
         android:summary="@string/show_lockscreen_pulse_summary"
+        app:settings_type="secure"
         app:position="middle"/>
 
-    <com.rising.settings.preferences.AdaptiveSwitchPreference
+    <com.android.settings.preferences.SystemSwitchPreference
         android:key="ambient_pulse_enabled"
         android:title="@string/show_ambient_pulse_title"
         android:summary="@string/show_ambient_pulse_summary"
+        app:settings_type="secure"
         app:position="middle"/>
 
-    <com.rising.settings.preferences.SecureSettingSwitchPreference
+    <com.android.settings.preferences.SystemSwitchPreference
         android:key="pulse_smoothing_enabled"
         android:title="@string/pulse_smoothing_enabled_title"
         android:summary="@string/pulse_smoothing_enabled_summary"
         android:defaultValue="false"
+        app:settings_type="secure"
         app:position="middle"/>
 
-    <com.rising.settings.preferences.SecureSettingSwitchPreference
+    <com.android.settings.preferences.SystemSwitchPreference
         android:key="pulse_vertical_mirror"
         android:title="@string/pulse_vertical_mirror_title"
         android:summary="@string/pulse_vertical_mirror_summary"
         android:defaultValue="false"
+        app:settings_type="secure"
         app:position="middle"/>
 
-    <com.rising.settings.preferences.SecureSettingSwitchPreference
+    <com.android.settings.preferences.SystemSwitchPreference
         android:key="visualizer_center_mirrored"
         android:title="@string/visualizer_center_mirrored_title"
         android:summary="@string/visualizer_center_mirrored_summary"
         android:defaultValue="false"
+        app:settings_type="secure"
         app:position="middle" />
 
-    <com.rising.settings.preferences.SecureSettingListPreference
+    <com.android.settings.preferences.SystemListPreference
         android:key="pulse_color_mode"
         android:title="@string/pulse_color_mode_title"
         android:entries="@array/pulse_color_mode_entries"
         android:entryValues="@array/pulse_color_mode_values"
         android:defaultValue="2"
+        app:settings_type="secure"
         app:position="middle"/>
 
-    <com.rising.settings.preferences.SecureSettingListPreference
+    <com.android.settings.preferences.SystemListPreference
         android:key="pulse_custom_gravity"
         android:title="@string/pulse_custom_gravity_title"
         android:entries="@array/pulse_custom_gravity_entries"
         android:entryValues="@array/pulse_custom_gravity_values"
         android:summary="%s"
         android:defaultValue="0"
+        app:settings_type="secure"
         app:position="middle" />
 
-    <com.rising.settings.preferences.SecureSettingListPreference
+    <com.android.settings.preferences.SystemListPreference
         android:key="pulse_render_style"
         android:title="@string/pulse_render_mode_title"
         android:entries="@array/pulse_render_mode_entries"
         android:entryValues="@array/pulse_render_mode_values"
         android:defaultValue="1"
+        app:settings_type="secure"
         app:position="middle"/>
 
-    <com.rising.settings.preferences.colorpicker.SecureSettingColorPickerPreference
+    <com.android.settings.preferences.colorpicker.SecureSettingColorPickerPreference
         android:key="pulse_color_user"
         android:title="@string/pulse_color_user_title"
         android:defaultValue="0x92FFFFFF"
+        app:settings_type="secure"
         app:position="middle"/>
 
-    <com.rising.settings.preferences.SecureSettingSeekBarPreference
+    <com.android.settings.preferences.SecureSettingSeekBarPreference
         android:key="pulse_lavalamp_speed"
         android:title="@string/pulse_lavalamp_speed_title"
         android:defaultValue="10000"
@@ -99,13 +109,14 @@
         settings:min="200"
         settings:interval="200"
         settings:units="@string/unit_milliseconds"
+        app:settings_type="secure"
         app:position="bottom"/>
 
     <PreferenceCategory
         android:key="pulse_fading_bars_category"
         android:title="@string/pulse_legacy_mode_advanced_category">
 
-        <com.rising.settings.preferences.SecureSettingSeekBarPreference
+        <com.android.settings.preferences.SecureSettingSeekBarPreference
             android:key="pulse_custom_dimen"
             android:title="@string/pulse_custom_dimen"
             android:defaultValue="14"
@@ -113,9 +124,10 @@
             settings:min="1"
             settings:units="@string/unit_pixels"
             android:dependency="pulse_fading_bars_category"
+            app:settings_type="secure"
             app:position="top"/>
 
-        <com.rising.settings.preferences.SecureSettingSeekBarPreference
+        <com.android.settings.preferences.SecureSettingSeekBarPreference
             android:key="pulse_custom_div"
             android:title="@string/pulse_custom_div"
             android:defaultValue="16"
@@ -124,9 +136,10 @@
             settings:interval="2"
             settings:units="@string/unit_pixels"
             android:dependency="pulse_fading_bars_category"
+            app:settings_type="secure"
             app:position="middle"/>
 
-        <com.rising.settings.preferences.SecureSettingSeekBarPreference
+        <com.android.settings.preferences.SecureSettingSeekBarPreference
             android:key="pulse_filled_block_size"
             android:title="@string/pulse_filled_block_size"
             android:defaultValue="4"
@@ -134,9 +147,10 @@
             settings:min="4"
             settings:units="@string/unit_pixels"
             android:dependency="pulse_fading_bars_category"
+            app:settings_type="secure"
             app:position="middle"/>
 
-        <com.rising.settings.preferences.SecureSettingSeekBarPreference
+        <com.android.settings.preferences.SecureSettingSeekBarPreference
             android:key="pulse_empty_block_size"
             android:title="@string/pulse_empty_block_size"
             android:defaultValue="1"
@@ -144,15 +158,17 @@
             settings:min="0"
             settings:units="@string/unit_pixels"
             android:dependency="pulse_fading_bars_category"
+            app:settings_type="secure"
             app:position="middle"/>
 
-        <com.rising.settings.preferences.SecureSettingSeekBarPreference
+        <com.android.settings.preferences.SecureSettingSeekBarPreference
             android:key="pulse_custom_fudge_factor"
             android:title="@string/pulse_custom_fudge_factor"
             android:defaultValue="4"
             android:max="6"
             settings:min="2"
             android:dependency="pulse_fading_bars_category"
+            app:settings_type="secure"
             app:position="bottom"/>
     </PreferenceCategory>
 
@@ -160,24 +176,26 @@
         android:key="pulse_2"
         android:title="@string/pulse_solid_dimen_category">
 
-        <com.rising.settings.preferences.SecureSettingSwitchPreference
+        <com.android.settings.preferences.SystemSwitchPreference
             android:key="pulse_solid_units_rounded"
             android:title="@string/pulse_solid_units_rounded_title"
             android:summary="@string/pulse_solid_units_rounded_summary"
             android:defaultValue="false"
             android:dependency="pulse_2"
+            app:settings_type="secure"
             app:position="top"/>
 
-        <com.rising.settings.preferences.SecureSettingSeekBarPreference
+        <com.android.settings.preferences.SecureSettingSeekBarPreference
             android:key="pulse_solid_units_opacity"
             android:title="@string/pulse_solid_units_opacity"
             android:defaultValue="200"
             android:max="255"
             settings:min="0"
             android:dependency="pulse_2"
+            app:settings_type="secure"
             app:position="middle"/>
 
-        <com.rising.settings.preferences.SecureSettingSeekBarPreference
+        <com.android.settings.preferences.SecureSettingSeekBarPreference
             android:key="pulse_solid_units_count"
             android:title="@string/pulse_solid_units_count"
             android:defaultValue="32"
@@ -185,15 +203,17 @@
             settings:min="16"
             settings:interval="16"
             android:dependency="pulse_2"
+            app:settings_type="secure"
             app:position="middle"/>
 
-        <com.rising.settings.preferences.SecureSettingSeekBarPreference
+        <com.android.settings.preferences.SecureSettingSeekBarPreference
             android:key="pulse_solid_fudge_factor"
             android:title="@string/pulse_custom_fudge_factor"
             android:defaultValue="4"
             android:max="6"
             settings:min="2"
             android:dependency="pulse_2"
+            app:settings_type="secure"
             app:position="bottom"/>
     </PreferenceCategory>
 

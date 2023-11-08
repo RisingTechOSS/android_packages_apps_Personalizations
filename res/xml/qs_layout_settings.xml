@@ -11,44 +11,19 @@
         app:lottie_rawRes="@raw/lottie_row_quick_setting_style" />
 
     <PreferenceCategory 
-         android:title="@string/qs_battery_styles_title">
-            
-        <!-- Battery percent -->
-        <com.rising.settings.preferences.SystemSettingListPreference
-            android:key="qs_show_battery_percent"
-            android:icon="@drawable/ic_battery_alert"
-            android:title="@string/status_bar_battery_percent_title"
-            android:entries="@array/status_bar_battery_percent_entries"
-            android:entryValues="@array/status_bar_battery_percent_values"
-            android:defaultValue="2"
-            app:position="top" />
-
-        <!-- Battery styles -->
-        <com.rising.settings.preferences.SystemSettingListPreference
-            android:key="qs_battery_style"
-            android:icon="@drawable/ic_battery"
-            android:title="@string/status_bar_battery_style_title"
-            android:entries="@array/qs_battery_style_entries"
-            android:entryValues="@array/qs_battery_style_values"
-            android:defaultValue="-1"
-            app:position="bottom" />
-
-    </PreferenceCategory>
-
-    <PreferenceCategory 
          android:title="@string/qs_show_brightness_slider_title">
          
-        <com.rising.settings.preferences.SecureSettingSwitchPreference
+        <com.android.settings.preferences.SystemSwitchPreference
             android:key="qs_show_auto_brightness"
-            android:icon="@drawable/ic_brightness_auto"
             android:title="@string/qs_show_auto_brightness_title"
             android:summary="@string/qs_show_auto_brightness_summary"
             android:defaultValue="true"
-            app:isLineageSettings="true"
+            app:settings_type="secure"
+            app:reevaluate="true"
             app:position="top" />
 
         <!-- Brightness slider -->
-        <com.rising.settings.preferences.SecureSettingListPreference
+        <com.android.settings.preferences.SystemListPreference
             android:key="qs_show_brightness_slider"
             android:icon="@drawable/ic_brightness"
             android:title="@string/qs_show_brightness_slider_title"
@@ -56,10 +31,11 @@
             android:entryValues="@array/qs_show_brightness_slider_values"
             android:summary="%s"
             android:defaultValue="1"
-            app:isLineageSettings="true"
+            app:settings_type="secure"
+            app:reevaluate="true"
             app:position="middle" />
 
-        <com.rising.settings.preferences.SecureSettingListPreference
+        <com.android.settings.preferences.SystemListPreference
             android:key="qs_brightness_slider_position"
             android:icon="@drawable/ic_brightness"
             android:title="@string/qs_brightness_slider_position_title"
@@ -67,7 +43,8 @@
             android:entryValues="@array/qs_brightness_slider_position_values"
             android:summary="%s"
             android:defaultValue="0"
-            app:isLineageSettings="true"
+            app:settings_type="secure"
+            app:reevaluate="true"
             app:position="bottom" />
 
     </PreferenceCategory>
@@ -76,52 +53,39 @@
         android:key="tiles_layout"
         android:title="@string/qs_tiles_layout_category">
 
-        <com.rising.settings.preferences.RisingSettingSeekBarPreference
+        <com.android.settings.preferences.RisingSettingSeekBarPreference
             android:key="qs_layout_columns"
-            android:icon="@drawable/ic_settings_quicksettings"
             android:title="@string/qs_columns_portrait_title"
             android:defaultValue="2"
             android:max="6"
-            settings:min="2"
+            app:minValue="2"
             app:position="top" />
 
-        <com.rising.settings.preferences.RisingSettingSeekBarPreference
+        <com.android.settings.preferences.RisingSettingSeekBarPreference
             android:key="qs_layout_rows"
-            android:icon="@drawable/ic_settings_quicksettings"
             android:title="@string/qs_rows_portrait_title"
             android:defaultValue="4"
             android:max="6"
-            settings:min="2"
+            app:minValue="2"
             app:position="middle" />
 
-        <com.rising.settings.preferences.RisingSettingSeekBarPreference
+        <com.android.settings.preferences.RisingSettingSeekBarPreference
             android:key="qqs_layout_rows"
-            android:icon="@drawable/ic_settings_quicksettings"
             android:title="@string/qqs_rows_portrait_title"
             android:defaultValue="2"
             android:max="5"
-            settings:min="1"
+            app:minValue="1"
             app:position="middle" />
 
-        <com.rising.settings.preferences.SystemSettingSwitchPreference
-            android:key="qs_dual_tone"
-            android:icon="@drawable/ic_color_bucket"
-            android:title="@string/qs_dual_tone_title"
-            android:summary="@string/qs_dual_tone_summary"
-            android:defaultValue="true" 
-            app:position="middle"/>
-
-        <com.rising.settings.preferences.SystemSettingSwitchPreference
+        <com.android.settings.preferences.SystemSwitchPreference
             android:key="qs_tile_label_hide"
-            android:icon="@drawable/ic_text"
             android:title="@string/qs_tile_hide_label_title"
             android:summary="@string/qs_tile_hide_label_summary"
             android:defaultValue="false"
             app:position="middle" />
 
-        <com.rising.settings.preferences.SystemSettingSwitchPreference
+        <com.android.settings.preferences.SystemSwitchPreference
             android:key="qs_tile_vertical_layout"
-            android:icon="@drawable/ic_navbar_layout"
             android:title="@string/qs_tile_vertical_layout_title"
             android:summary="@string/qs_tile_vertical_layout_summary"
             android:defaultValue="false"
@@ -135,108 +99,22 @@
     <PreferenceCategory
         android:title="@string/qs_misc_category">
 
-    <com.rising.settings.preferences.SystemSettingSwitchPreference
+    <com.android.settings.preferences.SystemSwitchPreference
         android:key="secure_lockscreen_qs_disabled"
-        android:icon="@drawable/ic_lock_alert"
         android:title="@string/disable_qs_title"
         android:summary="@string/disable_qs_summary"
         app:position="top"/>
 
-    <com.rising.settings.preferences.SystemSettingSwitchPreference
-        android:key="sys_qs_footer_data_usage"
-        android:icon="@drawable/ic_text"
-        android:title="@string/qs_footer_datausage_title"
-        android:summary="@string/qs_footer_datausage_summary"
-        app:position="middle"/>
-
-     <com.rising.settings.preferences.SystemSettingSeekBarPreference
+     <com.android.settings.preferences.SystemSettingSeekBarPreference
         android:key="qs_transparency"
-        android:icon="@drawable/ic_color_bucket"
         android:title="@string/qs_transparency_title"
-        android:summary="@string/qs_transparency_summary"
         android:defaultValue="100"
-        settings:interval="1"
-        settings:units="%"
         android:max="100"
-        android:min="1"
-        app:position="middle" />
-
-     <com.rising.settings.preferences.SystemSettingSeekBarPreference
-        android:key="qs_header_image"
-        android:icon="@drawable/ic_header"
-        android:title="@string/qs_header_image_title"
-        android:defaultValue="0"
-        settings:interval="1"
-        android:max="75"
-        android:min="0"
-        app:position="middle" />
-
-    <com.rising.settings.preferences.SystemSettingSwitchPreference
-        android:key="qs_header_custom_image_uri_enabled"
-        android:icon="@drawable/ic_header"
-        android:title="@string/qs_header_custom_image_uri_enabled_title"
-        android:summary="@string/qs_header_custom_image_uri_enabled_summary"
-        app:position="middle"/>
-
-    <com.rising.settings.preferences.AdaptivePreference
-        android:key="qs_header_custom_image_uri"
-        android:icon="@drawable/ic_color_bucket"
-        android:title="@string/file_header_select_title"
-        android:summary="@string/file_header_select_summary"
-        android:persistent="false"
-        android:dependency="qs_header_custom_image_uri_enabled"
-        app:position="middle" />
-
-   <com.rising.settings.preferences.colorpicker.SystemSettingColorPickerPreference
-        android:key="qs_header_image_filter_color"
-        android:icon="@drawable/ic_color_bucket"
-        android:title="@string/qs_header_image_filter_color_title"
-        android:defaultValue="0xFFFFFFFF"
-        app:position="middle" />
-
-     <com.rising.settings.preferences.SystemSettingSeekBarPreference
-        android:key="qs_header_image_fade_level"
-        android:icon="@drawable/ic_color_bucket"
-        android:title="@string/qs_header_image_fade_level_level_title"
-        android:summary="@string/qs_header_image_fade_level_level_summary"
-        android:defaultValue="40"
-        settings:interval="1"
-        android:max="100"
-        android:min="1"
-        app:position="middle" />
-
-     <com.rising.settings.preferences.SystemSettingSeekBarPreference
-        android:key="qs_header_image_height"
-        android:icon="@drawable/ic_color_bucket"
-        android:title="@string/qs_header_image_height_title"
-        android:defaultValue="80"
-        settings:interval="1"
-        android:max="255"
-        android:min="1"
-        app:position="middle" />
-
-     <com.rising.settings.preferences.SystemSettingSeekBarPreference
-        android:key="qs_header_image_opacity_level"
-        android:icon="@drawable/ic_color_bucket"
-        android:title="@string/qs_header_image_opacity_level_title"
-        android:summary="@string/qs_header_image_opacity_level_summary"
-        android:defaultValue="30"
-        settings:interval="1"
-        android:max="100"
-        android:min="1"
-        app:position="middle" />
-
-    <com.rising.settings.preferences.SystemSettingListPreference
-        android:key="custom_transitions_page_tile"
-        android:icon="@drawable/ic_qs_tile_animation_style"
-        android:entries="@array/qs_transitions_entries"
-        android:entryValues="@array/qs_transitions_values"
-        android:summary="%s"
-        android:title="@string/qs_transitions_title"
+        app:minValue="10"
         app:position="middle" />
 
      <!-- QS styles -->
-    <com.rising.settings.preferences.SystemSettingListPreference
+    <com.android.settings.preferences.SystemListPreference
         android:key="qs_panel_style"
         android:icon="@drawable/ic_color_bucket"
         android:title="@string/qs_styles_title"
@@ -247,7 +125,7 @@
         app:position="middle" />
 
      <!-- QS UI -->
-    <com.rising.settings.preferences.SystemSettingListPreference
+    <com.android.settings.preferences.SystemListPreference
         android:key="qs_ui_style"
         android:icon="@drawable/ic_color_bucket"
         android:title="@string/qs_ui_title"

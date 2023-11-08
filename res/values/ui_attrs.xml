@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <declare-styleable name="AdaptivePreference">
+        <attr name="position" format="string" />
+    </declare-styleable>
+    
+    <!-- Base attributes available to CustomSeekBarPreference. -->
+    <declare-styleable name="CustomSeekBarPreference">
+        <attr name="defaultValueText" format="string" />
+        <attr name="interval" format="integer" />
+        <attr name="showSign" format="boolean" />
+        <attr name="units" format="string|reference" />
+        <attr name="continuousUpdates" format="boolean" />
+    </declare-styleable>
+</resources>

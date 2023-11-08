@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2021-2023 crDroid Android Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:key="sb_settings_title"
+    android:title="@string/sb_settings_title">
+
+     <com.android.settings.preferences.ui.AdaptivePreference
+        android:key="batterybar"
+        android:icon="@drawable/ic_car_battery"
+        android:title="@string/battery_bar_title"
+        android:summary="@string/battery_bar_summary"
+        android:fragment="com.android.settings.fragments.statusbar.BatteryBar"
+        app:position="top" />
+
+    <!-- Status bar chip bg style -->
+    <com.android.settings.preferences.SystemListPreference
+        android:key="statusbar_clock_chip"
+        android:icon="@drawable/ic_clock"
+        android:title="@string/statusbar_clock_chip_title"
+        android:entries="@array/statusbar_clock_chip_entries"
+        android:entryValues="@array/statusbar_clock_chip_values"
+        android:summary="%s"
+        android:defaultValue="0"
+        app:position="middle" />
+
+     <com.android.settings.preferences.SystemSwitchPreference
+        android:key="statusbar_colored_icons"
+        android:title="@string/statusbar_colored_icons_title"
+        android:summary="@string/statusbar_colored_icons_summary"
+        android:defaultValue="false"
+        app:position="middle" />
+    
+    <com.android.settings.preferences.SystemSwitchPreference
+	    android:key="statusbar_notif_count"
+	    android:title="@string/statusbar_notif_count_title"
+	    android:summary="@string/statusbar_notif_count_summary"
+	    android:defaultValue="false"
+	    app:position="bottom" />
+
+</PreferenceScreen>

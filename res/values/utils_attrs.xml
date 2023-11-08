@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <declare-styleable name="SystemPreference">
+        <attr name="restart_level" format="string" />
+        <attr name="settings_type" format="string" />
+        <attr name="minValue" format="integer" />
+        <attr name="reevaluate" format="boolean" />
+    </declare-styleable>
+</resources>

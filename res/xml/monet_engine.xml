@@ -21,59 +21,62 @@
     android:key="monet_settings"
     android:title="@string/monet_title">
 
-    <com.rising.settings.preferences.SecureSettingSwitchPreference
+    <com.android.settings.preferences.SystemSwitchPreference
         android:key="monet_engine_custom_color"
         android:title="@string/monet_engine_custom_color_title"
         android:summary="@string/monet_engine_custom_color_summary"
         android:defaultValue="false"
-        app:position="top" />
+        app:position="top"
+        app:settings_type="secure" />
 
-    <com.rising.settings.preferences.colorpicker.SecureSettingColorPickerPreference
+    <com.android.settings.preferences.colorpicker.SystemSettingColorPickerPreference
         android:key="monet_engine_color_override"
         android:title="@string/monet_engine_color_override_title"
         android:dependency="monet_engine_custom_color"
         android:defaultValue="0xFF1b6ef3"
-        app:position="middle" />
+        app:position="middle"
+        app:settings_type="secure" />
 
-    <com.rising.settings.preferences.SecureSettingSwitchPreference
+    <com.android.settings.preferences.SystemSwitchPreference
         android:key="monet_engine_custom_bgcolor"
         android:title="@string/monet_engine_custom_bgcolor_title"
         android:summary="@string/monet_engine_custom_bgcolor_summary"
         android:defaultValue="false"
-        app:position="middle" />
+        app:settings_type="secure" />
 
-    <com.rising.settings.preferences.colorpicker.SecureSettingColorPickerPreference
+    <com.android.settings.preferences.colorpicker.SystemSettingColorPickerPreference
         android:key="monet_engine_bgcolor_override"
         android:title="@string/monet_engine_color_override_title"
         android:dependency="monet_engine_custom_bgcolor"
         android:defaultValue="0xFF1b6ef3"
+        app:settings_type="secure"
         app:position="middle" />
 
-    <com.rising.settings.preferences.SecureSettingSeekBarPreference
+    <com.android.settings.preferences.SecureSettingSeekBarPreference
         android:key="monet_engine_luminance_factor"
         android:title="@string/monet_engine_luminance_factor_title"
-        android:summary="@string/monet_engine_luminance_factor_summary"
         android:defaultValue="100"
         android:max="225"
         settings:min="25"
         settings:interval="5"
+        app:settings_type="secure"
         app:position="middle"/>
 
-    <com.rising.settings.preferences.SecureSettingSeekBarPreference
+    <com.android.settings.preferences.SecureSettingSeekBarPreference
         android:key="monet_engine_chroma_factor"
         android:title="@string/monet_engine_chroma_factor_title"
-        android:summary="@string/monet_engine_chroma_factor_summary"
         android:defaultValue="100"
         android:max="225"
         settings:min="25"
         settings:interval="5"
+        app:settings_type="secure"
         app:position="middle"/>
 
-    <com.rising.settings.preferences.SecureSettingSwitchPreference
+    <com.android.settings.preferences.SystemSwitchPreference
         android:key="monet_engine_tint_background"
         android:title="@string/monet_engine_tint_background_title"
-        android:summary="@string/monet_engine_tint_background_summary"
         android:defaultValue="false"
-        app:position="bottom" />
+        app:position="bottom"
+        app:settings_type="secure" />
 
 </PreferenceScreen>

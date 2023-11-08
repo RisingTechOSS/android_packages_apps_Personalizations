@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- 
-     
-     Copyright (C) 2022 Android Open Source Project
+     Copyright (C) 2023 the risingOS Android Project
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
@@ -17,75 +16,37 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:title="@string/rising_settings_title" >
-            
-        <com.android.settingslib.widget.IllustrationPreference
-            android:key="personalizations_illustration"
-            android:order="-996"
-            app:lottie_rawRes="@raw/personalizations_illustration"/>
-            
-        <!-- About -->
-        <com.rising.settings.preferences.AdaptivePreference
-            android:icon="@drawable/ic_settings_about"
-            android:title="@string/about_settings_title"
-            android:summary="@string/about_settings_summary"
-            android:fragment="com.rising.settings.fragments.About"
-            app:position="top" />
 
-      <!-- Lockscreen -->
-        <com.rising.settings.preferences.AdaptivePreference
-            android:icon="@drawable/ic_settings_lockscreens"
-            android:title="@string/lockscreen_title"
-            android:summary="@string/lockscreen_settings_summary"
-            android:fragment="com.rising.settings.fragments.LockScreen"
-            app:position="middle" />
-            
-        <!-- Misc -->
-        <com.rising.settings.preferences.AdaptivePreference
-            android:icon="@drawable/ic_settings_miscs"
-            android:title="@string/misc_title"
-            android:summary="@string/misc_settings_summary"
-            android:fragment="com.rising.settings.fragments.Miscellaneous"
-            app:position="middle" />
+        <!-- Quick Access (Lockscreen, Themes and Toolbox)-->
+        <com.android.settingslib.widget.LayoutPreference
+            android:key="personalization_dashboard_quick_access"
+            android:layout="@layout/personalization_dashboard_layout"
+            android:selectable="false"/>
+
+        <!-- Changelog -->
+        <com.android.settings.preferences.ui.AdaptivePreference
+            android:key="rising_changelog"
+            android:icon="@drawable/ic_changelog"
+            android:title="@string/changelog_rising_title"
+            android:summary="@string/changelog_rising_summary"
+            app:position="top">
+            <intent android:action="android.intent.action.MAIN"
+                 android:targetPackage="com.android.settings"
+                 android:targetClass="com.android.settings.fragments.about.ChangelogActivity"/>
+        </com.android.settings.preferences.ui.AdaptivePreference>
 
         <!-- Notifications -->
-        <com.rising.settings.preferences.AdaptivePreference
+        <com.android.settings.preferences.ui.AdaptivePreference
             android:icon="@drawable/ic_dashboard_notifications"
             android:title="@string/notifications_title"
             android:summary="@string/notif_settings_summary"
-            android:fragment="com.rising.settings.fragments.Notifications"
-            app:position="middle" />
-
-        <!-- QuickSettings  -->
-        <com.rising.settings.preferences.AdaptivePreference
-            android:key="qs_tile_layout"
-            android:icon="@drawable/ic_settings_quicksettings"
-            android:title="@string/qs_layout_category_title"
-            android:summary="@string/qs_tile_layout_summary"
-            android:fragment="com.rising.settings.fragments.QsLayoutSettings"
-            app:position="middle" />
+            android:fragment="com.android.settings.fragments.Notifications" />
 
         <!-- Sound -->
-        <com.rising.settings.preferences.AdaptivePreference
+        <com.android.settings.preferences.ui.AdaptivePreference
             android:icon="@drawable/ic_cellphone_sound"
             android:title="@string/sound_title"
             android:summary="@string/sound_settings_summary"
-            android:fragment="com.rising.settings.fragments.Sound"
-            app:position="middle" />    
-
-       <!-- Statusbar -->   
-        <com.rising.settings.preferences.AdaptivePreference
-            android:icon="@drawable/ic_settings_statusbar"
-            android:title="@string/statusbar_title"
-            android:summary="@string/sb_settings_summary"
-            android:fragment="com.rising.settings.fragments.StatusBar"
-            app:position="middle" />
- 
-        <!--- UserInterface -->
-        <com.rising.settings.preferences.AdaptivePreference
-            android:icon="@drawable/ic_color_bucket"
-            android:title="@string/ui_title"
-            android:summary="@string/ui_settings_summary"
-            android:fragment="com.rising.settings.fragments.UserInterface"
-            app:position="bottom" /> 
-
+            android:fragment="com.android.settings.fragments.Sound"
+            app:position="bottom" />    
 </PreferenceScreen> 

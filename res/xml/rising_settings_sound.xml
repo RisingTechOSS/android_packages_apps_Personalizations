@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
-     Copyright (C) 2016-2022 crDroid Android Project
      Copyright (C) 2023 the risingOS Android Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,100 +16,46 @@
 -->
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-    android:title="@string/sound_title" >
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title="@string/sound_title">
 
     <com.android.settingslib.widget.IllustrationPreference
         android:key="sound_illustration"
         app:lottie_rawRes="@raw/sound_illustration" />
 
-    <!-- Pulse music visualizer -->
-    <com.rising.settings.preferences.AdaptivePreference
-        android:key="pulse_settings"
-        android:icon="@drawable/ic_pulse"
-        android:title="@string/pulse_settings"
-        android:summary="@string/pulse_settings_summary"
-        android:fragment="com.rising.settings.fragments.sound.PulseSettings"
-        app:position="top" />
-
-    <!-- Screenshot Sound -->
-    <com.rising.settings.preferences.SystemSettingSwitchPreference
-        android:key="screenshot_shutter_sound"
-        android:icon="@drawable/ic_cellphone_sound"
-        android:title="@string/screenshot_shutter_sound_title"
-        android:summary="@string/screenshot_shutter_sound_summary"
-        android:defaultValue="true"
-        app:position="middle"  /> 
-
     <!-- Adaptive Playback -->
-    <com.rising.settings.preferences.AdaptivePreference
+    <com.android.settings.preferences.ui.AdaptivePreference
         android:key="adaptive_playback_settings"
         android:icon="@drawable/ic_settings_sound"
         android:title="@string/adaptive_playback_title"
         android:summary="@string/adaptive_playback_summary"
-        android:fragment="com.rising.settings.fragments.sound.AdaptivePlayback"
-        app:position="bottom" /> 
+        android:fragment="com.android.settings.fragments.sound.AdaptivePlayback"
+        app:position="top" /> 
 
-    <!-- Volume panel-->
-    <PreferenceCategory
-        android:key="volume_panel"
-        android:title="@string/volume_panel_category" >
-
-	<!-- 
-        <com.rising.settings.preferences.SystemSettingSeekBarPreference
-            android:key="volume_dialog_timeout"
-            android:icon="@drawable/ic_music_note"
-            android:title="@string/volume_dialog_timeout_title"
-            android:defaultValue="3"
-            android:max="10"
-            settings:min="1"
-            settings:units="@string/unit_seconds" />-->
-
-    	<com.rising.settings.preferences.SystemSettingSwitchPreference
-     	   android:key="volume_media_output_toggle"
-     	   android:icon="@drawable/ic_settings_sound"
-     	   android:title="@string/volume_media_output_toggle_title"
-      	   android:summary="@string/volume_media_output_toggle_summary"
-      	   android:defaultValue="true" 
-      	   app:position="top"/>
+    <com.android.settings.preferences.SystemSwitchPreference
+     	android:key="volume_media_output_toggle"
+     	android:title="@string/volume_media_output_toggle_title"
+      	android:summary="@string/volume_media_output_toggle_summary"
+      	android:defaultValue="true" 
+      	app:position="middle"/>
       	   
+    <!-- Pulse music visualizer -->
+    <com.android.settings.preferences.ui.AdaptivePreference
+        android:key="pulse_settings"
+        android:icon="@drawable/ic_pulse"
+        android:title="@string/pulse_settings"
+        android:summary="@string/pulse_settings_summary"
+        android:fragment="com.android.settings.fragments.sound.PulseSettings"
+        app:position="middle" />
+        
     <!-- Live volume steps-->
-    	<com.rising.settings.preferences.AdaptivePreference
-      	   android:key="volume_steps"
-      	   android:icon="@drawable/ic_settings_sound"
-      	   android:title="@string/volume_steps_title"
-      	   android:summary="@string/volume_steps_summary"
-      	   android:fragment="com.rising.settings.fragments.sound.VolumeSteps"
-      	   app:position="bottom" /> 
-
-    </PreferenceCategory> 
-
-    <!-- In-call feedback-->
-    <PreferenceCategory
-        android:key="incall_vib_options"
-        android:title="@string/incall_vibration_category" >
-
-        <com.rising.settings.preferences.SystemSettingSwitchPreference
-            android:key="vibrate_on_connect"
-            android:icon="@drawable/ic_vibrate"
-            android:title="@string/incall_vibrate_connect_title"
-            android:defaultValue="false"
-            app:position="top" />
-
-        <com.rising.settings.preferences.SystemSettingSwitchPreference
-            android:key="vibrate_on_callwaiting"
-            android:icon="@drawable/ic_vibrate"
-            android:title="@string/incall_vibrate_call_wait_title"
-            android:defaultValue="false"
-            app:position="middle" />
-
-        <com.rising.settings.preferences.SystemSettingSwitchPreference
-            android:key="vibrate_on_disconnect"
-            android:icon="@drawable/ic_vibrate"
-            android:title="@string/incall_vibrate_disconnect_title"
-            android:defaultValue="false"
-            app:position="bottom" />
-    </PreferenceCategory> 
+    <com.android.settings.preferences.ui.AdaptivePreference
+        android:key="volume_steps"
+      	android:icon="@drawable/ic_settings_sound"
+        android:title="@string/volume_steps_title"
+      	android:summary="@string/volume_steps_summary"
+      	android:fragment="com.android.settings.fragments.sound.VolumeSteps"
+      	app:position="bottom" /> 
 
 </PreferenceScreen>
