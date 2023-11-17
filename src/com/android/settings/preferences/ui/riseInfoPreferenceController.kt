@@ -28,6 +28,7 @@ import android.view.View
 import androidx.preference.Preference
 import androidx.preference.PreferenceScreen
 import com.android.settings.R
+import com.android.settings.preferences.ui.DeviceInfoUtil
 import com.android.settingslib.core.AbstractPreferenceController
 import com.android.settingslib.DeviceInfoUtils
 import com.android.settingslib.widget.LayoutPreference
@@ -39,8 +40,17 @@ class riseInfoPreferenceController(context: Context) : AbstractPreferenceControl
 
     private val defaultFallback = mContext.getString(R.string.device_info_default)
 
-    private fun getPropertyOrDefault(propName: String): String {
+    private fun getProp(propName: String): String {
         return SystemProperties.get(propName, defaultFallback)
+    }
+
+    private fun getProp(propName: String, customFallback: String): String {
+        val propValue = SystemProperties.get(propName)
+        return if (propValue.isNotEmpty()) propValue else SystemProperties.get(customFallback, "Unknown")
+    }
+
+    private fun getRisingChipset(): String {
+        return getProp(PROP_RISING_CHIPSET, "ro.board.platform")
     }
 
     private fun getDeviceName(): String {
@@ -48,37 +58,15 @@ class riseInfoPreferenceController(context: Context) : AbstractPreferenceControl
     }
 
     private fun getRisingBuildVersion(): String {
-        return getPropertyOrDefault(PROP_RISING_BUILD_VERSION)
-    }
-
-    private fun getRisingStorage(): String {
-        return SystemProperties.get(PROP_RISING_RAM, "0gb") + "/" + SystemProperties.get(PROP_RISING_STORAGE, "0gb")
-    }
-
-    private fun getRisingChipset(): String {
-        return getPropertyOrDefault(PROP_RISING_CHIPSET)
-    }
-
-    private fun getRisingBattery(): String {
-        return getPropertyOrDefault(PROP_RISING_BATTERY)
-    }
-    
-    private fun getRisingResolution(): String {
-        return getPropertyOrDefault(PROP_RISING_DISPLAY)
+        return getProp(PROP_RISING_BUILD_VERSION)
     }
 
     private fun getRisingSecurity(): String {
-        return getPropertyOrDefault(PROP_RISING_SECURITY)
+        return getProp(PROP_RISING_SECURITY)
     }
 
     private fun getRisingVersion(): String {
         return SystemProperties.get(PROP_RISING_VERSION, "2.0")
-    }
-
-    private fun getRisingReleaseType(): String {
-        val releaseType = getPropertyOrDefault(PROP_RISING_RELEASETYPE)
-        return releaseType.substring(0, 1).uppercase() +
-               releaseType.substring(1).lowercase()
     }
 
     private fun getRisingBuildStatus(releaseType: String): String {
@@ -86,7 +74,7 @@ class riseInfoPreferenceController(context: Context) : AbstractPreferenceControl
     }
 
     private fun getRisingMaintainer(releaseType: String): String {
-        val risingMaintainer = getPropertyOrDefault(PROP_RISING_MAINTAINER)
+        val risingMaintainer = getProp(PROP_RISING_MAINTAINER)
         if (risingMaintainer.equals("Unknown", ignoreCase = true)) {
             return mContext.getString(R.string.unknown_maintainer)
         }
@@ -96,8 +84,8 @@ class riseInfoPreferenceController(context: Context) : AbstractPreferenceControl
     override fun displayPreference(screen: PreferenceScreen) {
         super.displayPreference(screen)
 
-        val releaseType = getPropertyOrDefault(PROP_RISING_RELEASETYPE).lowercase()
-        val codeName = getPropertyOrDefault(PROP_RISING_CODE).lowercase()
+        val releaseType = getProp(PROP_RISING_RELEASETYPE).lowercase()
+        val codeName = getProp(PROP_RISING_CODE).lowercase()
         val risingMaintainer = getRisingMaintainer(releaseType)
         val isOfficial = releaseType == "official"
         
@@ -119,9 +107,9 @@ class riseInfoPreferenceController(context: Context) : AbstractPreferenceControl
         hwInfoPreference.apply {
             findViewById<TextView>(R.id.device_name).text = getDeviceName()
             findViewById<TextView>(R.id.device_chipset).text = getRisingChipset()
-            findViewById<TextView>(R.id.device_storage).text = getRisingStorage()
-            findViewById<TextView>(R.id.device_battery_capacity).text = getRisingBattery()
-            findViewById<TextView>(R.id.device_resolution).text = getRisingResolution()
+            findViewById<TextView>(R.id.device_storage).text = DeviceInfoUtil.getTotalRam() + " | " + DeviceInfoUtil.getStorageTotal(mContext)
+            findViewById<TextView>(R.id.device_battery_capacity).text = DeviceInfoUtil.getBatteryCapacity(mContext)
+            findViewById<TextView>(R.id.device_resolution).text = DeviceInfoUtil.getScreenResolution(mContext)
             findViewById<TextView>(R.id.device_name_model).text = getDeviceName()
         }
 
