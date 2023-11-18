@@ -33,6 +33,15 @@
         android:fragment="com.android.settings.fragments.themes.monet.MonetSettings"
         app:position="top" />
 
+    <!-- Settings -->
+    <com.android.settings.preferences.ui.AdaptivePreference
+        android:key="settings_themes"
+        android:icon="@drawable/ic_cog"
+        android:title="@string/top_level_settings_title"
+        android:summary="@string/settings_themes_summary"
+        android:fragment="com.android.settings.fragments.themes.settings.SettingsThemes"
+        app:position="middle" />
+
     <!-- Status Bar -->
     <com.android.settings.preferences.ui.AdaptivePreference
         android:key="status_bar"

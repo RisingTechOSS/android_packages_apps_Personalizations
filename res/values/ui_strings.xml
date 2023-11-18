@@ -42,6 +42,7 @@
     <string name="ui_settings_title">User Interface</string>
     <string name="ui_settings_summary">Customize UI colors, icons, fonts etc</string>
     <string name="gen_notif_settings_title">General notification settings</string>
+    <string name="settings_themes_summary">Customize settings app user interface</string>
 
     <!-- General strings -->
     <string name="ok">OK</string>
@@ -422,4 +423,10 @@
     <string name="solid_gradient_light">Gradient light</string>
     <string name="solid_gradient_shape">Sharp gradient corner</string>
     <string name="solid_gradient_void_light">Gradient Void light</string>
+    
+    <!-- Settings Themes -->
+    <string name="settings_homepage_greetings_title">Settings Homepage Greetings</string>
+    <string name="settings_homepage_greetings_summary">Display random messages on the settings homepage</string>
+    <string name="settings_homepage_widgets_title">Settings Homepage Widgets</string>
+    <string name="settings_homepage_widgets_summary">Display quick-access widgets on the settings homepage</string>
 </resources>
