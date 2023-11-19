@@ -25,11 +25,17 @@
         app:lottie_rawRes="@raw/notification_illustration" />
 
     <com.android.settings.preferences.SystemSwitchPreference
+        android:key="island_notification"
+        android:title="@string/island_notification_title"
+        android:summary="@string/island_notification_summary"
+        app:position="top" />
+
+    <com.android.settings.preferences.SystemSwitchPreference
         android:key="pulse_on_new_tracks"
         android:title="@string/pulse_on_new_tracks_title"
         android:summary="@string/pulse_on_new_tracks_summary"
         app:settings_type="secure"
-        app:position="top" />
+        app:position="middle" />
 
     <com.android.settings.preferences.SystemSwitchPreference
         android:key="notification_sound_vib_screen_on"

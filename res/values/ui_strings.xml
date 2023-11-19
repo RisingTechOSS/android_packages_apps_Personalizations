@@ -496,4 +496,8 @@
     <string name="qs_battery_location_qs_panel">QS Panel</string>
     <string name="qs_battery_location_qs_statusbar">Quick Statusbar</string>
     <string name="qs_use_status_bar_battery_style">Follow status bar style</string>
+    
+   <!-- Island Notification -->
+    <string name="island_notification_title">Island notification</string>
+    <string name="island_notification_summary">Display a heads-up notification in the style of IOS dynamic island.</string>
 </resources>
