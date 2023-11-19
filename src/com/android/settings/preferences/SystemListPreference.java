@@ -97,9 +97,12 @@ public class SystemListPreference extends ListPreference {
             @Override
             public boolean onPreferenceChange(Preference preference, Object newValue) {
                 int value = Integer.parseInt((String) newValue);
-                String selectedEntry = entries[value].toString();
-                setValue(selectedEntry);
-                setSummary(selectedEntry);
+                int index = value == -1 ? 0 : value;
+                if (index >= 0 && index < entries.length) {
+                    String selectedEntry = entries[index].toString();
+                    setValue(selectedEntry);
+                    setSummary(selectedEntry);
+                }
                 switch (settingsKey) {
                     case SYSTEM:
                         Settings.System.putIntForUser(context.getContentResolver(), getKey(), value, ActivityManager.getCurrentUser());
@@ -159,10 +162,13 @@ public class SystemListPreference extends ListPreference {
                 value = Settings.Global.getInt(getContext().getContentResolver(), getKey(), 0);
                 break;
         }
-        String currentEntry = entries[value].toString();
-        setValue(currentEntry);
-        setSummary(currentEntry);
-        setValueIndex(value);
+        int index = value == -1 ? 0 : value;
+        if (index >= 0 && index < entries.length) {
+            String currentEntry = entries[index].toString();
+            setValue(currentEntry);
+            setSummary(currentEntry);
+            setValueIndex(index);
+        }
         setEntries(entries);
         setEntryValues(entryValues);
     }
