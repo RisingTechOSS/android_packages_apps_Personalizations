@@ -25,10 +25,26 @@
         app:lottie_rawRes="@raw/notification_illustration" />
 
     <com.android.settings.preferences.SystemSwitchPreference
+        android:key="heads_up_notifications_enabled"
+        android:title="@string/notification_heads_up_title"
+        android:summary="@string/notification_heads_up_summary"
+        android:defaultValue="true"
+        app:settings_type="global"
+        app:position="top" />
+
+    <com.android.settings.preferences.SystemSwitchPreference
         android:key="island_notification"
         android:title="@string/island_notification_title"
         android:summary="@string/island_notification_summary"
-        app:position="top" />
+        app:position="middle" />
+
+    <com.android.settings.preferences.SystemSwitchPreference
+        android:key="less_boring_heads_up"
+        android:title="@string/less_boring_heads_up_title"
+        android:summary="@string/less_boring_heads_up_summary"
+        android:defaultValue="false"
+        android:dependency="heads_up_notifications_enabled"
+        app:position="middle" />
 
     <com.android.settings.preferences.SystemSwitchPreference
         android:key="pulse_on_new_tracks"
