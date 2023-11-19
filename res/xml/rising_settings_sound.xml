@@ -48,7 +48,15 @@
         android:summary="@string/pulse_settings_summary"
         android:fragment="com.android.settings.fragments.sound.PulseSettings"
         app:position="middle" />
-        
+
+    <!-- Screenshot Sound  -->
+    <com.android.settings.preferences.SystemSwitchPreference
+        android:key="screenshot_shutter_sound"
+        android:title="@string/screenshot_shutter_sound_title"
+        android:summary="@string/screenshot_shutter_sound_summary"
+        android:defaultValue="true"
+        app:position="middle" />
+
     <!-- Live volume steps-->
     <com.android.settings.preferences.ui.AdaptivePreference
         android:key="volume_steps"

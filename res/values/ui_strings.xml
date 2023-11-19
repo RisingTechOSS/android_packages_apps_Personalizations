@@ -500,4 +500,8 @@
    <!-- Island Notification -->
     <string name="island_notification_title">Island notification</string>
     <string name="island_notification_summary">Display a heads-up notification in the style of IOS dynamic island.</string>
+    
+    <!-- Screenshot shutter sound  -->
+    <string name="screenshot_shutter_sound_title">Screenshot sound</string>
+    <string name="screenshot_shutter_sound_summary">Play sound when screenshot is taken</string>
 </resources>
