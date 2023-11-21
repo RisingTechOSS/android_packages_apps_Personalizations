@@ -28,6 +28,7 @@ public class PulseSettings extends SettingsPreferenceFragment {
     private static final String PULSE_RENDER_CATEGORY_FADING = "pulse_fading_bars_category";
     private static final String PULSE_COLOR_MODE = "pulse_color_mode";
     private static final String PULSE_RENDER_MODE = "pulse_render_style";
+    private static final String PULSE_LAVA_LAMP_SPEED = "pulse_lavalamp_speed";
     private static final int RENDER_STYLE_FADING_BARS = 0;
     private static final int RENDER_STYLE_SOLID_LINES = 1;
     private static final int COLOR_TYPE_ACCENT = 0;
@@ -62,6 +63,8 @@ public class PulseSettings extends SettingsPreferenceFragment {
                 PULSE_COLOR_MODE);
         mRenderMode = (Preference) findPreference(
                 PULSE_RENDER_MODE);
+        mLavaSpeedPref = (Preference) findPreference(
+                        PULSE_LAVA_LAMP_SPEED);
 
         mPulseSmoothing = (SwitchPreference) findPreference(PULSE_SMOOTHING_KEY);
 
