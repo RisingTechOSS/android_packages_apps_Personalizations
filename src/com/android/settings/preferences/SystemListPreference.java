@@ -49,6 +49,7 @@ public class SystemListPreference extends ListPreference {
     private String restartLevel;
     private String settingsType;
     private boolean shouldReevaluate = false;
+    private boolean shouldAddExtraValue = false;
 
     public SystemListPreference(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -90,6 +91,10 @@ public class SystemListPreference extends ListPreference {
                 settingsValue = 0;
                 break;
         }
+        if (settingsValue == -1) {
+            settingsValue = 0; // treat negative values as 0 since the array starts from 0
+            shouldAddExtraValue = true;
+        } 
         String currentEntry = entries[settingsValue].toString();
         setValue(currentEntry);
         setSummary(currentEntry);
@@ -98,6 +103,9 @@ public class SystemListPreference extends ListPreference {
             public boolean onPreferenceChange(Preference preference, Object newValue) {
                 int value = Integer.parseInt((String) newValue);
                 int index = value == -1 ? 0 : value;
+                if (shouldAddExtraValue) {
+                    index = index + 1;
+                }
                 if (index >= 0 && index < entries.length) {
                     String selectedEntry = entries[index].toString();
                     setValue(selectedEntry);
@@ -163,6 +171,9 @@ public class SystemListPreference extends ListPreference {
                 break;
         }
         int index = value == -1 ? 0 : value;
+        if (shouldAddExtraValue) {
+            index = index + 1;
+        }
         if (index >= 0 && index < entries.length) {
             String currentEntry = entries[index].toString();
             setValue(currentEntry);
