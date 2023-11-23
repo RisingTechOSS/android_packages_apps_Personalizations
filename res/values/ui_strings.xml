@@ -532,4 +532,16 @@
     <string name="theme_customization_wifi_icon_summary">Set custom wifi icon style</string>
     <string name="theme_customization_navbar_title">Navbar style</string>
     <string name="theme_customization_navbar_summary">Set custom navigation bar style</string>
+    
+    <!-- Volume Styles -->
+    <string name="revamped_aosp_style">Revamped AOSP UI style</string>
+    <string name="rui_style">Realme UI style</string>
+    <string name="rising_style">Rising UI style</string>
+    <string name="double_layer_style">Double Layer style</string>
+    <string name="gradient_style">Gradient style</string>
+    <string name="neumorph_style">Neumorph style</string>
+    <string name="neumorph_outline_style">Neumorph Outline style</string>
+    <string name="outline_style">Outline style</string>
+    <string name="shaded_layer_style">Shaded Layer style</string>
+    <string name="volume_style_title">Volume panel styles</string>
 </resources>
