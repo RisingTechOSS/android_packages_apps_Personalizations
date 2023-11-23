@@ -24,6 +24,15 @@
         android:key="themes_illustration"
         app:lottie_rawRes="@raw/themes_illustration" />
 
+    <!-- Font Styles -->
+    <com.android.settings.preferences.ui.AdaptivePreference
+        android:key="font_styles"
+        android:icon="@drawable/ic_font"
+        android:title="@string/font_styles_title"
+        android:summary="@string/font_styles_summary"
+        android:fragment="com.android.settings.fragments.themes.fonts.FontPickerPreview"
+        app:position="top" />
+
     <!-- Monet Theme Engine -->
     <com.android.settings.preferences.ui.AdaptivePreference
         android:key="monet_engine"
@@ -31,7 +40,7 @@
         android:title="@string/monet_title"
         android:summary="@string/monet_summary"
         android:fragment="com.android.settings.fragments.themes.monet.MonetSettings"
-        app:position="top" />
+        app:position="middle" />
 
     <!-- Settings -->
     <com.android.settings.preferences.ui.AdaptivePreference
