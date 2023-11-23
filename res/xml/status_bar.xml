@@ -22,6 +22,14 @@
     android:key="sb_settings_title"
     android:title="@string/sb_settings_title">
 
+        <!-- Status Bar Icon Pack -->
+        <com.android.settings.preferences.ui.AdaptivePreference
+            android:icon="@drawable/ic_color_bucket"
+            android:title="@string/status_bar_icon_pack_title"
+            android:summary="@string/status_bar_icon_pack_summary"
+            android:fragment="com.android.settings.fragments.themes.statusbar.StatusBarIcons"
+            app:position="solo" />   
+
     <!-- Status bar battery customizations -->
     <PreferenceCategory
         android:title="@string/status_bar_battery_category_title" >
