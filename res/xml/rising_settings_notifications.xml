@@ -32,10 +32,11 @@
         app:settings_type="global"
         app:position="top" />
 
-    <com.android.settings.preferences.SystemSwitchPreference
+    <com.android.settings.preferences.ui.AdaptivePreference
         android:key="island_notification"
         android:title="@string/island_notification_title"
         android:summary="@string/island_notification_summary"
+        android:fragment="com.android.settings.fragments.notifications.Island"
         app:position="middle" />
 
     <com.android.settings.preferences.SystemSwitchPreference
