@@ -547,4 +547,21 @@
     <string name="outline_style">Outline style</string>
     <string name="shaded_layer_style">Shaded Layer style</string>
     <string name="volume_style_title">Volume panel styles</string>
+    
+    <!-- Lockscreen album art filter -->
+    <string name="lockscreen_media_art_settings">Lockscreen media artwork settings</string>
+    <string name="lockscreen_album_media_art_toggle">Lockscreen media artwork</string>
+    <string name="lockscreen_album_media_art_summary">Show currently playing media artwork on the lockscreen</string>
+    <string name="lockscreen_albumart_filter_title">Media cover art filter</string>
+    <string name="lockscreen_albumart_filter_none">None</string>
+    <string name="lockscreen_albumart_filter_grayscale">Grayscale</string>
+    <string name="lockscreen_albumart_filter_tint">Accent tinted</string>
+    <string name="lockscreen_albumart_filter_blur">Blur</string>
+    <string name="lockscreen_albumart_filter_grayblur">Grayscale and blurred</string>
+    <string name="lockscreen_albumart_filter_gradient">IOS Gradient</string>
+    <string name="artwork_media_background_enable_blur_title">Blur media media notification artwork background</string>
+    <string name="artwork_media_background_blur_radius_title">Blur amount for media notification artwork</string>
+    <string name="media_artwork_fade_percent_title">Fade percent for media notification artwork</string>
+    <string name="lockscreen_albumart_filter_blur_radius_title">Album art blur level</string>
+    <string name="ls_media_artwork_fade_percent_title">Album art fade level</string>
 </resources>

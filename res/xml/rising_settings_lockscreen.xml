@@ -24,41 +24,85 @@
         android:key="lockscreen_illustration"
         app:lottie_rawRes="@raw/lockscreen_illustration" />
 
-    <com.android.settings.preferences.SystemSwitchPreference
-        android:key="doze_on_charge"
-        android:title="@string/doze_on_charge_title"
-        android:summary="@string/doze_on_charge_summary"
-        app:settings_type="secure"
-        app:position="top" />
+    <!-- lockscreen album art customizations -->
+    <PreferenceCategory
+        android:title="@string/lockscreen_media_art_settings" >
+
+        <com.android.settings.preferences.SystemSwitchPreference
+            android:key="lockscreen_media_metadata"
+            android:title="@string/lockscreen_album_media_art_toggle"
+            android:summary="@string/lockscreen_album_media_art_summary"
+            android:defaultValue="false"
+            app:position="top" />
+
+        <com.android.settings.preferences.SystemListPreference
+            android:key="lockscreen_albumart_filter"
+            android:title="@string/lockscreen_albumart_filter_title"
+            android:entries="@array/lockscreen_albumart_filter_entries"
+            android:entryValues="@array/lockscreen_albumart_filter_values"
+            android:dependency="lockscreen_media_metadata"
+            android:defaultValue="0" />
             
-    <com.android.settings.preferences.ui.AdaptivePreference
-        android:key="edge_light_settings"
-        android:icon="@drawable/ic_pulse"
-        android:title="@string/edge_light_title"
-        android:summary="@string/edge_light_summary"
-        android:fragment="com.android.settings.fragments.lockscreen.EdgeLightSettings" />
+        <com.android.settings.preferences.SystemSettingSeekBarPreference
+            android:key="ls_media_filter_blur_radius"
+            android:title="@string/lockscreen_albumart_filter_blur_radius_title"
+            android:dependency="lockscreen_media_metadata"
+            android:defaultValue="125"
+            settings:position="middle"
+            android:max="125"
+            settings:min="2"/>
 
-    <com.android.settings.preferences.SystemSwitchPreference
-        android:key="lockscreen_enable_power_menu"
-        android:title="@string/lockscreen_enable_power_menu_title"
-        android:summary="@string/lockscreen_enable_power_menu_summary"
-        android:defaultValue="true"  />
+        <com.android.settings.preferences.SystemSettingSeekBarPreference
+            android:key="ls_media_artwork_fade_percent"
+            android:title="@string/ls_media_artwork_fade_percent_title"
+            android:dependency="lockscreen_media_metadata"
+            android:defaultValue="30"
+            android:max="80"
+            settings:min="1"
+            settings:position="bottom" />
 
-    <com.android.settings.preferences.SystemSwitchPreference
-        android:key="pulse_on_new_tracks"
-        android:title="@string/pulse_on_new_tracks_title"
-        android:summary="@string/pulse_on_new_tracks_summary"
-        app:settings_type="secure" />
+    </PreferenceCategory>
 
-    <!-- Screen Off animation -->
-    <com.android.settings.preferences.SystemListPreference
-        android:key="screen_off_animation"
-        android:icon="@drawable/ic_television_classic"
-        android:title="@string/screen_off_animation_title"
-        android:dialogTitle="@string/screen_off_animation_title"
-        android:entries="@array/screen_off_animation_entries"
-        android:entryValues="@array/screen_off_animation_values"
-        android:defaultValue="0"
-        app:position="bottom" />
+    <PreferenceCategory
+        android:title="@string/general_lockscreen_title" >
+
+        <com.android.settings.preferences.SystemSwitchPreference
+            android:key="doze_on_charge"
+            android:title="@string/doze_on_charge_title"
+            android:summary="@string/doze_on_charge_summary"
+            app:settings_type="secure"
+            app:position="top" />
+                
+        <com.android.settings.preferences.ui.AdaptivePreference
+            android:key="edge_light_settings"
+            android:icon="@drawable/ic_pulse"
+            android:title="@string/edge_light_title"
+            android:summary="@string/edge_light_summary"
+            android:fragment="com.android.settings.fragments.lockscreen.EdgeLightSettings" />
+
+        <com.android.settings.preferences.SystemSwitchPreference
+            android:key="lockscreen_enable_power_menu"
+            android:title="@string/lockscreen_enable_power_menu_title"
+            android:summary="@string/lockscreen_enable_power_menu_summary"
+            android:defaultValue="true"  />
+
+        <com.android.settings.preferences.SystemSwitchPreference
+            android:key="pulse_on_new_tracks"
+            android:title="@string/pulse_on_new_tracks_title"
+            android:summary="@string/pulse_on_new_tracks_summary"
+            app:settings_type="secure" />
+
+        <!-- Screen Off animation -->
+        <com.android.settings.preferences.SystemListPreference
+            android:key="screen_off_animation"
+            android:icon="@drawable/ic_television_classic"
+            android:title="@string/screen_off_animation_title"
+            android:dialogTitle="@string/screen_off_animation_title"
+            android:entries="@array/screen_off_animation_entries"
+            android:entryValues="@array/screen_off_animation_values"
+            android:defaultValue="0"
+            app:position="bottom" />
+
+    </PreferenceCategory>
 
 </PreferenceScreen>

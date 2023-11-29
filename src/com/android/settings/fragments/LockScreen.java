@@ -51,12 +51,27 @@ public class LockScreen extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
     public static final String TAG = "LockScreen";
+    private static final String BLUR_RADIUS_KEY = "ls_media_filter_blur_radius";
+    
+    Preference mBlurRadiusPref;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.rising_settings_lockscreen);
+        mBlurRadiusPref = (Preference) findPreference(
+                        BLUR_RADIUS_KEY);
+
+        updateAlbumArtPref();
+    }
+
+    private void updateAlbumArtPref() {
+        boolean gradientBlurFilterEnabled = Settings.System.getIntForUser(getActivity().getContentResolver(),
+                Settings.System.LOCKSCREEN_ALBUMART_FILTER, 0, UserHandle.USER_CURRENT) == 5;
+        boolean blurFilterEnabled = Settings.System.getIntForUser(getActivity().getContentResolver(),
+                Settings.System.LOCKSCREEN_ALBUMART_FILTER, 0, UserHandle.USER_CURRENT) >= 3 && !gradientBlurFilterEnabled;
+        mBlurRadiusPref.setEnabled(blurFilterEnabled);
     }
 
     @Override
