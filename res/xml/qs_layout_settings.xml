@@ -130,6 +130,13 @@
         android:summary="@string/disable_qs_summary"
         app:position="top"/>
 
+    <com.android.settings.preferences.SystemSwitchPreference
+        android:key="qs_colored_icons"
+        android:title="@string/qs_colored_icons_title"
+        android:summary="@string/qs_colored_icons_summary"
+        app:reevaluate="true"
+        app:position="middle"/>
+
      <com.android.settings.preferences.SystemSettingSeekBarPreference
         android:key="qs_transparency"
         android:title="@string/qs_transparency_title"

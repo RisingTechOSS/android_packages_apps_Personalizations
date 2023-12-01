@@ -564,4 +564,8 @@
     <string name="media_artwork_fade_percent_title">Fade percent for media notification artwork</string>
     <string name="lockscreen_albumart_filter_blur_radius_title">Album art blur level</string>
     <string name="ls_media_artwork_fade_percent_title">Album art fade level</string>
+    
+    <!-- Colored QS notification icons -->  
+    <string name="qs_colored_icons_title">Colored QS notification icons</string>
+    <string name="qs_colored_icons_summary">Show colored app icon instead of monochrome icons</string>
 </resources>
