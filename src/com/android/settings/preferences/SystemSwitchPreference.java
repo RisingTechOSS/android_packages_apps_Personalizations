@@ -35,6 +35,8 @@ import com.android.internal.util.rising.systemUtils;
 import com.android.settings.R;
 import com.android.settings.preferences.ui.AdaptivePreferenceUtils;
 
+import com.android.internal.util.rising.ThemeUtils;
+
 import android.util.Log;
 
 public class SystemSwitchPreference extends SwitchPreference {
@@ -48,24 +50,30 @@ public class SystemSwitchPreference extends SwitchPreference {
     private static final String SYSTEM = "system";
     private static final String SECURE = "secure";
     private static final String GLOBAL = "global";
+    private static final String overlayThemeTarget  = "com.android.systemui";
     private TypedArray typedArray = null;
     String restartLevel;
     String settingsType;
+    private boolean shouldReevaluate = false;
 
     private Context mContext;
 
     public SystemSwitchPreference(Context context, AttributeSet attrs) {
         super(context, attrs);
-        typedArray = context.obtainStyledAttributes(attrs, R.styleable.SystemPreference);
-        restartLevel = typedArray.getString(R.styleable.SystemPreference_restart_level);
-        if (restartLevel == null || restartLevel.isEmpty()) {
-            restartLevel = "none";
+        try {
+            typedArray = context.obtainStyledAttributes(attrs, R.styleable.SystemPreference);
+            restartLevel = typedArray.getString(R.styleable.SystemPreference_restart_level);
+            if (restartLevel == null || restartLevel.isEmpty()) {
+                restartLevel = "none";
+            }
+            settingsType = typedArray.getString(R.styleable.SystemPreference_settings_type);
+            if (settingsType == null || settingsType.isEmpty()) {
+                settingsType = "system";
+            }
+            shouldReevaluate = typedArray.getBoolean(R.styleable.SystemPreference_reevaluate, false);
+        } finally {
+            typedArray.recycle();
         }
-        settingsType = typedArray.getString(R.styleable.SystemPreference_settings_type);
-        if (settingsType == null || settingsType.isEmpty()) {
-            settingsType = "system";
-        }
-        typedArray.recycle();
         mContext = context;
         int layoutRes = AdaptivePreferenceUtils.getLayoutResourceId(context, attrs);
         if (layoutRes != -1) {
@@ -105,8 +113,6 @@ public class SystemSwitchPreference extends SwitchPreference {
                 boolean value = (boolean) newValue;
                 int intValue = value ? 1 : 0;
                 setChecked(value);
-                Log.d("onPreferenceChange", "setValue: " + value + " value: " + value);
-                Log.d("onPreferenceChange", "settingsKey: " + settingsKey);
                 switch (settingsKey) {
                     case SYSTEM:
                         Settings.System.putIntForUser(mContext.getContentResolver(), getKey(), intValue, ActivityManager.getCurrentUser());
@@ -133,6 +139,14 @@ public class SystemSwitchPreference extends SwitchPreference {
                     case NONE:
                     default:
                         break;
+                }
+               ThemeUtils mThemeUtils = new ThemeUtils(mContext);
+                if (shouldReevaluate){
+                    if (value) {
+                        mThemeUtils.setOverlayEnabled("android.theme.customization.sysui_reevaluate", overlayThemeTarget, overlayThemeTarget);
+                    } else {
+                        mThemeUtils.setOverlayEnabled("android.theme.customization.sysui_reevaluate", "com.android.system.qs.sysui_reevaluate", overlayThemeTarget);
+                    }
                 }
                 return true;
             }
