@@ -83,7 +83,7 @@
             android:title="@string/qs_columns_portrait_title"
             android:defaultValue="2"
             android:max="6"
-            app:minValue="2"
+            settings:min="2"
             app:position="top" />
 
         <com.android.settings.preferences.RisingSettingSeekBarPreference
@@ -91,7 +91,7 @@
             android:title="@string/qs_rows_portrait_title"
             android:defaultValue="4"
             android:max="6"
-            app:minValue="2"
+            settings:min="2"
             app:position="middle" />
 
         <com.android.settings.preferences.RisingSettingSeekBarPreference
@@ -99,7 +99,7 @@
             android:title="@string/qqs_rows_portrait_title"
             android:defaultValue="2"
             android:max="5"
-            app:minValue="1"
+            settings:min="1"
             app:position="middle" />
 
         <com.android.settings.preferences.SystemSwitchPreference
@@ -142,7 +142,7 @@
         android:title="@string/qs_transparency_title"
         android:defaultValue="100"
         android:max="100"
-        app:minValue="10"
+        settings:min="10"
         app:position="middle" />
 
      <!-- QS styles -->
