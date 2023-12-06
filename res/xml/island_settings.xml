@@ -28,8 +28,16 @@
         android:key="island_notification"
         android:title="@string/island_notification_title"
         android:summary="@string/island_notification_summary"
-        android:defaultValue="false"
-        app:position="solo" />
+        android:defaultValue="true"
+        app:position="top" />
+
+    <com.android.settings.preferences.SystemSwitchPreference
+        android:key="island_notification_now_playing"
+        android:title="@string/island_notification_now_playing_title"
+        android:summary="@string/island_notification_now_playing_summary"
+        android:defaultValue="true"
+        android:dependency="island_notification"
+        app:position="bottom" />
 
     <com.android.settingslib.widget.FooterPreference
         android:key="island_notification_footer"
