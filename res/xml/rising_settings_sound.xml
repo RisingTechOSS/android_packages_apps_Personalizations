@@ -24,46 +24,76 @@
         android:key="sound_illustration"
         app:lottie_rawRes="@raw/sound_illustration" />
 
-    <!-- Adaptive Playback -->
-    <com.android.settings.preferences.ui.AdaptivePreference
-        android:key="adaptive_playback_settings"
-        android:icon="@drawable/ic_settings_sound"
-        android:title="@string/adaptive_playback_title"
-        android:summary="@string/adaptive_playback_summary"
-        android:fragment="com.android.settings.fragments.sound.AdaptivePlayback"
-        app:position="top" /> 
+    <!-- Audio Effects -->
+    <PreferenceCategory
+        android:title="@string/audio_effects_title" >
 
-    <com.android.settings.preferences.SystemSwitchPreference
-     	android:key="volume_media_output_toggle"
-     	android:title="@string/volume_media_output_toggle_title"
-      	android:summary="@string/volume_media_output_toggle_summary"
-      	android:defaultValue="true" 
-      	app:position="middle"/>
-      	   
-    <!-- Pulse music visualizer -->
-    <com.android.settings.preferences.ui.AdaptivePreference
-        android:key="pulse_settings"
-        android:icon="@drawable/ic_pulse"
-        android:title="@string/pulse_settings"
-        android:summary="@string/pulse_settings_summary"
-        android:fragment="com.android.settings.fragments.sound.PulseSettings"
-        app:position="middle" />
+     <!-- Audio Effect -->
+    <com.android.settings.preferences.SystemListPreference
+        android:key="audio_effect_mode"
+        android:icon="@drawable/ic_cellphone_sound"
+        android:title="@string/audio_effect_mode_title"
+        android:entries="@array/audio_effect_mode_entries"
+        android:entryValues="@array/audio_effect_mode_values"
+        android:summary="%s"
+        android:defaultValue="0"
+        app:position="top" />
 
-    <!-- Screenshot Sound  -->
-    <com.android.settings.preferences.SystemSwitchPreference
-        android:key="screenshot_shutter_sound"
-        android:title="@string/screenshot_shutter_sound_title"
-        android:summary="@string/screenshot_shutter_sound_summary"
-        android:defaultValue="true"
-        app:position="middle" />
+     <com.android.settings.preferences.SystemSettingSeekBarPreference
+        android:key="bass_boost_strength"
+        android:title="@string/bass_boost_strength_title"
+        android:defaultValue="100"
+        android:max="100"
+        settings:min="0"
+        app:position="bottom" />
 
-    <!-- Live volume steps-->
-    <com.android.settings.preferences.ui.AdaptivePreference
-        android:key="volume_steps"
-      	android:icon="@drawable/ic_settings_sound"
-        android:title="@string/volume_steps_title"
-      	android:summary="@string/volume_steps_summary"
-      	android:fragment="com.android.settings.fragments.sound.VolumeSteps"
-      	app:position="bottom" /> 
+    </PreferenceCategory>
+
+    <!-- Misc  -->
+    <PreferenceCategory
+        android:title="@string/misc_audio_settings_title" >
+
+        <!-- Adaptive Playback -->
+        <com.android.settings.preferences.ui.AdaptivePreference
+            android:key="adaptive_playback_settings"
+            android:icon="@drawable/ic_settings_sound"
+            android:title="@string/adaptive_playback_title"
+            android:summary="@string/adaptive_playback_summary"
+            android:fragment="com.android.settings.fragments.sound.AdaptivePlayback"
+            app:position="top" /> 
+
+        <com.android.settings.preferences.SystemSwitchPreference
+         	android:key="volume_media_output_toggle"
+         	android:title="@string/volume_media_output_toggle_title"
+          	android:summary="@string/volume_media_output_toggle_summary"
+          	android:defaultValue="true" 
+          	app:position="middle"/>
+          	   
+        <!-- Pulse music visualizer -->
+        <com.android.settings.preferences.ui.AdaptivePreference
+            android:key="pulse_settings"
+            android:icon="@drawable/ic_pulse"
+            android:title="@string/pulse_settings"
+            android:summary="@string/pulse_settings_summary"
+            android:fragment="com.android.settings.fragments.sound.PulseSettings"
+            app:position="middle" />
+
+        <!-- Screenshot Sound  -->
+        <com.android.settings.preferences.SystemSwitchPreference
+            android:key="screenshot_shutter_sound"
+            android:title="@string/screenshot_shutter_sound_title"
+            android:summary="@string/screenshot_shutter_sound_summary"
+            android:defaultValue="true"
+            app:position="middle" />
+
+        <!-- Live volume steps-->
+        <com.android.settings.preferences.ui.AdaptivePreference
+            android:key="volume_steps"
+          	android:icon="@drawable/ic_settings_sound"
+            android:title="@string/volume_steps_title"
+          	android:summary="@string/volume_steps_summary"
+          	android:fragment="com.android.settings.fragments.sound.VolumeSteps"
+          	app:position="bottom" /> 
+    </PreferenceCategory>
 
 </PreferenceScreen>

@@ -43,6 +43,7 @@
     <string name="ui_settings_summary">Customize UI colors, icons, fonts etc</string>
     <string name="gen_notif_settings_title">General notification settings</string>
     <string name="settings_themes_summary">Customize settings app user interface</string>
+    <string name="misc_audio_settings_title">Miscellaneous sounds/audio settings</string>
 
     <!-- General strings -->
     <string name="ok">OK</string>
@@ -578,4 +579,12 @@
     <!-- Status bar - icon blocklist -->
     <string name="status_bar_icons_title">Status bar icons</string>
     <string name="status_bar_icons_summary">Choose which status bar icons can be shown</string>
+    
+    <!-- Audio Effect Mode -->
+    <string name="audio_effects_title">Audio Effects</string>
+    <string name="audio_effect_mode_title">Audio Effect Mode</string>
+    <string name="dynamic_mode">Dynamic Mode</string>
+    <string name="bass_boost">Bass Boost Mode</string>
+    <string name="bass_boost_strength_title">Bass Boost strength</string>
+    <string name="soft_reverb">Soft Reverb Mode</string>
 </resources>
