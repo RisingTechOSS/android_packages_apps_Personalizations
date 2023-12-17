@@ -137,6 +137,12 @@
         app:reevaluate="true"
         app:position="middle"/>
 
+    <com.android.settings.preferences.SystemSwitchPreference
+        android:key="sys_qs_footer_data_usage"
+        android:title="@string/qs_footer_datausage_title"
+        android:summary="@string/qs_footer_datausage_summary"
+        app:position="middle"/>
+
      <com.android.settings.preferences.SystemSettingSeekBarPreference
         android:key="qs_transparency"
         android:title="@string/qs_transparency_title"
