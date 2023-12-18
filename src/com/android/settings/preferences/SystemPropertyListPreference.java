@@ -26,6 +26,8 @@ import androidx.preference.Preference;
 
 import com.android.internal.util.rising.systemUtils;
 
+import com.android.settings.preferences.ui.AdaptivePreferenceUtils;
+
 public class SystemPropertyListPreference extends ListPreference {
 
     private static final String PREFS_NAME = "system_property_store_";
@@ -34,6 +36,10 @@ public class SystemPropertyListPreference extends ListPreference {
         super(context, attrs);
         SharedPreferences preferences = context.getSharedPreferences(PREFS_NAME + String.valueOf(getKey()), Context.MODE_PRIVATE);
         String savedValue = preferences.getString(getKey(), null);
+        int layoutRes = AdaptivePreferenceUtils.getLayoutResourceId(context, attrs);
+        if (layoutRes != -1) {
+            setLayoutResource(layoutRes);
+        }
         if (savedValue != null) {
             setValue(savedValue);
             setSummary("%s");

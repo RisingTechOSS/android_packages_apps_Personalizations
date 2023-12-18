@@ -632,4 +632,8 @@
     <!-- Data usage info in QS footer -->
     <string name="qs_footer_datausage_title">Data usage</string>
     <string name="qs_footer_datausage_summary">Display data usage summary in quick settings footer</string>
+    
+    <string name="quickswitch_launcher_summary">Customize default homescreen app</string>
+    <string name="nothing_launcher_customizations_title">Nothing launcher customizations</string>
+    <string name="nothing_launcher_customizations_summary">Customize nothing launcher homescreen app</string>
 </resources>
