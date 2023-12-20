@@ -636,4 +636,7 @@
     <string name="quickswitch_launcher_summary">Customize default homescreen app</string>
     <string name="nothing_launcher_customizations_title">Nothing launcher customizations</string>
     <string name="nothing_launcher_customizations_summary">Customize nothing launcher homescreen app</string>
+    
+    <string name="gesture_navbar_length_mode_title">Gesture navbar length</string>
+    <string name="gesture_navbar_radius_title">Gesture navbar radius</string>
 </resources>

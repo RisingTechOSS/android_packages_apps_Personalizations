@@ -20,14 +20,17 @@ import android.content.Context;
 import android.content.res.TypedArray;
 import android.util.AttributeSet;
 
-import com.android.settings.R;
+import androidx.preference.Preference;
 
+import com.android.settings.R;
 import com.android.settings.preferences.SystemSettingsStore;
 import com.android.settings.preferences.CustomSeekBarPreference;
 
 public class SystemSettingSeekBarPreference extends CustomSeekBarPreference {
 
     private Position position;
+    private TypedArray ta = null;
+    private boolean shouldReevaluate = false;
 
     public SystemSettingSeekBarPreference(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
@@ -48,8 +51,6 @@ public class SystemSettingSeekBarPreference extends CustomSeekBarPreference {
     }
     
     private void init(Context context, AttributeSet attrs) {
-        // Retrieve and set the layout resource based on position
-        // otherwise do not set any layout
         position = getPosition(context, attrs);
         if (position != null) {
             int layoutResId = getLayoutResourceId(position);
@@ -59,9 +60,12 @@ public class SystemSettingSeekBarPreference extends CustomSeekBarPreference {
 
     private Position getPosition(Context context, AttributeSet attrs) {
         TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.AdaptivePreference);
-        String positionAttribute = typedArray.getString(R.styleable.AdaptivePreference_position);
-        typedArray.recycle();
-
+        String positionAttribute = null;
+        try {
+            positionAttribute = typedArray.getString(R.styleable.AdaptivePreference_position);
+        } finally {
+            typedArray.recycle();
+        }
         Position positionFromAttribute = Position.fromAttribute(positionAttribute);
         if (positionFromAttribute != null) {
             return positionFromAttribute;

@@ -37,13 +37,6 @@
             android:targetClass="io.chaldeaprjkt.gamespace.settings.SettingsActivity" />
     </com.android.settings.preferences.ui.AdaptivePreference>
 
-    <com.android.settings.preferences.SystemSwitchPreference
-        android:key="hide_ime_space_enable"
-        android:title="@string/navigation_bar_ime_space_title"
-        android:summary="@string/navigation_bar_ime_space_summary"
-        android:defaultValue="false"
-        app:restart_level="system" />
-
    <!-- QuickSwitch -->
     <com.android.settings.preferences.ui.AdaptivePreference
         android:key="quickswitch"

@@ -51,6 +51,15 @@
         android:fragment="com.android.settings.fragments.themes.monet.MonetSettings"
         app:position="middle" />
 
+    <!-- Navigation -->
+    <com.android.settings.preferences.ui.AdaptivePreference
+        android:key="navigation"
+        android:icon="@drawable/ic_navigation"
+        android:title="@string/nav_settings_title"
+        android:summary="@string/nav_settings_summary"
+        android:fragment="com.android.settings.fragments.themes.navigation.Navigation"
+        app:position="middle" />
+
     <!-- Settings -->
     <com.android.settings.preferences.ui.AdaptivePreference
         android:key="settings_themes"

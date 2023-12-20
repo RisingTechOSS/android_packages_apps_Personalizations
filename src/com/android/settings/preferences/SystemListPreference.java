@@ -49,7 +49,6 @@ public class SystemListPreference extends ListPreference {
     private String restartLevel;
     private String settingsType;
     private boolean shouldReevaluate = false;
-    private boolean shouldAddExtraValue = false;
 
     public SystemListPreference(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -91,10 +90,13 @@ public class SystemListPreference extends ListPreference {
                 settingsValue = 0;
                 break;
         }
-        if (settingsValue == -1) {
-            settingsValue = 0; // treat negative values as 0 since the array starts from 0
-            shouldAddExtraValue = true;
-        } 
+        if (Arrays.asList(entryValues).contains("-1")) {
+            if (settingsValue == -1) {
+                settingsValue = 0; 
+            } else {
+                settingsValue = settingsValue + 1;
+            }
+        }
         String currentEntry = entries[settingsValue].toString();
         setValue(currentEntry);
         setSummary(currentEntry);
@@ -102,9 +104,13 @@ public class SystemListPreference extends ListPreference {
             @Override
             public boolean onPreferenceChange(Preference preference, Object newValue) {
                 int value = Integer.parseInt((String) newValue);
-                int index = value == -1 ? 0 : value;
-                if (shouldAddExtraValue) {
-                    index = index + 1;
+                int index = value;
+                if (Arrays.asList(entryValues).contains("-1")) {
+                    if (value == -1) {
+                        index = 0; 
+                    } else {
+                        index = value + 1;
+                    }
                 }
                 if (index >= 0 && index < entries.length) {
                     String selectedEntry = entries[index].toString();
@@ -170,9 +176,13 @@ public class SystemListPreference extends ListPreference {
                 value = Settings.Global.getInt(getContext().getContentResolver(), getKey(), 0);
                 break;
         }
-        int index = value == -1 ? 0 : value;
-        if (shouldAddExtraValue) {
-            index = index + 1;
+        int index = value;
+        if (Arrays.asList(entryValues).contains("-1")) {
+            if (value == -1) {
+                index = 0; 
+            } else {
+                index = value + 1;
+            }
         }
         if (index >= 0 && index < entries.length) {
             String currentEntry = entries[index].toString();
