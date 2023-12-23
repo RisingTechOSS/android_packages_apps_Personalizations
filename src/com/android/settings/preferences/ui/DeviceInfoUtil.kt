@@ -18,8 +18,8 @@ package com.android.settings.preferences.ui
 import android.content.Context
 import android.os.Environment
 import android.os.StatFs
-import android.util.DisplayMetrics
-import android.view.WindowManager
+import android.hardware.display.DisplayManager
+import android.view.Display
 import com.android.internal.os.PowerProfile
 import com.android.internal.util.MemInfoReader
 import kotlin.math.ceil
@@ -64,11 +64,10 @@ object DeviceInfoUtil {
     }
 
     fun getScreenResolution(context: Context): String {
-        val windowManager = context.getSystemService(Context.WINDOW_SERVICE) as WindowManager
-        val displayMetrics = DisplayMetrics()
-        windowManager.defaultDisplay.getMetrics(displayMetrics)
-        val width = displayMetrics.widthPixels
-        val height = displayMetrics.heightPixels
+        val dm = context.getSystemService(DisplayManager::class.java)
+        val display = dm?.getDisplay(Display.DEFAULT_DISPLAY)
+        val height = display?.mode?.physicalHeight
+        val width = display?.mode?.physicalWidth
         return "${width} x ${height}"
     }
 
