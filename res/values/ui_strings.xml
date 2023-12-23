@@ -664,4 +664,10 @@
 
     <!-- Quad9 DNS hostname -->
     <string name="private_dns_hostname_quad9" translatable="false">dns.quad9.net</string>
+    
+    <!-- Back gesture height -->
+    <string name="back_height_low_label">Full</string>
+    <string name="back_height_high_label">Bottom</string>
+    <string name="back_options_dialog_title">Options</string>
+    <string name="back_height">Edge touch area</string>
 </resources>
