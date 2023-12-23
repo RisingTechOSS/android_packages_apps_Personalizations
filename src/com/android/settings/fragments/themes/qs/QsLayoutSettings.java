@@ -79,6 +79,7 @@ public class QsLayoutSettings extends SettingsPreferenceFragment
     private RisingSettingSeekBarPreference mQsColumns;
     private RisingSettingSeekBarPreference mQsRows;
     private RisingSettingSeekBarPreference mQqsRows;
+    private Preference mQsHeaderCustomImagePicker;
     private Preference mQsStyle;
     private Preference mQsUI;
     private ThemeUtils mThemeUtils;
@@ -110,6 +111,8 @@ public class QsLayoutSettings extends SettingsPreferenceFragment
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+        mQsHeaderCustomImagePicker = findPreference(KEY_CUSTOM_QS_HEADER_IMAGE_URI);
 
         mQsColumns = (RisingSettingSeekBarPreference) findPreference(KEY_QS_COLUMN_PORTRAIT);
         mQsColumns.setOnPreferenceChangeListener(this);
@@ -161,6 +164,74 @@ public class QsLayoutSettings extends SettingsPreferenceFragment
 
         mVertical = (Preference) findPreference(KEY_QS_VERTICAL_LAYOUT);
         mVertical.setEnabled(!hideLabel);
+    }
+
+    @Override
+    public boolean onPreferenceTreeClick(Preference preference) {
+        if (preference == mQsHeaderCustomImagePicker) {
+            Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+            intent.setType("image/*");
+            startActivityForResult(intent, 10001);
+            return true;
+        }
+        return super.onPreferenceTreeClick(preference);
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent result) {
+        if (requestCode == 10001) {
+            if (resultCode != Activity.RESULT_OK) {
+                return;
+            }
+
+            final Uri imgUri = result.getData();
+            if (imgUri != null) {
+                String savedImagePath = saveImageToInternalStorage(getContext(), imgUri);
+                if (savedImagePath != null) {
+                    ContentResolver resolver = getContext().getContentResolver();
+                    Settings.System.putIntForUser(resolver, Settings.System.QS_HEADER_IMAGE, 0, UserHandle.USER_CURRENT);
+                    Settings.System.putStringForUser(resolver, Settings.System.QS_HEADER_CUSTOM_IMAGE_URI, savedImagePath, UserHandle.USER_CURRENT);
+                }
+            }
+        }
+    }
+
+    private String saveImageToInternalStorage(Context context, Uri imgUri) {
+        try {
+            InputStream inputStream;
+            if (imgUri.toString().startsWith("content://com.google.android.apps.photos.contentprovider")) {
+                List<String> segments = imgUri.getPathSegments();
+                if (segments.size() > 2) {
+                    String mediaUriString = URLDecoder.decode(segments.get(2), StandardCharsets.UTF_8.name());
+                    Uri mediaUri = Uri.parse(mediaUriString);
+                    inputStream = context.getContentResolver().openInputStream(mediaUri);
+                } else {
+                    throw new FileNotFoundException("Failed to parse Google Photos content URI");
+                }
+            } else {
+                inputStream = context.getContentResolver().openInputStream(imgUri);
+            }
+            Bitmap bitmap = BitmapFactory.decodeStream(inputStream);
+            String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss", Locale.US).format(new Date());
+            String imageFileName = "QS_HEADER_" + timeStamp + ".png";
+            File directory = new File("/sdcard/qsheaders");
+            if (!directory.exists() && !directory.mkdirs()) {
+                return null;
+            }
+            File[] files = directory.listFiles((dir, name) -> name.startsWith("QS_HEADER_") && name.endsWith(".png"));
+            if (files != null) {
+                for (File file : files) {
+                    file.delete();
+                }
+            }
+            File file = new File(directory, imageFileName);
+            try (FileOutputStream outputStream = new FileOutputStream(file)) {
+                bitmap.compress(Bitmap.CompressFormat.PNG, 100, outputStream);
+            }
+            return file.getAbsolutePath();
+        } catch (Exception e) {
+            return null;
+        }
     }
 
     @Override

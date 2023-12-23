@@ -670,4 +670,21 @@
     <string name="back_height_high_label">Bottom</string>
     <string name="back_options_dialog_title">Options</string>
     <string name="back_height">Edge touch area</string>
+    
+    <!-- QS Header -->
+    <string name="qs_header_image_title">QS header image</string>
+    <string name="qs_header_random_image_title">QS Header Random Image</string>
+    <string name="qs_header_random_image_summary">Enable random QS header image</string>
+    <string name="qs_header_image_blur_level_title">QS header image blur effect level</string>
+    <string name="qs_header_image_blur_level_summary">Strength of the blur effect applied to the QS header image</string>
+    <string name="qs_header_image_fade_level_level_title">QS header image fade level</string>
+    <string name="qs_header_image_fade_level_level_summary">Fade level of the QS header image</string>
+    <string name="qs_header_image_opacity_level_title">QS header image opacity level</string>
+    <string name="qs_header_image_opacity_level_summary">Opacity level of the QS header image</string>
+    <string name="qs_header_image_filter_color_title">QS header image filter color</string>
+    <string name="qs_header_image_height_title">QS header image height</string>
+    <string name="qs_header_custom_image_uri_enabled_title">Custom QS header image</string>
+    <string name="qs_header_custom_image_uri_enabled_summary">Apply custom QS image header</string>
+    <string name="file_header_select_title">Select local image</string>
+    <string name="file_header_select_summary">Select image from storage</string>
 </resources>
