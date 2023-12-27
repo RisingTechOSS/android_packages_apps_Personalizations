@@ -16,14 +16,18 @@
 
 package com.android.settings.preferences.ui
 
+import android.app.AlertDialog
 import android.content.ComponentName
 import android.content.Context
 import android.content.Intent
 import android.os.Build
 import android.os.SystemProperties
+import android.provider.Settings
+import android.widget.EditText
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
+import android.view.LayoutInflater
 import android.view.View
 import androidx.preference.Preference
 import androidx.preference.PreferenceScreen
@@ -90,62 +94,59 @@ class riseInfoPreferenceController(context: Context) : AbstractPreferenceControl
         val isOfficial = releaseType == "official"
         
         val hwInfoPreference = screen.findPreference<LayoutPreference>(KEY_HW_INFO)!!
-        val swInfoPreference = screen.findPreference<LayoutPreference>(KEY_SW_INFO)!!
-        val sw2InfoPreference = screen.findPreference<LayoutPreference>(KEY_SW2_INFO)!!
-        val deviceInfoPreference = screen.findPreference<LayoutPreference>(KEY_DEVICE_INFO)!!
-        val aboutHwInfoView: View = hwInfoPreference.findViewById(R.id.about_device_hardware)
-        val hwInfoView: View = hwInfoPreference.findViewById(R.id.device_hardware)
-        val phoneImage: View = hwInfoPreference.findViewById(R.id.phone_image_container)
-        val blurView: View = hwInfoPreference.findViewById(R.id.blurView)
+        val swInfoPreference = screen.findPreference<LayoutPreference>(KEY_DEVICE_INFO)!!
+        val statusPreference = screen.findPreference<Preference>(KEY_BUILD_STATUS)!!
+        val deviceText = swInfoPreference.findViewById<TextView>(R.id.device_name_model)
+        val editBtn = swInfoPreference.findViewById<TextView>(R.id.edit_device_name_model)
 
-        deviceInfoPreference.apply {
-            findViewById<TextView>(R.id.firmware_version).text = "risingUI " + getRisingVersion() + " | " + codeName
-            findViewById<TextView>(R.id.firmware_build_summary).text = risingMaintainer
-            findViewById<TextView>(R.id.build_variant_title).text = getRisingBuildStatus(releaseType)
+        statusPreference.setTitle(getRisingBuildStatus(releaseType))
+        statusPreference.setSummary(risingMaintainer)
+        statusPreference.setIcon(if (isOfficial) R.drawable.verified else R.drawable.unverified)
+
+        val settingsDeviceName = Settings.Global.getString(
+            mContext.contentResolver,
+            Settings.Global.DEVICE_NAME
+        )
+
+        if (!settingsDeviceName.isNullOrBlank()) {
+            deviceText.text = settingsDeviceName
+        }
+
+        editBtn.setOnClickListener {
+            showEditDialog(deviceText)
         }
 
         hwInfoPreference.apply {
-            findViewById<TextView>(R.id.device_name).text = getDeviceName()
             findViewById<TextView>(R.id.device_chipset).text = getRisingChipset()
             findViewById<TextView>(R.id.device_storage).text = DeviceInfoUtil.getTotalRam() + " | " + DeviceInfoUtil.getStorageTotal(mContext)
             findViewById<TextView>(R.id.device_battery_capacity).text = DeviceInfoUtil.getBatteryCapacity(mContext)
             findViewById<TextView>(R.id.device_resolution).text = DeviceInfoUtil.getScreenResolution(mContext)
-            findViewById<TextView>(R.id.device_name_model).text = getDeviceName()
         }
+    }
 
-        aboutHwInfoView.setOnClickListener {
-            if (hwInfoView.visibility == View.VISIBLE) {
-                hwInfoView.visibility = View.GONE
-                blurView.visibility = View.GONE
-                phoneImage.visibility = View.VISIBLE
-            } else {
-                hwInfoView.visibility = View.VISIBLE
-                blurView.visibility = View.VISIBLE
-                phoneImage.visibility = View.GONE
+    private fun showEditDialog(tv: TextView) {
+        val layoutInflater = LayoutInflater.from(mContext)
+        val promptView = layoutInflater.inflate(R.layout.edit_text_dialog, null)
+        val editText = promptView.findViewById<EditText>(R.id.editText)
+        val currentDeviceName = Settings.Global.getString(
+            mContext.contentResolver,
+            Settings.Global.DEVICE_NAME
+        )
+        editText.hint = currentDeviceName
+        AlertDialog.Builder(mContext)
+            .setTitle(R.string.edit_device_name_title)
+            .setView(promptView)
+            .setPositiveButton(android.R.string.ok) { _, _ ->
+                val deviceName = editText.text.toString().trim()
+                Settings.Global.putString(
+                    mContext.contentResolver,
+                    Settings.Global.DEVICE_NAME,
+                    deviceName
+                )
+                tv.text = deviceName
             }
-        }
-
-        swInfoPreference.apply {
-            findViewById<TextView>(R.id.android_version_summary).text = mContext.getString(R.string.device_info_platform_version)
-        }
-        
-        sw2InfoPreference.apply {
-            findViewById<TextView>(R.id.security_patch_summary).text = getRisingSecurity()
-            findViewById<TextView>(R.id.kernel_info_summary).text = DeviceInfoUtils.getFormattedKernelVersion(mContext)
-        }
-
-        val clickMap = mapOf(
-            R.id.android_version_details to Intent().setComponent(ComponentName("com.android.settings", "com.android.settings.Settings\$FirmwareVersionActivity"))
-           // R.id.chipset_info to Intent().setComponent(ComponentName("com.android.settings", "com.android.settings.Settings\$DevRunningServicesActivity")),
-          //  R.id.display_info to Intent().setComponent(ComponentName("com.android.settings", "com.android.settings.Settings\$DisplaySettingsActivity")),
-           // R.id.storage_info to Intent().setComponent(ComponentName("com.android.settings", "com.android.settings.Settings\$StorageDashboardActivity"))
-       )
-
-        clickMap.forEach { (id, intent) ->
-            swInfoPreference.findViewById<View>(id)?.setOnClickListener {
-                mContext.startActivity(intent)
-            }
-       }
+            .setNegativeButton(android.R.string.cancel, null)
+            .show()
     }
 
     override fun isAvailable(): Boolean {
@@ -158,27 +159,15 @@ class riseInfoPreferenceController(context: Context) : AbstractPreferenceControl
 
     companion object {
         private const val KEY_HW_INFO = "my_device_hw_header"
-        private const val KEY_SW_INFO = "my_device_sw_header"
-        private const val KEY_SW2_INFO = "my_device_sw2_header"
         private const val KEY_DEVICE_INFO = "my_device_info_header"
-        
-        private const val KEY_STORAGE = "device_storage"
-        private const val KEY_CHIPSET = "device_chipset"
-        private const val KEY_BATTERY = "device_battery_capacity"
-        private const val KEY_DISPLAY = "device_resolution"
+        private const val KEY_BUILD_STATUS = "rom_build_status"
 
         private const val PROP_RISING_CODE = "ro.rising.code"
         private const val PROP_RISING_VERSION = "ro.rising.version"
         private const val PROP_RISING_RELEASETYPE = "ro.rising.releasetype"
         private const val PROP_RISING_MAINTAINER = "ro.rising.maintainer"
-        private const val PROP_RISING_DEVICE = "ro.rising.device"
-        private const val PROP_RISING_BUILD_TYPE = "ro.rising.packagetype"
         private const val PROP_RISING_BUILD_VERSION = "ro.rising.build.version"
         private const val PROP_RISING_CHIPSET = "ro.rising.chipset"
-        private const val PROP_RISING_STORAGE = "ro.rising.storage"
-        private const val PROP_RISING_RAM = "ro.rising.ram"
-        private const val PROP_RISING_BATTERY = "ro.rising.battery"
-        private const val PROP_RISING_DISPLAY = "ro.rising.display_resolution"
         private const val PROP_RISING_SECURITY = "ro.build.version.security_patch"
     }
 }

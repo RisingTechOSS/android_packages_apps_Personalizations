@@ -696,4 +696,14 @@
     <string name="edge_scrolling_haptics_intensity_title">Edge scrolling haptics intensity</string>
     <string name="volume_slider_haptics_intensity_title">Volume slider haptics intensity</string>
     <string name="qs_panel_tile_haptic_intensity_title">QS tile haptics intensity</string>
+    
+     <!-- Device Info screen -->
+    <string name="edit_device_name_title">Edit Device Name</string>
+    <string name="edit_text_hint">Enter new device name</string>
+    <string name="build_status">Build Status</string>
+    <string name="hardware_info">Hardware</string>
+    <string name="device_info_battery">Battery</string>
+    <string name="device_info_chipset">Chipset</string>
+    <string name="device_info_resolution">Resolution</string>
+    <string name="device_info_storage">Storage</string>
 </resources>
