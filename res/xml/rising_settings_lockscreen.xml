@@ -33,6 +33,7 @@
             android:title="@string/lockscreen_album_media_art_toggle"
             android:summary="@string/lockscreen_album_media_art_summary"
             android:defaultValue="false"
+            app:restart_level="systemui"
             app:position="top" />
 
         <com.android.settings.preferences.SystemListPreference

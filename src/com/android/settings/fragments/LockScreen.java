@@ -25,6 +25,7 @@ import android.hardware.fingerprint.FingerprintManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.SystemProperties;
 import android.os.UserHandle;
 import android.provider.Settings;
 import android.text.TextUtils;
@@ -51,8 +52,10 @@ public class LockScreen extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
     public static final String TAG = "LockScreen";
+    private static final String ALBUM_ART_KEY = "lockscreen_media_metadata";
     private static final String BLUR_RADIUS_KEY = "ls_media_filter_blur_radius";
     
+    Preference mAlbumArtPref;
     Preference mBlurRadiusPref;
 
     @Override
@@ -60,8 +63,10 @@ public class LockScreen extends SettingsPreferenceFragment implements
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.rising_settings_lockscreen);
-        mBlurRadiusPref = (Preference) findPreference(
-                        BLUR_RADIUS_KEY);
+        mAlbumArtPref = (Preference) findPreference(ALBUM_ART_KEY);
+        mBlurRadiusPref = (Preference) findPreference(BLUR_RADIUS_KEY);
+        
+        mAlbumArtPref.setOnPreferenceChangeListener(this);
 
         updateAlbumArtPref();
     }
@@ -76,6 +81,11 @@ public class LockScreen extends SettingsPreferenceFragment implements
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
+        boolean value = (boolean) newValue;
+        if (preference == mAlbumArtPref) {
+            SystemProperties.set("persist.wm.debug.lockscreen_live_wallpaper", String.valueOf(!value));
+            return true;
+        }
         return false;
     }
 
