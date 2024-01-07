@@ -68,6 +68,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:format12Hour="hh\nmm"
+                    android:format24Hour="hh\nmm"
                     android:fontFamily="googlesans-clock"
                     android:textFontWeight="300"
                     android:layout_centerHorizontal="true" 
