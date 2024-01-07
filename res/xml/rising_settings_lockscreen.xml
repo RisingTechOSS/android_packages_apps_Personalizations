@@ -20,9 +20,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:title="@string/lockscreen_title">
 
-    <com.android.settingslib.widget.IllustrationPreference
-        android:key="lockscreen_illustration"
-        app:lottie_rawRes="@raw/lockscreen_illustration" />
+     <Preference
+        android:key="lockscreen_preview"
+        settings:layout="@layout/lockscreen_preview" />
+
+     <PreferenceCategory
+        android:title="Custom Lockscreen Clock">
+
+        <com.android.settings.preferences.SystemListPreference
+            android:entries="@array/clock_style_entries"
+            android:title="Custom Clock style"
+            android:key="clock_style"
+            android:defaultValue="0"
+            android:entryValues="@array/clock_style_values" 
+            app:position="solo" />
+
+     </PreferenceCategory>
 
     <!-- lockscreen album art customizations -->
     <PreferenceCategory
