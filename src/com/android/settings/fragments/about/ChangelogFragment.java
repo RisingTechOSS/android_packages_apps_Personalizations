@@ -19,6 +19,8 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.text.Html;
 import android.text.method.LinkMovementMethod;
+import android.text.SpannableStringBuilder;
+import android.text.style.StyleSpan;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -33,6 +35,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class ChangelogFragment extends PreferenceFragment {
 
@@ -80,14 +84,20 @@ public class ChangelogFragment extends PreferenceFragment {
         @Override
         protected void onPostExecute(String result) {
             if (result != null) {
-                String htmlContent = Html.fromHtml(result).toString();
-                htmlContent = htmlContent.replaceAll("#### ", "\n ");
-                htmlContent = htmlContent.replaceAll("### ", "\n ");
-                htmlContent = htmlContent.replaceAll("## ", "\n ");
-                htmlContent = htmlContent.replaceAll("---", "\n   \n");
-                htmlContent = htmlContent.replaceAll("- ", "\n- ");
-                
-                textView.setText(htmlContent);
+                Pattern pattern = Pattern.compile("\\*\\*(.*?)\\*\\*");
+                Matcher matcher = pattern.matcher(result);
+                SpannableStringBuilder spannableBuilder = new SpannableStringBuilder();
+                int lastEnd = 0;
+                while (matcher.find()) {
+                    int start = matcher.start();
+                    int end = matcher.end();
+                    String matchedText = matcher.group(1);
+                    spannableBuilder.append(result.subSequence(lastEnd, start));
+                    spannableBuilder.append(matchedText, new StyleSpan(android.graphics.Typeface.BOLD), SpannableStringBuilder.SPAN_EXCLUSIVE_EXCLUSIVE);
+                    lastEnd = end;
+                }
+                spannableBuilder.append(result.subSequence(lastEnd, result.length()));
+                textView.setText(spannableBuilder);
                 textView.setMovementMethod(LinkMovementMethod.getInstance());
             }
         }
