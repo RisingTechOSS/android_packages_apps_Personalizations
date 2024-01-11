@@ -29,7 +29,8 @@
 
         <com.android.settings.preferences.SystemListPreference
             android:entries="@array/clock_style_entries"
-            android:title="Custom Clock style"
+            android:icon="@drawable/ic_lock_clock"
+            android:title="@string/custom_clock_style"
             android:key="clock_style"
             android:defaultValue="0"
             android:entryValues="@array/clock_style_values" 
@@ -51,6 +52,7 @@
 
         <com.android.settings.preferences.SystemListPreference
             android:key="lockscreen_albumart_filter"
+            android:icon="@drawable/ic_widget_media"
             android:title="@string/lockscreen_albumart_filter_title"
             android:entries="@array/lockscreen_albumart_filter_entries"
             android:entryValues="@array/lockscreen_albumart_filter_values"

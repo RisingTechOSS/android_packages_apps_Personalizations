@@ -25,7 +25,7 @@
             android:backgroundTint="@android:color/system_accent1_400"
             android:clipToOutline="true">
             <TextClock
-                android:textSize="40sp"
+                android:textSize="38sp"
                 android:textColor="@android:color/white"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

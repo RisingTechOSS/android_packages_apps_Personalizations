@@ -28,6 +28,7 @@
 
     <com.android.settings.preferences.SystemListPreference
         android:key="smart_pixels_pattern"
+        android:icon="@drawable/ic_percent"
         android:entries="@array/smart_pixels_percent_strings"
         android:entryValues="@array/smart_pixels_percent_values"
         android:defaultValue="5"
@@ -44,6 +45,7 @@
 
     <com.android.settings.preferences.SystemListPreference
         android:key="smart_pixels_shift_timeout"
+        android:icon="@drawable/ic_timetable"
         android:entries="@array/smart_pixels_shift_times"
         android:entryValues="@array/smart_pixels_shift_values"
         android:defaultValue="4"
