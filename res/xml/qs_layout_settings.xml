@@ -150,17 +150,15 @@
 
      <com.android.settings.preferences.SystemSettingSeekBarPreference
         android:key="qs_header_image"
-        android:icon="@drawable/ic_header"
         android:title="@string/qs_header_image_title"
         android:defaultValue="0"
         settings:interval="1"
-        android:max="75"
+        android:max="64"
         android:min="0"
         app:position="middle" />
 
     <com.android.settings.preferences.SystemSwitchPreference
         android:key="qs_header_custom_image_uri_enabled"
-        android:icon="@drawable/ic_header"
         android:title="@string/qs_header_custom_image_uri_enabled_title"
         android:summary="@string/qs_header_custom_image_uri_enabled_summary"
         app:position="middle"/>
@@ -176,14 +174,12 @@
 
    <com.android.settings.preferences.colorpicker.SystemSettingColorPickerPreference
         android:key="qs_header_image_filter_color"
-        android:icon="@drawable/ic_color_bucket"
         android:title="@string/qs_header_image_filter_color_title"
         android:defaultValue="0xFFFFFFFF"
         app:position="middle" />
 
      <com.android.settings.preferences.SystemSettingSeekBarPreference
         android:key="qs_header_image_fade_level"
-        android:icon="@drawable/ic_color_bucket"
         android:title="@string/qs_header_image_fade_level_level_title"
         android:summary="@string/qs_header_image_fade_level_level_summary"
         android:defaultValue="40"
@@ -194,7 +190,6 @@
 
      <com.android.settings.preferences.SystemSettingSeekBarPreference
         android:key="qs_header_image_height"
-        android:icon="@drawable/ic_color_bucket"
         android:title="@string/qs_header_image_height_title"
         android:defaultValue="80"
         settings:interval="1"
@@ -204,7 +199,6 @@
 
      <com.android.settings.preferences.SystemSettingSeekBarPreference
         android:key="qs_header_image_opacity_level"
-        android:icon="@drawable/ic_color_bucket"
         android:title="@string/qs_header_image_opacity_level_title"
         android:summary="@string/qs_header_image_opacity_level_summary"
         android:defaultValue="30"
