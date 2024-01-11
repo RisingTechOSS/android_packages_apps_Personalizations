@@ -91,6 +91,13 @@
         android:defaultValue="false"
         app:position="middle" />
 
+    <com.android.settings.preferences.SystemSwitchPreference
+        android:key="data_disabled_icon"
+        android:title="@string/data_disabled_icon_title"
+        android:summary="@string/data_disabled_icon_summary"
+        android:defaultValue="true"
+        app:position="middle"/>
+
      <com.android.settings.preferences.ui.AdaptivePreference
          android:key="status_bar_icons"
          android:icon="@drawable/ic_settings_statusbar"

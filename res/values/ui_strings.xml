@@ -706,4 +706,8 @@
     <string name="device_info_chipset">Chipset</string>
     <string name="device_info_resolution">Resolution</string>
     <string name="device_info_storage">Storage</string>
+    
+    <!-- Data disabled indicator -->
+    <string name="data_disabled_icon_title">Data disabled indicator</string>
+    <string name="data_disabled_icon_summary">Display an indicator next to signal icon when data is disabled</string>
 </resources>
