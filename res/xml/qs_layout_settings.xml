@@ -117,7 +117,40 @@
             android:key="apply_change_button"
             android:layout="@layout/qs_tile_apply_change_button" />
     </PreferenceCategory>
-    
+
+    <PreferenceCategory
+        android:title="@string/qs_tile_animation_title">
+
+        <com.android.settings.preferences.SystemListPreference
+            android:key="qs_tile_animation_style"
+            android:icon="@drawable/ic_qs_tile_animation_style"
+            android:title="@string/qs_tile_animation_style_title"
+            android:entries="@array/qs_tile_animation_style_entries"
+            android:entryValues="@array/qs_tile_animation_style_values"
+            android:defaultValue="0"
+            app:position="top" />
+
+        <com.android.settings.preferences.SystemSettingSeekBarPreference
+            android:key="qs_tile_animation_duration"
+            android:title="@string/qs_tile_animation_duration_title"
+            android:defaultValue="1"
+            settings:interval="1"
+            settings:units="@string/unit_seconds"
+            android:max="5"
+            android:min="1"
+            app:position="middle" />
+
+        <com.android.settings.preferences.SystemListPreference
+            android:key="qs_tile_animation_interpolator"
+            android:icon="@drawable/ic_qs_tile_animation_interpolator"
+            android:title="@string/qs_tile_animation_interpolator_title"
+            android:entries="@array/qs_tile_animation_interpolator_entries"
+            android:entryValues="@array/qs_tile_animation_interpolator_values"
+            android:defaultValue="0"
+            app:position="bottom" />
+
+    </PreferenceCategory>
+
     <PreferenceCategory
         android:title="@string/qs_misc_category">
 
