@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2016-2022 crDroid Android Project
+ * Copyright (C) 2024 the risingOS Android Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,7 +33,6 @@ import android.text.TextUtils;
 
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
-import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceScreen;
 import androidx.preference.SwitchPreference;
@@ -45,7 +45,11 @@ import com.android.settingslib.search.SearchIndexable;
 
 import com.android.internal.util.rising.systemUtils;
 
+import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 @SearchIndexable
 public class LockScreen extends SettingsPreferenceFragment implements
@@ -54,22 +58,57 @@ public class LockScreen extends SettingsPreferenceFragment implements
     public static final String TAG = "LockScreen";
     private static final String ALBUM_ART_KEY = "lockscreen_media_metadata";
     private static final String BLUR_RADIUS_KEY = "ls_media_filter_blur_radius";
-    
-    Preference mAlbumArtPref;
-    Preference mBlurRadiusPref;
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    private static final String MAIN_WIDGET_1_KEY = "main_custom_widgets1";
+    private static final String MAIN_WIDGET_2_KEY = "main_custom_widgets2";
+    private static final String EXTRA_WIDGET_1_KEY = "custom_widgets1";
+    private static final String EXTRA_WIDGET_2_KEY = "custom_widgets2";
+    private static final String EXTRA_WIDGET_3_KEY = "custom_widgets3";
+    private static final String EXTRA_WIDGET_4_KEY = "custom_widgets4";
 
-        addPreferencesFromResource(R.xml.rising_settings_lockscreen);
-        mAlbumArtPref = (Preference) findPreference(ALBUM_ART_KEY);
-        mBlurRadiusPref = (Preference) findPreference(BLUR_RADIUS_KEY);
-        
-        mAlbumArtPref.setOnPreferenceChangeListener(this);
+    private Preference mAlbumArtPref;
+    private Preference mBlurRadiusPref;
 
-        updateAlbumArtPref();
-    }
+    private Preference mMainWidget1;
+    private Preference mMainWidget2;
+    private Preference mExtraWidget1;
+    private Preference mExtraWidget2;
+    private Preference mExtraWidget3;
+    private Preference mExtraWidget4;
+
+    private Map<Preference, String> widgetKeysMap = new HashMap<>();
+
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+
+		addPreferencesFromResource(R.xml.rising_settings_lockscreen);
+		mAlbumArtPref = findPreference(ALBUM_ART_KEY);
+		mBlurRadiusPref = findPreference(BLUR_RADIUS_KEY);
+
+		mAlbumArtPref.setOnPreferenceChangeListener(this);
+
+		mMainWidget1 = findPreference(MAIN_WIDGET_1_KEY);
+		mMainWidget2 = findPreference(MAIN_WIDGET_2_KEY);
+		mExtraWidget1 = findPreference(EXTRA_WIDGET_1_KEY);
+		mExtraWidget2 = findPreference(EXTRA_WIDGET_2_KEY);
+		mExtraWidget3 = findPreference(EXTRA_WIDGET_3_KEY);
+		mExtraWidget4 = findPreference(EXTRA_WIDGET_4_KEY);
+
+		List<Preference> widgetPreferences = Arrays.asList(mMainWidget1, mMainWidget2, mExtraWidget1, mExtraWidget2, mExtraWidget3, mExtraWidget4);
+		for (Preference widgetPref : widgetPreferences) {
+		    widgetPref.setOnPreferenceChangeListener(this);
+		    widgetKeysMap.put(widgetPref, "");
+		}
+
+		String mainWidgets = Settings.System.getString(getActivity().getContentResolver(), "lockscreen_widgets");
+		String extraWidgets = Settings.System.getString(getActivity().getContentResolver(), "lockscreen_widgets_extras");
+
+		setWidgetValues(mainWidgets, mMainWidget1, mMainWidget2);
+		setWidgetValues(extraWidgets, mExtraWidget1, mExtraWidget2, mExtraWidget3, mExtraWidget4);
+
+		updateAlbumArtPref();
+	}
 
     private void updateAlbumArtPref() {
         boolean gradientBlurFilterEnabled = Settings.System.getIntForUser(getActivity().getContentResolver(),
@@ -81,13 +120,42 @@ public class LockScreen extends SettingsPreferenceFragment implements
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        boolean value = (boolean) newValue;
         if (preference == mAlbumArtPref) {
+        	final boolean value = (boolean) newValue;
             SystemProperties.set("persist.wm.debug.lockscreen_live_wallpaper", String.valueOf(!value));
+            return true;
+        } else if (widgetKeysMap.containsKey(preference)) {
+            widgetKeysMap.put(preference, String.valueOf(newValue));
+            updateWidgetPreferences();
             return true;
         }
         return false;
     }
+
+    private void setWidgetValues(String widgets, Preference... preferences) {
+        List<String> widgetList = Arrays.asList(widgets.split(","));
+        for (int i = 0; i < preferences.length && i < widgetList.size(); i++) {
+            widgetKeysMap.put(preferences[i], widgetList.get(i).trim());
+        }
+    }
+
+	private void updateWidgetPreferences() {
+		List<String> mainWidgetsList = Arrays.asList(widgetKeysMap.get(mMainWidget1), widgetKeysMap.get(mMainWidget2));
+		List<String> extraWidgetsList = Arrays.asList(widgetKeysMap.get(mExtraWidget1), widgetKeysMap.get(mExtraWidget2), widgetKeysMap.get(mExtraWidget3), widgetKeysMap.get(mExtraWidget4));
+
+		mainWidgetsList = filterEmptyStrings(mainWidgetsList);
+		extraWidgetsList = filterEmptyStrings(extraWidgetsList);
+
+		String mainWidgets = TextUtils.join(",", mainWidgetsList);
+		String extraWidgets = TextUtils.join(",", extraWidgetsList);
+
+		Settings.System.putString(getActivity().getContentResolver(), "lockscreen_widgets", mainWidgets);
+		Settings.System.putString(getActivity().getContentResolver(), "lockscreen_widgets_extras", extraWidgets);
+	}
+
+	private List<String> filterEmptyStrings(List<String> inputList) {
+		return inputList.stream().filter(s -> !TextUtils.isEmpty(s)).collect(Collectors.toList());
+	}
 
     @Override
     public int getMetricsCategory() {

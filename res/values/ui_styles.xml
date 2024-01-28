@@ -35,4 +35,12 @@
         <item name="android:lineHeight">15sp</item>
         <item name="android:textColor">?android:attr/textColorSecondary</item>
     </style>
+    <style name="Theme.LockscreenWidgets.settings" parent="@style/Theme.MaterialComponents.DayNight">
+        <item name="android:fontFamily">@*android:string/config_bodyFontFamily</item>
+        <item name="android:elevation">0dp</item>
+    </style>
+	<style name="LockscreenWidgetsBackgroundOverlay" parent="">
+		<item name="cornerFamily">rounded</item>
+		<item name="cornerSize">100dp</item>
+	</style>
 </resources>

@@ -2,7 +2,9 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <declare-styleable name="AdaptivePreference">
         <attr name="position" format="string" />
+        <attr name="isLineageSettings" format="boolean" />
     </declare-styleable>
+
     
     <!-- Base attributes available to CustomSeekBarPreference. -->
     <declare-styleable name="CustomSeekBarPreference">

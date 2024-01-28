@@ -591,4 +591,20 @@
         <item>6</item>
         <item>7</item>
     </string-array>
+    
+    <string-array name="widget_entries">
+    	<item>none</item>
+        <item>torch</item>
+        <item>media</item>
+        <item>timer</item>
+        <item>calculator</item>
+    </string-array>
+    
+    <string-array name="widget_values">
+    	<item></item>
+        <item>torch</item>
+        <item>media</item>
+        <item>timer</item>
+        <item>calculator</item>
+    </string-array>
 </resources>

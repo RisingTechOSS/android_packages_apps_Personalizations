@@ -60,4 +60,11 @@
     <dimen name="homepage_avatar_margin_top">10dp</dimen>
     <dimen name="top_level_preference_summary_max_width">200dp</dimen>
     <dimen name="personalization_solo_preference_height">100dp</dimen>
+    <dimen name="kg_widget_margin_vertical">10dp</dimen>
+    <dimen name="kg_widgets_margin_horizontal">8dp</dimen>
+    <dimen name="kg_widgets_main_margin_start">12dp</dimen>
+    <dimen name="kg_widgets_main_margin_end">12dp</dimen>
+    <dimen name="kg_widget_circle_size">64dp</dimen>
+    <dimen name="kg_widgets_icon_padding">20dp</dimen>
+    <dimen name="kg_main_widgets_icon_padding">20dp</dimen>
 </resources>

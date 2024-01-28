@@ -6,7 +6,7 @@
     android:background="@android:color/transparent"
     android:clipToPadding="false"
     android:layout_width="match_parent"
-    android:layout_height="375dp"
+    android:layout_height="300dp"
     android:layout_marginTop="10dp"
     android:layout_marginBottom="10dp"
     android:layout_marginHorizontal="20dp">
@@ -28,6 +28,6 @@
             android:gravity="center_vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            layout="@layout/keyguard_clock_style"/>
+            layout="@layout/keyguard_clock_widgets"/>
     </FrameLayout>
 </LinearLayout>

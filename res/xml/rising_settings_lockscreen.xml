@@ -32,10 +32,63 @@
             android:icon="@drawable/ic_lock_clock"
             android:title="@string/custom_clock_style"
             android:key="clock_style"
-            android:defaultValue="0"
+            android:summary="%s"
             android:entryValues="@array/clock_style_values" 
             app:position="solo" />
 
+        <com.android.settings.preferences.SystemSettingListPreference
+            android:entries="@array/widget_entries"
+            android:icon="@drawable/ic_lock_clock"
+            android:title="@string/main_custom_widgets1"
+            android:key="main_custom_widgets1"
+            android:entryValues="@array/widget_values" 
+            android:summary="%s"
+            app:position="top" />
+            
+        <com.android.settings.preferences.SystemSettingListPreference
+            android:entries="@array/widget_entries"
+            android:icon="@drawable/ic_lock_clock"
+            android:title="@string/main_custom_widgets2"
+            android:key="main_custom_widgets2"
+            android:entryValues="@array/widget_values"
+            android:summary="%s"
+            app:position="bottom" />
+
+        <com.android.settings.preferences.SystemSettingListPreference
+            android:entries="@array/widget_entries"
+            android:icon="@drawable/ic_lock_clock"
+            android:title="@string/custom_widgets1"
+            android:key="custom_widgets1"
+            android:entryValues="@array/widget_values" 
+            android:summary="%s"
+            app:position="top" />
+            
+        <com.android.settings.preferences.SystemSettingListPreference
+            android:entries="@array/widget_entries"
+            android:icon="@drawable/ic_lock_clock"
+            android:title="@string/custom_widgets2"
+            android:key="custom_widgets2"
+            android:entryValues="@array/widget_values"
+            android:summary="%s" 
+            app:position="middle" />
+            
+        <com.android.settings.preferences.SystemSettingListPreference
+            android:entries="@array/widget_entries"
+            android:icon="@drawable/ic_lock_clock"
+            android:title="@string/custom_widgets3"
+            android:key="custom_widgets3"
+            android:entryValues="@array/widget_values" 
+            android:summary="%s"
+            app:position="middle" />
+            
+        <com.android.settings.preferences.SystemSettingListPreference
+            android:entries="@array/widget_entries"
+            android:icon="@drawable/ic_lock_clock"
+            android:title="@string/custom_widgets4"
+            android:key="custom_widgets4"
+            android:entryValues="@array/widget_values" 
+            android:summary="%s"
+            app:position="bottom" />
      </PreferenceCategory>
 
     <!-- lockscreen album art customizations -->

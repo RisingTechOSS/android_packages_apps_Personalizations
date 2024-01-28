@@ -731,4 +731,18 @@
     <string name="qs_tile_animation_interpolator_overshootInterpolator">Overshoot</string>
     <string name="qs_tile_animation_interpolator_anticipateInterpolator">Anticipate</string>
     <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Anticipate overshoot</string>
+
+	<!-- Lockscreen widgets  -->
+    <string name="main_custom_widgets1">Large lockscreen widget 1</string>
+    <string name="main_custom_widgets2">Large lockscreen widget 2</string>
+    <string name="custom_widgets1">Extra lockscreen widget 1</string>
+    <string name="custom_widgets2">Extra lockscreen widget 2</string>
+    <string name="custom_widgets3">Extra lockscreen widget 3</string>
+    <string name="custom_widgets4">Extra lockscreen widget 4</string>
+    <string name="camera">Camera</string>
+    <string name="clock_timer">Clock/Timer</string>
+    <string name="calculator">Calculator</string>
+    <string name="gallery">Gallery</string>
+    <string name="torch">Torch</string>
+    <string name="controls_media_button_play">Play</string>
 </resources>
