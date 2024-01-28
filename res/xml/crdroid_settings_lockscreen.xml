@@ -34,6 +34,7 @@
             android:title="@string/custom_clock_style"
             android:key="clock_style"
             android:defaultValue="0"
+            android:summary="%s"
             android:entryValues="@array/clock_style_values"
             lineage:position="solo" />
 
@@ -46,35 +47,59 @@
             android:fragment="com.crdroid.settings.fragments.lockscreen.LockClockFontsPicker"
             lineage:position="solo"/>
 
-        <!--<com.crdroid.settings.preferences.SecureSettingSeekBarPreference
-            android:key="kg_custom_clock_top_margin"
+        <com.crdroid.settings.preferences.SystemSettingListPreference
+            android:entries="@array/widget_entries"
             android:icon="@drawable/ic_lock_clock"
-            android:title="@string/kg_custom_clock_top_margin_title"
-            android:max="500"
-            settings:min="80"
-            settings:interval="1"
-            android:defaultValue="280"
-            settings:units="@string/unit_pixels" />
+            android:title="@string/main_custom_widgets1"
+            android:key="main_custom_widgets1"
+            android:entryValues="@array/widget_values" 
+            android:summary="%s"
+            lineage:position="top" />
 
-        <com.crdroid.settings.preferences.SecureSettingSeekBarPreference
-            android:key="kg_small_clock_text_size"
-            android:icon="@drawable/ic_font"
-            android:title="@string/kg_small_clock_text_size_title"
-            android:max="100"
-            settings:min="25"
-            settings:interval="1"
-            android:defaultValue="86"
-            settings:units="@string/unit_pixels" />
+        <com.crdroid.settings.preferences.SystemSettingListPreference
+            android:entries="@array/widget_entries"
+            android:icon="@drawable/ic_lock_clock"
+            android:title="@string/main_custom_widgets2"
+            android:key="main_custom_widgets2"
+            android:entryValues="@array/widget_values"
+            android:summary="%s"
+            lineage:position="bottom" />
 
-        <com.crdroid.settings.preferences.SecureSettingSeekBarPreference
-            android:key="kg_large_clock_text_size"
-            android:icon="@drawable/ic_font"
-            android:title="@string/kg_large_clock_text_size_title"
-            android:max="250"
-            settings:min="25"
-            settings:interval="1"
-            android:defaultValue="180"
-            settings:units="@string/unit_pixels" />-->
+        <com.crdroid.settings.preferences.SystemSettingListPreference
+            android:entries="@array/widget_entries"
+            android:icon="@drawable/ic_lock_clock"
+            android:title="@string/custom_widgets1"
+            android:key="custom_widgets1"
+            android:entryValues="@array/widget_values" 
+            android:summary="%s"
+            lineage:position="top" />
+
+        <com.crdroid.settings.preferences.SystemSettingListPreference
+            android:entries="@array/widget_entries"
+            android:icon="@drawable/ic_lock_clock"
+            android:title="@string/custom_widgets2"
+            android:key="custom_widgets2"
+            android:entryValues="@array/widget_values"
+            android:summary="%s" 
+            lineage:position="middle" />
+
+        <com.crdroid.settings.preferences.SystemSettingListPreference
+            android:entries="@array/widget_entries"
+            android:icon="@drawable/ic_lock_clock"
+            android:title="@string/custom_widgets3"
+            android:key="custom_widgets3"
+            android:entryValues="@array/widget_values" 
+            android:summary="%s"
+            lineage:position="middle" />
+
+        <com.crdroid.settings.preferences.SystemSettingListPreference
+            android:entries="@array/widget_entries"
+            android:icon="@drawable/ic_lock_clock"
+            android:title="@string/custom_widgets4"
+            android:key="custom_widgets4"
+            android:entryValues="@array/widget_values" 
+            android:summary="%s"
+            lineage:position="bottom" />
 
     </PreferenceCategory>
 

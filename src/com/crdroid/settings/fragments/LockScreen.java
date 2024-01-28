@@ -46,7 +46,11 @@ import com.android.settingslib.search.SearchIndexable;
 import com.crdroid.settings.fragments.lockscreen.UdfpsAnimation;
 import com.crdroid.settings.fragments.lockscreen.UdfpsIconPicker;
 
+import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 import lineageos.providers.LineageSettings;
 
@@ -66,6 +70,13 @@ public class LockScreen extends SettingsPreferenceFragment
     private static final String KEY_UDFPS_ICONS = "udfps_icon_picker";
     private static final String SCREEN_OFF_UDFPS_ENABLED = "screen_off_udfps_enabled";
 
+    private static final String MAIN_WIDGET_1_KEY = "main_custom_widgets1";
+    private static final String MAIN_WIDGET_2_KEY = "main_custom_widgets2";
+    private static final String EXTRA_WIDGET_1_KEY = "custom_widgets1";
+    private static final String EXTRA_WIDGET_2_KEY = "custom_widgets2";
+    private static final String EXTRA_WIDGET_3_KEY = "custom_widgets3";
+    private static final String EXTRA_WIDGET_4_KEY = "custom_widgets4";
+
     private Preference mUdfpsAnimations;
     private Preference mUdfpsIcons;
     private Preference mFingerprintVib;
@@ -73,6 +84,15 @@ public class LockScreen extends SettingsPreferenceFragment
     private Preference mRippleEffect;
     private Preference mWeather;
     private Preference mScreenOffUdfps;
+    
+    private Preference mMainWidget1;
+    private Preference mMainWidget2;
+    private Preference mExtraWidget1;
+    private Preference mExtraWidget2;
+    private Preference mExtraWidget3;
+    private Preference mExtraWidget4;
+    
+    private Map<Preference, String> widgetKeysMap = new HashMap<>();
 
     private OmniJawsClient mWeatherClient;
 
@@ -83,6 +103,25 @@ public class LockScreen extends SettingsPreferenceFragment
         addPreferencesFromResource(R.xml.crdroid_settings_lockscreen);
 
         PreferenceCategory gestCategory = (PreferenceCategory) findPreference(LOCKSCREEN_GESTURES_CATEGORY);
+
+        mMainWidget1 = findPreference(MAIN_WIDGET_1_KEY);
+        mMainWidget2 = findPreference(MAIN_WIDGET_2_KEY);
+        mExtraWidget1 = findPreference(EXTRA_WIDGET_1_KEY);
+        mExtraWidget2 = findPreference(EXTRA_WIDGET_2_KEY);
+        mExtraWidget3 = findPreference(EXTRA_WIDGET_3_KEY);
+        mExtraWidget4 = findPreference(EXTRA_WIDGET_4_KEY);
+
+        List<Preference> widgetPreferences = Arrays.asList(mMainWidget1, mMainWidget2, mExtraWidget1, mExtraWidget2, mExtraWidget3, mExtraWidget4);
+        for (Preference widgetPref : widgetPreferences) {
+            widgetPref.setOnPreferenceChangeListener(this);
+            widgetKeysMap.put(widgetPref, "");
+        }
+
+        String mainWidgets = Settings.System.getString(getActivity().getContentResolver(), "lockscreen_widgets");
+        String extraWidgets = Settings.System.getString(getActivity().getContentResolver(), "lockscreen_widgets_extras");
+
+        setWidgetValues(mainWidgets, mMainWidget1, mMainWidget2);
+        setWidgetValues(extraWidgets, mExtraWidget1, mExtraWidget2, mExtraWidget3, mExtraWidget4);
 
         FingerprintManager mFingerprintManager = (FingerprintManager)
                 getActivity().getSystemService(Context.FINGERPRINT_SERVICE);
@@ -123,37 +162,40 @@ public class LockScreen extends SettingsPreferenceFragment
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
+        if (widgetKeysMap.containsKey(preference)) {
+            widgetKeysMap.put(preference, String.valueOf(newValue));
+            updateWidgetPreferences();
+            return true;
+        }
         return false;
     }
 
-    public static void reset(Context mContext) {
-        ContentResolver resolver = mContext.getContentResolver();
-        LineageSettings.Secure.putIntForUser(resolver,
-                LineageSettings.Secure.LOCKSCREEN_MEDIA_METADATA, 0, UserHandle.USER_CURRENT);
-        Settings.Secure.putIntForUser(resolver,
-                Settings.Secure.SCREEN_OFF_UDFPS_ENABLED, 0, UserHandle.USER_CURRENT);
-        Settings.System.putIntForUser(resolver,
-                Settings.System.LOCKSCREEN_BATTERY_INFO, 1, UserHandle.USER_CURRENT);
-        Settings.System.putIntForUser(resolver,
-                Settings.System.DOUBLE_TAP_SLEEP_LOCKSCREEN, 1, UserHandle.USER_CURRENT);
-        Settings.System.putIntForUser(resolver,
-                Settings.System.LOCKSCREEN_ALBUMART_FILTER, 0, UserHandle.USER_CURRENT);
-        Settings.System.putIntForUser(resolver,
-                Settings.System.ENABLE_RIPPLE_EFFECT, 1, UserHandle.USER_CURRENT);
-        Settings.System.putIntForUser(resolver,
-                Settings.System.FP_ERROR_VIBRATE, 1, UserHandle.USER_CURRENT);
-        Settings.System.putIntForUser(resolver,
-                Settings.System.FP_SUCCESS_VIBRATE, 1, UserHandle.USER_CURRENT);
-        Settings.System.putIntForUser(resolver,
-                Settings.System.LOCKSCREEN_ENABLE_POWER_MENU, 1, UserHandle.USER_CURRENT);
-        Settings.System.putIntForUser(resolver,
-                Settings.System.LOCKSCREEN_WEATHER_ENABLED, 0, UserHandle.USER_CURRENT);
-        Settings.System.putIntForUser(resolver,
-                Settings.System.LOCKSCREEN_WEATHER_LOCATION, 0, UserHandle.USER_CURRENT);
-        Settings.System.putIntForUser(resolver,
-                Settings.System.LOCKSCREEN_WEATHER_TEXT, 1, UserHandle.USER_CURRENT);
-        UdfpsAnimation.reset(mContext);
-        UdfpsIconPicker.reset(mContext);
+    private void setWidgetValues(String widgets, Preference... preferences) {
+        if (widgets == null) {
+            return;
+        }
+        List<String> widgetList = Arrays.asList(widgets.split(","));
+        for (int i = 0; i < preferences.length && i < widgetList.size(); i++) {
+            widgetKeysMap.put(preferences[i], widgetList.get(i).trim());
+        }
+    }
+
+    private void updateWidgetPreferences() {
+        List<String> mainWidgetsList = Arrays.asList(widgetKeysMap.get(mMainWidget1), widgetKeysMap.get(mMainWidget2));
+        List<String> extraWidgetsList = Arrays.asList(widgetKeysMap.get(mExtraWidget1), widgetKeysMap.get(mExtraWidget2), widgetKeysMap.get(mExtraWidget3), widgetKeysMap.get(mExtraWidget4));
+
+        mainWidgetsList = filterEmptyStrings(mainWidgetsList);
+        extraWidgetsList = filterEmptyStrings(extraWidgetsList);
+
+        String mainWidgets = TextUtils.join(",", mainWidgetsList);
+        String extraWidgets = TextUtils.join(",", extraWidgetsList);
+
+        Settings.System.putString(getActivity().getContentResolver(), "lockscreen_widgets", mainWidgets);
+        Settings.System.putString(getActivity().getContentResolver(), "lockscreen_widgets_extras", extraWidgets);
+    }
+
+    private List<String> filterEmptyStrings(List<String> inputList) {
+        return inputList.stream().filter(s -> !TextUtils.isEmpty(s)).collect(Collectors.toList());
     }
 
     private void updateWeatherSettings() {
