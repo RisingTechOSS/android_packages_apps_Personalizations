@@ -711,7 +711,8 @@
     <string name="data_disabled_icon_title">Data disabled indicator</string>
     <string name="data_disabled_icon_summary">Display an indicator next to signal icon when data is disabled</string>
     
-    <!-- Custom CLock Srtle -->
+    <!-- Custom Clock Style -->
+    <string name="lockscreen_clock_category_title">Lockscreen Clock</string>
     <string name="custom_clock_style">Custom Clock Style</string>
     
     <!-- QS Tiles animation  -->
@@ -733,16 +734,20 @@
     <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Anticipate overshoot</string>
 
 	<!-- Lockscreen widgets  -->
-    <string name="main_custom_widgets1">Large lockscreen widget 1</string>
-    <string name="main_custom_widgets2">Large lockscreen widget 2</string>
-    <string name="custom_widgets1">Extra lockscreen widget 1</string>
-    <string name="custom_widgets2">Extra lockscreen widget 2</string>
-    <string name="custom_widgets3">Extra lockscreen widget 3</string>
-    <string name="custom_widgets4">Extra lockscreen widget 4</string>
+	<string name="large_widgets_category_title">Big widgets</string>
+    <string name="main_custom_widgets1">Big widget 1</string>
+    <string name="main_custom_widgets2">Big widget 2</string>
+    <string name="mini_widgets_category_title">Mini widgets</string>
+    <string name="custom_widgets1">Mini widget 1</string>
+    <string name="custom_widgets2">Mini widget 2</string>
+    <string name="custom_widgets3">Mini widget 3</string>
+    <string name="custom_widgets4">Mini widget 4</string>
     <string name="camera">Camera</string>
     <string name="clock_timer">Clock/Timer</string>
     <string name="calculator">Calculator</string>
     <string name="gallery">Gallery</string>
+    <string name="media">Media Player</string>
     <string name="torch">Torch</string>
     <string name="controls_media_button_play">Play</string>
+    <string name="weather">Weather</string>
 </resources>

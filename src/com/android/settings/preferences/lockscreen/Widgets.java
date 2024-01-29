@@ -129,6 +129,9 @@ public class Widgets extends RelativeLayout {
             case "media":
                 setUpWidgetResources(widgetView, R.drawable.ic_media_play, R.string.controls_media_button_play);
                 break;
+            case "weather":
+                setUpWidgetResources(widgetView, R.drawable.ic_weather, R.string.weather);
+                break;
             default:
                 break;
         }

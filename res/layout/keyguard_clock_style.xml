@@ -65,7 +65,7 @@
         </LinearLayout>
     </RelativeLayout>
     <LinearLayout
-        android:gravity="center"
+        android:gravity="center_vertical"
         android:id="@+id/keyguard_widgets"
         android:layout_below="@+id/clock_frame"
         android:layout_width="match_parent"

@@ -594,17 +594,19 @@
     
     <string-array name="widget_entries">
     	<item>none</item>
-        <item>torch</item>
-        <item>media</item>
-        <item>timer</item>
-        <item>calculator</item>
+    	<item>@string/calculator</item>
+    	<item>@string/media</item>
+    	<item>@string/clock_timer</item>
+        <item>@string/torch</item>
+        <item>@string/weather</item>
     </string-array>
     
     <string-array name="widget_values">
     	<item></item>
+    	<item>calculator</item>
+    	<item>media</item>
+    	<item>timer</item>
         <item>torch</item>
-        <item>media</item>
-        <item>timer</item>
-        <item>calculator</item>
+        <item>weather</item>
     </string-array>
 </resources>

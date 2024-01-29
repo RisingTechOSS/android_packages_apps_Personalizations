@@ -25,7 +25,7 @@
         settings:layout="@layout/lockscreen_preview" />
 
      <PreferenceCategory
-        android:title="Custom Lockscreen Clock">
+        android:title="@string/lockscreen_clock_category_title">
 
         <com.android.settings.preferences.SystemListPreference
             android:entries="@array/clock_style_entries"
@@ -35,6 +35,11 @@
             android:summary="%s"
             android:entryValues="@array/clock_style_values" 
             app:position="solo" />
+
+     </PreferenceCategory>
+
+     <PreferenceCategory
+        android:title="@string/large_widgets_category_title">
 
         <com.android.settings.preferences.SystemSettingListPreference
             android:entries="@array/widget_entries"
@@ -53,6 +58,11 @@
             android:entryValues="@array/widget_values"
             android:summary="%s"
             app:position="bottom" />
+
+     </PreferenceCategory>
+
+     <PreferenceCategory
+        android:title="@string/mini_widgets_category_title">
 
         <com.android.settings.preferences.SystemSettingListPreference
             android:entries="@array/widget_entries"
