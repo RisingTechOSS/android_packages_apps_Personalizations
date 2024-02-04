@@ -145,12 +145,19 @@
     <PreferenceCategory
         android:title="@string/general_lockscreen_title" >
 
+        <com.android.settings.preferences.ui.AdaptivePreference
+            android:key="always_on_display_schedule"
+            android:title="@string/always_on_display_schedule_title"
+            android:summary="@string/always_on_display_schedule_summary"
+            android:fragment="com.android.settings.fragments.lockscreen.AODSchedule"
+            app:position="top"/>
+
         <com.android.settings.preferences.SystemSwitchPreference
             android:key="doze_on_charge"
             android:title="@string/doze_on_charge_title"
             android:summary="@string/doze_on_charge_summary"
             app:settings_type="secure"
-            app:position="top" />
+            app:position="middle" />
                 
         <com.android.settings.preferences.ui.AdaptivePreference
             android:key="edge_light_settings"
