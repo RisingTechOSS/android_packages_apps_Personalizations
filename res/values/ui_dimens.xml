@@ -67,4 +67,7 @@
     <dimen name="kg_widget_circle_size">64dp</dimen>
     <dimen name="kg_widgets_icon_padding">20dp</dimen>
     <dimen name="kg_main_widgets_icon_padding">20dp</dimen>
+    <dimen name="lockscreen_preview_height_all">580dp</dimen>
+    <dimen name="lockscreen_preview_height_with_widgets">480dp</dimen>
+    <dimen name="lockscreen_preview_height_with_no_widgets">380dp</dimen>
 </resources>

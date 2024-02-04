@@ -6,7 +6,8 @@
     <RelativeLayout
         android:id="@+id/clock_frame"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
 		<LinearLayout
 		    android:gravity="center_vertical"
 		    android:id="@+id/keyguard_clock_style_default"
@@ -65,7 +66,7 @@
         </LinearLayout>
     </RelativeLayout>
     <LinearLayout
-        android:gravity="center_vertical"
+        android:gravity="center"
         android:id="@+id/keyguard_widgets"
         android:layout_below="@+id/clock_frame"
         android:layout_width="match_parent"
