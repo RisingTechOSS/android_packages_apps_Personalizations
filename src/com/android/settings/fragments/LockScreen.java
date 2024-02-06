@@ -65,6 +65,8 @@ public class LockScreen extends SettingsPreferenceFragment implements
     private static final String EXTRA_WIDGET_2_KEY = "custom_widgets2";
     private static final String EXTRA_WIDGET_3_KEY = "custom_widgets3";
     private static final String EXTRA_WIDGET_4_KEY = "custom_widgets4";
+    
+    private static final String FORCE_DARK_WP_TEXT_KEY = "force_dark_text_wp";
 
     private Preference mAlbumArtPref;
     private Preference mBlurRadiusPref;
@@ -75,6 +77,8 @@ public class LockScreen extends SettingsPreferenceFragment implements
     private Preference mExtraWidget2;
     private Preference mExtraWidget3;
     private Preference mExtraWidget4;
+    
+    private Preference mForceDarkWallpaperTextColor;
 
     private Map<Preference, String> widgetKeysMap = new HashMap<>();
 
@@ -85,8 +89,11 @@ public class LockScreen extends SettingsPreferenceFragment implements
 		addPreferencesFromResource(R.xml.rising_settings_lockscreen);
 		mAlbumArtPref = findPreference(ALBUM_ART_KEY);
 		mBlurRadiusPref = findPreference(BLUR_RADIUS_KEY);
+		
+		mForceDarkWallpaperTextColor = findPreference(FORCE_DARK_WP_TEXT_KEY);
 
 		mAlbumArtPref.setOnPreferenceChangeListener(this);
+		mForceDarkWallpaperTextColor.setOnPreferenceChangeListener(this);
 
 		mMainWidget1 = findPreference(MAIN_WIDGET_1_KEY);
 		mMainWidget2 = findPreference(MAIN_WIDGET_2_KEY);
@@ -106,27 +113,40 @@ public class LockScreen extends SettingsPreferenceFragment implements
 
 		setWidgetValues(mainWidgets, mMainWidget1, mMainWidget2);
 		setWidgetValues(extraWidgets, mExtraWidget1, mExtraWidget2, mExtraWidget3, mExtraWidget4);
+		
+		((SwitchPreference) mForceDarkWallpaperTextColor).setChecked(SystemProperties.getBoolean("persist.sys.wallpapercolors.force_dark_text", false));
 
 		updateAlbumArtPref();
 	}
 
     private void updateAlbumArtPref() {
+        boolean mAlbumEnabled = Settings.System.getIntForUser(getActivity().getContentResolver(),
+                ALBUM_ART_KEY, 0, UserHandle.USER_CURRENT) == 1;
         boolean gradientBlurFilterEnabled = Settings.System.getIntForUser(getActivity().getContentResolver(),
                 Settings.System.LOCKSCREEN_ALBUMART_FILTER, 0, UserHandle.USER_CURRENT) == 5;
         boolean blurFilterEnabled = Settings.System.getIntForUser(getActivity().getContentResolver(),
                 Settings.System.LOCKSCREEN_ALBUMART_FILTER, 0, UserHandle.USER_CURRENT) >= 3 && !gradientBlurFilterEnabled;
+        ((SwitchPreference) mAlbumArtPref).setChecked(mAlbumEnabled);
         mBlurRadiusPref.setEnabled(blurFilterEnabled);
     }
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         if (preference == mAlbumArtPref) {
-        	final boolean value = (boolean) newValue;
-            SystemProperties.set("persist.wm.debug.lockscreen_live_wallpaper", String.valueOf(!value));
+            final boolean booleanValue = (boolean) newValue;
+            Settings.System.putIntForUser(getActivity().getContentResolver(), ALBUM_ART_KEY, booleanValue ? 1 : 0, UserHandle.USER_CURRENT);
+            updateAlbumArtPref();
+            SystemProperties.set("persist.wm.debug.lockscreen_live_wallpaper", String.valueOf(!booleanValue));
+            systemUtils.showSystemUIRestartDialog(getContext());
             return true;
         } else if (widgetKeysMap.containsKey(preference)) {
             widgetKeysMap.put(preference, String.valueOf(newValue));
             updateWidgetPreferences();
+            return true;
+        } else if (preference == mForceDarkWallpaperTextColor) {
+            final boolean booleanValue = (boolean) newValue;
+            SystemProperties.set("persist.sys.wallpapercolors.force_dark_text", String.valueOf(booleanValue));
+            systemUtils.showSystemRestartDialog(getContext());
             return true;
         }
         return false;

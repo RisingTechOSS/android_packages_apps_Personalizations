@@ -14,7 +14,7 @@
          android:title="@string/qs_battery_styles_title">
             
         <!-- Battery percent -->
-        <com.android.settings.preferences.SystemListPreference
+        <com.android.settings.preferences.SystemSettingListPreference
             android:key="qs_show_battery_percent"
             android:icon="@drawable/ic_battery_alert"
             android:title="@string/status_bar_battery_percent_title"
@@ -24,7 +24,7 @@
             app:position="top" />
 
         <!-- Battery styles -->
-        <com.android.settings.preferences.SystemListPreference
+        <com.android.settings.preferences.SystemSettingListPreference
             android:key="qs_battery_style"
             android:icon="@drawable/ic_battery"
             android:title="@string/status_bar_battery_style_title"
@@ -121,7 +121,7 @@
     <PreferenceCategory
         android:title="@string/qs_tile_animation_title">
 
-        <com.android.settings.preferences.SystemListPreference
+        <com.android.settings.preferences.SystemSettingListPreference
             android:key="qs_tile_animation_style"
             android:icon="@drawable/ic_qs_tile_animation_style"
             android:title="@string/qs_tile_animation_style_title"
@@ -140,7 +140,7 @@
             android:min="1"
             app:position="middle" />
 
-        <com.android.settings.preferences.SystemListPreference
+        <com.android.settings.preferences.SystemSettingListPreference
             android:key="qs_tile_animation_interpolator"
             android:icon="@drawable/ic_qs_tile_animation_interpolator"
             android:title="@string/qs_tile_animation_interpolator_title"
@@ -165,12 +165,6 @@
         android:title="@string/qs_colored_icons_title"
         android:summary="@string/qs_colored_icons_summary"
         app:reevaluate="true"
-        app:position="middle"/>
-
-    <com.android.settings.preferences.SystemSwitchPreference
-        android:key="sys_qs_footer_data_usage"
-        android:title="@string/qs_footer_datausage_title"
-        android:summary="@string/qs_footer_datausage_summary"
         app:position="middle"/>
 
      <com.android.settings.preferences.SystemSettingSeekBarPreference

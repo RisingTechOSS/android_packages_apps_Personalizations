@@ -27,7 +27,7 @@
      <PreferenceCategory
         android:title="@string/lockscreen_clock_category_title">
 
-        <com.android.settings.preferences.SystemListPreference
+        <com.android.settings.preferences.SystemSettingListPreference
             android:entries="@array/clock_style_entries"
             android:icon="@drawable/ic_lock_clock"
             android:title="@string/custom_clock_style"
@@ -105,12 +105,11 @@
     <PreferenceCategory
         android:title="@string/lockscreen_media_art_settings" >
 
-        <com.android.settings.preferences.SystemSwitchPreference
+        <com.android.settings.preferences.ui.AdaptiveSwitchPreference
             android:key="lockscreen_media_metadata"
             android:title="@string/lockscreen_album_media_art_toggle"
             android:summary="@string/lockscreen_album_media_art_summary"
             android:defaultValue="false"
-            app:restart_level="systemui"
             app:position="top" />
 
         <com.android.settings.preferences.SystemListPreference
@@ -143,28 +142,40 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:title="@string/general_lockscreen_title" >
-
-        <com.android.settings.preferences.ui.AdaptivePreference
-            android:key="always_on_display_schedule"
-            android:title="@string/always_on_display_schedule_title"
-            android:summary="@string/always_on_display_schedule_summary"
-            android:fragment="com.android.settings.fragments.lockscreen.AODSchedule"
-            app:position="top"/>
+        android:title="@string/always_on_display_title" >
 
         <com.android.settings.preferences.SystemSwitchPreference
             android:key="doze_on_charge"
             android:title="@string/doze_on_charge_title"
             android:summary="@string/doze_on_charge_summary"
             app:settings_type="secure"
-            app:position="middle" />
-                
+            app:position="top" />
+
+        <com.android.settings.preferences.ui.AdaptivePreference
+            android:key="always_on_display_schedule"
+            android:title="@string/always_on_display_schedule_title"
+            android:summary="@string/always_on_display_schedule_summary"
+            android:fragment="com.android.settings.fragments.lockscreen.AODSchedule"
+            app:position="bottom"/>
+            
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/general_lockscreen_title" >
+
         <com.android.settings.preferences.ui.AdaptivePreference
             android:key="edge_light_settings"
             android:icon="@drawable/ic_pulse"
             android:title="@string/edge_light_title"
             android:summary="@string/edge_light_summary"
-            android:fragment="com.android.settings.fragments.lockscreen.EdgeLightSettings" />
+            android:fragment="com.android.settings.fragments.lockscreen.EdgeLightSettings"
+            app:position="top" />
+
+        <com.android.settings.preferences.ui.AdaptiveSwitchPreference
+            android:key="force_dark_text_wp"
+            android:title="@string/force_dark_text_wp_title"
+            android:summary="@string/force_dark_text_wp_summary"
+            android:defaultValue="false"  />
 
         <com.android.settings.preferences.SystemSwitchPreference
             android:key="lockscreen_enable_power_menu"

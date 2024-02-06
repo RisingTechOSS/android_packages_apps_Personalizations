@@ -66,6 +66,7 @@
     <string name="notification_color">Notification color</string>
     <string name="wallpaper_color">Wallpaper color</string>
     <string name="custom_color">Custom color</string>
+    <string name="reevaluating_theme">Reloading system themes...</string>
 
     <!-- Personalization Categories -->
     <string name="button_title">Buttons</string>
@@ -783,11 +784,16 @@
     <string name="udfps_recog_animation_effect_title">UDFPS custom animation</string>
     <string name="udfps_recog_animation_effect_summary">Choose animation effect</string>
 
-    <!-- AOD Schedule -->
+    <!-- AOD -->
+    <string name="always_on_display_title">Always On Display</string>
     <string name="always_on_display_schedule_title">Display schedule</string>
     <string name="always_on_display_schedule_summary">Set schedule for always on display</string>
     <string name="always_on_display_schedule_sunset">Sunset</string>
     <string name="always_on_display_schedule_sunrise">Sunrise</string>
     <string name="always_on_display_schedule_mixed_sunset">Turns on from sunset till a time</string>
     <string name="always_on_display_schedule_mixed_sunrise">Turns on from a time till sunrise</string>
+    
+    <!-- Wallpaper -->
+    <string name="force_dark_text_wp_title">Force dark text wallpaper</string>
+    <string name="force_dark_text_wp_summary">Use dark colored text on lockscreen and wallpaper screens</string>
 </resources>

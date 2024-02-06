@@ -25,6 +25,7 @@ import android.os.Looper;
 import android.os.UserHandle;
 import android.provider.Settings;
 import android.util.AttributeSet;
+import android.widget.Toast;
 
 import androidx.preference.SwitchPreference;
 import androidx.preference.Preference;
@@ -92,6 +93,7 @@ public class SystemSwitchPreference extends SwitchPreference {
     private void init() {
         final String settingsKey = settingsType == null ? "system" : settingsType;
         final String restartKey = restartLevel == null ? "none" : restartLevel;
+        final ThemeUtils mThemeUtils = new ThemeUtils(mContext);
         boolean isChecked;
         switch (settingsKey) {
             case SYSTEM:
@@ -140,13 +142,15 @@ public class SystemSwitchPreference extends SwitchPreference {
                     default:
                         break;
                 }
-               ThemeUtils mThemeUtils = new ThemeUtils(mContext);
-                if (shouldReevaluate){
-                    if (value) {
-                        mThemeUtils.setOverlayEnabled("android.theme.customization.sysui_reevaluate", overlayThemeTarget, overlayThemeTarget);
-                    } else {
-                        mThemeUtils.setOverlayEnabled("android.theme.customization.sysui_reevaluate", "com.android.system.qs.sysui_reevaluate", overlayThemeTarget);
-                    }
+                if (shouldReevaluate) {
+                    Toast.makeText(mContext, mContext.getString(R.string.reevaluating_theme), Toast.LENGTH_SHORT).show();
+                    new Handler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                                mThemeUtils.setOverlayEnabled("android.theme.customization.sysui_reevaluate", overlayThemeTarget, overlayThemeTarget);
+                                mThemeUtils.setOverlayEnabled("android.theme.customization.sysui_reevaluate", "com.android.system.qs.sysui_reevaluate", overlayThemeTarget);
+                        }
+                    }, Toast.LENGTH_SHORT + 500L);
                 }
                 return true;
             }

@@ -28,7 +28,10 @@ public class AdaptiveSwitchPreference extends SwitchPreference {
 
     public AdaptiveSwitchPreference(Context context, AttributeSet attrs) {
         super(context, attrs);
-        setLayoutResource(AdaptivePreferenceUtils.getLayoutResourceId(context, attrs));
+        int layoutRes = AdaptivePreferenceUtils.getLayoutResourceId(context, attrs);
+        if (layoutRes != -1) {
+            setLayoutResource(layoutRes);
+        }
     }
 }
 
