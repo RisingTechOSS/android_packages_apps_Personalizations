@@ -136,7 +136,7 @@ public class LockScreen extends SettingsPreferenceFragment implements
             final boolean booleanValue = (boolean) newValue;
             Settings.System.putIntForUser(getActivity().getContentResolver(), ALBUM_ART_KEY, booleanValue ? 1 : 0, UserHandle.USER_CURRENT);
             updateAlbumArtPref();
-            SystemProperties.set("persist.wm.debug.lockscreen_live_wallpaper", String.valueOf(!booleanValue));
+            SystemProperties.set("persist.sys.lockscreen_live_wallpaper", String.valueOf(!booleanValue));
             systemUtils.showSystemUIRestartDialog(getContext());
             return true;
         } else if (widgetKeysMap.containsKey(preference)) {
