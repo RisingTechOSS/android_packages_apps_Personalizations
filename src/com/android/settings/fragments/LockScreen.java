@@ -153,6 +153,9 @@ public class LockScreen extends SettingsPreferenceFragment implements
     }
 
     private void setWidgetValues(String widgets, Preference... preferences) {
+        if (widgets == null) {
+            return;
+        }
         List<String> widgetList = Arrays.asList(widgets.split(","));
         for (int i = 0; i < preferences.length && i < widgetList.size(); i++) {
             widgetKeysMap.put(preferences[i], widgetList.get(i).trim());
