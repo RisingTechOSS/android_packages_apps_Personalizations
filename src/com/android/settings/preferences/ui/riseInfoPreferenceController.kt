@@ -17,6 +17,9 @@
 package com.android.settings.preferences.ui
 
 import android.app.AlertDialog
+import android.animation.Animator
+import android.animation.AnimatorListenerAdapter
+import android.animation.ObjectAnimator
 import android.content.ComponentName
 import android.content.Context
 import android.content.Intent
@@ -27,6 +30,7 @@ import android.widget.EditText
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
+import android.view.animation.AccelerateDecelerateInterpolator
 import android.view.LayoutInflater
 import android.view.View
 import androidx.preference.Preference
@@ -92,14 +96,15 @@ class riseInfoPreferenceController(context: Context) : AbstractPreferenceControl
         val codeName = getProp(PROP_RISING_CODE).lowercase()
         val risingMaintainer = getRisingMaintainer(releaseType)
         val isOfficial = releaseType == "official"
-        
-        val hwInfoPreference = screen.findPreference<LayoutPreference>(KEY_HW_INFO)!!
-        val swInfoPreference = screen.findPreference<LayoutPreference>(KEY_DEVICE_INFO)!!
-        val statusPreference = screen.findPreference<Preference>(KEY_BUILD_STATUS)!!
-        val deviceText = swInfoPreference.findViewById<TextView>(R.id.device_name_model)
-        val editBtn = swInfoPreference.findViewById<TextView>(R.id.edit_device_name_model)
 
-        statusPreference.setTitle(getRisingBuildStatus(releaseType))
+        val hwInfoPreference = screen.findPreference<LayoutPreference>(KEY_HW_INFO)!!
+        val swInfoPreference = screen.findPreference<LayoutPreference>(KEY_SW_INFO)!!
+        val statusPreference = screen.findPreference<Preference>(KEY_BUILD_STATUS)!!
+        val aboutHwInfoView: View = hwInfoPreference.findViewById(R.id.about_device_hardware)
+        val deviceHardwareCard: View = hwInfoPreference.findViewById<TextView>(R.id.device_hardware)
+        val deviceShowcaseCard: View = hwInfoPreference.findViewById<TextView>(R.id.device_showcase_container)
+
+        statusPreference.setTitle(FIRMWARE_NAME + " " + getRisingVersion() + " " + getRisingBuildStatus(releaseType))
         statusPreference.setSummary(risingMaintainer)
         statusPreference.setIcon(if (isOfficial) R.drawable.verified else R.drawable.unverified)
 
@@ -108,20 +113,49 @@ class riseInfoPreferenceController(context: Context) : AbstractPreferenceControl
             Settings.Global.DEVICE_NAME
         )
 
-        if (!settingsDeviceName.isNullOrBlank()) {
-            deviceText.text = settingsDeviceName
-        }
-
-        editBtn.setOnClickListener {
-            showEditDialog(deviceText)
-        }
-
         hwInfoPreference.apply {
             findViewById<TextView>(R.id.device_chipset).text = getRisingChipset()
-            findViewById<TextView>(R.id.device_storage).text = DeviceInfoUtil.getTotalRam() + " | " + DeviceInfoUtil.getStorageTotal(mContext)
+            findViewById<TextView>(R.id.device_storage).text =
+                "${DeviceInfoUtil.getTotalRam()} | ${DeviceInfoUtil.getStorageTotal(mContext)}"
             findViewById<TextView>(R.id.device_battery_capacity).text = DeviceInfoUtil.getBatteryCapacity(mContext)
             findViewById<TextView>(R.id.device_resolution).text = DeviceInfoUtil.getScreenResolution(mContext)
+            findViewById<TextView>(R.id.device_showcase).text = getDeviceName()
         }
+        
+       swInfoPreference.apply {
+            findViewById<TextView>(R.id.security_patch_summary).text = getRisingSecurity()
+            findViewById<TextView>(R.id.kernel_info_summary).text = DeviceInfoUtils.getFormattedKernelVersion(mContext)
+        }
+                
+        aboutHwInfoView.setOnClickListener {
+            if (deviceShowcaseCard.visibility == View.VISIBLE) {
+                applyCrossfadeAnimation(deviceHardwareCard, deviceShowcaseCard)
+            } else {
+                applyCrossfadeAnimation(deviceShowcaseCard, deviceHardwareCard)
+            }
+        }
+    }
+    
+    private fun applyCrossfadeAnimation(viewToShow: View, viewToHide: View) {
+        viewToShow.alpha = 0f
+        viewToShow.visibility = View.VISIBLE
+
+        viewToShow.animate()
+            .alpha(1f)
+            .setDuration(500)
+            .setListener(null)
+
+        viewToHide.animate()
+            .alpha(0f)
+            .setDuration(500)
+            .setListener(object : Animator.AnimatorListener {
+                override fun onAnimationStart(animation: Animator) {}
+                override fun onAnimationCancel(animation: Animator) {}
+                override fun onAnimationRepeat(animation: Animator) {}
+                override fun onAnimationEnd(animation: Animator) {
+                    viewToHide.visibility = View.GONE
+                }
+            })
     }
 
     private fun showEditDialog(tv: TextView) {
@@ -158,6 +192,9 @@ class riseInfoPreferenceController(context: Context) : AbstractPreferenceControl
     }
 
     companion object {
+        private const val FIRMWARE_NAME = "RisingUI"
+        private const val KEY_KERNEL_INFO = "kernel_version_sw"
+        private const val KEY_SW_INFO = "my_device_sw_header"
         private const val KEY_HW_INFO = "my_device_hw_header"
         private const val KEY_DEVICE_INFO = "my_device_info_header"
         private const val KEY_BUILD_STATUS = "rom_build_status"
