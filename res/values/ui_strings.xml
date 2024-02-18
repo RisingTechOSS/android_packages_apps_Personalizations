@@ -835,4 +835,8 @@
     <string name="clock_date_right">Right of time</string>
     <string name="clock_date_left">Left of time</string>
     <string name="clock_font_size_title">Clock font size</string>
+
+    <!-- Unlimited google photos storage -->
+    <string name="photos_spoof_title">Enable unlimited Photos storage</string>
+    <string name="photos_spoof_summary">Spoof your device as Pixel XL for Google Photos app only to enable unlimited storage backup</string>
 </resources>

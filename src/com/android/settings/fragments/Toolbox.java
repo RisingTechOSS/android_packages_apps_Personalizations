@@ -44,15 +44,30 @@ import java.util.List;
 import java.util.ArrayList;
 
 @SearchIndexable
-public class Toolbox extends SettingsPreferenceFragment {
+public class Toolbox extends SettingsPreferenceFragment implements
+        Preference.OnPreferenceChangeListener{
 
     public static final String TAG = "Toolbox";
+
+    private static final String PROP_PHOTOS_SPOOF = "persist.sys.pixelprops.gphotos";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.rising_settings_toolbox);
+
+        final PreferenceScreen prefScreen = getPreferenceScreen();
+    }
+
+    @Override
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+        return false;
+    }
+
+    public static void reset(Context mContext) {
+        ContentResolver resolver = mContext.getContentResolver();
+        SystemProperties.set(PROP_PHOTOS_SPOOF, "false");
     }
 
     @Override

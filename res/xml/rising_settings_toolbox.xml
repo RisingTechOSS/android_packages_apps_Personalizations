@@ -61,6 +61,14 @@
         android:title="@string/three_finger_gesture"
         android:summary="@string/three_finger_gesture_summary"
         android:defaultValue="false"
+        app:position="middle" />
+
+    <!-- Unlimited google photos storage -->
+    <com.android.settings.preferences.SystemPropertySwitchPreference
+        android:key="persist.sys.pixelprops.gphotos"
+        android:title="@string/photos_spoof_title"
+        android:summary="@string/photos_spoof_summary"
+        android:defaultValue="false"
         app:position="bottom" />
 
 </PreferenceScreen>
