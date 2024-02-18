@@ -104,6 +104,7 @@
             android:title="@string/qs_tile_hide_label_title"
             android:summary="@string/qs_tile_hide_label_summary"
             android:defaultValue="false"
+            app:reevaluate="true"
             app:position="middle" />
 
         <com.android.settings.preferences.SystemSwitchPreference
@@ -111,6 +112,7 @@
             android:title="@string/qs_tile_vertical_layout_title"
             android:summary="@string/qs_tile_vertical_layout_summary"
             android:defaultValue="false"
+            app:reevaluate="true"
             app:position="bottom" />
 
         <com.android.settingslib.widget.LayoutPreference
