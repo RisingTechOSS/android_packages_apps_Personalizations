@@ -839,4 +839,8 @@
     <!-- Unlimited google photos storage -->
     <string name="photos_spoof_title">Enable unlimited Photos storage</string>
     <string name="photos_spoof_summary">Spoof your device as Pixel XL for Google Photos app only to enable unlimited storage backup</string>
+
+    <!-- GMS Spoof -->
+    <string name="gms_spoof_title">Enable GMS spoof</string>
+    <string name="gms_spoof_summary">Spoof your device to pass Google Play Attestation</string>
 </resources>

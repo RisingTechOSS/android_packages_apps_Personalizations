@@ -50,6 +50,7 @@ public class Toolbox extends SettingsPreferenceFragment implements
     public static final String TAG = "Toolbox";
 
     private static final String PROP_PHOTOS_SPOOF = "persist.sys.pixelprops.gphotos";
+    private static final String PROP_GMS_SPOOF = "persist.sys.pixelprops.gms";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -68,6 +69,7 @@ public class Toolbox extends SettingsPreferenceFragment implements
     public static void reset(Context mContext) {
         ContentResolver resolver = mContext.getContentResolver();
         SystemProperties.set(PROP_PHOTOS_SPOOF, "false");
+        SystemProperties.set(PROP_GMS_SPOOF, "false");
     }
 
     @Override
