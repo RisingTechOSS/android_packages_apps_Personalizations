@@ -43,6 +43,8 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.utils.DeviceUtils;
 
+import com.android.settings.preferences.ui.AdaptivePreferenceUtils;
+
 import java.util.Date;
 import java.util.Set;
 import java.util.List;
@@ -89,6 +91,7 @@ public class Clock extends SettingsPreferenceFragment implements Preference.OnPr
         }
 
         mStatusBarClock = findPreference(STATUS_BAR_CLOCK_STYLE);
+        mStatusBarClock.setOnPreferenceChangeListener(this);
 
         int dateDisplay = Settings.System.getIntForUser(resolver,
                 Settings.System.STATUS_BAR_CLOCK_DATE_DISPLAY, 0, UserHandle.USER_CURRENT);
@@ -164,6 +167,9 @@ public class Clock extends SettingsPreferenceFragment implements Preference.OnPr
             return true;
       } else if (preference == mClockDateStyle) {
           parseClockDateFormats();
+          return true;
+      } else if (preference == mStatusBarClock) {
+          AdaptivePreferenceUtils.refreshTheme(getActivity());
           return true;
       } else if (preference == mClockDateFormat) {
           int index = mClockDateFormat.findIndexOfValue((String) newValue);

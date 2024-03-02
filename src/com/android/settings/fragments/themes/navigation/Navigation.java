@@ -28,6 +28,7 @@ import com.android.settings.SettingsPreferenceFragment;
 
 import com.android.internal.util.rising.systemUtils;
 import com.android.internal.util.rising.ThemeUtils;
+import com.android.settings.preferences.ui.AdaptivePreferenceUtils;
 
 public class Navigation extends SettingsPreferenceFragment 
         implements Preference.OnPreferenceChangeListener {
@@ -63,12 +64,12 @@ public class Navigation extends SettingsPreferenceFragment
             String category = "android.theme.customization.gesture_pill";
             String overlayName = "com.android.overlay.customization.no_gesture";
             String overlayThemeTarget = "android";
-            systemUtils.showSystemUIRestartDialog(getActivity());
             if (prefValue == 0) {
                 mThemeUtils.setOverlayEnabled(category, overlayThemeTarget, overlayThemeTarget);
                 mThemeUtils.setOverlayEnabled(category, overlayName, overlayThemeTarget);
             } else {
                 mThemeUtils.setOverlayEnabled(category, overlayThemeTarget, overlayThemeTarget);
+                AdaptivePreferenceUtils.refreshTheme(getActivity());
             }
         } else if (preference == gestureRadiusPref) {
             systemUtils.showSystemUIRestartDialog(getActivity());

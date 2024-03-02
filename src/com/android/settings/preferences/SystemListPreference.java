@@ -23,7 +23,6 @@ import android.os.Handler;
 import android.os.UserHandle;
 import android.provider.Settings;
 import android.util.AttributeSet;
-import android.widget.Toast;
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import com.android.internal.util.rising.systemUtils;
@@ -73,7 +72,6 @@ public class SystemListPreference extends ListPreference {
         } finally {
             typedArray.recycle();
         }
-        final ThemeUtils mThemeUtils = new ThemeUtils(context);
         final String settingsKey = settingsType;
         final String restartKey = restartLevel;
         CharSequence[] entries = getEntries();
@@ -148,14 +146,7 @@ public class SystemListPreference extends ListPreference {
                         break;
                 }
                 if (shouldReevaluate) {
-                    Toast.makeText(mContext, mContext.getString(R.string.reevaluating_theme), Toast.LENGTH_SHORT).show();
-                    new Handler().postDelayed(new Runnable() {
-                        @Override
-                        public void run() {
-                                mThemeUtils.setOverlayEnabled("android.theme.customization.sysui_reevaluate", overlayThemeTarget, overlayThemeTarget);
-                                mThemeUtils.setOverlayEnabled("android.theme.customization.sysui_reevaluate", "com.android.system.qs.sysui_reevaluate", overlayThemeTarget);
-                        }
-                    }, Toast.LENGTH_SHORT + 500L);
+                    AdaptivePreferenceUtils.refreshTheme(mContext);
                 }
                 return true;
             }

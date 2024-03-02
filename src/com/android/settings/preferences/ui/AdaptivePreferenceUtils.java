@@ -17,10 +17,28 @@ package com.android.settings.preferences.ui;
 
 import android.content.Context;
 import android.content.res.TypedArray;
+import android.os.Handler;
 import android.util.AttributeSet;
 import com.android.settings.R;
+import android.widget.Toast;
+
+import com.android.internal.util.rising.ThemeUtils;
 
 public class AdaptivePreferenceUtils {
+
+    private static final String overlayThemeTarget  = "com.android.systemui";
+
+    public static void refreshTheme(Context context) {
+        final ThemeUtils themeUtils = new ThemeUtils(context);
+        Toast.makeText(context, context.getString(R.string.reevaluating_theme), Toast.LENGTH_SHORT).show();
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                themeUtils.setOverlayEnabled("android.theme.customization.sysui_reevaluate", overlayThemeTarget, overlayThemeTarget);
+                themeUtils.setOverlayEnabled("android.theme.customization.sysui_reevaluate", "com.android.system.qs.sysui_reevaluate", overlayThemeTarget);
+            }
+        }, Toast.LENGTH_SHORT + 500L);
+    }
 
     public static Position getPosition(Context context, AttributeSet attrs) {
         TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.AdaptivePreference);
