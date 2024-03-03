@@ -43,6 +43,7 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
 
+import com.android.internal.util.ArrayUtils;
 import com.android.internal.util.rising.systemUtils;
 
 import java.util.Arrays;
@@ -117,6 +118,14 @@ public class LockScreen extends SettingsPreferenceFragment implements
 		((SwitchPreference) mForceDarkWallpaperTextColor).setChecked(SystemProperties.getBoolean("persist.sys.wallpapercolors.force_dark_text", false));
 
 		updateAlbumArtPref();
+		
+        int[] udfpsProps = getActivity().getResources().getIntArray(
+                com.android.internal.R.array.config_udfps_sensor_props);
+        PreferenceScreen preferenceScreen = getPreferenceScreen();
+        Preference udfpsAnimationPref = findPreference("udfps_settings");
+        if (ArrayUtils.isEmpty(udfpsProps)) {
+            preferenceScreen.removePreference(udfpsAnimationPref);
+        }
 	}
 
     private void updateAlbumArtPref() {
