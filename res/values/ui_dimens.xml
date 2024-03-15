@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+    <dimen name="custom_avatar_length">48dp</dimen>
+    <dimen name="custom_avatar_margin_end">8dp</dimen>
+    <dimen name="homepage_highlight_card_height">100dp</dimen>
+    <dimen name="center_guideline_offset_start">100dp</dimen>
+    <dimen name="oval_notification_size">26dp</dimen>
+    <dimen name="op_control_margin_list_top2">12dp</dimen>
+    <dimen name="op_control_margin_space1">4dp</dimen>
+    <dimen name="op_control_margin_space7">40.0dip</dimen>
+    <dimen name="op_control_margin_screen_right3">20.0dip</dimen>
+    <dimen name="op_control_margin_screen_left3">20dp</dimen>
+    <dimen name="op_control_margin_space3">16.0dip</dimen>
+    <dimen name="op_control_margin_list_bottom4">21.0dip</dimen>
+    <dimen name="op_control_margin_list_top4">21.0dip</dimen>
+    <dimen name="op_control_avatar_size3">52.5dp</dimen>
+    <dimen name="dashboard_tile_image_size">42dp</dimen>
+    <dimen name="dashboard_tile_foreground_image_size">@dimen/op_control_icon_size_indicator</dimen>
+    <dimen name="op_control_icon_size_indicator">24.0dip</dimen>
+    <dimen name="dashboard_tile_foreground_image_size_op">21.0dip</dimen>
+    <dimen name="card_margin_start">20.0dp</dimen>
+    <dimen name="card_margin_end">20.0dp</dimen>
+    <dimen name="card_margin_rui_start">38.0dp</dimen>
+    <dimen name="card_margin_rui_end">24.0dp</dimen>
+    <dimen name="card_padding_end">70.0dp</dimen>
+    <dimen name="card_height">75.0dp</dimen>
+    <dimen name="card_height_rui">75.0dp</dimen>
+    <dimen name="card_height_round">75.0dp</dimen>
+    <dimen name="card_radius_highlight">22dp</dimen>
+    <dimen name="card_radius">28dp</dimen>
+    <dimen name="top_card_radius">4dp</dimen>
+    <dimen name="mid_card_radius">4dp</dimen>
+    <dimen name="bot_card_radius">4dp</dimen>
+    <dimen name="pref_top_card_bottom_margin">2dp</dimen>
+    <dimen name="pref_mid_card_bottom_margin">2dp</dimen>
+    <dimen name="pref_bot_card_bottom_margin">20dp</dimen>
+    <dimen name="dashboard_icon_size">42dp</dimen>
+    <dimen name="top_pref_start">60dp</dimen>
+    <dimen name="card_height_oos">70.0dp</dimen>
+    <dimen name="card_highlight_margin_end">20dp</dimen>
+    <dimen name="card_highlight_margin_start">20dp</dimen>
+    <dimen name="card_margin_start_aqua">20dp</dimen>
+    <dimen name="card_margin_end_aqua">20dp</dimen>
+    <dimen name="default_margin">16dp</dimen>
+    <dimen name="default_padding">16dp</dimen>
+    <dimen name="header_text_size_contextual">24sp</dimen>
+    <dimen name="header_text_size_default">36sp</dimen>
+    <dimen name="homepage_user_icon_size">110dp</dimen>
+    <dimen name="homepage_banner_margin_top">44dp</dimen>
+    <dimen name="homepage_avatar_margin_top">10dp</dimen>
+    <dimen name="top_level_preference_summary_max_width">200dp</dimen>
+    <dimen name="personalization_solo_preference_height">100dp</dimen>
+    <dimen name="kg_widget_margin_vertical">10dp</dimen>
+    <dimen name="kg_widgets_margin_horizontal">8dp</dimen>
+    <dimen name="kg_widgets_main_margin_start">12dp</dimen>
+    <dimen name="kg_widgets_main_margin_end">12dp</dimen>
+    <dimen name="kg_widget_circle_size">64dp</dimen>
+    <dimen name="kg_widgets_icon_padding">20dp</dimen>
+    <dimen name="kg_main_widgets_icon_padding">20dp</dimen>
+    <dimen name="lockscreen_preview_height_all">580dp</dimen>
+    <dimen name="lockscreen_preview_height_with_widgets">480dp</dimen>
+    <dimen name="lockscreen_preview_height_with_no_widgets">380dp</dimen>
+</resources>
