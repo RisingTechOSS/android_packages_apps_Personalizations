@@ -933,4 +933,13 @@
         <item>11</item>
         <item>12</item>
     </string-array>
+    
+   <string-array name="quickswitch_launcher_entries">
+        <item>QuickStep</item>
+        <item>Pixel Launcher</item>
+    </string-array>
+    <string-array name="quickswitch_launcher_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
 </resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2023 the risingOS Android Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title="@string/quickswitch_launcher_title" >
+
+    <com.crdroid.settings.preferences.SystemPropertyListPreference
+        android:key="persist.sys.default_launcher"
+        android:icon="@drawable/ic_home"
+        android:title="@string/quickswitch_launcher_title"
+        android:entries="@array/quickswitch_launcher_entries"
+        android:entryValues="@array/quickswitch_launcher_values"
+        android:summary="%s"
+        />
+
+    <Preference
+        android:key="nothing_launcher_customizations"
+        android:icon="@drawable/ic_gaming"
+        android:title="@string/nothing_launcher_customizations_title"
+        android:summary="@string/nothing_launcher_customizations_summary">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.nothing.launcher"
+            android:targetClass="com.nothing.launcher.setting.wallpaper.CustomisationSettingsActivity" />
+    </Preference>
+
+</PreferenceScreen>
