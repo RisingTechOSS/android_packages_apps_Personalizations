@@ -24,6 +24,11 @@
     <string name="reset_settings_title">Reset settings</string>
     <string name="reset_settings_message">This will reset most crdroid settings to their default values for the current user. Would you like to continue?</string>
 
+    <!-- Changelog -->
+    <string name="changelog_rising_title">What\'s New?</string>
+    <string name="changelog_rising_summary">Discover the latest enhancements and updates we\'ve made in this version.</string>
+    <string name="changelog_rising_error">Unable to load changelog</string>
+
     <!-- Personalization Categories -->
     <string name="button_title">Buttons</string>
     <string name="lockscreen_title">Lock Screen</string>
@@ -35,6 +40,66 @@
     <string name="statusbar_title">Status Bar</string>
     <string name="display_title">Display</string>
     <string name="ui_title">User Interface</string>
+    <string name="toolbox_title">Toolbox</string>
+    <string name="toolbox_summary">System features</string>
+    <string name="themes_title">Themes</string>
+    <string name="themes_summary">Show your true colours</string>
+
+     <!-- Device Info screen -->
+    <string name="firmware_name_text">risingOS</string>
+    <string name="firmware_build_type_title">Build type</string>
+    <string name="firmware_build_summary_title">By maintainer</string>
+    <string name="build_is_official_title">#Official</string>
+    <string name="build_is_community_title">#Community</string>
+    <string name="maintainer_summary">%s</string>
+    <string name="unknown_maintainer">unknown</string>
+    <string name="device_info_platform_version">14 | fourteen | UpsideDownCake</string>
+    <string name="about_rising_device">Rising Device</string>
+    <string name="device_header_info_category_title">Build type</string>
+    <string name="device_info_hw_sw_more">More</string>
+    <string name="device_info_security_patch">Security update</string>
+    <string name="edit_device_name_title">Edit Device Name</string>
+    <string name="edit_text_hint">Enter new device name</string>
+    <string name="build_status">Build Status</string>
+    <string name="hardware_info">Hardware</string>
+    <string name="device_info_battery">Battery</string>
+    <string name="device_info_chipset">Chipset</string>
+    <string name="device_info_resolution">Resolution</string>
+    <string name="device_info_storage">Storage</string>
+
+   <!-- rising dashboard -->
+    <string name="about_settings_title">About Us</string>
+    <string name="about_settings_summary">Information about RisingOS</string>
+    <string name="buttons_settings_title">Buttons</string>
+    <string name="buttons_settings_summary">Tweak hardware buttons</string>
+    <string name="lockscreen_settings_title">Lockscreen</string>
+    <string name="general_lockscreen_title">General lockscreen settings</string>
+    <string name="lockscreen_settings_summary">Customize lockscreen interface</string>
+    <string name="misc_gen_settings_title">Miscellaneous settings</string>
+    <string name="misc_settings_title">Miscellaneous</string>
+    <string name="misc_settings_summary">Misc uncategorized stuffs</string>
+    <string name="nav_settings_title">Navigation</string>
+    <string name="nav_settings_summary">Customize navigation behavior</string>
+    <string name="notif_settings_title">Notification</string>
+    <string name="notif_settings_summary">Control notifications and more</string>
+    <string name="qs_settings_title">QuickSettings</string>
+    <string name="qs_settings_summary">QuickSettings customizations</string>
+    <string name="sound_settings_title">Sound</string>
+    <string name="sound_settings_summary">Sound and vibrations customizations</string>
+    <string name="sb_settings_title">StatusBar</string>
+    <string name="sb_settings_summary">Customize statusbar icons, layout etc</string>
+    <string name="ui_settings_title">User Interface</string>
+    <string name="ui_settings_summary">Customize UI colors, icons, fonts etc</string>
+    <string name="gen_notif_settings_title">General notification settings</string>
+    <string name="gen_tb_settings_title">General toolbox settings</string>
+    <string name="gen_ui_settings_title">General user interface settings</string>
+    <string name="settings_themes_summary">Customize settings app user interface</string>
+    <string name="misc_audio_settings_title">Miscellaneous sounds/audio settings</string>
+    <string name="category_name_network">Network and Connectivity settings</string>
+    <string name="category_name_sounds">General sound and notification settings</string>
+    <string name="category_name_sounds_others">Other sound settings</string>
+    <string name="category_name_ui_others">Other User Interface settings</string>
+    <string name="category_name_toolbox_others">Other Toolbox settings</string>
 
     <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>

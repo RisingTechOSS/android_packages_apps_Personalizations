@@ -22,6 +22,7 @@ import android.os.Bundle;
 import android.os.SystemProperties;
 import android.os.UserHandle;
 import android.provider.Settings;
+import android.text.TextUtils;
 
 import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
@@ -49,6 +50,11 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
     private static final String SYS_PHOTOS_SPOOF = "persist.sys.pixelprops.gphotos";
     private static final String SYS_NETFLIX_SPOOF = "persist.sys.pixelprops.netflix";
 
+    private static final String KEY_FORCE_FULL_SCREEN = "display_cutout_force_fullscreen_settings";
+    private static final String SMART_PIXELS = "smart_pixels";
+
+    private Preference mShowCutoutForce;
+    private Preference mSmartPixels;
     private Preference mPocketJudge;
 
     @Override
@@ -58,6 +64,7 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.crdroid_settings_misc);
 
         final PreferenceScreen prefScreen = getPreferenceScreen();
+        Context mContext = getActivity().getApplicationContext();
         final Resources res = getResources();
 
         mPocketJudge = (Preference) prefScreen.findPreference(POCKET_JUDGE);
@@ -65,25 +72,25 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
                 com.android.internal.R.bool.config_pocketModeSupported);
         if (!mPocketJudgeSupported)
             prefScreen.removePreference(mPocketJudge);
+
+	    final String displayCutout =
+            mContext.getResources().getString(com.android.internal.R.string.config_mainBuiltInDisplayCutout);
+
+        if (TextUtils.isEmpty(displayCutout)) {
+            mShowCutoutForce = (Preference) findPreference(KEY_FORCE_FULL_SCREEN);
+            prefScreen.removePreference(mShowCutoutForce);
+        }
+
+        mSmartPixels = (Preference) prefScreen.findPreference(SMART_PIXELS);
+        boolean mSmartPixelsSupported = getResources().getBoolean(
+                com.android.internal.R.bool.config_supportSmartPixels);
+        if (!mSmartPixelsSupported)
+            prefScreen.removePreference(mSmartPixels);
     }
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         return false;
-    }
-
-    public static void reset(Context mContext) {
-        ContentResolver resolver = mContext.getContentResolver();
-        Settings.System.putIntForUser(resolver,
-                Settings.System.POCKET_JUDGE, 0, UserHandle.USER_CURRENT);
-        Settings.System.putIntForUser(resolver,
-                Settings.System.THREE_FINGER_GESTURE, 0, UserHandle.USER_CURRENT);
-        LineageSettings.System.putIntForUser(resolver,
-                LineageSettings.System.AUTO_BRIGHTNESS_ONE_SHOT, 0, UserHandle.USER_CURRENT);
-        SystemProperties.set(SYS_GAMES_SPOOF, "false");
-        SystemProperties.set(SYS_PHOTOS_SPOOF, "true");
-        SystemProperties.set(SYS_NETFLIX_SPOOF, "false");
-        SensorBlock.reset(mContext);
     }
 
     @Override
@@ -101,6 +108,18 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
                 public List<String> getNonIndexableKeys(Context context) {
                     List<String> keys = super.getNonIndexableKeys(context);
                     final Resources res = context.getResources();
+
+	                final String displayCutout =
+                        context.getResources().getString(com.android.internal.R.string.config_mainBuiltInDisplayCutout);
+
+                    if (TextUtils.isEmpty(displayCutout)) {
+                        keys.add(KEY_FORCE_FULL_SCREEN);
+                    }
+
+                    boolean mSmartPixelsSupported = context.getResources().getBoolean(
+                            com.android.internal.R.bool.config_supportSmartPixels);
+                    if (!mSmartPixelsSupported)
+                        keys.add(SMART_PIXELS);
 
                     boolean mPocketJudgeSupported = res.getBoolean(
                             com.android.internal.R.bool.config_pocketModeSupported);

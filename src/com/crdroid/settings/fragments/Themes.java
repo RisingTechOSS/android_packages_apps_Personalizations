@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2016-2023 crDroid Android Project
+ * Copyright (C) 2016-2022 crDroid Android Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,11 +16,14 @@
 package com.crdroid.settings.fragments;
 
 import android.app.Activity;
+import android.app.settings.SettingsEnums;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.os.SystemProperties;
 import android.os.UserHandle;
 import android.provider.Settings;
 
@@ -38,11 +41,12 @@ import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
 
 import java.util.List;
+import java.util.ArrayList;
 
 @SearchIndexable
-public class UserInterface extends SettingsPreferenceFragment {
+public class Themes extends SettingsPreferenceFragment {
 
-    public static final String TAG = "UserInterface";
+    public static final String TAG = "Themes";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -53,7 +57,7 @@ public class UserInterface extends SettingsPreferenceFragment {
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.CRDROID_SETTINGS;
+        return MetricsProto.MetricsEvent.VIEW_UNKNOWN;
     }
 
     /**

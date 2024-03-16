@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="2">
+
+    <LinearLayout
+        android:id="@+id/more_details"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="24dp"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:background="@drawable/custom_preference_background">
+
+        <RelativeLayout
+            android:id="@+id/more_details_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/security_patch_logo"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:tint="@color/top_level_preference_icon_tint"
+                android:src="@drawable/ic_device_info_security_wrapper"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_alignParentTop="true" />
+
+            <TextView
+                android:id="@+id/security_patch_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="20dp"
+                style="@style/op_control_text_style_h6"
+                android:textColor="@color/top_level_preference_icon_tint"
+                android:layout_below="@+id/security_patch_logo"
+                android:textSize="18sp"
+                android:text="@string/device_info_security_patch"
+                android:layout_marginStart="20dp" />
+
+            <TextView
+                android:id="@+id/security_patch_summary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:layout_marginStart="20dp"
+                android:layout_below="@+id/security_patch_title"
+                android:layout_marginTop="2dp"
+                style="@style/op_control_text_style_body1"
+                android:textColor="@color/op_control_text_color_secondary"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/kernel_info"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_toRightOf="@+id/firmware_details"
+        android:layout_weight="1"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/custom_preference_background"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:clipChildren="true"
+        android:clipToPadding="true"
+        android:clipToOutline="true">
+
+            <ImageView
+                android:id="@+id/kernel_info_logo"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:tint="@color/top_level_preference_icon_tint"
+                android:src="@drawable/ic_device_info_kernel_wrapper"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_alignParentTop="true" />
+
+            <TextView
+                android:id="@+id/kernel_info_title"
+                style="@style/op_control_text_style_h6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kernel_info_logo"
+                android:textSize="18sp"
+                android:textColor="@color/top_level_preference_icon_tint"
+                android:text="@string/kernel_version"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp" />
+            
+            <TextView
+                android:id="@+id/kernel_info_summary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12.5sp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_below="@+id/kernel_info_title"
+                android:layout_marginTop="2dp"
+                style="@style/op_control_text_style_body1"
+                android:textColor="@color/op_control_text_color_secondary"
+                android:maxLines="2"
+                android:ellipsize="end"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
