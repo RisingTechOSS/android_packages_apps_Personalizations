@@ -24,14 +24,22 @@
         android:key="sound_illustration"
         lineage:lottie_rawRes="@raw/sound_illustration" />
 
+    <!-- Sound Engine -->
+    <com.android.settings.preferences.ui.AdaptivePreference
+        android:key="sound_engine"
+        android:icon="@drawable/ic_settings_sound"
+        android:title="@string/sound_engine_title"
+        android:summary="@string/sound_engine_summary"
+        android:fragment="com.crdroid.settings.fragments.sound.SoundEngine"
+        lineage:position="top"  />
+
     <!-- Pulse music visualizer -->
     <com.android.settings.preferences.ui.AdaptivePreference
         android:key="pulse_settings"
         android:icon="@drawable/ic_pulse"
         android:title="@string/pulse_settings"
         android:summary="@string/pulse_settings_summary"
-        android:fragment="com.crdroid.settings.fragments.sound.PulseSettings"
-        lineage:position="top" />
+        android:fragment="com.crdroid.settings.fragments.sound.PulseSettings" />
 
     <!-- Volume steps -->
     <com.android.settings.preferences.ui.AdaptivePreference

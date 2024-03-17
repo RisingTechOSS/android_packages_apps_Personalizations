@@ -47,4 +47,5 @@
     <color name="lockscreen_widget_background_color_light">@android:color/system_neutral1_0</color>
     <color name="lockscreen_widget_active_color_dark">@android:color/system_accent1_100</color>
     <color name="lockscreen_widget_active_color_light">@android:color/system_accent1_600</color>
+    <color name="sound_engine_menu_border_selected_color">#0b6ae2</color>
 </resources>
