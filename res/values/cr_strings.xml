@@ -1438,4 +1438,10 @@
     <string name="quickswitch_launcher_summary">Customize default homescreen app</string>
     <string name="nothing_launcher_customizations_title">Nothing launcher customizations</string>
     <string name="nothing_launcher_customizations_summary">Customize nothing launcher homescreen app</string>
+    
+   <!-- Font styles -->
+    <string name="font_styles_title">Font Styles</string>
+    <string name="font_styles_summary">Change system font style</string>
+    <string name="font_preview_text">The quick brown\nfox jumps over the\nlazy dog\n\nABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijkl\nmnopqrstuvwxyz\n1234567890</string>
+    <string name="apply_button_text">Apply</string>
 </resources>
