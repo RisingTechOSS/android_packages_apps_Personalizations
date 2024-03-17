@@ -20,6 +20,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:title="@string/island_notification_title">
 
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="island_illustration"
+        app:lottie_rawRes="@raw/island_animation" />
+
     <com.crdroid.settings.preferences.SystemSettingSwitchPreference
         android:key="island_notification"
         android:title="@string/island_notification_title"

@@ -20,6 +20,10 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/sound_settings_title">
 
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="sound_illustration"
+        lineage:lottie_rawRes="@raw/sound_illustration" />
+
     <!-- Pulse music visualizer -->
     <com.android.settings.preferences.ui.AdaptivePreference
         android:key="pulse_settings"

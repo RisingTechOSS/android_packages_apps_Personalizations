@@ -20,6 +20,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:title="@string/misc_title">
 
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="toolbox_illustration"
+        app:lottie_rawRes="@raw/toolbox_illustration" />
+
     <PreferenceCategory
         android:key="gen_toolbox"
         android:title="@string/gen_tb_settings_title">

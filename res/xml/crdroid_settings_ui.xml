@@ -20,6 +20,10 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/ui_settings_title">
 
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="themes_illustration"
+        lineage:lottie_rawRes="@raw/themes_illustration" />
+
     <PreferenceCategory
         android:key="gen_ui"
         android:title="@string/gen_ui_settings_title">
