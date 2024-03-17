@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2016-2019 crDroid Android Project
+ * Copyright (C) 2024 risingOS Android Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,29 +16,28 @@
 package com.crdroid.settings.preferences;
 
 import android.content.Context;
-import android.provider.Settings;
-import android.os.UserHandle;
+import androidx.preference.ListPreference;
+import androidx.preference.PreferenceDataStore;
+import android.text.TextUtils;
 import android.util.AttributeSet;
-
-import lineageos.preference.SelfRemovingSwitchPreference;
+import android.provider.Settings;
 
 import com.crdroid.settings.utils.AdaptivePreferenceUtils;
 
-public class GlobalSettingSwitchPreference extends SelfRemovingSwitchPreference {
+import lineageos.providers.LineageSettings;
 
-    public GlobalSettingSwitchPreference(Context context, AttributeSet attrs, int defStyle) {
+import lineageos.preference.LineageSystemSettingListPreference;
+
+public class RisingSystemSettingListPreference extends LineageSystemSettingListPreference {
+
+    public RisingSystemSettingListPreference(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         init(context, attrs);
     }
 
-    public GlobalSettingSwitchPreference(Context context, AttributeSet attrs) {
+    public RisingSystemSettingListPreference(Context context, AttributeSet attrs) {
         super(context, attrs);
         init(context, attrs);
-    }
-
-    public GlobalSettingSwitchPreference(Context context) {
-        super(context);
-        init(context, null);
     }
 
     private void init(Context context, AttributeSet attrs) {
@@ -46,21 +45,5 @@ public class GlobalSettingSwitchPreference extends SelfRemovingSwitchPreference 
         if (layoutRes != -1) {
             setLayoutResource(layoutRes);
         }
-    }
-
-    @Override
-    protected boolean isPersisted() {
-        return Settings.Global.getString(getContext().getContentResolver(), getKey()) != null;
-    }
-
-    @Override
-    protected void putBoolean(String key, boolean value) {
-        Settings.Global.putInt(getContext().getContentResolver(), key, value ? 1 : 0);
-    }
-
-    @Override
-    protected boolean getBoolean(String key, boolean defaultValue) {
-        return Settings.Global.getInt(getContext().getContentResolver(),
-                key, defaultValue ? 1 : 0) != 0;
     }
 }

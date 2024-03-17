@@ -17,18 +17,20 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-    xmlns:lineage="http://schemas.android.com/apk/res-auto">
+    xmlns:lineage="http://schemas.android.com/apk/res-auto"
+    android:title="@string/qs_settings_title">
 
     <PreferenceCategory
          android:title="@string/qs_misc_category">
 
         <!-- QS Header -->
-        <Preference
+        <com.android.settings.preferences.ui.AdaptivePreference
             android:key="qs_header_image"
             android:icon="@drawable/ic_header"
             android:title="@string/qs_header_image_title"
             android:summary="@string/qs_header_image_summary"
-            android:fragment="com.crdroid.settings.fragments.quicksettings.QsHeaderImageSettings" />
+            android:fragment="com.crdroid.settings.fragments.quicksettings.QsHeaderImageSettings"
+            lineage:position="top" />
 
         <!-- QS clock
         <com.crdroid.settings.preferences.SystemSettingSwitchPreference
@@ -93,20 +95,17 @@
 
         <com.crdroid.settings.preferences.SystemSettingSwitchPreference
             android:key="secure_lockscreen_qs_disabled"
-            android:icon="@drawable/ic_lock_alert"
             android:title="@string/disable_qs_title"
             android:summary="@string/disable_qs_summary"/>
 
         <com.crdroid.settings.preferences.SystemSettingSwitchPreference
             android:key="qs_dual_tone"
-            android:icon="@drawable/ic_color_bucket"
             android:title="@string/qs_dual_tone_title"
             android:summary="@string/qs_dual_tone_summary"
             android:defaultValue="true" />
 
         <com.crdroid.settings.preferences.SystemSettingSeekBarPreference
             android:key="qs_transparency"
-            android:icon="@drawable/ic_color_bucket"
             android:title="@string/qs_opacity_title"
             android:summary="@string/qs_opacity_summary"
             android:defaultValue="100"
@@ -117,14 +116,14 @@
 
         <com.crdroid.settings.preferences.SystemSettingSeekBarPreference
             android:key="qs_footer_transparency"
-            android:icon="@drawable/ic_color_bucket"
             android:title="@string/qs_footer_opacity_title"
             android:summary="@string/qs_footer_opacity_summary"
             android:defaultValue="100"
             settings:interval="1"
             settings:units="%"
             android:max="100"
-            android:min="1" />
+            android:min="1"
+            lineage:position="bottom" />
 
     </PreferenceCategory>
 
@@ -132,34 +131,32 @@
          android:title="@string/qs_brightness_slider_category">
 
         <!-- Brightness slider -->
-        <lineageos.preference.LineageSecureSettingListPreference
+        <com.crdroid.settings.preferences.SecureSettingListPreference
             android:key="qs_show_brightness_slider"
             android:icon="@drawable/ic_brightness"
             android:title="@string/qs_show_brightness_slider_title"
             android:entries="@array/qs_show_brightness_slider_entries"
             android:entryValues="@array/qs_show_brightness_slider_values"
-            android:defaultValue="1" />
+            android:defaultValue="1"
+            lineage:isLineageSettings="true"
+            lineage:position="top" />
 
-        <lineageos.preference.LineageSecureSettingListPreference
+        <com.crdroid.settings.preferences.SecureSettingListPreference
             android:key="qs_brightness_slider_position"
             android:icon="@drawable/ic_brightness"
             android:title="@string/qs_brightness_slider_position_title"
             android:entries="@array/qs_brightness_slider_position_entries"
             android:entryValues="@array/qs_brightness_slider_position_values"
+            lineage:isLineageSettings="true"
             android:defaultValue="0" />
 
-        <com.crdroid.settings.preferences.SystemSettingSwitchPreference
-            android:key="qs_brightness_slider_haptic"
-            android:icon="@drawable/ic_brightness"
-            android:title="@string/qs_brightness_slider_haptic_title"
-            android:summary="@string/qs_brightness_slider_haptic_summary"/>
-
-        <lineageos.preference.LineageSecureSettingSwitchPreference
+        <com.crdroid.settings.preferences.SecureSettingSwitchPreference
             android:key="qs_show_auto_brightness"
-            android:icon="@drawable/ic_brightness_auto"
             android:title="@string/qs_show_auto_brightness_title"
             android:summary="@string/qs_show_auto_brightness_summary"
-            android:defaultValue="true" />
+            android:defaultValue="true"
+            lineage:isLineageSettings="true"
+            lineage:position="bottom" />
 
     </PreferenceCategory>
 
@@ -167,15 +164,16 @@
         android:key="qs_layout_category"
         android:title="@string/qs_layout_category_title">
 
-        <ListPreference
+        <com.android.settings.preferences.ui.AdaptiveListPreference
             android:key="qs_tile_ui_style"
             android:icon="@drawable/ic_shapes"
             android:title="@string/qs_tile_ui_style_title"
             android:entries="@array/qs_tile_ui_style_entries"
             android:entryValues="@array/qs_tile_ui_style_values"
-            android:defaultValue="0" />
+            android:defaultValue="0"
+            lineage:position="top" />
 
-        <ListPreference
+        <com.android.settings.preferences.ui.AdaptiveListPreference
             android:key="qs_panel_style"
             android:icon="@drawable/ic_color_bucket"
             android:title="@string/qs_panel_style_title"
@@ -185,14 +183,12 @@
 
         <com.crdroid.settings.preferences.SystemSettingSwitchPreference
             android:key="qs_tile_label_hide"
-            android:icon="@drawable/ic_text"
             android:title="@string/qs_tile_label_hide_title"
             android:summary="@string/qs_tile_label_hide_summary"
             android:defaultValue="false" />
 
         <com.crdroid.settings.preferences.SystemSettingSeekBarPreference
             android:key="qs_tile_label_size"
-            android:icon="@drawable/ic_text"
             android:title="@string/qs_tile_label_size_title"
             android:max="15"
             settings:min="10"
@@ -202,14 +198,12 @@
 
         <com.crdroid.settings.preferences.SystemSettingSwitchPreference
             android:key="qs_tile_vertical_layout"
-            android:icon="@drawable/ic_qs_tile"
             android:title="@string/qs_tile_layout_title"
             android:summary="@string/qs_tile_layout_summary"
             android:defaultValue="false" />
 
         <com.crdroid.settings.preferences.SystemSettingSeekBarPreference
             android:key="qs_layout_columns"
-            android:icon="@drawable/ic_qs_tile"
             android:title="@string/qs_columns_portrait_title"
             android:max="5"
             settings:min="2"
@@ -218,7 +212,6 @@
 
         <com.crdroid.settings.preferences.SystemSettingSeekBarPreference
             android:key="qs_layout_columns_landscape"
-            android:icon="@drawable/ic_qs_tile"
             android:title="@string/qs_columns_landscape_title"
             android:max="5"
             settings:min="2"
@@ -227,7 +220,6 @@
 
         <com.crdroid.settings.preferences.SystemSettingSeekBarPreference
             android:key="qqs_layout_rows"
-            android:icon="@drawable/ic_qs_tile"
             android:title="@string/qqs_rows_portrait_title"
             android:max="3"
             settings:min="1"
@@ -236,12 +228,12 @@
 
         <com.crdroid.settings.preferences.SystemSettingSeekBarPreference
             android:key="qqs_layout_rows_landscape"
-            android:icon="@drawable/ic_qs_tile"
             android:title="@string/qqs_rows_landscape_title"
             android:max="3"
             settings:min="1"
             settings:interval="1"
-            android:defaultValue="1" />
+            android:defaultValue="1"
+            lineage:position="bottom" />
     </PreferenceCategory>
 
     <PreferenceCategory
@@ -253,11 +245,11 @@
             android:title="@string/qs_tile_animation_style_title"
             android:entries="@array/qs_tile_animation_style_entries"
             android:entryValues="@array/qs_tile_animation_style_values"
-            android:defaultValue="0" />
+            android:defaultValue="0"
+            lineage:position="top" />
 
         <com.crdroid.settings.preferences.SystemSettingSeekBarPreference
             android:key="qs_tile_animation_duration"
-            android:icon="@drawable/ic_clock"
             android:title="@string/qs_tile_animation_duration_title"
             android:defaultValue="1"
             settings:interval="1"
@@ -271,7 +263,8 @@
             android:title="@string/qs_tile_animation_interpolator_title"
             android:entries="@array/qs_tile_animation_interpolator_entries"
             android:entryValues="@array/qs_tile_animation_interpolator_values"
-            android:defaultValue="0" />
+            android:defaultValue="0"
+            lineage:position="bottom" />
 
     </PreferenceCategory>
 
@@ -280,9 +273,9 @@
 
         <com.crdroid.settings.preferences.SystemSettingSwitchPreference
             android:key="qs_show_data_usage"
-            android:icon="@drawable/ic_swap_vertical"
             android:title="@string/qs_footer_datausage_title"
-            android:summary="@string/qs_footer_datausage_summary" />
+            android:summary="@string/qs_footer_datausage_summary"
+            lineage:position="top" />
 
         <!--<com.crdroid.settings.preferences.SystemSettingSwitchPreference
             android:key="qs_footer_warnings"
@@ -323,9 +316,9 @@
 
         <com.crdroid.settings.preferences.SystemSettingSwitchPreference
             android:key="notification_material_dismiss"
-            android:icon="@drawable/ic_notification_clear_all"
             android:title="@string/notification_material_dismiss_title"
-            android:summary="@string/notification_material_dismiss_summary" />
+            android:summary="@string/notification_material_dismiss_summary"
+            lineage:position="bottom" />
 
     </PreferenceCategory>
 </PreferenceScreen>

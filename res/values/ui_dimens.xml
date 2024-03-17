@@ -17,7 +17,8 @@
 <resources>
     <dimen name="custom_avatar_length">48dp</dimen>
     <dimen name="custom_avatar_margin_end">8dp</dimen>
-    <dimen name="homepage_highlight_card_height">100dp</dimen>
+    <dimen name="homepage_highlight_length">100dp</dimen>
+    <dimen name="homepage_highlight_card_height">90dp</dimen>
     <dimen name="center_guideline_offset_start">100dp</dimen>
     <dimen name="oval_notification_size">26dp</dimen>
     <dimen name="op_control_margin_list_top2">12dp</dimen>
@@ -41,7 +42,7 @@
     <dimen name="card_height">75.0dp</dimen>
     <dimen name="card_height_rui">75.0dp</dimen>
     <dimen name="card_height_round">75.0dp</dimen>
-    <dimen name="card_radius_highlight">22dp</dimen>
+    <dimen name="card_radius_highlight">33dp</dimen>
     <dimen name="card_radius">28dp</dimen>
     <dimen name="top_card_radius">4dp</dimen>
     <dimen name="mid_card_radius">4dp</dimen>

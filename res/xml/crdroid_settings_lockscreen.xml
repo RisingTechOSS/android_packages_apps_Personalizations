@@ -17,19 +17,21 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-    xmlns:lineage="http://schemas.android.com/apk/res-auto">
+    xmlns:lineage="http://schemas.android.com/apk/res-auto"
+    android:title="@string/lockscreen_title">
 
     <PreferenceCategory
         android:key="lockscreen_clock_category"
         android:title="@string/qs_clock_title">
 
         <!-- Lockscreen Clock Font style -->
-        <Preference
+        <com.android.settings.preferences.ui.AdaptivePreference
             android:key="android.theme.customization.lockscreen_clock_font"
             android:icon="@drawable/ic_font"
             android:title="@string/theme_customization_lock_clock_title"
             android:summary="@string/theme_customization_lock_clock_summary"
-            android:fragment="com.crdroid.settings.fragments.lockscreen.LockClockFontsPicker"/>
+            android:fragment="com.crdroid.settings.fragments.lockscreen.LockClockFontsPicker"
+            lineage:position="solo"/>
 
         <!--<com.crdroid.settings.preferences.SecureSettingSeekBarPreference
             android:key="kg_custom_clock_top_margin"
@@ -67,12 +69,13 @@
         android:key="lockscreen_interface_category"
         android:title="@string/lockscreen_interface_category">
 
-        <lineageos.preference.LineageSecureSettingSwitchPreference
+        <com.crdroid.settings.preferences.SecureSettingSwitchPreference
             android:key="lockscreen_media_metadata"
-            android:icon="@drawable/ic_movie"
             android:title="@string/media_art_title"
             android:summary="@string/media_art_summary"
-            android:defaultValue="false" />
+            android:defaultValue="false"
+            lineage:isLineageSettings="true"
+            lineage:position="top" />
 
         <com.crdroid.settings.preferences.SystemSettingListPreference
             android:key="lockscreen_albumart_filter"
@@ -85,10 +88,10 @@
 
         <com.crdroid.settings.preferences.SystemSettingSwitchPreference
             android:key="lockscreen_battery_info"
-            android:icon="@drawable/ic_battery_charging"
             android:title="@string/lockscreen_battery_info_title"
             android:summary="@string/lockscreen_battery_info_summary"
-            android:defaultValue="true" />
+            android:defaultValue="true"
+            lineage:position="bottom" />
 
     </PreferenceCategory>
 
@@ -96,36 +99,35 @@
         android:key="lockscreen_weather_category"
         android:title="@string/lockscreen_weather_category">
 
-        <Preference
+        <com.android.settings.preferences.ui.AdaptivePreference
             android:icon="@drawable/ic_weather_settings"
             android:title="@string/weather_settings_title"
-            android:summary="@string/weather_settings_summary">
+            android:summary="@string/weather_settings_summary"
+            lineage:position="top">
             <intent
                 android:action="android.intent.action.MAIN"
                 android:targetPackage="org.omnirom.omnijaws"
                 android:targetClass="org.omnirom.omnijaws.SettingsActivity" />
-        </Preference>
+        </com.android.settings.preferences.ui.AdaptivePreference>
 
         <com.crdroid.settings.preferences.SystemSettingSwitchPreference
             android:key="lockscreen_weather_enabled"
-            android:icon="@drawable/ic_weather"
             android:title="@string/lockscreen_weather_title"
             android:summary="@string/lockscreen_weather_summary" />
 
         <com.crdroid.settings.preferences.SystemSettingSwitchPreference
             android:key="lockscreen_weather_location"
-            android:icon="@drawable/ic_map_marker"
             android:title="@string/lockscreen_weather_location_title"
             android:summary="@string/lockscreen_weather_location_summary"
             android:dependency="lockscreen_weather_enabled" />
 
         <com.crdroid.settings.preferences.SystemSettingSwitchPreference
             android:key="lockscreen_weather_text"
-            android:icon="@drawable/ic_weather_condition"
             android:title="@string/lockscreen_weather_text_title"
             android:summary="@string/lockscreen_weather_text_summary"
             android:defaultValue="true"
-            android:dependency="lockscreen_weather_enabled" />
+            android:dependency="lockscreen_weather_enabled"
+            lineage:position="bottom" />
 
         <!--<com.crdroid.settings.preferences.SystemSettingSwitchPreference
             android:key="lockscreen_weather_style"
@@ -142,19 +144,20 @@
 
         <com.crdroid.settings.preferences.SystemSettingSwitchPreference
             android:key="double_tap_sleep_lockscreen"
-            android:icon="@drawable/ic_double_tap"
             android:title="@string/lockscreen_doubletap_sleep_title"
             android:summary="@string/lockscreen_doubletap_sleep_summary"
-            android:defaultValue="true" />
+            android:defaultValue="true"
+            lineage:position="solo" />
 
-        <Preference
+        <com.android.settings.preferences.ui.AdaptivePreference
             android:key="udfps_icon_picker"
             android:icon="@drawable/ic_fp_selector"
             android:title="@string/udfps_icon_picker_title"
             android:summary="@string/udfps_icon_picker_summary"
-            android:fragment="com.crdroid.settings.fragments.lockscreen.UdfpsIconPicker" />
+            android:fragment="com.crdroid.settings.fragments.lockscreen.UdfpsIconPicker"
+            lineage:position="top" />
 
-        <Preference
+        <com.android.settings.preferences.ui.AdaptivePreference
             android:key="udfps_recognizing_animation_preview"
             android:icon="@drawable/ic_fp_selector"
             android:title="@string/udfps_recog_animation_effect_title"
@@ -163,31 +166,30 @@
 
         <com.crdroid.settings.preferences.SecureSettingSwitchPreference
             android:key="screen_off_udfps_enabled"
-            android:icon="@drawable/ic_fp"
             android:title="@string/screen_off_udfps_title"
             android:summary="@string/screen_off_udfps_summary"
-            android:defaultValue="false" />
+            android:defaultValue="false"
+            lineage:position="bottom" />
 
         <com.crdroid.settings.preferences.SystemSettingSwitchPreference
             android:key="fp_success_vibrate"
-            android:icon="@drawable/ic_fp"
             android:title="@string/fp_success_vibrate_title"
             android:summary="@string/fp_success_vibrate_summary"
-            android:defaultValue="true" />
+            android:defaultValue="true" 
+            lineage:position="top"/>
 
         <com.crdroid.settings.preferences.SystemSettingSwitchPreference
             android:key="fp_error_vibrate"
-            android:icon="@drawable/ic_fp"
             android:title="@string/fp_error_vibrate_title"
             android:summary="@string/fp_error_vibrate_summary"
             android:defaultValue="true" />
 
         <com.crdroid.settings.preferences.SystemSettingSwitchPreference
             android:key="enable_ripple_effect"
-            android:icon="@drawable/ic_unlock_outline"
             android:title="@string/enable_fingerprint_ripple_effect_title"
             android:summary="@string/enable_fingerprint_ripple_effect_summary"
-            android:defaultValue="true" />
+            android:defaultValue="true"
+            lineage:position="bottom" />
 
     </PreferenceCategory>
 
@@ -197,10 +199,10 @@
 
         <com.crdroid.settings.preferences.SystemSettingSwitchPreference
                android:key="lockscreen_enable_power_menu"
-               android:icon="@drawable/ic_power"
                android:title="@string/lockscreen_enable_power_menu_title"
                android:summary="@string/lockscreen_enable_power_menu_summary"
-               android:defaultValue="true" />
+               android:defaultValue="true"
+               lineage:position="solo" />
 
     </PreferenceCategory>
 

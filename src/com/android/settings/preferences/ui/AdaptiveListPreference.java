@@ -18,20 +18,31 @@ package com.android.settings.preferences.ui;
 import android.content.Context;
 import android.content.res.TypedArray;
 import androidx.preference.Preference;
+import androidx.preference.ListPreference;
 import android.util.AttributeSet;
-import com.android.settings.R;
 
-import com.android.settings.network.SubscriptionUtil;
+import com.android.settings.R;
 
 import com.crdroid.settings.utils.AdaptivePreferenceUtils;
 
-public class AdaptivePreference extends Preference {
+public class AdaptiveListPreference extends ListPreference {
 
-    public AdaptivePreference(Context context, AttributeSet attrs) {
+    public AdaptiveListPreference(Context context) {
+        super(context);
+        init(context, null);
+    }
+
+    public AdaptiveListPreference(Context context, AttributeSet attrs) {
         super(context, attrs);
-        if ("device_model".equals(getKey()) && !SubscriptionUtil.isSimHardwareVisible(context)) {
-            setLayoutResource(R.layout.top_level_preference_top_card);
-        }
+        init(context, attrs);
+    }
+
+    public AdaptiveListPreference(Context context, AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
+        init(context, attrs);
+    }
+
+    private void init(Context context, AttributeSet attrs) {
         int layoutRes = AdaptivePreferenceUtils.getLayoutResourceId(context, attrs);
         if (layoutRes != -1) {
             setLayoutResource(layoutRes);

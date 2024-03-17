@@ -16,20 +16,23 @@
 -->
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title="@string/misc_title">
 
     <PreferenceCategory
         android:key="gen_toolbox"
         android:title="@string/gen_tb_settings_title">
 
-        <Preference
+        <com.android.settings.preferences.ui.AdaptivePreference
             android:icon="@drawable/ic_settings_buttons"
             android:title="@string/buttons_settings_title"
             android:summary="@string/buttons_settings_summary"
-            android:fragment="com.crdroid.settings.fragments.Buttons" />
+            android:fragment="com.crdroid.settings.fragments.Buttons"
+            app:position="top" />
 
         <!-- Display Cutout -->
-        <Preference
+        <com.android.settings.preferences.ui.AdaptivePreference
             android:key="display_cutout_force_fullscreen_settings"
             android:icon="@drawable/ic_fullscreen"
             android:title="@string/display_cutout_force_fullscreen_title"
@@ -37,10 +40,10 @@
             <intent android:action="android.intent.action.MAIN"
                  android:targetPackage="com.android.settings"
                  android:targetClass="com.crdroid.settings.fragments.ui.DisplayCutoutForceFullscreenActivity"/>
-        </Preference>
+        </com.android.settings.preferences.ui.AdaptivePreference>
 
         <!-- Gaming mode -->
-        <Preference
+        <com.android.settings.preferences.ui.AdaptivePreference
             android:key="gaming_mode"
             android:icon="@drawable/ic_gaming"
             android:title="@string/gaming_mode_title"
@@ -50,21 +53,22 @@
                 android:action="android.intent.action.MAIN"
                 android:targetPackage="io.chaldeaprjkt.gamespace"
                 android:targetClass="io.chaldeaprjkt.gamespace.settings.SettingsActivity" />
-        </Preference>
+        </com.android.settings.preferences.ui.AdaptivePreference>
 
-        <Preference
+        <com.android.settings.preferences.ui.AdaptivePreference
             android:icon="@drawable/ic_navigation"
             android:title="@string/nav_settings_title"
             android:summary="@string/nav_settings_summary"
             android:fragment="com.crdroid.settings.fragments.Navigation" />
 
        <!-- QuickSwitch -->
-        <Preference
+        <com.android.settings.preferences.ui.AdaptivePreference
             android:key="quickswitch"
             android:icon="@drawable/ic_home"
             android:title="@string/quickswitch_launcher_title" 
             android:summary="@string/quickswitch_launcher_summary" 
-            android:fragment="com.crdroid.settings.fragments.QuickSwitch" /> 
+            android:fragment="com.crdroid.settings.fragments.QuickSwitch"
+            app:position="bottom" /> 
 
     </PreferenceCategory>
 
@@ -75,29 +79,34 @@
         <!-- Floating rotation button -->
         <com.crdroid.settings.preferences.SystemSettingSwitchPreference
             android:key="enable_floating_rotation_button"
-            android:icon="@drawable/ic_rotation"
             android:title="@string/floating_rotation_button_title"
             android:summary="@string/floating_rotation_button_summary"
-            android:defaultValue="true" />
+            android:defaultValue="true"
+            app:position="top" />
 
         <!-- Netflix -->
         <com.crdroid.settings.preferences.SystemPropertySwitchPreference
             android:key="persist.sys.pixelprops.netflix"
-            android:icon="@drawable/ic_netflix"
             android:title="@string/netflix_spoof_title"
             android:summary="@string/netflix_spoof_summary"
+            android:defaultValue="false" />
+
+        <!-- Pocket Judge -->
+        <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+            android:key="pocket_judge"
+            android:title="@string/pocket_judge_title"
+            android:summary="@string/pocket_judge_summary"
             android:defaultValue="false" />
 
         <!-- Three-fingers-swipe to screenshot -->
         <com.crdroid.settings.preferences.SystemSettingSwitchPreference
             android:key="three_finger_gesture"
-            android:icon="@drawable/ic_three_finger_gesture"
             android:title="@string/three_finger_gesture"
             android:summary="@string/three_finger_gesture_summary"
             android:defaultValue="false" />
 
         <!-- Sensor block per package -->
-        <Preference
+        <com.android.settings.preferences.ui.AdaptivePreference
             android:key="sensor_block_settings"
             android:icon="@drawable/ic_remote"
             android:title="@string/sensor_block_title"
@@ -105,35 +114,26 @@
             android:fragment="com.crdroid.settings.fragments.misc.SensorBlock"/>
 
         <!-- Smart Pixels -->
-        <Preference
+        <com.android.settings.preferences.ui.AdaptivePreference
             android:key="smart_pixels"
             android:icon="@drawable/ic_smart_pixels"
             android:title="@string/smart_pixels_title" 
             android:summary="@string/smart_pixels_summary" 
             android:fragment="com.crdroid.settings.fragments.ui.SmartPixels" />
 
-        <!-- Pocket Judge -->
-        <com.crdroid.settings.preferences.SystemSettingSwitchPreference
-            android:key="pocket_judge"
-            android:icon="@drawable/ic_pocket"
-            android:title="@string/pocket_judge_title"
-            android:summary="@string/pocket_judge_summary"
-            android:defaultValue="false" />
-
         <!-- Unlock FPS for specific games -->
         <com.crdroid.settings.preferences.SystemPropertySwitchPreference
             android:key="persist.sys.pixelprops.games"
-            android:icon="@drawable/ic_backup"
             android:title="@string/use_games_spoof_title"
             android:summary="@string/use_games_spoof_summary" />
 
         <!-- Unlimited google photos storage -->
         <com.crdroid.settings.preferences.SystemPropertySwitchPreference
             android:key="persist.sys.pixelprops.gphotos"
-            android:icon="@drawable/ic_backup"
             android:title="@string/use_photos_spoof_title"
             android:summary="@string/use_photos_spoof_summary"
-            android:defaultValue="true" />
+            android:defaultValue="true"
+            app:position="bottom" />
 
     </PreferenceCategory>
 

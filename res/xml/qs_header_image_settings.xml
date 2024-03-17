@@ -17,6 +17,7 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    xmlns:lineage="http://schemas.android.com/apk/res-auto"
     android:title="@string/qs_header_image_title">
 
     <lineageos.preference.SystemSettingMainSwitchPreference
@@ -24,21 +25,22 @@
         android:title="@string/enable"
         android:defaultValue="false" />
 
-    <ListPreference
+    <com.android.settings.preferences.ui.AdaptiveListPreference
         android:key="qs_header_provider"
         android:title="@string/qs_header_provider_title"
         android:persistent="false"
         android:entries="@array/qs_header_provider_entries"
         android:entryValues="@array/qs_header_provider_values"
-        android:dependency="status_bar_custom_header" />
+        android:dependency="status_bar_custom_header"
+        lineage:position="top" />
 
-    <ListPreference
+    <com.android.settings.preferences.ui.AdaptiveListPreference
         android:key="daylight_header_pack"
         android:title="@string/qs_header_daylight_pack_title"
         android:persistent="false"
         android:dependency="status_bar_custom_header" />
 
-    <Preference
+    <com.android.settings.preferences.ui.AdaptivePreference
         android:key="custom_header_browse"
         android:title="@string/qs_header_browse_title"
         android:summary="@string/qs_header_browse_summary"
@@ -47,15 +49,15 @@
         <intent android:action="android.intent.action.MAIN"
                 android:targetPackage="org.omnirom.omnistyle"
                 android:targetClass="org.omnirom.omnistyle.PickHeaderActivity" />
-        </Preference>
+        </com.android.settings.preferences.ui.AdaptivePreference>
 
-    <Preference
+    <com.android.settings.preferences.ui.AdaptivePreference
         android:key="file_header_select"
         android:title="@string/qs_header_file_select_title"
         android:summary="@string/qs_header_file_select_summary"
         android:persistent="false"
         android:dependency="status_bar_custom_header" >
-    </Preference>
+    </com.android.settings.preferences.ui.AdaptivePreference>
 
     <com.crdroid.settings.preferences.SystemSettingSeekBarPreference
         android:key="status_bar_custom_header_height"
@@ -73,6 +75,7 @@
         android:max="200"
         android:min="0"
         android:defaultValue="0" 
-        android:dependency="status_bar_custom_header" />
+        android:dependency="status_bar_custom_header"
+        lineage:position="bottom" />
 
 </PreferenceScreen>

@@ -20,6 +20,8 @@ import android.util.AttributeSet;
 
 public class SecureSettingSeekBarPreference extends CustomSeekBarPreference {
 
+    private boolean isLineageSettings;
+
     public SecureSettingSeekBarPreference(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         setPreferenceDataStore(new SecureSettingsStore(context.getContentResolver()));

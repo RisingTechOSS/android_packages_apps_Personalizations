@@ -17,6 +17,7 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    xmlns:lineage="http://schemas.android.com/apk/res-auto"
     android:key="power_menu_settings"
     android:title="@string/power_menu_title">
 
@@ -24,69 +25,68 @@
         android:key="power_menu_items"
         android:title="@string/power_menu_actions_title" >
 
-        <SwitchPreference
+        <com.android.settings.preferences.ui.AdaptiveSwitchPreference
             android:key="screenshot"
-            android:icon="@drawable/ic_screenshot"
             android:title="@string/power_menu_screenshot_title"
             android:summary="@string/power_menu_screenshot_summary"
-            android:defaultValue="false" />
+            android:defaultValue="false"
+            lineage:position="top" />
 
-        <SwitchPreference
+        <com.android.settings.preferences.ui.AdaptiveSwitchPreference
             android:key="onthego"
-            android:icon="@drawable/ic_onthego"
             android:title="@string/power_menu_onthego_title"
             android:defaultValue="false" />
 
-        <SwitchPreference
+        <com.android.settings.preferences.ui.AdaptiveSwitchPreference
             android:key="airplane"
-            android:icon="@drawable/ic_airplane_mode"
             android:title="@string/power_menu_airplane_title"
             android:defaultValue="false" />
 
-        <SwitchPreference
+        <com.android.settings.preferences.ui.AdaptiveSwitchPreference
             android:key="users"
-            android:icon="@drawable/ic_user"
             android:title="@string/power_menu_users_title"
             android:defaultValue="false" />
 
-        <SwitchPreference
+        <com.android.settings.preferences.ui.AdaptiveSwitchPreference
             android:key="lockdown"
-            android:icon="@drawable/ic_lock_outline"
             android:title="@string/power_menu_lockdown_title"
             android:defaultValue="false" />
 
-        <SwitchPreference
+        <com.android.settings.preferences.ui.AdaptiveSwitchPreference
             android:key="emergency"
-            android:icon="@drawable/ic_emergency"
             android:title="@string/power_menu_emergency_title"
             android:defaultValue="false" />
 
-        <SwitchPreference
+        <com.android.settings.preferences.ui.AdaptiveSwitchPreference
             android:key="devicecontrols"
-            android:icon="@drawable/ic_controls_icon"
             android:title="@string/power_menu_devicecontrols_title"
             android:defaultValue="false"
-            android:enabled="false" />
+            android:enabled="false"
+            lineage:position="bottom" />
     </PreferenceCategory>
 
     <PreferenceCategory
         android:key="advanced_reboot_key"
         android:title="@string/power_menu_advanced_title" >
 
-        <lineageos.preference.LineageSecureSettingSwitchPreference
+        <com.crdroid.settings.preferences.SecureSettingSwitchPreference
             android:key="advanced_reboot"
             android:icon="@drawable/ic_restart"
             android:title="@string/advanced_reboot_title"
             android:summary="@string/advanced_reboot_summary"
-            android:defaultValue="true" />
+            android:defaultValue="true"
+            lineage:isLineageSettings="true"
+            lineage:position="top" />
 
-        <lineageos.preference.LineageSecureSettingSwitchPreference
+        <com.crdroid.settings.preferences.SecureSettingSwitchPreference
             android:key="advanced_reboot_secured"
             android:icon="@drawable/ic_lock_alert"
             android:title="@string/advanced_reboot_secured_title"
             android:summary="@string/advanced_reboot_secured_summary"
             android:dependency="advanced_reboot"
-            android:defaultValue="true" />
+            android:defaultValue="true"
+            lineage:isLineageSettings="true"
+            lineage:position="bottom" />
     </PreferenceCategory>
 
 </PreferenceScreen>

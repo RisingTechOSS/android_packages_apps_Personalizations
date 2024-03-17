@@ -18,6 +18,8 @@ package com.crdroid.settings.preferences;
 import android.content.Context;
 import android.util.AttributeSet;
 
+import com.crdroid.settings.utils.AdaptivePreferenceUtils;
+
 public class LineageSystemSettingSeekBarPreference extends CustomSeekBarPreference {
 
     public LineageSystemSettingSeekBarPreference(Context context, AttributeSet attrs, int defStyle) {

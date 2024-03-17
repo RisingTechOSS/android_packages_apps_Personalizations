@@ -47,6 +47,14 @@ public class AdaptivePreferenceUtils {
 
         return Position.fromAttribute(positionAttribute);
     }
+    
+    public static boolean isLineageSettings(Context context, AttributeSet attrs) {
+        TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.AdaptivePreference);
+        boolean isLineage = typedArray.getBoolean(R.styleable.AdaptivePreference_isLineageSettings, false);
+        typedArray.recycle();
+
+        return isLineage;
+    }
 
     public static int getLayoutResourceId(Context context, AttributeSet attrs) {
         Position position = getPosition(context, attrs);
@@ -68,6 +76,29 @@ public class AdaptivePreferenceUtils {
                 return -1;
             default:
                 return R.layout.top_level_preference_solo_card;
+        }
+    }
+    
+    public static int getSeekBarLayoutResourceId(Context context, AttributeSet attrs) {
+        Position position = getPosition(context, attrs);
+        
+        if (position == null) {
+            return R.layout.preference_custom_seekbar_middle;
+        }
+
+        switch (position) {
+            case TOP:
+                return R.layout.preference_custom_seekbar_top;
+            case BOTTOM:
+                return R.layout.preference_custom_seekbar_bottom;
+            case MIDDLE:
+                return R.layout.preference_custom_seekbar_middle;
+            case SOLO:
+                return R.layout.preference_custom_seekbar_solo;
+            case NONE:
+                return -1;
+            default:
+                return R.layout.preference_custom_seekbar_solo;
         }
     }
 

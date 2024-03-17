@@ -18,19 +18,21 @@
 <PreferenceScreen 
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    xmlns:lineage="http://schemas.android.com/apk/res-auto"
     android:title="@string/pulse_settings" >
 
-    <SwitchPreference
+    <com.android.settings.preferences.ui.AdaptiveSwitchPreference
         android:key="navbar_pulse_enabled"
         android:title="@string/show_navbar_pulse_title"
-        android:summary="@string/show_navbar_pulse_summary"/>
+        android:summary="@string/show_navbar_pulse_summary"
+        lineage:position="top"/>
 
-    <SwitchPreference
+    <com.android.settings.preferences.ui.AdaptiveSwitchPreference
         android:key="lockscreen_pulse_enabled"
         android:title="@string/show_lockscreen_pulse_title"
         android:summary="@string/show_lockscreen_pulse_summary"/>
 
-    <SwitchPreference
+    <com.android.settings.preferences.ui.AdaptiveSwitchPreference
         android:key="ambient_pulse_enabled"
         android:title="@string/show_ambient_pulse_title"
         android:summary="@string/show_ambient_pulse_summary"/>
@@ -67,7 +69,8 @@
         android:max="30000"
         settings:min="200"
         settings:interval="200"
-        settings:units="@string/unit_milliseconds"/>
+        settings:units="@string/unit_milliseconds"
+        lineage:position="bottom"/>
 
     <PreferenceCategory
         android:key="pulse_fading_bars_category"
@@ -80,7 +83,8 @@
             android:max="30"
             settings:min="1"
             settings:units="@string/unit_pixels"
-            android:dependency="pulse_fading_bars_category"/>
+            android:dependency="pulse_fading_bars_category"
+            lineage:position="top"/>
 
         <com.crdroid.settings.preferences.SecureSettingSeekBarPreference
             android:key="pulse_custom_div"
@@ -116,7 +120,8 @@
             android:defaultValue="4"
             android:max="6"
             settings:min="2"
-            android:dependency="pulse_fading_bars_category"/>
+            android:dependency="pulse_fading_bars_category"
+            lineage:position="bottom"/>
     </PreferenceCategory>
 
     <PreferenceCategory
@@ -128,7 +133,8 @@
             android:title="@string/pulse_solid_units_rounded_title"
             android:summary="@string/pulse_solid_units_rounded_summary"
             android:defaultValue="false"
-            android:dependency="pulse_2"/>
+            android:dependency="pulse_2"
+            lineage:position="top"/>
 
         <com.crdroid.settings.preferences.SecureSettingSeekBarPreference
             android:key="pulse_solid_units_opacity"
@@ -153,7 +159,8 @@
             android:defaultValue="4"
             android:max="6"
             settings:min="2"
-            android:dependency="pulse_2"/>
+            android:dependency="pulse_2"
+            lineage:position="bottom"/>
     </PreferenceCategory>
 
     <com.android.settingslib.widget.FooterPreference

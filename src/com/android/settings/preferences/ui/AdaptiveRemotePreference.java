@@ -25,13 +25,12 @@ import com.android.settings.network.SubscriptionUtil;
 
 import com.crdroid.settings.utils.AdaptivePreferenceUtils;
 
-public class AdaptivePreference extends Preference {
+import lineageos.preference.RemotePreference;
 
-    public AdaptivePreference(Context context, AttributeSet attrs) {
+public class AdaptiveRemotePreference extends RemotePreference {
+
+    public AdaptiveRemotePreference(Context context, AttributeSet attrs) {
         super(context, attrs);
-        if ("device_model".equals(getKey()) && !SubscriptionUtil.isSimHardwareVisible(context)) {
-            setLayoutResource(R.layout.top_level_preference_top_card);
-        }
         int layoutRes = AdaptivePreferenceUtils.getLayoutResourceId(context, attrs);
         if (layoutRes != -1) {
             setLayoutResource(layoutRes);

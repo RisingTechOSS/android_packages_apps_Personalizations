@@ -29,8 +29,8 @@
 
             <com.airbnb.lottie.LottieAnimationView
                 android:id="@+id/highlight_lottie_animation_holder"
-                android:layout_width="@dimen/homepage_highlight_card_height"
-                android:layout_height="@dimen/homepage_highlight_card_height"
+                android:layout_width="@dimen/homepage_highlight_length"
+                android:layout_height="@dimen/homepage_highlight_length"
                 android:layout_alignParentStart="true"
                 app:lottie_autoPlay="true"
                 app:lottie_loop="true"/>

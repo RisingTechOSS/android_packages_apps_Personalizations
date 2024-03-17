@@ -16,6 +16,7 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:title="@string/volume_steps_title">
 
     <com.crdroid.settings.preferences.CustomSeekBarPreference
@@ -24,7 +25,8 @@
         android:max="100"
         settings:min="15"
         settings:interval="5"
-        settings:units="@string/steps_unit" />
+        settings:units="@string/steps_unit"
+        app:position="top" />
 
     <com.crdroid.settings.preferences.CustomSeekBarPreference
         android:key="max_call_volume"
@@ -40,6 +42,7 @@
         android:max="30"
         settings:min="7"
         settings:interval="1"
-        settings:units="@string/steps_unit" />
+        settings:units="@string/steps_unit"
+        app:position="bottom" />
 
 </PreferenceScreen>

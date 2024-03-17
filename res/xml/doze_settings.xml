@@ -16,19 +16,21 @@
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:title="@string/doze_display_title">
 
     <com.crdroid.settings.preferences.SecureSettingSwitchPreference
         android:key="doze_enabled"
         android:title="@string/doze_title"
-        android:summary="@string/doze_summary" />
+        android:summary="@string/doze_summary"
+        app:position="top" />
 
     <com.crdroid.settings.preferences.SecureSettingSwitchPreference
         android:key="doze_always_on"
         android:title="@string/doze_always_on_title"
         android:summary="@string/doze_always_on_summary" />
 
-    <Preference
+    <com.android.settings.preferences.ui.AdaptivePreference
         android:key="always_on_display_schedule"
         android:title="@string/always_on_display_schedule_title"
         android:summary="@string/always_on_display_schedule_summary"
@@ -40,41 +42,43 @@
         android:title="@string/doze_on_charge_title"
         android:summary="@string/doze_on_charge_summary" />
 
-    <lineageos.preference.RemotePreference
+    <com.android.settings.preferences.ui.AdaptiveRemotePreference
         android:key="doze_device_settings"
         android:title="@string/doze_additional_settings_title"
         android:summary="@string/doze_additional_settings_summary">
         <intent
             android:action="org.lineageos.settings.device.DOZE_SETTINGS" />
-    </lineageos.preference.RemotePreference>
+    </com.android.settings.preferences.ui.AdaptiveRemotePreference>
 
     <com.crdroid.settings.preferences.SecureSettingSwitchPreference
         android:key="pulse_on_new_tracks"
         android:title="@string/pulse_on_new_tracks_title"
         android:summary="@string/pulse_on_new_tracks_summary" />
 
-    <Preference
+    <com.android.settings.preferences.ui.AdaptivePreference
         android:key="edge_light_settings"
         android:title="@string/edge_light_title"
         android:summary="@string/edge_light_summary"
         android:fragment="com.crdroid.settings.fragments.ui.doze.EdgeLightSettings"
-        android:dependency="doze_enabled" />
+        android:dependency="doze_enabled"
+        app:position="bottom" />
 
     <PreferenceCategory
         android:key="doze_sensor"
         android:title="@string/doze_sensor_title" >
 
         <com.crdroid.settings.preferences.SecureSettingSwitchPreference
+            android:key="doze_pick_up_gesture"
+            android:defaultValue="false"
+            android:title="@string/pickup_title"
+            android:summary="@string/pickup_summary"
+            app:position="top"  />
+
+        <com.crdroid.settings.preferences.SecureSettingSwitchPreference
             android:key="doze_tilt_gesture"
             android:defaultValue="false"
             android:title="@string/tilt_title"
             android:summary="@string/tilt_summary" />
-
-        <com.crdroid.settings.preferences.SecureSettingSwitchPreference
-            android:key="doze_pick_up_gesture"
-            android:defaultValue="false"
-            android:title="@string/pickup_title"
-            android:summary="@string/pickup_summary" />
 
         <com.crdroid.settings.preferences.SecureSettingSwitchPreference
             android:key="doze_handwave_gesture"
@@ -103,7 +107,8 @@
             android:max="2000"
             settings:min="0"
             settings:interval="10"
-            settings:units="@string/unit_milliseconds" />
+            settings:units="@string/unit_milliseconds"
+            app:position="bottom"  />
     </PreferenceCategory>
 
 </PreferenceScreen>

@@ -17,27 +17,46 @@ package com.crdroid.settings.preferences;
 
 import android.content.Context;
 import androidx.preference.ListPreference;
+import androidx.preference.PreferenceDataStore;
 import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.provider.Settings;
 
+import com.crdroid.settings.utils.AdaptivePreferenceUtils;
+
+import lineageos.providers.LineageSettings;
+
 public class SystemSettingListPreference extends ListPreference {
 
+    private boolean isLineageSettings;
+    private PreferenceDataStore dataStore;
     private boolean mAutoSummary = false;
 
     public SystemSettingListPreference(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
-        setPreferenceDataStore(new SystemSettingsStore(context.getContentResolver()));
+        init(context, attrs);
     }
 
     public SystemSettingListPreference(Context context, AttributeSet attrs) {
         super(context, attrs);
-        setPreferenceDataStore(new SystemSettingsStore(context.getContentResolver()));
+        init(context, attrs);
     }
 
     public SystemSettingListPreference(Context context) {
         super(context);
-        setPreferenceDataStore(new SystemSettingsStore(context.getContentResolver()));
+        init(context, null);
+    }
+
+    private void init(Context context, AttributeSet attrs) {
+        isLineageSettings = AdaptivePreferenceUtils.isLineageSettings(context, attrs);
+        dataStore = isLineageSettings 
+            ? new LineageSystemSettingsStore(context.getContentResolver())
+            : new SystemSettingsStore(context.getContentResolver());
+        setPreferenceDataStore(dataStore);
+        int layoutRes = AdaptivePreferenceUtils.getLayoutResourceId(context, attrs);
+        if (layoutRes != -1) {
+            setLayoutResource(layoutRes);
+        }
     }
 
     @Override

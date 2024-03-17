@@ -33,6 +33,8 @@ import android.widget.Toast;
 import com.android.settings.R;
 import com.android.settings.Utils;
 
+import com.crdroid.settings.utils.AdaptivePreferenceUtils;
+
 public class CustomSeekBarPreference extends Preference implements SeekBar.OnSeekBarChangeListener {
     protected final String TAG = getClass().getName();
     private static final String SETTINGS_NS = "http://schemas.android.com/apk/res/com.android.settings";
@@ -101,7 +103,10 @@ public class CustomSeekBarPreference extends Preference implements SeekBar.OnSee
         }
 
         mSeekBar = new SeekBar(context, attrs);
-        setLayoutResource(R.layout.preference_custom_seekbar);
+        int layoutRes = AdaptivePreferenceUtils.getSeekBarLayoutResourceId(context, attrs);
+        if (layoutRes != -1) {
+            setLayoutResource(layoutRes);
+        }
     }
 
     public CustomSeekBarPreference(Context context, AttributeSet attrs, int defStyleAttr) {

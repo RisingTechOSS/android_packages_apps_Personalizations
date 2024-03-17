@@ -24,18 +24,30 @@ import com.android.settingslib.development.SystemPropPoker;
 
 import lineageos.preference.SelfRemovingListPreference;
 
+import com.crdroid.settings.utils.AdaptivePreferenceUtils;
+
 public class SystemPropertyListPreference extends SelfRemovingListPreference {
 
     public SystemPropertyListPreference(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
+        init(context, attrs);
     }
 
     public SystemPropertyListPreference(Context context, AttributeSet attrs) {
         super(context, attrs);
+        init(context, attrs);
     }
 
     public SystemPropertyListPreference(Context context) {
         super(context);
+        init(context, null);
+    }
+
+    private void init(Context context, AttributeSet attrs) {
+        int layoutRes = AdaptivePreferenceUtils.getLayoutResourceId(context, attrs);
+        if (layoutRes != -1) {
+            setLayoutResource(layoutRes);
+        }
     }
 
     @Override

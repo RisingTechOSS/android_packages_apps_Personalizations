@@ -21,15 +21,16 @@
     android:title="@string/sound_settings_title">
 
     <!-- Pulse music visualizer -->
-    <Preference
+    <com.android.settings.preferences.ui.AdaptivePreference
         android:key="pulse_settings"
         android:icon="@drawable/ic_pulse"
         android:title="@string/pulse_settings"
         android:summary="@string/pulse_settings_summary"
-        android:fragment="com.crdroid.settings.fragments.sound.PulseSettings" />
+        android:fragment="com.crdroid.settings.fragments.sound.PulseSettings"
+        lineage:position="top" />
 
     <!-- Volume steps -->
-    <Preference
+    <com.android.settings.preferences.ui.AdaptivePreference
         android:key="volume_steps"
         android:icon="@drawable/ic_settings_sound"
         android:title="@string/volume_steps_title"
@@ -39,37 +40,44 @@
     <!-- Screenshot Sound  -->
     <com.crdroid.settings.preferences.SystemSettingSwitchPreference
         android:key="screenshot_shutter_sound"
-        android:icon="@drawable/ic_cellphone_sound"
         android:title="@string/screenshot_shutter_sound_title"
         android:summary="@string/screenshot_shutter_sound_summary"
         android:defaultValue="true" />
 
     <!-- Adaptive Playback -->
-    <Preference
+    <com.android.settings.preferences.ui.AdaptivePreference
         android:key="adaptive_playback_settings"
         android:icon="@drawable/ic_settings_sound"
         android:title="@string/adaptive_playback_title"
         android:summary="@string/adaptive_playback_summary"
-        android:fragment="com.crdroid.settings.fragments.sound.AdaptivePlayback" />
+        android:fragment="com.crdroid.settings.fragments.sound.AdaptivePlayback"
+        lineage:position="bottom" />
 
     <!-- Volume panel -->
     <PreferenceCategory
         android:key="volume_panel"
         android:title="@string/volume_panel_category" >
 
-        <lineageos.preference.LineageSecureSettingSwitchPreference
+        <com.crdroid.settings.preferences.SecureSettingSwitchPreference
             android:key="volume_panel_on_left"
-            android:icon="@drawable/ic_settings_sound"
-            android:title="@string/volume_panel_on_left_title" />
+            android:title="@string/volume_panel_on_left_title"
+            lineage:position="top"
+            lineage:isLineageSettings="true" />
+
+        <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+            android:key="show_app_volume"
+            android:title="@string/app_volume_title"
+            android:summary="@string/app_volume_summary"
+            android:defaultValue="false"/>
 
         <com.crdroid.settings.preferences.SystemSettingSeekBarPreference
             android:key="volume_dialog_timeout"
-            android:icon="@drawable/ic_music_note"
             android:title="@string/volume_dialog_timeout_title"
             android:defaultValue="3"
             android:max="10"
             settings:min="1"
-            settings:units="@string/unit_seconds" />
+            settings:units="@string/unit_seconds"
+            lineage:position="bottom" />
     </PreferenceCategory>
 
     <!-- In-call feedback -->
@@ -79,21 +87,20 @@
 
         <com.crdroid.settings.preferences.SystemSettingSwitchPreference
             android:key="vibrate_on_connect"
-            android:icon="@drawable/ic_vibrate"
             android:title="@string/incall_vibrate_connect_title"
-            android:defaultValue="false" />
+            android:defaultValue="false"
+            lineage:position="top" />
 
         <com.crdroid.settings.preferences.SystemSettingSwitchPreference
             android:key="vibrate_on_callwaiting"
-            android:icon="@drawable/ic_vibrate"
             android:title="@string/incall_vibrate_call_wait_title"
             android:defaultValue="false" />
 
         <com.crdroid.settings.preferences.SystemSettingSwitchPreference
             android:key="vibrate_on_disconnect"
-            android:icon="@drawable/ic_vibrate"
             android:title="@string/incall_vibrate_disconnect_title"
-            android:defaultValue="false" />
+            android:defaultValue="false"
+            lineage:position="bottom" />
     </PreferenceCategory>
 
 </PreferenceScreen>

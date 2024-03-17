@@ -17,6 +17,7 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:title="@string/sensor_block_title">
 
     <!-- Master switch -->
@@ -24,7 +25,8 @@
         android:key="sensor_block"
         android:title="@string/sensor_block_title"
         android:summary="@string/sensor_block_summary"
-        android:defaultValue="false" />
+        android:defaultValue="false"
+        app:position="solo" />
 
     <!-- App picker activity for sensor block -->
     <PreferenceCategory

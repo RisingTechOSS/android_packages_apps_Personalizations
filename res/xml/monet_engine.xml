@@ -17,15 +17,17 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:key="monet_settings"
     android:title="@string/monet_title">
 
-    <ListPreference
+    <com.android.settings.preferences.ui.AdaptiveListPreference
         android:key="theme_style"
         android:title="@string/monet_engine_style_title"
         android:entries="@array/monet_engine_style_entries"
         android:entryValues="@array/monet_engine_style_values"
-        android:defaultValue="0" />
+        android:defaultValue="0"
+        app:position="top" />
 
     <com.crdroid.settings.preferences.SecureSettingSwitchPreference
         android:key="monet_engine_custom_color"
@@ -73,6 +75,7 @@
         android:key="monet_engine_tint_background"
         android:title="@string/monet_engine_tint_background_title"
         android:summary="@string/monet_engine_tint_background_summary"
-        android:defaultValue="false" />
+        android:defaultValue="false"
+        app:position="bottom" />
 
 </PreferenceScreen>

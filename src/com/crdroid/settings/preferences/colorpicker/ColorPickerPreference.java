@@ -48,6 +48,8 @@ import android.widget.LinearLayout;
 
 import com.android.settings.R;
 
+import com.crdroid.settings.utils.AdaptivePreferenceUtils;
+
 /**
  * A preference type that allows a user to choose a time
  * @author Sergey Margaritov
@@ -88,7 +90,10 @@ public class ColorPickerPreference extends Preference implements
     public ColorPickerPreference(Context context, AttributeSet attrs, int defStyleAttr,
             int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
-        setLayoutResource(R.layout.preference_material_settings);
+        int layoutRes = AdaptivePreferenceUtils.getLayoutResourceId(context, attrs);
+        if (layoutRes != -1) {
+            setLayoutResource(layoutRes);
+        }
         init(context, attrs);
     }
 

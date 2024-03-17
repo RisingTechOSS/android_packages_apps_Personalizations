@@ -53,7 +53,6 @@ public class QuickSettings extends SettingsPreferenceFragment implements
 
     private static final String KEY_SHOW_BRIGHTNESS_SLIDER = "qs_show_brightness_slider";
     private static final String KEY_BRIGHTNESS_SLIDER_POSITION = "qs_brightness_slider_position";
-    private static final String KEY_BRIGHTNESS_SLIDER_HAPTIC = "qs_brightness_slider_haptic";
     private static final String KEY_SHOW_AUTO_BRIGHTNESS = "qs_show_auto_brightness";
     private static final String KEY_PREF_TILE_ANIM_STYLE = "qs_tile_animation_style";
     private static final String KEY_PREF_TILE_ANIM_DURATION = "qs_tile_animation_duration";
@@ -63,7 +62,6 @@ public class QuickSettings extends SettingsPreferenceFragment implements
 
     private ListPreference mShowBrightnessSlider;
     private ListPreference mBrightnessSliderPosition;
-    private SwitchPreference mBrightnessSliderHaptic;
     private SwitchPreference mShowAutoBrightness;
     private ListPreference mTileAnimationStyle;
     private CustomSeekBarPreference mTileAnimationDuration;
@@ -92,9 +90,6 @@ public class QuickSettings extends SettingsPreferenceFragment implements
 
         mBrightnessSliderPosition = findPreference(KEY_BRIGHTNESS_SLIDER_POSITION);
         mBrightnessSliderPosition.setEnabled(showSlider);
-
-        mBrightnessSliderHaptic = findPreference(KEY_BRIGHTNESS_SLIDER_HAPTIC);
-        mBrightnessSliderHaptic.setEnabled(showSlider);
 
         mShowAutoBrightness = findPreference(KEY_SHOW_AUTO_BRIGHTNESS);
         boolean automaticAvailable = mContext.getResources().getBoolean(
@@ -131,7 +126,6 @@ public class QuickSettings extends SettingsPreferenceFragment implements
         if (preference == mShowBrightnessSlider) {
             int value = Integer.parseInt((String) newValue);
             mBrightnessSliderPosition.setEnabled(value > 0);
-            mBrightnessSliderHaptic.setEnabled(value > 0);
             if (mShowAutoBrightness != null)
                 mShowAutoBrightness.setEnabled(value > 0);
             return true;
@@ -195,8 +189,6 @@ public class QuickSettings extends SettingsPreferenceFragment implements
                 Settings.System.QS_TILE_LABEL_HIDE, 0, UserHandle.USER_CURRENT);
         Settings.System.putIntForUser(resolver,
                 Settings.System.QS_TILE_LABEL_SIZE, 14, UserHandle.USER_CURRENT);
-        Settings.System.putIntForUser(resolver,
-                Settings.System.QS_BRIGHTNESS_SLIDER_HAPTIC, 0, UserHandle.USER_CURRENT);
         Settings.System.putIntForUser(resolver,
                 Settings.System.QS_DUAL_TONE, 1, UserHandle.USER_CURRENT);
         Settings.System.putIntForUser(resolver,

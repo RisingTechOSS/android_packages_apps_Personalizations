@@ -42,10 +42,10 @@ import com.android.settingslib.search.SearchIndexable;
 import com.crdroid.settings.fragments.statusbar.BatteryBar;
 import com.crdroid.settings.fragments.statusbar.Clock;
 import com.crdroid.settings.fragments.statusbar.NetworkTrafficSettings;
+import com.crdroid.settings.preferences.RisingSystemSettingListPreference;
 import com.crdroid.settings.preferences.SystemSettingSeekBarPreference;
 import com.crdroid.settings.utils.DeviceUtils;
 
-import lineageos.preference.LineageSystemSettingListPreference;
 import lineageos.providers.LineageSettings;
 
 import java.util.List;
@@ -71,8 +71,8 @@ public class StatusBar extends SettingsPreferenceFragment implements
     private static final int BATTERY_STYLE_TEXT = 4;
     private static final int BATTERY_STYLE_HIDDEN = 5;
 
-    private LineageSystemSettingListPreference mStatusBarClock;
-    private LineageSystemSettingListPreference mQuickPulldown;
+    private RisingSystemSettingListPreference mStatusBarClock;
+    private RisingSystemSettingListPreference mQuickPulldown;
     private SystemSettingListPreference mBatteryPercent;
     private SystemSettingListPreference mBatteryStyle;
     private SwitchPreference mBatteryTextCharging;
@@ -89,7 +89,7 @@ public class StatusBar extends SettingsPreferenceFragment implements
         final PreferenceScreen prefScreen = getPreferenceScreen();
 
         mStatusBarClock =
-                (LineageSystemSettingListPreference) findPreference(STATUS_BAR_CLOCK_STYLE);
+                (RisingSystemSettingListPreference) findPreference(STATUS_BAR_CLOCK_STYLE);
 
         // Adjust status bar preferences for RTL
         if (getResources().getConfiguration().getLayoutDirection() == View.LAYOUT_DIRECTION_RTL) {
@@ -123,7 +123,7 @@ public class StatusBar extends SettingsPreferenceFragment implements
                 (batterystyle != BATTERY_STYLE_TEXT && batterypercent != 2));
 
         mQuickPulldown =
-                (LineageSystemSettingListPreference) findPreference(QUICK_PULLDOWN);
+                (RisingSystemSettingListPreference) findPreference(QUICK_PULLDOWN);
         mQuickPulldown.setOnPreferenceChangeListener(this);
         updateQuickPulldownSummary(mQuickPulldown.getIntValue(0));
 
