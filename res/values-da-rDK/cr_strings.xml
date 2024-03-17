@@ -16,10 +16,10 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">crDroid-indstillinger</string>
+    <string name="crdroid_settings_title">risingOS-indstillinger</string>
     <string name="crdroid_settings_summary">Åbn Godhed</string>
     <string name="reset_settings_title">Nulstil indstillinger</string>
-    <string name="reset_settings_message">Dette vil nulstille de fleste crDroid-indstillinger til deres standardværdier for den aktuelle bruger. Fortsæt?</string>
+    <string name="reset_settings_message">Dette vil nulstille de fleste risingOS-indstillinger til deres standardværdier for den aktuelle bruger. Fortsæt?</string>
     <!-- Personalization Categories -->
     <string name="button_title">Knapper</string>
     <string name="lockscreen_title">Låseskærm</string>
@@ -58,18 +58,18 @@
     <string name="changelog_crdroid_title">Aktuel ændringslog</string>
     <string name="changelog_crdroid_summary">Vis ændringer i den installerede ROM</string>
     <string name="changelog_crdroid_error">Kunne ikke indlæse ændringsoversigt</string>
-    <!-- About crDroid -->
+    <!-- About risingOS -->
     <string name="about_crdroid">Om AirDroid</string>
     <string name="about_device_name">Device</string>
-    <!-- Share crDroid -->
-    <string name="share_crdroid_title">Del crDroid</string>
-    <string name="share_crdroid_summary">Fortæl andre om crDroid</string>
-    <string name="share_message">Check out if #crDroidAndroid is available for your device @ https://crdroid.net/</string>
-    <string name="share_chooser_title">Del crDroid</string>
-    <!-- Sites crDroid -->
+    <!-- Share risingOS -->
+    <string name="share_crdroid_title">Del risingOS</string>
+    <string name="share_crdroid_summary">Fortæl andre om risingOS</string>
+    <string name="share_message">Check out if #risingOSAndroid is available for your device @ https://crdroid.net/</string>
+    <string name="share_chooser_title">Del risingOS</string>
+    <!-- Sites risingOS -->
     <string name="crdroid_source_title">GitHub</string>
     <string name="crdroid_source_summary">Vi elsker open source, tjek os ud</string>
-    <string name="crdroid_telegram_title">crDroid community</string>
+    <string name="crdroid_telegram_title">risingOS community</string>
     <string name="crdroid_telegram_summary">Vi er på telegram. Tilmeld dig!</string>
     <string name="crdroid_telegram_channel_title">Updates channel</string>
     <string name="crdroid_telegram_channel_summary">Get notified of new builds on Telegram</string>
@@ -79,10 +79,10 @@
     <string name="crdroid_translate_summary">Hjælp til lokalisering af ROM på dit sprog!</string>
     <string name="crdroid_sponsor_summary">Visit our website host partner</string>
     <string name="crdroid_buildserversponsor_summary">We recommend their servers if interested in one</string>
-    <!-- Donate crDroid -->
+    <!-- Donate risingOS -->
     <string name="donate_crdroid_title">Støt os</string>
     <string name="donate_crdroid_summary">Donate to support further development</string>
-    <string name="donate_team_title">crDroid-team</string>
+    <string name="donate_team_title">risingOS-team</string>
     <string name="donate_team_summary">Donér for at støtte server-hosting, opetid på webstedet og generel håndterng</string>
     <!-- The Drill -->
     <string name="drill_title">Øvelse</string>
@@ -547,8 +547,8 @@
     <string name="qs_footer_show_power_menu_title">Power menu shortcut</string>
     <string name="qs_footer_services_icon_title">Genvej til Kørende tjenester</string>
     <string name="qs_footer_settings_icon_title">Indstillingsgenvej</string>
-    <!-- Device Info screen. crDroid legal. -->
-    <string name="crdroid_license_title">crDroid legal</string>
+    <!-- Device Info screen. risingOS legal. -->
+    <string name="crdroid_license_title">risingOS legal</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_brightness_slider_category">Lysstyrkeskyder</string>
     <string name="qs_show_brightness_slider_title">Lysstyrkeskyder</string>
@@ -948,7 +948,7 @@
     <string name="status_bar_logo_summary">Display a custom logo on left or right of the status bar</string>
     <string name="status_bar_logo_position_title">Logo position</string>
     <string name="status_bar_logo_style_title">Logo style</string>
-    <string name="status_bar_logo_style_crdroid">crDroid</string>
+    <string name="status_bar_logo_style_crdroid">risingOS</string>
     <string name="status_bar_logo_style_android">Android</string>
     <string name="status_bar_logo_style_adidas">Adidas</string>
     <string name="status_bar_logo_style_alien">Alien</string>

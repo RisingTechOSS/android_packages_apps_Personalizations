@@ -16,10 +16,10 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">crDroidin asetukset</string>
+    <string name="crdroid_settings_title">risingOSin asetukset</string>
     <string name="crdroid_settings_summary">Avaa hyvyys</string>
     <string name="reset_settings_title">Nollaa asetukset</string>
-    <string name="reset_settings_message">Tämä palauttaa nykyiselle käyttäjälle useimmat crDroid-asetukset niiden oletusarvoille. Haluatko jatkaa?</string>
+    <string name="reset_settings_message">Tämä palauttaa nykyiselle käyttäjälle useimmat risingOS-asetukset niiden oletusarvoille. Haluatko jatkaa?</string>
     <!-- Personalization Categories -->
     <string name="button_title">Painikkeet</string>
     <string name="lockscreen_title">Lukitusnäyttö</string>
@@ -58,18 +58,18 @@
     <string name="changelog_crdroid_title">Nykyinen muutosloki</string>
     <string name="changelog_crdroid_summary">Näytä muutokset asennetussa ROMissa</string>
     <string name="changelog_crdroid_error">Muutoslokin lataaminen epäonnistui</string>
-    <!-- About crDroid -->
-    <string name="about_crdroid">Tietoja crDroidista</string>
+    <!-- About risingOS -->
+    <string name="about_crdroid">Tietoja risingOSista</string>
     <string name="about_device_name">Laite</string>
-    <!-- Share crDroid -->
-    <string name="share_crdroid_title">Jaa crDroid</string>
-    <string name="share_crdroid_summary">Anna muiden tietää crDroidista</string>
-    <string name="share_message">Tarkista, onko #crDroidAndroid saatavilla laitteellesi @ https://crdroid.net/</string>
-    <string name="share_chooser_title">Jaa crDroid</string>
-    <!-- Sites crDroid -->
+    <!-- Share risingOS -->
+    <string name="share_crdroid_title">Jaa risingOS</string>
+    <string name="share_crdroid_summary">Anna muiden tietää risingOSista</string>
+    <string name="share_message">Tarkista, onko #risingOSAndroid saatavilla laitteellesi @ https://crdroid.net/</string>
+    <string name="share_chooser_title">Jaa risingOS</string>
+    <!-- Sites risingOS -->
     <string name="crdroid_source_title">GitHub</string>
     <string name="crdroid_source_summary">Rakastamme avointa lähdekoodia, tutustu meihin</string>
-    <string name="crdroid_telegram_title">crDroid-yhteisö</string>
+    <string name="crdroid_telegram_title">risingOS-yhteisö</string>
     <string name="crdroid_telegram_summary">Olemme telegramissa. Liity meihin!</string>
     <string name="crdroid_telegram_channel_title">Päivitykset-kanava</string>
     <string name="crdroid_telegram_channel_summary">Saa ilmoitukset uusista päivityksistä Telegramissa</string>
@@ -79,10 +79,10 @@
     <string name="crdroid_translate_summary">Auta kääntämään ROM omalle kielellesi!</string>
     <string name="crdroid_sponsor_summary">Vieraile sivustomme isäntäkumppanin luona</string>
     <string name="crdroid_buildserversponsor_summary">Suosittelemme heidän palvelimiaan, jos olet kiinnostunut sellaisista</string>
-    <!-- Donate crDroid -->
+    <!-- Donate risingOS -->
     <string name="donate_crdroid_title">Tue meitä</string>
     <string name="donate_crdroid_summary">Tue jatkokehitystä lahjoittamalla</string>
-    <string name="donate_team_title">crDroid tiimi</string>
+    <string name="donate_team_title">risingOS tiimi</string>
     <string name="donate_team_summary">Lahjoita palvelimen hostingin, sivuston käytettävyyden ja yleisen hallinnan tueksi</string>
     <!-- The Drill -->
     <string name="drill_title">Tomintatapamme</string>
@@ -547,8 +547,8 @@
     <string name="qs_footer_show_power_menu_title">Virtavalikon pikakuvake</string>
     <string name="qs_footer_services_icon_title">Running services shortcut</string>
     <string name="qs_footer_settings_icon_title">Asetusten pikakuvake</string>
-    <!-- Device Info screen. crDroid legal. -->
-    <string name="crdroid_license_title">crDroid legal</string>
+    <!-- Device Info screen. risingOS legal. -->
+    <string name="crdroid_license_title">risingOS legal</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_brightness_slider_category">Kirkkauden säädin</string>
     <string name="qs_show_brightness_slider_title">Kirkkauden säädin</string>
@@ -948,7 +948,7 @@
     <string name="status_bar_logo_summary">Display a custom logo on left or right of the status bar</string>
     <string name="status_bar_logo_position_title">Logo position</string>
     <string name="status_bar_logo_style_title">Logo style</string>
-    <string name="status_bar_logo_style_crdroid">crDroid</string>
+    <string name="status_bar_logo_style_crdroid">risingOS</string>
     <string name="status_bar_logo_style_android">Android</string>
     <string name="status_bar_logo_style_adidas">Adidas</string>
     <string name="status_bar_logo_style_alien">Alien</string>

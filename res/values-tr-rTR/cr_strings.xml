@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">crDroid Ayarları</string>
+    <string name="crdroid_settings_title">risingOS Ayarları</string>
     <string name="crdroid_settings_summary">Çeşitli özelleştirmeler</string>
     <string name="reset_settings_title">Ayarları sıfırla</string>
     <string name="reset_settings_message">Bu mevcut kullanıcı için çoğu crdroid ayarlarını varsayılan değerlerine sıfırlar. Devam etmek ister misin?</string>
@@ -58,18 +58,18 @@
     <string name="changelog_crdroid_title">Mevcut değişiklikler</string>
     <string name="changelog_crdroid_summary">Yüklü ROM\'daki değişiklikleri görüntüleyin</string>
     <string name="changelog_crdroid_error">Değişiklikler yüklenemiyor</string>
-    <!-- About crDroid -->
-    <string name="about_crdroid">crDroid hakkında</string>
+    <!-- About risingOS -->
+    <string name="about_crdroid">risingOS hakkında</string>
     <string name="about_device_name">Cihaz</string>
-    <!-- Share crDroid -->
-    <string name="share_crdroid_title">crDroid\'i paylaş</string>
-    <string name="share_crdroid_summary">Başkalarına crDroid hakkında bilgi verin</string>
-    <string name="share_message">Cihazınız için #crDroidAndroid\'in mevcut olup olmadığını kontrol edin @ https://crdroid.net/</string>
-    <string name="share_chooser_title">crDroid\'i paylaş</string>
-    <!-- Sites crDroid -->
+    <!-- Share risingOS -->
+    <string name="share_crdroid_title">risingOS\'i paylaş</string>
+    <string name="share_crdroid_summary">Başkalarına risingOS hakkında bilgi verin</string>
+    <string name="share_message">Cihazınız için #risingOSAndroid\'in mevcut olup olmadığını kontrol edin @ https://crdroid.net/</string>
+    <string name="share_chooser_title">risingOS\'i paylaş</string>
+    <!-- Sites risingOS -->
     <string name="crdroid_source_title">GitHub</string>
     <string name="crdroid_source_summary">Kaynak kodumuzu görüntüleyin</string>
-    <string name="crdroid_telegram_title">crDroid topluluğu</string>
+    <string name="crdroid_telegram_title">risingOS topluluğu</string>
     <string name="crdroid_telegram_summary">Biz de telegramdayız. Bize katılın!</string>
     <string name="crdroid_telegram_channel_title">Güncelleme kanalı</string>
     <string name="crdroid_telegram_channel_summary">Telegram\'daki yeni yapılardan haberdar olun</string>
@@ -79,10 +79,10 @@
     <string name="crdroid_translate_summary">ROM\'u kendi dilinize çevirmek için bize yardım edin!</string>
     <string name="crdroid_sponsor_summary">Web sitesi barındırma ortağımızı ziyaret edin</string>
     <string name="crdroid_buildserversponsor_summary">Biriyle ilgileniyorsanız sunucularını öneririz</string>
-    <!-- Donate crDroid -->
+    <!-- Donate risingOS -->
     <string name="donate_crdroid_title">Bizi destekle</string>
     <string name="donate_crdroid_summary">Daha fazla gelişmeyi desteklemek için bağış yapın</string>
-    <string name="donate_team_title">crDroid ekibi</string>
+    <string name="donate_team_title">risingOS ekibi</string>
     <string name="donate_team_summary">Sunucu hostingi, site çalışma zamanı ve genel yönetimi desteklemek için bağış yapın</string>
     <!-- The Drill -->
     <string name="drill_title">The drill</string>
@@ -547,8 +547,8 @@
     <string name="qs_footer_show_power_menu_title">Güç menüsü kısayolu</string>
     <string name="qs_footer_services_icon_title">Çalışan hizmetler kısayolu</string>
     <string name="qs_footer_settings_icon_title">Ayarlar kısayolu</string>
-    <!-- Device Info screen. crDroid legal. -->
-    <string name="crdroid_license_title">crDroid yasal</string>
+    <!-- Device Info screen. risingOS legal. -->
+    <string name="crdroid_license_title">risingOS yasal</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_brightness_slider_category">Parlaklık kaydırıcısı</string>
     <string name="qs_show_brightness_slider_title">Parlaklık kaydırıcısı</string>
@@ -948,7 +948,7 @@
     <string name="status_bar_logo_summary">Durum çubuğunun solunda veya sağında özel bir logo görüntüleyin</string>
     <string name="status_bar_logo_position_title">Logo konumu</string>
     <string name="status_bar_logo_style_title">Logo stili</string>
-    <string name="status_bar_logo_style_crdroid">crDroid</string>
+    <string name="status_bar_logo_style_crdroid">risingOS</string>
     <string name="status_bar_logo_style_android">Android</string>
     <string name="status_bar_logo_style_adidas">Adidas</string>
     <string name="status_bar_logo_style_alien">Uzaylı</string>

@@ -16,10 +16,10 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">Paramètres crDroid</string>
-    <string name="crdroid_settings_summary">Les trésors de crDroid</string>
+    <string name="crdroid_settings_title">Paramètres risingOS</string>
+    <string name="crdroid_settings_summary">Les trésors de risingOS</string>
     <string name="reset_settings_title">Réinitialiser les paramètres</string>
-    <string name="reset_settings_message">Cette action réinitialisera la plupart des paramètres crDroid à leurs valeurs par défaut pour l’utilisateur actuel. Souhaitez-vous continuer ?</string>
+    <string name="reset_settings_message">Cette action réinitialisera la plupart des paramètres risingOS à leurs valeurs par défaut pour l’utilisateur actuel. Souhaitez-vous continuer ?</string>
     <!-- Personalization Categories -->
     <string name="button_title">Boutons</string>
     <string name="lockscreen_title">Écran de verrouillage</string>
@@ -58,31 +58,31 @@
     <string name="changelog_crdroid_title">Liste des changements</string>
     <string name="changelog_crdroid_summary">Afficher les modifications de cette version</string>
     <string name="changelog_crdroid_error">Impossible de charger la liste des changements</string>
-    <!-- About crDroid -->
-    <string name="about_crdroid">À propos de crDroid</string>
+    <!-- About risingOS -->
+    <string name="about_crdroid">À propos de risingOS</string>
     <string name="about_device_name">Appareil</string>
-    <!-- Share crDroid -->
-    <string name="share_crdroid_title">Partager crDroid</string>
-    <string name="share_crdroid_summary">Faire connaitre crDroid</string>
-    <string name="share_message">Vérifiez si #crDroidAndroid est disponible pour votre appareil @ https://crdroid.net/</string>
-    <string name="share_chooser_title">Partager crDroid</string>
-    <!-- Sites crDroid -->
+    <!-- Share risingOS -->
+    <string name="share_crdroid_title">Partager risingOS</string>
+    <string name="share_crdroid_summary">Faire connaitre risingOS</string>
+    <string name="share_message">Vérifiez si #risingOSAndroid est disponible pour votre appareil @ https://crdroid.net/</string>
+    <string name="share_chooser_title">Partager risingOS</string>
+    <!-- Sites risingOS -->
     <string name="crdroid_source_title">Open source</string>
     <string name="crdroid_source_summary">Consulter notre Github</string>
-    <string name="crdroid_telegram_title">Communauté crDroid</string>
+    <string name="crdroid_telegram_title">Communauté risingOS</string>
     <string name="crdroid_telegram_summary">Rejoindre la communauté sur Telegram</string>
     <string name="crdroid_telegram_channel_title">Salon de mise à jour</string>
     <string name="crdroid_telegram_channel_summary">Être informé des nouvelles versions via Telegram</string>
     <string name="crdroid_website_title">Site officiel</string>
     <string name="crdroid_website_summary">Visiter notre site web officiel</string>
     <string name="crdroid_translate_title">Traductions</string>
-    <string name="crdroid_translate_summary">Aider à la traduction de crDroid</string>
+    <string name="crdroid_translate_summary">Aider à la traduction de risingOS</string>
     <string name="crdroid_sponsor_summary">Visiter notre partenaire hébergeur web</string>
     <string name="crdroid_buildserversponsor_summary">Nous recommandons leurs serveurs si cela vous intéresse</string>
-    <!-- Donate crDroid -->
+    <!-- Donate risingOS -->
     <string name="donate_crdroid_title">Soutenez-nous</string>
     <string name="donate_crdroid_summary">Faire un don pour soutenir le développement</string>
-    <string name="donate_team_title">L\'équipe crDroid</string>
+    <string name="donate_team_title">L\'équipe risingOS</string>
     <string name="donate_team_summary">Faire un don pour contribuer aux serveurs d’hébergement, à la maintenance du site et à la gestion globale du projet</string>
     <!-- The Drill -->
     <string name="drill_title">Oups !</string>
@@ -547,8 +547,8 @@
     <string name="qs_footer_show_power_menu_title">Raccourci du menu marche/arrêt</string>
     <string name="qs_footer_services_icon_title">Services en cours d\'exécution</string>
     <string name="qs_footer_settings_icon_title">Paramètres Android</string>
-    <!-- Device Info screen. crDroid legal. -->
-    <string name="crdroid_license_title">Licence crDroid</string>
+    <!-- Device Info screen. risingOS legal. -->
+    <string name="crdroid_license_title">Licence risingOS</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_brightness_slider_category">Curseur de luminosité</string>
     <string name="qs_show_brightness_slider_title">Curseur de luminosité</string>
@@ -948,7 +948,7 @@
     <string name="status_bar_logo_summary">Afficher un logo personnalisé à gauche ou à droite de la barre d\'état</string>
     <string name="status_bar_logo_position_title">Position du logo</string>
     <string name="status_bar_logo_style_title">Style du logo</string>
-    <string name="status_bar_logo_style_crdroid">crDroid</string>
+    <string name="status_bar_logo_style_crdroid">risingOS</string>
     <string name="status_bar_logo_style_android">Android</string>
     <string name="status_bar_logo_style_adidas">Adidas</string>
     <string name="status_bar_logo_style_alien">Alien</string>

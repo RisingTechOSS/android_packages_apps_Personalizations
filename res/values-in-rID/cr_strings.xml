@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">Setelan crDroid</string>
+    <string name="crdroid_settings_title">Setelan risingOS</string>
     <string name="crdroid_settings_summary">Kebaikan terbuka</string>
     <string name="reset_settings_title">Setel ulang pengaturan</string>
     <string name="reset_settings_message">Ini akan mengatur ulang sebagian besar pengaturan crdroid ke nilai default untuk pengguna saat ini. Apakah Anda ingin melanjutkan?</string>
@@ -58,18 +58,18 @@
     <string name="changelog_crdroid_title">Perubahan saat ini</string>
     <string name="changelog_crdroid_summary">Lihat perubahan pada ROM terpasang</string>
     <string name="changelog_crdroid_error">Tidak dapat memuat daftar perubahan</string>
-    <!-- About crDroid -->
-    <string name="about_crdroid">Tentang crDroid</string>
+    <!-- About risingOS -->
+    <string name="about_crdroid">Tentang risingOS</string>
     <string name="about_device_name">Perangkat</string>
-    <!-- Share crDroid -->
-    <string name="share_crdroid_title">Bagikan crDroid</string>
-    <string name="share_crdroid_summary">Biarkan orang lain tahu tentang crDroid</string>
-    <string name="share_message">Periksa apakah #crDroidAndroid tersedia untuk perangkat Anda @ https://crdroid.net/</string>
-    <string name="share_chooser_title">Bagikan crDroid</string>
-    <!-- Sites crDroid -->
+    <!-- Share risingOS -->
+    <string name="share_crdroid_title">Bagikan risingOS</string>
+    <string name="share_crdroid_summary">Biarkan orang lain tahu tentang risingOS</string>
+    <string name="share_message">Periksa apakah #risingOSAndroid tersedia untuk perangkat Anda @ https://crdroid.net/</string>
+    <string name="share_chooser_title">Bagikan risingOS</string>
+    <!-- Sites risingOS -->
     <string name="crdroid_source_title">GitHub</string>
     <string name="crdroid_source_summary">Kami cinta open source, periksa kami</string>
-    <string name="crdroid_telegram_title">Komunitas crDroid</string>
+    <string name="crdroid_telegram_title">Komunitas risingOS</string>
     <string name="crdroid_telegram_summary">Kami ada di Telegram. Ayo bergabung!</string>
     <string name="crdroid_telegram_channel_title">Saluran Pembaruan</string>
     <string name="crdroid_telegram_channel_summary">Dapatkan notifikasi tentang pembaruan baru dari Telegram</string>
@@ -79,10 +79,10 @@
     <string name="crdroid_translate_summary">Bantu kami menerjemahkan ROM ini ke bahasa Anda!</string>
     <string name="crdroid_sponsor_summary">Kunjungi mitra host situs web kami</string>
     <string name="crdroid_buildserversponsor_summary">Kami merekomendasikan server mereka jika anda tertarik</string>
-    <!-- Donate crDroid -->
+    <!-- Donate risingOS -->
     <string name="donate_crdroid_title">Dukung Kami</string>
     <string name="donate_crdroid_summary">Donasi untuk mendukung pengembangan lebih lanjut</string>
-    <string name="donate_team_title">Tim crDroid</string>
+    <string name="donate_team_title">Tim risingOS</string>
     <string name="donate_team_summary">Donasi untuk mendukung server hosting, keaktifan situs serta pemanajemenan secara keseluruhan</string>
     <!-- The Drill -->
     <string name="drill_title">The Drill</string>
@@ -546,8 +546,8 @@
     <string name="qs_footer_show_power_menu_title">Pintasan menu daya</string>
     <string name="qs_footer_services_icon_title">Pintasan Layanan Berjalan</string>
     <string name="qs_footer_settings_icon_title">Setelan pintasan</string>
-    <!-- Device Info screen. crDroid legal. -->
-    <string name="crdroid_license_title">Hukum crDroid</string>
+    <!-- Device Info screen. risingOS legal. -->
+    <string name="crdroid_license_title">Hukum risingOS</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_brightness_slider_category">Slider kecerahan</string>
     <string name="qs_show_brightness_slider_title">Slider kecerahan</string>
@@ -946,7 +946,7 @@
     <string name="status_bar_logo_summary">Tampilkan logo khusus di kiri atau kanan bilah status</string>
     <string name="status_bar_logo_position_title">Posisi Logo</string>
     <string name="status_bar_logo_style_title">Gaya logo</string>
-    <string name="status_bar_logo_style_crdroid">crDroid</string>
+    <string name="status_bar_logo_style_crdroid">risingOS</string>
     <string name="status_bar_logo_style_android">Android</string>
     <string name="status_bar_logo_style_adidas">Adidas</string>
     <string name="status_bar_logo_style_alien">Alien</string>

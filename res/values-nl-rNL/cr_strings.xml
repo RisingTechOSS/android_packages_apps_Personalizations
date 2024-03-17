@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">crDroid Instellingen</string>
+    <string name="crdroid_settings_title">risingOS Instellingen</string>
     <string name="crdroid_settings_summary">Goodies</string>
     <string name="reset_settings_title">Instellingen resetten</string>
     <string name="reset_settings_message">Dit zal de meeste crdroid instellingen terugzetten op de standaardwaarden voor de huidige gebruiker. Wilt u doorgaan?</string>
@@ -58,18 +58,18 @@
     <string name="changelog_crdroid_title">Huidige veranderingen</string>
     <string name="changelog_crdroid_summary">Bekijk wijzigingen in de geïnstalleerde rom</string>
     <string name="changelog_crdroid_error">Kan changelog niet laden</string>
-    <!-- About crDroid -->
-    <string name="about_crdroid">Over crDroid</string>
+    <!-- About risingOS -->
+    <string name="about_crdroid">Over risingOS</string>
     <string name="about_device_name">Apparaat</string>
-    <!-- Share crDroid -->
-    <string name="share_crdroid_title">Deel crDroid</string>
-    <string name="share_crdroid_summary">Laat anderen weten over crDroid</string>
-    <string name="share_message">Kijk eens of #crDroidAndroid beschikbaar is voor uw apparaat @ https://crdroid.net/</string>
-    <string name="share_chooser_title">Deel crDroid</string>
-    <!-- Sites crDroid -->
+    <!-- Share risingOS -->
+    <string name="share_crdroid_title">Deel risingOS</string>
+    <string name="share_crdroid_summary">Laat anderen weten over risingOS</string>
+    <string name="share_message">Kijk eens of #risingOSAndroid beschikbaar is voor uw apparaat @ https://crdroid.net/</string>
+    <string name="share_chooser_title">Deel risingOS</string>
+    <!-- Sites risingOS -->
     <string name="crdroid_source_title">Github</string>
     <string name="crdroid_source_summary">We houden van open source, neem een kijkje</string>
-    <string name="crdroid_telegram_title">crDroid gemeenschap</string>
+    <string name="crdroid_telegram_title">risingOS gemeenschap</string>
     <string name="crdroid_telegram_summary">Wij zitten op Telegram. Kom er bij!</string>
     <string name="crdroid_telegram_channel_title">Updatekanaal</string>
     <string name="crdroid_telegram_channel_summary">Ontvang een melding van nieuwe builds op Telegram</string>
@@ -79,10 +79,10 @@
     <string name="crdroid_translate_summary">Help met lokalisatie van de ROM in jouw taal!</string>
     <string name="crdroid_sponsor_summary">Bezoek onze website host partner</string>
     <string name="crdroid_buildserversponsor_summary">Indien interesse raden we zeker hun servers aan</string>
-    <!-- Donate crDroid -->
+    <!-- Donate risingOS -->
     <string name="donate_crdroid_title">Steun ons</string>
     <string name="donate_crdroid_summary">Doneer om verdere ontwikkeling te ondersteunen</string>
-    <string name="donate_team_title">crDroid team</string>
+    <string name="donate_team_title">risingOS team</string>
     <string name="donate_team_summary">Doneer ter ondersteuning van de server hosting, site uptime en algemeen beheer</string>
     <!-- The Drill -->
     <string name="drill_title">Zoals het hoort</string>
@@ -547,8 +547,8 @@
     <string name="qs_footer_show_power_menu_title">Snelkoppeling Aan-/Uit menu</string>
     <string name="qs_footer_services_icon_title">Snelkoppeling voor actieve services</string>
     <string name="qs_footer_settings_icon_title">Snelkoppeling instellingen</string>
-    <!-- Device Info screen. crDroid legal. -->
-    <string name="crdroid_license_title">crDroid legaal</string>
+    <!-- Device Info screen. risingOS legal. -->
+    <string name="crdroid_license_title">risingOS legaal</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_brightness_slider_category">Licht-schuif</string>
     <string name="qs_show_brightness_slider_title">Helderheidsregelaar</string>
@@ -948,7 +948,7 @@
     <string name="status_bar_logo_summary">Toon een aangepast logo links of rechts van de statusbalk</string>
     <string name="status_bar_logo_position_title">Logo positie</string>
     <string name="status_bar_logo_style_title">Logo stijl</string>
-    <string name="status_bar_logo_style_crdroid">crDroid</string>
+    <string name="status_bar_logo_style_crdroid">risingOS</string>
     <string name="status_bar_logo_style_android">Android</string>
     <string name="status_bar_logo_style_adidas">Adidas</string>
     <string name="status_bar_logo_style_alien">Alien</string>
