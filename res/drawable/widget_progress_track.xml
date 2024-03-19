@@ -9,6 +9,6 @@
         </shape>
     </item>
     <item android:gravity="fill_horizontal|center" android:id="@android:id/progress">
-        <com.android.internal.graphics.drawable.RoundedCornerProgressDrawable android:drawable="@drawable/widget_progress_full" />
+        <com.crdroid.settings.utils.RoundedCornerProgressDrawable android:drawable="@drawable/widget_progress_full" />
     </item>
 </layer-list>
