@@ -42,6 +42,7 @@ import com.android.settingslib.search.SearchIndexable;
 import com.crdroid.settings.fragments.statusbar.BatteryBar;
 import com.crdroid.settings.fragments.statusbar.Clock;
 import com.crdroid.settings.fragments.statusbar.NetworkTrafficSettings;
+import com.crdroid.settings.preferences.CustomSeekBarPreference;
 import com.crdroid.settings.preferences.RisingSystemSettingListPreference;
 import com.crdroid.settings.preferences.SystemSettingSeekBarPreference;
 import com.crdroid.settings.utils.DeviceUtils;
@@ -61,6 +62,10 @@ public class StatusBar extends SettingsPreferenceFragment implements
     private static final String KEY_STATUS_BAR_SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
     private static final String KEY_STATUS_BAR_BATTERY_STYLE = "status_bar_battery_style";
     private static final String KEY_STATUS_BAR_BATTERY_TEXT_CHARGING = "status_bar_battery_text_charging";
+    private static final String KEY_STATUSBAR_TOP_PADDING = "statusbar_top_padding";
+    private static final String KEY_STATUSBAR_LEFT_PADDING = "statusbar_left_padding";
+    private static final String KEY_STATUSBAR_RIGHT_PADDING = "statusbar_right_padding";
+    private static final String DEFAULT = "_default";
 
     private static final int PULLDOWN_DIR_NONE = 0;
     private static final int PULLDOWN_DIR_RIGHT = 1;
@@ -132,6 +137,21 @@ public class StatusBar extends SettingsPreferenceFragment implements
             mQuickPulldown.setEntries(R.array.status_bar_quick_qs_pulldown_entries_rtl);
             mQuickPulldown.setEntryValues(R.array.status_bar_quick_qs_pulldown_values_rtl);
         }
+
+        final int defaultLeftPadding = Settings.System.getIntForUser(getContentResolver(),
+                    KEY_STATUSBAR_LEFT_PADDING + DEFAULT, 0, UserHandle.USER_CURRENT);
+        CustomSeekBarPreference seekBar = findPreference(KEY_STATUSBAR_LEFT_PADDING);
+        seekBar.setDefaultValue(defaultLeftPadding, true);
+
+        final int defaultRightPadding = Settings.System.getIntForUser(getContentResolver(),
+                    KEY_STATUSBAR_RIGHT_PADDING + DEFAULT, 0, UserHandle.USER_CURRENT);
+        seekBar = findPreference(KEY_STATUSBAR_RIGHT_PADDING);
+        seekBar.setDefaultValue(defaultRightPadding, true);
+
+        final int defaultTopPadding = Settings.System.getIntForUser(getContentResolver(),
+                    KEY_STATUSBAR_TOP_PADDING + DEFAULT, 0, UserHandle.USER_CURRENT);
+        seekBar = findPreference(KEY_STATUSBAR_TOP_PADDING);
+        seekBar.setDefaultValue(defaultTopPadding, true);
     }
 
     @Override

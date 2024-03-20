@@ -1522,4 +1522,10 @@
     <!-- IME button space -->
     <string name="navigation_bar_hide_ime_space_title">Hide IME button space</string>
     <string name="navigation_bar_hide_ime_space_summary">Hide IME button space below keyboard</string>
+    
+    <!-- Status bar padding -->
+    <string name="statusbar_padding">Status bar padding</string>
+    <string name="statusbar_top_padding">Top padding</string>
+    <string name="statusbar_left_padding">Left padding</string>
+    <string name="statusbar_right_padding">Right padding</string>
 </resources>

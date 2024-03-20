@@ -195,6 +195,32 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:key="statusbar_padding"
+        android:title="@string/statusbar_padding">
+
+        <com.crdroid.settings.preferences.SystemSettingSeekBarPreference
+            android:key="statusbar_top_padding"
+            android:max="10"
+            android:title="@string/statusbar_top_padding"
+            settings:min="0"
+            lineage:position="top" />
+
+        <com.crdroid.settings.preferences.SystemSettingSeekBarPreference
+            android:key="statusbar_left_padding"
+            android:title="@string/statusbar_left_padding"
+            android:max="100"
+            android:min="0" />
+
+        <com.crdroid.settings.preferences.SystemSettingSeekBarPreference
+            android:key="statusbar_right_padding"
+            android:title="@string/statusbar_right_padding"
+            android:max="100"
+            android:min="0"
+            lineage:position="bottom" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:title="@string/gestures_title">
 
         <com.crdroid.settings.preferences.SystemSettingSwitchPreference
