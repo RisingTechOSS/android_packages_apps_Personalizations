@@ -47,6 +47,13 @@
             lineage:isLineageSettings="true"
             lineage:position="top" />
 
+
+        <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+            android:key="hide_ime_space_enable"
+            android:title="@string/navigation_bar_hide_ime_space_title"
+            android:summary="@string/navigation_bar_hide_ime_space_summary"
+            android:defaultValue="false" />
+
         <com.crdroid.settings.preferences.SecureSettingListPreference
             android:key="navbar_layout_views"
             android:icon="@drawable/ic_navbar_layout"

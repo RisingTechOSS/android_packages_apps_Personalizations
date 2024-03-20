@@ -1518,4 +1518,8 @@
     <string name="outline_style">Outline style</string>
     <string name="shaded_layer_style">Shaded Layer style</string>
     <string name="volume_style_title">Volume panel styles</string>
+    
+    <!-- IME button space -->
+    <string name="navigation_bar_hide_ime_space_title">Hide IME button space</string>
+    <string name="navigation_bar_hide_ime_space_summary">Hide IME button space below keyboard</string>
 </resources>
