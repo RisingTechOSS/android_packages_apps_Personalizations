@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2023-2024 the risingOS android Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- App Dashboard -->
+    <string-array name="app_dashboard_top_prefs">
+        <item>default_apps</item>
+    </string-array>
+
+    <string-array name="app_dashboard_middle_prefs">
+        <item>dashboard_tile_pref_com.google.android.apps.gsa.staticplugins.settings.AssistantAndroidSettingsActivity</item>
+        <item>dashboard_tile_pref_com.google.android.apps.wellbeing.home.AppsNotificationSettingsActivity</item>
+        <item>cloned_apps</item>
+        <item>hibernated_apps</item>
+        <item>app_battery_usage</item>
+        <item>cloned_apps</item>
+    </string-array>
+
+    <string-array name="app_dashboard_bottom_prefs">
+        <item>special_access</item>
+    </string-array>
+
+    <string-array name="app_dashboard_solo_prefs">
+        <item>aspect_ratio_apps</item>
+    </string-array>
+    
+    <!-- Sound Dashboard -->
+    <string-array name="sound_dashboard_top_prefs">
+        <item>media_volume</item>
+    </string-array>
+
+    <string-array name="sound_dashboard_middle_prefs">
+    </string-array>
+
+    <string-array name="sound_dashboard_bottom_prefs">
+        <item>charging_sounds_settings</item>
+    </string-array>
+
+    <string-array name="sound_dashboard_solo_prefs">
+    </string-array>
+
+    <!-- Notif Dashboard -->
+    <string-array name="notif_dashboard_top_prefs">
+        <item>all_notifications</item>
+        <item>conversations</item>
+        <item>notification_access</item>
+        <item>zen_mode_notifications</item>
+    </string-array>
+
+    <string-array name="notif_dashboard_middle_prefs">
+    </string-array>
+
+    <string-array name="notif_dashboard_bottom_prefs">
+        <item>notification_history</item>
+        <item>notification_bubbles</item>
+        <item>notification_assistant</item>
+        <item>lock_screen_redact</item>
+    </string-array>
+
+    <string-array name="notif_dashboard_solo_prefs">
+    </string-array>
+    
+    <!-- Network Dashboard -->
+    <string-array name="network_dashboard_top_prefs">
+        <item>internet_settings</item>
+    </string-array>
+
+    <string-array name="network_dashboard_middle_prefs">
+    </string-array>
+
+    <string-array name="network_dashboard_bottom_prefs">
+        <item>adaptive_connectivity</item>
+    </string-array>
+
+    <string-array name="network_dashboard_solo_prefs">
+    </string-array>
+    
+    <!-- Battery Dashboard -->
+    <string-array name="battery_dashboard_top_prefs">
+        <item>battery_usage_summary</item>
+    </string-array>
+
+    <string-array name="battery_dashboard_middle_prefs">
+    </string-array>
+
+    <string-array name="battery_dashboard_bottom_prefs">
+        <item>dashboard_tile_pref_com.google.android.settings.intelligence.modules.batterywidget.impl.BatteryWidgetPromoActivity</item>
+    </string-array>
+
+    <string-array name="battery_dashboard_solo_prefs">
+    </string-array>
+    
+    <!-- Display Dashboard -->
+    <string-array name="display_dashboard_top_prefs">
+        <item>brightness</item>
+        <item>lockscreen_from_display_settings</item>
+        <item>dark_ui_mode</item>
+        <item>night_display</item>
+        <item>rotation</item>
+    </string-array>
+
+    <string-array name="display_dashboard_middle_prefs">
+    </string-array>
+
+    <string-array name="display_dashboard_bottom_prefs">
+        <item>reduce_bright_colors_preference</item>
+        <item>screen_timeout</item>
+        <item>density</item>
+        <item>color_mode</item>
+        <item>wake_when_plugged_or_unplugged</item>
+    </string-array>
+
+    <string-array name="display_dashboard_solo_prefs">
+        <item>auto_rotate</item>
+        <item>device_state_auto_rotate</item>
+    </string-array>
+</resources>
