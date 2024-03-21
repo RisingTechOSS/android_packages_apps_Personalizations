@@ -118,6 +118,13 @@
             android:summary="@string/statusbar_colored_icons_summary"
             android:defaultValue="false" />
 
+        <com.crdroid.settings.preferences.SystemSettingSeekBarPreference
+            android:key="statusbar_max_notifications"
+            android:max="6"
+            android:title="@string/statusbar_max_notifications_title"
+            android:defaultValue="4"
+            settings:min="0" />
+
         <com.crdroid.settings.preferences.SystemSettingSwitchPreference
 	        android:key="statusbar_notif_count"
 	        android:title="@string/statusbar_notif_count_title"

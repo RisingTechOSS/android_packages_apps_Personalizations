@@ -1528,4 +1528,7 @@
     <string name="statusbar_top_padding">Top padding</string>
     <string name="statusbar_left_padding">Left padding</string>
     <string name="statusbar_right_padding">Right padding</string>
+
+    <!-- Status bar max notification -->
+    <string name="statusbar_max_notifications_title">Status bar max notification icons</string>
 </resources>
