@@ -1531,4 +1531,8 @@
 
     <!-- Status bar max notification -->
     <string name="statusbar_max_notifications_title">Status bar max notification icons</string>
+    
+    <!-- Colored QS notification icons -->  
+    <string name="qs_colored_icons_title">Colored QS notification icons</string>
+    <string name="qs_colored_icons_summary">Show colored app icon instead of monochrome icons</string>
 </resources>
